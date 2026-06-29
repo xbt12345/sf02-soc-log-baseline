@@ -1,0 +1,13 @@
+.venv/
+artifacts/
+catboost_info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cbm
+*.pkl
+*.parquet
+*.png
+*.log
+.DS_Store
