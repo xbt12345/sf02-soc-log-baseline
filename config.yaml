@@ -31,9 +31,15 @@ features:
   drop_cols: []
 
 split:
-  strategy: stratified_group
-  test_size: 0.2
+  primary_strategy: stratified_group
+  comparison_strategies:
+    - stratified_group
+    - stratified_random
+    - chronological
+  val_size: 0.1
+  test_size: 0.1
   random_seed: 42
+  num_runs: 3
 
 model:
   iterations: 300
