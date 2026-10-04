@@ -1,0 +1,43 @@
+{
+  "version": "V135_observed_execution_and_outcome_cases",
+  "new_updates": 0,
+  "model_promoted": false,
+  "source_sha256": "0e465e15206c2f629f0968a6634dbabf7cb80e16f33b9829e5a354c0db43ee96",
+  "cases": [
+    {
+      "id": "same_seed_is_not_a_matched_trajectory",
+      "evidence": "V134 same initial state, first10 epochs 24 prediction differences before schedule change.",
+      "action": "Repeated real forward/backward checks and exact first80 original-row prefix gate; unsupported determinism switch alone is insufficient."
+    },
+    {
+      "id": "stable_wrong_is_not_mastery",
+      "evidence": "R_decay fold0 last5 pure errors 4M/38S every epoch.",
+      "action": "Require correct last5 actual model decisions, not merely fewer flips or a zero endpoint elsewhere."
+    },
+    {
+      "id": "one_zero_epoch_is_not_stability",
+      "evidence": "O_const fold1 epoch96 pure0, epochs97-100 pure8M/0S.",
+      "action": "Replay all five registered window models and protect both classes."
+    },
+    {
+      "id": "training_improvement_does_not_protect_held_M",
+      "evidence": "O_const versus R_const TRAIN pure77 to52, HELD M2114 to2270 and S1639 to1627.",
+      "action": "Keep all original population and full class/source gates; do not increase class weights from S-only success."
+    },
+    {
+      "id": "existing_correct_member_is_not_an_available_oracle",
+      "evidence": "Every one of R_decay 80 pure TRAIN endpoint mistakes has at least one correct member.",
+      "action": "Separate member representation, confidence and aggregation. Never choose members per-row using true labels; no posthoc voting promotion."
+    },
+    {
+      "id": "gradient_opposition_is_not_a_unique_cause",
+      "evidence": "Fold1 R_decay epoch100 original facts_direct M/S gradient cosine -0.9998683333.",
+      "action": "Record class risks and gradient norms too; opposing class gradients can reflect equilibrium and do not alone justify gradient surgery."
+    },
+    {
+      "id": "protected_slice_failures_still_count",
+      "evidence": "R_decay header682 has12 errors versus A0 zero; root2868 M1040 errors versus A0 48.",
+      "action": "Keep hard slice gates. Header errors alone do not prove date dependence; require semantic-preserving input interventions before such a causal claim."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-09-22",
+  "purpose": "Distinguish ranking, calibration, refit shift and unseen-domain generalization; no new training methods claimed effective.",
+  "sources": [
+    {
+      "title": "scikit-learn: Tuning the decision threshold",
+      "url": "https://scikit-learn.org/stable/modules/classification_threshold.html",
+      "read": "Official documentation",
+      "adoption": "Separate learned scores from decision policy; tune only on model-independent inner calibration roles. Built-in threshold interface is binary, not a direct three-class SOC solution."
+    },
+    {
+      "title": "scikit-learn: Probability calibration",
+      "url": "https://scikit-learn.org/stable/modules/calibration.html",
+      "read": "Official documentation",
+      "adoption": "OOF/disjoint calibration, class coverage, distinguish ranking from calibration; a lower Brier loss alone does not prove calibration improved."
+    },
+    {
+      "title": "Detecting and Correcting for Label Shift with Black Box Predictors",
+      "url": "https://proceedings.mlr.press/v80/lipton18a.html",
+      "read": "Primary paper page and abstract",
+      "adoption": "Do not apply prior correction by default: it assumes stable p(x|y) and invertible confusion; format-support shift may violate both."
+    }
+  ]
+}

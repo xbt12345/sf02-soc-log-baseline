@@ -1,0 +1,30 @@
+{
+  "all_checks_passed": true,
+  "new_fits": 0,
+  "unchanged_bound_files_and_verified_inputs": {
+    "v69": 93,
+    "v71": 86,
+    "audit_fixed_blend": 27,
+    "audit_terminal_gradients": 6,
+    "v65_complement_audit": 38
+  },
+  "primary_blend_errors": {
+    "0": 0,
+    "1": 600,
+    "2": 590
+  },
+  "primary_blend_target_correct": 56,
+  "model_quality_acceptance": false,
+  "accepted_repairs": 0,
+  "scope": "Artifact integrity, saved primary counts, terminal derivatives, neural audit aggregate consistency. Not independent model-quality validation.",
+  "local_artifact_sha256": {
+    "audit_fixed_blend.json": "2de34f857967d9a1a07ed9ccd337d0868926e342d5a69e7ad791777110dae8f4",
+    "audit_fixed_blend.py": "ba7084fc064e68958c25d265221cc7d38ec86a0c1e565facc86306c617f44aba",
+    "audit_terminal_gradients.json": "a94ba7c0ef0023318e8f1be8d07fa96d9f69bcc401f69540fd19801f610b87ab",
+    "audit_terminal_gradients.py": "3111d8735545b6ea86e57efe80b8fcecd9ce8fe9c34df37f70db64c69ec5bc27",
+    "fixed_blend_decisions.parquet": "9450f0ab17f7d5a65f541e29bb01a59cbc49cb664c7cb86404d65bfb31f46b85",
+    "v65_complement_audit.json": "b64634a09cbb61fbb542acd6f3386c92c7d6ce2bb0cbd6ddc42ea5a5428feb8a",
+    "v65_complement_audit.py": "ed5d1dcce76e7894309abfe551d721f9d5a2b3b54998d520f684475be136074d",
+    "verify_review.py": "0890385e37f20fc74dac35b81c4f45a3f22f7041f4f4da5a58c046ddd46b943b"
+  }
+}

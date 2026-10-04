@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "new_files_rehashed": 13,
+  "new_files_changed": [],
+  "readonly_MCP_tests_passed": 9,
+  "test_scope": "In-process MCP and HTTP client; live ChatGPT tunnel not tested.",
+  "raw_casebook_excluded_from_MCP": true,
+  "new_classifier_fits": 0,
+  "quality_acceptance": false,
+  "current_delivery_id": "v83-delivery",
+  "current_direction_id": "v83-direction-review",
+  "delivery_sha256": "dade677c00b19db7873fb8bac8d2faf092538976edd5433c56bfb90a41f2f7e1",
+  "catalog_sha256": "af7acd2d6f74b0d440803d89c60dfc51db32d294961b71666fca553d9101db25"
+}

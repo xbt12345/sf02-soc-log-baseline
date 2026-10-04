@@ -1,0 +1,46 @@
+{
+  "all_learned_states_equal": true,
+  "models": [
+    {
+      "model": "pressure",
+      "learned_state_equal": true,
+      "runtime_cache_differences": []
+    },
+    {
+      "model": "fold_0",
+      "learned_state_equal": true,
+      "runtime_cache_differences": [
+        {
+          "field": "_stop_words_id",
+          "new": 140725674480672,
+          "old": 140725672711200
+        }
+      ]
+    },
+    {
+      "model": "fold_1",
+      "learned_state_equal": true,
+      "runtime_cache_differences": [
+        {
+          "field": "_stop_words_id",
+          "new": 140725674480672,
+          "old": 140725672711200
+        }
+      ]
+    },
+    {
+      "model": "fold_2",
+      "learned_state_equal": true,
+      "runtime_cache_differences": [
+        {
+          "field": "_stop_words_id",
+          "new": 140725674480672,
+          "old": 140725672711200
+        }
+      ]
+    }
+  ],
+  "source_sha256": "a63d4a8629cb57ddf47039704dc67bf9cf698a0d7804bef4a7ee96490502eb07",
+  "sklearn_source_sha256": "07503cc04f0f64e5518671329f2de14f8082940189e01056dd873a014ba044e3",
+  "runtime_cache_explanation": "_stop_words_id caches id(None) for stop-word consistency checks (source lines 397,409,422); this can change between processes without changing vocabulary, IDF, parameters or outputs. No stored models were modified."
+}

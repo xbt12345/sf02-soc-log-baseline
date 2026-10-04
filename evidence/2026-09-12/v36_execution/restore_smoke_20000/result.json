@@ -1,0 +1,19 @@
+{
+  "version": "v36-representation-1.2",
+  "rows": 20000,
+  "full_official_rows": false,
+  "original_input_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "prepared_sha256": "76caa95cf5e677ef549343b7c59c5de44a1927c5027b41ac53980efca393fd5b",
+  "groups_sha256": "3ee739df2730e033218bc81f56a93fc46467f983e30b8467bd7eea740fdb18f3",
+  "source_hashes": {
+    "run_v36_prepare.py": "6d34ed3ea12176c1fa42d62e84fd72fb6b675d074ff78153d70a26fd561a9cd8",
+    "v36_representation.py": "f7e0345b9a834bf2d9d615f53fdfc7aef4d93648d405af9ed48157e0a870ddef",
+    "v331_prepare.py": "17e9518719e070d0cff8b79e06d555127c02f4b781b19b22761d682e2290849b"
+  },
+  "old_groups": 2380,
+  "union_components": 2380,
+  "preparation_only": true,
+  "model_trained": false,
+  "semantic_quality_not_certified": true,
+  "elapsed_seconds": 1.2886733000050299
+}

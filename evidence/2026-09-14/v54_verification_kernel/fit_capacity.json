@@ -1,0 +1,280 @@
+{
+  "pressure": {
+    "floor": {
+      "rows": 99398,
+      "observation_keys": 15664,
+      "minimum_empirical_errors": 2306,
+      "minimum_empirical_nll": 0.05441941117101575
+    },
+    "models": {
+      "LINEAR": {
+        "rows": 99398,
+        "errors": 2734,
+        "confusion_B_M_S": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            71626,
+            282
+          ],
+          [
+            0,
+            2452,
+            25022
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9960783223007176,
+          0.910751983693674
+        ],
+        "class_errors_B_M_S": [
+          0,
+          282,
+          2452
+        ],
+        "macro_f1_M_S": 0.9647351448170631,
+        "ASA_to_normal": 0,
+        "nll": null
+      },
+      "LOCAL": {
+        "rows": 99398,
+        "errors": 2312,
+        "confusion_B_M_S": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            71468,
+            440
+          ],
+          [
+            0,
+            1872,
+            25602
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9938810702564388,
+          0.9318628521511247
+        ],
+        "class_errors_B_M_S": [
+          0,
+          440,
+          1872
+        ],
+        "macro_f1_M_S": 0.9704401819834483,
+        "ASA_to_normal": 0,
+        "nll": null
+      }
+    }
+  },
+  "fold_0": {
+    "floor": {
+      "rows": 71314,
+      "observation_keys": 11586,
+      "minimum_empirical_errors": 1466,
+      "minimum_empirical_nll": 0.049016603877966296
+    },
+    "models": {
+      "LINEAR": {
+        "rows": 71314,
+        "errors": 1748,
+        "confusion_B_M_S": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            52340,
+            158
+          ],
+          [
+            0,
+            1590,
+            17214
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9969903615375824,
+          0.9154435226547543
+        ],
+        "class_errors_B_M_S": [
+          0,
+          158,
+          1590
+        ],
+        "macro_f1_M_S": 0.9676282115055967,
+        "ASA_to_normal": 0,
+        "nll": null
+      }
+    }
+  },
+  "fold_1": {
+    "floor": {
+      "rows": 71311,
+      "observation_keys": 11669,
+      "minimum_empirical_errors": 1508,
+      "minimum_empirical_nll": 0.049191378025582135
+    },
+    "models": {
+      "LINEAR": {
+        "rows": 71311,
+        "errors": 1738,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            52312,
+            184
+          ],
+          [
+            0,
+            1554,
+            17251
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.996494971045413,
+          0.9173624036160596
+        ],
+        "class_errors_B_M_S": [
+          0,
+          184,
+          1554
+        ],
+        "macro_f1_M_S": 0.9678507601367864,
+        "ASA_to_normal": 0,
+        "nll": null
+      },
+      "LOCAL": {
+        "rows": 71311,
+        "errors": 1509,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            52264,
+            232
+          ],
+          [
+            0,
+            1277,
+            17528
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9955806156659555,
+          0.9320925285828238
+        ],
+        "class_errors_B_M_S": [
+          0,
+          232,
+          1277
+        ],
+        "macro_f1_M_S": 0.9722500726324754,
+        "ASA_to_normal": 0,
+        "nll": null
+      }
+    }
+  },
+  "fold_2": {
+    "floor": {
+      "rows": 71313,
+      "observation_keys": 11610,
+      "minimum_empirical_errors": 1662,
+      "minimum_empirical_nll": 0.05497950043513511
+    },
+    "models": {
+      "LINEAR": {
+        "rows": 71313,
+        "errors": 1948,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            52130,
+            368
+          ],
+          [
+            0,
+            1580,
+            17225
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9929902091508248,
+          0.9159797926083488
+        ],
+        "class_errors_B_M_S": [
+          0,
+          368,
+          1580
+        ],
+        "macro_f1_M_S": 0.9640696039869621,
+        "ASA_to_normal": 0,
+        "nll": null
+      },
+      "LOCAL": {
+        "rows": 71313,
+        "errors": 1664,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            52058,
+            440
+          ],
+          [
+            0,
+            1224,
+            17581
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9916187283325079,
+          0.9349109279446955
+        ],
+        "class_errors_B_M_S": [
+          0,
+          440,
+          1224
+        ],
+        "macro_f1_M_S": 0.9695418856257247,
+        "ASA_to_normal": 0,
+        "nll": null
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-09-13",
+  "access": "web tool, primary sources",
+  "sources": [
+    {
+      "title": "scikit-learn multinomial logistic objective",
+      "url": "https://scikit-learn.org/stable/modules/linear_model.html#multinomial-case",
+      "use": "L2 coefficient penalty; duplicate-column derivation is our own mathematical analysis",
+      "boundary": "Documentation currently describes 1.9.1; executed local package was 1.9.0. No runtime upgrade."
+    },
+    {
+      "title": "scikit-learn feature scaling example",
+      "url": "https://scikit-learn.org/1.5/auto_examples/preprocessing/plot_scaling_importance.html",
+      "use": "Scaling changes regularized model behavior",
+      "boundary": "An illustrative benchmark, not evidence of benefit on SOC."
+    },
+    {
+      "title": "Microsoft Windows event 4625",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625",
+      "use": "Status/SubStatus semantics and contextual interpretation of failed logons",
+      "boundary": "Codes do not supply the competition threat label."
+    },
+    {
+      "title": "Last Layer Re-Training is Sufficient for Robustness to Spurious Correlations",
+      "url": "https://arxiv.org/abs/2204.02937",
+      "use": "Distinguish feature evidence from learned decision weights",
+      "boundary": "Method and group support not validated on this SOC project."
+    },
+    {
+      "title": "Author DFR repository",
+      "url": "https://github.com/PolinaKirichenko/deep_feature_reweighting",
+      "use": "Verified author implementation and experiment scope",
+      "boundary": "Read project documentation only; not installed, executed or commit-pinned."
+    },
+    {
+      "title": "Dos and Donts of Machine Learning in Computer Security",
+      "url": "https://www.usenix.org/conference/usenixsecurity22/presentation/arp",
+      "use": "Security model design, implementation and evaluation pitfalls",
+      "boundary": "General research guidance, not a measured result for our classifiers."
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://arxiv.org/abs/2302.03092",
+      "reason": "Unrelated mathematics paper, not used"
+    },
+    {
+      "url": "https://openreview.net/forum?id=THOOBy1uWVH",
+      "reason": "Browser challenge; author arXiv record used instead"
+    }
+  ]
+}

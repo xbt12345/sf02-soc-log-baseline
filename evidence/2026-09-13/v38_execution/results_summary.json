@@ -1,0 +1,3046 @@
+{
+  "models": [
+    {
+      "view": "A_SEMANTIC",
+      "chosen_C": 1.0,
+      "macro_f1": 0.825778277402466,
+      "recall": [
+        1.0,
+        0.6705649157581764,
+        0.6018150879183211
+      ],
+      "normal_errors": 0,
+      "confusion_matrix": [
+        [
+          167222,
+          0,
+          0
+        ],
+        [
+          3182,
+          6766,
+          142
+        ],
+        [
+          15,
+          687,
+          1061
+        ]
+      ]
+    },
+    {
+      "view": "B_DESTINATION",
+      "chosen_C": 0.1,
+      "macro_f1": 0.8249044653264749,
+      "recall": [
+        1.0,
+        0.6705649157581764,
+        0.598411798071469
+      ],
+      "normal_errors": 0,
+      "confusion_matrix": [
+        [
+          167222,
+          0,
+          0
+        ],
+        [
+          3182,
+          6766,
+          142
+        ],
+        [
+          21,
+          687,
+          1055
+        ]
+      ]
+    },
+    {
+      "view": "C_BOTH",
+      "chosen_C": 0.1,
+      "macro_f1": 0.8254874566300493,
+      "recall": [
+        1.0,
+        0.6729435084241824,
+        0.598411798071469
+      ],
+      "normal_errors": 0,
+      "confusion_matrix": [
+        [
+          167222,
+          0,
+          0
+        ],
+        [
+          3158,
+          6790,
+          142
+        ],
+        [
+          21,
+          687,
+          1055
+        ]
+      ]
+    }
+  ],
+  "support": [
+    {
+      "inner_role": 0,
+      "label_index": 0,
+      "rows": 927552,
+      "groups": 248861
+    },
+    {
+      "inner_role": 0,
+      "label_index": 1,
+      "rows": 62946,
+      "groups": 2
+    },
+    {
+      "inner_role": 0,
+      "label_index": 2,
+      "rows": 32785,
+      "groups": 307
+    },
+    {
+      "inner_role": 1,
+      "label_index": 0,
+      "rows": 163924,
+      "groups": 45921
+    },
+    {
+      "inner_role": 1,
+      "label_index": 1,
+      "rows": 10090,
+      "groups": 20
+    },
+    {
+      "inner_role": 1,
+      "label_index": 2,
+      "rows": 2278,
+      "groups": 71
+    },
+    {
+      "inner_role": 2,
+      "label_index": 0,
+      "rows": 167222,
+      "groups": 45990
+    },
+    {
+      "inner_role": 2,
+      "label_index": 1,
+      "rows": 10090,
+      "groups": 20
+    },
+    {
+      "inner_role": 2,
+      "label_index": 2,
+      "rows": 1763,
+      "groups": 77
+    }
+  ],
+  "stage_D_executed": false,
+  "platform_executed": false,
+  "quality_accepted": false,
+  "availability_control": {
+    "rows": 179075,
+    "macro_f1": 0.8320219142316296,
+    "confusion_matrix": [
+      [
+        167222,
+        0,
+        0
+      ],
+      [
+        3192,
+        6898,
+        0
+      ],
+      [
+        23,
+        733,
+        1007
+      ]
+    ],
+    "class_support": [
+      167222,
+      10090,
+      1763
+    ],
+    "class_recall": [
+      1.0,
+      0.6836471754212091,
+      0.5711854792966534
+    ],
+    "class_precision": [
+      0.9811367250068941,
+      0.9039444371641987,
+      1.0
+    ],
+    "class_f1": [
+      0.9904785597303789,
+      0.7785113706901416,
+      0.7270758122743682
+    ],
+    "normal_errors": 0,
+    "class_groups": [
+      45990,
+      20,
+      77
+    ],
+    "sources": {
+      "<missing>": {
+        "rows": 20248,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            10158,
+            0,
+            0
+          ],
+          [
+            3192,
+            6898,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          10158,
+          10090,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          0.6836471754212091,
+          null
+        ],
+        "class_precision": [
+          0.7608988764044944,
+          1.0,
+          null
+        ],
+        "class_f1": [
+          0.8642164369576314,
+          0.8121026607016718,
+          null
+        ],
+        "class_groups": [
+          4409,
+          20,
+          0
+        ],
+        "normal_errors": 0
+      },
+      "ASA Firewall": {
+        "rows": 733,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            733,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          733
+        ],
+        "class_recall": [
+          null,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.0,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          0.0
+        ],
+        "class_groups": [
+          0,
+          0,
+          3
+        ],
+        "normal_errors": 0
+      },
+      "AWS Instance Backup": {
+        "rows": 34013,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            34013,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          34013,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ],
+        "class_groups": [
+          34013,
+          0,
+          0
+        ],
+        "normal_errors": 0
+      },
+      "AWS VPC Security": {
+        "rows": 944,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            944
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          944
+        ],
+        "class_recall": [
+          null,
+          null,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          null,
+          null,
+          1.0
+        ],
+        "class_groups": [
+          0,
+          0,
+          3
+        ],
+        "normal_errors": 0
+      },
+      "Barracuda WAF": {
+        "rows": 3304,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            3302,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          3302,
+          0,
+          2
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.9993946731234867,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.9996972449288526,
+          null,
+          0.0
+        ],
+        "class_groups": [
+          63,
+          0,
+          1
+        ],
+        "normal_errors": 0
+      },
+      "Duo": {
+        "rows": 33,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            23,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          23,
+          0,
+          10
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.696969696969697,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.8214285714285714,
+          null,
+          0.0
+        ],
+        "class_groups": [
+          1,
+          0,
+          2
+        ],
+        "normal_errors": 0
+      },
+      "Falcon": {
+        "rows": 5,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          5
+        ],
+        "class_recall": [
+          null,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          0.0
+        ],
+        "class_groups": [
+          0,
+          0,
+          1
+        ],
+        "normal_errors": 0
+      },
+      "ManageEngine ADManager": {
+        "rows": 252,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            252,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          252,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ],
+        "class_groups": [
+          40,
+          0,
+          0
+        ],
+        "normal_errors": 0
+      },
+      "Precinct": {
+        "rows": 22,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            22
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          22
+        ],
+        "class_recall": [
+          null,
+          null,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          null,
+          null,
+          1.0
+        ],
+        "class_groups": [
+          0,
+          0,
+          22
+        ],
+        "normal_errors": 0
+      },
+      "SentinelOne": {
+        "rows": 2,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          2,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ],
+        "class_groups": [
+          2,
+          0,
+          0
+        ],
+        "normal_errors": 0
+      },
+      "VMWare VCenter": {
+        "rows": 247,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            247,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          247,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ],
+        "class_groups": [
+          5,
+          0,
+          0
+        ],
+        "normal_errors": 0
+      },
+      "Windows Active Directory": {
+        "rows": 81033,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            80986,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            41
+          ]
+        ],
+        "class_support": [
+          80986,
+          0,
+          47
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.8723404255319149
+        ],
+        "class_precision": [
+          0.9999259186092454,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          0.9999629579325587,
+          null,
+          0.9318181818181818
+        ],
+        "class_groups": [
+          7436,
+          0,
+          45
+        ],
+        "normal_errors": 0
+      },
+      "Windows Logs": {
+        "rows": 38239,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            38239,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          38239,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ],
+        "class_groups": [
+          24,
+          0,
+          0
+        ],
+        "normal_errors": 0
+      }
+    }
+  },
+  "classifier_fits": {
+    "models": 3,
+    "primary_fits": 9,
+    "negative_control_fits": 1,
+    "seconds": 171.39027249999344,
+    "quality_accepted": false,
+    "external_or_blind_validation": false,
+    "views": [
+      {
+        "view": "A_SEMANTIC",
+        "chosen_C": 1.0,
+        "evaluation": {
+          "rows": 179075,
+          "macro_f1": 0.825778277402466,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3182,
+              6766,
+              142
+            ],
+            [
+              15,
+              687,
+              1061
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6705649157581764,
+            0.6018150879183211
+          ],
+          "class_precision": [
+            0.9812403546552908,
+            0.9078223534147323,
+            0.8819617622610141
+          ],
+          "class_f1": [
+            0.990531363193451,
+            0.7713617967280397,
+            0.7154416722859069
+          ],
+          "normal_errors": 0,
+          "class_groups": [
+            45990,
+            20,
+            77
+          ],
+          "sources": {
+            "<missing>": {
+              "rows": 20248,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  10158,
+                  0,
+                  0
+                ],
+                [
+                  3182,
+                  6766,
+                  142
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                10158,
+                10090,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                0.6705649157581764,
+                null
+              ],
+              "class_precision": [
+                0.7614692653673163,
+                1.0,
+                0.0
+              ],
+              "class_f1": [
+                0.8645842199336113,
+                0.8028001898433792,
+                null
+              ],
+              "class_groups": [
+                4409,
+                20,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "ASA Firewall": {
+              "rows": 733,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  685,
+                  48
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                733
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.06548431105047749
+              ],
+              "class_precision": [
+                null,
+                0.0,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.12291933418693982
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "AWS Instance Backup": {
+              "rows": 34013,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  34013,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                34013,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                34013,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "AWS VPC Security": {
+              "rows": 944,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  944
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                944
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "Barracuda WAF": {
+              "rows": 3304,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  3302,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "class_support": [
+                3302,
+                0,
+                2
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                1.0,
+                0.0,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                63,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "Duo": {
+              "rows": 33,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  23,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                23,
+                0,
+                10
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.696969696969697,
+                null,
+                null
+              ],
+              "class_f1": [
+                0.8214285714285714,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                1,
+                0,
+                2
+              ],
+              "normal_errors": 0
+            },
+            "Falcon": {
+              "rows": 5,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                5
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "ManageEngine ADManager": {
+              "rows": 252,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  252,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                252,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                40,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Precinct": {
+              "rows": 22,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  22
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                22
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                22
+              ],
+              "normal_errors": 0
+            },
+            "SentinelOne": {
+              "rows": 2,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                2,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                2,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "VMWare VCenter": {
+              "rows": 247,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  247,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                247,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                5,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Windows Active Directory": {
+              "rows": 81033,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  80986,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  47
+                ]
+              ],
+              "class_support": [
+                80986,
+                0,
+                47
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                7436,
+                0,
+                45
+              ],
+              "normal_errors": 0
+            },
+            "Windows Logs": {
+              "rows": 38239,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  38239,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                38239,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                24,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            }
+          }
+        },
+        "replay": {
+          "cases": 368,
+          "cached_comparable": 236,
+          "direct_cached_probability_max_difference": 0.0,
+          "direct_cached_decision_differences": 0,
+          "frozen_model_sha256": "dfda1cdfadd4ef4365de8f2b52ead1d841e3f1b3ddc16fb078da444660a7155c"
+        }
+      },
+      {
+        "view": "B_DESTINATION",
+        "chosen_C": 0.1,
+        "evaluation": {
+          "rows": 179075,
+          "macro_f1": 0.8249044653264749,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3182,
+              6766,
+              142
+            ],
+            [
+              21,
+              687,
+              1055
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6705649157581764,
+            0.598411798071469
+          ],
+          "class_precision": [
+            0.9812058090068946,
+            0.9078223534147323,
+            0.8813700918964077
+          ],
+          "class_f1": [
+            0.9905137614135473,
+            0.7713617967280397,
+            0.7128378378378378
+          ],
+          "normal_errors": 0,
+          "class_groups": [
+            45990,
+            20,
+            77
+          ],
+          "sources": {
+            "<missing>": {
+              "rows": 20248,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  10158,
+                  0,
+                  0
+                ],
+                [
+                  3182,
+                  6766,
+                  142
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                10158,
+                10090,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                0.6705649157581764,
+                null
+              ],
+              "class_precision": [
+                0.7614692653673163,
+                1.0,
+                0.0
+              ],
+              "class_f1": [
+                0.8645842199336113,
+                0.8028001898433792,
+                null
+              ],
+              "class_groups": [
+                4409,
+                20,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "ASA Firewall": {
+              "rows": 733,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  685,
+                  48
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                733
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.06548431105047749
+              ],
+              "class_precision": [
+                null,
+                0.0,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.12291933418693982
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "AWS Instance Backup": {
+              "rows": 34013,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  34013,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                34013,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                34013,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "AWS VPC Security": {
+              "rows": 944,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  944
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                944
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "Barracuda WAF": {
+              "rows": 3304,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  3302,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "class_support": [
+                3302,
+                0,
+                2
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                1.0,
+                0.0,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                63,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "Duo": {
+              "rows": 33,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  23,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                23,
+                0,
+                10
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.696969696969697,
+                null,
+                null
+              ],
+              "class_f1": [
+                0.8214285714285714,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                1,
+                0,
+                2
+              ],
+              "normal_errors": 0
+            },
+            "Falcon": {
+              "rows": 5,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                5
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "ManageEngine ADManager": {
+              "rows": 252,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  252,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                252,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                40,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Precinct": {
+              "rows": 22,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  22
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                22
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                22
+              ],
+              "normal_errors": 0
+            },
+            "SentinelOne": {
+              "rows": 2,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                2,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                2,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "VMWare VCenter": {
+              "rows": 247,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  247,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                247,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                5,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Windows Active Directory": {
+              "rows": 81033,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  80986,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  6,
+                  0,
+                  41
+                ]
+              ],
+              "class_support": [
+                80986,
+                0,
+                47
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.8723404255319149
+              ],
+              "class_precision": [
+                0.9999259186092454,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                0.9999629579325587,
+                null,
+                0.9318181818181818
+              ],
+              "class_groups": [
+                7436,
+                0,
+                45
+              ],
+              "normal_errors": 0
+            },
+            "Windows Logs": {
+              "rows": 38239,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  38239,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                38239,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                24,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            }
+          }
+        },
+        "replay": {
+          "cases": 368,
+          "cached_comparable": 236,
+          "direct_cached_probability_max_difference": 0.0,
+          "direct_cached_decision_differences": 0,
+          "frozen_model_sha256": "5cb636c7264591fe6e00e85eab254abe854b0ba0bde39f7392e46b5e949f5532"
+        }
+      },
+      {
+        "view": "C_BOTH",
+        "chosen_C": 0.1,
+        "evaluation": {
+          "rows": 179075,
+          "macro_f1": 0.8254874566300493,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3158,
+              6790,
+              142
+            ],
+            [
+              21,
+              687,
+              1055
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6729435084241824,
+            0.598411798071469
+          ],
+          "class_precision": [
+            0.9813440061971467,
+            0.9081182292363247,
+            0.8813700918964077
+          ],
+          "class_f1": [
+            0.9905841722868407,
+            0.7730403597654694,
+            0.7128378378378378
+          ],
+          "normal_errors": 0,
+          "class_groups": [
+            45990,
+            20,
+            77
+          ],
+          "sources": {
+            "<missing>": {
+              "rows": 20248,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  10158,
+                  0,
+                  0
+                ],
+                [
+                  3158,
+                  6790,
+                  142
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                10158,
+                10090,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                0.6729435084241824,
+                null
+              ],
+              "class_precision": [
+                0.7628416942024632,
+                1.0,
+                0.0
+              ],
+              "class_f1": [
+                0.8654681775581494,
+                0.8045023696682464,
+                null
+              ],
+              "class_groups": [
+                4409,
+                20,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "ASA Firewall": {
+              "rows": 733,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  685,
+                  48
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                733
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.06548431105047749
+              ],
+              "class_precision": [
+                null,
+                0.0,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.12291933418693982
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "AWS Instance Backup": {
+              "rows": 34013,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  34013,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                34013,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                34013,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "AWS VPC Security": {
+              "rows": 944,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  944
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                944
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                3
+              ],
+              "normal_errors": 0
+            },
+            "Barracuda WAF": {
+              "rows": 3304,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  3302,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  0
+                ]
+              ],
+              "class_support": [
+                3302,
+                0,
+                2
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                1.0,
+                0.0,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                63,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "Duo": {
+              "rows": 33,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  23,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                23,
+                0,
+                10
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.696969696969697,
+                null,
+                null
+              ],
+              "class_f1": [
+                0.8214285714285714,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                1,
+                0,
+                2
+              ],
+              "normal_errors": 0
+            },
+            "Falcon": {
+              "rows": 5,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                5
+              ],
+              "class_recall": [
+                null,
+                null,
+                0.0
+              ],
+              "class_precision": [
+                0.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                null,
+                null,
+                0.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                1
+              ],
+              "normal_errors": 0
+            },
+            "ManageEngine ADManager": {
+              "rows": 252,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  252,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                252,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                40,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Precinct": {
+              "rows": 22,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  22
+                ]
+              ],
+              "class_support": [
+                0,
+                0,
+                22
+              ],
+              "class_recall": [
+                null,
+                null,
+                1.0
+              ],
+              "class_precision": [
+                null,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                null,
+                null,
+                1.0
+              ],
+              "class_groups": [
+                0,
+                0,
+                22
+              ],
+              "normal_errors": 0
+            },
+            "SentinelOne": {
+              "rows": 2,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                2,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                2,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "VMWare VCenter": {
+              "rows": 247,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  247,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                247,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                5,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            },
+            "Windows Active Directory": {
+              "rows": 81033,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  80986,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  6,
+                  0,
+                  41
+                ]
+              ],
+              "class_support": [
+                80986,
+                0,
+                47
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                0.8723404255319149
+              ],
+              "class_precision": [
+                0.9999259186092454,
+                null,
+                1.0
+              ],
+              "class_f1": [
+                0.9999629579325587,
+                null,
+                0.9318181818181818
+              ],
+              "class_groups": [
+                7436,
+                0,
+                45
+              ],
+              "normal_errors": 0
+            },
+            "Windows Logs": {
+              "rows": 38239,
+              "macro_f1": null,
+              "confusion_matrix": [
+                [
+                  38239,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "class_support": [
+                38239,
+                0,
+                0
+              ],
+              "class_recall": [
+                1.0,
+                null,
+                null
+              ],
+              "class_precision": [
+                1.0,
+                null,
+                null
+              ],
+              "class_f1": [
+                1.0,
+                null,
+                null
+              ],
+              "class_groups": [
+                24,
+                0,
+                0
+              ],
+              "normal_errors": 0
+            }
+          }
+        },
+        "replay": {
+          "cases": 368,
+          "cached_comparable": 236,
+          "direct_cached_probability_max_difference": 0.0,
+          "direct_cached_decision_differences": 0,
+          "frozen_model_sha256": "3a7fde77112dce353ff764718e039829cf2dbada1e40b9497dd8917292fdd700"
+        }
+      }
+    ]
+  },
+  "codec": {
+    "rows": 66269,
+    "result": {
+      "A_SEMANTIC": {
+        "distinct_vectors": 15,
+        "minimum_total_errors": 3473
+      },
+      "B_DESTINATION": {
+        "distinct_vectors": 5295,
+        "minimum_total_errors": 2184
+      },
+      "C_BOTH": {
+        "distinct_vectors": 10748,
+        "minimum_total_errors": 1776
+      }
+    },
+    "scope": "Representation-only check on previously inspected ASA hard, including rows now used to fit; no accuracy or generalization claim"
+  },
+  "replay": {
+    "models": [
+      {
+        "view": "A_SEMANTIC",
+        "all_evaluation_rows": 179075,
+        "manual_softmax_max_difference": 0.0,
+        "saved_decision_differences": 0,
+        "raw_original_messages": 4790,
+        "raw_inference_messages_with_variants": 25959,
+        "wrapper_pairs": 21169,
+        "wrapper_probability_max_difference": 0.0,
+        "wrapper_decision_differences": 0,
+        "availability_prediction_agreement_per_true_class": [
+          1.0,
+          0.9849355797819623,
+          0.9682359614293817
+        ],
+        "conditional_score_permutation_macro_f1": {
+          "mean": 0.8338775858697286,
+          "min": 0.8323009570302896,
+          "max": 0.8362425291288869,
+          "scope": "diagnostic association test within fact-availability patterns; not label-preserving transformations"
+        },
+        "recomputed": {
+          "rows": 179075,
+          "macro_f1": 0.825778277402466,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3182,
+              6766,
+              142
+            ],
+            [
+              15,
+              687,
+              1061
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6705649157581764,
+            0.6018150879183211
+          ],
+          "class_precision": [
+            0.9812403546552908,
+            0.9078223534147323,
+            0.8819617622610141
+          ],
+          "class_f1": [
+            0.990531363193451,
+            0.7713617967280397,
+            0.7154416722859069
+          ]
+        },
+        "model_sha256": "dfda1cdfadd4ef4365de8f2b52ead1d841e3f1b3ddc16fb078da444660a7155c"
+      },
+      {
+        "view": "B_DESTINATION",
+        "all_evaluation_rows": 179075,
+        "manual_softmax_max_difference": 0.0,
+        "saved_decision_differences": 0,
+        "raw_original_messages": 4790,
+        "raw_inference_messages_with_variants": 25959,
+        "wrapper_pairs": 21169,
+        "wrapper_probability_max_difference": 0.0,
+        "wrapper_decision_differences": 0,
+        "availability_prediction_agreement_per_true_class": [
+          1.0,
+          0.9849355797819623,
+          0.9716392512762337
+        ],
+        "conditional_score_permutation_macro_f1": {
+          "mean": 0.8343806404698677,
+          "min": 0.8328012779459689,
+          "max": 0.8367496842557159,
+          "scope": "diagnostic association test within fact-availability patterns; not label-preserving transformations"
+        },
+        "recomputed": {
+          "rows": 179075,
+          "macro_f1": 0.8249044653264749,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3182,
+              6766,
+              142
+            ],
+            [
+              21,
+              687,
+              1055
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6705649157581764,
+            0.598411798071469
+          ],
+          "class_precision": [
+            0.9812058090068946,
+            0.9078223534147323,
+            0.8813700918964077
+          ],
+          "class_f1": [
+            0.9905137614135473,
+            0.7713617967280397,
+            0.7128378378378378
+          ]
+        },
+        "model_sha256": "5cb636c7264591fe6e00e85eab254abe854b0ba0bde39f7392e46b5e949f5532"
+      },
+      {
+        "view": "C_BOTH",
+        "all_evaluation_rows": 179075,
+        "manual_softmax_max_difference": 0.0,
+        "saved_decision_differences": 0,
+        "raw_original_messages": 4790,
+        "raw_inference_messages_with_variants": 25959,
+        "wrapper_pairs": 21169,
+        "wrapper_probability_max_difference": 0.0,
+        "wrapper_decision_differences": 0,
+        "availability_prediction_agreement_per_true_class": [
+          1.0,
+          0.9825569871159564,
+          0.9716392512762337
+        ],
+        "conditional_score_permutation_macro_f1": {
+          "mean": 0.8349617627230153,
+          "min": 0.8333827117075211,
+          "max": 0.8373303392462569,
+          "scope": "diagnostic association test within fact-availability patterns; not label-preserving transformations"
+        },
+        "recomputed": {
+          "rows": 179075,
+          "macro_f1": 0.8254874566300493,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              3158,
+              6790,
+              142
+            ],
+            [
+              21,
+              687,
+              1055
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.6729435084241824,
+            0.598411798071469
+          ],
+          "class_precision": [
+            0.9813440061971467,
+            0.9081182292363247,
+            0.8813700918964077
+          ],
+          "class_f1": [
+            0.9905841722868407,
+            0.7730403597654694,
+            0.7128378378378378
+          ]
+        },
+        "model_sha256": "3a7fde77112dce353ff764718e039829cf2dbada1e40b9497dd8917292fdd700"
+      }
+    ],
+    "all_replay_checks_passed": true,
+    "scope": "Numerical/decision replay and specified wrapper invariance only; not model quality acceptance"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "same_model_and_scores": {
+    "B2_CONTROL": {
+      "model.joblib": true,
+      "calibration.parquet": true,
+      "evaluation.parquet": true
+    },
+    "B2_REPAIRED": {
+      "model.joblib": true,
+      "calibration.parquet": true,
+      "evaluation.parquet": true
+    }
+  },
+  "model_or_threshold_selection_changed": false,
+  "reason": "Coarse relation class mixture is not identical projected-input label conflict."
+}

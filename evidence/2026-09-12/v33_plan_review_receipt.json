@@ -1,0 +1,18 @@
+{
+  "scope": "Plan consistency and evidence linkage only. No model or next-round runner was implemented or trained.",
+  "plan_sha256": "e47763ca67a8938b1b350ce2a359d709a5850d0c09b12d42132676777813301a",
+  "checks": {
+    "plan_version": true,
+    "fit_budget": true,
+    "historical_plan_preserved": true,
+    "no_new_training_claim": true,
+    "probe_script_identity": true,
+    "duo_official_and_prepared_rows": true,
+    "local_links_resolve": true
+  },
+  "all_checks_passed": true,
+  "evidence_sha256": {
+    "v33_plan_feasibility.json": "0376309371390e312773a253c1b0369cdeab8c038b3330b4c462e016d6b3ea05",
+    "v33_duo_field_review.json": "28747bee17516d6fd9f0bd395f277a80e6345a24690d5e561d4a7f04346a3ae0"
+  }
+}

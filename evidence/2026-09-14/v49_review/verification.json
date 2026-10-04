@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "candidate": "v49_observed_encoding_20260914",
+      "replay": [
+        {
+          "model": "pressure",
+          "probability_replay_rows": 179075,
+          "max_abs_difference": 0.0,
+          "real_raw_rows": 4319,
+          "specified_variants": 4319,
+          "zero_text_warnings": 33
+        }
+      ],
+      "labels_and_baseline_columns_verified": true,
+      "decisions_equal_v48": true
+    },
+    {
+      "candidate": "v49_word_character_20260914",
+      "replay": [
+        {
+          "model": "pressure",
+          "probability_replay_rows": 179075,
+          "max_abs_difference": 0.0,
+          "real_raw_rows": 4319,
+          "specified_variants": 4319,
+          "zero_text_warnings": 0
+        }
+      ],
+      "labels_and_baseline_columns_verified": true,
+      "decisions_equal_v48": true
+    }
+  ],
+  "new_classifier_fits": 2,
+  "primary_fits": 0,
+  "classifier_promoted": false,
+  "view_training_executed": false
+}

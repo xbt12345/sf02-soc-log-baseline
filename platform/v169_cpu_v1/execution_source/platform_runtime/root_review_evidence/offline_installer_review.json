@@ -1,0 +1,11 @@
+{
+  "status": "offline_installer_static_and_real_rejection_review",
+  "passed": true,
+  "all_actual_runtime_members_validate": 4534,
+  "unsafe_tar_cases_refused": 4,
+  "Windows_wrong_architecture_actual_exit": 1,
+  "private_installation_not_created_on_wrong_host": true,
+  "Python_3_8_syntax_reviewed": true,
+  "actual_Linux_installation_not_executed": true,
+  "official_model_calls": 0
+}

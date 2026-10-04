@@ -1,0 +1,11 @@
+{
+  "official_data_hashes_unchanged": true,
+  "official_data_sha256": {
+    "data\\official\\train.parquet": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "data\\official\\valid_answer_private.parquet": "11d8c34da6fddc823e9dc8e12de41bd8b66801d914e4a39b2b7e3161de082a56",
+    "data\\official\\valid_input.parquet": "731af597711aae0b870912c36fc1a0f592fd6e53d911c7fec6fe1405ec1a97b0"
+  },
+  "entry_links_checked": 40,
+  "missing_links": [],
+  "pending_in_progress_report_links": []
+}

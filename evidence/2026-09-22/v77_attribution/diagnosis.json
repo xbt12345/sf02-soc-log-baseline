@@ -1,0 +1,410 @@
+{
+  "new_fits": 0,
+  "quality_acceptance": false,
+  "scope": "Already inspected answer DEVELOPMENT diagnostics. Frozen models; no threshold fitting, no model promotion.",
+  "totals_on_same_target_rows": {
+    "D_inner": {
+      "rows": 2014052,
+      "errors": 12250,
+      "accuracy": 0.9939177340009097,
+      "macro_f1": 0.7516589477279029,
+      "support": [
+        1959573,
+        14052,
+        40427
+      ],
+      "recall": [
+        0.9999969381084552,
+        0.21007685738684884,
+        0.9717020802928735
+      ],
+      "precision": [
+        0.9967491675814031,
+        0.7381845461365342,
+        0.8908719809502211
+      ],
+      "f1": [
+        0.9983704115443236,
+        0.3270732923383746,
+        0.9295331393010103
+      ],
+      "normal_false_alerts": 6,
+      "cm": [
+        [
+          1959567,
+          4,
+          2
+        ],
+        [
+          6290,
+          2952,
+          4810
+        ],
+        [
+          101,
+          1043,
+          39283
+        ]
+      ]
+    },
+    "D_full": {
+      "rows": 2014052,
+      "errors": 12351,
+      "accuracy": 0.9938675863383865,
+      "macro_f1": 0.7385083408616975,
+      "support": [
+        1959573,
+        14052,
+        40427
+      ],
+      "recall": [
+        0.9999979587389701,
+        0.17662966125818388,
+        0.98078017166745
+      ],
+      "precision": [
+        0.9967613391280286,
+        0.7849462365591398,
+        0.8820127241179873
+      ],
+      "f1": [
+        0.9983770257564051,
+        0.2883699314511444,
+        0.928778065377543
+      ],
+      "normal_false_alerts": 4,
+      "cm": [
+        [
+          1959569,
+          4,
+          0
+        ],
+        [
+          6266,
+          2482,
+          5304
+        ],
+        [
+          101,
+          676,
+          39650
+        ]
+      ]
+    },
+    "F_inner": {
+      "rows": 2014052,
+      "errors": 13197,
+      "accuracy": 0.9934475376008166,
+      "macro_f1": 0.7228355235733472,
+      "support": [
+        1959573,
+        14052,
+        40427
+      ],
+      "recall": [
+        0.9999816286507316,
+        0.15684600056931397,
+        0.9675217057906844
+      ],
+      "precision": [
+        0.9967901876392211,
+        0.6338797814207651,
+        0.8744857807190127
+      ],
+      "f1": [
+        0.9983833577043985,
+        0.2514689942381197,
+        0.9186542187775233
+      ],
+      "normal_false_alerts": 36,
+      "cm": [
+        [
+          1959537,
+          8,
+          28
+        ],
+        [
+          6262,
+          2204,
+          5586
+        ],
+        [
+          48,
+          1265,
+          39114
+        ]
+      ]
+    },
+    "F_full": {
+      "rows": 2014052,
+      "errors": 12953,
+      "accuracy": 0.9935686864092883,
+      "macro_f1": 0.7242759701566784,
+      "support": [
+        1959573,
+        14052,
+        40427
+      ],
+      "recall": [
+        0.9999948968474255,
+        0.1555650441218332,
+        0.9733593885274693
+      ],
+      "precision": [
+        0.99680341349047,
+        0.6728224068944291,
+        0.8753002936204288
+      ],
+      "f1": [
+        0.9983966046945295,
+        0.2527021559447431,
+        0.9217291498307626
+      ],
+      "normal_false_alerts": 10,
+      "cm": [
+        [
+          1959563,
+          8,
+          2
+        ],
+        [
+          6262,
+          2186,
+          5604
+        ],
+        [
+          22,
+          1055,
+          39350
+        ]
+      ]
+    }
+  },
+  "target_paired_by_route": [
+    {
+      "route": "asa",
+      "arm": "D",
+      "rows": 43571,
+      "inner_errors": 3189,
+      "full_errors": 3292,
+      "fixed_by_refit": 371,
+      "broken_by_refit": 474,
+      "label_changes": 845
+    },
+    {
+      "route": "asa",
+      "arm": "F",
+      "rows": 43571,
+      "inner_errors": 4159,
+      "full_errors": 3967,
+      "fixed_by_refit": 266,
+      "broken_by_refit": 74,
+      "label_changes": 340
+    },
+    {
+      "route": "asa_acl",
+      "arm": "D",
+      "rows": 34,
+      "inner_errors": 6,
+      "full_errors": 4,
+      "fixed_by_refit": 2,
+      "broken_by_refit": 0,
+      "label_changes": 4
+    },
+    {
+      "route": "asa_acl",
+      "arm": "F",
+      "rows": 34,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "audit_fields",
+      "arm": "D",
+      "rows": 1701,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "audit_fields",
+      "arm": "F",
+      "rows": 1701,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "authentication",
+      "arm": "D",
+      "rows": 32,
+      "inner_errors": 29,
+      "full_errors": 29,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "authentication",
+      "arm": "F",
+      "rows": 32,
+      "inner_errors": 28,
+      "full_errors": 28,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "bounded_payload",
+      "arm": "D",
+      "rows": 91,
+      "inner_errors": 91,
+      "full_errors": 91,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "bounded_payload",
+      "arm": "F",
+      "rows": 91,
+      "inner_errors": 39,
+      "full_errors": 13,
+      "fixed_by_refit": 26,
+      "broken_by_refit": 0,
+      "label_changes": 26
+    },
+    {
+      "route": "cef_fields",
+      "arm": "D",
+      "rows": 8761,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "cef_fields",
+      "arm": "F",
+      "rows": 8761,
+      "inner_errors": 8,
+      "full_errors": 8,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "empty",
+      "arm": "D",
+      "rows": 954292,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "empty",
+      "arm": "F",
+      "rows": 954292,
+      "inner_errors": 0,
+      "full_errors": 0,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "unsupported",
+      "arm": "D",
+      "rows": 931735,
+      "inner_errors": 6226,
+      "full_errors": 6226,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "unsupported",
+      "arm": "F",
+      "rows": 931735,
+      "inner_errors": 6226,
+      "full_errors": 6226,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "vpc_v2",
+      "arm": "D",
+      "rows": 56010,
+      "inner_errors": 2664,
+      "full_errors": 2664,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "vpc_v2",
+      "arm": "F",
+      "rows": 56010,
+      "inner_errors": 2664,
+      "full_errors": 2664,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 0
+    },
+    {
+      "route": "windows_message",
+      "arm": "D",
+      "rows": 17825,
+      "inner_errors": 45,
+      "full_errors": 45,
+      "fixed_by_refit": 0,
+      "broken_by_refit": 0,
+      "label_changes": 24
+    },
+    {
+      "route": "windows_message",
+      "arm": "F",
+      "rows": 17825,
+      "inner_errors": 73,
+      "full_errors": 47,
+      "fixed_by_refit": 26,
+      "broken_by_refit": 0,
+      "label_changes": 26
+    }
+  ],
+  "D_former_holdout_comparison": {
+    "rows": 403321,
+    "inner_errors": 1044,
+    "full_errors": 812,
+    "fixed_by_refit": 446,
+    "broken_by_refit": 214,
+    "label_changes": 660
+  },
+  "former_holdout_warning": "Full model fitted these rows; full-model cell is resubstitution, NOT heldout/generalization.",
+  "causal_limit": "Refit contrast holds target records and representation fixed, but jointly changes training membership, update count/order and, for F, derived weights. It is not a pure training-size effect.",
+  "ranking_limit": "Within-route M/S ranking conditions on true M/S and excludes benign; not complete three-class quality or evidence calibration transfers.",
+  "source_sha256": "a09d3be64aa1495e0edced1cfe0dfa371a8c54f643ed1172e8b57bfc586e7fb1",
+  "private_answers_sha256": "11d8c34da6fddc823e9dc8e12de41bd8b66801d914e4a39b2b7e3161de082a56",
+  "outputs_sha256": {
+    "contract.json": "46523f1d62dcd59afe71002c3cfd65eee87d916ac5ff964d2c264df46f7af71f",
+    "former_holdout_refit_cells.csv": "f61b4cf9e850c25998b552c5c7aa57f230caf02925217eed6a7d9a1c7776c365",
+    "inference_receipt.json": "91d5760ed7cdd71ba539a9eb5191972c00aae9002a77472592668a0e0f55de96",
+    "internal_ranking.csv": "42a573c1eb59beb273ac1bedc02f414463f25b581e537f3595bada649edd727e",
+    "internal_ranking_receipt.json": "718d295282764811845fd6c62e3a10df2ac9e879d8eee94997465b86bb8dfcc9",
+    "paired_target_cells.csv": "5d2202b75899bac3e2920c5956f05e47e73a1d7857a589034d22dccf7bb6777e",
+    "predictions.parquet": "94b94a8a7bdd6b3f35a8b13f2ad336baab32ecf7361ee4664288306d5fbb2548",
+    "refit_weight_changes.csv": "82324dcc3ba09252047f1d595025592707f522c2e1ce37519a2f5e0040007a00",
+    "research_sources.json": "d14359d1b23d5f691f2f5b36d29a31cbcafd63c193e3299fa27596fd07800466",
+    "target_ranking.csv": "7edfc11c7c5399df96fbd86174c482ea25c1d6867b52befa8f811cef6a35a520"
+  }
+}

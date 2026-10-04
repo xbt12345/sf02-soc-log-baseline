@@ -1,0 +1,300 @@
+{
+  "status": "V159_boundary_completed_quality_failed_not_promoted",
+  "latest_actual": "V159",
+  "classifier_fits": 6,
+  "new_base_fits": 0,
+  "full_class_gradients": 342,
+  "preflight_full_class_gradients": 12,
+  "gradient_iterations": 171,
+  "proposals": 574,
+  "updates": 165,
+  "training_head_calls": 13376,
+  "training_opinion_feature_calls": 13376,
+  "evaluation_head_calls": 640,
+  "evaluation_opinion_feature_calls": 640,
+  "first_issue_training_qualification": false,
+  "second_third_and_full_goal_closed": false,
+  "TRAIN": {
+    "A": {
+      "joint_TRAIN_retention": {
+        "passed": true,
+        "previous": {
+          "passed": true,
+          "V138": {
+            "passed": true,
+            "scopes": [
+              {
+                "repair_protection_passed": true,
+                "protected_original_role_rows": 40879,
+                "new_errors_on_protected_original_rows": 0,
+                "all_reference_correct_regressions": 0,
+                "all_reference_errors_repaired": 0,
+                "not_task_quality_or_runtime_permission": true,
+                "scope_id": "TRAIN-PURE-READOUT-fold1"
+              }
+            ],
+            "only_scoped_TRAIN_retention_not_task_quality": true
+          },
+          "additional_V140": [
+            {
+              "repair_protection_passed": true,
+              "protected_original_role_rows": 92114,
+              "new_errors_on_protected_original_rows": 0,
+              "all_reference_correct_regressions": 0,
+              "all_reference_errors_repaired": 0,
+              "not_task_quality_or_runtime_permission": true,
+              "scope_id": "TRAIN-PURE-READOUT-fold2-C-V140"
+            }
+          ],
+          "training_scope_only_not_task_quality": true
+        },
+        "mastered_TRAIN": [
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 92315,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold0-V142"
+          },
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 40951,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold1-V142"
+          },
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 92292,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold2-V142"
+          }
+        ],
+        "TRAIN_mastery_only_not_generalization_or_task_acceptance": true
+      },
+      "all_roles_OOF_endpoint_mastered": false,
+      "all_roles_last5_distinct_and_mastered": false,
+      "protected_TRAIN_passed": true
+    },
+    "B": {
+      "joint_TRAIN_retention": {
+        "passed": true,
+        "previous": {
+          "passed": true,
+          "V138": {
+            "passed": true,
+            "scopes": [
+              {
+                "repair_protection_passed": true,
+                "protected_original_role_rows": 40879,
+                "new_errors_on_protected_original_rows": 0,
+                "all_reference_correct_regressions": 0,
+                "all_reference_errors_repaired": 0,
+                "not_task_quality_or_runtime_permission": true,
+                "scope_id": "TRAIN-PURE-READOUT-fold1"
+              }
+            ],
+            "only_scoped_TRAIN_retention_not_task_quality": true
+          },
+          "additional_V140": [
+            {
+              "repair_protection_passed": true,
+              "protected_original_role_rows": 92114,
+              "new_errors_on_protected_original_rows": 0,
+              "all_reference_correct_regressions": 0,
+              "all_reference_errors_repaired": 0,
+              "not_task_quality_or_runtime_permission": true,
+              "scope_id": "TRAIN-PURE-READOUT-fold2-C-V140"
+            }
+          ],
+          "training_scope_only_not_task_quality": true
+        },
+        "mastered_TRAIN": [
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 92315,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold0-V142"
+          },
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 40951,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold1-V142"
+          },
+          {
+            "repair_protection_passed": true,
+            "protected_original_role_rows": 92292,
+            "new_errors_on_protected_original_rows": 0,
+            "all_reference_correct_regressions": 0,
+            "all_reference_errors_repaired": 0,
+            "not_task_quality_or_runtime_permission": true,
+            "scope_id": "TRAIN-MASTERED-fold2-V142"
+          }
+        ],
+        "TRAIN_mastery_only_not_generalization_or_task_acceptance": true
+      },
+      "all_roles_OOF_endpoint_mastered": false,
+      "all_roles_last5_distinct_and_mastered": false,
+      "protected_TRAIN_passed": true
+    }
+  },
+  "matched_effect_passed": false,
+  "quality_acceptance": false,
+  "model_promoted": false,
+  "ASA_errors": {
+    "A": {
+      "M": 276,
+      "S": 4860
+    },
+    "B": {
+      "M": 1902,
+      "S": 1629
+    }
+  },
+  "original_pairs": {
+    "B_vs_A": {
+      "0": {
+        "support": 0,
+        "before_correct": 0,
+        "after_correct": 0,
+        "before_errors": 0,
+        "after_errors": 0,
+        "repairs": 0,
+        "new_errors": 0
+      },
+      "1": {
+        "support": 78748,
+        "before_correct": 78472,
+        "after_correct": 76846,
+        "before_errors": 276,
+        "after_errors": 1902,
+        "repairs": 52,
+        "new_errors": 1678
+      },
+      "2": {
+        "support": 34059,
+        "before_correct": 29199,
+        "after_correct": 32430,
+        "before_errors": 4860,
+        "after_errors": 1629,
+        "repairs": 3233,
+        "new_errors": 2
+      }
+    },
+    "B_vs_A0": {
+      "0": {
+        "support": 0,
+        "before_correct": 0,
+        "after_correct": 0,
+        "before_errors": 0,
+        "after_errors": 0,
+        "repairs": 0,
+        "new_errors": 0
+      },
+      "1": {
+        "support": 78748,
+        "before_correct": 78430,
+        "after_correct": 76846,
+        "before_errors": 318,
+        "after_errors": 1902,
+        "repairs": 8,
+        "new_errors": 1592
+      },
+      "2": {
+        "support": 34059,
+        "before_correct": 31985,
+        "after_correct": 32430,
+        "before_errors": 2074,
+        "after_errors": 1629,
+        "repairs": 459,
+        "new_errors": 14
+      }
+    },
+    "B_vs_V146_A": {
+      "0": {
+        "support": 0,
+        "before_correct": 0,
+        "after_correct": 0,
+        "before_errors": 0,
+        "after_errors": 0,
+        "repairs": 0,
+        "new_errors": 0
+      },
+      "1": {
+        "support": 78748,
+        "before_correct": 76844,
+        "after_correct": 76846,
+        "before_errors": 1904,
+        "after_errors": 1902,
+        "repairs": 2,
+        "new_errors": 0
+      },
+      "2": {
+        "support": 34059,
+        "before_correct": 32430,
+        "after_correct": 32430,
+        "before_errors": 1629,
+        "after_errors": 1629,
+        "repairs": 0,
+        "new_errors": 0
+      }
+    }
+  },
+  "historical_technical_cost": {
+    "classifier_forward_chunks": 124,
+    "opinion_feature_blocks": 124,
+    "full_class_gradients": 8,
+    "fits": 0,
+    "updates": 0,
+    "original_failed_preflight_head": 84,
+    "original_failed_preflight_gradients": 4,
+    "separate_diagnostic_head": 40,
+    "separate_diagnostic_gradients": 4,
+    "evidence": "artifacts/v159_gradient_diagnostic_saved_vector_review_v2_20261002/review.json"
+  },
+  "failed_evaluation_head_calls": 110,
+  "failed_evaluation_opinion_feature_calls": 110,
+  "cached_v5_actual_evaluation_heads": 360,
+  "new_v7_actual_evaluation_heads": 280,
+  "cached_full_q_provenance_boundary": "v5 actual full q not persisted; frozen complete training q has actual v5 full argmax/repeat assertion control-flow evidence; actual FIT rows/source arrays saved and independently verified",
+  "evaluation_repair_contract": "training/review_policy/v159_evaluation_cached_continuation_contract.json",
+  "evaluation_repair_seal_sha256": "2865a18b9535d836e3ef1031207fd9efaec718c771b0839f956f395e7fa2ca28",
+  "cumulative_actual_head_calls": 14586,
+  "cumulative_actual_full_class_gradients": 362,
+  "total_cumulative_caps": {
+    "fits": 6,
+    "new_base_fits": 0,
+    "gradient_iterations": 1200,
+    "fit_full_class_gradients": 2400,
+    "preflight_full_class_gradients": 12,
+    "full_class_gradients": 2420,
+    "proposal_evaluations": 3600,
+    "accepted_updates": 1200,
+    "preflight_classifier_forward_chunks": 336,
+    "fit_classifier_forward_chunks": 77016,
+    "evaluation_classifier_forward_chunks": 750,
+    "classifier_forward_chunks": 78226,
+    "opinion_feature_blocks": 78226,
+    "new_base_classifier_forward_chunks": 0,
+    "new_base_feature_blocks": 0,
+    "preflight_and_diagnostic_classifier_forward_chunks": 460,
+    "preflight_and_diagnostic_full_class_gradients": 20
+  },
+  "validation_scope": "Previously inspected development folds, not blind head validation; all full2056871 labels scored, non_ASA frozen.",
+  "automatic_extra_fits": false,
+  "seal_sha256": "5ddf026d6d6d66712cf904904413303c71ebdf6540b0188e6264c9ff513f4d7b"
+}

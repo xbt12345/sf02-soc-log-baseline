@@ -1,0 +1,102 @@
+{
+  "gate": "actual action in allow/deny/open/close AND transport tcp/udp/icmp/icmp6; audit only, not new model routing",
+  "rows": 119271,
+  "class_counts_B_M_S": [
+    16,
+    83024,
+    36231
+  ],
+  "by_role_route_label": [
+    {
+      "role": 0,
+      "route": "asa",
+      "label": 1,
+      "rows": 62946,
+      "bodies": 13410
+    },
+    {
+      "role": 0,
+      "route": "asa",
+      "label": 2,
+      "rows": 26214,
+      "bodies": 7921
+    },
+    {
+      "role": 0,
+      "route": "asa_acl",
+      "label": 0,
+      "rows": 16,
+      "bodies": 8
+    },
+    {
+      "role": 0,
+      "route": "vpc_v2",
+      "label": 2,
+      "rows": 6136,
+      "bodies": 26
+    },
+    {
+      "role": 1,
+      "route": "asa",
+      "label": 1,
+      "rows": 8962,
+      "bodies": 1639
+    },
+    {
+      "role": 1,
+      "route": "asa",
+      "label": 2,
+      "rows": 1260,
+      "bodies": 621
+    },
+    {
+      "role": 1,
+      "route": "native_firewall",
+      "label": 1,
+      "rows": 260,
+      "bodies": 33
+    },
+    {
+      "role": 1,
+      "route": "native_flow",
+      "label": 1,
+      "rows": 838,
+      "bodies": 100
+    },
+    {
+      "role": 1,
+      "route": "vpc_v2",
+      "label": 2,
+      "rows": 944,
+      "bodies": 4
+    },
+    {
+      "role": 2,
+      "route": "asa",
+      "label": 1,
+      "rows": 6838,
+      "bodies": 1434
+    },
+    {
+      "role": 2,
+      "route": "asa",
+      "label": 2,
+      "rows": 733,
+      "bodies": 16
+    },
+    {
+      "role": 2,
+      "route": "native_flow",
+      "label": 1,
+      "rows": 3180,
+      "bodies": 524
+    },
+    {
+      "role": 2,
+      "route": "vpc_v2",
+      "label": 2,
+      "rows": 944,
+      "bodies": 4
+    }
+  ]
+}

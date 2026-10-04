@@ -1,0 +1,60 @@
+{
+  "all_checks_passed": true,
+  "independent_count_models": [
+    {
+      "protocol": "pressure",
+      "keys": 15664,
+      "original_fit_rows_counted": 99398,
+      "class_counts": [
+        16,
+        71908,
+        27474
+      ]
+    },
+    {
+      "protocol": "fold_0",
+      "keys": 11586,
+      "original_fit_rows_counted": 71314,
+      "class_counts": [
+        12,
+        52498,
+        18804
+      ]
+    },
+    {
+      "protocol": "fold_1",
+      "keys": 11669,
+      "original_fit_rows_counted": 71311,
+      "class_counts": [
+        10,
+        52496,
+        18805
+      ]
+    },
+    {
+      "protocol": "fold_2",
+      "keys": 11610,
+      "original_fit_rows_counted": 71313,
+      "class_counts": [
+        10,
+        52498,
+        18805
+      ]
+    }
+  ],
+  "probability_rows_recomputed": 2061720,
+  "probability_values": 6185160,
+  "max_probability_difference": 2.220446049250313e-16,
+  "raw_checks": {
+    "original_records": 706,
+    "mixed_groups_covered": 215,
+    "metadata_variants": 706,
+    "embedded_header_variants": 690,
+    "endpoint_identity_acl_hash_variants": 690,
+    "saved_EBM_raw_prediction_rows": 2888,
+    "positions_sha256": "06574b4e5588f2b35221351e5d7be4b12df29a55bcb68a9a9823766b7332cd99",
+    "all_route_fact_and_output_checks_passed": true,
+    "scope": "Specified literal identity/header/outer-field changes preserve parsed facts. Actual roles, real port values and ICMP semantics were not changed. This is invariance verification, not proof these labels are true."
+  },
+  "promoted": false
+}

@@ -1,0 +1,860 @@
+{
+  "scope": "Synthetic semantic grouping counterexamples and recorded v2 source metrics; no fitting",
+  "code_sha256": "6859e8c6321b4758575e55ce6b74fe2794d293fc3d5fed83124a706c263d4c45",
+  "synthetic_group_counterexamples": [
+    {
+      "case": "windows_event_code",
+      "synthetic_not_raw_data": true,
+      "old_v2_group_same": true,
+      "behavior_or_context_features_differ": true,
+      "input_a": "{\"winlog\":{},\"code\":\"4624\",\"message\":\"An account was successfully logged on\"}",
+      "input_b": "{\"winlog\":{},\"code\":\"4625\",\"message\":\"An account was successfully logged on\"}"
+    },
+    {
+      "case": "asa_destination_port",
+      "synthetic_not_raw_data": true,
+      "old_v2_group_same": true,
+      "behavior_or_context_features_differ": true,
+      "input_a": "Deny tcp src outside:10.0.0.1/50100 dst inside:10.0.0.2/443",
+      "input_b": "Deny tcp src outside:10.0.0.1/50100 dst inside:10.0.0.2/3389"
+    },
+    {
+      "case": "http_outcome",
+      "synthetic_not_raw_data": true,
+      "old_v2_group_same": true,
+      "behavior_or_context_features_differ": true,
+      "input_a": "requestMethod=POST status=200",
+      "input_b": "requestMethod=POST status=403"
+    }
+  ],
+  "recorded_source_reports": [
+    {
+      "source": "ASA Firewall",
+      "variant": "core",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 20875,
+        "malicious": 87,
+        "suspicious": 145
+      },
+      "calibration_class_counts": {
+        "benign": 4633,
+        "malicious": 21,
+        "suspicious": 14
+      },
+      "early_stopping_class_counts": {
+        "benign": 2444,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 1,
+        "malicious": 0,
+        "suspicious": 1005
+      },
+      "evaluation_groups": 3,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 68,
+      "metrics": {
+        "rows": 1006,
+        "classes": {
+          "benign": {
+            "support": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 1005,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1005
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 1.0,
+        "macro_f1_all_three_zero_for_absent": 0.6666666666666666,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": 0.0,
+        "log_loss": 0.16465332290613682,
+        "multiclass_brier_sum_over_classes": 0.040577918869683365,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.0064380648698285645,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.0064380648698285645,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.0064380648698285645,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        }
+      ]
+    },
+    {
+      "source": "ASA Firewall",
+      "variant": "core_context",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 20875,
+        "malicious": 87,
+        "suspicious": 145
+      },
+      "calibration_class_counts": {
+        "benign": 4633,
+        "malicious": 21,
+        "suspicious": 14
+      },
+      "early_stopping_class_counts": {
+        "benign": 2444,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 1,
+        "malicious": 0,
+        "suspicious": 1005
+      },
+      "evaluation_groups": 3,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 67,
+      "metrics": {
+        "rows": 1006,
+        "classes": {
+          "benign": {
+            "support": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 1005,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1005,
+            0
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 0.0009940357852882703,
+        "macro_f1_all_three_zero_for_absent": 0.3333333333333333,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": 0.0,
+        "log_loss": 2.874026000948855,
+        "multiclass_brier_sum_over_classes": 1.6544805445090716,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.006618315553170829,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.006618315553170829,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.006618315553170829,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.0,
+          "audit_benign_support": 1,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 1005
+        }
+      ]
+    },
+    {
+      "source": "AWS VPC Security",
+      "variant": "core",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 20876,
+        "malicious": 87,
+        "suspicious": 243
+      },
+      "calibration_class_counts": {
+        "benign": 4633,
+        "malicious": 21,
+        "suspicious": 785
+      },
+      "early_stopping_class_counts": {
+        "benign": 2444,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 0,
+        "malicious": 0,
+        "suspicious": 136
+      },
+      "evaluation_groups": 5,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 68,
+      "metrics": {
+        "rows": 136,
+        "classes": {
+          "benign": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 136,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "average_precision": null,
+            "roc_auc": null
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            136
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 1.0,
+        "macro_f1_all_three_zero_for_absent": 0.3333333333333333,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": null,
+        "log_loss": 0.09621418010938333,
+        "multiclass_brier_sum_over_classes": 0.014742414103876167,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.00645528872495782,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.00645528872495782,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.00645528872495782,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        }
+      ]
+    },
+    {
+      "source": "AWS VPC Security",
+      "variant": "core_context",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 20876,
+        "malicious": 87,
+        "suspicious": 243
+      },
+      "calibration_class_counts": {
+        "benign": 4633,
+        "malicious": 21,
+        "suspicious": 785
+      },
+      "early_stopping_class_counts": {
+        "benign": 2444,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 0,
+        "malicious": 0,
+        "suspicious": 136
+      },
+      "evaluation_groups": 5,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 71,
+      "metrics": {
+        "rows": 136,
+        "classes": {
+          "benign": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 136,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": null,
+            "roc_auc": null
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            136,
+            0
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 0.0,
+        "macro_f1_all_three_zero_for_absent": 0.0,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": null,
+        "log_loss": 2.8170852493684144,
+        "multiclass_brier_sum_over_classes": 1.5534291219378342,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.00580852233944762,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.00580852233944762,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.00580852233944762,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 4633,
+          "calibration_normal_groups": 1006,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": null,
+          "audit_benign_support": 0,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 136
+        }
+      ]
+    },
+    {
+      "source": "Windows Active Directory",
+      "variant": "core",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 12928,
+        "malicious": 87,
+        "suspicious": 354
+      },
+      "calibration_class_counts": {
+        "benign": 2063,
+        "malicious": 21,
+        "suspicious": 799
+      },
+      "early_stopping_class_counts": {
+        "benign": 1622,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 11340,
+        "malicious": 0,
+        "suspicious": 11
+      },
+      "evaluation_groups": 5063,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 64,
+      "metrics": {
+        "rows": 11351,
+        "classes": {
+          "benign": {
+            "support": 11340,
+            "precision": 0.9990309223856929,
+            "recall": 1.0,
+            "f1": 0.9995152263011767,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 11,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            11340,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 0.9990309223856929,
+        "macro_f1_all_three_zero_for_absent": 0.33317174210039224,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": 0.0,
+        "log_loss": 0.01172932787527141,
+        "multiclass_brier_sum_over_classes": 0.0014272674336651414,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.010636970882565879,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.010636970882565879,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.010636970882565879,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        }
+      ]
+    },
+    {
+      "source": "Windows Active Directory",
+      "variant": "core_context",
+      "excluded_overlap_rows_other_sources": 0,
+      "fit_class_counts": {
+        "benign": 12928,
+        "malicious": 87,
+        "suspicious": 354
+      },
+      "calibration_class_counts": {
+        "benign": 2063,
+        "malicious": 21,
+        "suspicious": 799
+      },
+      "early_stopping_class_counts": {
+        "benign": 1622,
+        "malicious": 27,
+        "suspicious": 1
+      },
+      "evaluation_class_counts": {
+        "benign": 11340,
+        "malicious": 0,
+        "suspicious": 11
+      },
+      "evaluation_groups": 5063,
+      "status": "executed_diagnostic",
+      "class_weights": null,
+      "trees": 69,
+      "metrics": {
+        "rows": 11351,
+        "classes": {
+          "benign": {
+            "support": 11340,
+            "precision": 0.9990309223856929,
+            "recall": 1.0,
+            "f1": 0.9995152263011767,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          },
+          "malicious": {
+            "support": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": null,
+            "average_precision": null,
+            "roc_auc": null
+          },
+          "suspicious": {
+            "support": 11,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 1.0,
+            "roc_auc": 1.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            11340,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0
+          ]
+        ],
+        "matrix_order": [
+          "benign",
+          "malicious",
+          "suspicious"
+        ],
+        "accuracy": 0.9990309223856929,
+        "macro_f1_all_three_zero_for_absent": 0.33317174210039224,
+        "all_classes_present": false,
+        "normal_false_alerts": 0,
+        "false_alerts_per_10000_normal": 0.0,
+        "log_loss": 0.010173448121306052,
+        "multiclass_brier_sum_over_classes": 0.0012371511313051917,
+        "probabilities_calibrated": false
+      },
+      "thresholds": [
+        {
+          "requested_calibration_fpr_budget": 0.0001,
+          "threshold": 0.008875987500490791,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        },
+        {
+          "requested_calibration_fpr_budget": 0.001,
+          "threshold": 0.008875987500490791,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        },
+        {
+          "requested_calibration_fpr_budget": 0.01,
+          "threshold": 0.008875987500490791,
+          "comparison": "1 - P(benign) >= threshold",
+          "calibration_normal_rows": 2063,
+          "calibration_normal_groups": 310,
+          "empirical_calibration_fpr": 0.0,
+          "independent_low_fpr_guarantee": false,
+          "support_warning": "No independence proof; template group count does not establish a reliable low FPR guarantee.",
+          "audit_benign_alert_rate": 0.04268077601410935,
+          "audit_benign_support": 11340,
+          "audit_malicious_alert_rate": null,
+          "audit_malicious_support": 0,
+          "audit_suspicious_alert_rate": 1.0,
+          "audit_suspicious_support": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+{
+  "models": [
+    {
+      "model": "pressure",
+      "classification": {
+        "before": {
+          "rows": 179075,
+          "macro_f1": 0.8871606113729106,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              2,
+              9898,
+              190
+            ],
+            [
+              15,
+              687,
+              1061
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.9809712586719525,
+            0.6018150879183211
+          ],
+          "class_precision": [
+            0.9998983490692961,
+            0.9350968351440718,
+            0.8481215027977618
+          ],
+          "class_f1": [
+            0.9999491719512887,
+            0.957484885126965,
+            0.7040477770404777
+          ],
+          "errors": 894,
+          "normal_errors": 0,
+          "false_alerts_per_10000_normal": 0.0
+        },
+        "after": {
+          "rows": 179075,
+          "macro_f1": 0.8885990962126642,
+          "confusion_matrix": [
+            [
+              167222,
+              0,
+              0
+            ],
+            [
+              2,
+              9898,
+              190
+            ],
+            [
+              5,
+              687,
+              1071
+            ]
+          ],
+          "class_support": [
+            167222,
+            10090,
+            1763
+          ],
+          "class_recall": [
+            1.0,
+            0.9809712586719525,
+            0.6074872376630743
+          ],
+          "class_precision": [
+            0.999958141231485,
+            0.9350968351440718,
+            0.8493259318001586
+          ],
+          "class_f1": [
+            0.9999790701776942,
+            0.957484885126965,
+            0.7083333333333334
+          ],
+          "errors": 884,
+          "normal_errors": 0,
+          "false_alerts_per_10000_normal": 0.0
+        },
+        "routes": [
+          {
+            "route": "asa",
+            "rows": 7571,
+            "before_errors": 827,
+            "after_errors": 827,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_protocol",
+            "rows": 48,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "audit_fields",
+            "rows": 2651,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "authentication",
+            "rows": 33,
+            "before_errors": 10,
+            "after_errors": 0,
+            "fixes": 10,
+            "regressions": 0
+          },
+          {
+            "route": "bounded_payload",
+            "rows": 5,
+            "before_errors": 5,
+            "after_errors": 5,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "cef_fields",
+            "rows": 3326,
+            "before_errors": 2,
+            "after_errors": 2,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "empty",
+            "rows": 38066,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "format_payload",
+            "rows": 252,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_flow",
+            "rows": 3180,
+            "before_errors": 48,
+            "after_errors": 48,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_auth",
+            "rows": 22,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "vpc_v2",
+            "rows": 944,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_message",
+            "rows": 84738,
+            "before_errors": 2,
+            "after_errors": 2,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_rendered",
+            "rows": 38239,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          }
+        ],
+        "fixes": 10,
+        "regressions": 0,
+        "body_groups_improved": 9,
+        "body_groups_worsened": 0
+      },
+      "applicable_eval_rows": 17265,
+      "applicable_eval_class_counts_B_M_S": [
+        17186,
+        0,
+        79
+      ],
+      "full_probabilities_before": {
+        "log_loss": 0.025989791709889506,
+        "multiclass_brier_sum": 0.010327609930382467
+      },
+      "full_probabilities_after": {
+        "log_loss": 0.025911740341355727,
+        "multiclass_brier_sum": 0.01027457495605522
+      },
+      "applicable_probabilities_before": {
+        "log_loss": 0.0008690445318924964,
+        "multiclass_brier_sum": 0.0005530552965902002
+      },
+      "applicable_probabilities_after": {
+        "log_loss": 5.9484797158258106e-05,
+        "multiclass_brier_sum": 2.9691090633168687e-06
+      },
+      "exactly_equal_nonapplicable_probabilities": true,
+      "optimizer_objective_recomputed": 0.00020752240748381202,
+      "optimizer_gradient_max_recomputed": 2.360821832349741e-09,
+      "residual_columns_from_applicable_fit_views_only": true
+    },
+    {
+      "model": "fold_0",
+      "classification": {
+        "before": {
+          "rows": 459507,
+          "macro_f1": 0.9617007434848958,
+          "confusion_matrix": [
+            [
+              419598,
+              0,
+              4
+            ],
+            [
+              0,
+              27432,
+              274
+            ],
+            [
+              10,
+              1600,
+              10589
+            ]
+          ],
+          "class_support": [
+            419602,
+            27706,
+            12199
+          ],
+          "class_recall": [
+            0.9999904671569726,
+            0.9901104453908901,
+            0.8680219690138536
+          ],
+          "class_precision": [
+            0.9999761682332081,
+            0.9448883990079912,
+            0.9744179626391829
+          ],
+          "class_f1": [
+            0.9999833176439747,
+            0.9669709894603264,
+            0.9181479233503859
+          ],
+          "errors": 1888,
+          "normal_errors": 4,
+          "false_alerts_per_10000_normal": 0.09532843027440288
+        },
+        "after": {
+          "rows": 459507,
+          "macro_f1": 0.9617007434848958,
+          "confusion_matrix": [
+            [
+              419598,
+              0,
+              4
+            ],
+            [
+              0,
+              27432,
+              274
+            ],
+            [
+              10,
+              1600,
+              10589
+            ]
+          ],
+          "class_support": [
+            419602,
+            27706,
+            12199
+          ],
+          "class_recall": [
+            0.9999904671569726,
+            0.9901104453908901,
+            0.8680219690138536
+          ],
+          "class_precision": [
+            0.9999761682332081,
+            0.9448883990079912,
+            0.9744179626391829
+          ],
+          "class_f1": [
+            0.9999833176439747,
+            0.9669709894603264,
+            0.9181479233503859
+          ],
+          "errors": 1888,
+          "normal_errors": 4,
+          "false_alerts_per_10000_normal": 0.09532843027440288
+        },
+        "routes": [
+          {
+            "route": "asa",
+            "rows": 35651,
+            "before_errors": 1872,
+            "after_errors": 1872,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_acl",
+            "rows": 4,
+            "before_errors": 4,
+            "after_errors": 4,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_protocol",
+            "rows": 16,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "audit_fields",
+            "rows": 977,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "authentication",
+            "rows": 12,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "bounded_payload",
+            "rows": 10,
+            "before_errors": 10,
+            "after_errors": 10,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "cef_fields",
+            "rows": 1120,
+            "before_errors": 2,
+            "after_errors": 2,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "empty",
+            "rows": 93401,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "format_payload",
+            "rows": 169,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_firewall",
+            "rows": 84,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_flow",
+            "rows": 1342,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_auth",
+            "rows": 58,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_body",
+            "rows": 3284,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "vpc_v2",
+            "rows": 2596,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_message",
+            "rows": 218986,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_rendered",
+            "rows": 101797,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          }
+        ],
+        "fixes": 0,
+        "regressions": 0,
+        "body_groups_improved": 0,
+        "body_groups_worsened": 0
+      },
+      "applicable_eval_rows": 34085,
+      "applicable_eval_class_counts_B_M_S": [
+        33897,
+        0,
+        188
+      ],
+      "full_probabilities_before": {
+        "log_loss": 0.013378397774774084,
+        "multiclass_brier_sum": 0.00689256107606419
+      },
+      "full_probabilities_after": {
+        "log_loss": 0.013351942669482041,
+        "multiclass_brier_sum": 0.0068821519717077815
+      },
+      "applicable_probabilities_before": {
+        "log_loss": 0.0003969551724821621,
+        "multiclass_brier_sum": 0.00014097429614641507
+      },
+      "applicable_probabilities_after": {
+        "log_loss": 4.030837572612695e-05,
+        "multiclass_brier_sum": 6.469874915637443e-07
+      },
+      "exactly_equal_nonapplicable_probabilities": true,
+      "optimizer_objective_recomputed": 0.00023737363117818264,
+      "optimizer_gradient_max_recomputed": 8.301160946536336e-10,
+      "residual_columns_from_applicable_fit_views_only": true
+    },
+    {
+      "model": "fold_1",
+      "classification": {
+        "before": {
+          "rows": 459692,
+          "macro_f1": 0.9502479734898884,
+          "confusion_matrix": [
+            [
+              419543,
+              2,
+              4
+            ],
+            [
+              0,
+              27508,
+              204
+            ],
+            [
+              10,
+              2224,
+              10197
+            ]
+          ],
+          "class_support": [
+            419549,
+            27712,
+            12431
+          ],
+          "class_recall": [
+            0.9999856989290882,
+            0.9926385681293303,
+            0.8202879897031614
+          ],
+          "class_precision": [
+            0.9999761651090565,
+            0.9251362077083474,
+            0.9800096107640558
+          ],
+          "class_f1": [
+            0.9999809319963485,
+            0.9576994046582877,
+            0.8930635838150289
+          ],
+          "errors": 2444,
+          "normal_errors": 6,
+          "false_alerts_per_10000_normal": 0.14301070911860117
+        },
+        "after": {
+          "rows": 459692,
+          "macro_f1": 0.9502479734898884,
+          "confusion_matrix": [
+            [
+              419543,
+              2,
+              4
+            ],
+            [
+              0,
+              27508,
+              204
+            ],
+            [
+              10,
+              2224,
+              10197
+            ]
+          ],
+          "class_support": [
+            419549,
+            27712,
+            12431
+          ],
+          "class_recall": [
+            0.9999856989290882,
+            0.9926385681293303,
+            0.8202879897031614
+          ],
+          "class_precision": [
+            0.9999761651090565,
+            0.9251362077083474,
+            0.9800096107640558
+          ],
+          "class_f1": [
+            0.9999809319963485,
+            0.9576994046582877,
+            0.8930635838150289
+          ],
+          "errors": 2444,
+          "normal_errors": 6,
+          "false_alerts_per_10000_normal": 0.14301070911860117
+        },
+        "routes": [
+          {
+            "route": "asa",
+            "rows": 35652,
+            "before_errors": 2428,
+            "after_errors": 2428,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_acl",
+            "rows": 6,
+            "before_errors": 6,
+            "after_errors": 6,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_protocol",
+            "rows": 16,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "audit_fields",
+            "rows": 977,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "authentication",
+            "rows": 11,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "bounded_payload",
+            "rows": 10,
+            "before_errors": 10,
+            "after_errors": 10,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "cef_fields",
+            "rows": 1116,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "empty",
+            "rows": 93401,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "format_payload",
+            "rows": 168,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_firewall",
+            "rows": 88,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_flow",
+            "rows": 1342,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_auth",
+            "rows": 58,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_body",
+            "rows": 3285,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "vpc_v2",
+            "rows": 2832,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_message",
+            "rows": 218986,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_rendered",
+            "rows": 101744,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          }
+        ],
+        "fixes": 0,
+        "regressions": 0,
+        "body_groups_improved": 0,
+        "body_groups_worsened": 0
+      },
+      "applicable_eval_rows": 32067,
+      "applicable_eval_class_counts_B_M_S": [
+        31880,
+        0,
+        187
+      ],
+      "full_probabilities_before": {
+        "log_loss": 0.022704441368645124,
+        "multiclass_brier_sum": 0.009437736380598347
+      },
+      "full_probabilities_after": {
+        "log_loss": 0.022676972304701164,
+        "multiclass_brier_sum": 0.009426103102367626
+      },
+      "applicable_probabilities_before": {
+        "log_loss": 0.00043681934869154555,
+        "multiclass_brier_sum": 0.0001677703430392083
+      },
+      "applicable_probabilities_after": {
+        "log_loss": 4.3040418871903154e-05,
+        "multiclass_brier_sum": 1.0031076746660892e-06
+      },
+      "exactly_equal_nonapplicable_probabilities": true,
+      "optimizer_objective_recomputed": 0.00022795730269941267,
+      "optimizer_gradient_max_recomputed": 1.953116632879029e-09,
+      "residual_columns_from_applicable_fit_views_only": true
+    },
+    {
+      "model": "fold_2",
+      "classification": {
+        "before": {
+          "rows": 459451,
+          "macro_f1": 0.9656026866644801,
+          "confusion_matrix": [
+            [
+              419541,
+              2,
+              4
+            ],
+            [
+              2,
+              27630,
+              76
+            ],
+            [
+              10,
+              1596,
+              10590
+            ]
+          ],
+          "class_support": [
+            419547,
+            27708,
+            12196
+          ],
+          "class_recall": [
+            0.9999856988609143,
+            0.9971849285404937,
+            0.8683174811413579
+          ],
+          "class_precision": [
+            0.9999713981308679,
+            0.9453263993430957,
+            0.9925023430178069
+          ],
+          "class_f1": [
+            0.9999785484447622,
+            0.9705634396515386,
+            0.9262660718971398
+          ],
+          "errors": 1690,
+          "normal_errors": 6,
+          "false_alerts_per_10000_normal": 0.1430113908572818
+        },
+        "after": {
+          "rows": 459451,
+          "macro_f1": 0.9656026866644801,
+          "confusion_matrix": [
+            [
+              419541,
+              2,
+              4
+            ],
+            [
+              2,
+              27630,
+              76
+            ],
+            [
+              10,
+              1596,
+              10590
+            ]
+          ],
+          "class_support": [
+            419547,
+            27708,
+            12196
+          ],
+          "class_recall": [
+            0.9999856988609143,
+            0.9971849285404937,
+            0.8683174811413579
+          ],
+          "class_precision": [
+            0.9999713981308679,
+            0.9453263993430957,
+            0.9925023430178069
+          ],
+          "class_f1": [
+            0.9999785484447622,
+            0.9705634396515386,
+            0.9262660718971398
+          ],
+          "errors": 1690,
+          "normal_errors": 6,
+          "false_alerts_per_10000_normal": 0.1430113908572818
+        },
+        "routes": [
+          {
+            "route": "asa",
+            "rows": 35650,
+            "before_errors": 1672,
+            "after_errors": 1672,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_acl",
+            "rows": 6,
+            "before_errors": 6,
+            "after_errors": 6,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "asa_protocol",
+            "rows": 16,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "audit_fields",
+            "rows": 977,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "authentication",
+            "rows": 10,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "bounded_payload",
+            "rows": 10,
+            "before_errors": 10,
+            "after_errors": 10,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "cef_fields",
+            "rows": 1112,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "empty",
+            "rows": 93401,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "format_payload",
+            "rows": 168,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_firewall",
+            "rows": 88,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "native_flow",
+            "rows": 1342,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_auth",
+            "rows": 59,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "syslog_body",
+            "rows": 3285,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "vpc_v2",
+            "rows": 2596,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_message",
+            "rows": 218987,
+            "before_errors": 2,
+            "after_errors": 2,
+            "fixes": 0,
+            "regressions": 0
+          },
+          {
+            "route": "windows_rendered",
+            "rows": 101744,
+            "before_errors": 0,
+            "after_errors": 0,
+            "fixes": 0,
+            "regressions": 0
+          }
+        ],
+        "fixes": 0,
+        "regressions": 0,
+        "body_groups_improved": 0,
+        "body_groups_worsened": 0
+      },
+      "applicable_eval_rows": 29311,
+      "applicable_eval_class_counts_B_M_S": [
+        29123,
+        0,
+        188
+      ],
+      "full_probabilities_before": {
+        "log_loss": 0.011767015692673336,
+        "multiclass_brier_sum": 0.006079901101536707
+      },
+      "full_probabilities_after": {
+        "log_loss": 0.011740410012671953,
+        "multiclass_brier_sum": 0.006069167188062791
+      },
+      "applicable_probabilities_before": {
+        "log_loss": 0.00045905812729513936,
+        "multiclass_brier_sum": 0.00016912007567611856
+      },
+      "applicable_probabilities_after": {
+        "log_loss": 4.2013117492843416e-05,
+        "multiclass_brier_sum": 8.655882992141154e-07
+      },
+      "exactly_equal_nonapplicable_probabilities": true,
+      "optimizer_objective_recomputed": 0.0002220353560384313,
+      "optimizer_gradient_max_recomputed": 1.6716019517809806e-09,
+      "residual_columns_from_applicable_fit_views_only": true
+    }
+  ],
+  "pressure_authentication": [
+    {
+      "text": "allow_unenrolled_user",
+      "facts": {
+        "dst_port_fixed": 65536,
+        "policy_decision": "allowed",
+        "src_port_fixed": 65536
+      },
+      "rows": 23,
+      "before": [
+        0.9998353314711815,
+        4.6388708550021014e-05,
+        0.00011827982026852206
+      ],
+      "after": [
+        0.9998353314711815,
+        4.6388708550021014e-05,
+        0.00011827982026852206
+      ]
+    },
+    {
+      "text": "no_response denied",
+      "facts": {
+        "auth_result": "failure",
+        "authentication_interaction": "no_response",
+        "dst_port_fixed": 65536,
+        "outcome": "failure",
+        "response": "missing",
+        "src_port_fixed": 65536
+      },
+      "rows": 8,
+      "before": [
+        0.5799504117869785,
+        0.0019626711327621607,
+        0.41808691708025947
+      ],
+      "after": [
+        0.04760733240044073,
+        0.00025577208985298804,
+        0.9521368955097063
+      ]
+    },
+    {
+      "text": "invalid_passcode denied",
+      "facts": {
+        "auth_result": "failure",
+        "credential_check": "invalid",
+        "dst_port_fixed": 65536,
+        "outcome": "failure",
+        "src_port_fixed": 65536
+      },
+      "rows": 2,
+      "before": [
+        0.5038694423827317,
+        0.001973895587528877,
+        0.49415666202973935
+      ],
+      "after": [
+        0.019445270763942858,
+        0.00016395711509314888,
+        0.980390772120964
+      ]
+    }
+  ],
+  "invalid_credential_probe": {
+    "fit_rows": 314,
+    "cases": [
+      {
+        "facts": {
+          "auth_result": "failure",
+          "credential_check": "invalid",
+          "outcome": "failure"
+        },
+        "before": [
+          0.5038694423827317,
+          0.001973895587528877,
+          0.49415666202973935
+        ],
+        "after": [
+          0.019445270763942858,
+          0.00016395711509314888,
+          0.980390772120964
+        ]
+      }
+    ],
+    "scope": "Fit-side partial-view diagnostic, not unseen classification."
+  },
+  "scope": "Previously inspected official development data; probability losses do not establish calibration or new-environment accuracy.",
+  "analysis_source_sha256": "89b0f5bf22a7cd77ea4a975ef3f07c13e01877e124a18aeec5f05af699902462"
+}

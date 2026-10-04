@@ -1,0 +1,458 @@
+{
+  "scope": "Read-only official task and full training-data support audit. No training, new labels, external data, or established causal claims.",
+  "source_file_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "official_doc_sha256": "091b5b234fc6c06c69eea79b4a71944845f6550c84606adcfde27940abcadb3f",
+  "official_task_extraction_sha256": "c364c4cb2a321aed26f28d574cb6d391cff58f1a428dd532360f85b051a4fc4e",
+  "rows": 2056871,
+  "source_class_counts": [
+    {
+      "source": "<missing>",
+      "class_counts": [
+        247299,
+        111728,
+        0
+      ],
+      "observed_classes": 2
+    },
+    {
+      "source": "ASA Firewall",
+      "class_counts": [
+        20,
+        0,
+        34059
+      ],
+      "observed_classes": 2
+    },
+    {
+      "source": "AWS Instance Backup",
+      "class_counts": [
+        340131,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "AWS VPC Security",
+      "class_counts": [
+        0,
+        0,
+        10620
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Apache Web Server",
+      "class_counts": [
+        36,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Barracuda ESS",
+      "class_counts": [
+        74,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Barracuda WAF",
+      "class_counts": [
+        4128,
+        0,
+        2
+      ],
+      "observed_classes": 2
+    },
+    {
+      "source": "Cisco Network Operating System",
+      "class_counts": [
+        3697,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Duo",
+      "class_counts": [
+        325,
+        0,
+        12
+      ],
+      "observed_classes": 2
+    },
+    {
+      "source": "Falcon",
+      "class_counts": [
+        0,
+        0,
+        35
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Linux PAM",
+      "class_counts": [
+        17822,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "ManageEngine ADManager",
+      "class_counts": [
+        4082,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Precinct",
+      "class_counts": [
+        0,
+        0,
+        219
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "SentinelOne",
+      "class_counts": [
+        25,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Symantec Endpoint Protection",
+      "class_counts": [
+        2361,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "VMWare VCenter",
+      "class_counts": [
+        88311,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    },
+    {
+      "source": "Windows Active Directory",
+      "class_counts": [
+        809860,
+        0,
+        473
+      ],
+      "observed_classes": 2
+    },
+    {
+      "source": "Windows Logs",
+      "class_counts": [
+        381552,
+        0,
+        0
+      ],
+      "observed_classes": 1
+    }
+  ],
+  "all_malicious_in_missing_product_bucket": true,
+  "named_product_buckets": 17,
+  "named_product_buckets_with_malicious": 0,
+  "named_product_buckets_with_one_observed_class": 13,
+  "context_availability_by_class": {
+    "benign": {
+      "rows": 1899723,
+      "fields": {
+        "timestamp": {
+          "nonmissing_rows": 1899723,
+          "unique_values": 1899245,
+          "min": 1721992220.472047,
+          "max": 1724357487.9730003
+        },
+        "src_ip": {
+          "nonmissing_rows": 475917,
+          "unique_values": 2259
+        },
+        "dst_ip": {
+          "nonmissing_rows": 22832,
+          "unique_values": 441
+        },
+        "src_port": {
+          "nonmissing_rows": 106002,
+          "unique_values": 14197
+        },
+        "src_host": {
+          "nonmissing_rows": 1899700,
+          "unique_values": 120
+        },
+        "dst_host": {
+          "nonmissing_rows": 385664,
+          "unique_values": 10
+        },
+        "username": {
+          "nonmissing_rows": 638982,
+          "unique_values": 1416
+        }
+      },
+      "rows_with_time_and_src_ip": 475917,
+      "rows_with_time_and_username": 638982
+    },
+    "malicious": {
+      "rows": 111728,
+      "fields": {
+        "timestamp": {
+          "nonmissing_rows": 111728,
+          "unique_values": 12464,
+          "min": 1655105535.0,
+          "max": 1721320345.0
+        },
+        "src_ip": {
+          "nonmissing_rows": 111702,
+          "unique_values": 10185
+        },
+        "dst_ip": {
+          "nonmissing_rows": 111726,
+          "unique_values": 1707
+        },
+        "src_port": {
+          "nonmissing_rows": 109662,
+          "unique_values": 14990
+        },
+        "src_host": {
+          "nonmissing_rows": 111728,
+          "unique_values": 6
+        },
+        "dst_host": {
+          "nonmissing_rows": 0,
+          "unique_values": 0
+        },
+        "username": {
+          "nonmissing_rows": 52,
+          "unique_values": 2
+        }
+      },
+      "rows_with_time_and_src_ip": 111702,
+      "rows_with_time_and_username": 52
+    },
+    "suspicious": {
+      "rows": 45420,
+      "fields": {
+        "timestamp": {
+          "nonmissing_rows": 45420,
+          "unique_values": 45387,
+          "min": 1721992226.4811196,
+          "max": 1721995207.1149347
+        },
+        "src_ip": {
+          "nonmissing_rows": 45184,
+          "unique_values": 374
+        },
+        "dst_ip": {
+          "nonmissing_rows": 44681,
+          "unique_values": 74
+        },
+        "src_port": {
+          "nonmissing_rows": 44430,
+          "unique_values": 6856
+        },
+        "src_host": {
+          "nonmissing_rows": 45420,
+          "unique_values": 9
+        },
+        "dst_host": {
+          "nonmissing_rows": 0,
+          "unique_values": 0
+        },
+        "username": {
+          "nonmissing_rows": 164,
+          "unique_values": 21
+        }
+      },
+      "rows_with_time_and_src_ip": 45184,
+      "rows_with_time_and_username": 164
+    }
+  },
+  "cross_product_identifier_overlap": {
+    "src_ip": {
+      "distinct_nonmissing_values": 12653,
+      "values_in_multiple_product_buckets": 157,
+      "maximum_product_buckets_per_value": 2
+    },
+    "username": {
+      "distinct_nonmissing_values": 1420,
+      "values_in_multiple_product_buckets": 7,
+      "maximum_product_buckets_per_value": 4
+    }
+  },
+  "format_route_class_counts": [
+    {
+      "format": "asa_like",
+      "route": "asa",
+      "label": "malicious",
+      "rows": 78748
+    },
+    {
+      "format": "asa_like",
+      "route": "asa",
+      "label": "suspicious",
+      "rows": 34059
+    },
+    {
+      "format": "cef_like",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 4137
+    },
+    {
+      "format": "cef_like",
+      "route": "unchanged",
+      "label": "malicious",
+      "rows": 50
+    },
+    {
+      "format": "cef_like",
+      "route": "unchanged",
+      "label": "suspicious",
+      "rows": 2
+    },
+    {
+      "format": "empty",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 356315
+    },
+    {
+      "format": "json_fragment",
+      "route": "authentication",
+      "label": "benign",
+      "rows": 325
+    },
+    {
+      "format": "json_fragment",
+      "route": "authentication",
+      "label": "suspicious",
+      "rows": 12
+    },
+    {
+      "format": "json_fragment",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 386619
+    },
+    {
+      "format": "json_fragment",
+      "route": "unchanged",
+      "label": "malicious",
+      "rows": 24
+    },
+    {
+      "format": "json_fragment",
+      "route": "unchanged",
+      "label": "suspicious",
+      "rows": 35
+    },
+    {
+      "format": "network_kv",
+      "route": "unchanged",
+      "label": "malicious",
+      "rows": 32596
+    },
+    {
+      "format": "syslog_like",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 267703
+    },
+    {
+      "format": "syslog_like",
+      "route": "unchanged",
+      "label": "malicious",
+      "rows": 308
+    },
+    {
+      "format": "syslog_like",
+      "route": "unchanged",
+      "label": "suspicious",
+      "rows": 219
+    },
+    {
+      "format": "unknown",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 54741
+    },
+    {
+      "format": "vpc14",
+      "route": "unchanged",
+      "label": "suspicious",
+      "rows": 10620
+    },
+    {
+      "format": "windows_json_like",
+      "route": "unchanged",
+      "label": "benign",
+      "rows": 829883
+    },
+    {
+      "format": "windows_json_like",
+      "route": "unchanged",
+      "label": "malicious",
+      "rows": 2
+    },
+    {
+      "format": "windows_json_like",
+      "route": "unchanged",
+      "label": "suspicious",
+      "rows": 473
+    }
+  ],
+  "representation": {
+    "nonempty_mixed_text_groups": 75,
+    "rows_in_mixed_text_groups": 4075,
+    "fixed_text_deterministic_classifier_empirical_min_errors": 1116,
+    "original_empty_rows": 356315,
+    "auth_no_observable_fact_rows": 263,
+    "scope": "An empirical limitation of this fixed representation, not a Bayes error or proof of incorrect labels."
+  },
+  "literal_authentication_probes": {
+    "windows_failed_logon": [
+      {
+        "source": "Windows Active Directory",
+        "label": "suspicious",
+        "rows": 473
+      }
+    ],
+    "pam_auth_failure": [
+      {
+        "source": "Precinct",
+        "label": "suspicious",
+        "rows": 219
+      }
+    ],
+    "ssh_failed_password": [],
+    "duo_invalid_passcode": [
+      {
+        "source": "Duo",
+        "label": "suspicious",
+        "rows": 2
+      }
+    ]
+  },
+  "literal_probe_scope": "Phrase occurrences, not attack facts or comparable label-policy evidence. See raw cases before interpreting.",
+  "context_identity_and_clock_semantics_verified": false,
+  "elapsed_seconds": 155.43183429999044,
+  "source_code_sha256": "25277cbde5ee847ecd8f475051420403873805e961888c88c2554aacc82a3166"
+}

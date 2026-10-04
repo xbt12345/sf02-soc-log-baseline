@@ -1,0 +1,845 @@
+{
+  "scope": "No new model fit or evaluation prediction. Same semantic TCP outside-to-dmz context; fit/calibration natural missingness vs predeclared deletion of visible source/destination port fields. Per-row labels unchanged. Groups differ between natural and synthetic, so score/rate differences describe distributions, not a causal treatment effect. Missing class risk is unavailable rather than zero.",
+  "records": [
+    {
+      "protocol": "body",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 11361,
+      "body_groups": 2820,
+      "classes_B_M_S": [
+        0,
+        9862,
+        1499
+      ],
+      "base_errors_B_M_S": [
+        0,
+        52,
+        843
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.07060608267784119,
+        1.0725085735321045
+      ],
+      "unique_observations": 1236,
+      "empirical_min_total_errors": 772,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "body",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "body",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "body",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 23389,
+      "body_groups": 5075,
+      "classes_B_M_S": [
+        0,
+        23048,
+        341
+      ],
+      "base_errors_B_M_S": [
+        0,
+        476,
+        299
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.10468918830156326,
+        2.3700926303863525
+      ],
+      "unique_observations": 2342,
+      "empirical_min_total_errors": 202,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "body",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 6718,
+      "body_groups": 1478,
+      "classes_B_M_S": [
+        0,
+        6626,
+        92
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        90
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.011547078378498554,
+        2.177048444747925
+      ],
+      "unique_observations": 1333,
+      "empirical_min_total_errors": 8,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "body",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "body",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "body",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 23389,
+      "body_groups": 5075,
+      "classes_B_M_S": [
+        0,
+        23048,
+        341
+      ],
+      "base_errors_B_M_S": [
+        0,
+        4,
+        311
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.012950222939252853,
+        4.049694538116455
+      ],
+      "unique_observations": 4140,
+      "empirical_min_total_errors": 56,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 17058,
+      "body_groups": 4256,
+      "classes_B_M_S": [
+        0,
+        14750,
+        2308
+      ],
+      "base_errors_B_M_S": [
+        0,
+        204,
+        1143
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.09508470445871353,
+        0.9244657754898071
+      ],
+      "unique_observations": 1625,
+      "empirical_min_total_errors": 1248,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 9984,
+      "body_groups": 2207,
+      "classes_B_M_S": [
+        0,
+        9858,
+        126
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        126
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.00956834014505148,
+        3.590118408203125
+      ],
+      "unique_observations": 1903,
+      "empirical_min_total_errors": 16,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_0",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 17058,
+      "body_groups": 4256,
+      "classes_B_M_S": [
+        0,
+        14750,
+        2308
+      ],
+      "base_errors_B_M_S": [
+        0,
+        132,
+        1235
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.06049006059765816,
+        1.0382206439971924
+      ],
+      "unique_observations": 1625,
+      "empirical_min_total_errors": 1248,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 34869,
+      "body_groups": 7575,
+      "classes_B_M_S": [
+        0,
+        34340,
+        529
+      ],
+      "base_errors_B_M_S": [
+        0,
+        732,
+        451
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.08811895549297333,
+        2.6534597873687744
+      ],
+      "unique_observations": 3202,
+      "empirical_min_total_errors": 336,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_1",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 34869,
+      "body_groups": 7575,
+      "classes_B_M_S": [
+        0,
+        34340,
+        529
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        529
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.0006754642818123102,
+        7.300487041473389
+      ],
+      "unique_observations": 5784,
+      "empirical_min_total_errors": 130,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "src",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "src",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 34869,
+      "body_groups": 7575,
+      "classes_B_M_S": [
+        0,
+        34340,
+        529
+      ],
+      "base_errors_B_M_S": [
+        0,
+        4752,
+        463
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.490286648273468,
+        1.0112054347991943
+      ],
+      "unique_observations": 3202,
+      "empirical_min_total_errors": 336,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "natural",
+      "rows": 9984,
+      "body_groups": 2207,
+      "classes_B_M_S": [
+        0,
+        9858,
+        126
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        122
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.01982911489903927,
+        2.407294750213623
+      ],
+      "unique_observations": 1903,
+      "empirical_min_total_errors": 16,
+      "risk_available_M_S": true
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "dst",
+      "role": "fit",
+      "kind": "synthetic",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "natural",
+      "rows": 0,
+      "body_groups": 0,
+      "classes_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "base_errors_B_M_S": [
+        0,
+        0,
+        0
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        null,
+        null
+      ],
+      "unique_observations": 0,
+      "empirical_min_total_errors": 0,
+      "risk_available_M_S": false,
+      "synthetic_fit_support": {}
+    },
+    {
+      "protocol": "behavior_2",
+      "missing_port": "dst",
+      "role": "calibration",
+      "kind": "synthetic",
+      "rows": 34869,
+      "body_groups": 7575,
+      "classes_B_M_S": [
+        0,
+        34340,
+        529
+      ],
+      "base_errors_B_M_S": [
+        0,
+        4,
+        487
+      ],
+      "class_NLL_B_M_S": [
+        null,
+        0.020994603633880615,
+        3.62387752532959
+      ],
+      "unique_observations": 5784,
+      "empirical_min_total_errors": 130,
+      "risk_available_M_S": true
+    }
+  ]
+}

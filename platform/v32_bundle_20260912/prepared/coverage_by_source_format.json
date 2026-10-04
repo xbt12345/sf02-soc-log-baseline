@@ -1,0 +1,317 @@
+[
+  {
+    "product": "<missing>",
+    "format": "asa_like",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 78748
+  },
+  {
+    "product": "<missing>",
+    "format": "cef_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 9
+  },
+  {
+    "product": "<missing>",
+    "format": "cef_like",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 50
+  },
+  {
+    "product": "<missing>",
+    "format": "empty",
+    "label": "benign",
+    "original_empty": true,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 16184
+  },
+  {
+    "product": "<missing>",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 1031
+  },
+  {
+    "product": "<missing>",
+    "format": "json_fragment",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 24
+  },
+  {
+    "product": "<missing>",
+    "format": "network_kv",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 32596
+  },
+  {
+    "product": "<missing>",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 155336
+  },
+  {
+    "product": "<missing>",
+    "format": "syslog_like",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 308
+  },
+  {
+    "product": "<missing>",
+    "format": "unknown",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 54741
+  },
+  {
+    "product": "<missing>",
+    "format": "windows_json_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 19998
+  },
+  {
+    "product": "<missing>",
+    "format": "windows_json_like",
+    "label": "malicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 2
+  },
+  {
+    "product": "ASA Firewall",
+    "format": "asa_like",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 34059
+  },
+  {
+    "product": "ASA Firewall",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 20
+  },
+  {
+    "product": "AWS Instance Backup",
+    "format": "empty",
+    "label": "benign",
+    "original_empty": true,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 340131
+  },
+  {
+    "product": "AWS VPC Security",
+    "format": "vpc14",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 10620
+  },
+  {
+    "product": "Apache Web Server",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 36
+  },
+  {
+    "product": "Barracuda ESS",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 74
+  },
+  {
+    "product": "Barracuda WAF",
+    "format": "cef_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 4128
+  },
+  {
+    "product": "Barracuda WAF",
+    "format": "cef_like",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 2
+  },
+  {
+    "product": "Cisco Network Operating System",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 3697
+  },
+  {
+    "product": "Duo",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 325
+  },
+  {
+    "product": "Duo",
+    "format": "json_fragment",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 12
+  },
+  {
+    "product": "Falcon",
+    "format": "json_fragment",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 35
+  },
+  {
+    "product": "Linux PAM",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 17822
+  },
+  {
+    "product": "ManageEngine ADManager",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 2606
+  },
+  {
+    "product": "ManageEngine ADManager",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 1476
+  },
+  {
+    "product": "Precinct",
+    "format": "syslog_like",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 219
+  },
+  {
+    "product": "SentinelOne",
+    "format": "windows_json_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 25
+  },
+  {
+    "product": "Symantec Endpoint Protection",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 2361
+  },
+  {
+    "product": "VMWare VCenter",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 1356
+  },
+  {
+    "product": "VMWare VCenter",
+    "format": "syslog_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 86955
+  },
+  {
+    "product": "Windows Active Directory",
+    "format": "windows_json_like",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 809860
+  },
+  {
+    "product": "Windows Active Directory",
+    "format": "windows_json_like",
+    "label": "suspicious",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": false,
+    "rows": 473
+  },
+  {
+    "product": "Windows Logs",
+    "format": "json_fragment",
+    "label": "benign",
+    "original_empty": false,
+    "filtered_empty": false,
+    "unknown_format": true,
+    "rows": 381552
+  }
+]

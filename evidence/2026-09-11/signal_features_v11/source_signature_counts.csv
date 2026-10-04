@@ -1,0 +1,58 @@
+﻿role,product,signature,label,rows
+development,,0,benign,1893
+development,,0,malicious,201
+development,,8,malicious,520
+development,ASA Firewall,8,suspicious,67
+development,AWS VPC Security,0,suspicious,81
+development,Barracuda WAF,0,benign,18
+development,Cisco Network Operating System,0,benign,25
+development,Falcon,0,suspicious,1
+development,Linux PAM,2,benign,1
+development,Linux PAM,4,benign,114
+development,ManageEngine ADManager,0,benign,8
+development,ManageEngine ADManager,2,benign,1
+development,ManageEngine ADManager,16384,benign,5
+development,Symantec Endpoint Protection,0,benign,17
+development,VMWare VCenter,0,benign,367
+development,Windows Active Directory,0,benign,2855
+development,Windows Active Directory,0,suspicious,1
+development,Windows Active Directory,2,benign,82
+development,Windows Active Directory,4,benign,79
+development,Windows Logs,0,benign,1070
+development,Windows Logs,1,benign,22
+development,Windows Logs,2,benign,454
+development,Windows Logs,4,benign,644
+train,,0,benign,6638
+train,,0,malicious,1137
+train,,8,malicious,2698
+train,ASA Firewall,0,benign,1
+train,ASA Firewall,8,suspicious,1522
+train,AWS VPC Security,0,suspicious,250
+train,Apache Web Server,0,benign,2
+train,Barracuda ESS,0,benign,3
+train,Barracuda WAF,0,benign,126
+train,Cisco Network Operating System,0,benign,91
+train,Cisco Network Operating System,4,benign,9
+train,Duo,0,benign,10
+train,Duo,0,suspicious,2
+train,Falcon,0,suspicious,1
+train,Linux PAM,2,benign,443
+train,Linux PAM,4,benign,108
+train,ManageEngine ADManager,0,benign,131
+train,ManageEngine ADManager,1,benign,1
+train,ManageEngine ADManager,2,benign,2
+train,ManageEngine ADManager,16384,benign,2
+train,Precinct,1,suspicious,9
+train,SentinelOne,0,benign,2
+train,Symantec Endpoint Protection,0,benign,73
+train,VMWare VCenter,0,benign,2981
+train,VMWare VCenter,1,benign,19
+train,Windows Active Directory,0,benign,25933
+train,Windows Active Directory,0,suspicious,17
+train,Windows Active Directory,1,benign,1
+train,Windows Active Directory,2,benign,606
+train,Windows Active Directory,4,benign,589
+train,Windows Logs,0,benign,6753
+train,Windows Logs,1,benign,50
+train,Windows Logs,2,benign,2872
+train,Windows Logs,4,benign,3454

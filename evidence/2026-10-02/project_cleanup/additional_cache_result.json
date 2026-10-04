@@ -1,0 +1,8 @@
+{
+  "deleted_files": 7,
+  "logical_bytes_deleted": 2303723585,
+  "disk_free_before": 130168991744,
+  "disk_free_after": 132472729600,
+  "postcondition_all_deleted": true,
+  "model_execution_or_training": false
+}

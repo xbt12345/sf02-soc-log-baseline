@@ -1,0 +1,29 @@
+{
+  "scope": "Post-hoc diagnostic after inspecting errors, frozen model, header time normalized, only observed:src_port logit term removed. Not a trained candidate, not label-preserving, and not evidence of overall improvement.",
+  "coefficient_by_class": [
+    -0.4912886608213839,
+    1.475358124365077,
+    -0.9840694635435748
+  ],
+  "normal_before": 12,
+  "normal_after": 0,
+  "suspicious_alert_before": 2,
+  "suspicious_alert_after": 2,
+  "subtype_cm": [
+    [
+      4128,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ]
+  ]
+}

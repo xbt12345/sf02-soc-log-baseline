@@ -1,0 +1,439 @@
+{
+  "status": "every_original_fixed_cohort_and_correct_control_scored",
+  "cohorts": [
+    {
+      "cohort": "all_ASA",
+      "original_rows": 112807,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 78748,
+          "before_correct": 78472,
+          "after_correct": 76846,
+          "before_errors": 276,
+          "after_errors": 1902,
+          "repairs": 52,
+          "new_errors": 1678
+        },
+        "2": {
+          "support": 34059,
+          "before_correct": 29199,
+          "after_correct": 32430,
+          "before_errors": 4860,
+          "after_errors": 1629,
+          "repairs": 3233,
+          "new_errors": 2
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 78748,
+          "before_correct": 76844,
+          "after_correct": 76846,
+          "before_errors": 1904,
+          "after_errors": 1902,
+          "repairs": 2,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 34059,
+          "before_correct": 32430,
+          "after_correct": 32430,
+          "before_errors": 1629,
+          "after_errors": 1629,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "hard578",
+      "original_rows": 578,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 578,
+          "before_correct": 0,
+          "after_correct": 2,
+          "before_errors": 578,
+          "after_errors": 576,
+          "repairs": 2,
+          "new_errors": 0
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 578,
+          "before_correct": 2,
+          "after_correct": 2,
+          "before_errors": 576,
+          "after_errors": 576,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "strict51",
+      "original_rows": 51,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 51,
+          "before_correct": 0,
+          "after_correct": 51,
+          "before_errors": 51,
+          "after_errors": 0,
+          "repairs": 51,
+          "new_errors": 0
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 51,
+          "before_correct": 51,
+          "after_correct": 51,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "unknown_or_missing_ports",
+      "original_rows": 49599,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 35816,
+          "before_correct": 35580,
+          "after_correct": 35022,
+          "before_errors": 236,
+          "after_errors": 794,
+          "repairs": 44,
+          "new_errors": 602
+        },
+        "2": {
+          "support": 13783,
+          "before_correct": 11792,
+          "after_correct": 12730,
+          "before_errors": 1991,
+          "after_errors": 1053,
+          "repairs": 940,
+          "new_errors": 2
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 35816,
+          "before_correct": 35022,
+          "after_correct": 35022,
+          "before_errors": 794,
+          "after_errors": 794,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 13783,
+          "before_correct": 12730,
+          "after_correct": 12730,
+          "before_errors": 1053,
+          "after_errors": 1053,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "ICMP",
+      "original_rows": 2373,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 1654,
+          "before_correct": 1506,
+          "after_correct": 1400,
+          "before_errors": 148,
+          "after_errors": 254,
+          "repairs": 0,
+          "new_errors": 106
+        },
+        "2": {
+          "support": 719,
+          "before_correct": 0,
+          "after_correct": 22,
+          "before_errors": 719,
+          "after_errors": 697,
+          "repairs": 22,
+          "new_errors": 0
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 1654,
+          "before_correct": 1400,
+          "after_correct": 1400,
+          "before_errors": 254,
+          "after_errors": 254,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 719,
+          "before_correct": 22,
+          "after_correct": 22,
+          "before_errors": 697,
+          "after_errors": 697,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "V155_new_M16",
+      "original_rows": 16,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    },
+    {
+      "cohort": "mixed_current_numeric_input",
+      "original_rows": 206,
+      "paired": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 178,
+          "before_correct": 178,
+          "after_correct": 72,
+          "before_errors": 0,
+          "after_errors": 106,
+          "repairs": 0,
+          "new_errors": 106
+        },
+        "2": {
+          "support": 28,
+          "before_correct": 0,
+          "after_correct": 22,
+          "before_errors": 28,
+          "after_errors": 6,
+          "repairs": 22,
+          "new_errors": 0
+        }
+      },
+      "vs_V146_A": {
+        "0": {
+          "support": 0,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_errors": 0,
+          "after_errors": 0,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "1": {
+          "support": 178,
+          "before_correct": 72,
+          "after_correct": 72,
+          "before_errors": 106,
+          "after_errors": 106,
+          "repairs": 0,
+          "new_errors": 0
+        },
+        "2": {
+          "support": 28,
+          "before_correct": 22,
+          "after_correct": 22,
+          "before_errors": 6,
+          "after_errors": 6,
+          "repairs": 0,
+          "new_errors": 0
+        }
+      }
+    }
+  ]
+}

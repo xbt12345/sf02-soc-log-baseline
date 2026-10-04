@@ -1,0 +1,9 @@
+{
+  "tool": "mcp__cua_repl.js",
+  "operation": "cua.getState()",
+  "apps": [],
+  "browsers": [],
+  "error": "Browsers: Error: nodeRepl.fetch request failed",
+  "cloud_training_started": false,
+  "scope": "Final connection retry after upload bundle validation; does not diagnose whether the contest service itself is working"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "field": "credential_check",
+    "value": "valid",
+    "rows": 0,
+    "classes_B_M_S": [
+      0,
+      0,
+      0
+    ],
+    "bodies": 0,
+    "routes": {}
+  },
+  {
+    "field": "credential_check",
+    "value": "invalid",
+    "rows": 314,
+    "classes_B_M_S": [
+      0,
+      0,
+      314
+    ],
+    "bodies": 314,
+    "routes": {
+      "windows_message": 314
+    }
+  },
+  {
+    "field": "auth_result",
+    "value": "success",
+    "rows": 77714,
+    "classes_B_M_S": [
+      77714,
+      0,
+      0
+    ],
+    "bodies": 13385,
+    "routes": {
+      "windows_message": 13422,
+      "windows_rendered": 64292
+    }
+  },
+  {
+    "field": "auth_result",
+    "value": "failure",
+    "rows": 484,
+    "classes_B_M_S": [
+      0,
+      0,
+      484
+    ],
+    "bodies": 484,
+    "routes": {
+      "syslog_auth": 153,
+      "windows_message": 331
+    }
+  }
+]

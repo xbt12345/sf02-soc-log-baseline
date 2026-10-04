@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "v86_bound_files_verified": 19,
+  "catalog_documents_verified": 52,
+  "mcp_unit_tests_passed": 9,
+  "source_ids": [
+    "v86-delivery",
+    "v86-direction-review"
+  ],
+  "quality_acceptance": false,
+  "delivery_sha256": "8336a0afa9da832c8069b2a7fddb534d22eb6039d53252029e8b8612910de056",
+  "raw_case_files_whitelisted": false,
+  "scope": "Post-publication hashes and in-process read-only MCP contract. Not a live ChatGPT tunnel or training quality acceptance."
+}

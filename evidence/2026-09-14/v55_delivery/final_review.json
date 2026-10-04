@@ -1,0 +1,1006 @@
+{
+  "fit_side_experiment_completed": true,
+  "actual_training_runs": 18,
+  "main_training_runs": 16,
+  "main_checkpoints": 48,
+  "supplemental_training_runs": 2,
+  "supplemental_final_models": 2,
+  "source_rows": 99398,
+  "prior_frozen_files_unchanged": {
+    "v51": 106,
+    "v53": 285,
+    "v54": 167
+  },
+  "excluded_mutable_entries": [
+    "README.md",
+    "docs/TRAINING_PLAN.md",
+    "training/README.md"
+  ],
+  "original_training_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "verification": {
+    "all_checks_passed": true,
+    "runs": [
+      {
+        "split": "body",
+        "candidate": "E0",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "E1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "D0",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "D1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "B1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "E1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "D1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "body",
+        "candidate": "B1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "E0",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "E1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "D0",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "D1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "B1",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "E1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "D1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      },
+      {
+        "split": "behavior",
+        "candidate": "B1V",
+        "epochs_checked": 60,
+        "saved_models_checked": 3
+      }
+    ],
+    "score_rows_replayed": 10849302,
+    "max_probability_difference": 0.0,
+    "max_fit_group_loss_difference": 4.76837158203125e-07,
+    "same_BODY_ERM_control_reproduced": [
+      {
+        "epoch": 10,
+        "all_decisions_match_v54": true,
+        "max_probability_difference": 4.172325134277344e-07
+      },
+      {
+        "epoch": 30,
+        "all_decisions_match_v54": true,
+        "max_probability_difference": 7.152557373046875e-07
+      },
+      {
+        "epoch": 60,
+        "all_decisions_match_v54": true,
+        "max_probability_difference": 8.940696716308594e-07
+      }
+    ],
+    "scope": "Physical exclusion of prior pressure evaluation, split/input/layer replay, recorded full-fit risks and all adversary update arithmetic; not a claim that every Adam mini-batch was independently rerun or that validation is blind."
+  },
+  "calibration_verification": {
+    "all_checks_passed": true,
+    "actual_fits": 2,
+    "runs": [
+      {
+        "split": "body",
+        "threshold": 0.4012455344200135,
+        "calibration_class_errors": [
+          278,
+          745,
+          634,
+          697,
+          1952,
+          309
+        ],
+        "rows_by_role": {
+          "fit": 44177,
+          "evaluation": 33132,
+          "calibration": 22089
+        },
+        "evaluation": {
+          "full": {
+            "argmax": {
+              "rows": 33128,
+              "errors": 1390,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  23698,
+                  272
+                ],
+                [
+                  0,
+                  1118,
+                  8040
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.9886524822695035,
+                0.8779209434374318
+              ],
+              "class_errors_B_M_S": [
+                0,
+                272,
+                1118
+              ],
+              "macro_f1_M_S": 0.945971625526865,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 33128,
+              "errors": 1416,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  23748,
+                  222
+                ],
+                [
+                  0,
+                  1194,
+                  7964
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.990738423028786,
+                0.8696221882507098
+              ],
+              "class_errors_B_M_S": [
+                0,
+                222,
+                1194
+              ],
+              "macro_f1_M_S": 0.9447039913235247,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          },
+          "no_src_role": {
+            "argmax": {
+              "rows": 33128,
+              "errors": 1840,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  22930,
+                  1040
+                ],
+                [
+                  0,
+                  800,
+                  8358
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.9566124322069254,
+                0.9126446822450317
+              ],
+              "class_errors_B_M_S": [
+                0,
+                1040,
+                800
+              ],
+              "macro_f1_M_S": 0.9311331374731506,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 33128,
+              "errors": 1770,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  23242,
+                  728
+                ],
+                [
+                  0,
+                  1042,
+                  8116
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.9696287025448477,
+                0.8862196986241537
+              ],
+              "class_errors_B_M_S": [
+                0,
+                728,
+                1042
+              ],
+              "macro_f1_M_S": 0.9324983472291366,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          },
+          "no_dst_role": {
+            "argmax": {
+              "rows": 33128,
+              "errors": 5266,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  19004,
+                  4966
+                ],
+                [
+                  0,
+                  300,
+                  8858
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.7928243637880684,
+                0.9672417558418869
+              ],
+              "class_errors_B_M_S": [
+                0,
+                4966,
+                300
+              ],
+              "macro_f1_M_S": 0.8245872281767928,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 33128,
+              "errors": 3356,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  21156,
+                  2814
+                ],
+                [
+                  0,
+                  542,
+                  8616
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.8826032540675844,
+                0.9408167722210089
+              ],
+              "class_errors_B_M_S": [
+                0,
+                2814,
+                542
+              ],
+              "macro_f1_M_S": 0.8817527586393678,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          }
+        },
+        "threshold_frozen_before_scoring": true,
+        "same_model_no_post_calibration_refit": true
+      },
+      {
+        "split": "behavior",
+        "threshold": 0.6575058102607728,
+        "calibration_class_errors": [
+          422,
+          726,
+          1174,
+          312,
+          1244,
+          304
+        ],
+        "rows_by_role": {
+          "evaluation": 50197,
+          "fit": 32800,
+          "calibration": 16401
+        },
+        "evaluation": {
+          "full": {
+            "argmax": {
+              "rows": 50193,
+              "errors": 2059,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  40100,
+                  1192
+                ],
+                [
+                  0,
+                  867,
+                  8034
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.971132422745326,
+                0.9025952140208965
+              ],
+              "class_errors_B_M_S": [
+                0,
+                1192,
+                867
+              ],
+              "macro_f1_M_S": 0.9306909190300161,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 50193,
+              "errors": 2367,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  39706,
+                  1586
+                ],
+                [
+                  0,
+                  781,
+                  8120
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.9615906228809454,
+                0.9122570497696888
+              ],
+              "class_errors_B_M_S": [
+                0,
+                1586,
+                781
+              ],
+              "macro_f1_M_S": 0.921922974696534,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          },
+          "no_src_role": {
+            "argmax": {
+              "rows": 50193,
+              "errors": 2623,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  39412,
+                  1880
+                ],
+                [
+                  0,
+                  743,
+                  8158
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.95447059963189,
+                0.9165262330075272
+              ],
+              "class_errors_B_M_S": [
+                0,
+                1880,
+                743
+              ],
+              "macro_f1_M_S": 0.9146488635265209,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 50193,
+              "errors": 3523,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  38366,
+                  2926
+                ],
+                [
+                  0,
+                  597,
+                  8304
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.9291388162355905,
+                0.9329288843950118
+              ],
+              "class_errors_B_M_S": [
+                0,
+                2926,
+                597
+              ],
+              "macro_f1_M_S": 0.8905493489638383,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          },
+          "no_dst_role": {
+            "argmax": {
+              "rows": 50193,
+              "errors": 3033,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  38988,
+                  2304
+                ],
+                [
+                  0,
+                  729,
+                  8172
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.944202266782912,
+                0.9180990899898888
+              ],
+              "class_errors_B_M_S": [
+                0,
+                2304,
+                729
+              ],
+              "macro_f1_M_S": 0.9030169688014744,
+              "ASA_to_normal": 0
+            },
+            "threshold": {
+              "rows": 50193,
+              "errors": 3677,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  38212,
+                  3080
+                ],
+                [
+                  0,
+                  597,
+                  8304
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.92540928024799,
+                0.9329288843950118
+              ],
+              "class_errors_B_M_S": [
+                0,
+                3080,
+                597
+              ],
+              "macro_f1_M_S": 0.8864142542347411,
+              "ASA_to_normal": 0
+            },
+            "normal_argmax": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  2,
+                  2
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            },
+            "normal_threshold": {
+              "rows": 4,
+              "errors": 4,
+              "confusion_B_M_S": [
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "recall_B_M_S": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "class_errors_B_M_S": [
+                4,
+                0,
+                0
+              ],
+              "macro_f1_M_S": 0.0,
+              "ASA_to_normal": 0
+            }
+          }
+        },
+        "threshold_frozen_before_scoring": true,
+        "same_model_no_post_calibration_refit": true
+      }
+    ],
+    "probability_rows_replayed": 365457,
+    "max_probability_difference": 0.0,
+    "scope": "Source/role/model replay and independent calibration-only cutpoint ranking. Two post-hoc development controls, not blind evaluation, probability calibration, external transfer or main-gate promotion."
+  },
+  "evidence_files_checked": 9,
+  "inner_gate_passed": false,
+  "outer_models_fit": 0,
+  "outer_quality_evaluation_executed": false,
+  "promoted": false,
+  "ASA_solved": false,
+  "platform_used": false,
+  "new_dependencies": false,
+  "scope": "Preregistered continuation gate rejected every new candidate. Completed fit-side objective and validation experiment plus two post-hoc separated-calibration controls; no claim about improved outer quality. Supplemental hypothesis does not override the main gate. Both chosen thresholds increase full-input errors versus their same-model argmax controls."
+}

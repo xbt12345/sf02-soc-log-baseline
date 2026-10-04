@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "round": "V125",
+  "status": "observed_failed_training_counterexamples",
+  "scope": "Repeatedly inspected local source-closed development folds; not an independent blind test or universal rule.",
+  "cases": [
+    {
+      "id": "ORDERED_BRANCH_NOT_TRANSFER",
+      "observed": "B increased ASA S errors 2074 to 4154 and M errors 318 to 326; C increased S errors to 4002. B had zero improving folds and no mechanism advantage over C.",
+      "required_action": "Do not promote or extend this branch on lower loss, added capacity, or an attractive single slice. Any new representation trial must beat a fresh base and capacity control on full original-row M/S counts, folds, and source groups.",
+      "replay": "training/v125_replay_counterexamples.py",
+      "evidence": "artifacts/v125_order_trial_20260929/primary_evaluation.json"
+    },
+    {
+      "id": "JOINT_TRAINING_REWIRES_BASE",
+      "observed": "Among 2046 source-29 S records newly missed by B, 1884 remain wrong when the trained B branch is disabled; the joint fit changed the base path, not only inference residual votes.",
+      "required_action": "Before claiming a branch-specific mechanism, compare full joint model with a saved-weight branch-off ablation and distinguish direct residual effects from base-path co-adaptation. Do not reinterpret this postfit intervention as a randomized causal fit.",
+      "replay": "training/v125_replay_counterexamples.py",
+      "evidence": "artifacts/v125_order_trial_20260929/postmortem_ablation.json"
+    },
+    {
+      "id": "CALENDAR_ASSOCIATION_IS_NOT_THREAT_RULE",
+      "observed": "In source group 29, all 4017 S rows occur on Jul 26 while 32 M rows do; this can create an apparent label shortcut without establishing a security criterion.",
+      "required_action": "Separate calendar/source associations from protocol, action, direction, endpoint, and verified parameter evidence. Retain harmless-header stress checks and full class counts.",
+      "replay": "training/v125_replay_counterexamples.py",
+      "evidence": "artifacts/v125_order_trial_20260929/postmortem_coverage.json"
+    },
+    {
+      "id": "EXACT_TEXT_UNSEEN_IS_NOT_ZERO_BEHAVIOR_SUPPORT",
+      "observed": "2044 of B's 2046 newly missed source-29 S rows have no identical normalized body in the other training folds. This is an exact-string coverage statement, not proof of absent shared semantics.",
+      "required_action": "For any future remedy, audit source-closed support at multiple observable behavior resolutions and distinguish unseen string, unseen parameter combination, and missing class evidence.",
+      "replay": "training/v125_replay_counterexamples.py",
+      "evidence": "artifacts/v125_order_trial_20260929/postmortem_coverage.json"
+    }
+  ],
+  "quality_acceptance": false,
+  "model_promoted": false
+}

@@ -1,0 +1,842 @@
+[
+  {
+    "name": "asa_hard_B0",
+    "f1": null,
+    "cm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        62796,
+        0
+      ],
+      [
+        0,
+        3473,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.17172784595549698,
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_counts": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_rates": [
+        null,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "asa_hard_B1",
+    "f1": null,
+    "cm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        62796,
+        0
+      ],
+      [
+        0,
+        3473,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.07805282876762677,
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_counts": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_rates": [
+        null,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "asa_hard_B2",
+    "f1": null,
+    "cm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        62796,
+        0
+      ],
+      [
+        0,
+        3473,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.23485651083854722,
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_counts": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_rates": [
+        null,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "asa_hard_B2_W",
+    "f1": null,
+    "cm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        62796,
+        0
+      ],
+      [
+        0,
+        3473,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.13787228692317768,
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_counts": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_rates": [
+        null,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "known_dev_B0",
+    "f1": 0.9605252730087589,
+    "cm": [
+      [
+        3373,
+        0,
+        3
+      ],
+      [
+        0,
+        130,
+        0
+      ],
+      [
+        2,
+        32,
+        2267
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.17311393305644276,
+      "class_support": [
+        3376,
+        130,
+        2301
+      ],
+      "class_alert_counts": [
+        4,
+        130,
+        2301
+      ],
+      "class_alert_rates": [
+        0.001184834123222749,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "known_dev_B1",
+    "f1": 0.9611362569067673,
+    "cm": [
+      [
+        3376,
+        0,
+        0
+      ],
+      [
+        0,
+        130,
+        0
+      ],
+      [
+        0,
+        32,
+        2269
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.059869098835203645,
+      "class_support": [
+        3376,
+        130,
+        2301
+      ],
+      "class_alert_counts": [
+        40,
+        130,
+        2301
+      ],
+      "class_alert_rates": [
+        0.011848341232227487,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "known_dev_B2",
+    "f1": 0.9611362569067673,
+    "cm": [
+      [
+        3376,
+        0,
+        0
+      ],
+      [
+        0,
+        130,
+        0
+      ],
+      [
+        0,
+        32,
+        2269
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.032512138432271194,
+      "class_support": [
+        3376,
+        130,
+        2301
+      ],
+      "class_alert_counts": [
+        9,
+        130,
+        2301
+      ],
+      "class_alert_rates": [
+        0.002665876777251185,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "known_dev_B2_W",
+    "f1": 0.9611362569067673,
+    "cm": [
+      [
+        3376,
+        0,
+        0
+      ],
+      [
+        0,
+        130,
+        0
+      ],
+      [
+        0,
+        32,
+        2269
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.0920329316429618,
+      "class_support": [
+        3376,
+        130,
+        2301
+      ],
+      "class_alert_counts": [
+        1,
+        130,
+        2301
+      ],
+      "class_alert_rates": [
+        0.0002962085308056872,
+        1.0,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_ad_B0",
+    "f1": null,
+    "cm": [
+      [
+        809860,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        473,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.35580461706643124,
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_alert_counts": [
+        13007,
+        0,
+        0
+      ],
+      "class_alert_rates": [
+        0.016060800632208036,
+        null,
+        0.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_ad_B1",
+    "f1": null,
+    "cm": [
+      [
+        809860,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        473,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.22962898359546105,
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_alert_counts": [
+        4089,
+        0,
+        0
+      ],
+      "class_alert_rates": [
+        0.005049020818413059,
+        null,
+        0.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_ad_B2",
+    "f1": null,
+    "cm": [
+      [
+        808655,
+        0,
+        1205
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        473
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.10907916873396685,
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_alert_counts": [
+        606734,
+        0,
+        473
+      ],
+      "class_alert_rates": [
+        0.7491838095473292,
+        null,
+        1.0
+      ]
+    },
+    "C": 1.0
+  },
+  {
+    "name": "source_ad_B2_W",
+    "f1": null,
+    "cm": [
+      [
+        808968,
+        0,
+        892
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        473
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.17405931309759984,
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_alert_counts": [
+        604204,
+        0,
+        473
+      ],
+      "class_alert_rates": [
+        0.7460598128071518,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_duo_B0",
+    "f1": null,
+    "cm": [
+      [
+        325,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.3488968995028345,
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_alert_counts": [
+        325,
+        0,
+        0
+      ],
+      "class_alert_rates": [
+        1.0,
+        null,
+        0.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_duo_B1",
+    "f1": null,
+    "cm": [
+      [
+        325,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.35232596842089875,
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_alert_counts": [
+        62,
+        0,
+        12
+      ],
+      "class_alert_rates": [
+        0.19076923076923077,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_duo_B2",
+    "f1": null,
+    "cm": [
+      [
+        325,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        2
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.2229653172385068,
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_alert_counts": [
+        0,
+        0,
+        12
+      ],
+      "class_alert_rates": [
+        0.0,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_duo_B2_W",
+    "f1": null,
+    "cm": [
+      [
+        325,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.1269728122127998,
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_alert_counts": [
+        0,
+        0,
+        12
+      ],
+      "class_alert_rates": [
+        0.0,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_waf_B0",
+    "f1": null,
+    "cm": [
+      [
+        4128,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.49183812290701817,
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_counts": [
+        0,
+        0,
+        0
+      ],
+      "class_alert_rates": [
+        0.0,
+        null,
+        0.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_waf_B1",
+    "f1": null,
+    "cm": [
+      [
+        4128,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.23111526116821815,
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_counts": [
+        2040,
+        0,
+        0
+      ],
+      "class_alert_rates": [
+        0.4941860465116279,
+        null,
+        0.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_waf_B2",
+    "f1": null,
+    "cm": [
+      [
+        4128,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.14356557520219884,
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_counts": [
+        2226,
+        0,
+        2
+      ],
+      "class_alert_rates": [
+        0.5392441860465116,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  },
+  {
+    "name": "source_waf_B2_W",
+    "f1": null,
+    "cm": [
+      [
+        4128,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "risk": {
+      "budget": 0.001,
+      "supported": true,
+      "threshold": 0.10423954395948266,
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_counts": [
+        2204,
+        0,
+        2
+      ],
+      "class_alert_rates": [
+        0.5339147286821705,
+        null,
+        1.0
+      ]
+    },
+    "C": 0.1
+  }
+]

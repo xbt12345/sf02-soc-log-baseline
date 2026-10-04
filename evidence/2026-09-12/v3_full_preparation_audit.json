@@ -1,0 +1,702 @@
+{
+  "scope": "Official train and frozen preparation only; no main model fitting, no external data. Integrity checks are not semantic or model acceptance.",
+  "checks": {
+    "official_input_sha": true,
+    "corpus_sha": true,
+    "split_sha": true,
+    "frozen_source_sha": true,
+    "all_row_positions_once_in_order": true,
+    "group_manifest_matches_corpus": true,
+    "label_manifest_matches_corpus": true,
+    "no_empty_state_overlap": true,
+    "empty_state_matches_informative": true,
+    "groups_do_not_cross_roles_fold_0": true,
+    "valid_inner_roles_fold_0": true,
+    "groups_do_not_cross_roles_fold_1": true,
+    "valid_inner_roles_fold_1": true,
+    "groups_do_not_cross_roles_fold_2": true,
+    "valid_inner_roles_fold_2": true,
+    "valid_outer_roles": true,
+    "all_original_rows_compared": true,
+    "exact_event_id_order_matches_original": true,
+    "labels_unchanged_from_original": true,
+    "original_empty_matches_original": true,
+    "informative_matches_actual_text": true,
+    "nonempty_raw_duplicates_never_split": true,
+    "identical_nonempty_texts_never_split": true,
+    "distinct_nonempty_texts_never_merged": true,
+    "collision_totals_independently_recomputed": true
+  },
+  "all_integrity_checks_passed": true,
+  "rows": 2056871,
+  "nonempty_raw_unique": 716698,
+  "nonempty_raw_duplicate_rows_after_first": 983858,
+  "class_counts": {
+    "benign": 1899723,
+    "malicious": 111728,
+    "suspicious": 45420
+  },
+  "original_empty_rows": 356315,
+  "filtered_empty_rows": 0,
+  "unknown_format_rows": 714175,
+  "text_length_bins": {
+    "1-256": 463026,
+    "257-2048": 1024322,
+    "2049-8192": 212774,
+    "0": 356315,
+    ">8192": 434
+  },
+  "source_format_class_support": [
+    {
+      "product": "<missing>",
+      "format": "asa_like",
+      "label": "malicious",
+      "rows": 78748,
+      "informative_groups": 12738,
+      "largest_group_rows": 3134,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "<missing>",
+      "format": "cef_like",
+      "label": "benign",
+      "rows": 9,
+      "informative_groups": 3,
+      "largest_group_rows": 4,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 9
+    },
+    {
+      "product": "<missing>",
+      "format": "cef_like",
+      "label": "malicious",
+      "rows": 50,
+      "informative_groups": 9,
+      "largest_group_rows": 6,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 50
+    },
+    {
+      "product": "<missing>",
+      "format": "empty",
+      "label": "benign",
+      "rows": 16184,
+      "informative_groups": 0,
+      "largest_group_rows": 0,
+      "original_empty": 16184,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "<missing>",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 1031,
+      "informative_groups": 862,
+      "largest_group_rows": 12,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 1031
+    },
+    {
+      "product": "<missing>",
+      "format": "json_fragment",
+      "label": "malicious",
+      "rows": 24,
+      "informative_groups": 3,
+      "largest_group_rows": 8,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 24
+    },
+    {
+      "product": "<missing>",
+      "format": "network_kv",
+      "label": "malicious",
+      "rows": 32596,
+      "informative_groups": 4188,
+      "largest_group_rows": 3404,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "<missing>",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 155336,
+      "informative_groups": 18722,
+      "largest_group_rows": 6024,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 155336
+    },
+    {
+      "product": "<missing>",
+      "format": "syslog_like",
+      "label": "malicious",
+      "rows": 308,
+      "informative_groups": 36,
+      "largest_group_rows": 36,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 308
+    },
+    {
+      "product": "<missing>",
+      "format": "unknown",
+      "label": "benign",
+      "rows": 54741,
+      "informative_groups": 286,
+      "largest_group_rows": 17856,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 54741
+    },
+    {
+      "product": "<missing>",
+      "format": "windows_json_like",
+      "label": "benign",
+      "rows": 19998,
+      "informative_groups": 5523,
+      "largest_group_rows": 4519,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "<missing>",
+      "format": "windows_json_like",
+      "label": "malicious",
+      "rows": 2,
+      "informative_groups": 1,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "label": "suspicious",
+      "rows": 34059,
+      "informative_groups": 5203,
+      "largest_group_rows": 6746,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "ASA Firewall",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 20,
+      "informative_groups": 10,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 20
+    },
+    {
+      "product": "AWS Instance Backup",
+      "format": "empty",
+      "label": "benign",
+      "rows": 340131,
+      "informative_groups": 0,
+      "largest_group_rows": 0,
+      "original_empty": 340131,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "AWS VPC Security",
+      "format": "vpc14",
+      "label": "suspicious",
+      "rows": 10620,
+      "informative_groups": 40,
+      "largest_group_rows": 1180,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "Apache Web Server",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 36,
+      "informative_groups": 13,
+      "largest_group_rows": 10,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 36
+    },
+    {
+      "product": "Barracuda ESS",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 74,
+      "informative_groups": 37,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 74
+    },
+    {
+      "product": "Barracuda WAF",
+      "format": "cef_like",
+      "label": "benign",
+      "rows": 4128,
+      "informative_groups": 2048,
+      "largest_group_rows": 8,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 4128
+    },
+    {
+      "product": "Barracuda WAF",
+      "format": "cef_like",
+      "label": "suspicious",
+      "rows": 2,
+      "informative_groups": 1,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 2
+    },
+    {
+      "product": "Cisco Network Operating System",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 3697,
+      "informative_groups": 3632,
+      "largest_group_rows": 3,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 3697
+    },
+    {
+      "product": "Duo",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 325,
+      "informative_groups": 325,
+      "largest_group_rows": 1,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 325
+    },
+    {
+      "product": "Duo",
+      "format": "json_fragment",
+      "label": "suspicious",
+      "rows": 12,
+      "informative_groups": 12,
+      "largest_group_rows": 1,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 12
+    },
+    {
+      "product": "Falcon",
+      "format": "json_fragment",
+      "label": "suspicious",
+      "rows": 35,
+      "informative_groups": 35,
+      "largest_group_rows": 1,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 35
+    },
+    {
+      "product": "Linux PAM",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 17822,
+      "informative_groups": 7766,
+      "largest_group_rows": 2111,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 17822
+    },
+    {
+      "product": "ManageEngine ADManager",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 2606,
+      "informative_groups": 2189,
+      "largest_group_rows": 37,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 2606
+    },
+    {
+      "product": "ManageEngine ADManager",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 1476,
+      "informative_groups": 809,
+      "largest_group_rows": 66,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 1476
+    },
+    {
+      "product": "Precinct",
+      "format": "syslog_like",
+      "label": "suspicious",
+      "rows": 219,
+      "informative_groups": 217,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 219
+    },
+    {
+      "product": "SentinelOne",
+      "format": "windows_json_like",
+      "label": "benign",
+      "rows": 25,
+      "informative_groups": 23,
+      "largest_group_rows": 2,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "Symantec Endpoint Protection",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 2361,
+      "informative_groups": 1127,
+      "largest_group_rows": 131,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 2361
+    },
+    {
+      "product": "VMWare VCenter",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 1356,
+      "informative_groups": 396,
+      "largest_group_rows": 174,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 1356
+    },
+    {
+      "product": "VMWare VCenter",
+      "format": "syslog_like",
+      "label": "benign",
+      "rows": 86955,
+      "informative_groups": 16913,
+      "largest_group_rows": 576,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 86955
+    },
+    {
+      "product": "Windows Active Directory",
+      "format": "windows_json_like",
+      "label": "benign",
+      "rows": 809860,
+      "informative_groups": 342367,
+      "largest_group_rows": 10807,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "Windows Active Directory",
+      "format": "windows_json_like",
+      "label": "suspicious",
+      "rows": 473,
+      "informative_groups": 459,
+      "largest_group_rows": 3,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 0
+    },
+    {
+      "product": "Windows Logs",
+      "format": "json_fragment",
+      "label": "benign",
+      "rows": 381552,
+      "informative_groups": 1185,
+      "largest_group_rows": 12542,
+      "original_empty": 0,
+      "filtered_empty": 0,
+      "unknown_format": 381552
+    }
+  ],
+  "collision_summary": {
+    "informative_unique_texts": 427129,
+    "mixed_label_text_groups": 49,
+    "rows_in_mixed_label_text_groups": 2423,
+    "minimum_observed_mistakes_deterministic_text_only": 692,
+    "largest_conflict_groups": [
+      {
+        "group_id": 3662,
+        "counts": {
+          "benign": 0,
+          "malicious": 346,
+          "suspicious": 482
+        }
+      },
+      {
+        "group_id": 3792,
+        "counts": {
+          "benign": 0,
+          "malicious": 28,
+          "suspicious": 218
+        }
+      },
+      {
+        "group_id": 3556,
+        "counts": {
+          "benign": 0,
+          "malicious": 190,
+          "suspicious": 14
+        }
+      },
+      {
+        "group_id": 3576,
+        "counts": {
+          "benign": 0,
+          "malicious": 116,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 8495,
+        "counts": {
+          "benign": 0,
+          "malicious": 94,
+          "suspicious": 22
+        }
+      },
+      {
+        "group_id": 3737,
+        "counts": {
+          "benign": 0,
+          "malicious": 64,
+          "suspicious": 4
+        }
+      },
+      {
+        "group_id": 3701,
+        "counts": {
+          "benign": 0,
+          "malicious": 52,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3567,
+        "counts": {
+          "benign": 0,
+          "malicious": 48,
+          "suspicious": 6
+        }
+      },
+      {
+        "group_id": 9904,
+        "counts": {
+          "benign": 0,
+          "malicious": 2,
+          "suspicious": 37
+        }
+      },
+      {
+        "group_id": 3665,
+        "counts": {
+          "benign": 0,
+          "malicious": 28,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3680,
+        "counts": {
+          "benign": 0,
+          "malicious": 24,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3575,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 20
+        }
+      },
+      {
+        "group_id": 3852,
+        "counts": {
+          "benign": 0,
+          "malicious": 16,
+          "suspicious": 8
+        }
+      },
+      {
+        "group_id": 3710,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 3573,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3768,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 7558,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3688,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 16140,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 13788,
+        "counts": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 8
+        }
+      },
+      {
+        "group_id": 3829,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 13598,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3777,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3789,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 15957,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 16096,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 3812,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 10
+        }
+      },
+      {
+        "group_id": 16120,
+        "counts": {
+          "benign": 0,
+          "malicious": 4,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 9529,
+        "counts": {
+          "benign": 0,
+          "malicious": 4,
+          "suspicious": 12
+        }
+      },
+      {
+        "group_id": 3748,
+        "counts": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 8
+        }
+      }
+    ],
+    "note": "Conflicts may reflect normalization loss, missing evidence, or annotation semantics; not necessarily wrong labels or irreversible irreducibility. Empty inputs excluded here and reported separately."
+  },
+  "collision_totals_independently_recomputed": {
+    "informative_unique_texts": 427129,
+    "mixed_label_text_groups": 49,
+    "rows_in_mixed_label_text_groups": 2423,
+    "minimum_observed_mistakes_deterministic_text_only": 692
+  },
+  "resource_estimate": {
+    "method": "Fixed position-hash sample, about 1/1024 rows, no fitting; full-document unique raw char 3-5 grams before vocab cap",
+    "sample_rows": 2095,
+    "estimated_full_corpus_char_nnz_before_vocab_cap": 2611529092.0,
+    "estimated_float32_int32_char_csr_bytes_before_vocab_cap": 20900460224.0,
+    "estimated_float32_int64_char_csr_bytes_before_vocab_cap": 31354804080.0,
+    "int32_offset_assumption_valid_for_estimate": false,
+    "limitations": "Estimate only; excludes word features, vocabulary, optimizer copies and workers; vocab cap changes nnz; not a peak-memory bound."
+  },
+  "code_sha256": "61267c1ca58d63d6f460faf0fdb97d1b60a3217add86faac1f60d761087be60f",
+  "configuration_sha256": "4fec2e20d362e03548337c4ba4ed14f5e35c6bb2e86a56840af4e81c2b8398e8"
+}

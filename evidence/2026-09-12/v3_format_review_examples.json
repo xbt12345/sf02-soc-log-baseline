@@ -1,0 +1,667 @@
+{
+  "scope": "Official train only; no labels loaded, no model fitting, no external data or documentation fetched; purpose-selected examples, not a coverage estimate.",
+  "source_path": "data/official/train.parquet",
+  "selection": "Eight previously located rows were reread from current official train. Selection was purposive from earlier diagnostics, not label-blind random sampling; this pass did not load label_binary.",
+  "normalization_principle": "Format inference is from visible syntax, not product metadata or labels. Keep exact raw spans and unsupported body. Do not infer original words from redaction tokens.",
+  "span_indexing": "Python Unicode code-point indices into the exact raw message, start inclusive/end exclusive; not byte offsets.",
+  "implementation_boundary": "Suggestions only. No regex here is a production normalizer. Full-family coverage, temporal availability and meaning of unknown fields remain unverified.",
+  "unimplemented_required_checks": [
+    "Field-aware identity/date perturbations preserve the retained action representation.",
+    "Changes to event code/result/negation/port role/literal boolean change the appropriate retained evidence.",
+    "Metadata and raw-body entity mismatches are counted rather than silently reconciled.",
+    "Broken marker spans do not concatenate remaining digits into valid ports, timestamps, IDs or codes.",
+    "Unknown formats preserve readable body and expose unsupported status only as diagnostics, not a benign rule.",
+    "Post-hoc/upstream and mixed descriptive spans are not interpreted without reliable boundaries and availability."
+  ],
+  "examples": [
+    {
+      "row_position": 2115,
+      "event_id": "EVT-0000002116",
+      "raw_message_sha256": "5d9d4237bc8c0a55137f134143595d9dffaef7195c859dafec06439c44e95d56",
+      "raw_message_length": 169,
+      "format_review_name": "flows_key_value_partial",
+      "format_basis_without_label": "消息同时包含 flows、src=、dst=、protocol=、sport=、dport=；这足以命名可见键值流格式，不依赖 product_name 或标签。",
+      "product_metadata_for_diagnostic_only": "",
+      "observed_outer_entities": {
+        "src_ip": "100.64.40.92",
+        "dst_ip": "100.64.32.174",
+        "src_host": "192.168.171.91",
+        "dst_host": null,
+        "username": null
+      },
+      "spans": [
+        {
+          "name": "collector_prefix",
+          "start": 0,
+          "end": 77,
+          "raw_excerpt": "<134>Original Address=100.64.31.109 1 1655204976.046218776 M64_MX67C_ORG-4026",
+          "suggested_action": "candidate_wrapper_mask",
+          "reason": "PRI、设备地址、绝对epoch和设备标识属于此例的包装候选；需要同格式多例确认各字段边界，不能对未知前缀硬切。"
+        },
+        {
+          "name": "flow_facts",
+          "start": 78,
+          "end": 154,
+          "raw_excerpt": "flows src=100.64.40.92 dst=100.64.32.174 protocol=udp sport=23555 dport=1434",
+          "suggested_action": "preserve_typed_facts_mask_addresses",
+          "reason": "地址身份类型化；分别保留协议、源/目的端口角色和值，不把1434直接解释为威胁。"
+        },
+        {
+          "name": "unmapped_tail",
+          "start": 155,
+          "end": 169,
+          "raw_excerpt": "pattern: 1 all",
+          "suggested_action": "preserve_unknown_body",
+          "reason": "pattern的语义未核实；保留为未知正文，不能把数字1猜成风险。"
+        }
+      ],
+      "danger_boundaries": [
+        "src_host=192.168.171.91 不出现在消息内，外层实体替换不覆盖全部包装身份。",
+        "日期移位后此例仅应改变包装epoch；协议udp或dport1434变更应改变对应语义表示。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 111757,
+      "event_id": "EVT-0000111758",
+      "raw_message_sha256": "8e9c12ef674877860edeb09f5b4f28d1a5ea156e7d1e0810a14e61bab2a100f1",
+      "raw_message_length": 1809,
+      "format_review_name": "windows_json_fragments",
+      "format_basis_without_label": "winlogbeat 与 winlog 结构片段并存，存在code及重复事件id；整体JSON含损坏未引号CRED数值，不能声称完整JSON解析成功。",
+      "product_metadata_for_diagnostic_only": "Windows Active Directory",
+      "observed_outer_entities": {
+        "src_ip": "",
+        "dst_ip": "",
+        "src_host": "USER-0010-0007.domain-0022.example.net",
+        "dst_host": "",
+        "username": ""
+      },
+      "spans": [
+        {
+          "name": "collector_version",
+          "start": 38,
+          "end": 89,
+          "raw_excerpt": "\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"",
+          "suggested_action": "mask_confirmed_collector_values_keep_boundaries",
+          "reason": "采集器类型/版本用于格式识别，主文本中不作为来源标签；不能因另有version键就全局删除所有版本。"
+        },
+        {
+          "name": "event_code",
+          "start": 415,
+          "end": 428,
+          "raw_excerpt": "\"code\":\"4658\"",
+          "suggested_action": "preserve_typed_event_code",
+          "reason": "保护4658，不能在去数字时变成通用CODE。"
+        },
+        {
+          "name": "corroborating_id",
+          "start": 1516,
+          "end": 1543,
+          "raw_excerpt": "\"USER-0010-56507_id\":\"4658\"",
+          "suggested_action": "preserve_fragment_without_guessing_key",
+          "reason": "可见码与code一致；记录此证据，但不要把任何损坏*_id键自动恢复为event_id。"
+        },
+        {
+          "name": "record_id",
+          "start": 1762,
+          "end": 1783,
+          "raw_excerpt": "\"record_id\":105761234",
+          "suggested_action": "mask_confirmed_record_identifier",
+          "reason": "可确认的采集记录序号不进入文本分类。"
+        },
+        {
+          "name": "readable_action",
+          "start": 687,
+          "end": 724,
+          "raw_excerpt": "The handle to an ORG-0198 was closed.",
+          "suggested_action": "preserve_readable_body",
+          "reason": "保留was closed等语义；标记片段类型化，不能丢掉整句。"
+        },
+        {
+          "name": "damaged_date",
+          "start": 109,
+          "end": 138,
+          "raw_excerpt": "USER-9546-07-26T11:09:53.601Z",
+          "suggested_action": "mask_whole_confirmed_datetime",
+          "reason": "完整日期形态中的USER-9546占据年份槽；整体日期移除，不能仅改USER编号而残留月份日期。"
+        },
+        {
+          "name": "security_identity",
+          "start": 757,
+          "end": 765,
+          "raw_excerpt": "S-1-5-20",
+          "suggested_action": "typed_identity_candidate",
+          "reason": "SID包含身份和可能有用的角色语义；首轮可将字面身份屏蔽，是否保留标准账户角色应单独审查，不能把所有SID解释为随机ID。"
+        },
+        {
+          "name": "security_identity",
+          "start": 1505,
+          "end": 1513,
+          "raw_excerpt": "S-1-5-20",
+          "suggested_action": "typed_identity_candidate",
+          "reason": "SID包含身份和可能有用的角色语义；首轮可将字面身份屏蔽，是否保留标准账户角色应单独审查，不能把所有SID解释为随机ID。"
+        }
+      ],
+      "danger_boundaries": [
+        "临时UUID可能被CRED插入而不再符合标准UUID正则，须按已确认id字段值边界处理。",
+        "保留每个片段的原文位置；正则读到局部字段不等于父层路径已恢复。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 111868,
+      "event_id": "EVT-0000111869",
+      "raw_message_sha256": "519ebafa57cf319de6532471f8b769801c1c29f1888d52f0aab7c0bd3d9bf37e",
+      "raw_message_length": 456,
+      "format_review_name": "linux_audit_path_partial",
+      "format_basis_without_label": "audispd、type=PATH、msg=audit(...)、name=与mode=共现；元数据产品为空也能从消息描述该可见格式。",
+      "product_metadata_for_diagnostic_only": "",
+      "observed_outer_entities": {
+        "src_ip": "",
+        "dst_ip": "",
+        "src_host": "192.168.56.73",
+        "dst_host": "",
+        "username": ""
+      },
+      "spans": [
+        {
+          "name": "syslog_prefix",
+          "start": 0,
+          "end": 72,
+          "raw_excerpt": "<134>USER-9546-07-26T07:10:02.694494-04:00 USER-0010-0008 audispd[5178]:",
+          "suggested_action": "mask_timestamp_identity_pid_keep_program_role",
+          "reason": "日期、节点名、进程号可分开类型化；audispd用于识别格式，是否留主文本须进行来源诊断。"
+        },
+        {
+          "name": "audit_sequence",
+          "start": 103,
+          "end": 142,
+          "raw_excerpt": "msg=audit(172CRED-3272602.691:13804362)",
+          "suggested_action": "mask_confirmed_timestamp_and_record_sequence",
+          "reason": "epoch已损坏，不恢复数值；括号内冒号后序号也不作为行为。"
+        },
+        {
+          "name": "file_action",
+          "start": 93,
+          "end": 102,
+          "raw_excerpt": "type=PATH",
+          "suggested_action": "preserve_typed_record_type",
+          "reason": "PATH是本记录类型，不能因大写就当机构标记删除。"
+        },
+        {
+          "name": "permission_mode",
+          "start": 283,
+          "end": 295,
+          "raw_excerpt": "mode=0100750",
+          "suggested_action": "preserve_typed_numeric_semantics",
+          "reason": "权限/对象模式是语义数字，不能统一去零或去数字；具体位义本轮未解释。"
+        },
+        {
+          "name": "file_path",
+          "start": 151,
+          "end": 258,
+          "raw_excerpt": "name=\"/home/ORG-CRED-25690/USER-0010-54061/logs/vip_cleanup_cluster_external_vip.log.USER-95460604-065302Z\"",
+          "suggested_action": "preserve_path_structure_mask_confirmed_identity_and_date",
+          "reason": "保留/home、logs、文件操作路径结构；尾部像时间但已损坏，不猜具体日期。"
+        },
+        {
+          "name": "object_status",
+          "start": 374,
+          "end": 388,
+          "raw_excerpt": "objtype=NORMAL",
+          "suggested_action": "preserve_typed_object_field",
+          "reason": "NORMAL属于对象类型字段，不能全局删除normal或把它当benign标签。"
+        }
+      ],
+      "danger_boundaries": [
+        "inode=1319332是对象标识候选；mode=0100750、cap_fe=0、cap_fver=0不是同一种数字，不能共用无差别数字掩码。",
+        "UID/GID可能包含服务角色，若首轮屏蔽字面值需报告角色信息损失，不能宣称所有相关数字均无语义。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 115996,
+      "event_id": "EVT-0000115997",
+      "raw_message_sha256": "c0975e9385f71507e2632cb7ccfa0b639d028b91556c56ae610cb8c0dd1f994d",
+      "raw_message_length": 153,
+      "format_review_name": "asa_deny_flow_partial",
+      "format_basis_without_label": "Deny udp src zone:IP/port dst zone:IP/port可确认拒绝流量的表面结构；不凭此判类别。",
+      "product_metadata_for_diagnostic_only": "ASA Firewall",
+      "observed_outer_entities": {
+        "src_ip": "10.220.152.167",
+        "dst_ip": "172.25.116.1",
+        "src_host": "10.232.175.9",
+        "dst_host": "",
+        "username": ""
+      },
+      "spans": [
+        {
+          "name": "syslog_date",
+          "start": 0,
+          "end": 46,
+          "raw_excerpt": "<164>Jul 26 USER-9546 05:59:46: USER-0010-0324",
+          "suggested_action": "mask_confirmed_wrapper_fields",
+          "reason": "处理完整月份/日/损坏年/时间和设备名，不留固定Jul 26。"
+        },
+        {
+          "name": "network_action",
+          "start": 47,
+          "end": 111,
+          "raw_excerpt": "Deny udp src dmz-2:10.1.85.177/62182 dst dmz-1:172.25.112.208/53",
+          "suggested_action": "preserve_action_protocol_port_roles_mask_addresses",
+          "reason": "保留Deny、udp、源62182和目的53；zone名称dmz-1/dmz-2是环境身份候选，不能据字面名称推出固定信任关系。"
+        },
+        {
+          "name": "policy_name",
+          "start": 112,
+          "end": 141,
+          "raw_excerpt": "by ORG-1738-group \"USER-6542\"",
+          "suggested_action": "mask_policy_identity_preserve_relation",
+          "reason": "组名为实体候选，保留by及存在策略的关系；ORG-1738的原词未知，不猜回access。"
+        },
+        {
+          "name": "hex_tail",
+          "start": 142,
+          "end": 152,
+          "raw_excerpt": "[0x0, 0x0]",
+          "suggested_action": "preserve_unknown_numeric_tail",
+          "reason": "尾部十六进制字段语义未核实，不当作随机ID统一删除。"
+        }
+      ],
+      "danger_boundaries": [
+        "外层src_ip=10.220.152.167，而消息src=10.1.85.177；不能强行视为同一地址或据外层值建立正文实体映射。",
+        "拒绝动作不是威胁真值，正常拒绝应是后续对照，而非在规范化时改标签。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 129493,
+      "event_id": "EVT-0000129494",
+      "raw_message_sha256": "3752bf1b58ef691403ded2202d2f830c9328fc21c0d70a08b379add0bc5c3390",
+      "raw_message_length": 7325,
+      "format_review_name": "nested_endpoint_detection_fragments",
+      "format_basis_without_label": "behaviors数组、cmdline、parent_details、pattern_disposition_details与检测对象字段共现；只能确认局部嵌套检测格式，不能把裸product值用作预测。",
+      "product_metadata_for_diagnostic_only": "Falcon",
+      "observed_outer_entities": {
+        "src_ip": "172.27.17.220",
+        "dst_ip": "",
+        "src_host": "HOST-0019",
+        "dst_host": "",
+        "username": "USER-1259"
+      },
+      "spans": [
+        {
+          "name": "upstream_score",
+          "start": 368,
+          "end": 383,
+          "raw_excerpt": "\"confidence\":80",
+          "suggested_action": "isolate_upstream_view",
+          "reason": "上游分数不进入首轮事实视图；每个命中需绑定局部行为对象或可靠边界。"
+        },
+        {
+          "name": "upstream_score",
+          "start": 2127,
+          "end": 2140,
+          "raw_excerpt": "\"severity\":70",
+          "suggested_action": "isolate_upstream_view",
+          "reason": "上游分数不进入首轮事实视图；每个命中需绑定局部行为对象或可靠边界。"
+        },
+        {
+          "name": "upstream_score",
+          "start": 2835,
+          "end": 2850,
+          "raw_excerpt": "\"confidence\":80",
+          "suggested_action": "isolate_upstream_view",
+          "reason": "上游分数不进入首轮事实视图；每个命中需绑定局部行为对象或可靠边界。"
+        },
+        {
+          "name": "upstream_verdict",
+          "start": 2094,
+          "end": 2126,
+          "raw_excerpt": "\"scenario\":\"suspicious_activity\"",
+          "suggested_action": "isolate_upstream_view",
+          "reason": "这是检测器结论字段，不是由本模型独立观察得出的事实。"
+        },
+        {
+          "name": "upstream_verdict",
+          "start": 4597,
+          "end": 4629,
+          "raw_excerpt": "\"scenario\":\"suspicious_activity\"",
+          "suggested_action": "isolate_upstream_view",
+          "reason": "这是检测器结论字段，不是由本模型独立观察得出的事实。"
+        },
+        {
+          "name": "mixed_description",
+          "start": 466,
+          "end": 714,
+          "raw_excerpt": "\"description\":\"A process atUSER-0010-1591ted to modify ORG-9779 used for ORG-11922 sensor dynamic USER-5936. USER-9570 is indicative of an atUSER-0010-1591t to tamper with ORG-11922 sensor. Investigate the file USER-0086 ORG-1583 and process tree.\"",
+          "suggested_action": "isolate_mixed_description_record_information_loss",
+          "reason": "此段同时包含process modify/tamper等事实线索与indicative/investigate判词；无法可靠拆分时整段隔离，承认损失动作信息。"
+        },
+        {
+          "name": "mixed_description",
+          "start": 2933,
+          "end": 3181,
+          "raw_excerpt": "\"description\":\"A process atUSER-0010-1591ted to modify ORG-9779 used for ORG-11922 sensor dynamic USER-5936. USER-9570 is indicative of an atUSER-0010-1591t to tamper with ORG-11922 sensor. Investigate the file USER-0086 ORG-1583 and process tree.\"",
+          "suggested_action": "isolate_mixed_description_record_information_loss",
+          "reason": "此段同时包含process modify/tamper等事实线索与indicative/investigate判词；无法可靠拆分时整段隔离，承认损失动作信息。"
+        },
+        {
+          "name": "literal_false",
+          "start": 1768,
+          "end": 1788,
+          "raw_excerpt": "\"kill_process\":false",
+          "suggested_action": "preserve_literal_boolean_and_key",
+          "reason": "false必须保留，不得因为出现kill_process就提取成已杀进程。"
+        },
+        {
+          "name": "literal_false",
+          "start": 4271,
+          "end": 4291,
+          "raw_excerpt": "\"kill_process\":false",
+          "suggested_action": "preserve_literal_boolean_and_key",
+          "reason": "false必须保留，不得因为出现kill_process就提取成已杀进程。"
+        },
+        {
+          "name": "literal_true_damaged_key",
+          "start": 1613,
+          "end": 1639,
+          "raw_excerpt": "\"fs_ORG-1583_blocked\":true",
+          "suggested_action": "preserve_unknown_key_boolean",
+          "reason": "true可见，但被损坏键含义不能猜回；可保留为受控未知片段，不能自动映射已拦截某具体行为。"
+        },
+        {
+          "name": "literal_true_damaged_key",
+          "start": 4116,
+          "end": 4142,
+          "raw_excerpt": "\"fs_ORG-1583_blocked\":true",
+          "suggested_action": "preserve_unknown_key_boolean",
+          "reason": "true可见，但被损坏键含义不能猜回；可保留为受控未知片段，不能自动映射已拦截某具体行为。"
+        },
+        {
+          "name": "post_hoc_seconds",
+          "start": 6982,
+          "end": 7005,
+          "raw_excerpt": "\"seconds_to_resolved\":0",
+          "suggested_action": "isolate_until_availability_confirmed",
+          "reason": "数值0不证明收到事件时可得；仅证实字段存在。"
+        },
+        {
+          "name": "post_hoc_seconds",
+          "start": 7006,
+          "end": 7028,
+          "raw_excerpt": "\"seconds_to_triaged\":0",
+          "suggested_action": "isolate_until_availability_confirmed",
+          "reason": "数值0不证明收到事件时可得；仅证实字段存在。"
+        },
+        {
+          "name": "status_in_distinct_objects",
+          "start": 6641,
+          "end": 6658,
+          "raw_excerpt": "\"status\":\"normal\"",
+          "suggested_action": "require_path_before_interpretation",
+          "reason": "同一消息两处status分别为normal与new；全局键匹配不能判断其属于设备状态还是检测处理状态。"
+        },
+        {
+          "name": "status_in_distinct_objects",
+          "start": 7047,
+          "end": 7061,
+          "raw_excerpt": "\"status\":\"new\"",
+          "suggested_action": "require_path_before_interpretation",
+          "reason": "同一消息两处status分别为normal与new；全局键匹配不能判断其属于设备状态还是检测处理状态。"
+        },
+        {
+          "name": "embedded_redaction",
+          "start": 491,
+          "end": 510,
+          "raw_excerpt": "atUSER-0010-1591ted",
+          "suggested_action": "type_only_confirmed_marker_preserve_adjacent_fragments",
+          "reason": "保留at<REDACTED>ted边界；不吞整词，也不擅自重建为attempted。"
+        },
+        {
+          "name": "embedded_redaction",
+          "start": 2958,
+          "end": 2977,
+          "raw_excerpt": "atUSER-0010-1591ted",
+          "suggested_action": "type_only_confirmed_marker_preserve_adjacent_fragments",
+          "reason": "保留at<REDACTED>ted边界；不吞整词，也不擅自重建为attempted。"
+        }
+      ],
+      "danger_boundaries": [
+        "原始消息7325字符，事后字段位于约6982以后；仅检查前4096字符会漏掉。",
+        "cmdline和parent_cmdline应保留参数结构；路径中的身份/哈希按字段边界类型化，不能把所有数字当ID。",
+        "status父路径无法可靠恢复时主视图隔离该小片段并记录unknown，不能全局normal=>benign。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 247265,
+      "event_id": "EVT-0000247266",
+      "raw_message_sha256": "9ae848a5ffd7c6e992489b70ba26a3209153b54df92405d567a5a8f443518636",
+      "raw_message_length": 1415,
+      "format_review_name": "cef_waf_partial",
+      "format_basis_without_label": "存在CEF:0及管道分隔头、键值扩展；头部GET与扩展方法字段可作互证，整体扩展已被脱敏破坏。",
+      "product_metadata_for_diagnostic_only": "Barracuda WAF",
+      "observed_outer_entities": {
+        "src_ip": "100.64.1.37",
+        "dst_ip": "10.0.145.98",
+        "src_host": "10.149.108.24",
+        "dst_host": "USER-0010-0025.domain-0022.example.net",
+        "username": "-"
+      },
+      "spans": [
+        {
+          "name": "cef_header",
+          "start": 36,
+          "end": 78,
+          "raw_excerpt": "CEF:0|USER-0010-57562|WAF|1220|1000|GET|5|",
+          "suggested_action": "parse_header_position_before_masking",
+          "reason": "格式/厂商/产品/版本与事件码/动作/上游等级位置不同；不能一律删除1220、1000、5。具体保留编码契约须经头部语义核实。"
+        },
+        {
+          "name": "http_status",
+          "start": 242,
+          "end": 253,
+          "raw_excerpt": "outcome=200",
+          "suggested_action": "preserve_typed_http_outcome",
+          "reason": "在此WAF/请求上下文保留200；不能把任意outcome字段都当HTTP状态。"
+        },
+        {
+          "name": "damaged_method",
+          "start": 263,
+          "end": 282,
+          "raw_excerpt": "USER-9484Method=GET",
+          "suggested_action": "preserve_method_fragment_without_guessing_prefix",
+          "reason": "可读Method及GET存在，保留；不要把USER-9484反推为原始request。"
+        },
+        {
+          "name": "protocol_version",
+          "start": 283,
+          "end": 294,
+          "raw_excerpt": "app=TLSv1.3",
+          "suggested_action": "preserve_protocol_version_candidate",
+          "reason": "协议版本具有语义，不能与采集器版本共用删除规则。"
+        },
+        {
+          "name": "request_path",
+          "start": 412,
+          "end": 525,
+          "raw_excerpt": "USER-9484=/servlet/eAndar.WebFileLibrary/3433/CRED-30CRED-299353CRED-CRED-330660/profile-complete_no%20ribbon.png",
+          "suggested_action": "preserve_request_structure_record_unknown_ids",
+          "reason": "保留路径、扩展名、%20编码；3433是资源号还是行为语义尚未知，不能默认全部路径数字为身份。"
+        },
+        {
+          "name": "damaged_collection_time",
+          "start": 351,
+          "end": 377,
+          "raw_excerpt": "rt=172CRED-327CRED-2903355",
+          "suggested_action": "mask_entire_confirmed_time_value",
+          "reason": "完整字段值是损坏时间，不能删除CRED后拼出1723272903355。"
+        },
+        {
+          "name": "named_record_id",
+          "start": 684,
+          "end": 715,
+          "raw_excerpt": "externalId=190eebf32b9-7972a443",
+          "suggested_action": "mask_confirmed_record_identity",
+          "reason": "已确认记录标识候选，不作为文本记忆键。"
+        }
+      ],
+      "danger_boundaries": [
+        "正文src/dst和外层src_ip/dst_ip并不全部一致；地址类型化覆盖正文所有可靠地址槽。",
+        "GET、200、TLSv1.3、%20属于不同语义数字/符号，不允许“所有数字一律掩码”。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 601915,
+      "event_id": "EVT-0000601916",
+      "raw_message_sha256": "62de237db3b8efed5cf267c2480d4c8afc44ade1c61ae007fa92b1ba3d6b6693",
+      "raw_message_length": 107,
+      "format_review_name": "vpc_default_14_slot_partial",
+      "format_basis_without_label": "恰好14个空白分隔槽，首槽2、尾槽REJECT OK；若不足14槽或版本变化，不能套用相同位置。",
+      "product_metadata_for_diagnostic_only": "AWS VPC Security",
+      "observed_outer_entities": {
+        "src_ip": "100.64.0.255",
+        "dst_ip": "10.216.192.18",
+        "src_host": "HOST-0031",
+        "dst_host": "",
+        "username": ""
+      },
+      "spans": [
+        {
+          "name": "account_interface_identity",
+          "start": 0,
+          "end": 23,
+          "raw_excerpt": "2 100000013063 ORG-1504",
+          "suggested_action": "mask_account_interface_keep_version",
+          "reason": "保留版本2用于正确解析；账户与网卡标识类型化。"
+        },
+        {
+          "name": "addresses",
+          "start": 24,
+          "end": 51,
+          "raw_excerpt": "100.64.0.255 10.182.224.117",
+          "suggested_action": "mask_typed_addresses",
+          "reason": "两个地址槽类型化，保留源/目的位置。"
+        },
+        {
+          "name": "damaged_source_port",
+          "start": 52,
+          "end": 63,
+          "raw_excerpt": "4CRED-29842",
+          "suggested_action": "replace_whole_typed_value_with_unknown",
+          "reason": "整个源端口值已损坏；不得剥离CRED后把4或429842当端口。"
+        },
+        {
+          "name": "numeric_facts",
+          "start": 64,
+          "end": 75,
+          "raw_excerpt": "3378 6 1 44",
+          "suggested_action": "preserve_separate_typed_values",
+          "reason": "依本14槽结构分别为目的端口、协议、包数和字节数；不能作为一团数字删除。"
+        },
+        {
+          "name": "absolute_times",
+          "start": 76,
+          "end": 97,
+          "raw_excerpt": "1721992754 1721992777",
+          "suggested_action": "mask_absolute_times_preserve_raw_for_audit",
+          "reason": "绝对起止时间不进主文本；以后若做持续时间，需先验证单位和字段语义，再计算差值，不能凭拼接造时间链。"
+        },
+        {
+          "name": "action_logging_state",
+          "start": 98,
+          "end": 107,
+          "raw_excerpt": "REJECT OK",
+          "suggested_action": "preserve_separate_action_and_logging_status",
+          "reason": "拒绝动作与日志记录状态分开；OK不是正常类别，REJECT不是威胁真值。"
+        }
+      ],
+      "danger_boundaries": [
+        "有序槽数/类型不符时降为unsupported_layout，保存正文；不能悄悄用错索引。",
+        "元数据dst_ip=10.216.192.18与消息目的地址10.182.224.117不同，不宣称二者一致。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    },
+    {
+      "row_position": 740752,
+      "event_id": "EVT-0000740753",
+      "raw_message_sha256": "6c236b3b485261777046b14d572b19f49e0874baefadcbd9124c9e544eb9a59f",
+      "raw_message_length": 1860,
+      "format_review_name": "windows_xml_damaged_fragments",
+      "format_basis_without_label": "Provider、Channel、Task等可见XML片段共现，但起止标签名被脱敏，整体XML不能当作可完整解析。",
+      "product_metadata_for_diagnostic_only": "Windows Logs",
+      "observed_outer_entities": {
+        "src_ip": "",
+        "dst_ip": "",
+        "src_host": "HOST-0032",
+        "dst_host": "ORG-0475",
+        "username": "USER-1359"
+      },
+      "spans": [
+        {
+          "name": "event_code_fragment",
+          "start": 243,
+          "end": 286,
+          "raw_excerpt": "<USER-0010-56507ID>4634</USER-0010-56507ID>",
+          "suggested_action": "preserve_numeric_fragment_with_context",
+          "reason": "保留4634及标签上下文，不把所有*ID数值都映射为事件码。"
+        },
+        {
+          "name": "record_id_fragment",
+          "start": 476,
+          "end": 546,
+          "raw_excerpt": "<USER-0010-56507RecordID>4CRED-CRED-29788720</USER-0010-56507RecordID>",
+          "suggested_action": "mask_whole_confirmed_record_id_value",
+          "reason": "RecordID后缀与局部XML边界支持记录序号候选；不从残存数字恢复值。"
+        },
+        {
+          "name": "readable_action",
+          "start": 1173,
+          "end": 1199,
+          "raw_excerpt": "An account was logged off.",
+          "suggested_action": "preserve_readable_sentence",
+          "reason": "无需完整XML成功也应保留这句，不能因标签损坏输出无文本。"
+        },
+        {
+          "name": "event_task",
+          "start": 1639,
+          "end": 1658,
+          "raw_excerpt": "<Task>Logoff</Task>",
+          "suggested_action": "preserve_typed_task",
+          "reason": "Task=Logoff与正文相互支持，保留。"
+        },
+        {
+          "name": "damaged_date",
+          "start": 438,
+          "end": 473,
+          "raw_excerpt": "USER-9546-07-26T11:25:49.949523900Z",
+          "suggested_action": "mask_whole_confirmed_datetime",
+          "reason": "全日期跨度处理，不能只替换年份标记。"
+        },
+        {
+          "name": "lexical_marker_fragment",
+          "start": 1555,
+          "end": 1573,
+          "raw_excerpt": "reUSER-0010-54537s",
+          "suggested_action": "type_only_marker_keep_adjacent_fragments",
+          "reason": "保留re<REDACTED>s，不猜被脱敏原词。"
+        },
+        {
+          "name": "schema_url",
+          "start": 17,
+          "end": 126,
+          "raw_excerpt": "xmlns='ORG-CRED-31206://USER-0010-17321.domain-0022.example.net/win/2004/08/USER-0010-56507s/USER-0010-56507'",
+          "suggested_action": "mask_schema_source_value_keep_xml_context",
+          "reason": "命名空间含/win/2004/08，它是schema地址的一部分，不应作为发生日期解释；可作为包装/格式来源值隔离。"
+        }
+      ],
+      "danger_boundaries": [
+        "固定SID S-1-5-18可能表示账户角色；身份脱敏与角色抽象要分开，不得把整个安全标识体系当无意义数字。",
+        "此例包含说明性模板文字“IDs are only unique...”而非实际新增动作；抽取动作时不得把解释段中的动作词全部当事件发生。"
+      ],
+      "review_status": "candidate_contract_not_implemented_or_validated"
+    }
+  ]
+}

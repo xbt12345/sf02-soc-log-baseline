@@ -1,0 +1,10 @@
+{
+  "new_fits": 0,
+  "new_calibration_fits": 0,
+  "rows": 2014052,
+  "four_model_confusions_independently_recomputed": true,
+  "four_model_probabilities_argmax_match_labels": true,
+  "paired_error_accounting_matches": true,
+  "source_and_diagnostic_receipt_hashes_match": true,
+  "quality_acceptance": false
+}

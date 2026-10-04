@@ -1,4 +1,7 @@
 .venv/
+.venv-v61/
+.venv-mcp/
+mcp_readonly/.runtime/
 artifacts/
 catboost_info/
 __pycache__/
@@ -11,3 +14,20 @@ __pycache__/
 *.png
 *.log
 .DS_Store
+
+# Local runtimes, training outputs, and distributable dependency archives.
+.runtime/
+.v169_cpu_env_v1/
+platform_run_v1/
+*.npy
+*.npz
+*.pt
+*.pth
+*.whl
+*.tar.gz
+*.zip
+*.dll
+*.so
+*.dylib
+*.exe
+*.tfevents

@@ -1,0 +1,61 @@
+{
+  "provenance": "Cloud result JSON pasted by user; local artifacts independently read. Cloud files not directly retrieved.",
+  "script_sha256_matches": true,
+  "metrics": {
+    "sample_rows": {
+      "local": 100000,
+      "cloud": 100000,
+      "absolute_difference": 0
+    },
+    "audit_rows": {
+      "local": 8763,
+      "cloud": 8763,
+      "absolute_difference": 0
+    },
+    "fitted_tree_count": {
+      "local": 84,
+      "cloud": 84,
+      "absolute_difference": 0
+    },
+    "audit_macro_f1": {
+      "local": 0.5953639877306317,
+      "cloud": 0.5953639877306316,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    "audit_all_benign_macro_f1": {
+      "local": 0.3162798136708051,
+      "cloud": 0.3162798136708051,
+      "absolute_difference": 0.0
+    },
+    "audit_malicious_recall": {
+      "local": 0.7463651050080775,
+      "cloud": 0.7463651050080775,
+      "absolute_difference": 0.0
+    },
+    "audit_false_alerts_per_10000_normal": {
+      "local": 0.0,
+      "cloud": 0,
+      "absolute_difference": 0.0
+    },
+    "no_action_signal_fraction": {
+      "local": 0.82448,
+      "cloud": 0.82448,
+      "absolute_difference": 0.0
+    }
+  },
+  "cloud_peak_rss_gib": 1.1443252563476562,
+  "cloud_elapsed_minutes": 3.723399572997975,
+  "input_hash_check": "Known matching v1.1 source verifies both official SHA256 before fitting; reported completion supports that check ran and passed. input_identity.json not directly retrieved.",
+  "manifest_bytes_match": false,
+  "manifest_semantic_equality_verified": true,
+  "per_row_prediction_equality_verified": true,
+  "cloud_suspicious_recall_received": true,
+  "limitations": [
+    "Per-row predicted classes and listed manifest contents match; full probability arrays were not compared.",
+    "Byte hashes still differ; exact encoding or model metadata differences were not inspected.",
+    "Original cloud data files were not rehashed during this read-only verification; pilot hash receipts were checked.",
+    "Model detection quality and transfer performance remain unaccepted."
+  ],
+  "content_verification_provenance": "User pasted complete verify_pilot_result.py output; canonical split/decision hashes equal local references, all checks passed. Not independently executed remotely.",
+  "content_verification_file": "pilot_content_verification_cloud_user.json"
+}

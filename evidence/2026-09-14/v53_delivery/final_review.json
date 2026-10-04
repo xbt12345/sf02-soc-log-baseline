@@ -1,0 +1,37 @@
+{
+  "evidence_verified": true,
+  "prior_frozen_results": {
+    "v51": {
+      "frozen_files_unchanged": 106,
+      "excluded_mutable_entries": [
+        "README.md",
+        "docs/TRAINING_PLAN.md",
+        "training/README.md"
+      ]
+    },
+    "v52": {
+      "frozen_files_unchanged": 44,
+      "excluded_mutable_entries": [
+        "README.md",
+        "docs/TRAINING_PLAN.md",
+        "training/README.md"
+      ]
+    }
+  },
+  "evidence_files_checked": 25,
+  "completed_EBM_models": 16,
+  "R2_new_EBM_fits": 14,
+  "R1_completed_controls_reused": 2,
+  "incomplete_dense_interaction_attempts": 2,
+  "fit_side_joint_count_models": 4,
+  "all_candidate_quality_gates_passed": false,
+  "production_promoted": false,
+  "ASA_solved": false,
+  "official_training_data_only": true,
+  "platform_used": false,
+  "tests": "5 input/coarsening/label-mass tests plus independent original-file, learned-table, count, split and raw-variant verification",
+  "new_dependency": "interpret-core 0.7.8; installed without updating existing dependencies",
+  "supported_progress": "N_PAIR repaired 1168 of the 1532 seen-pure-same errors, with 0 new errors in that diagnostic slice. Overall candidate gates still fail.",
+  "remaining": "Conflicting reliable observations; sparse and unseen combinations; class regression and pressure suspicious collapse; insufficient normal network counterexamples.",
+  "future_not_executed": "Hierarchical support shrinkage and fit-side inner selection of complete/partial information parameters."
+}

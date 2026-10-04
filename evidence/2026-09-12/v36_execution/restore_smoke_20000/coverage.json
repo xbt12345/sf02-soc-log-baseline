@@ -1,0 +1,26 @@
+[
+  {
+    "route": "asa",
+    "product": "<missing>",
+    "label": "malicious",
+    "rows": 1634
+  },
+  {
+    "route": "cef_fields",
+    "product": "<missing>",
+    "label": "malicious",
+    "rows": 12
+  },
+  {
+    "route": "legacy_fallback",
+    "product": "<missing>",
+    "label": "malicious",
+    "rows": 18352
+  },
+  {
+    "route": "windows_message",
+    "product": "<missing>",
+    "label": "malicious",
+    "rows": 2
+  }
+]

@@ -1,0 +1,371 @@
+{
+  "scope": "Read-only source-bound diagnostics and assumption checks; no model training, no new splits or labels.",
+  "input_model_sha256": "3a7fde77112dce353ff764718e039829cf2dbada1e40b9497dd8917292fdd700",
+  "input_predictions_sha256": "12f3c2ea2a75173b62d67e0b015ac31dd85abca99e6df1155b8ad12c21b9ae14",
+  "old_plan_sha256": "f643672568e8cdc09522d65d00ff55ac1c70c1bb32ac9784551e53cd836e0d60",
+  "script_sha256": "3d3b8acc3dddf8f56ae4ff7cb6f7dbb4c9bd20d29dda5d9073d77858fd6e8008",
+  "global_class_bias_feasibility": [
+    {
+      "target": "windows_missed_suspicious",
+      "rows": 6,
+      "S_logit_offset_required_to_fix_all_strictly_greater_than": 1.246081980055302,
+      "S_logit_offset_allowed_with_no_new_benign_errors_strictly_less_than": 6.345174486808119,
+      "intervals_overlap": true,
+      "new_benign_errors_just_above_required_offset": 0,
+      "normal_rows": 167222,
+      "scope": "Oracle feasibility diagnostic on already inspected evaluation; not calibration or a deployable decision rule"
+    },
+    {
+      "target": "Duo_missed_suspicious",
+      "rows": 10,
+      "S_logit_offset_required_to_fix_all_strictly_greater_than": 2.175482492580566,
+      "S_logit_offset_allowed_with_no_new_benign_errors_strictly_less_than": 6.345174486808119,
+      "intervals_overlap": true,
+      "new_benign_errors_just_above_required_offset": 0,
+      "normal_rows": 167222,
+      "scope": "Oracle feasibility diagnostic on already inspected evaluation; not calibration or a deployable decision rule"
+    }
+  ],
+  "ASA_code13": {
+    "rows": 865,
+    "raw": {
+      "keys": 386,
+      "mixed_keys": 0,
+      "empirical_min_errors": 0
+    },
+    "body_keeping_identity": {
+      "keys": 2,
+      "mixed_keys": 0,
+      "empirical_min_errors": 0
+    },
+    "body_removing_identity_and_zone_suffix": {
+      "keys": 1,
+      "mixed_keys": 1,
+      "empirical_min_errors": 180
+    },
+    "interface_label_counts": [
+      {
+        "src_interface": "outside",
+        "dst_interface": "dmz-1",
+        "label_index": 1,
+        "rows": 180
+      },
+      {
+        "src_interface": "outside",
+        "dst_interface": "dmz-2",
+        "label_index": 2,
+        "rows": 685
+      }
+    ],
+    "identity_removed_body_shapes": [
+      "Deny icmp src outside:<IP> dst dmz:<IP> (type 3, code 13) by <ENTITY>-group \"outside_<ENTITY>_in\" [0x0, 0x0]"
+    ],
+    "interpretation": "Raw and body counts are not independent incidents; interface suffix and IP equality can explain dataset labels without validated causal meaning."
+  },
+  "context_matched_fit_support": [
+    {
+      "route": "asa",
+      "mask": 7,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 14750,
+          "projections": 1524,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 2308,
+          "projections": 263,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 7,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 1528,
+          "projections": 90,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 906,
+          "projections": 94,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 7,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 50,
+          "projections": 3,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 7360,
+          "projections": 2,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 8,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 9858,
+          "projections": 1849,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 126,
+          "projections": 62,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 8,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 660,
+          "projections": 128,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 10,
+          "projections": 5,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 9,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 3848,
+          "projections": 1,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 510,
+          "projections": 1,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 9,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 296,
+          "projections": 1,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 232,
+          "projections": 1,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 10,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 34340,
+          "projections": 6966,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 529,
+          "projections": 254,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 10,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 4592,
+          "projections": 592,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 100,
+          "projections": 42,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 10,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 100,
+          "projections": 14,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 15381,
+          "projections": 3842,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 12,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "icmp_code": 0,
+        "icmp_type": 8,
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "icmp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 798,
+          "projections": 1,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 6,
+          "projections": 1,
+          "legacy_components": 1
+        }
+      ]
+    },
+    {
+      "route": "asa",
+      "mask": 12,
+      "fixed_context": {
+        "action": "deny",
+        "dst_role": "dmz",
+        "icmp_code": 3,
+        "icmp_type": 3,
+        "outcome": "blocked",
+        "src_role": "outside",
+        "transport_protocol": "icmp"
+      },
+      "class_support": [
+        {
+          "label_index": 1,
+          "rows": 152,
+          "projections": 1,
+          "legacy_components": 1
+        },
+        {
+          "label_index": 2,
+          "rows": 6,
+          "projections": 1,
+          "legacy_components": 1
+        }
+      ]
+    }
+  ]
+}

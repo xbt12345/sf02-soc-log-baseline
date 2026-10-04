@@ -1,0 +1,10 @@
+{
+  "scope": "Final links/syntax/JSON and frozen-source checks only; main training explicitly not accepted",
+  "broken_local_document_links": [],
+  "python38_syntax": true,
+  "evidence_json_parse": true,
+  "frozen_sources": {
+    "soc_signal_pilot.py": "82dd742a813618f8408f55055181cdf8e14f5dc32978237e5efd85c0f997021b",
+    "soc_behavior_v2.py": "6859e8c6321b4758575e55ce6b74fe2794d293fc3d5fed83124a706c263d4c45"
+  }
+}

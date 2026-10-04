@@ -1,0 +1,10 @@
+{
+  "task": "source_ad",
+  "calibration_sha256": "921f078657521cd619f214368ffe437a042ebb5b056392315f8a6f146982f702",
+  "offsets": [
+    0,
+    0.0,
+    0.0
+  ],
+  "calibration_macro_f1_in_sample_selection": 0.9864761338627721
+}

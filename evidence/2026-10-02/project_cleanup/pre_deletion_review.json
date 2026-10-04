@@ -1,0 +1,80 @@
+{
+  "candidate_unique": true,
+  "zero_live_dependency_intersection": true,
+  "selected_terminal_window_protected": true,
+  "raw_official_data_before_sha256": {
+    "data\\official\\train.parquet": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "data\\official\\valid_answer_private.parquet": "11d8c34da6fddc823e9dc8e12de41bd8b66801d914e4a39b2b7e3161de082a56",
+    "data\\official\\valid_input.parquet": "731af597711aae0b870912c36fc1a0f592fd6e53d911c7fec6fe1405ec1a97b0"
+  },
+  "sample_checkpoint_structure_not_unpickled": [
+    {
+      "path": "artifacts/v61_models_20260914/D_20260915/latest_training_state.pt",
+      "bytes": 1792859899,
+      "is_zip_checkpoint": true,
+      "entries": 644,
+      "data_pickle_present": true,
+      "storage_members": 638
+    },
+    {
+      "path": "artifacts/v61_models_20260914/B_20260915/latest_training_state.pt",
+      "bytes": 1792037755,
+      "is_zip_checkpoint": true,
+      "entries": 628,
+      "data_pickle_present": true,
+      "storage_members": 622
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_0233.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_0466.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_0699.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_0932.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_1165.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    },
+    {
+      "path": "artifacts/v63_factorial_20260920/A1/step_1631.pt",
+      "bytes": 597340683,
+      "is_zip_checkpoint": true,
+      "entries": 161,
+      "data_pickle_present": true,
+      "storage_members": 155
+    }
+  ],
+  "all_raw_data_documents_core_source_and_environments_kept": true,
+  "active_v169_entire_namespace_and_current_platform_preparation_kept": true,
+  "source_model_evaluation_or_training_executed": false,
+  "historical_partial_replay_limit": "Closed historical all-step replays will reference intentionally removed intermediates; result/conclusion records and selected/end/final-window states retained. Current V169 seal and actual continuation closure are fully protected."
+}

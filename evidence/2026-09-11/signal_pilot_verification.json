@@ -1,0 +1,31 @@
+{
+  "hashes_match": {
+    "code": true,
+    "model": true,
+    "configuration": true,
+    "split": true
+  },
+  "sample_rows": 100000,
+  "row_positions_unique": true,
+  "all_groups_single_role": true,
+  "audit_row_positions_exact": true,
+  "prediction_labels_legal": true,
+  "loaded_model_feature_count": 23,
+  "loaded_model_classes": [
+    0,
+    1,
+    2
+  ],
+  "zero_error_interval_suppressed": true,
+  "model_metadata_keys": [
+    "train_finish_time",
+    "catboost_version_info",
+    "class_params",
+    "output_options",
+    "training",
+    "model_guid",
+    "params"
+  ],
+  "cloud_training_executed_by_assistant": false,
+  "unit_tests_passed_in_prior_command": 11
+}

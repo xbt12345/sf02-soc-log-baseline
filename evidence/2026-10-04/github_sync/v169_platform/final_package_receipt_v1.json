@@ -1,0 +1,13 @@
+{
+  "status": "actual_complete_platform_ZIP_CRC_and_every_member_SHA256_verified",
+  "path": "C:\\Users\\xiabutian\\Downloads\\SF02_V169_Platform_20261002\\SF02_V169_CPU_platform_v1.zip",
+  "bytes": 548455564,
+  "sha256": "7739d18e4739fb665091fd564be6d342e536c9438ace518f022f48401c75a391",
+  "files": 1598,
+  "source_manifest_sha256": "1083ad3e65bcdcafcaca5bd8afee8b8bf18c35fb2007dc34a5df3c42179474da",
+  "root_review_sha256": "7f01b5af9d2529cf7094f3a29d0ee423560a02228be8b07c0c223b1c0b332ffe",
+  "all_original_material_unchanged": true,
+  "official_calls": 0,
+  "actual_platform_execution_pending": true,
+  "quality_acceptance": false
+}

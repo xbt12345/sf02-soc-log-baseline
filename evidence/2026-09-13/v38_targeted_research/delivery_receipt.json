@@ -1,0 +1,151 @@
+{
+  "status": "targeted_research_and_development_diagnostics_complete_no_new_training",
+  "new_soc_classifiers_fitted": 0,
+  "new_platform_runs": 0,
+  "fresh_blind_quality_claim": false,
+  "checks": {
+    "codec_roundtrip": true,
+    "codec_report": true,
+    "coding_floor_difference": true,
+    "hash_additional_floor": true,
+    "known_joint_f1": true,
+    "known_argmax_malicious_zero": true,
+    "known_suspicious_to_malicious": true,
+    "other_joint_alarm_counts": true,
+    "asa_suspicious_class_zero": true,
+    "source_sklearn_dict": true,
+    "source_sklearn_hash": true,
+    "source_category_basen": true,
+    "source_category_binary": true,
+    "source_logit_readme": true,
+    "source_num_embeddings_readme": true,
+    "official_source_identity": true,
+    "link_V38_TARGETED_RESEARCH.md_0": true,
+    "link_V38_TARGETED_RESEARCH.md_1": true,
+    "link_V38_TARGETED_RESEARCH.md_2": true,
+    "link_V38_TARGETED_RESEARCH.md_4": true,
+    "link_V38_TARGETED_RESEARCH.md_8": true,
+    "link_V38_TARGETED_RESEARCH.md_20": true,
+    "link_V38_TARGETED_RESEARCH.md_21": true,
+    "link_V38_NEXT_PLAN.md_0": true,
+    "link_V38_NEXT_PLAN.md_1": true,
+    "link_TRAINING_PLAN.md_0": true,
+    "link_TRAINING_PLAN.md_1": true,
+    "link_TRAINING_PLAN.md_2": true,
+    "link_TRAINING_PLAN.md_3": true,
+    "link_TRAINING_PLAN.md_4": true,
+    "link_TRAINING_PLAN.md_5": true,
+    "link_TRAINING_PLAN.md_6": true,
+    "link_TRAINING_PLAN.md_7": true,
+    "link_TRAINING_PLAN.md_8": true,
+    "plan_snapshot_retained": true
+  },
+  "all_consistency_checks_passed": true,
+  "scope": "Consistency, local links, source snapshots and official identity; not model quality acceptance",
+  "files": {
+    "evidence\\2026-09-13\\v38_targeted_research\\asa_codec_probe.json": {
+      "bytes": 2158,
+      "sha256": "5dc25e3102000f3369a45bad36612333edea7ef31dda5e891af1df9cdfdb4800"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\asa_codec_probe.log": {
+      "bytes": 3485,
+      "sha256": "f94e90d38ebc6adc9ab1e699730616172f93cbfe89645898dd812a0b41157af7"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\asa_codec_probe.py": {
+      "bytes": 5222,
+      "sha256": "b766053abd22d2edb435b5a625dd7a750f8b716e69fd6c7fc3f562e58da9dfb2"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\asa_hard_frozen_offsets.json": {
+      "bytes": 235,
+      "sha256": "3b4b12c99f97cd77a4bdaa6a3d644f0c0d0fa4f8e97654afd7124dce9feb6901"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\decision_probe.log": {
+      "bytes": 12740,
+      "sha256": "52620af4d4da912d7d572599c4f12c0e629617348e3220e61425d7a881c2b7a7"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\decision_probe.py": {
+      "bytes": 3223,
+      "sha256": "3f89998401253d33568f722d002f4f5ba497fd2e85891d55669229ba85229ff8"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\decision_probe_config.json": {
+      "bytes": 454,
+      "sha256": "bbb33d3f45eb5ebc8993756d41085cc80a78b990c6c42105f15853b135803368"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\decision_probe_results.json": {
+      "bytes": 12738,
+      "sha256": "f84bf01e9e1da31dbd0232efc1b51b265438895cd86a6dbe68e763da1628718f"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\known_dev_frozen_offsets.json": {
+      "bytes": 236,
+      "sha256": "4de3ded41b8412c13e82dfea94b1f89a118ecd3230754afc0133eb1da260483a"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\official_contract_review.json": {
+      "bytes": 589,
+      "sha256": "9c00155d275d6c01af5003686f305894d0ffe405d645b9957e6c69756a4d55c7"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\official_task_extract.txt": {
+      "bytes": 2990,
+      "sha256": "f5eb2820b47fffc4b625614a28ea49ceebb4305c6c7b7913de5e3c8fcc03c78f"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\plan_before_research.md": {
+      "bytes": 9528,
+      "sha256": "f128bae08962e79527922b3a75ff3fb4aa9530863bf5e15181f95125f02bccc5"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\source_ad_frozen_offsets.json": {
+      "bytes": 236,
+      "sha256": "538b5a790b9ce4a42f0b3f49646740ad457971283d20dd5f3e70ecda903d6a90"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\source_duo_frozen_offsets.json": {
+      "bytes": 237,
+      "sha256": "10f0638c807bc238d1be3f717c43ecc0ac10a3bc5f1f6035527a859b3536a1f0"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\source_registry.json": {
+      "bytes": 3356,
+      "sha256": "61c1482eeffb1922753a5bab885bd1e78bfd835fc54bfc600786fcf0b01cab5a"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\source_waf_frozen_offsets.json": {
+      "bytes": 237,
+      "sha256": "6c53a4b8edea62b941a5e6047e3b9907903fe5018aa4951e525a442e82b51ef8"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\category_basen.txt": {
+      "bytes": 12293,
+      "sha256": "a318e8301852f56613df135ba02d2f8e4fa1a16e0e898757c05fd4707a94ecb0"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\category_binary.txt": {
+      "bytes": 2931,
+      "sha256": "921400af373b34fe8aa804c532034649f8756cb390565539d4133471dba32edb"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\logit_readme.txt": {
+      "bytes": 3176,
+      "sha256": "9b066dd7afbf3154b61bfd1262d25b09d17f62c7b56d01f0c65261473c5fda1e"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\num_embeddings_readme.txt": {
+      "bytes": 10817,
+      "sha256": "2a5a2e30423e68d400824f27a10d3ff0ebc43f7e68842e2b19e81e569025b676"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\receipts.json": {
+      "bytes": 1709,
+      "sha256": "1e4e4ae9c65a667a30daa9834f36fa525028f0bae04af02addd1320300a59c48"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\sklearn_dict.txt": {
+      "bytes": 15556,
+      "sha256": "729feb8e877cd4344095b83f4d3aeb1c763a5117931e8e6f54d7906494dbe3ea"
+    },
+    "evidence\\2026-09-13\\v38_targeted_research\\sources\\sklearn_hash.txt": {
+      "bytes": 7383,
+      "sha256": "be102417b6bfd75dcd60c49dd85ef4a299e3c41a5b8c4e2014cfa263ebfc3b29"
+    },
+    "docs\\V38_TARGETED_RESEARCH.md": {
+      "bytes": 12472,
+      "sha256": "9bae8db63bb5dfed40a0755e41aa128efbdb10c63d821c962a97cb027561eaee"
+    },
+    "docs\\V38_NEXT_PLAN.md": {
+      "bytes": 10003,
+      "sha256": "1b9e20b155369051a6eade275f306a0e07068d31a6424e9cc70ee10f5311c73f"
+    },
+    "docs\\TRAINING_PLAN.md": {
+      "bytes": 2170,
+      "sha256": "fa8de3f4245784649798d2e0f6c1691da117001a5014b0acaf5e9f3e9f5d6e72"
+    }
+  }
+}

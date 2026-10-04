@@ -1,0 +1,426 @@
+[
+  {
+    "model": "asa_hard_B2_CONTROL",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.0439141453974226,
+        "local": 0.04391414539742254,
+        "absolute_difference": 6.245004513516506e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048557958354494224,
+        "local": 0.04855795835449246,
+        "absolute_difference": 1.762479051592436e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.0439141453974226,
+        "local": 0.04391414539742254,
+        "absolute_difference": 6.245004513516506e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048557958354494224,
+        "local": 0.04855795835449246,
+        "absolute_difference": 1.762479051592436e-15
+      }
+    ],
+    "max_probability_difference": 4.996003610813204e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "asa_hard_B2_REPAIRED",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.0439141453974226,
+        "local": 0.04391414539742254,
+        "absolute_difference": 6.245004513516506e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048557958354494224,
+        "local": 0.04855795835449246,
+        "absolute_difference": 1.762479051592436e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.0439141453974226,
+        "local": 0.04391414539742254,
+        "absolute_difference": 6.245004513516506e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048557958354494224,
+        "local": 0.04855795835449246,
+        "absolute_difference": 1.762479051592436e-15
+      }
+    ],
+    "max_probability_difference": 2.439454888092385e-19,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "known_dev_B2_CONTROL",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04976846633315994,
+        "local": 0.04976846633316049,
+        "absolute_difference": 5.48172618408671e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04863814094130964,
+        "local": 0.048638140941314384,
+        "absolute_difference": 4.746203430272544e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04976846633315994,
+        "local": 0.04976846633316049,
+        "absolute_difference": 5.48172618408671e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04863814094130964,
+        "local": 0.048638140941314384,
+        "absolute_difference": 4.746203430272544e-15
+      }
+    ],
+    "max_probability_difference": 7.771561172376096e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "known_dev_B2_REPAIRED",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04976846633315994,
+        "local": 0.04976846633316049,
+        "absolute_difference": 5.48172618408671e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04863814094130964,
+        "local": 0.048638140941314384,
+        "absolute_difference": 4.746203430272544e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04976846633315994,
+        "local": 0.04976846633316049,
+        "absolute_difference": 5.48172618408671e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04863814094130964,
+        "local": 0.048638140941314384,
+        "absolute_difference": 4.746203430272544e-15
+      }
+    ],
+    "max_probability_difference": 2.220446049250313e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_ad_B2_CONTROL",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.046294817898037556,
+        "local": 0.04629481789803763,
+        "absolute_difference": 7.632783294297951e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048724518720639015,
+        "local": 0.04872451872063814,
+        "absolute_difference": 8.743006318923108e-16
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.046294817898037556,
+        "local": 0.04629481789803763,
+        "absolute_difference": 7.632783294297951e-17
+      },
+      {
+        "path": "/2/calibration_sources/<missing>/threshold",
+        "saved": 0.025000812689456867,
+        "local": 0.025000812689456645,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/threshold",
+        "saved": 0.02304495303572474,
+        "local": 0.023044953035724517,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048724518720639015,
+        "local": 0.04872451872063814,
+        "absolute_difference": 8.743006318923108e-16
+      }
+    ],
+    "max_probability_difference": 4.718447854656915e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_ad_B2_REPAIRED",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.046294817898037556,
+        "local": 0.04629481789803763,
+        "absolute_difference": 7.632783294297951e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048724518720639015,
+        "local": 0.04872451872063814,
+        "absolute_difference": 8.743006318923108e-16
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.046294817898037556,
+        "local": 0.04629481789803763,
+        "absolute_difference": 7.632783294297951e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048724518720639015,
+        "local": 0.04872451872063814,
+        "absolute_difference": 8.743006318923108e-16
+      }
+    ],
+    "max_probability_difference": 4.440892098500626e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_duo_B2_CONTROL",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04311629035723791,
+        "local": 0.043116290357238005,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048806064710794676,
+        "local": 0.04880606471079339,
+        "absolute_difference": 1.2836953722228372e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/0/empirical_pooled",
+        "saved": 0.07473940559118765,
+        "local": 0.07473940559118787,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "path": "/1/np_iid_diagnostic/threshold",
+        "saved": 0.05429102217834126,
+        "local": 0.05429102217834148,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04311629035723791,
+        "local": 0.043116290357238005,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048806064710794676,
+        "local": 0.04880606471079339,
+        "absolute_difference": 1.2836953722228372e-15
+      }
+    ],
+    "max_probability_difference": 4.996003610813204e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_duo_B2_REPAIRED",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04311629035723791,
+        "local": 0.043116290357238005,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048806064710794676,
+        "local": 0.04880606471079339,
+        "absolute_difference": 1.2836953722228372e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.04311629035723791,
+        "local": 0.043116290357238005,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048806064710794676,
+        "local": 0.04880606471079339,
+        "absolute_difference": 1.2836953722228372e-15
+      }
+    ],
+    "max_probability_difference": 4.440892098500626e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_waf_B2_CONTROL",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.047059176328522655,
+        "local": 0.04705917632852275,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048710800699311704,
+        "local": 0.048710800699313016,
+        "absolute_difference": 1.3114509478384662e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.047059176328522655,
+        "local": 0.04705917632852275,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048710800699311704,
+        "local": 0.048710800699313016,
+        "absolute_difference": 1.3114509478384662e-15
+      }
+    ],
+    "max_probability_difference": 5.551115123125783e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "model": "source_waf_B2_REPAIRED",
+    "saved_scores_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.047059176328522655,
+        "local": 0.04705917632852275,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048710800699311704,
+        "local": 0.048710800699313016,
+        "absolute_difference": 1.3114509478384662e-15
+      }
+    ],
+    "reinferred_policy_differences": [
+      {
+        "path": "/1/np_iid_diagnostic/binomial_tail",
+        "saved": 0.047059176328522655,
+        "local": 0.04705917632852275,
+        "absolute_difference": 9.71445146547012e-17
+      },
+      {
+        "path": "/2/np_iid_diagnostic/binomial_tail",
+        "saved": 0.048710800699311704,
+        "local": 0.048710800699313016,
+        "absolute_difference": 1.3114509478384662e-15
+      }
+    ],
+    "max_probability_difference": 1.3877787807814457e-16,
+    "frozen_threshold_calibration_decision_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

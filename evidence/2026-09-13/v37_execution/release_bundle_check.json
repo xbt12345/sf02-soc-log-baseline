@@ -1,0 +1,11 @@
+{
+  "uploaded_file_sha256": "cd3ec604306196c19d0eb2e165c7a0177befa7be270bde69a01ef95a3bbcb3d2",
+  "files_verified": 29,
+  "python38_source_parse_passed": true,
+  "software_tests": 39,
+  "software_tests_passed": true,
+  "damaged_payload_stopped_before_writes": true,
+  "changed_runtime_stopped": true,
+  "sources_restored_reverified": true,
+  "cloud_execution_completed": false
+}

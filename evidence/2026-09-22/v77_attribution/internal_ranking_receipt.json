@@ -1,0 +1,69 @@
+{
+  "new_fits": 0,
+  "source_sha256": "c19271bfeeca95ee010516137b605555bd6ef932d008f43b7d1bfc4f16da72c8",
+  "inputs_sha256": {
+    "artifacts/v75_four_arm_20260921_r2/rows.parquet": "449fbd0c9783aa75a34e1f44e0780041076687963e3b161762f144e5ff2404bf",
+    "artifacts/v75_four_arm_20260921_r2/four_arm/predictions.parquet": "74a12beaaef4bb239833107f9a80d0654e6ea1b4851b0918f1601cabc3c20d7f",
+    "artifacts/v75_four_arm_20260921_r2/full/predictions.parquet": "dc877be8e4f9f934316b40407ce194aeae34f239f4c9879c1bf9dbff552b241b"
+  },
+  "output_sha256": "42a573c1eb59beb273ac1bedc02f414463f25b581e537f3595bada649edd727e",
+  "models": {
+    "four_arm/D.joblib": {
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "n_features": 66287,
+      "sample_updates": 9921300,
+      "alpha": 1e-06,
+      "eta0": 0.05,
+      "learning_rate": "constant",
+      "average": true,
+      "model_sha256": "bcf9fbb1a1a0b3e218b8055f4d251f88630c90745cf0c70b2c0ce79da0e3f5e3"
+    },
+    "full/FULL.joblib": {
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "n_features": 66287,
+      "sample_updates": 12341226,
+      "alpha": 1e-06,
+      "eta0": 0.05,
+      "learning_rate": "constant",
+      "average": true,
+      "model_sha256": "3190cb40a6388158c07727d356a6b1bc9e2b75d59922476eb8fc1c2d1f1a05d0"
+    },
+    "corrective/F.joblib": {
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "n_features": 66287,
+      "sample_updates": 9921300,
+      "alpha": 1e-06,
+      "eta0": 0.05,
+      "learning_rate": "constant",
+      "average": true,
+      "model_sha256": "899951ca4597e14592870f175964f98869acccdcb1f296b13100f105725dd524"
+    },
+    "F_diagnostic/model.joblib": {
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "n_features": 66287,
+      "sample_updates": 12341226,
+      "alpha": 1e-06,
+      "eta0": 0.05,
+      "learning_rate": "constant",
+      "average": true,
+      "model_sha256": "e4172007c3e55d9a2372eec64aef2369fa24d0da014935418871ba975bcd6f1a"
+    }
+  },
+  "scope": "D_inner uses original heldout rows; D_full fitted the same rows and is diagnostic resubstitution only. Float32 stored probabilities, not new logits."
+}

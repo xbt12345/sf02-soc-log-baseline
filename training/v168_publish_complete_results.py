@@ -1,0 +1,49 @@
+"""Publish the independently reviewed finite diagnostic, not a trained replacement."""
+import hashlib,json,shutil,sys
+from pathlib import Path
+from experiment_review import ROOT,read,sha,check_bindings
+sys.path.insert(0,str(ROOT))
+from mcp_readonly.catalog_io import load_catalog
+
+OUT=ROOT/'artifacts/v168_results_20261002'
+REPORT=ROOT/'docs/V168_COMPLETE_DECISION_FLOOR_DIAGNOSTIC_RESULTS_20261002.md'
+TRIAL=ROOT/'artifacts/v168_decision_floor_diagnostic_20261002'
+
+def save(path,value):path.write_bytes((json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
+
+def main():
+    assert not OUT.exists() and not REPORT.exists();own=ROOT/'artifacts/v168_saved_decision_floor_quality_review_20261002/review.json';geometry=ROOT/'artifacts/v168_saved_actual_floor_geometry_review_20261002/review.json';root=ROOT/'artifacts/v168_independent_actual_decision_floor_review_20261002/review.json';burden=ROOT/'artifacts/v168_root_saved_prior_burden_review_20261002/review.json';replay=ROOT/'artifacts/v168_observed_runtime_boundaries_20261002/replay.json';pending=ROOT/'artifacts/v168_actual_pending_independent_review_20261002/record.json'
+    for p in [own,geometry,burden,replay,pending,root.parent/'pre_review_bindings.json']:check_bindings(read(p)['source_sha256'])
+    a,b=read(own),read(root);diag=read(TRIAL/'role1/diagnostic.json');assert a['all_actual_finite_guards_passed'] and b['all_three_actual_finite_candidates_safe'] and b['supports_new_short_training_registration'] and not b['training_issue_mastered'] and not b['quality_acceptance'];assert a['actual_new_heads']==b['new_heads']==98 and a['actual_new_complete_margin_derivatives']==b['new_complete_margin_derivatives']==50 and a['actual_QP_solves']==b['actual_QP_solves']==1 and a['actual_finite_proposals']==1 and diag['all_parameters_restored'] and diag['exception'] is None
+    mutable=[ROOT/p for p in ['README.md','HANDOFF.md','mcp_readonly/catalog.json','mcp_readonly/tests/test_readonly_mcp.py']];catalog=read(mutable[2]);effective=load_catalog(ROOT,mutable[2],256*1024);historic={r['id']:r for r in effective['documents']};assert len(historic)==451 and effective['project']['authoritative_delivery_id']=='v159-delivery'
+    for row in historic.values():assert sha(ROOT/row['path'])==row['sha256'] and (ROOT/row['path']).stat().st_size<=256*1024
+    prior=ROOT/'artifacts/v167_direction_20261002/plan.md';retained=prior.read_text(encoding='utf-8').split('## 既有证据限制完整保留\n\n',1)[1]
+    lines=['# V168 完整实际结果：平手修复通过，分类掌握仍未通过','',
+        '角色1唯一实际候选通过原基础保护及新增复合验收：两条S平手恢复正确，四条M候选修复全部保留，相对V164修复4M、0S旧错且没有新增M/S错误，纯错误1952→1948。根独立实际审查通过，安全角色0/2仅引用已审查的V167/V166旧候选。全模型参数恢复V164，0新fit、0永久更新。此结果只支持另登记受限训练；第一问题、另外两个目标、完整三分类及泛化仍未完成。','',
+        '|角色|候选 M/S 错误|修复 M/S vs V164|新增 M/S vs V164|实际范围|','|---|---|---|---|---|',
+        '|0|1530/1414|356/0|0/0|冻结旧安全候选；0新调用、0新收益|',
+        '|1|864/1156|4/0|0/0|本项唯一实际候选，原基础与复合验收均通过|',
+        '|2|798/892|8/0|0/0|冻结旧安全候选；0新调用、0新收益|','',
+        '三个角色有重叠，修复频次不可加为唯一事件。角色1相对V167最后失败候选恢复2条S退化，这是恢复V164原正确行，不是修复2条V164旧S错误；相对V164的1156条S旧错仍全部存在，M错864/38886、S错1156/2071，纯错1948，远未掌握分类。四条M修复集中在一个local，不能声明跨来源稳定收益。','',
+        '唯一变化是对现有argmax平手会输的真值/竞争类使用前瞻正地板：truth索引大于rival时 tau=16*eps64*max(1,abs(试探点logq_truth),abs(logq_rival))，否则0。在V167最后真实平手参数8ae9b55c...上重新测同一25完整函数，每函数两次新全参数Jacobian；原点M/S固定旧错目标梯度仍在V164原点，旧Jacobian未冒充新点。原输入、完整块、顺序意见、gold、频次、类别分母、混合行、原16eps/Armijo与所有旧技能保护均保持。','',
+        '实际平手函数 OOF local21985、truth=S(2)、rival=M(1) 的地板为3.552713678800501e-15，局部预测log裕量3.556105320783851e-15，实际log裕量3.552713678800501e-15（0x1.0000000000000p-48），实际q差1.7763568394002505e-15（0x1.0000000000000p-49），qM=0.4999999999944851、qS=0.49999999999448685，原argmax选择S。全部原单位证书通过，实际新增保护错误0。该单次极小正裕量不构成CUDA候选多次重放、独立来源、迁移安全距离或跨状态稳定性证明；验收容差未增加，分类器及平手规则未改。','',
+        '基础 probe.json 与最终 v168_complete_probe_review.json 分开保存；最终复合判定同时要求全部原有限门槛、原M/S总错误保护、四条M候选修复保留、两条S恢复正确及前瞻M≤864/S≤1156。四条候选M目标独立于起点正确mask，没有事后并入V164基线。仅一次QP与一次有限候选，未做第二修正、倍数扫描、seed/步长切换或追加fit。','',
+        '本轮实际成本98头/特征（16基线+50新导数测量+16候选+16恢复）、50完整裕量导数、1实际QP、1有限候选，优化器内部2次迭代；0fit/0永久更新。累计19178头/特征，368原类别+32固定错误目标+368裕量=768完整参数导数。自V159以来9fit/170更新保持，失败费用不清零。角色0/2没有再次调用或优化，也没有重复计算收益。','',
+        '17,970个物理来源在正式调用前封存，四项资格及根独立前置审查完成后执行。5个完整尺寸CPU QP、参数/输入身份、7生命周期分支和5对抗分支分别通过；缓存/合成head与QP资格仅验证局部核心和入口，不代替实际SOC输出。首版OOF比较包含未评估NaN位置的失败与独立v2、生命周期首版SyntaxError及v2全部保留并绑定；实际入口封存后未修改。运行末尾require与所有完整endpoint.pt逐位恢复V164，原q/logq按8eps复核，argmax严格一致。','',
+        '根独立实际审查从官方gold核对完整原行、25个完整输入身份与50成对导数、真实最终平手参数及原点类梯度、原单位QP、基础与复合有限保护、成本和恢复；另做1次CPU保存向量QP回放，0新官方调用。工作侧逐行质量补齐逐类CE、来源代理集中度、未修复裕量与固定读出必要界；所有25函数的局部预测与实际argmax几何单独保存。V138/V140/V142能力和完整部署保护通过，范围不等于OOF掌握或完整任务质量。','',
+        '后续真正的分类负担已有保存证据：在V164角色1的1156条S错误中813条真值先验概率≤1e-12，错误先验log差中位−27.631，已学残差中位约+0.143；保持当前读出时最大修正约0.981，1082条S错不能仅靠隐藏层变化修复。这个界限定于当前冻结读出状态；全部模型参数仍可训练，不能推论全模型不可行、缺信息或不可避免错误，也不能用温度校准充当分类修复。','',
+        '根审查同时保留V164真实训练的容量中止：角色接受1/1/3更新后分别暴露25/27/32个保护函数而停止，未用满每角色10个接受更新；不能说充分训练后不学习。下一合同必须实际解决约束计算管理、记录接受轨迹与深错误裕量进度，保留完整逐行保护、原gold和固定目标；不能只改版本重跑旧入口。第一问题关闭仍需纯错误0、五个真实不同掌握状态及全部旧能力保持，本次两条平手不替代该验收。','',
+        '最新真实训练仍V164，最新2056871原行完整质量交付仍为未通过的V159。MCP主索引和哈希绑定历史索引每文件仍≤256KiB，既有451条记录保留原ID/路径/哈希/元数据；三个只读接口及能力范围保持。接口验证仅本地，不声称云连接或完整质量验收。','',
+        f'正式合同：`training/review_policy/v168_decision_floor_contract.json`；入口：`training/v168_decision_floor_diagnostic_v2.py`；根独立实际审查：`{root.relative_to(ROOT).as_posix()}`；完整逐行质量：`{own.relative_to(ROOT).as_posix()}`；全部25函数几何：`{geometry.relative_to(ROOT).as_posix()}`；根先验/读出负担：`{burden.relative_to(ROOT).as_posix()}`；五项实际边界回放：`{replay.relative_to(ROOT).as_posix()}`。','',
+        '## 发布前当前限制完整保留','']
+    lines+=['- '+v for v in effective['project']['known_limits']];lines+=['','## 既有证据限制完整保留','',retained];body=('\n'.join(lines)+'\n').encode('utf-8');assert len(body)<=256*1024;saved=OUT/'review.md'
+    additions=[dict(id='v168-review',title='V168平手修复实际通过',path=saved.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(body).hexdigest(),category='review_evidence',keywords=['V168']),dict(id='v168-root-review',title='V168根独立实际审查',path=root.relative_to(ROOT).as_posix(),sha256=sha(root),category='review_evidence',keywords=['V168']),dict(id='v168-prior-burden',title='V164当前先验读出负担',path=burden.relative_to(ROOT).as_posix(),sha256=sha(burden),category='review_evidence',keywords=['V168'])];assert all(r['id'] not in historic for r in additions);catalog['documents']=additions+catalog['documents'];p=catalog['project'];p['authoritative_direction_id']='v168-review';p['current_summary']='V168单候选通过，修复4M/0S旧错、0新增错误；98头/50导数/1QP，0fit/更新，全恢复V164，累计19178头/768导数。分类未掌握，三目标未完成，交付V159。';p['current_direction']=['另审查有界真实训练与约束计算管理；保留深错误进度和全部旧能力，本轮无追加候选/fit。'];p['known_limits']=['三个目标及完整质量未完成；当前只通过一次有限诊断，最新训练V164、完整交付V159；全部旧限制见当前附录。'];encoded=(json.dumps(catalog,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8');assert len(encoded)<=256*1024
+    OUT.mkdir()
+    for path in mutable:
+        target=OUT/'previous'/path.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,target)
+    REPORT.write_bytes(body);saved.write_bytes(body);mutable[2].write_bytes(encoded);after=load_catalog(ROOT,mutable[2],256*1024);now={r['id']:r for r in after['documents']};assert len(now)==454 and all(now[k]==v for k,v in historic.items())
+    sources=[Path(__file__).resolve(),REPORT,own,geometry,root,root.parent/'pre_review_bindings.json',burden,replay,pending,prior,TRIAL/'registration.json',TRIAL/'run_seal.json'];summary=dict(status='V168_single_actual_floor_candidate_and_frozen_safe_controls_passed_all_V164_parameters_restored',role1_quality=a,unchanged_safe_references=b['unchanged_safe_references'],actual_new_heads=98,actual_new_features=98,actual_new_complete_margin_derivatives=50,actual_QP_solves=1,actual_finite_proposals=1,actual_optimizer_iterations=2,new_fits=0,permanent_updates=0,cumulative_heads=19178,cumulative_features=19178,cumulative_full_original_class_gradients=368,cumulative_fixed_error_target_gradients=32,cumulative_margin_gradients=368,cumulative_all_complete_derivatives=768,cumulative_fits_since_V159=9,cumulative_updates_since_V159=170,all_actual_finite_guards_passed=True,supports_separate_short_training_registration=True,no_fit_authority_under_current_contract=True,all_restored_full_tensors_exact=True,all_restored_original_argmax_exact=True,latest_actual_training='V164',latest_complete_quality_delivery='V159',classification_mastery=False,quality_acceptance=False,root_goal_status='active',source_sha256={path.relative_to(ROOT).as_posix():sha(path) for path in sources});save(OUT/'actual_result_summary.json',summary)
+    lead='当前实际结论：[V168平手修复通过，分类仍未掌握](docs/V168_COMPLETE_DECISION_FLOOR_DIAGNOSTIC_RESULTS_20261002.md)。根独审通过；角色1两条S平手恢复、四条M候选修复保留，相对V164修复4M/0S、0新增错误，纯错1948。98头/50导数/1QP、0fit/更新，全恢复V164，累计19178头/768导数。最新训练V164、完整质量交付V159，三个目标未完成；下一真实训练须另登记并处理约束容量与深错误，当前无追加fit权限。\n\n'
+    old=mutable[0].read_text(encoding='utf-8');assert old.startswith('当前实际进度：');mutable[0].write_bytes((lead+old.split('\n\n',1)[1]).encode('utf-8'));mutable[1].write_bytes((mutable[1].read_text(encoding='utf-8')+'\n\n## V168完整独立验收与发布\n\n'+lead+'唯一direction=v168-review，delivery=v159-delivery；原v168-plan/合同/源码/资格/失败日志不改，根先验负担与五项边界已记录。只有另登记训练的资格，没有新拟合或第二候选授权。\n').encode('utf-8'));mutable[3].write_bytes(mutable[3].read_text(encoding='utf-8').replace('v168-plan','v168-review').encode('utf-8'));save(OUT/'publication.json',dict(status=summary['status'],historic_document_metadata_preserved=451,effective_documents=454,new_documents=3,catalog_bytes=len(encoded),authoritative_direction='v168-review',authoritative_delivery='v159-delivery',all_old_limits_retained=True,official_calls=0,source_sha256={path.relative_to(ROOT).as_posix():sha(path) for path in [Path(__file__).resolve(),*mutable]}));print(json.dumps(dict(status='V168_complete_results_published',historic_records_preserved=451,effective_documents=454,official_calls=0)))
+
+if __name__=='__main__':main()

@@ -1,0 +1,331 @@
+[
+  {
+    "union_group": 57210,
+    "rows": 322,
+    "classes": [
+      0,
+      322,
+      0
+    ],
+    "inner_roles": {
+      "2": 322
+    },
+    "routes": {
+      "native_flow": 322
+    },
+    "unique_raw_messages": 54,
+    "unique_legacy_group_text": 2,
+    "unique_b0_text": 2,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "flows src=entity dst=entity protocol=icmp type=8 pattern: 1 all",
+      "flows src=entity dst=entity protocol=icmp type=8 pattern: 1 dst entity"
+    ],
+    "b1_text_examples": [
+      "category network icmp_type 8 protocol icmp"
+    ]
+  },
+  {
+    "union_group": 57313,
+    "rows": 2858,
+    "classes": [
+      0,
+      2858,
+      0
+    ],
+    "inner_roles": {
+      "2": 2858
+    },
+    "routes": {
+      "native_flow": 2858
+    },
+    "unique_raw_messages": 516,
+    "unique_legacy_group_text": 324,
+    "unique_b0_text": 324,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 320,
+    "legacy_text_examples": [
+      "flows src=entity dst=entity protocol=udp sport=6003 dport=unknown_port pattern: 1 all",
+      "flows src=entity dst=entity protocol=udp sport=4104 dport=4104 pattern: 1 dst entity",
+      "flows src=entity dst=entity protocol=udp sport=42323 dport=57775 pattern: 1 all"
+    ],
+    "b1_text_examples": [
+      "category network protocol udp"
+    ]
+  },
+  {
+    "union_group": 57345,
+    "rows": 1042,
+    "classes": [
+      0,
+      1042,
+      0
+    ],
+    "inner_roles": {
+      "1": 1042
+    },
+    "routes": {
+      "native_flow": 790,
+      "native_firewall": 252
+    },
+    "unique_raw_messages": 126,
+    "unique_legacy_group_text": 102,
+    "unique_b0_text": 102,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 92,
+    "legacy_text_examples": [
+      "original address=entity 1 entityentity.567887573 m34_mx67c_entity l7_firewall src=entity dst=entity protocol=tcp sport=58809 dport=443 decision=blocked",
+      "flows deny src=entity dst=entity mac=entity protocol=tcp sport=unknown_port dport=443",
+      "flows deny src=entity dst=entity mac=entity protocol=tcp sport=54211 dport=443"
+    ],
+    "b1_text_examples": [
+      "action deny category network outcome blocked protocol tcp"
+    ]
+  },
+  {
+    "union_group": 109665,
+    "rows": 508,
+    "classes": [
+      0,
+      508,
+      0
+    ],
+    "inner_roles": {
+      "1": 508
+    },
+    "routes": {
+      "asa": 508
+    },
+    "unique_raw_messages": 112,
+    "unique_legacy_group_text": 94,
+    "unique_b0_text": 94,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 94,
+    "legacy_text_examples": [
+      "deny udp src outside:entity/13634 dst inside:entity/5351 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny udp src outside:entity/53709 dst inside:entity/17185 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny udp src outside:entity/55676 dst inside:entity/5355 by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role inside protocol udp src_role outside"
+    ]
+  },
+  {
+    "union_group": 393844,
+    "rows": 804,
+    "classes": [
+      0,
+      798,
+      6
+    ],
+    "inner_roles": {
+      "1": 804
+    },
+    "routes": {
+      "asa": 804
+    },
+    "unique_raw_messages": 184,
+    "unique_legacy_group_text": 2,
+    "unique_b0_text": 1,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "deny icmp src outside:entity dst dmz-1:entity (type 8, code 0) by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny icmp src outside:entity dst dmz:entity (type 8, code 0) by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role dmz icmp_code 0 icmp_type 8 protocol icmp src_role outside"
+    ]
+  },
+  {
+    "union_group": 1749949,
+    "rows": 128,
+    "classes": [
+      0,
+      106,
+      22
+    ],
+    "inner_roles": {
+      "2": 128
+    },
+    "routes": {
+      "asa": 128
+    },
+    "unique_raw_messages": 46,
+    "unique_legacy_group_text": 1,
+    "unique_b0_text": 1,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "deny icmp src dmz-1:entity dst outside:entity (type 3, code 3) by entity-group \"dmz_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role outside icmp_code 3 icmp_type 3 protocol icmp src_role dmz"
+    ]
+  },
+  {
+    "union_group": 1763166,
+    "rows": 8,
+    "classes": [
+      0,
+      0,
+      8
+    ],
+    "inner_roles": {
+      "2": 8
+    },
+    "routes": {
+      "authentication": 8
+    },
+    "unique_raw_messages": 8,
+    "unique_legacy_group_text": 1,
+    "unique_b0_text": 1,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "reason no_response result denied"
+    ],
+    "b1_text_examples": [
+      "reason no_response result denied"
+    ]
+  },
+  {
+    "union_group": 1763692,
+    "rows": 158,
+    "classes": [
+      0,
+      152,
+      6
+    ],
+    "inner_roles": {
+      "1": 158
+    },
+    "routes": {
+      "asa": 158
+    },
+    "unique_raw_messages": 29,
+    "unique_legacy_group_text": 2,
+    "unique_b0_text": 1,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "deny icmp src outside:entity dst dmz:entity (type 3, code 3) by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny icmp src outside:entity dst dmz-1:entity (type 3, code 3) by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role dmz icmp_code 3 icmp_type 3 protocol icmp src_role outside"
+    ]
+  },
+  {
+    "union_group": 1949297,
+    "rows": 62,
+    "classes": [
+      0,
+      36,
+      26
+    ],
+    "inner_roles": {
+      "2": 62
+    },
+    "routes": {
+      "asa": 62
+    },
+    "unique_raw_messages": 24,
+    "unique_legacy_group_text": 22,
+    "unique_b0_text": 22,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 22,
+    "legacy_text_examples": [
+      "deny tcp src dmz-2:entity/50891 dst outside:entity/554 by entity-group \"dmz-2_entity_in_1\" [0x0, 0x0]",
+      "deny tcp src dmz-2:entity/50897 dst outside:entity/554 by entity-group \"dmz-2_entity_in_1\" [0x0, 0x0]",
+      "deny tcp src dmz-2:entity/50831 dst outside:entity/554 by entity-group \"dmz-2_entity_in_1\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role outside protocol tcp src_role dmz"
+    ]
+  },
+  {
+    "union_group": 2054164,
+    "rows": 865,
+    "classes": [
+      0,
+      180,
+      685
+    ],
+    "inner_roles": {
+      "2": 865
+    },
+    "routes": {
+      "asa": 865
+    },
+    "unique_raw_messages": 386,
+    "unique_legacy_group_text": 2,
+    "unique_b0_text": 1,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 1,
+    "legacy_text_examples": [
+      "deny icmp src outside:entity dst dmz-1:entity (type 3, code 13) by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny icmp src outside:entity dst dmz-2:entity (type 3, code 13) by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role dmz icmp_code 13 icmp_type 3 protocol icmp src_role outside"
+    ]
+  },
+  {
+    "union_group": 2054389,
+    "rows": 66269,
+    "classes": [
+      0,
+      62796,
+      3473
+    ],
+    "inner_roles": {
+      "0": 66269
+    },
+    "routes": {
+      "asa": 66269
+    },
+    "unique_raw_messages": 15179,
+    "unique_legacy_group_text": 11026,
+    "unique_b0_text": 10748,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 10748,
+    "legacy_text_examples": [
+      "deny tcp src outside:entity/unknown_port dst dmz-1:entity/44719 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny tcp src outside:entity/50397 dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny tcp src outside:entity/unknown_port dst dmz-1:entity/44818 by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role dmz protocol tcp src_role outside"
+    ]
+  },
+  {
+    "union_group": 2055227,
+    "rows": 8324,
+    "classes": [
+      0,
+      7076,
+      1248
+    ],
+    "inner_roles": {
+      "1": 8324
+    },
+    "routes": {
+      "asa": 8324
+    },
+    "unique_raw_messages": 2006,
+    "unique_legacy_group_text": 962,
+    "unique_b0_text": 917,
+    "unique_b1_text": 1,
+    "unique_v38_vectors": 917,
+    "legacy_text_examples": [
+      "deny udp src outside:entity/4040 dst dmz-1:entity/5060 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny udp src outside:entity/24203 dst dmz-1:entity/34359 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "deny udp src outside:entity/56231 dst dmz-1:entity/6881 by entity-group \"outside_entity_in\" [0x0, 0x0]"
+    ],
+    "b1_text_examples": [
+      "action deny dst_role dmz protocol udp src_role outside"
+    ]
+  }
+]

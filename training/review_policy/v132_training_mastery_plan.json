@@ -1,0 +1,237 @@
+{
+  "version": "V132-full-role-stable-training-mastery",
+  "status": "designed_not_trained",
+  "scope": "training_mastery_diagnostic_not_automatic_replacement",
+  "latest_actual_delivery": "artifacts/v131_learning_trial_20260930/delivery.json",
+  "new_fits_this_review": 0,
+  "new_updates_this_review": 0,
+  "input": {
+    "canonical_full_sparse": "artifacts/v124_header_trial_20260929/B_header_ASA.npz",
+    "shape": [
+      22546,
+      66287
+    ],
+    "retain_all_legal_features": true,
+    "ordered_body_reserved": "No new body-only branch in this qualification trial.",
+    "forbidden_features": [
+      "row_position",
+      "local",
+      "root",
+      "fold",
+      "truth",
+      "teacher_role",
+      "old_prediction"
+    ]
+  },
+  "labels": {
+    "source": "data/official/train.parquet",
+    "output_classes": [
+      "benign",
+      "malicious",
+      "suspicious"
+    ],
+    "M_S_training": "All legal ASA outer TRAIN rows, unchanged official labels.",
+    "mixed_inputs": "Retain in full fit/evaluation; separately report empirical collision error floor."
+  },
+  "model": {
+    "adapter": "Custom SparseTabM",
+    "hidden": 128,
+    "members": 16,
+    "fresh_init": true,
+    "teacher_logits": false
+  },
+  "loss": {
+    "row_CE": "(1/N) sum_i,c n_ic mean_member CE(z_i,c)",
+    "pure_class_CE": "0.5 * sum_c in {M,S} [sum_i in single-label canonical TRAIN inputs n_ic mean_member CE(z_i,c) / N_pure_c]",
+    "focused_CE": "0.5 * row_CE + 0.5 * pure_class_CE",
+    "accounting": "Full-epoch original row/class mass conservation. Denominators fixed to whole legal fit population; unbiased batch scaling by number of logical batches. No per-batch class renormalization.",
+    "member_training": "Mean of individual member losses, never CE of averaged predictions.",
+    "inference": "Argmax of mean member probabilities; no threshold tuning.",
+    "mixed_safeguard": "Mixed inputs appear in row_CE with unchanged relative original label masses, and receive no pure-class auxiliary loss. Do not add class weights to mixed labels.",
+    "weighting_claim": "The auxiliary pure-class risk is a bounded diagnostic factor, not established debiasing or a deployable solution."
+  },
+  "primary": {
+    "arms": [
+      "O_const",
+      "O_decay"
+    ],
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "fits": 6,
+    "updates": 35600,
+    "fixed_epochs": 100,
+    "early_stop": false,
+    "seed": 10201,
+    "permutation_seed_rule": "10201+fold",
+    "unique_local_batch": 256,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0003,
+    "loss": "focused_CE",
+    "inference": "mean member probabilities argmax",
+    "learning_rates": {
+      "O_const": "0.002 for all epochs",
+      "O_decay": "0.002 for e<=60; 0.00002+0.5*(0.002-0.00002)*(1+cos(pi*(e-60)/40)) otherwise"
+    },
+    "held_scores_sealed_until_TRAIN_selection": true
+  },
+  "roles": [
+    {
+      "fold": 0,
+      "original_fit_rows": 92337,
+      "M": 58840,
+      "S": 33497,
+      "old_local_batch_units": 18543,
+      "updates_per_100_epoch_fit": 7300,
+      "empirical_collision_floor": 22
+    },
+    {
+      "fold": 1,
+      "original_fit_rows": 40957,
+      "M": 38886,
+      "S": 2071,
+      "old_local_batch_units": 8086,
+      "updates_per_100_epoch_fit": 3200,
+      "empirical_collision_floor": 6
+    },
+    {
+      "fold": 2,
+      "original_fit_rows": 92320,
+      "M": 59770,
+      "S": 32550,
+      "old_local_batch_units": 18463,
+      "updates_per_100_epoch_fit": 7300,
+      "empirical_collision_floor": 28
+    }
+  ],
+  "mastery_gate": {
+    "all_three_roles_required": true,
+    "pure_TRAIN_M_errors_max": 0,
+    "pure_TRAIN_S_errors_max": 0,
+    "full_TRAIN_M_errors_max": 0,
+    "full_TRAIN_S_errors": "equal recomputed collision floor in each fold",
+    "fixed_epochs": [
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "old_correct_pure_M_S_regressions_max": 0,
+    "pure_label_definition": "actual numerical inputs plus legal fit-only labels; no held labels",
+    "every_epoch_mass_conservation": true,
+    "actual_window_model_replay_required": true,
+    "replay_probability_max_abs": 2e-06,
+    "replay_argmax_equal": true,
+    "inference_population": "whole legal original-row TRAIN, no panel-only acceptance",
+    "collision_floor_scope": "current representation only, not full raw security truth"
+  },
+  "selection": {
+    "authority": "TRAIN_only_before_new_held_scores",
+    "preference": [
+      "O_const",
+      "O_decay"
+    ],
+    "rule": "first arm passing fixed mastery gate in every fold; no fold-specific choice",
+    "none_pass": "stop and diagnose; do not autoextend epochs or tune loss",
+    "meaning": "training diagnostic configuration only, not deployment authority"
+  },
+  "confirmation": {
+    "seed": 13701,
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "additional_fits": 3,
+    "additional_updates": 17800,
+    "requires_training_and_quality": true,
+    "automatic_promotion": false,
+    "independent_initialization_and_batches": true,
+    "failure_action": "keep failure; do not pick seeds",
+    "unexecuted_claim": "single-seed training mastery at most, not reproducibly solved"
+  },
+  "preserved_full_quality_gate": {
+    "official_original_rows": 2056871,
+    "ASA_rows": 112807,
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2074,
+    "ASA_total_errors_max": 2170,
+    "all_classes_precision_recall_F1_at_least_A0": true,
+    "S_source_mean_recall_min": 0.1151252713,
+    "S_zero_recall_roots_max": 198,
+    "S_errors_outside_top3_max_exclusive": 1373,
+    "improved_outer_folds_min": 2,
+    "root2868_M_errors_max": 48,
+    "header682_errors_max": 0,
+    "unknown186_S_errors_max": 184,
+    "non_ASA_frozen_error_count": 107
+  },
+  "record": {
+    "every_epoch": "append full row predictions, original M/S mass, pure/mixed errors, per-source original support and errors, learning rate; bind epoch and source, never overwrite",
+    "fixed_checkpoints": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      15,
+      20,
+      25,
+      35,
+      50,
+      60,
+      75,
+      90,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "diagnostics": "whole-fit per-class CE, margin, member correctness, repair/regression, module gradient/update norms and M/S gradient cosine; no optimizer update in diagnosis",
+    "population_guard": "independently compare epoch x source x class row totals; evaluate all original rows"
+  },
+  "fit_budget": {
+    "maximum_fits": 9,
+    "maximum_updates": 53400,
+    "primary_fits": 6,
+    "primary_updates": 35600
+  },
+  "failure_actions": [
+    "Fixed-window failure does not qualify via best posthoc epoch.",
+    "Train pass / held quality fail: stop, no confirmation or promotion; investigate source support and M/S context.",
+    "No voting replacement: TRAIN counterfactual S139 to143.",
+    "No source ID, row ID, fold, truth or historical prediction as input.",
+    "No deleting mixed or sparse-source rows; retain unchanged official labels.",
+    "Any new source-inner validation must be split before fresh fitting; no warm model exposed to validation rows."
+  ],
+  "runtime_readiness": {
+    "trainer_implemented": false,
+    "run_seal_created": false,
+    "required_before_updates": [
+      "Implement V132 entry and upgraded experiment_review runtime guard for this contract.",
+      "Bind actual entry, complete transitive imports, data views, original truth, splits, schedule, and dependency versions before first update.",
+      "Replay V131 source-history-overwrite and endpoint-only counterexamples.",
+      "Implement independent per-epoch/source population guard and full official evaluation.",
+      "Verify actual same-state and matched batch sequence between LR arms."
+    ]
+  },
+  "evidence_sha256": {
+    "artifacts/v132_training_mastery_review_20260930/audit.json": "4a48787bcef2c97e08f03bf7b705e67e56abcb09a912fb92cd8ebbd7b00b2a89",
+    "artifacts/v132_training_mastery_review_20260930/member_counterfactuals.json": "4dacdf5bc7822747b661d0a49004ceb3130487d25c304c37dfb43dce8cce5358",
+    "artifacts/v132_training_mastery_review_20260930/output_receipt.json": "8da9219622a9178b1f9574bc60b2537326265f8bcbb93c3992de35c85ec77c95",
+    "artifacts/v132_training_mastery_review_20260930/R_nonmixed_remaining_errors.parquet": "03b5b52225a95d05400962001649b810e1e3ed70aab72ef926450e1a84dc9c19",
+    "artifacts/v132_training_mastery_review_20260930/R_remaining_error_sources.csv": "6bcbb93cad266b7a1bf1f3a04572a975f111b53e4b7a51af46c040fe9076d5e3",
+    "artifacts/v132_training_mastery_review_20260930/source_receipt.json": "78fef51ae658f55c7431ecce3afdb96ca5e1541099d4830b2a34e6046736e2c9",
+    "artifacts/v132_training_mastery_review_20260930/training_mastery_ledger.parquet": "87c58454b9e64387903823e6f29bf829df75e84b54623bc8c6b3c4a534b1b925",
+    "docs/V132_TRAINING_MASTERY_REVIEW_AND_NEXT_PLAN.md": "9365e354663582609e02d50a42ed5f8788c24681551f4d51742e74aa6a7acfbf",
+    "training/v132_audit_training_mastery.py": "b5dcca4783d056e038bf0b69928d32a4d480362baa808ed147e25ef43f4ecf52",
+    "training/v132_verify_mastery_plan.py": "d1bdfeb1c1b9f6f6eae7fdab1ec6fe582728562663623ad62ee73cc70cdb8aaf",
+    "artifacts/v131_learning_trial_20260930/delivery.json": "0c68db5998ec9da4486848278b95cb8b183d7c507dbd78dd37e30f6f8e2a8043",
+    "training/review_policy/v130_learning_qualification_plan.json": "e620d7bd5705a742e659740a9499f84585fb0910da6281a3ee6c91c1711f4193"
+  }
+}

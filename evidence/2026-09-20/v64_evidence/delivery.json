@@ -1,0 +1,93 @@
+{
+  "status": "selection_repair_and_source_evidence_audit_completed_context_probe_failed_no_model_promoted",
+  "created_at_utc": "2026-09-20T06:04:26.888458+00:00",
+  "quality_acceptance": false,
+  "platform_used": false,
+  "validation_scope": "Development-only: 9 implementation tests, 48 historical checkpoint metric replays, source-excluded exact-support audit on 59,628 fit ASA rows, one fit-only context-rule probe evaluated and replayed on 19,879 selection rows. No new neural training, blind evaluation, full SOC acceptance or operational FPR validation.",
+  "neural_training_executed": false,
+  "new_rule_probe_fitted": true,
+  "next_conditional_ranking_heads_trained": false,
+  "stopped_branches": [
+    "v63 P0/P1 port composition expansion",
+    "v63 A1 auxiliary CE expansion",
+    "v64 fixed pure-context-shape rule promotion"
+  ],
+  "raw_port_information_retained": true,
+  "original_labels_changed": false,
+  "source_group_note": "Exact sanitized source-symbol equality is an isolation proxy, not a verified physical entity or domain.",
+  "policy_replay": {
+    "A0": {
+      "status": "no_feasible_checkpoint",
+      "screen_passed": false,
+      "selected_step": null
+    },
+    "A1": {
+      "status": "feasible_but_insufficient_gain",
+      "screen_passed": false,
+      "selected_step": 233
+    },
+    "P0": {
+      "status": "feasible_but_insufficient_gain",
+      "screen_passed": false,
+      "selected_step": 466
+    },
+    "P1": {
+      "status": "feasible_but_insufficient_gain",
+      "screen_passed": false,
+      "selected_step": 233
+    }
+  },
+  "new_probe": {
+    "S_source_recall": 0.27586206896551724,
+    "ASA_M_S_row_macro_f1": 0.985604148023723,
+    "changed_decisions": 0,
+    "screen_passed": false
+  },
+  "verification": {
+    "all_checks_passed": true,
+    "quality_acceptance": false,
+    "implementation_tests": 9,
+    "old_checkpoints_recomputed_from_predictions": 48,
+    "rows_per_checkpoint": 19879,
+    "new_context_probe_decisions_replayed": 19879,
+    "new_context_probe_changed_decisions": 0,
+    "source_sha256": "93293a59d6f79261f6353aee591626a90c2bdbdcb97a4bfbfa9bb48fc377c32e",
+    "scope": "Saved-prediction metric replay and rule replay; no neural weight replay or new blind evaluation in v6.4."
+  },
+  "previous_delivery_artifacts_unchanged": 110,
+  "next_experiment": "Two low-cost fixed-representation heads, matched inputs/regularization, CE versus CE plus within-behavior cross-source pair ranking; inner subject-disjoint validation and repaired constrained selection. Proposed, not executed.",
+  "limitations": [
+    "Exact-key support is a conservative diagnostic, not a proof that nonlinear or semantic generalization is impossible.",
+    "Leave-one-source-out rule evidence remains development evidence, not external validation.",
+    "Pure rules with three sources have no guaranteed future precision; duplicates within a source cannot increase support.",
+    "Context uses role-local source-symbol cooccurrence, not qualified sessions or event rates.",
+    "Fixed context shape ignores magnitudes and may discard relevant information; it is a probe, not a replacement representation.",
+    "No full SOC or operational false-positive validation; no model promotion.",
+    "Three-source pure support is a conservative diagnostic, not a necessary condition for all learnability.",
+    "The corrected selection replay is retrospective; no historical results overwritten."
+  ],
+  "artifact_sha256": {
+    "artifacts/v64_evidence_20260920/coarse_support.parquet": "1d4b96523e9c4c0e3ba8bf032929c795a1a3b8bf1c5c0522bd9085c796906b94",
+    "artifacts/v64_evidence_20260920/context_probe.parquet": "fcda7fe6ab13e400ce6e2f3104e77f903a3b9855070ec57cd229a220ba998dd0",
+    "artifacts/v64_evidence_20260920/context_probe_effects.csv": "9c93ae582ae709c33da29d172083999d4efebc2b544c8cc9a77940116c1ab32e",
+    "artifacts/v64_evidence_20260920/context_shape_support.parquet": "bfea22ea3d65c243f77e56575aeed08ab0b8732c9d1c5299522be69710555a77",
+    "artifacts/v64_evidence_20260920/destination_port_support.parquet": "dd0d2e3f927d335bd6f08427d7efcfd34f434e82c87820fc9bddb8128125f53f",
+    "artifacts/v64_evidence_20260920/port_pair_support.parquet": "164bdaf89ccf21ddcfe2c31442ca7f745bed4cf865ffaf24d29b4cf46b1b7d32",
+    "artifacts/v64_evidence_20260920/port_ranges_support.parquet": "61f4f50469a9347483af637d34e3149986afaeedf99d2e3f92eed1a83795f987",
+    "artifacts/v64_evidence_20260920/protocol.json": "b8fa8c77087e7efeb5d6dc943bd97ecdc0561aad6b4c1b5b66857a65a1c60881",
+    "artifacts/v64_evidence_20260920/selection_replay.json": "43050b02d570c047e11f138843128693e98401be3fc9bb1667a5606b85eee4b0",
+    "artifacts/v64_evidence_20260920/source_excluded_coverage.csv": "c10e0ee076298b592ad6e77cf269786c14b8c28f61e9d960928d09fa1a65c487",
+    "artifacts/v64_evidence_20260920/source_port_support.parquet": "d3144cc15d71ced55a71a9f5e83fb5a162b59da758aa7b53d54ebb30b28c8791",
+    "artifacts/v64_evidence_20260920/summary.json": "37df7cf2ede54446efa5bd81db078f83c4949f78846e30739b2bd40527596aa8",
+    "artifacts/v64_evidence_20260920/text_facts_support.parquet": "3980fcf068d16efac3a71bf7a5307fa9eb3a08eb2bf87c9ff824a5f373756404",
+    "artifacts/v64_evidence_20260920/text_variation.csv": "e37fff5dfb914a67c28d67e4ab9543b6a6bccc47c966cfda5a0f35ecf6f8461d",
+    "artifacts/v64_evidence_20260920/verification.json": "d76cac7671f0b8796712bbda97d59f328616537796ad58c85c944a450363376b",
+    "artifacts/v64_evidence_20260920/verification.log": "083526cc56a6ebee5ae33af63626c47fb4f6ddcffe015a5c1350f06a6fb3fda2",
+    "artifacts/v64_evidence_20260920/view_support.csv": "1e1e99f8a42a49f5574f7eebd74f7a2efd0b8ec37c0b7832fdaa9c46a0e225b8",
+    "training/v64_selection.py": "3cde678edfef79a6dc3e2ee338e57911e2a64ac81e461dd1db8c42a686120f61",
+    "training/audit_v64_evidence.py": "56c124c715d83b2bb6b1a51e581f060a4350a9c469ccbfe80214e7a917e111d2",
+    "training/verify_v64_evidence.py": "93293a59d6f79261f6353aee591626a90c2bdbdcb97a4bfbfa9bb48fc377c32e",
+    "training/test_v64_evidence.py": "ae56e9e0f162af91e7d8af643e6febed61014c661ba4bb3890c01e7d9a2a01de",
+    "docs/V64_DIRECTION_AND_SELECTION_REPAIR.md": "af6f411345fa0e2c963134a27a83ee8b65dbaddc8166f31939436fef7a9e2944"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "prior_bound_files_rehashed": 947,
+  "v95_bound_files_rehashed": 84,
+  "catalog_documents_verified": 70,
+  "delivery_sha256": "84d0f0359518cfaec188ad63657c84a065cbca3cea7d81f54baffb220a200618",
+  "catalog_sha256": "a7dde59526da85bc53a1565305cbd6b54adc03ec7dec4325a41c5a3159c6c791",
+  "quality_acceptance": false,
+  "cloud_MCP_connection_verified": false,
+  "readonly_mcp_tests": {
+    "run": 9,
+    "passed": 9,
+    "scope": "local tool contract and catalog; cloud Tunnel not verified"
+  },
+  "actual_classifier_fits": 5,
+  "selected_for_promotion": null,
+  "training_quality_acceptance": false,
+  "model_promoted": false,
+  "latest_full_development_replay": "v7.9"
+}

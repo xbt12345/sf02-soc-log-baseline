@@ -1,0 +1,65 @@
+{
+  "checked_on": "2026-09-11",
+  "access": "Unauthenticated public help GETs and public frontend source; no protected API calls, credentials or uploads",
+  "sources": [
+    {
+      "page_id": 551,
+      "title": "文件管理",
+      "page_url": "https://aihuanxin.cn/portal/common-helpcenter#/document/551?platformCode=DMX_KFPT",
+      "public_read_endpoint": "https://aihuanxin.cn/portal/common_help/page/detail?pageId=551",
+      "document_updated": "2025.06.27 15:30",
+      "retrieved_on": "2026-09-11",
+      "response_sha256": "bcb0d26d9996571863605826a79346acc5d37df837c66367aefb28affe064f22"
+    },
+    {
+      "page_id": 404,
+      "title": "存储相关问题",
+      "page_url": "https://aihuanxin.cn/portal/common-helpcenter#/document/404?platformCode=DMX_KFPT",
+      "public_read_endpoint": "https://aihuanxin.cn/portal/common_help/page/detail?pageId=404",
+      "document_updated": "2025.06.27 15:17",
+      "retrieved_on": "2026-09-11",
+      "response_sha256": "8f5868647d4fe4fe2237c14cbd4835fb68eff411c3ac9ff8f91d292796bf6c03"
+    },
+    {
+      "page_id": 383,
+      "title": "开发环境",
+      "page_url": "https://aihuanxin.cn/portal/common-helpcenter#/document/383?platformCode=DMX_KFPT",
+      "public_read_endpoint": "https://aihuanxin.cn/portal/common_help/page/detail?pageId=383",
+      "document_updated": "2025.06.27 16:18",
+      "retrieved_on": "2026-09-11",
+      "response_sha256": "2fa323d93b079f2cc21b439d8819f4d62dc6389b378872465b84f53e29e94e7f"
+    },
+    {
+      "page_id": 593,
+      "title": "数据集管理",
+      "page_url": "https://aihuanxin.cn/portal/common-helpcenter#/document/593?platformCode=DMX_KFPT",
+      "public_read_endpoint": "https://aihuanxin.cn/portal/common_help/page/detail?pageId=593",
+      "document_updated": "2025.06.27 15:28",
+      "retrieved_on": "2026-09-11",
+      "response_sha256": "11e43bca48045e87287510dc51d78a11e113ea049e8d6eeeb3567a8b965051e7"
+    }
+  ],
+  "upload_component": {
+    "url": "https://aihuanxin.cn/kunlun/kl-web/js/chunk-9d77d14a.e40a9ec5.js",
+    "sha256": "c8ff6e1533e026bab40b697dcd9d1ff20775aa0ae87128e42e199947c387e69c",
+    "size_limit_bytes": 104857600,
+    "no_extension_filter_in_observed_precheck": true,
+    "success_condition": "file.status done and response.code numeric 0",
+    "generic_error": "文件获取失败，请稍后再试",
+    "limitation": "Actual failing browser request not observed"
+  },
+  "local_files": {
+    "check_environment.py": 4768,
+    "train.parquet": 127118646
+  },
+  "diagnosis": {
+    "ruled_out": "The 4768-byte script exceeds the 100 MiB frontend limit",
+    "not_established": [
+      "Actual HTTP status and server code/msg",
+      "Authentication/permission/network/service/storage root cause",
+      "Successful Jupyter upload",
+      "Successful cloud training"
+    ],
+    "recommended_next": "Official small-file Jupyter upload; if diagnosing existing dialog, capture failed request status and response without credentials"
+  }
+}

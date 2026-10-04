@@ -1,0 +1,184 @@
+{
+  "version": "V123",
+  "status": "optimized_design_no_new_training_runtime_not_implemented",
+  "latest_actual_training": "V121",
+  "new_fits_this_turn": 0,
+  "optimizer_steps_this_turn": 0,
+  "model_promoted": false,
+  "preferred_sequence": [
+    "bounded_evidence_and_input_preflight",
+    "six_fit_header_experiment",
+    "only_if_qualified_single_mechanism_experiment"
+  ],
+  "diagnostic_population": {
+    "ASA_rows": 112807,
+    "persistent_S_rows": 2236,
+    "buckets": {
+      "known_parameter_two_roots_per_class": 62,
+      "unknown_parameter_pooled_support": 186,
+      "same_class_support_but_insufficient_dual_root_coverage": 192,
+      "no_same_class_at_destination_resolution": 1796
+    },
+    "retrospective_not_training_assignment": true,
+    "all_original_rows_retained": true
+  },
+  "phase0": {
+    "classifier_fits": 0,
+    "header_preflight": {
+      "all_ASA_rows": 112807,
+      "expected_changed_rows": 682,
+      "M_changed": 44,
+      "S_changed": 638,
+      "body_byte_change": 0,
+      "fact_metadata_coordinate_change": 0,
+      "expected_empirical_collision_floor": 28,
+      "previous_empirical_collision_floor": 26,
+      "cross_fold_input_keys_allowed": 0,
+      "old_local_splits_allowed": 0,
+      "retain_every_original_row_and_label": true,
+      "keep_old_sampling_units_even_if_new_inputs_merge": true,
+      "unknown_header": "preserve raw and report unresolved; no broad regex stripping"
+    },
+    "scope": "all112807 input/support references; all2236 diagnostic statuses; all matching legal fit examples for8 priority behaviors; full M/S controls",
+    "capacity_qualification": [
+      "specific recoverable fact or representation binding, not date or source label association",
+      "raw-to-matrix provenance and absence of complete-input explanation",
+      "fit-only group-separated natural M and S controls; query truths do not set routing/weights",
+      "fixed budget and same-budget negative control defined before updates"
+    ],
+    "feasibility_count_not_sufficient": true,
+    "exit": "one bounded pass returns eligible/ineligible/unresolved for each factor; no eligible factor means zero capacity fits, preserve gaps rather than repeat same audit",
+    "required_contract_upgrade": "new input-factor runtime with historical counterexample replay and complete pre-update source seals"
+  },
+  "phase1": {
+    "arms": {
+      "A": "Original N1, original uniform old-local batches",
+      "B": "N1 with canonical full syslog time header; same old-local units and row frequency; no B deduplication"
+    },
+    "constants": {
+      "outer_folds": "V106 body-closed folds",
+      "model": "existing SparseTabM K16 H128",
+      "epochs": 25,
+      "seed": 10201,
+      "optimizer": "AdamW lr=.002 weight_decay=.0003",
+      "objective": "original-row frequency multiclass member CE",
+      "batch_old_local_units": 256,
+      "steps_per_fold_per_arm": [
+        1825,
+        800,
+        1825
+      ],
+      "primary_fits": 6,
+      "primary_total_steps": 8900,
+      "calibration_fits": 0,
+      "diagnostic_checkpoints": [
+        1,
+        2,
+        5,
+        10,
+        15,
+        20,
+        25
+      ]
+    },
+    "checkpoint_selection": "fixed25 only; seven checkpoints diagnostic",
+    "main_S_error_solution_claim_allowed": false,
+    "continue_other_research": "Independently qualified mechanism may proceed regardless of header absolute target, but no failed header automatically adopted or promoted"
+  },
+  "phase2": {
+    "status": "conditional_design_not_ready_to_run",
+    "one_factor_only": true,
+    "no_eligible_factor_fits": 0,
+    "parser_only_if_verified": {
+      "arms": [
+        "fresh matched C",
+        "C plus recovered or corrected field binding D"
+      ],
+      "max_fits": 6
+    },
+    "capacity_only_if_verified": {
+      "arms": [
+        "fresh matched C baseline",
+        "D with true field-bound branch",
+        "E parameter-matched negative control permuting new row-field bindings within legal roles, labels and main inputs intact"
+      ],
+      "max_fits": 9,
+      "negative_control_not_promotable": true,
+      "negative_control_not_complete_causal_proof": true
+    },
+    "pre_update_supplement_required": [
+      "exact fields and qualified predicates",
+      "legal fit and diagnostic roles",
+      "architecture/initialization/objective",
+      "fixed epochs/steps, seeds, memory budget",
+      "control permutation and full input accounting",
+      "entrypoint and all actual imported sources",
+      "independent truth scoring and full model replay"
+    ],
+    "forbidden_routing": [
+      "query label",
+      "historical error ID",
+      "outer fold ID",
+      "source/root identity",
+      "posthoc probability threshold"
+    ],
+    "no_repeat_without_new_evidence": [
+      "readout-only reweighting",
+      "all-interface deletion",
+      "generic source alignment",
+      "longer training picked using outer errors",
+      "class or group mass rebalancing"
+    ]
+  },
+  "acceptance_layers": {
+    "input_contract": "encoding invariance for registered harmless header variants; body/facts/roles fully verified; not quality",
+    "bounded_research_progress": "matched full per-class and group protections, actual target net repairs; at least2 improving folds to claim cross-source improvement; no promotion or formal confirmation if absolute targets fail",
+    "promotion_eligibility": {
+      "full_original_rows": 2056871,
+      "ASA_rows": 112807,
+      "ASA_M_errors_max": 318,
+      "ASA_S_errors_max": 2094,
+      "ASA_total_errors_max": 2170,
+      "not_official_passing_line": true,
+      "paired_M_S_recall_and_F1_protection": true,
+      "full_B_M_S_recall_and_F1_protection": true,
+      "minimum_improving_folds": 2,
+      "outside_top3_S_roots_protected": true,
+      "S_group_macro_recall_no_decrease": true,
+      "S_zero_recall_root_count_no_increase": true,
+      "raw_case_repair_and_regression_report": true,
+      "report_time_invariance_separately_from_classification": true
+    },
+    "confirmation": {
+      "only_after_all_primary_quality_gates": true,
+      "seeds": [
+        10202,
+        10203
+      ],
+      "additional_fits": 12,
+      "no_seed_substitution": true,
+      "not_an_external_blind_test": true
+    },
+    "no_retroactive_success": true,
+    "stage2_eligibility_from_mechanism_not_relaxed_scores": true
+  },
+  "reporting": [
+    "full2056871 original truth identities",
+    "M/S/benign correct denominators, precision recall F1 confusion",
+    "repairs and new errors by class and direction",
+    "3folds, S root-macro and zero-recall roots, outside top3Sroots",
+    "682header,2236persistent4buckets,missing,remainingASA,all nonASA; deduplicate intersections",
+    "component-cluster uncertainty diagnostic, not external certification"
+  ],
+  "evidence_shortfall": "Official labels retained and scored; no fake attacks or pseudo-label repair; unresolved context becomes organizer question cards, no external sending",
+  "execution_boundary": "Plan only; neither new trainer nor upgraded runtime check exists yet; no platform run, external data or model download",
+  "evidence_sha256": {
+    "docs/V123_TARGETED_REMEDIATION_AND_TRAINING_PLAN.md": "2adb77c02c8387428d4cdef0fedc102ecdf9083011556c833d6a69fe67abfa10",
+    "training/review_policy/v122_next_plan.json": "79ba39f39cd914ccc92f4409108338b38d8a87e90bab7d349d221f63b9489d44",
+    "training/review_policy/v123_risk_actions.json": "56d482cf6c64d1789d2239a1505fbe31d9aa5b9804f026d4d1995fd00a3f0dff",
+    "artifacts/v123_targeted_plan_20260929/support_summary.json": "7d44bd8b119767c24c6a14ac28bd4052a741bd93beb00094fa1c1e163895bd72",
+    "artifacts/v123_targeted_plan_20260929/support_ladder.parquet": "39a579f35ed339e777d34b0bea4e842dfff9c92c506d53602f82b4ac05844ce5",
+    "artifacts/v122_evidence_review_20260929/verification.json": "dfe4bc215e03d3c6f46c99a0b39ea48e5003ed1a74da951ace2291c0d189cd9e",
+    "docs/EXPERIMENT_REVIEW_RULES.md": "201d7ef1b3d663d01cfdc5bdfa2aac8edda5da53e1b6f41d8a9ec73102edf135"
+  }
+}

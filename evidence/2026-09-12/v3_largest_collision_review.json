@@ -1,0 +1,178 @@
+{
+  "scope": "Purpose-selected largest normalized-text label conflicts; full raw and normalized records, no relabeling, no model fit",
+  "groups": [
+    3662,
+    3792,
+    3556
+  ],
+  "examples": [
+    {
+      "row_position": 30685,
+      "group_id": 3556,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/23 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jan 02 USER-9564 04:09:00: USER-0010-0324 Deny tcp src outside:100.64.126.129/CRED-31094 dst dmz-1:10.137.209.74/23 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000030686",
+        "timestamp": "1672662291.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 30686,
+      "group_id": 3556,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/23 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jan 02 USER-9564 04:09:00: USER-0010-0324 Deny tcp src outside:100.64.126.129/CRED-31094 dst dmz-1:10.137.209.74/23 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000030687",
+        "timestamp": "1672662291.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 31656,
+      "group_id": 3662,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jan 25 USER-9564 05:39:53: USER-0010-0324 Deny tcp src outside:100.64.134.240/4CRED-25382 dst dmz-1:10.208.219.150/CRED-25299 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000031657",
+        "timestamp": "1674652979.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 31659,
+      "group_id": 3662,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jan 25 USER-9564 05:39:53: USER-0010-0324 Deny tcp src outside:100.64.134.240/4CRED-25382 dst dmz-1:10.208.219.150/CRED-25299 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000031660",
+        "timestamp": "1674652979.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 32860,
+      "group_id": 3792,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny udp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Feb 08 USER-9564 12:45:23: USER-0010-0324 Deny udp src outside:100.64.129.122/CRED-303119 dst dmz-1:10.142.61.171/1CRED-25285 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000032861",
+        "timestamp": "1675889245.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 32862,
+      "group_id": 3792,
+      "label": "malicious",
+      "product": "<missing>",
+      "format": "asa_like",
+      "text": "time entity time: entity deny udp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Feb 08 USER-9564 12:45:23: USER-0010-0324 Deny udp src outside:100.64.129.122/CRED-303119 dst dmz-1:10.142.61.171/1CRED-25285 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000032863",
+        "timestamp": "1675889245.0",
+        "product_name": ""
+      }
+    },
+    {
+      "row_position": 217428,
+      "group_id": 3662,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:02:22: USER-0010-0324 Deny tcp src outside:100.64.55.209/CRED-25430 dst dmz-1:10.146.221.70/CRED-CRED-239874 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000217429",
+        "timestamp": "1721992391.5569725",
+        "product_name": "ASA Firewall"
+      }
+    },
+    {
+      "row_position": 217438,
+      "group_id": 3662,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:02:22: USER-0010-0324 Deny tcp src outside:100.64.55.209/CRED-25430 dst dmz-1:10.146.221.70/CRED-CRED-239874 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000217439",
+        "timestamp": "1721992391.558305",
+        "product_name": "ASA Firewall"
+      }
+    },
+    {
+      "row_position": 451515,
+      "group_id": 3556,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/23 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:10:37: USER-0010-0324 Deny tcp src outside:100.64.56.249/6CRED-30107 dst dmz-1:10.95.221.155/23 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000451516",
+        "timestamp": "1721992881.6732848",
+        "product_name": "ASA Firewall"
+      }
+    },
+    {
+      "row_position": 451525,
+      "group_id": 3556,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny tcp src outside:entity/unknown_port dst dmz-1:entity/23 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:10:37: USER-0010-0324 Deny tcp src outside:100.64.56.249/6CRED-30107 dst dmz-1:10.95.221.155/23 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0000451526",
+        "timestamp": "1721992881.6741953",
+        "product_name": "ASA Firewall"
+      }
+    },
+    {
+      "row_position": 1729080,
+      "group_id": 3792,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny udp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:41:13: USER-0010-0324 Deny udp src outside:100.64.60.170/5CRED-2CRED-24947 dst dmz-1:10.146.221.70/CRED-24615 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0001729081",
+        "timestamp": "1721994713.389604",
+        "product_name": "ASA Firewall"
+      }
+    },
+    {
+      "row_position": 1729087,
+      "group_id": 3792,
+      "label": "suspicious",
+      "product": "ASA Firewall",
+      "format": "asa_like",
+      "text": "time entity time: entity deny udp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+      "original": {
+        "message_sanitized": "<164>Jul 26 USER-9546 06:41:13: USER-0010-0324 Deny udp src outside:100.64.60.170/5CRED-2CRED-24947 dst dmz-1:10.146.221.70/CRED-24615 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+        "event_id": "EVT-0001729088",
+        "timestamp": "1721994713.389809",
+        "product_name": "ASA Firewall"
+      }
+    }
+  ]
+}

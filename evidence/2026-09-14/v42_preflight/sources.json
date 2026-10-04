@@ -1,0 +1,12 @@
+{
+  "accessed_date": "2026-09-14",
+  "scope": "Primary sources read for method design; no external dataset, package, model or repository downloaded.",
+  "sources": [
+    {"url": "https://xgboost.readthedocs.io/en/stable/tutorials/intercept.html", "title": "Intercept and base_margin", "adopted": "Fixed raw score plus learned offset mathematics; implemented locally with NumPy and SciPy, not XGBoost."},
+    {"url": "https://arxiv.org/abs/2204.02937", "title": "Last Layer Re-Training is Sufficient for Robustness to Spurious Correlations", "adopted": "Constrain which parameters may change; no claim that image benchmark results transfer to SOC."},
+    {"url": "https://github.com/PolinaKirichenko/deep_feature_reweighting", "title": "Author DFR implementation", "adopted": "Examined author implementation approach; no model or source imported."},
+    {"url": "https://scikit-learn.org/stable/modules/calibration.html", "title": "Probability calibration", "adopted": "Same-fit residual adjustment must not be called independent probability calibration."},
+    {"url": "https://arxiv.org/abs/1708.06425", "title": "SafePredict: A Meta-Algorithm for Machine Learning That Uses Refusals to Guarantee Correctness", "adopted": "Unsupported correction falls back; refusal guarantees and online-feedback assumptions are not claimed for this three-class model."},
+    {"url": "https://www.usenix.org/conference/usenixsecurity22/presentation/arp", "title": "Dos and Don'ts of Machine Learning in Computer Security", "adopted": "Check evaluation dependencies, spurious signals and reported performance boundaries."}
+  ]
+}

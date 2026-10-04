@@ -1,0 +1,46 @@
+{
+  "scope": "Exhaustive allowed-development ASA grammar audit; literal identifiers are diagnostic only, never new training features.",
+  "rows": 106953,
+  "unmatched_positions": [],
+  "observable_field_disagreements": [],
+  "mixed_semantic_groups": 215,
+  "mixed_group_rows": 23220,
+  "safe_observation_versions_in_mixed_groups": [
+    1
+  ],
+  "finite_fold_error_floors": {
+    "current_semantics": 1970,
+    "independent_safe_observations": 1970,
+    "literal_body_diagnostic_not_model_input": 0,
+    "literal_full_raw_diagnostic_not_model_input": 0,
+    "semantics_plus_src_zone_diagnostic_only": 1966,
+    "semantics_plus_dst_zone_diagnostic_only": 1002,
+    "semantics_plus_src_address_diagnostic_only": 0,
+    "semantics_plus_dst_address_diagnostic_only": 0,
+    "semantics_plus_src_port_token_diagnostic_only": 40,
+    "semantics_plus_dst_port_token_diagnostic_only": 1376,
+    "semantics_plus_aclword_diagnostic_only": 1970,
+    "semantics_plus_acl_diagnostic_only": 1934,
+    "semantics_plus_hashes_diagnostic_only": 1970,
+    "semantics_plus_header_diagnostic_only": 0
+  },
+  "varying_field_mixed_group_counts": {
+    "src_zone": 1,
+    "dst_zone": 198,
+    "src_address": 215,
+    "dst_address": 215,
+    "src_port_token": 202,
+    "dst_port_token": 10,
+    "aclword": 0,
+    "acl": 3,
+    "hashes": 0,
+    "header": 215
+  },
+  "source_bindings": {
+    "artifacts\\v48_information_repair_r2_20260914\\rows.parquet": "f3af3476e70168d343af203c245652883ca8ae6848928259dbda5606cdc64b85",
+    "artifacts\\v48_information_repair_r2_20260914\\projections.parquet": "923cb4c0f241f32b288a34b98b7c8bd70a7352249bfeab8bf96454cbc90f23e9",
+    "data\\official\\train.parquet": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "training\\audit_v53_asa.py": "18b0dfce633628cf6c04838ef29d69c8eacd7813979d04321b44035eb82d8898"
+  },
+  "limits": "No raw-identity/time association is treated as attack truth. No conclusion that all possible safe semantics or outside context is exhausted. All evaluations already inspected."
+}

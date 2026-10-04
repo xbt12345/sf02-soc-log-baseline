@@ -1,0 +1,10 @@
+{
+  "status": "official_aarch64_CPython_runtime_downloaded_and_digest_verified",
+  "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260924/cpython-3.12.14%2B20260924-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz",
+  "path": "platform/v169_cpu_v1/vendor/cpython-3.12.14+20260924-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz",
+  "bytes": 29199580,
+  "sha256": "c8499b61252c433280f134df954464d19811527b31cb920c35fc6967c1222e35",
+  "expected_official_GitHub_asset_digest": "c8499b61252c433280f134df954464d19811527b31cb920c35fc6967c1222e35",
+  "not_executed_on_windows": true,
+  "official_calls": 0
+}

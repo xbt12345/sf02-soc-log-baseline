@@ -1,0 +1,269 @@
+{
+  "scope": "Collector-time-slot transformations only; no payload alteration, training, threshold tuning or label changes. Existing models and calibration thresholds frozen. This probes parsing invariance; not future deployment quality.",
+  "header_matches": 4130,
+  "models": [
+    {
+      "model": "B2",
+      "mode": "original",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        288,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        68,
+        0,
+        2
+      ],
+      "probability_max_change": 0.0,
+      "classification_flips": 0,
+      "route_counts": {
+        "cef_fields": [
+          4072,
+          0,
+          2
+        ],
+        "legacy_fallback": [
+          56,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "B2",
+      "mode": "complete_clock",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        240,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        12,
+        0,
+        2
+      ],
+      "probability_max_change": 0.11569135664545305,
+      "classification_flips": 0,
+      "route_counts": {
+        "cef_fields": [
+          4128,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "model": "B2",
+      "mode": "redacted_clock",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        4112,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        4112,
+        0,
+        2
+      ],
+      "probability_max_change": 0.28667529242129763,
+      "classification_flips": 0,
+      "route_counts": {
+        "legacy_fallback": [
+          4128,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "model": "B2_W",
+      "mode": "original",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        3128,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        3036,
+        0,
+        2
+      ],
+      "probability_max_change": 0.0,
+      "classification_flips": 0,
+      "route_counts": {
+        "cef_fields": [
+          4072,
+          0,
+          2
+        ],
+        "legacy_fallback": [
+          56,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "B2_W",
+      "mode": "complete_clock",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        3128,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        3036,
+        0,
+        2
+      ],
+      "probability_max_change": 0.08378163077144685,
+      "classification_flips": 0,
+      "route_counts": {
+        "cef_fields": [
+          4128,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "model": "B2_W",
+      "mode": "redacted_clock",
+      "confusion": [
+        [
+          4128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "risk001_counts": [
+        4126,
+        0,
+        2
+      ],
+      "worst001_counts": [
+        4112,
+        0,
+        2
+      ],
+      "probability_max_change": 0.5593707882130179,
+      "classification_flips": 2,
+      "route_counts": {
+        "legacy_fallback": [
+          4128,
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "quoted_action_probe": {
+    "same_text": true,
+    "facts_before": {
+      "action": "deny",
+      "outcome": "blocked",
+      "protocol": "tlsv1.3"
+    },
+    "facts_after": {
+      "protocol": "tlsv1.3"
+    },
+    "same_facts": false,
+    "reason": "Decoded allowed text scalar is not reused by CEF fact derivation; separate consistency defect, not verified training-error cause."
+  }
+}

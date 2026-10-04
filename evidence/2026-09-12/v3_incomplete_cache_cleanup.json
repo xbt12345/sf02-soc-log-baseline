@@ -1,0 +1,7 @@
+{
+  "path": "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\artifacts\\v3_prepare_20260912\\prepared_corpus.parquet",
+  "bytes": 29663277,
+  "sha256": "84184e6ccf40f610c4512a5d8fd6e1d77fd5d4f5722d973c2913d1671947ef9d",
+  "reason": "Incomplete serial preparation temporary corpus; retained source/configuration/interruption record. Complete parallel run is separate.",
+  "removed": true
+}

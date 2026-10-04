@@ -1,0 +1,2491 @@
+{
+  "scope": "Post-hoc fixed-model diagnosis; no new training, relabeling, or test claims.",
+  "tasks": {
+    "source_ad": {
+      "source_rows": 810333,
+      "unique_texts": 192042,
+      "nonempty_groups_by_class": [
+        191703,
+        0,
+        339
+      ],
+      "risk_ranking": {
+        "roc_auc": 0.5472897816128687,
+        "average_precision": 0.000711358361696566
+      },
+      "risk_ranges": {
+        "benign": {
+          "min": 0.0006416440010070801,
+          "max": 0.02633512020111084
+        },
+        "suspicious": {
+          "min": 0.004419386386871338,
+          "max": 0.0074797868728637695
+        }
+      },
+      "zero_vectors_by_class": [
+        0,
+        0,
+        0
+      ],
+      "oracle_thresholds": [
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.0001,
+          "threshold": 0.01615303754806519,
+          "alerts_by_class": [
+            35,
+            0,
+            0
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.001,
+          "threshold": 0.014647185802459719,
+          "alerts_by_class": [
+            745,
+            0,
+            0
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.01,
+          "threshold": 0.012854874134063722,
+          "alerts_by_class": [
+            8078,
+            0,
+            0
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "row_position": 111738,
+          "true_label": "benign",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"file entity\",\"code\":\"4658\", ,\"kind\":\"entity\",\"outcome\":\"entity\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"the handle to an entity was closed.\\n\\nsubject :\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e4\\n\\nentity:\\n\\tentity entity id:\\t\\t0x640\\n\\entity entity id:\\t\\t0xb8c\\n\\tprocess name:\\t\\tc:\\\\entity\\\\entity\\\\entity\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{ ,\"entityserver\":\"security\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e4\", ,\"subjectentityid\":\"s-1-5-20\"},\"entity_id\":\"4658\",\"keywords\":[\"audit entity\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"file entity\"}}",
+          "scores": [
+            0.9906161427497864,
+            0.0025643743574619293,
+            0.0068195234052836895
+          ],
+          "nonzero_features": 138,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.6719624996185303,
+              "malicious_minus_benign_contribution": 0.7542580962181091
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.8010187745094299,
+              "malicious_minus_benign_contribution": 0.21920707821846008
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.29490891098976135,
+              "malicious_minus_benign_contribution": 0.12800613045692444
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.2170872539281845,
+              "malicious_minus_benign_contribution": 0.09110993146896362
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.18012428283691406,
+              "malicious_minus_benign_contribution": 0.015247509814798832
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.027198411524295807,
+              "malicious_minus_benign_contribution": -0.16422830522060394
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.11718465387821198,
+              "malicious_minus_benign_contribution": 0.04875500127673149
+            },
+            {
+              "feature": "entity op_dash",
+              "suspicious_minus_benign_contribution": 0.034911103546619415,
+              "malicious_minus_benign_contribution": 0.04764876514673233
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.04675348103046417,
+              "malicious_minus_benign_contribution": -0.031041769310832024
+            },
+            {
+              "feature": "1",
+              "suspicious_minus_benign_contribution": 0.05583591014146805,
+              "malicious_minus_benign_contribution": 0.01876646652817726
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.02341632731258869,
+              "malicious_minus_benign_contribution": 0.05109614506363869
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.02324177511036396,
+              "malicious_minus_benign_contribution": 0.050955045968294144
+            }
+          ]
+        },
+        {
+          "row_position": 111739,
+          "true_label": "benign",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"file entity\",\"code\":\"4658\", ,\"kind\":\"entity\",\"outcome\":\"entity\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"the handle to an entity was closed.\\n\\nsubject :\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e4\\n\\nentity:\\n\\tentity entity id:\\t\\t0x2850\\n\\entity entity id:\\t\\t0xb8c\\n\\tprocess name:\\t\\tc:\\\\entity\\\\entity\\\\entity\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{ ,\"entityserver\":\"security\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e4\", ,\"subjectentityid\":\"s-1-5-20\"},\"entity_id\":\"4658\",\"keywords\":[\"audit entity\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"file entity\"}}",
+          "scores": [
+            0.9906161427497864,
+            0.0025643743574619293,
+            0.0068195234052836895
+          ],
+          "nonzero_features": 138,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.6719624996185303,
+              "malicious_minus_benign_contribution": 0.7542580962181091
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.8010187745094299,
+              "malicious_minus_benign_contribution": 0.21920707821846008
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.29490891098976135,
+              "malicious_minus_benign_contribution": 0.12800613045692444
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.2170872539281845,
+              "malicious_minus_benign_contribution": 0.09110993146896362
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.18012428283691406,
+              "malicious_minus_benign_contribution": 0.015247509814798832
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.027198411524295807,
+              "malicious_minus_benign_contribution": -0.16422830522060394
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.11718465387821198,
+              "malicious_minus_benign_contribution": 0.04875500127673149
+            },
+            {
+              "feature": "entity op_dash",
+              "suspicious_minus_benign_contribution": 0.034911103546619415,
+              "malicious_minus_benign_contribution": 0.04764876514673233
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.04675348103046417,
+              "malicious_minus_benign_contribution": -0.031041769310832024
+            },
+            {
+              "feature": "1",
+              "suspicious_minus_benign_contribution": 0.05583591014146805,
+              "malicious_minus_benign_contribution": 0.01876646652817726
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.02341632731258869,
+              "malicious_minus_benign_contribution": 0.05109614506363869
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.02324177511036396,
+              "malicious_minus_benign_contribution": 0.050955045968294144
+            }
+          ]
+        },
+        {
+          "row_position": 111740,
+          "true_label": "benign",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"handle manipulation\",\"code\":\"4690\", ,\"kind\":\"entity\",\"outcome\":\"entity\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"an atentityt was made to duplicate a handle to an entity.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e4\\n\\entity handle entity handle id:\\t0x640\\n\\entity process id:\\t0xb8c\\n\\nnew handle entityrmation:\\n\\tentity handle id:\\t0x2850\\n\\tentity process id:\\t0x4\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"entityhandleid\":\"0x640\",\"entityprocessid\":\"0xb8c\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e4\", ,\"subjectentityid\":\"s-1-5-20\",\"entityhandleid\":\"0x2850\",\"entityprocessid\":\"0x4\"},\"entity_id\":\"4690\",\"keywords\":[\"audit entity\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"handle manipulation\"}}",
+          "scores": [
+            0.9957854151725769,
+            0.0015186106320470572,
+            0.00269593414850533
+          ],
+          "nonzero_features": 130,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.3739391565322876,
+              "malicious_minus_benign_contribution": 0.6198133230209351
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.7482545375823975,
+              "malicious_minus_benign_contribution": 0.2047676146030426
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.032665908336639404,
+              "malicious_minus_benign_contribution": -0.1972419172525406
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.1802777796983719,
+              "malicious_minus_benign_contribution": 0.015260503627359867
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.09777253121137619,
+              "malicious_minus_benign_contribution": 0.04103441536426544
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.06417370587587357,
+              "malicious_minus_benign_contribution": -0.04260785132646561
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.060181938111782074,
+              "malicious_minus_benign_contribution": -0.041391290724277496
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.07037071138620377,
+              "malicious_minus_benign_contribution": 0.029277930036187172
+            },
+            {
+              "feature": "entity op_dash",
+              "suspicious_minus_benign_contribution": 0.04192902892827988,
+              "malicious_minus_benign_contribution": 0.0572272464632988
+            },
+            {
+              "feature": "1",
+              "suspicious_minus_benign_contribution": 0.0670601949095726,
+              "malicious_minus_benign_contribution": 0.02253895252943039
+            },
+            {
+              "feature": "exampleentity",
+              "suspicious_minus_benign_contribution": -0.0392591618001461,
+              "malicious_minus_benign_contribution": -0.036226820200681686
+            },
+            {
+              "feature": "entity exampleentity",
+              "suspicious_minus_benign_contribution": -0.03925912827253342,
+              "malicious_minus_benign_contribution": -0.036226786673069
+            }
+          ]
+        },
+        {
+          "row_position": 111742,
+          "true_label": "benign",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"file entity\",\"code\":\"entity\", ,\"kind\":\"entity\",\"outcome\":\"entity\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"a handle to an entity was entityed.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e4\\n\\nentity:\\n\\tentity server:\\t\\tsecurity\\n\\tentity type:\\t\\tfile\\n\\tentity name:\\t\\tc:\\\\entity\\\\entity\\\\entity\\\\$$_entity_migwiz_replacementmanifests_entity-entity-entityentity-entityerver-licensing_10d3d9d8entityd9c.cdf-ms\\n\\thandle id:\\t\\t0x640\\n\\tentity attributes:\\t-\\n\\entity entity id:\\t\\t0xb8c\\n\\tprocess name:\\t\\tc:\\\\entity\\\\entity\\\\entity\\entity\\nentity entity entityrmation:\\n\\ttransentity id:\\t\\t{entity}\\n\\tentity:\\t\\tread_entity\\n\\t\\t\\t\\tsynchronize\\n\\t\\t\\t\\tentity (or entity)\\n\\t\\t\\t\\treadea\\n\\t\\t\\t\\treadattributes\\n\\t\\t\\t\\t\\n\\tentity reasons:\\t\\tread_entity:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\tsynchronize:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\tentity (or entity):\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\treadea:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\treadattributes:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t\\n\\tentity mask:\\t\\t0x120089\\n\\tprivileges used for entity entity:\\t-\\n\\trestricted sid count:\\t0\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"entitylist\":\"%%1538 %%1541 %%4416 %%4419 %%4423 \",\"entitymask\":\"0x120089\",\"entityreason\":\"%%1538: %%1801 d:(a;;0x1200a9;;;bu) %%1541: %%1801 d:(a;;0x1200a9;;;bu) %%4416: %%1801 d:(a;;0x1200a9;;;bu) %%4419: %%1801 d:(a;;0x1200a9;;;bu) %%4423: %%1801 d:(a;;0x1200a9;;;bu) \", ,\"entityname\":\"c:\\\\entity\\\\entity\\\\entity\\\\$$_entity_migwiz_replacementmanifests_entity-entity-entityentity-entityerver-licensing_10d3d9d8entityd9c.cdf-ms\",\"entityserver\":\"security\",\"entitytype\":\"file\",\"privilegelist\":\"-\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"entityattributes\":\"-\",\"restrictedsidcount\":\"0\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e4\", ,\"subjectentityid\":\"s-1-5-20\",\"transentityid\":\"{entity}\"},\"entity_id\":\"entity\",\"keywords\":[\"audit entity\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"file entity\",\"version\":1}}",
+          "scores": [
+            0.9947724938392639,
+            0.002777289366349578,
+            0.0024501848965883255
+          ],
+          "nonzero_features": 183,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.3476173877716064,
+              "malicious_minus_benign_contribution": 0.6079390645027161
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.23607401549816132,
+              "malicious_minus_benign_contribution": 0.06460409611463547
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.13775165379047394,
+              "malicious_minus_benign_contribution": 0.05979153886437416
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.043735016137361526,
+              "malicious_minus_benign_contribution": 0.09588423371315002
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.04125092178583145,
+              "malicious_minus_benign_contribution": 0.09001253545284271
+            },
+            {
+              "feature": "by",
+              "suspicious_minus_benign_contribution": 0.05302402377128601,
+              "malicious_minus_benign_contribution": 0.06343066692352295
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.0814831480383873,
+              "malicious_minus_benign_contribution": 0.03419788181781769
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.0703759416937828,
+              "malicious_minus_benign_contribution": 0.029280105605721474
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.011796899139881134,
+              "malicious_minus_benign_contribution": -0.07123154401779175
+            },
+            {
+              "feature": "t",
+              "suspicious_minus_benign_contribution": 0.023901022970676422,
+              "malicious_minus_benign_contribution": 0.055281832814216614
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.036100391298532486,
+              "malicious_minus_benign_contribution": -0.02396869659423828
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.033854853361845016,
+              "malicious_minus_benign_contribution": -0.02328433096408844
+            }
+          ]
+        },
+        {
+          "row_position": 134220,
+          "true_label": "suspicious",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"entity\",\"code\":\"4625\", ,\"kind\":\"entity\",\"outcome\":\"failure\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-18\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e7\\n\\nentity type:\\t\\t\\t3\\n\\naccount for which entity failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\t\\n\\taccount entity:\\t\\t\\n\\entity entityrmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\entity entityrmation:\\n\\tcaller process id:\\t0x40c\\n\\tcaller process name:\\tc:\\\\entity\\\\entity\\\\entity\\entity\\nentity entityrmation:\\n\\tworkstation name:\\tentity-entity\\entity\\entity entity address:\\tentity\\n\\entity port:\\t\\t58382\\n\\ndetailed entity process:\\t\\tschannel\\n\\tauthentication entity:\\tkerberos\\n\\ttransited entity:\\t-\\n\\tentity name (entity only):\\t-\\n\\tkey length:\\t\\t0\\n\\nentity entity is generated when a entity entity fails. it is generated on the entity where entity was atentityted.\\n\\nthe subject fields indicate the account on the entity entity which entityed the entity. entity is most entityly a entity such as the server entity, or a entity process such as entity or entity.\\n\\nthe entity type field indicates the kind of entity that was entityed. the most entity types are 2 (interentity) and 3 (entity).\\n\\nthe process entityrmation fields indicate which account and process on the entity entityed entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication entityrmation fields provide detailed entityrmation about entity specific entity entity.\\n\\t- transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols.\\n\\t- key length indicates the length of the generated session key. entity will be 0 if no session key was entityed.\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"authenticationentityname\":\"kerberos\",\"failurereason\":\"%%2313\", ,\"ipport\":\"58382\",\"keylength\":\"0\",\"lmentityname\":\"-\",\"entityprocessname\":\"schannel\",\"entitytype\":\"3\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"status\":\"0xc000006d\",\"substatus\":\"0xc0000064\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e7\", ,\"subjectentityid\":\"s-1-5-18\",\"entityentityid\":\"s-1-0-0\",\"transmittedentity\":\"-\", },\"entity_id\":\"4625\",\"keywords\":[\"audit failure\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"entity\"}}",
+          "scores": [
+            0.9937729239463806,
+            0.0023716813884675503,
+            0.0038553487975150347
+          ],
+          "nonzero_features": 363,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.5715336799621582,
+              "malicious_minus_benign_contribution": 0.7089524865150452
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.5614164471626282,
+              "malicious_minus_benign_contribution": 0.15363742411136627
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.11559577286243439,
+              "malicious_minus_benign_contribution": 0.048514701426029205
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.1475592702627182,
+              "malicious_minus_benign_contribution": 0.012490883469581604
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.10239852964878082,
+              "malicious_minus_benign_contribution": 0.04260319098830223
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.09663669764995575,
+              "malicious_minus_benign_contribution": 0.04194546118378639
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.01931033842265606,
+              "malicious_minus_benign_contribution": -0.11659887433052063
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.06346994638442993,
+              "malicious_minus_benign_contribution": -0.04214059188961983
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.059521958231925964,
+              "malicious_minus_benign_contribution": -0.040937379002571106
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.03046375699341297,
+              "malicious_minus_benign_contribution": 0.066788449883461
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.024554040282964706,
+              "malicious_minus_benign_contribution": 0.05357871949672699
+            },
+            {
+              "feature": "failure",
+              "suspicious_minus_benign_contribution": 0.03866259381175041,
+              "malicious_minus_benign_contribution": 0.017727043479681015
+            }
+          ]
+        },
+        {
+          "row_position": 134227,
+          "true_label": "suspicious",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"entity\",\"code\":\"4625\", ,\"kind\":\"entity\",\"outcome\":\"failure\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-18\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e7\\n\\nentity type:\\t\\t\\t3\\n\\naccount for which entity failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\t\\n\\taccount entity:\\t\\t\\n\\entity entityrmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\entity entityrmation:\\n\\tcaller process id:\\t0x40c\\n\\tcaller process name:\\tc:\\\\entity\\\\entity\\\\entity\\entity\\nentity entityrmation:\\n\\tworkstation name:\\tentity-entity\\entity\\entity entity address:\\tentity\\n\\entity port:\\t\\t58383\\n\\ndetailed entity process:\\t\\tschannel\\n\\tauthentication entity:\\tkerberos\\n\\ttransited entity:\\t-\\n\\tentity name (entity only):\\t-\\n\\tkey length:\\t\\t0\\n\\nentity entity is generated when a entity entity fails. it is generated on the entity where entity was atentityted.\\n\\nthe subject fields indicate the account on the entity entity which entityed the entity. entity is most entityly a entity such as the server entity, or a entity process such as entity or entity.\\n\\nthe entity type field indicates the kind of entity that was entityed. the most entity types are 2 (interentity) and 3 (entity).\\n\\nthe process entityrmation fields indicate which account and process on the entity entityed entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication entityrmation fields provide detailed entityrmation about entity specific entity entity.\\n\\t- transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols.\\n\\t- key length indicates the length of the generated session key. entity will be 0 if no session key was entityed.\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"authenticationentityname\":\"kerberos\",\"failurereason\":\"%%2313\", ,\"ipport\":\"58383\",\"keylength\":\"0\",\"lmentityname\":\"-\",\"entityprocessname\":\"schannel\",\"entitytype\":\"3\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"status\":\"0xc000006d\",\"substatus\":\"0xc0000064\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e7\", ,\"subjectentityid\":\"s-1-5-18\",\"entityentityid\":\"s-1-0-0\",\"transmittedentity\":\"-\", },\"entity_id\":\"4625\",\"keywords\":[\"audit failure\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"entity\"}}",
+          "scores": [
+            0.9937708973884583,
+            0.0023721042089164257,
+            0.0038570270407944918
+          ],
+          "nonzero_features": 362,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.5718433856964111,
+              "malicious_minus_benign_contribution": 0.7090921998023987
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.5615271329879761,
+              "malicious_minus_benign_contribution": 0.15366770327091217
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.11561855673789978,
+              "malicious_minus_benign_contribution": 0.04852426052093506
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.1475883573293686,
+              "malicious_minus_benign_contribution": 0.012493344955146313
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.10241872072219849,
+              "malicious_minus_benign_contribution": 0.04261159151792526
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.09665574878454208,
+              "malicious_minus_benign_contribution": 0.04195373132824898
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.019314145669341087,
+              "malicious_minus_benign_contribution": -0.11662185937166214
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.06348245590925217,
+              "malicious_minus_benign_contribution": -0.0421488992869854
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.05953369289636612,
+              "malicious_minus_benign_contribution": -0.040945447981357574
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.03046976402401924,
+              "malicious_minus_benign_contribution": 0.06680162250995636
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.024558881297707558,
+              "malicious_minus_benign_contribution": 0.05358928069472313
+            },
+            {
+              "feature": "failure",
+              "suspicious_minus_benign_contribution": 0.038670215755701065,
+              "malicious_minus_benign_contribution": 0.017730537801980972
+            }
+          ]
+        },
+        {
+          "row_position": 135391,
+          "true_label": "suspicious",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"entity\",\"code\":\"4625\", ,\"kind\":\"entity\",\"outcome\":\"failure\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-18\\n\\taccount entity entity\\entity\\tentity id:\\t\\t0x3e7\\n\\nentity type:\\t\\t\\t3\\n\\naccount for which entity failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\t\\n\\taccount entity:\\t\\t\\n\\entity entityrmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\entity entityrmation:\\n\\tcaller process id:\\t0x40c\\n\\tcaller process name:\\tc:\\\\entity\\\\entity\\\\entity\\entity\\nentity entityrmation:\\n\\tworkstation name:\\tentity-entity\\entity\\entity entity address:\\tentity\\n\\entity port:\\t\\t5entity\\n\\ndetailed entity process:\\t\\tschannel\\n\\tauthentication entity:\\tkerberos\\n\\ttransited entity:\\t-\\n\\tentity name (entity only):\\t-\\n\\tkey length:\\t\\t0\\n\\nentity entity is generated when a entity entity fails. it is generated on the entity where entity was atentityted.\\n\\nthe subject fields indicate the account on the entity entity which entityed the entity. entity is most entityly a entity such as the server entity, or a entity process such as entity or entity.\\n\\nthe entity type field indicates the kind of entity that was entityed. the most entity types are 2 (interentity) and 3 (entity).\\n\\nthe process entityrmation fields indicate which account and process on the entity entityed entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication entityrmation fields provide detailed entityrmation about entity specific entity entity.\\n\\t- transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols.\\n\\t- key length indicates the length of the generated session key. entity will be 0 if no session key was entityed.\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"authenticationentityname\":\"kerberos\",\"failurereason\":\"%%2313\", ,\"ipport\":\"5entity\",\"keylength\":\"0\",\"lmentityname\":\"-\",\"entityprocessname\":\"schannel\",\"entitytype\":\"3\", ,\"processname\":\"c:\\\\entity\\\\entity\\\\entity\",\"status\":\"0xc000006d\",\"substatus\":\"0xc0000064\",\"subjectentityname\":\"entity\",\"subjectentityid\":\"0x3e7\", ,\"subjectentityid\":\"s-1-5-18\",\"entityentityid\":\"s-1-0-0\",\"transmittedentity\":\"-\", },\"entity_id\":\"4625\",\"keywords\":[\"audit failure\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"entity\"}}",
+          "scores": [
+            0.9937716126441956,
+            0.0023724136408418417,
+            0.003855956019833684
+          ],
+          "nonzero_features": 363,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.5717947483062744,
+              "malicious_minus_benign_contribution": 0.7090702652931213
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.5615097284317017,
+              "malicious_minus_benign_contribution": 0.15366294980049133
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.11561498045921326,
+              "malicious_minus_benign_contribution": 0.04852276295423508
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.14758379757404327,
+              "malicious_minus_benign_contribution": 0.012492959387600422
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.1024155393242836,
+              "malicious_minus_benign_contribution": 0.04261026903986931
+            },
+            {
+              "feature": "op_backslash op_backslash",
+              "suspicious_minus_benign_contribution": 0.09665276110172272,
+              "malicious_minus_benign_contribution": 0.04195243492722511
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.019313547760248184,
+              "malicious_minus_benign_contribution": -0.11661824584007263
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.06348049640655518,
+              "malicious_minus_benign_contribution": -0.042147599160671234
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.05953184887766838,
+              "malicious_minus_benign_contribution": -0.0409441813826561
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.03046882152557373,
+              "malicious_minus_benign_contribution": 0.06679955869913101
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.02455812320113182,
+              "malicious_minus_benign_contribution": 0.05358762666583061
+            },
+            {
+              "feature": "failure",
+              "suspicious_minus_benign_contribution": 0.03866901993751526,
+              "malicious_minus_benign_contribution": 0.0177299901843071
+            }
+          ]
+        },
+        {
+          "row_position": 143024,
+          "true_label": "suspicious",
+          "text": "entity ::: { ,\"@entitystamp\":\"time\", , ,\"entity\":{\"entity\":\"entity\",\"code\":\"4625\", ,\"kind\":\"entity\",\"outcome\":\"failure\",\"provider\":\"entity-entity-security-auditing\"},\"entity\":{\"name\":\"entity.entity.exampleentity\"},\"log\":{\"level\":\"entityrmation\"},\"entity\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount entity entity:\\t\\t-\\n\\tentity id:\\t\\t0x0\\n\\nentity type:\\t\\t\\t3\\n\\naccount for which entity failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\host-1218-0290$\\n\\taccount entity\\entity\\entity entityrmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\entity entityrmation:\\n\\tcaller process id:\\t0x0\\n\\tcaller process name:\\t-\\n\\nentity entityrmation:\\n\\tworkstation name:\\tentity-entity\\entity\\entity entity address:\\tentity\\n\\entity port:\\t\\t56892\\n\\ndetailed entity process:\\t\\tentityssp \\n\\tauthentication entity:\\tentity\\n\\ttransited entity:\\t-\\n\\tentity name (entity only):\\t-\\n\\tkey length:\\t\\t0\\n\\nentity entity is generated when a entity entity fails. it is generated on the entity where entity was atentityted.\\n\\nthe subject fields indicate the account on the entity entity which entityed the entity. entity is most entityly a entity such as the server entity, or a entity process such as entity or entity.\\n\\nthe entity type field indicates the kind of entity that was entityed. the most entity types are 2 (interentity) and 3 (entity).\\n\\nthe process entityrmation fields indicate which account and process on the entity entityed entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication entityrmation fields provide detailed entityrmation about entity specific entity entity.\\n\\t- transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols.\\n\\t- key length indicates the length of the generated session key. entity will be 0 if no session key was entityed.\", ,\"senderentity\":\"entity.entity.exampleentity\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winentitylog\",\"channel\":\"security\",\"entity_name\":\"entity.entity.exampleentity\",\"entity_entity\":{\"authenticationentityname\":\"entity\",\"failurereason\":\"%%2313\", ,\"ipport\":\"56892\",\"keylength\":\"0\",\"lmentityname\":\"-\",\"entityprocessname\":\"entityssp \",\"entitytype\":\"3\", ,\"processname\":\"-\",\"status\":\"0xc000006d\",\"substatus\":\"0xc0000064\",\"subjectentityname\":\"-\",\"subjectentityid\":\"0x0\", ,\"subjectentityid\":\"s-1-0-0\",\"entityentityname\":\"entity\",\"entityusername\":\"entity\",\"entityentityid\":\"s-1-0-0\",\"transmittedentity\":\"-\", },\"entity_id\":\"4625\",\"keywords\":[\"audit failure\"],\"opcode\":\"entity\",\"process\":{ ,\"thread\":{ }},\"provider_entity\":\"{entity}\",\"provider_name\":\"entity-entity-security-auditing\", ,\"task\":\"entity\"}}",
+          "scores": [
+            0.9951786994934082,
+            0.002027548151090741,
+            0.0027936878614127636
+          ],
+          "nonzero_features": 356,
+          "top_features": [
+            {
+              "feature": "op_backslash",
+              "suspicious_minus_benign_contribution": 1.4514186382293701,
+              "malicious_minus_benign_contribution": 0.6547660231590271
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.5448170900344849,
+              "malicious_minus_benign_contribution": 0.1490948349237442
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": 0.02466552145779133,
+              "malicious_minus_benign_contribution": -0.14893431961536407
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.1531405746936798,
+              "malicious_minus_benign_contribution": 0.012963340617716312
+            },
+            {
+              "feature": "op_backslash n",
+              "suspicious_minus_benign_contribution": -0.06814204901456833,
+              "malicious_minus_benign_contribution": -0.045242615044116974
+            },
+            {
+              "feature": "n",
+              "suspicious_minus_benign_contribution": -0.06390344351530075,
+              "malicious_minus_benign_contribution": -0.04395082965493202
+            },
+            {
+              "feature": "op_backslash t",
+              "suspicious_minus_benign_contribution": 0.031616028398275375,
+              "malicious_minus_benign_contribution": 0.06931468099355698
+            },
+            {
+              "feature": "entity op_backslash",
+              "suspicious_minus_benign_contribution": 0.06641979515552521,
+              "malicious_minus_benign_contribution": 0.027634138241410255
+            },
+            {
+              "feature": "op_backslash entity",
+              "suspicious_minus_benign_contribution": 0.05536988750100136,
+              "malicious_minus_benign_contribution": 0.02323833666741848
+            },
+            {
+              "feature": "t op_backslash",
+              "suspicious_minus_benign_contribution": 0.02229742892086506,
+              "malicious_minus_benign_contribution": 0.04865462705492973
+            },
+            {
+              "feature": "failure",
+              "suspicious_minus_benign_contribution": 0.04012497887015343,
+              "malicious_minus_benign_contribution": 0.018397554755210876
+            },
+            {
+              "feature": "0",
+              "suspicious_minus_benign_contribution": -0.02619588002562523,
+              "malicious_minus_benign_contribution": -0.032226983457803726
+            }
+          ]
+        }
+      ]
+    },
+    "source_duo": {
+      "source_rows": 337,
+      "unique_texts": 6,
+      "nonempty_groups_by_class": [
+        3,
+        0,
+        3
+      ],
+      "risk_ranking": {
+        "roc_auc": 0.0,
+        "average_precision": 0.03560830860534125
+      },
+      "risk_ranges": {
+        "benign": {
+          "min": 0.00209808349609375,
+          "max": 0.0025625228881835938
+        },
+        "suspicious": {
+          "min": 0.0005083084106445312,
+          "max": 0.0005083084106445312
+        }
+      },
+      "zero_vectors_by_class": [
+        0,
+        0,
+        0
+      ],
+      "oracle_thresholds": [
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.0001,
+          "threshold": 0.002562522888183594,
+          "alerts_by_class": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.001,
+          "threshold": 0.002562522888183594,
+          "alerts_by_class": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.01,
+          "threshold": 0.002562522888183594,
+          "alerts_by_class": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "row_position": 198528,
+          "true_label": "benign",
+          "text": "reason unknown_value result unknown_value",
+          "scores": [
+            0.9974374771118164,
+            0.0005010319873690605,
+            0.0020614510867744684
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "unknown_value",
+              "suspicious_minus_benign_contribution": 2.034398317337036,
+              "malicious_minus_benign_contribution": 0.9811288118362427
+            },
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 0.995479941368103,
+              "malicious_minus_benign_contribution": 0.49310624599456787
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.011125859804451466,
+              "malicious_minus_benign_contribution": -0.007297410164028406
+            }
+          ]
+        },
+        {
+          "row_position": 199208,
+          "true_label": "benign",
+          "text": "reason allow_unenrolled_user result unknown_value",
+          "scores": [
+            0.9979019165039062,
+            0.0004516415356192738,
+            0.0016464509535580873
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "unknown_value",
+              "suspicious_minus_benign_contribution": 1.4196697473526,
+              "malicious_minus_benign_contribution": 0.6846637725830078
+            },
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 1.3893569707870483,
+              "malicious_minus_benign_contribution": 0.6882113218307495
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.015527975745499134,
+              "malicious_minus_benign_contribution": -0.010184742510318756
+            }
+          ]
+        },
+        {
+          "row_position": 201840,
+          "true_label": "benign",
+          "text": "reason valid_passcode result unknown_value",
+          "scores": [
+            0.9979019165039062,
+            0.0004516415356192738,
+            0.0016464509535580873
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "unknown_value",
+              "suspicious_minus_benign_contribution": 1.4196697473526,
+              "malicious_minus_benign_contribution": 0.6846637725830078
+            },
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 1.3893569707870483,
+              "malicious_minus_benign_contribution": 0.6882113218307495
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.015527975745499134,
+              "malicious_minus_benign_contribution": -0.010184742510318756
+            }
+          ]
+        },
+        {
+          "row_position": 441158,
+          "true_label": "suspicious",
+          "text": "reason no_response result denied",
+          "scores": [
+            0.9994916915893555,
+            0.00019944863743148744,
+            0.00030879012774676085
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 1.1401968002319336,
+              "malicious_minus_benign_contribution": 0.5647910237312317
+            },
+            {
+              "feature": "denied",
+              "suspicious_minus_benign_contribution": -0.009261355735361576,
+              "malicious_minus_benign_contribution": -0.012665856629610062
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.012743269093334675,
+              "malicious_minus_benign_contribution": -0.008358263410627842
+            }
+          ]
+        },
+        {
+          "row_position": 483275,
+          "true_label": "suspicious",
+          "text": "reason invalid_passcode result denied",
+          "scores": [
+            0.9994916915893555,
+            0.00019944863743148744,
+            0.00030879012774676085
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 1.1401968002319336,
+              "malicious_minus_benign_contribution": 0.5647910237312317
+            },
+            {
+              "feature": "denied",
+              "suspicious_minus_benign_contribution": -0.009261355735361576,
+              "malicious_minus_benign_contribution": -0.012665856629610062
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.012743269093334675,
+              "malicious_minus_benign_contribution": -0.008358263410627842
+            }
+          ]
+        },
+        {
+          "row_position": 1321175,
+          "true_label": "suspicious",
+          "text": "reason call_not_answered result denied",
+          "scores": [
+            0.9994916915893555,
+            0.00019944863743148744,
+            0.00030879012774676085
+          ],
+          "nonzero_features": 3,
+          "top_features": [
+            {
+              "feature": "reason",
+              "suspicious_minus_benign_contribution": 1.1401968002319336,
+              "malicious_minus_benign_contribution": 0.5647910237312317
+            },
+            {
+              "feature": "denied",
+              "suspicious_minus_benign_contribution": -0.009261355735361576,
+              "malicious_minus_benign_contribution": -0.012665856629610062
+            },
+            {
+              "feature": "result",
+              "suspicious_minus_benign_contribution": -0.012743269093334675,
+              "malicious_minus_benign_contribution": -0.008358263410627842
+            }
+          ]
+        }
+      ],
+      "all_Duo_text_groups": [
+        {
+          "text": "reason unknown_value result unknown_value",
+          "row_count": 263,
+          "class_counts": [
+            263,
+            0,
+            0
+          ],
+          "domain_class_predictions": [
+            263,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.0010944604873657227,
+            0.0010944604873657227
+          ]
+        },
+        {
+          "text": "reason allow_unenrolled_user result unknown_value",
+          "row_count": 23,
+          "class_counts": [
+            23,
+            0,
+            0
+          ],
+          "domain_class_predictions": [
+            23,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.0011700987815856934,
+            0.0011700987815856934
+          ]
+        },
+        {
+          "text": "reason valid_passcode result unknown_value",
+          "row_count": 39,
+          "class_counts": [
+            39,
+            0,
+            0
+          ],
+          "domain_class_predictions": [
+            39,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.0011700987815856934,
+            0.0011700987815856934
+          ]
+        },
+        {
+          "text": "reason no_response result denied",
+          "row_count": 8,
+          "class_counts": [
+            0,
+            0,
+            8
+          ],
+          "domain_class_predictions": [
+            8,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.008343219757080078,
+            0.008343219757080078
+          ]
+        },
+        {
+          "text": "reason invalid_passcode result denied",
+          "row_count": 2,
+          "class_counts": [
+            0,
+            0,
+            2
+          ],
+          "domain_class_predictions": [
+            2,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.0005785226821899414,
+            0.0005785226821899414
+          ]
+        },
+        {
+          "text": "reason call_not_answered result denied",
+          "row_count": 2,
+          "class_counts": [
+            0,
+            0,
+            2
+          ],
+          "domain_class_predictions": [
+            2,
+            0,
+            0
+          ],
+          "domain_risk_ranges": [
+            0.0005785226821899414,
+            0.0005785226821899414
+          ]
+        }
+      ]
+    },
+    "source_waf": {
+      "source_rows": 4130,
+      "unique_texts": 2049,
+      "nonempty_groups_by_class": [
+        2048,
+        0,
+        1
+      ],
+      "risk_ranking": {
+        "roc_auc": 1.0,
+        "average_precision": 1.0
+      },
+      "risk_ranges": {
+        "benign": {
+          "min": 0.003495931625366211,
+          "max": 0.6583463847637177
+        },
+        "suspicious": {
+          "min": 0.7036445438861847,
+          "max": 0.7036445438861847
+        }
+      },
+      "zero_vectors_by_class": [
+        0,
+        0,
+        0
+      ],
+      "oracle_thresholds": [
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.0001,
+          "threshold": 0.6583463847637178,
+          "alerts_by_class": [
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.001,
+          "threshold": 0.6461927294731141,
+          "alerts_by_class": [
+            4,
+            0,
+            2
+          ]
+        },
+        {
+          "scope": "Post-hoc target-label optimistic threshold diagnostic only; never a deployable or zero-shot threshold.",
+          "budget": 0.01,
+          "threshold": 0.6255190074443818,
+          "alerts_by_class": [
+            40,
+            0,
+            2
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "row_position": 247265,
+          "true_label": "benign",
+          "text": "time entity cef:0|entity|waf|1220|1000|get|5|cat=tr dvc=entity duser=\"-\" in=296 out=entity suser=\"-\" src=entity spt=54187 entity\" entity=entity.entity.exampleentity outcome=200 suid=\"-\" entitymethod=get app=tlsv1.3 msg=\"-\" entitycontext=\"-\" dst=entity entity start=time entity time entity=/servlet/eandar.webfilelibrary/3433/entityentityentity/profile-complete_no%20ribbon.png entityentityapplication=\"entity (entity nt 5.1; rv:11.0) entity firefox/11.0 (via entity googleimageproxy)\" dvcentity=entity cs1lentity=entity cs1=\"-\" cs2lentity=protected cs2=protected cs3lentity=proxyip cs3=entity cs4lentity=profilematched cs4=entity cs6lentity=wfmatched cs6=valid cn1lentity=entityport entity cn2lentity=cachehit cn2=0 cn3lentity=proxyport cn3=54187 flexnumber1lentity=entity) flexnumber1=54 flexnumber2lentity=entity) flexnumber2=86 flexstring1lentity=protocolversion flexstring1=entity/1.1 entitywafcustomheader1=\"-\" entitywafcustomheader2=\"-\" entitywafcustomheader3=\"-\" entitywafresponsetype=server entitywafsessionid=\"-\"",
+          "scores": [
+            0.5133318901062012,
+            0.4848620891571045,
+            0.001805997802875936
+          ],
+          "nonzero_features": 129,
+          "top_features": [
+            {
+              "feature": "op_equals",
+              "suspicious_minus_benign_contribution": 1.5225790739059448,
+              "malicious_minus_benign_contribution": 5.094837188720703
+            },
+            {
+              "feature": "op_equals entity",
+              "suspicious_minus_benign_contribution": 0.24657320976257324,
+              "malicious_minus_benign_contribution": 0.660938560962677
+            },
+            {
+              "feature": "op_pipe",
+              "suspicious_minus_benign_contribution": 0.147696852684021,
+              "malicious_minus_benign_contribution": 0.4391137361526489
+            },
+            {
+              "feature": "op_equals op_dash",
+              "suspicious_minus_benign_contribution": 0.17626309394836426,
+              "malicious_minus_benign_contribution": 0.380348801612854
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": -0.1517261415719986,
+              "malicious_minus_benign_contribution": -0.18346741795539856
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.11521117389202118,
+              "malicious_minus_benign_contribution": 0.18541045486927032
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.11117837578058243,
+              "malicious_minus_benign_contribution": 0.17488984763622284
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.26905786991119385,
+              "malicious_minus_benign_contribution": 0.00837387703359127
+            },
+            {
+              "feature": "op_slash",
+              "suspicious_minus_benign_contribution": 0.06725083291530609,
+              "malicious_minus_benign_contribution": 0.18312375247478485
+            },
+            {
+              "feature": "dst op_equals",
+              "suspicious_minus_benign_contribution": 0.05732409283518791,
+              "malicious_minus_benign_contribution": 0.13396140933036804
+            },
+            {
+              "feature": "src op_equals",
+              "suspicious_minus_benign_contribution": 0.0572284534573555,
+              "malicious_minus_benign_contribution": 0.13379406929016113
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.12368272989988327,
+              "malicious_minus_benign_contribution": 0.020347563549876213
+            }
+          ]
+        },
+        {
+          "row_position": 248597,
+          "true_label": "benign",
+          "text": "time entity cef:0|entity|waf|1220|1000|get|5|cat=tr dvc=entity duser=\"-\" in=296 out=entity suser=\"-\" src=entity spt=64072 entity\" entity=entity.entity.exampleentity outcome=200 suid=\"-\" entitymethod=get app=tlsv1.3 msg=\"-\" entitycontext=\"-\" dst=entity entity start=time entity time entity=/servlet/eandar.webfilelibrary/3433/entityentityentity/profile-complete_no%20ribbon.png entityentityapplication=\"entity (entity nt 5.1; rv:11.0) entity firefox/11.0 (via entity googleimageproxy)\" dvcentity=entity cs1lentity=entity cs1=\"-\" cs2lentity=protected cs2=protected cs3lentity=proxyip cs3=entity cs4lentity=profilematched cs4=entity cs6lentity=wfmatched cs6=valid cn1lentity=entityport entity cn2lentity=cachehit cn2=0 cn3lentity=proxyport cn3=64072 flexnumber1lentity=entity) flexnumber1=65 flexnumber2lentity=entity) flexnumber2=101 flexstring1lentity=protocolversion flexstring1=entity/1.1 entitywafcustomheader1=\"-\" entitywafcustomheader2=\"-\" entitywafcustomheader3=\"-\" entitywafresponsetype=server entitywafsessionid=\"-\"",
+          "scores": [
+            0.5008867383003235,
+            0.49740996956825256,
+            0.0017032867763191462
+          ],
+          "nonzero_features": 128,
+          "top_features": [
+            {
+              "feature": "op_equals",
+              "suspicious_minus_benign_contribution": 1.5247430801391602,
+              "malicious_minus_benign_contribution": 5.102077960968018
+            },
+            {
+              "feature": "op_equals entity",
+              "suspicious_minus_benign_contribution": 0.24692365527153015,
+              "malicious_minus_benign_contribution": 0.6618779301643372
+            },
+            {
+              "feature": "op_pipe",
+              "suspicious_minus_benign_contribution": 0.14790676534175873,
+              "malicious_minus_benign_contribution": 0.43973779678344727
+            },
+            {
+              "feature": "op_equals op_dash",
+              "suspicious_minus_benign_contribution": 0.17651361227035522,
+              "malicious_minus_benign_contribution": 0.3808894157409668
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": -0.15194177627563477,
+              "malicious_minus_benign_contribution": -0.1837281733751297
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.11537492275238037,
+              "malicious_minus_benign_contribution": 0.18567398190498352
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.11133638769388199,
+              "malicious_minus_benign_contribution": 0.17513839900493622
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.269440233707428,
+              "malicious_minus_benign_contribution": 0.008385778404772282
+            },
+            {
+              "feature": "op_slash",
+              "suspicious_minus_benign_contribution": 0.06734641641378403,
+              "malicious_minus_benign_contribution": 0.1833840161561966
+            },
+            {
+              "feature": "dst op_equals",
+              "suspicious_minus_benign_contribution": 0.057405564934015274,
+              "malicious_minus_benign_contribution": 0.13415180146694183
+            },
+            {
+              "feature": "src op_equals",
+              "suspicious_minus_benign_contribution": 0.05730978772044182,
+              "malicious_minus_benign_contribution": 0.13398422300815582
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.1238585114479065,
+              "malicious_minus_benign_contribution": 0.020376481115818024
+            }
+          ]
+        },
+        {
+          "row_position": 252040,
+          "true_label": "benign",
+          "text": "time entity cef:0|entity|waf|1220|1000|get|5|cat=tr dvc=entity duser=\"-\" in=373 out=entity suser=\"-\" src=entity spt=3entity entity\" entity=entity.entity.exampleentity outcome=200 suid=\"-\" entitymethod=get app=tlsv1.3 msg=\"-\" entitycontext=\"-\" dst=entity entity start=time entity time entity=/crm/entity entityentityapplication=\"entity (entity nt 6.2; wow64) entity/537.4 (entity, like entity) chrome/98 safari/537.4 (statuscake)\" dvcentity=entity cs1lentity=entity cs1=\"-\" cs2lentity=protected cs2=protected cs3lentity=proxyip cs3=entity cs4lentity=profilematched cs4=entity cs6lentity=wfmatched cs6=valid cn1lentity=entityport entity cn2lentity=cachehit cn2=0 cn3lentity=proxyport cn3=3entity flexnumber1lentity=entity) flexnumber1=348 flexnumber2lentity=entity) entityentity flexstring1lentity=protocolversion flexstring1=entity/1.1 entitywafcustomheader1=\"-\" entitywafcustomheader2=\"-\" entitywafcustomheader3=\"-\" entitywafresponsetype=server entitywafsessionid=\"-\"",
+          "scores": [
+            0.4787278175354004,
+            0.5189676284790039,
+            0.0023045698180794716
+          ],
+          "nonzero_features": 132,
+          "top_features": [
+            {
+              "feature": "op_equals",
+              "suspicious_minus_benign_contribution": 1.5090460777282715,
+              "malicious_minus_benign_contribution": 5.049552917480469
+            },
+            {
+              "feature": "op_equals entity",
+              "suspicious_minus_benign_contribution": 0.2498123049736023,
+              "malicious_minus_benign_contribution": 0.6696209907531738
+            },
+            {
+              "feature": "op_pipe",
+              "suspicious_minus_benign_contribution": 0.14963707327842712,
+              "malicious_minus_benign_contribution": 0.4448821246623993
+            },
+            {
+              "feature": "op_equals op_dash",
+              "suspicious_minus_benign_contribution": 0.17857857048511505,
+              "malicious_minus_benign_contribution": 0.3853452503681183
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": -0.13974478840827942,
+              "malicious_minus_benign_contribution": -0.16897957026958466
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.1167246550321579,
+              "malicious_minus_benign_contribution": 0.1878461092710495
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.2943997383117676,
+              "malicious_minus_benign_contribution": 0.009162590838968754
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.11263886839151382,
+              "malicious_minus_benign_contribution": 0.17718727886676788
+            },
+            {
+              "feature": "entity op_slash",
+              "suspicious_minus_benign_contribution": 0.093650221824646,
+              "malicious_minus_benign_contribution": 0.12492182850837708
+            },
+            {
+              "feature": "op_slash",
+              "suspicious_minus_benign_contribution": 0.05840080976486206,
+              "malicious_minus_benign_contribution": 0.1590251624584198
+            },
+            {
+              "feature": "dst op_equals",
+              "suspicious_minus_benign_contribution": 0.0580771304666996,
+              "malicious_minus_benign_contribution": 0.13572119176387787
+            },
+            {
+              "feature": "src op_equals",
+              "suspicious_minus_benign_contribution": 0.05798022821545601,
+              "malicious_minus_benign_contribution": 0.13555164635181427
+            }
+          ]
+        },
+        {
+          "row_position": 332810,
+          "true_label": "benign",
+          "text": "time entity cef:0|entity|waf|1220|1000|get|5|cat=tr dvc=entity duser=\"-\" in=226 out=5699 suser=\"-\" entity spt=54070 entity\" entity=entity.entity.exampleentity outcome=200 suid=\"-\" entitymethod=get app=tlsv1.2 msg=\"-\" entitycontext=\"-\" dst=entity entity start=time entity time entity=/outlook/assets/icon-144.png entityentityapplication=\"entity/4.0 (compatible; ms-office; entity 16)\" dvcentity=entity cs1lentity=entity cs1=\"-\" cs2lentity=protected cs2=protected cs3lentity=proxyip cs3=entity cs4lentity=profilematched cs4=entity cs6lentity=wfmatched cs6=valid cn1lentity=entityport entity cn2lentity=cachehit cn2=0 cn3lentity=proxyport cn3=54070 flexnumber1lentity=entity) flexnumber1=7 flexnumber2lentity=entity) flexnumber2=55 flexstring1lentity=protocolversion flexstring1=entity/1.1 entitywafcustomheader1=\"-\" entitywafcustomheader2=\"-\" entitywafcustomheader3=\"-\" entitywafresponsetype=server entitywafsessionid=\"-\"",
+          "scores": [
+            0.5723874568939209,
+            0.4256475865840912,
+            0.0019650061149150133
+          ],
+          "nonzero_features": 117,
+          "top_features": [
+            {
+              "feature": "op_equals",
+              "suspicious_minus_benign_contribution": 1.564955472946167,
+              "malicious_minus_benign_contribution": 5.236636638641357
+            },
+            {
+              "feature": "op_equals entity",
+              "suspicious_minus_benign_contribution": 0.2192111611366272,
+              "malicious_minus_benign_contribution": 0.5875946879386902
+            },
+            {
+              "feature": "op_pipe",
+              "suspicious_minus_benign_contribution": 0.15518106520175934,
+              "malicious_minus_benign_contribution": 0.4613648056983948
+            },
+            {
+              "feature": "op_equals op_dash",
+              "suspicious_minus_benign_contribution": 0.18519482016563416,
+              "malicious_minus_benign_contribution": 0.3996221125125885
+            },
+            {
+              "feature": "op_dash",
+              "suspicious_minus_benign_contribution": -0.17390672862529755,
+              "malicious_minus_benign_contribution": -0.21028821170330048
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.12104924023151398,
+              "malicious_minus_benign_contribution": 0.19480571150779724
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.24876873195171356,
+              "malicious_minus_benign_contribution": 0.0077424198389053345
+            },
+            {
+              "feature": "entity op_slash",
+              "suspicious_minus_benign_contribution": 0.09711991995573044,
+              "malicious_minus_benign_contribution": 0.12955012917518616
+            },
+            {
+              "feature": "dst op_equals",
+              "suspicious_minus_benign_contribution": 0.0602288581430912,
+              "malicious_minus_benign_contribution": 0.14074958860874176
+            },
+            {
+              "feature": "op_slash",
+              "suspicious_minus_benign_contribution": 0.050470441579818726,
+              "malicious_minus_benign_contribution": 0.137430801987648
+            },
+            {
+              "feature": "op_equals 0",
+              "suspicious_minus_benign_contribution": -0.047087300568819046,
+              "malicious_minus_benign_contribution": -0.0744747593998909
+            },
+            {
+              "feature": "entity entity",
+              "suspicious_minus_benign_contribution": 0.09746254980564117,
+              "malicious_minus_benign_contribution": 0.016033971682190895
+            }
+          ]
+        },
+        {
+          "row_position": 1477712,
+          "true_label": "suspicious",
+          "text": "time entity cef:0|entity|waf|1220|119|malformed_version|1|cat=wf dst=entity entity act=deny msg=[pri * entity/2.0] duser=\"-\" src=entity spt=4entity entitymethod=pri app=tlsv1.3 entitycontext=\"-\" start=time entity time entity=/* entityentityapplication=\"unknown\" dvcentity=entity cn2=4entity cn2lentity=proxyport cs1=global cs1lentity=ruleid cs2=none cs2lentity=followupentity cs3=global cs3lentity=ruletype cs4=protocol violations cs4lentity=attackgroup cs5=entity cs5lentity=proxyip cs6=\"-\" cs6lentity=sessionid",
+          "scores": [
+            0.2963554561138153,
+            0.7011959552764893,
+            0.002448589541018009
+          ],
+          "nonzero_features": 128,
+          "top_features": [
+            {
+              "feature": "op_equals",
+              "suspicious_minus_benign_contribution": 1.1864699125289917,
+              "malicious_minus_benign_contribution": 3.9701523780822754
+            },
+            {
+              "feature": "op_pipe",
+              "suspicious_minus_benign_contribution": 0.18908101320266724,
+              "malicious_minus_benign_contribution": 0.5621519088745117
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.14749296009540558,
+              "malicious_minus_benign_contribution": 0.2373618483543396
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.14233018457889557,
+              "malicious_minus_benign_contribution": 0.223893404006958
+            },
+            {
+              "feature": "op_equals entity",
+              "suspicious_minus_benign_contribution": 0.09712682664394379,
+              "malicious_minus_benign_contribution": 0.2603481113910675
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.12989959120750427,
+              "malicious_minus_benign_contribution": 0.1766342967748642
+            },
+            {
+              "feature": "dst op_equals",
+              "suspicious_minus_benign_contribution": 0.07338611036539078,
+              "malicious_minus_benign_contribution": 0.1714969426393509
+            },
+            {
+              "feature": "src op_equals",
+              "suspicious_minus_benign_contribution": 0.07326366752386093,
+              "malicious_minus_benign_contribution": 0.17128270864486694
+            },
+            {
+              "feature": "op_equals op_dash",
+              "suspicious_minus_benign_contribution": 0.06769542396068573,
+              "malicious_minus_benign_contribution": 0.14607638120651245
+            },
+            {
+              "feature": "op_equals global",
+              "suspicious_minus_benign_contribution": 0.0676121860742569,
+              "malicious_minus_benign_contribution": 0.13807114958763123
+            },
+            {
+              "feature": "global",
+              "suspicious_minus_benign_contribution": 0.06329133361577988,
+              "malicious_minus_benign_contribution": 0.12971456348896027
+            },
+            {
+              "feature": "entity",
+              "suspicious_minus_benign_contribution": 0.13777877390384674,
+              "malicious_minus_benign_contribution": 0.004288083408027887
+            }
+          ]
+        }
+      ]
+    },
+    "asa_template_0": {
+      "source_rows": 66269,
+      "unique_texts": 11026,
+      "nonempty_groups_by_class": [
+        0,
+        10508,
+        580
+      ],
+      "risk_ranking": {
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "risk_ranges": {
+        "malicious": {
+          "min": 0.899729385972023,
+          "max": 0.9999984787958738
+        },
+        "suspicious": {
+          "min": 0.9801089316606522,
+          "max": 0.9999799354282004
+        }
+      },
+      "zero_vectors_by_class": [
+        0,
+        0,
+        0
+      ],
+      "oracle_thresholds": [],
+      "examples": [
+        {
+          "row_position": 11852,
+          "true_label": "malicious",
+          "text": "deny tcp src outside:entity/unknown_port dst dmz-1:entity/44719 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.0003808832843787968,
+            0.6592308282852173,
+            0.3403882384300232
+          ],
+          "nonzero_features": 33,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.125754714012146,
+              "malicious_minus_benign_contribution": 1.3540089130401611
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.816791832447052,
+              "malicious_minus_benign_contribution": 1.2888545989990234
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.8020745515823364,
+              "malicious_minus_benign_contribution": 1.228676199913025
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.7845743298530579,
+              "malicious_minus_benign_contribution": 0.9648114442825317
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.6039115190505981,
+              "malicious_minus_benign_contribution": 0.9282014966011047
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.6992868781089783,
+              "malicious_minus_benign_contribution": 0.8107302188873291
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.6991354823112488,
+              "malicious_minus_benign_contribution": 0.8105522394180298
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.352881669998169,
+              "malicious_minus_benign_contribution": -0.14518998563289642
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.7599209547042847,
+              "malicious_minus_benign_contribution": 0.7202346920967102
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.6498566269874573,
+              "malicious_minus_benign_contribution": 0.7566104531288147
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.2892248332500458,
+              "malicious_minus_benign_contribution": 1.090455174446106
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.5846014022827148,
+              "malicious_minus_benign_contribution": 0.6793063879013062
+            }
+          ]
+        },
+        {
+          "row_position": 11853,
+          "true_label": "malicious",
+          "text": "deny tcp src outside:entity/50397 dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            5.4845717386342585e-05,
+            0.9450751543045044,
+            0.05486994609236717
+          ],
+          "nonzero_features": 32,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.2178564071655273,
+              "malicious_minus_benign_contribution": 1.4647847414016724
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.8836160898208618,
+              "malicious_minus_benign_contribution": 1.3942997455596924
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.8676946759223938,
+              "malicious_minus_benign_contribution": 1.3291980028152466
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.8487628102302551,
+              "malicious_minus_benign_contribution": 1.043745756149292
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.6533194184303284,
+              "malicious_minus_benign_contribution": 1.0041406154632568
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.7564977407455444,
+              "malicious_minus_benign_contribution": 0.8770585656166077
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.7563340067863464,
+              "malicious_minus_benign_contribution": 0.8768661022186279
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.4635651111602783,
+              "malicious_minus_benign_contribution": -0.1570684313774109
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.8220924735069275,
+              "malicious_minus_benign_contribution": 0.7791593670845032
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.703023374080658,
+              "malicious_minus_benign_contribution": 0.8185110688209534
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.31288719177246094,
+              "malicious_minus_benign_contribution": 1.179668664932251
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.6324294209480286,
+              "malicious_minus_benign_contribution": 0.7348825931549072
+            }
+          ]
+        },
+        {
+          "row_position": 11866,
+          "true_label": "malicious",
+          "text": "deny tcp src outside:entity/unknown_port dst dmz-1:entity/44818 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.0013152887113392353,
+            0.6498240232467651,
+            0.3488607108592987
+          ],
+          "nonzero_features": 34,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.039904236793518,
+              "malicious_minus_benign_contribution": 1.2507516145706177
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.7545029520988464,
+              "malicious_minus_benign_contribution": 1.1905659437179565
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.7409079074859619,
+              "malicious_minus_benign_contribution": 1.1349767446517944
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.7247423529624939,
+              "malicious_minus_benign_contribution": 0.8912345170974731
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.5578569769859314,
+              "malicious_minus_benign_contribution": 0.8574164509773254
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.6459589600563049,
+              "malicious_minus_benign_contribution": 0.7489035129547119
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.6458191275596619,
+              "malicious_minus_benign_contribution": 0.7487391829490662
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.249710202217102,
+              "malicious_minus_benign_contribution": -0.1341177225112915
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.7019689679145813,
+              "malicious_minus_benign_contribution": 0.6653092503547668
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.6002982258796692,
+              "malicious_minus_benign_contribution": 0.6989109516143799
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.26716840267181396,
+              "malicious_minus_benign_contribution": 1.0072965621948242
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.5400193929672241,
+              "malicious_minus_benign_contribution": 0.6275021433830261
+            }
+          ]
+        },
+        {
+          "row_position": 11867,
+          "true_label": "malicious",
+          "text": "deny tcp src outside:entity/unknown_port dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.00043729940080083907,
+            0.6133694648742676,
+            0.386193186044693
+          ],
+          "nonzero_features": 33,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.080063819885254,
+              "malicious_minus_benign_contribution": 1.2990537881851196
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.7836406826972961,
+              "malicious_minus_benign_contribution": 1.2365437746047974
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.7695207595825195,
+              "malicious_minus_benign_contribution": 1.1788079738616943
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.7527307868003845,
+              "malicious_minus_benign_contribution": 0.9256526231765747
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.5794005990028381,
+              "malicious_minus_benign_contribution": 0.8905286192893982
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.6709049344062805,
+              "malicious_minus_benign_contribution": 0.777825117111206
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.6707597374916077,
+              "malicious_minus_benign_contribution": 0.7776544094085693
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.2979722023010254,
+              "malicious_minus_benign_contribution": -0.13929715752601624
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.7290780544281006,
+              "malicious_minus_benign_contribution": 0.6910025477409363
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.6234809160232544,
+              "malicious_minus_benign_contribution": 0.7259019017219543
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.27748602628707886,
+              "malicious_minus_benign_contribution": 1.0461968183517456
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.5608741641044617,
+              "malicious_minus_benign_contribution": 0.6517353653907776
+            }
+          ]
+        },
+        {
+          "row_position": 115905,
+          "true_label": "suspicious",
+          "text": "deny tcp src outside:entity/43411 dst dmz-1:entity/445 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.0008099598926492035,
+            0.9402674436569214,
+            0.05892258137464523
+          ],
+          "nonzero_features": 32,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.065752387046814,
+              "malicious_minus_benign_contribution": 1.2818406820297241
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.7732571363449097,
+              "malicious_minus_benign_contribution": 1.2201590538024902
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.7593241930007935,
+              "malicious_minus_benign_contribution": 1.163188099861145
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.742756724357605,
+              "malicious_minus_benign_contribution": 0.9133872985839844
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.571723222732544,
+              "malicious_minus_benign_contribution": 0.8787286281585693
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.6620150804519653,
+              "malicious_minus_benign_contribution": 0.7675184607505798
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.6618718504905701,
+              "malicious_minus_benign_contribution": 0.7673501372337341
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.2807735204696655,
+              "malicious_minus_benign_contribution": -0.1374514102935791
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.71941739320755,
+              "malicious_minus_benign_contribution": 0.6818464398384094
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.6152194142341614,
+              "malicious_minus_benign_contribution": 0.7162832617759705
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.2738092243671417,
+              "malicious_minus_benign_contribution": 1.0323342084884644
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.5534422993659973,
+              "malicious_minus_benign_contribution": 0.6430995464324951
+            }
+          ]
+        },
+        {
+          "row_position": 121649,
+          "true_label": "suspicious",
+          "text": "deny tcp src outside:entity/unknown_port dst dmz-1:entity/9686 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.00023997039534151554,
+            0.6627081632614136,
+            0.3370518684387207
+          ],
+          "nonzero_features": 33,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.1579477787017822,
+              "malicious_minus_benign_contribution": 1.3927292823791504
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.8401495218276978,
+              "malicious_minus_benign_contribution": 1.325711727142334
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.8250113129615784,
+              "malicious_minus_benign_contribution": 1.2638124227523804
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.8070105910301208,
+              "malicious_minus_benign_contribution": 0.9924019575119019
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.6211814284324646,
+              "malicious_minus_benign_contribution": 0.9547450542449951
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.7192842364311218,
+              "malicious_minus_benign_contribution": 0.8339144587516785
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.7191286087036133,
+              "malicious_minus_benign_contribution": 0.8337315320968628
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.3915696144104004,
+              "malicious_minus_benign_contribution": -0.14934194087982178
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.7816522717475891,
+              "malicious_minus_benign_contribution": 0.7408311367034912
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.6684404611587524,
+              "malicious_minus_benign_contribution": 0.778247058391571
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.2974957227706909,
+              "malicious_minus_benign_contribution": 1.1216386556625366
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.6013190746307373,
+              "malicious_minus_benign_contribution": 0.6987323760986328
+            }
+          ]
+        },
+        {
+          "row_position": 121865,
+          "true_label": "suspicious",
+          "text": "deny tcp src outside:entity/46993 dst dmz-1:entity/110 by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            0.0004274826205801219,
+            0.9413937330245972,
+            0.05817883089184761
+          ],
+          "nonzero_features": 31,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.1166234016418457,
+              "malicious_minus_benign_contribution": 1.3430261611938477
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.810166597366333,
+              "malicious_minus_benign_contribution": 1.2784003019332886
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.795568585395813,
+              "malicious_minus_benign_contribution": 1.218709945678711
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.7782103419303894,
+              "malicious_minus_benign_contribution": 0.9569854736328125
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.5990129709243774,
+              "malicious_minus_benign_contribution": 0.9206724762916565
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.6936147212982178,
+              "malicious_minus_benign_contribution": 0.8041540384292603
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.6934645771980286,
+              "malicious_minus_benign_contribution": 0.8039776086807251
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.3419078588485718,
+              "malicious_minus_benign_contribution": -0.14401228725910187
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.7537569999694824,
+              "malicious_minus_benign_contribution": 0.7143926620483398
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.644585371017456,
+              "malicious_minus_benign_contribution": 0.7504732608795166
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.2868788242340088,
+              "malicious_minus_benign_contribution": 1.081610083580017
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.5798594355583191,
+              "malicious_minus_benign_contribution": 0.6737962961196899
+            }
+          ]
+        },
+        {
+          "row_position": 122451,
+          "true_label": "suspicious",
+          "text": "deny tcp src outside:entity/1183 dst dmz-1:entity/unknown_port by entity-group \"outside_entity_in\" [0x0, 0x0]",
+          "scores": [
+            5.4845717386342585e-05,
+            0.9450751543045044,
+            0.05486994609236717
+          ],
+          "nonzero_features": 32,
+          "top_features": [
+            {
+              "feature": "0x0",
+              "suspicious_minus_benign_contribution": 1.2178564071655273,
+              "malicious_minus_benign_contribution": 1.4647847414016724
+            },
+            {
+              "feature": "dst",
+              "suspicious_minus_benign_contribution": 0.8836160898208618,
+              "malicious_minus_benign_contribution": 1.3942997455596924
+            },
+            {
+              "feature": "src",
+              "suspicious_minus_benign_contribution": 0.8676946759223938,
+              "malicious_minus_benign_contribution": 1.3291980028152466
+            },
+            {
+              "feature": "deny",
+              "suspicious_minus_benign_contribution": 0.8487628102302551,
+              "malicious_minus_benign_contribution": 1.043745756149292
+            },
+            {
+              "feature": "outside",
+              "suspicious_minus_benign_contribution": 0.6533194184303284,
+              "malicious_minus_benign_contribution": 1.0041406154632568
+            },
+            {
+              "feature": "0x0 0x0",
+              "suspicious_minus_benign_contribution": 0.7564977407455444,
+              "malicious_minus_benign_contribution": 0.8770585656166077
+            },
+            {
+              "feature": "op_dash group",
+              "suspicious_minus_benign_contribution": 0.7563340067863464,
+              "malicious_minus_benign_contribution": 0.8768661022186279
+            },
+            {
+              "feature": "dmz op_dash",
+              "suspicious_minus_benign_contribution": 1.4635651111602783,
+              "malicious_minus_benign_contribution": -0.1570684313774109
+            },
+            {
+              "feature": "dmz",
+              "suspicious_minus_benign_contribution": 0.8220924735069275,
+              "malicious_minus_benign_contribution": 0.7791593670845032
+            },
+            {
+              "feature": "by entity",
+              "suspicious_minus_benign_contribution": 0.703023374080658,
+              "malicious_minus_benign_contribution": 0.8185110688209534
+            },
+            {
+              "feature": "src outside",
+              "suspicious_minus_benign_contribution": 0.31288719177246094,
+              "malicious_minus_benign_contribution": 1.179668664932251
+            },
+            {
+              "feature": "group",
+              "suspicious_minus_benign_contribution": 0.6324294209480286,
+              "malicious_minus_benign_contribution": 0.7348825931549072
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "domain_source_role_support": {
+    "Duo": {
+      "0": {
+        "0": {
+          "rows_by_class": [
+            23,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            1,
+            0,
+            0
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            39,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            1,
+            0,
+            1
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            263,
+            0,
+            10
+          ],
+          "nonempty_groups_by_class": [
+            1,
+            0,
+            2
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            0,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "1": {
+        "0": {
+          "rows_by_class": [
+            62,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            2,
+            0,
+            0
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            263,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            1,
+            0,
+            1
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            0,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            1
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            0,
+            0,
+            8
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "2": {
+        "0": {
+          "rows_by_class": [
+            0,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            0
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            0,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            0,
+            0,
+            8
+          ],
+          "nonempty_groups_by_class": [
+            0,
+            0,
+            1
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            325,
+            0,
+            4
+          ],
+          "nonempty_groups_by_class": [
+            3,
+            0,
+            2
+          ]
+        }
+      }
+    },
+    "Windows Active Directory": {
+      "0": {
+        "0": {
+          "rows_by_class": [
+            307409,
+            0,
+            198
+          ],
+          "nonempty_groups_by_class": [
+            76517,
+            0,
+            141
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            107145,
+            0,
+            45
+          ],
+          "nonempty_groups_by_class": [
+            25543,
+            0,
+            41
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            109100,
+            0,
+            116
+          ],
+          "nonempty_groups_by_class": [
+            25839,
+            0,
+            47
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            286206,
+            0,
+            114
+          ],
+          "nonempty_groups_by_class": [
+            63804,
+            0,
+            110
+          ]
+        }
+      },
+      "1": {
+        "0": {
+          "rows_by_class": [
+            340635,
+            0,
+            140
+          ],
+          "nonempty_groups_by_class": [
+            76758,
+            0,
+            135
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            102006,
+            0,
+            41
+          ],
+          "nonempty_groups_by_class": [
+            25553,
+            0,
+            40
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            114539,
+            0,
+            115
+          ],
+          "nonempty_groups_by_class": [
+            25329,
+            0,
+            43
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            252680,
+            0,
+            177
+          ],
+          "nonempty_groups_by_class": [
+            64063,
+            0,
+            121
+          ]
+        }
+      },
+      "2": {
+        "0": {
+          "rows_by_class": [
+            320463,
+            0,
+            159
+          ],
+          "nonempty_groups_by_class": [
+            76955,
+            0,
+            139
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            120338,
+            0,
+            88
+          ],
+          "nonempty_groups_by_class": [
+            25545,
+            0,
+            48
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            98085,
+            0,
+            44
+          ],
+          "nonempty_groups_by_class": [
+            25367,
+            0,
+            44
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            270974,
+            0,
+            182
+          ],
+          "nonempty_groups_by_class": [
+            63836,
+            0,
+            108
+          ]
+        }
+      }
+    },
+    "Barracuda WAF": {
+      "0": {
+        "0": {
+          "rows_by_class": [
+            1644,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            813,
+            0,
+            1
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            596,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            298,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            464,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            228,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            1424,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            709,
+            0,
+            0
+          ]
+        }
+      },
+      "1": {
+        "0": {
+          "rows_by_class": [
+            1638,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            814,
+            0,
+            0
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            576,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            287,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            580,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            287,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            1334,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            660,
+            0,
+            1
+          ]
+        }
+      },
+      "2": {
+        "0": {
+          "rows_by_class": [
+            1592,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            794,
+            0,
+            0
+          ]
+        },
+        "1": {
+          "rows_by_class": [
+            574,
+            0,
+            2
+          ],
+          "nonempty_groups_by_class": [
+            283,
+            0,
+            1
+          ]
+        },
+        "2": {
+          "rows_by_class": [
+            592,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            292,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "rows_by_class": [
+            1370,
+            0,
+            0
+          ],
+          "nonempty_groups_by_class": [
+            679,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

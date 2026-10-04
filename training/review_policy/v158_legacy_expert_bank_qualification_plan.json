@@ -1,0 +1,20 @@
+{
+  "version": "V158-legacy-bank-source-and-prior-qualification",
+  "classifier_calls": 0,
+  "new_fits": 0,
+  "new_updates": 0,
+  "expert_count": 17,
+  "planned_total_fits": 60,
+  "formal_training_activation": false,
+  "source_sha256": {
+    "training/v158_legacy_bank_qualification.py": "0a6bd4224c1a1d119b650743388d550c77bbe1dd582c3d3be4689e45c40ad0cf",
+    "training/v158_bank_initialization.py": "ee95cc586584ec6555eb92d08a2cf872bed6ec9a2829ac2cc39e617bb2f673a7",
+    "training/v158_fusion_prototype_v2.py": "15dc233715bea5d59eff3556c0b223d0e538bc4eb15afd4288b0e6fe8624d588",
+    "training/test_v158_fusion_bank_v2.py": "8fc821104c8134266aeee8b2f9579c8c891be6eb92fa25c60907a69635212c09",
+    "training/v158_fusion_contract.py": "e31298f82242ddffb2849eaecda6431af654fd0012c5414e9ee305dbaaed8f7c",
+    "training/v107_matched_training.py": "9f537d9d0f9946ecf7bd1c862d0b133ff73d4d2db6a0aed7dc9fcfc583b6e329",
+    "training/v85_protection.py": "6169078c42134694df0cfd4e64eb17151550f110019e74019a5d169c061cd3ca",
+    "artifacts/v158_nested_fusion_qualification_20261001/qualification.json": "8aba947f665de0d6c3e2d273bada8e13de6c92ee145dda04f9081fed89dc2d2a",
+    "artifacts/v158_independent_existing_teacher_qualification_20261001/old_current_saved_prediction_complementarity.json": "c60ad97c43efcb27ed783ebad959cee6703edd5a2a094e1246330f4c063d208b"
+  }
+}

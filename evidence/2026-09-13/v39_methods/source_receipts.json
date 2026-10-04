@@ -1,0 +1,21 @@
+{
+  "scope": "Read-only public source retrieval; no package install, source execution, or dataset download",
+  "results": [
+    {
+      "repository": "HazyResearch/correct-n-contrast",
+      "error": "<HTTPError 403: 'rate limit exceeded'>"
+    },
+    {
+      "repository": "ocsf/ocsf-schema",
+      "error": "<HTTPError 403: 'rate limit exceeded'>"
+    },
+    {
+      "repository": "PolinaKirichenko/deep_feature_reweighting",
+      "error": "<HTTPError 403: 'rate limit exceeded'>"
+    },
+    {
+      "repository": "logpai/Drain3",
+      "error": "<HTTPError 403: 'rate limit exceeded'>"
+    }
+  ]
+}

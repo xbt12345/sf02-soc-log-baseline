@@ -1,0 +1,10 @@
+{
+  "task": "source_waf",
+  "calibration_sha256": "6e902a4d20c6628fc9e13da6dcb6b42d5ca7511147efff98cf6f933767f47903",
+  "offsets": [
+    0,
+    0.0,
+    0.0
+  ],
+  "calibration_macro_f1_in_sample_selection": 0.9865108530965544
+}

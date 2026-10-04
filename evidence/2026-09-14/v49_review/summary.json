@@ -1,0 +1,256 @@
+{
+  "models": [
+    {
+      "model": "v48",
+      "pressure_rows": 179075,
+      "errors": 894,
+      "macro_f1": 0.8871606113729106,
+      "normal_errors": 0,
+      "authentication": [
+        {
+          "text": "allow_unenrolled_user",
+          "rows": 23,
+          "labels_B_M_S": [
+            23,
+            0,
+            0
+          ],
+          "prediction_B_M_S": [
+            0.9998353314711815,
+            4.6388708550021014e-05,
+            0.00011827982026852206
+          ],
+          "errors": 0
+        },
+        {
+          "text": "no_response denied",
+          "rows": 8,
+          "labels_B_M_S": [
+            0,
+            0,
+            8
+          ],
+          "prediction_B_M_S": [
+            0.5799504117869785,
+            0.0019626711327621607,
+            0.41808691708025947
+          ],
+          "errors": 8
+        },
+        {
+          "text": "invalid_passcode denied",
+          "rows": 2,
+          "labels_B_M_S": [
+            0,
+            0,
+            2
+          ],
+          "prediction_B_M_S": [
+            0.5038694423827317,
+            0.001973895587528877,
+            0.49415666202973935
+          ],
+          "errors": 2
+        }
+      ],
+      "fit_side_common_evidence_probe": {
+        "rows": 314,
+        "body_groups": 314,
+        "official_labels_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "full_view_predictions_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "reduced_view_predictions_B_M_S": [
+          314,
+          0,
+          0
+        ],
+        "reduced_probability_B_M_S": [
+          0.5038694423827317,
+          0.001973895587528877,
+          0.49415666202973935
+        ],
+        "scope": "Fit-side information-removal diagnostic, not out-of-sample performance or proof the removed facts were irrelevant."
+      }
+    },
+    {
+      "model": "observed",
+      "pressure_rows": 179075,
+      "errors": 894,
+      "macro_f1": 0.8871606113729106,
+      "normal_errors": 0,
+      "authentication": [
+        {
+          "text": "allow_unenrolled_user",
+          "rows": 23,
+          "labels_B_M_S": [
+            23,
+            0,
+            0
+          ],
+          "prediction_B_M_S": [
+            0.999834520077157,
+            4.615489177886404e-05,
+            0.00011932503106424559
+          ],
+          "errors": 0
+        },
+        {
+          "text": "no_response denied",
+          "rows": 8,
+          "labels_B_M_S": [
+            0,
+            0,
+            8
+          ],
+          "prediction_B_M_S": [
+            0.5784270962933826,
+            0.001940922824323295,
+            0.41963198088229414
+          ],
+          "errors": 8
+        },
+        {
+          "text": "invalid_passcode denied",
+          "rows": 2,
+          "labels_B_M_S": [
+            0,
+            0,
+            2
+          ],
+          "prediction_B_M_S": [
+            0.5012267734719016,
+            0.0019520654233690109,
+            0.49682116110472946
+          ],
+          "errors": 2
+        }
+      ],
+      "fit_side_common_evidence_probe": {
+        "rows": 314,
+        "body_groups": 314,
+        "official_labels_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "full_view_predictions_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "reduced_view_predictions_B_M_S": [
+          314,
+          0,
+          0
+        ],
+        "reduced_probability_B_M_S": [
+          0.5012267734719016,
+          0.0019520654233690109,
+          0.49682116110472946
+        ],
+        "scope": "Fit-side information-removal diagnostic, not out-of-sample performance or proof the removed facts were irrelevant."
+      }
+    },
+    {
+      "model": "word_character",
+      "pressure_rows": 179075,
+      "errors": 894,
+      "macro_f1": 0.8871606113729106,
+      "normal_errors": 0,
+      "authentication": [
+        {
+          "text": "allow_unenrolled_user",
+          "rows": 23,
+          "labels_B_M_S": [
+            23,
+            0,
+            0
+          ],
+          "prediction_B_M_S": [
+            0.9998289869316458,
+            4.821060861299117e-05,
+            0.00012280245974115973
+          ],
+          "errors": 0
+        },
+        {
+          "text": "no_response denied",
+          "rows": 8,
+          "labels_B_M_S": [
+            0,
+            0,
+            8
+          ],
+          "prediction_B_M_S": [
+            0.586032826214561,
+            0.0020067778478014757,
+            0.41196039593763756
+          ],
+          "errors": 8
+        },
+        {
+          "text": "invalid_passcode denied",
+          "rows": 2,
+          "labels_B_M_S": [
+            0,
+            0,
+            2
+          ],
+          "prediction_B_M_S": [
+            0.5060636524594585,
+            0.0020222983927505366,
+            0.4919140491477911
+          ],
+          "errors": 2
+        }
+      ],
+      "fit_side_common_evidence_probe": {
+        "rows": 314,
+        "body_groups": 314,
+        "official_labels_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "full_view_predictions_B_M_S": [
+          0,
+          0,
+          314
+        ],
+        "reduced_view_predictions_B_M_S": [
+          314,
+          0,
+          0
+        ],
+        "reduced_probability_B_M_S": [
+          0.512005158999966,
+          0.002017894050624701,
+          0.48597694694940935
+        ],
+        "scope": "Fit-side information-removal diagnostic, not out-of-sample performance or proof the removed facts were irrelevant."
+      }
+    }
+  ],
+  "new_classifier_fits": 2,
+  "classifier_promoted": false,
+  "official_labels_unchanged": true,
+  "masking_used_for_training": false,
+  "source_bindings": {
+    "artifacts/v48_information_repair_r2_20260914/pressure/model.joblib": "758997f2c4bd27c7eae4207ea1262ad7ddfa20ca5e3ea9375f2cd19e63017c56",
+    "artifacts/v48_information_repair_r2_20260914/pressure/evaluation.parquet": "07dc7a5608c7974d34f1da187ed4c434b2a2d3b5d1cc1f0558a85ac50cc11a24",
+    "artifacts/v48_information_repair_r2_20260914/pressure/report.json": "bda3eeeabab17e7ff05d4d2ff8264d5bedc90fd2a4e160cd8191ca8e76f15ac2",
+    "artifacts/v49_observed_encoding_20260914/pressure/model.joblib": "dce4d23edf9443c6f5ba8469b1ebdca1b1fe33dff9fb36544b678a71660e81a1",
+    "artifacts/v49_observed_encoding_20260914/pressure/evaluation.parquet": "b8517a305623ff1aa3dc7f861ac4857f71ee15b9f5feaa7e2f0d0b0c7ac87e49",
+    "artifacts/v49_observed_encoding_20260914/pressure/report.json": "bce4d1826e5062f797ba0aa29176044f040325ba64a76ad994d0fc9c0f362b0b",
+    "artifacts/v49_word_character_20260914/pressure/model.joblib": "81d0888679f5d8db2a6dfac5d50eead3c03709ebdf43880bb805743639971fe0",
+    "artifacts/v49_word_character_20260914/pressure/evaluation.parquet": "9d5f917fe2b3b8d378a844abd510ef6375d9681843bebbaef84e5b21f0d699b0",
+    "artifacts/v49_word_character_20260914/pressure/report.json": "3272c476bfc3b0ff730cd1f487e9d9401583a81eae979ede07b2e8733c33e9f7"
+  }
+}

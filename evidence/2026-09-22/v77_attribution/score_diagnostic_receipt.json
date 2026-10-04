@@ -1,0 +1,13 @@
+{
+  "new_fits": 0,
+  "thresholds_fitted": 0,
+  "source_sha256": "d1fc6deb9d33ae56c942a93396e810415d265a27280f24d16a4ef19577af4fbc",
+  "predictions_sha256": "94b94a8a7bdd6b3f35a8b13f2ad336baab32ecf7361ee4664288306d5fbb2548",
+  "answers_sha256": "11d8c34da6fddc823e9dc8e12de41bd8b66801d914e4a39b2b7e3161de082a56",
+  "outputs_sha256": {
+    "pairwise_ranking.csv": "133b5ca19a7f35922f82162af5dc8368bd813c33caa31f6a9d7570b7726f7597",
+    "route_confusions.csv": "00a9a2bcd1453b86f5eb526e31d948e1a0af2fbd80692e5224088e3056a779bd",
+    "score_quantiles.json": "aeb99c85aca90c1db61f8497b639b9498ed17aa0f65c111df29c10b0f9723a29"
+  },
+  "scope": "Inspected-development descriptive ranking only. Pairwise tasks condition on true labels and are not deployed classifiers. AUROC/AP are not three-class accuracy, low-FPR guarantee or a calibrated operating point."
+}

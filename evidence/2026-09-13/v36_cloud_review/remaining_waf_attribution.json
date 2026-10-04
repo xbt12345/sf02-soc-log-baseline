@@ -1,0 +1,556 @@
+[
+  {
+    "row_position": 675103,
+    "b1": "app tlsv1.3 bytes_in 864 bytes_out 13238 msg logotype\\=shortcuticonoff&subjectcode\\=shortcuticon&accountnumber\\=17566 outcome 200 src_port 54941 untyped_path_payload /servlet/eandar.webimage/icon.ico",
+    "facts": {
+      "bytes_in": 864,
+      "bytes_out": 13238,
+      "src_port": 54941,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.970220175574608,
+      0.029113457258931275,
+      0.0006663671664606949
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.6829450486552868
+      ],
+      [
+        "numeric:src_port",
+        0.9110641433004133
+      ],
+      [
+        "op_backslash op_equals",
+        0.27367886599541763
+      ],
+      [
+        "app",
+        0.05575023756635167
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ],
+      [
+        "app tlsv1",
+        0.039280624653799806
+      ]
+    ]
+  },
+  {
+    "row_position": 677773,
+    "b1": "app tlsv1.3 bytes_in 864 bytes_out 13238 msg logotype\\=shortcuticonoff&subjectcode\\=shortcuticon&accountnumber\\=17566 outcome 200 src_port 54941 untyped_path_payload /servlet/eandar.webimage/icon.ico",
+    "facts": {
+      "bytes_in": 864,
+      "bytes_out": 13238,
+      "src_port": 54941,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.970220175574608,
+      0.029113457258931275,
+      0.0006663671664606949
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.6829450486552868
+      ],
+      [
+        "numeric:src_port",
+        0.9110641433004133
+      ],
+      [
+        "op_backslash op_equals",
+        0.27367886599541763
+      ],
+      [
+        "app",
+        0.05575023756635167
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ],
+      [
+        "app tlsv1",
+        0.039280624653799806
+      ]
+    ]
+  },
+  {
+    "row_position": 732691,
+    "b1": "app tlsv1.3 bytes_in 815 bytes_out 55025 msg entity\\=entity&_\\=entity outcome 200 src_port 54936 untyped_path_payload /include/entity.jsp",
+    "facts": {
+      "bytes_in": 815,
+      "bytes_out": 55025,
+      "src_port": 54936,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.9720450231519058,
+      0.02735225753938457,
+      0.0006027193087097602
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.1907873349007725
+      ],
+      [
+        "numeric:src_port",
+        0.9110565461805333
+      ],
+      [
+        "op_equals entity",
+        0.7616271548963728
+      ],
+      [
+        "op_backslash op_equals",
+        0.1936446633939388
+      ],
+      [
+        "app",
+        0.059170093103840825
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ]
+    ]
+  },
+  {
+    "row_position": 732697,
+    "b1": "app tlsv1.3 bytes_in 815 bytes_out 55025 msg entity\\=entity&_\\=entity outcome 200 src_port 54936 untyped_path_payload /include/entity.jsp",
+    "facts": {
+      "bytes_in": 815,
+      "bytes_out": 55025,
+      "src_port": 54936,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.9720450231519058,
+      0.02735225753938457,
+      0.0006027193087097602
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.1907873349007725
+      ],
+      [
+        "numeric:src_port",
+        0.9110565461805333
+      ],
+      [
+        "op_equals entity",
+        0.7616271548963728
+      ],
+      [
+        "op_backslash op_equals",
+        0.1936446633939388
+      ],
+      [
+        "app",
+        0.059170093103840825
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ]
+    ]
+  },
+  {
+    "row_position": 743580,
+    "b1": "app tlsv1.3 bytes_in 815 bytes_out 55017 msg entity\\=entity&_\\=entity outcome 200 src_port 54942 untyped_path_payload /include/entity.jsp",
+    "facts": {
+      "bytes_in": 815,
+      "bytes_out": 55017,
+      "src_port": 54942,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.972266714942722,
+      0.02713272040367712,
+      0.0006005646536008378
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.1847318675417855
+      ],
+      [
+        "numeric:src_port",
+        0.9110656626414239
+      ],
+      [
+        "op_equals entity",
+        0.7577540801322904
+      ],
+      [
+        "op_backslash op_equals",
+        0.19265992925707318
+      ],
+      [
+        "app",
+        0.058869197589657016
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ]
+    ]
+  },
+  {
+    "row_position": 743587,
+    "b1": "app tlsv1.3 bytes_in 815 bytes_out 55017 msg entity\\=entity&_\\=entity outcome 200 src_port 54942 untyped_path_payload /include/entity.jsp",
+    "facts": {
+      "bytes_in": 815,
+      "bytes_out": 55017,
+      "src_port": 54942,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.972266714942722,
+      0.02713272040367712,
+      0.0006005646536008378
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.1847318675417855
+      ],
+      [
+        "numeric:src_port",
+        0.9110656626414239
+      ],
+      [
+        "op_equals entity",
+        0.7577540801322904
+      ],
+      [
+        "op_backslash op_equals",
+        0.19265992925707318
+      ],
+      [
+        "app",
+        0.058869197589657016
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ]
+    ]
+  },
+  {
+    "row_position": 1153382,
+    "b1": "app tlsv1.3 bytes_in 836 msg logotype\\=17566&subjectcode\\=weblogol&accountnumber\\=17566 outcome 200 src_port 55366 untyped_path_payload /servlet/eandar.webimage",
+    "facts": {
+      "bytes_in": 836,
+      "src_port": 55366,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.9696947932224361,
+      0.029608043407894555,
+      0.0006971633696693549
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.6451403267565856
+      ],
+      [
+        "numeric:src_port",
+        0.9117073844279896
+      ],
+      [
+        "op_backslash op_equals",
+        0.2675310993605084
+      ],
+      [
+        "app",
+        0.0544978958878955
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ],
+      [
+        "app tlsv1",
+        0.03839824700740504
+      ]
+    ]
+  },
+  {
+    "row_position": 1153392,
+    "b1": "app tlsv1.3 bytes_in 836 msg logotype\\=17566&subjectcode\\=weblogol&accountnumber\\=17566 outcome 200 src_port 55366 untyped_path_payload /servlet/eandar.webimage",
+    "facts": {
+      "bytes_in": 836,
+      "src_port": 55366,
+      "protocol": "tlsv1.3",
+      "http_status": 200
+    },
+    "p": [
+      0.9696947932224361,
+      0.029608043407894555,
+      0.0006971633696693549
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "op_equals",
+        1.6451403267565856
+      ],
+      [
+        "numeric:src_port",
+        0.9117073844279896
+      ],
+      [
+        "op_backslash op_equals",
+        0.2675310993605084
+      ],
+      [
+        "app",
+        0.0544978958878955
+      ],
+      [
+        "category:protocol=tlsv1.3",
+        0.05286611329933111
+      ],
+      [
+        "app tlsv1",
+        0.03839824700740504
+      ]
+    ]
+  },
+  {
+    "row_position": 1470754,
+    "b1": "app tlsv1.3 bytes_in 43 bytes_out 1437 dst_port 80 outcome 403 src_port 49112 untyped_path_payload /",
+    "facts": {
+      "bytes_in": 43,
+      "bytes_out": 1437,
+      "src_port": 49112,
+      "dst_port": 80,
+      "protocol": "tlsv1.3",
+      "http_status": 403
+    },
+    "p": [
+      0.9744004085237933,
+      0.022113424137323118,
+      0.00348616733888359
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "numeric:src_port",
+        0.9017019053372538
+      ],
+      [
+        "observed:dst_port",
+        0.7528809446564814
+      ],
+      [
+        "numeric:dst_port",
+        0.5222097002838721
+      ],
+      [
+        "80",
+        0.128357157410566
+      ],
+      [
+        "dst_port 80",
+        0.1108995639240578
+      ],
+      [
+        "app",
+        0.07841684577451168
+      ]
+    ]
+  },
+  {
+    "row_position": 1470757,
+    "b1": "app tlsv1.3 bytes_in 43 bytes_out 1437 dst_port 80 outcome 403 src_port 49112 untyped_path_payload /",
+    "facts": {
+      "bytes_in": 43,
+      "bytes_out": 1437,
+      "src_port": 49112,
+      "dst_port": 80,
+      "protocol": "tlsv1.3",
+      "http_status": 403
+    },
+    "p": [
+      0.9744004085237933,
+      0.022113424137323118,
+      0.00348616733888359
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "numeric:src_port",
+        0.9017019053372538
+      ],
+      [
+        "observed:dst_port",
+        0.7528809446564814
+      ],
+      [
+        "numeric:dst_port",
+        0.5222097002838721
+      ],
+      [
+        "80",
+        0.128357157410566
+      ],
+      [
+        "dst_port 80",
+        0.1108995639240578
+      ],
+      [
+        "app",
+        0.07841684577451168
+      ]
+    ]
+  },
+  {
+    "row_position": 1477710,
+    "b1": "app tlsv1.3 bytes_in 159 bytes_out 1437 dst_port 80 outcome 403 src_port 49258 untyped_path_payload /",
+    "facts": {
+      "bytes_in": 159,
+      "bytes_out": 1437,
+      "src_port": 49258,
+      "dst_port": 80,
+      "protocol": "tlsv1.3",
+      "http_status": 403
+    },
+    "p": [
+      0.9743709688490686,
+      0.022190119661533364,
+      0.0034389114893979755
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "numeric:src_port",
+        0.9019496905280665
+      ],
+      [
+        "observed:dst_port",
+        0.7528809446564814
+      ],
+      [
+        "numeric:dst_port",
+        0.5222097002838721
+      ],
+      [
+        "80",
+        0.12998026590836462
+      ],
+      [
+        "dst_port 80",
+        0.11230191676700477
+      ],
+      [
+        "app",
+        0.0794084464870458
+      ]
+    ]
+  },
+  {
+    "row_position": 1477720,
+    "b1": "app tlsv1.3 bytes_in 159 bytes_out 1437 dst_port 80 outcome 403 src_port 49258 untyped_path_payload /",
+    "facts": {
+      "bytes_in": 159,
+      "bytes_out": 1437,
+      "src_port": 49258,
+      "dst_port": 80,
+      "protocol": "tlsv1.3",
+      "http_status": 403
+    },
+    "p": [
+      0.9743709688490686,
+      0.022190119661533364,
+      0.0034389114893979755
+    ],
+    "positive_malicious_vs_benign_contributions": [
+      [
+        "observed:src_port",
+        1.966646785186461
+      ],
+      [
+        "numeric:src_port",
+        0.9019496905280665
+      ],
+      [
+        "observed:dst_port",
+        0.7528809446564814
+      ],
+      [
+        "numeric:dst_port",
+        0.5222097002838721
+      ],
+      [
+        "80",
+        0.12998026590836462
+      ],
+      [
+        "dst_port 80",
+        0.11230191676700477
+      ],
+      [
+        "app",
+        0.0794084464870458
+      ]
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+{
+  "status": "root_cause_review_completed_no_new_fit",
+  "quality_acceptance": false,
+  "all_issues_solved": false,
+  "model_promoted": false,
+  "actual_new_fits": 0,
+  "actual_classifier_fits": 0,
+  "actual_calibration_fits": 0,
+  "new_full_data_final_fit": false,
+  "new_full_development_replay": false,
+  "new_full_task_pipeline_replay": false,
+  "platform_used": false,
+  "external_training_data_used": false,
+  "pseudo_labels_used": false,
+  "development_not_blind": true,
+  "latest_executed_training_delivery": "evidence/2026-09-27/v89_readout_support/delivery.json",
+  "latest_full_development_delivery": "evidence/2026-09-27/v79_execution/delivery.json",
+  "latest_full_development_errors": 5947,
+  "validation_scope": "No-fit review: original2056871 labels and F00 decisions, manual literal/hash score replay,36 counterfactual-role results and47 coarse failure groups verified;795 historical bound files unchanged. Partial facts reused, no renewed full raw parsing, new blind test, model or cloud connection.",
+  "target_diagnostics": {
+    "M_regression": {
+      "rows": 668,
+      "observation_groups": 68,
+      "components": 51,
+      "whole_vector_alias_rows": 8,
+      "unseen_token_rows": 576,
+      "same_exact_tokens_M_support_rows": 28,
+      "same_exact_tokens_S_support_rows": 0,
+      "same_exact_tokens_no_training_support_rows": 640,
+      "false_hash_only_S_support_rows": 0
+    },
+    "S_repair": {
+      "rows": 38,
+      "observation_groups": 17,
+      "components": 12,
+      "whole_vector_alias_rows": 0,
+      "unseen_token_rows": 24,
+      "same_exact_tokens_M_support_rows": 4,
+      "same_exact_tokens_S_support_rows": 2,
+      "same_exact_tokens_no_training_support_rows": 34,
+      "false_hash_only_S_support_rows": 0
+    }
+  },
+  "largest_failure_group": {
+    "coarse_behavior": {
+      "action": "deny",
+      "dst_port_fixed": 514,
+      "dst_role": "dmz",
+      "outcome": "blocked",
+      "src_role": "outside",
+      "transport_protocol": "udp"
+    },
+    "M_regression_rows": 392,
+    "training_class_counts": [
+      0,
+      2,
+      0
+    ],
+    "fit_protected_M_rows": 2,
+    "fit_protected_M_that_need_source_terms_to_stay_M": 0,
+    "M_regressions_remaining_without_source_terms": 360,
+    "mean_S_minus_M_shift_by_part": {
+      "source_port": 1.0182732000018118,
+      "destination_port": -0.07443958353672012,
+      "common_ASA": 3.2484122265109514,
+      "windows": 0.0
+    }
+  },
+  "objective_diagnostics": {
+    "main_risk": [
+      {
+        "model": "teacher",
+        "main_loss_rows": 65996,
+        "OVR_BCE": 0.034870946082797886,
+        "softmax_CE": 0.01984061940643924,
+        "classwise_BCE": {
+          "0": 0.0021040146151677912,
+          "1": 0.01689037702840778,
+          "2": 0.16901205694594149
+        },
+        "L2_term_at_alpha_1e_6": 0.0
+      },
+      {
+        "model": "F00",
+        "main_loss_rows": 65996,
+        "OVR_BCE": 0.23833252533792593,
+        "softmax_CE": 0.014928112605354498,
+        "classwise_BCE": {
+          "0": 0.0021040146151677912,
+          "1": 0.30915847701152094,
+          "2": 0.18155866561082876
+        },
+        "L2_term_at_alpha_1e_6": 1.3114640158581323e-05
+      }
+    ],
+    "zero_correction_weighted_minimum_E_slack": 2.9377348543506496,
+    "locked_weighted_E_slack_cap": 0.3541515216465904
+  },
+  "verification": {
+    "status": "passed",
+    "source_sha256": "76f42344c438f8e08a07418c41406874fdf972a74a19c0382f1e4f1e99cb8682",
+    "new_fits": 0,
+    "original_labels_checked": 2056871,
+    "all_F00_row_predictions_replayed": 2056871,
+    "frozen_counterfactual_role_results_replayed": 36,
+    "manual_literal_hash_normalization_and_coefficient_replay": true,
+    "support_unseen_and_alias_counts_recomputed": true,
+    "score_decomposition_groups_recomputed": 47,
+    "risk_and_slack_recomputed": true,
+    "prior_bound_files_rehashed": 795,
+    "prior_bound_files_changed": [],
+    "receipt_hashes": {
+      "evidence/2026-09-27/v79_execution/delivery.json": "6a387d109c0501ea2a8d8cbc3b3ffc424e36d57e57ffd82d7e400b038340ef50",
+      "artifacts/v80_attribution_20260927/review_receipt.json": "3480b88b45cc25ad9170ce771637a3e1fb9e5062b29f1eec17cc252855891e23",
+      "evidence/2026-09-27/v81_diagnosis/delivery.json": "9a41b1407dfa4c121226e097d717e07243de9ab81970e2aaf70ec69d2cfcc49a",
+      "evidence/2026-09-27/v82_capacity/delivery.json": "33b068f6689d990e11d6762e2bad8ee69cef7c616a7c8acfb595c92cd67a6a35",
+      "evidence/2026-09-27/v83_root_review/delivery.json": "dade677c00b19db7873fb8bac8d2faf092538976edd5433c56bfb90a41f2f7e1",
+      "evidence/2026-09-27/v84_preservation/delivery.json": "5d2b419171b16a5bc5a31ee866357af0f548ed9b5688721ecab36e4817157c6f",
+      "evidence/2026-09-27/v85_protection/delivery.json": "72faafa85de6f14e3dfd9fe5a4b3e927bb48d64a93e7f2e2814452c4ce3ac723",
+      "evidence/2026-09-27/v86_boundary_review/delivery.json": "8336a0afa9da832c8069b2a7fddb534d22eb6039d53252029e8b8612910de056",
+      "evidence/2026-09-27/v87_solver_supervision/delivery.json": "302850394e7285045e16806c53d02b0b350e666828162b2bb163b7d47c477dfb",
+      "evidence/2026-09-27/v88_root_review/delivery.json": "97157ac041aaa8bdd89ae2337c92ffe07818b319908a16dd9bcbb3d896d5c22c",
+      "evidence/2026-09-27/v89_readout_support/delivery.json": "8fe1ca13069a6037486f99aba0d355a93c2ba5249410675be3098f53dfcee5b4"
+    },
+    "verified_output_sha256": {
+      "diagnosis.json": "fa5825788645789604681d28ad6f7c8968db556c30f31a248174e03ac3f2f951",
+      "error_observation_groups.json": "01e485b9886123478760991d95f4e0c56283b0f98c1c68dfeb0673ba1888e7d9",
+      "fixed_model_counterfactuals.json": "ab735ac5b2e1c536d19b2590228fd9ac564cce848e737cb46b8039f968a17bbf",
+      "score_decomposition.json": "32fd9ea10e8a33952dcd4bc7ac5dede7892d5fd8cf4d751070a15dfe5b448c78"
+    },
+    "seconds": 23.125,
+    "scope": "Independent original labels, literal-token construction, Murmur bucket arithmetic and frozen row decisions/support/decompositions. Reuses preserved partial-fact dictionary; no renewed full raw parsing or external validation."
+  },
+  "current_plan": "docs/V90_REGRESSION_ROOT_CAUSE_AND_PLAN.md",
+  "artifact_sha256": {
+    "artifacts/v90_root_review_20260928/diagnosis.json": "fa5825788645789604681d28ad6f7c8968db556c30f31a248174e03ac3f2f951",
+    "artifacts/v90_root_review_20260928/error_observation_groups.json": "01e485b9886123478760991d95f4e0c56283b0f98c1c68dfeb0673ba1888e7d9",
+    "artifacts/v90_root_review_20260928/fixed_model_counterfactuals.json": "ab735ac5b2e1c536d19b2590228fd9ac564cce848e737cb46b8039f968a17bbf",
+    "artifacts/v90_root_review_20260928/score_decomposition.json": "32fd9ea10e8a33952dcd4bc7ac5dede7892d5fd8cf4d751070a15dfe5b448c78",
+    "artifacts/v90_root_review_20260928/verification.json": "5a0fedae2c89f98da3d43733c0a2e6c420f68fb736eee106fb6cd179b69cf92b",
+    "docs/V90_REGRESSION_ROOT_CAUSE_AND_PLAN.md": "29932bd77f4d8a743e53636380e3812dbee50d08e39f9ef2beab2a141b3d5b2d",
+    "training/v90_diagnose.py": "f35bb63c80cc61a9346484d78df1e34cc662a3aade8925c7d06947e5609cc3ae",
+    "training/v90_publish.py": "dc94609a48b0f20e220feb02610914caac7488ec683e3bb7811182c245c91fc3",
+    "training/v90_score_decomposition.py": "5f3d0aa37dda9a611f451d488c92cdb46688a5ae15ed6064d8476f227023dfbb",
+    "training/v90_verify.py": "76f42344c438f8e08a07418c41406874fdf972a74a19c0382f1e4f1e99cb8682"
+  }
+}

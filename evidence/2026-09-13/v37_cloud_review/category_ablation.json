@@ -1,0 +1,332 @@
+[
+  {
+    "task": "known_dev",
+    "intervention": "zero authentication category feature only; fixed coefficients and threshold",
+    "primary": {
+      "rows": 678221,
+      "macro_f1": 0.9795493907925343,
+      "confusion_matrix": [
+        [
+          641025,
+          0,
+          0
+        ],
+        [
+          30,
+          27742,
+          830
+        ],
+        [
+          0,
+          0,
+          8594
+        ]
+      ],
+      "class_support": [
+        641025,
+        28602,
+        8594
+      ],
+      "class_recall": [
+        1.0,
+        0.9699321725753444,
+        1.0
+      ],
+      "class_precision": [
+        0.9999532021433418,
+        1.0,
+        0.9119269949066214
+      ],
+      "class_f1": [
+        0.9999766005241483,
+        0.9847366179185006,
+        0.953934953934954
+      ]
+    },
+    "risk": {
+      "supported": true,
+      "threshold": 0.00011225433017303389,
+      "class_support": [
+        641025,
+        28602,
+        8594
+      ],
+      "class_alert_counts": [
+        0,
+        28572,
+        8594
+      ],
+      "class_alert_rates": [
+        0.0,
+        0.99895112229914,
+        1.0
+      ]
+    },
+    "new_model_trained": false,
+    "deployable_repair_proven": false
+  },
+  {
+    "task": "source_ad",
+    "intervention": "zero authentication category feature only; fixed coefficients and threshold",
+    "primary": {
+      "rows": 810333,
+      "macro_f1": null,
+      "confusion_matrix": [
+        [
+          809860,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          473
+        ]
+      ],
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_recall": [
+        1.0,
+        null,
+        1.0
+      ],
+      "class_precision": [
+        1.0,
+        null,
+        1.0
+      ],
+      "class_f1": [
+        1.0,
+        null,
+        1.0
+      ]
+    },
+    "risk": {
+      "supported": true,
+      "threshold": 0.0004307151492931594,
+      "class_support": [
+        809860,
+        0,
+        473
+      ],
+      "class_alert_counts": [
+        0,
+        0,
+        473
+      ],
+      "class_alert_rates": [
+        0.0,
+        null,
+        1.0
+      ]
+    },
+    "new_model_trained": false,
+    "deployable_repair_proven": false
+  },
+  {
+    "task": "source_duo",
+    "intervention": "zero authentication category feature only; fixed coefficients and threshold",
+    "primary": {
+      "rows": 337,
+      "macro_f1": null,
+      "confusion_matrix": [
+        [
+          325,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_recall": [
+        1.0,
+        null,
+        1.0
+      ],
+      "class_precision": [
+        1.0,
+        null,
+        1.0
+      ],
+      "class_f1": [
+        1.0,
+        null,
+        1.0
+      ]
+    },
+    "risk": {
+      "supported": true,
+      "threshold": 0.00038843325464199557,
+      "class_support": [
+        325,
+        0,
+        12
+      ],
+      "class_alert_counts": [
+        0,
+        0,
+        12
+      ],
+      "class_alert_rates": [
+        0.0,
+        null,
+        1.0
+      ]
+    },
+    "new_model_trained": false,
+    "deployable_repair_proven": false
+  },
+  {
+    "task": "source_waf",
+    "intervention": "zero authentication category feature only; fixed coefficients and threshold",
+    "primary": {
+      "rows": 4130,
+      "macro_f1": null,
+      "confusion_matrix": [
+        [
+          0,
+          4128,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_recall": [
+        0.0,
+        null,
+        1.0
+      ],
+      "class_precision": [
+        null,
+        0.0,
+        1.0
+      ],
+      "class_f1": [
+        0.0,
+        null,
+        1.0
+      ]
+    },
+    "risk": {
+      "supported": true,
+      "threshold": 0.00016709326500186086,
+      "class_support": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_counts": [
+        4128,
+        0,
+        2
+      ],
+      "class_alert_rates": [
+        1.0,
+        null,
+        1.0
+      ]
+    },
+    "new_model_trained": false,
+    "deployable_repair_proven": false
+  },
+  {
+    "task": "asa_hard",
+    "intervention": "zero authentication category feature only; fixed coefficients and threshold",
+    "primary": {
+      "rows": 66269,
+      "macro_f1": null,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          62796,
+          0
+        ],
+        [
+          0,
+          3473,
+          0
+        ]
+      ],
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_recall": [
+        null,
+        1.0,
+        0.0
+      ],
+      "class_precision": [
+        null,
+        0.947592388597987,
+        null
+      ],
+      "class_f1": [
+        null,
+        0.9730910781389223,
+        0.0
+      ]
+    },
+    "risk": {
+      "supported": true,
+      "threshold": 0.000330957840987578,
+      "class_support": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_counts": [
+        0,
+        62796,
+        3473
+      ],
+      "class_alert_rates": [
+        null,
+        1.0,
+        1.0
+      ]
+    },
+    "new_model_trained": false,
+    "deployable_repair_proven": false
+  }
+]

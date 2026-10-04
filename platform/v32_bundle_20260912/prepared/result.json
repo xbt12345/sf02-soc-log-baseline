@@ -1,0 +1,36 @@
+{
+  "status": "repaired_text_pending_independent_review",
+  "version": "v32-root-repair-1.0",
+  "rows": 2056871,
+  "counters": {
+    "original_empty": 356315,
+    "filtered_empty": 0,
+    "unknown_format": 714175,
+    "invalid_string_rows": 804209,
+    "unverified_field_rows": 35,
+    "final_quarantine_rows": 2527,
+    "final_quarantine_fragments": 4788
+  },
+  "roots_compared": 2056871,
+  "rows_reparsed": 11,
+  "non_router_ast_equivalence_checked": true,
+  "informative_rows": 1700556,
+  "informative_groups": 275089,
+  "mixed_label_text_groups": 49,
+  "model_trained": false,
+  "semantic_normalization_accepted": false,
+  "transfer_validated": false,
+  "parent_run": "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\artifacts\\v32_prepare_20260912",
+  "previous_stage_run": "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\artifacts\\v32_final_20260912",
+  "parent_corpus_sha256": "25e60fa4506f6e51132229e64ac98829f7eff7ea13d27c35dd1ea08de5a755e4",
+  "input_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "source_sha256": {
+    "soc_v3_prepare.py": "386818cba5e5e5f1e85fcdbac1c48342089d2dfc84e88d4db61e64b9df280c49",
+    "soc_v32_prepare.py": "6b45cbebabadea0c9b546c216cd21f641b5d60a4d34fbb492b9103fd40a2ae58",
+    "v32_finalize.py": "80368aa1aec5763d0a967c16e67570d26857c97227390227b2513d615860a9e9",
+    "v32_root_repair.py": "ccdb5d09b88fd781873dba3fc3a2ade5cbb9c9fa63a85bd0f43f76b40f982985"
+  },
+  "corpus_sha256": "95c79304fae8e60af997821b2ed279635e091ae74ffac3e694da29d3747d6c10",
+  "group_manifest_sha256": "5d2de52f29dc386945befbe578e00b325f9c8740eb299768b4ed73c9724b52eb",
+  "elapsed_seconds": 46.98175030000857
+}

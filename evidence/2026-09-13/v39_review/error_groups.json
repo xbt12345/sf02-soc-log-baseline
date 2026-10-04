@@ -1,0 +1,207 @@
+[
+  {
+    "route": "native_flow",
+    "label": 1,
+    "prediction": 0,
+    "group": 57313,
+    "rows": 2834,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      6,
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "route": "asa",
+    "label": 2,
+    "prediction": 1,
+    "group": 2054164,
+    "rows": 685,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      120809,
+      120810,
+      120819,
+      120820
+    ]
+  },
+  {
+    "route": "native_flow",
+    "label": 1,
+    "prediction": 0,
+    "group": 57210,
+    "rows": 322,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      1188,
+      1189,
+      1190,
+      1191
+    ]
+  },
+  {
+    "route": "asa",
+    "label": 1,
+    "prediction": 2,
+    "group": 1749949,
+    "rows": 106,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      27579,
+      27580,
+      27590,
+      27591
+    ]
+  },
+  {
+    "route": "asa",
+    "label": 1,
+    "prediction": 2,
+    "group": 1949297,
+    "rows": 36,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      32398,
+      32399,
+      32400,
+      32401
+    ]
+  },
+  {
+    "route": "authentication",
+    "label": 2,
+    "prediction": 0,
+    "group": 1763166,
+    "rows": 8,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      441158,
+      441160,
+      482055,
+      1280243
+    ]
+  },
+  {
+    "route": "bounded_payload",
+    "label": 2,
+    "prediction": 0,
+    "group": 1703987,
+    "rows": 5,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      129496,
+      442432,
+      860870,
+      1291489
+    ]
+  },
+  {
+    "route": "authentication",
+    "label": 2,
+    "prediction": 0,
+    "group": 1765291,
+    "rows": 2,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      483275,
+      1765291
+    ]
+  },
+  {
+    "route": "cef_fields",
+    "label": 2,
+    "prediction": 1,
+    "group": 1477722,
+    "rows": 2,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      1477712,
+      1477722
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 1,
+    "prediction": 0,
+    "group": 13799,
+    "rows": 2,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      13783,
+      13799
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 2,
+    "prediction": 0,
+    "group": 921214,
+    "rows": 2,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      920416,
+      921214
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 2,
+    "prediction": 0,
+    "group": 211849,
+    "rows": 1,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      211849
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 2,
+    "prediction": 0,
+    "group": 326629,
+    "rows": 1,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      326629
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 2,
+    "prediction": 0,
+    "group": 420010,
+    "rows": 1,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      420010
+    ]
+  },
+  {
+    "route": "windows_message",
+    "label": 2,
+    "prediction": 0,
+    "group": 462265,
+    "rows": 1,
+    "fit_exact_vector_rows": 0,
+    "fit_exact_vector_same_label_rows": 0,
+    "row_positions": [
+      462265
+    ]
+  }
+]

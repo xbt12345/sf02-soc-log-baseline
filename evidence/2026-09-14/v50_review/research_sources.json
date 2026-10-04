@@ -1,0 +1,45 @@
+{
+  "access_date": "2026-09-14",
+  "sources": [
+    {
+      "title": "Learning with Marginalized Corrupted Features",
+      "url": "https://proceedings.mlr.press/v28/vandermaaten13.html",
+      "use": "Feature corruption training motivation; finite project-specific view loss, not a reproduction."
+    },
+    {
+      "title": "MCF author implementation",
+      "url": "https://lvdmaaten.github.io/mcf/Marginalized_Corrupted_Features.html",
+      "use": "Read author code availability; no code or training data downloaded."
+    },
+    {
+      "title": "DomainBed",
+      "url": "https://github.com/facebookresearch/DomainBed",
+      "use": "Paired evaluation and model-selection discipline; no image model transplanted."
+    },
+    {
+      "title": "In Search of Lost Domain Generalization",
+      "url": "https://arxiv.org/abs/2007.01434",
+      "use": "Uniform experimental conditions and explicit selection boundaries."
+    },
+    {
+      "title": "Frustratingly Easy Domain Adaptation",
+      "url": "https://aclanthology.org/P07-1033/",
+      "use": "Possible shared/private parameter inspiration; original supervised-target assumption does not hold here."
+    },
+    {
+      "title": "Microsoft 4625",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625",
+      "use": "Authentication failure/invalid username/password facts differ from attack truth."
+    },
+    {
+      "title": "Duo authentication reporting",
+      "url": "https://duo.com/docs/administration-reporting",
+      "use": "Separate results, reasons and access policy."
+    },
+    {
+      "title": "RFC 1812",
+      "url": "https://www.rfc-editor.org/info/rfc1812/",
+      "use": "ICMP 13 administrative filtering meaning, not SOC threat class."
+    }
+  ]
+}

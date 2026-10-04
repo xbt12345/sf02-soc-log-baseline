@@ -1,0 +1,114 @@
+{
+  "status": "V169_prospective_paired_learning_design_not_execution_contract",
+  "execution_authority": false,
+  "new_fit_permission": false,
+  "current_problem": "training_side_classification_not_mastered",
+  "evidence": [
+    "docs/V168_INDEPENDENT_RESULTS_AND_NEXT_TRAINING_DECISION_20261002.md",
+    "artifacts/v168_independent_actual_decision_floor_review_20261002/review.json",
+    "artifacts/v168_independent_actual_decision_floor_review_20261002/pre_review_bindings.json",
+    "artifacts/v168_root_saved_prior_burden_review_20261002/review.json",
+    "artifacts/v164_independent_capacity_stop_review_20261002/review.json"
+  ],
+  "proposed_arms": {
+    "A": {
+      "fixed_prior_coefficient": 1
+    },
+    "B": {
+      "prior_coefficient": "exp(beta)",
+      "beta_initial": 0,
+      "additional_parameters": 1,
+      "same_scalar_all_classes": true
+    }
+  },
+  "candidate": "B",
+  "proposed_fit_cap": 6,
+  "proposed_roles": [
+    0,
+    1,
+    2
+  ],
+  "proposed_accepted_updates_per_fit": 20,
+  "proposed_permanent_update_cap": 120,
+  "proposed_corrections_per_point": 2,
+  "shared_execution_fix": "full_guard_ledger_and_dynamic_local_working_set",
+  "same_initialization_and_input_labels_original_frequencies_and_population": true,
+  "current_supervised_role_observations": 225614,
+  "current_unique_original_ASA_rows": 112807,
+  "overlapping_roles_not_independent": true,
+  "initial_S_cohorts": [
+    {
+      "role": 0,
+      "path": "artifacts/v169_learnable_prior_pair_plan_20261002/role0_all_S_initial_prior_cohort.parquet",
+      "sha256": "e024febb7ccf5d9e0e98d0c42f3a8055554308f5c5796fc1732fe2628db100e7",
+      "all_S_rows": 33497,
+      "low_prior_rows": 831,
+      "low_prior_errors": 831,
+      "other_prior_correct_controls": 32083
+    },
+    {
+      "role": 1,
+      "path": "artifacts/v169_learnable_prior_pair_plan_20261002/role1_all_S_initial_prior_cohort.parquet",
+      "sha256": "d468b8223d54395093f008efa4e7d4439af4a91bdef919e6669d895330ae6067",
+      "all_S_rows": 2071,
+      "low_prior_rows": 813,
+      "low_prior_errors": 813,
+      "other_prior_correct_controls": 915
+    },
+    {
+      "role": 2,
+      "path": "artifacts/v169_learnable_prior_pair_plan_20261002/role2_all_S_initial_prior_cohort.parquet",
+      "sha256": "0fcddfc8285c9a5547a1a55ed57ecd75b89b447be09b6d3ff206a11081bd1463",
+      "all_S_rows": 32550,
+      "low_prior_rows": 319,
+      "low_prior_errors": 319,
+      "other_prior_correct_controls": 31658
+    }
+  ],
+  "permanent_protection": "all_current_actual_mastered_ranges_and_all_new_actual_accepted_repairs",
+  "quality_constraints": {
+    "all_registered_protected_regressions": 0,
+    "original_M_S_error_counts_must_not_increase": true,
+    "classification_mastery_requires_all_three_pure_errors_zero_and_last_five_real_distinct_states": true,
+    "full_task_and_independent_transfer_separate": true
+  },
+  "prior_actual_costs": {
+    "heads": 19178,
+    "complete_parameter_derivatives": 768,
+    "fits_since_V159": 9,
+    "permanent_updates_since_V159": 170
+  },
+  "actual_new_costs": {
+    "heads": 0,
+    "features": 0,
+    "derivatives": 0,
+    "fits": 0,
+    "permanent_updates": 0
+  },
+  "pre_execution_requirements": [
+    "actual A/B zero-step outputs and class decisions identical",
+    "complete new parameter/function/counter/lifecycle and working-set historical-case qualification",
+    "actual callgraph exact forward/derivative/QP/proposal/storage bounds and cumulative budget",
+    "physical source data role and environment seal",
+    "new root review"
+  ],
+  "model_training_not_started": true,
+  "method_effect_not_claimed": true,
+  "source_sha256": {
+    "docs/V168_INDEPENDENT_RESULTS_AND_NEXT_TRAINING_DECISION_20261002.md": "6cb91a9b340f1b530ba14c224a4deb00de6769c06138da51e5c2b05d5c072f73",
+    "artifacts/v168_independent_actual_decision_floor_review_20261002/review.json": "d7a65add7e256235f3961dfd526418463af20851ffc9bc802ac8e89dbc13d602",
+    "artifacts/v168_independent_actual_decision_floor_review_20261002/pre_review_bindings.json": "41e3451116649ad04871f4464bb6f795f926d40e0c76df66fdde31738b5c4ba2",
+    "artifacts/v168_root_saved_prior_burden_review_20261002/review.json": "2dcaf686f3ce73c655e31420473d1ab3d956019faef104f29f9970d336a24696",
+    "artifacts/v164_independent_capacity_stop_review_20261002/review.json": "ef79550909f051f0cd747df697206a4a9d522c76843dd76a88afa95ace7beaa6",
+    "data/official/train.parquet": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "artifacts/v164_short_supervised_trajectory_20261002/role0/endpoint/OOF_original_rows.parquet": "e8d38d97f78a49e00e7365e16e30e6b33d00060b18d52ad02a172f8a64f303a3",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold0/OOF_probabilities.npy": "1a158fb881748593c16c5b3a90f42b33acb37ce2ea35969a6737f6747eef3e64",
+    "artifacts/v169_learnable_prior_pair_plan_20261002/role0_all_S_initial_prior_cohort.parquet": "e024febb7ccf5d9e0e98d0c42f3a8055554308f5c5796fc1732fe2628db100e7",
+    "artifacts/v164_short_supervised_trajectory_20261002/role1/endpoint/OOF_original_rows.parquet": "4f948c69359aac4ab62c3c7e82bdf7f2e48203556ac98585f0353f53a9ce6771",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold1/OOF_probabilities.npy": "a39938b15214da7e14dc25438776fb8ac9878ca2f1a0a940fcd77725eb622089",
+    "artifacts/v169_learnable_prior_pair_plan_20261002/role1_all_S_initial_prior_cohort.parquet": "d468b8223d54395093f008efa4e7d4439af4a91bdef919e6669d895330ae6067",
+    "artifacts/v164_short_supervised_trajectory_20261002/role2/endpoint/OOF_original_rows.parquet": "fd10479c37471b5f728b444243853c52c31cefe75133c4e6a2f635320d232a79",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold2/OOF_probabilities.npy": "eed286ab24f2ca8ab338076319804bd77f2d572a4ab5163915a363129bcb9c65",
+    "artifacts/v169_learnable_prior_pair_plan_20261002/role2_all_S_initial_prior_cohort.parquet": "0fcddfc8285c9a5547a1a55ed57ecd75b89b447be09b6d3ff206a11081bd1463"
+  }
+}

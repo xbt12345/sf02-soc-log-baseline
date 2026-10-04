@@ -1,0 +1,47 @@
+{
+  "all_checks_passed": true,
+  "coverage_qualified_protocols": [
+    "body",
+    "behavior_1"
+  ],
+  "records": [
+    {
+      "protocol": "body",
+      "selected": "zero",
+      "objectives": {
+        "natural_only": {
+          "original_row_mean_objective": 0.028256498073491555,
+          "scaled_gradient": 6.40381238667079e-09,
+          "parents": 5033
+        },
+        "natural_plus_synthetic": {
+          "original_row_mean_objective": 0.04375754987415066,
+          "scaled_gradient": 1.2760912075308286e-07,
+          "parents": 41893
+        }
+      }
+    },
+    {
+      "protocol": "behavior_1",
+      "selected": "zero",
+      "objectives": {
+        "natural_only": {
+          "original_row_mean_objective": 0.09675924975943297,
+          "scaled_gradient": 3.518340387103363e-07,
+          "parents": 10000
+        },
+        "natural_plus_synthetic": {
+          "original_row_mean_objective": 0.08110091108668861,
+          "scaled_gradient": 6.130954022332263e-07,
+          "parents": 49947
+        }
+      }
+    }
+  ],
+  "new_base_fits": 2,
+  "new_adapter_fits": 4,
+  "score_rows_replayed": 399756,
+  "max_probability_difference": 3.3306690738754696e-16,
+  "max_manual_base_difference": 0.0,
+  "scope": "Independent coverage-first split choice, no repeated parent rows, original-row objective/support/gradient, model forward passes and calibration-before-evaluation selection. No test scores used to choose inner fold."
+}

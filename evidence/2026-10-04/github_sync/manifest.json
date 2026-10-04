@@ -1,0 +1,208 @@
+{
+  "as_of": "2026-10-04",
+  "purpose": "GitHub copies of original result summaries and delivered CPU execution sources",
+  "new_official_model_calls": 0,
+  "new_fits": 0,
+  "new_permanent_updates": 0,
+  "actual_platform_execution_pending": true,
+  "files": [
+    {
+      "path": "evidence/2026-10-04/github_sync/v159/final_delivery.json",
+      "source": "artifacts/v159_class_boundary_numeric_trial_20261002/final_delivery.json",
+      "bytes": 10518,
+      "sha256": "39eb8c7e411bfdab6c071ac219ab3e0e2ced680b5403f547d07eca1f2a7234c1"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v159/quality.json",
+      "source": "artifacts/v159_class_boundary_numeric_trial_20261002/quality.json",
+      "bytes": 14168,
+      "sha256": "a19949ed538699e9e69201193b588f4d5c4548dee5a4aeccea0647bd8c17a6ee"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v159/all_fixed_cohort_quality.json",
+      "source": "artifacts/v159_class_boundary_numeric_trial_20261002/all_fixed_cohort_quality.json",
+      "bytes": 10913,
+      "sha256": "8a1725092b656e3937b1274cd1e8e6ee0f197b0fbf9e1acc706a488938b13780"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v159/verification.json",
+      "source": "artifacts/v159_class_boundary_numeric_trial_20261002/verification.json",
+      "bytes": 45580,
+      "sha256": "b416349b4f7a4b7cca3ea892fcb0f367aa0b11bb2eff712bb185c3c18861a691"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v164/review.json",
+      "source": "artifacts/v164_saved_training_quality_review_20261002/review.json",
+      "bytes": 302584,
+      "sha256": "f5738110eecebe9a113dc37f33e3c5c7fc4d25318aa5cbc16c26358df86c765c"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v169_local_resource_wait/plan.md",
+      "source": "artifacts/v169_post_cleanup_resource_wait_direction_20261002/plan.md",
+      "bytes": 241376,
+      "sha256": "f3f39b64ed81494c48e78d490ff2c9a4da31f5c4aeb40ec0808f7f718fe4e64e"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v169_local_resource_wait/publication.json",
+      "source": "artifacts/v169_post_cleanup_resource_wait_direction_20261002/publication.json",
+      "bytes": 2209,
+      "sha256": "c90d07f5f75ca54c030437c51411d7fdb00dbc79a76641c72e608ca5b5727baf"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v169_local_resource_wait/validation.json",
+      "source": "artifacts/v169_post_cleanup_resource_wait_direction_20261002/validation.json",
+      "bytes": 3262,
+      "sha256": "54cc99eb858950ecb37913a632a67982ed181f81e300eec9ea49bbadb4c9a184"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v169_platform/final_package_receipt_v1.json",
+      "source": "delivered_platform_package/final_package_receipt_v1.json",
+      "bytes": 651,
+      "sha256": "46587186495829a7a1b77b01ddc1cfab271f2cf79768677192d197471fa7ce1b"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/v169_platform/final_zip_independent_review.json",
+      "source": "delivered_platform_package/root_review/final_zip_independent_review.json",
+      "bytes": 607,
+      "sha256": "0c6623c5f978e50c0d3668abf19567afc48152060543ddac5bd072c9b929d082"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/PLATFORM_README.md",
+      "source": "delivered_platform_package/workspace/SF02/PLATFORM_README.md",
+      "bytes": 2520,
+      "sha256": "43f8e1f564cf43d13ad5efbda394b25239811c2346b94b844d2bfdefa290d217"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/run_platform.py",
+      "source": "delivered_platform_package/workspace/SF02/run_platform.py",
+      "bytes": 10436,
+      "sha256": "d777c84d2918d0a745ea71d4df7db06fb920cc8c13dd3a35cd58529359a192c6"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/independent_root_execution_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/independent_root_execution_review.json",
+      "bytes": 195998,
+      "sha256": "7f01b5af9d2529cf7094f3a29d0ee423560a02228be8b07c0c223b1c0b332ffe"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/package_manifest.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/package_manifest.json",
+      "bytes": 272292,
+      "sha256": "7f68d0fe866823edefe2a93e5f289c7d6ea34b87ff9630c1df64fce62ca5030e"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/package_source_manifest.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/package_source_manifest.json",
+      "bytes": 190380,
+      "sha256": "1083ad3e65bcdcafcaca5bd8afee8b8bf18c35fb2007dc34a5df3c42179474da"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_offline_bootstrap_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_offline_bootstrap_v1.py",
+      "bytes": 12858,
+      "sha256": "faadbd71a847c74db197f6da854be1d4cf2b075da9d5f7935d63ac6954652ffb"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_review_evidence/compact_archive_actual_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_review_evidence/compact_archive_actual_review.json",
+      "bytes": 437,
+      "sha256": "36302dee6aba4d35eee3e715d97674fb68351a9e5779f99f4fd5350596dda7d7"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_review_evidence/CPU_source_equivalence_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_review_evidence/CPU_source_equivalence_review.json",
+      "bytes": 735,
+      "sha256": "de8eb442f81634b6bca62a33e2686ba5fa7ef8b7db2a17da477808dce57cf2e0"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_review_evidence/independent_original_gold_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_review_evidence/independent_original_gold_review.json",
+      "bytes": 1083,
+      "sha256": "6ad86d79e54d82d922801a5879f374633901f820595c13f82789377f00d6add3"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_review_evidence/offline_installer_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_review_evidence/offline_installer_review.json",
+      "bytes": 400,
+      "sha256": "6d94cc487791d2ccba94ffd40f6c16cb0b82801d2bc4c5c759b9a1714d8fee2d"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/root_review_evidence/static_source_closure_review.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/root_review_evidence/static_source_closure_review.json",
+      "bytes": 19045,
+      "sha256": "5549e376ee176ccc3f7c9fc1520e556101fa35676af761ffc4faeb5fd5a6c8d5"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_execution_review_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_execution_review_v1.py",
+      "bytes": 13939,
+      "sha256": "947dcb7ec44e5c3893391d5f6cffbbb2d0b0679d584f2ee017b8d0c282fdabe8"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_full_width_qualification_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_full_width_qualification_v1.py",
+      "bytes": 5160,
+      "sha256": "1d92911e1d22b7b9fb6dc89dbb567cae24dea38edfdab70ecad2c715082ad5e3"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_platform_runner_v2.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_platform_runner_v2.py",
+      "bytes": 10182,
+      "sha256": "da63e0c2e06c5a83450c4d30df6d45a62c739f772a2ae7430c8f7ce6971ac586"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_qualification_child_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_qualification_child_v1.py",
+      "bytes": 1447,
+      "sha256": "fa2b0b43a577bef052ff95790a9495c1f55fba4fb70aab299b660ab4bc49ef59"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_runtime_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_runtime_v1.py",
+      "bytes": 1599,
+      "sha256": "dfa63246c3e1c504b87b6fc7b5496afed21cee3b3b1fd41818a217f29bc9cc3e"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_synthetic_qualification_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_synthetic_qualification_v1.py",
+      "bytes": 10144,
+      "sha256": "dd2fd930c76e0cf348e802b130143f9c8d32887b4b50cdc6de68d7f576c494f8"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/v169_cpu_training_entry_v1.py",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/v169_cpu_training_entry_v1.py",
+      "bytes": 28473,
+      "sha256": "0db53671bb06576651b170bd918dbdaef7009044733a699b0253072929c3595e"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/worker_review_evidence/catchable_interrupt_validation_v3.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/worker_review_evidence/catchable_interrupt_validation_v3.json",
+      "bytes": 415,
+      "sha256": "99f83eaa13c21a3cf097fcc20d31e24381c4d885a36c1cbfbf29478284c1d9fa"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/worker_review_evidence/launcher_validation_v2.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/worker_review_evidence/launcher_validation_v2.json",
+      "bytes": 1298,
+      "sha256": "a4f730d407e40a594d9eccab7f50702ce83c68fd6fdb1aefbe1d6a8dc59210da"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/worker_review_evidence/launcher_validation_v3.json",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/worker_review_evidence/launcher_validation_v3.json",
+      "bytes": 1298,
+      "sha256": "27ba953c5f173d2654a8f178e93af1d09c97c7beecd357ae842d82c36e7eafd1"
+    },
+    {
+      "path": "platform/v169_cpu_v1/execution_source/platform_runtime/worker_review_evidence/Windows_hard_termination_test_failed_original_console.txt",
+      "source": "delivered_platform_package/workspace/SF02/platform_runtime/worker_review_evidence/Windows_hard_termination_test_failed_original_console.txt",
+      "bytes": 3421,
+      "sha256": "e33df2624842c5741b04d5e29be91bd8fa21b229a154d21b51dd5459fcbcb434"
+    },
+    {
+      "path": "evidence/2026-10-04/github_sync/catalog_before_sync.json",
+      "source": "mcp_readonly/catalog.json before 2026-10-04 progress update",
+      "bytes": 5930,
+      "sha256": "216b9a661b71dc01fc86e165182515f6e71455c459df12f78f7314730f7f9312"
+    }
+  ]
+}

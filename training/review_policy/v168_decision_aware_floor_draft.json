@@ -1,0 +1,82 @@
+{
+  "status": "draft_after_actual_V167_rejection_no_execution_authority",
+  "execution_authority": false,
+  "proposed_protocol": "V168-single-decision-aware-floor-restoration-at-actual-V167-tie-point-v1",
+  "single_issue": "nonnegative_log_margin_does_not_guarantee_existing_argmax_correct_classification",
+  "origin_parameter_sha256": "56d9600e98ff480de24147b1e5a632e9c85ff2fad2f3dac65f492008bf76c9fd",
+  "actual_failed_trial_parameter_sha256": "8ae9b55cda7e4a710c4891dc8ab4e56f571ef90d8efb84f1c7a9e62aeb3fd431",
+  "actual_failed_trial_path": "artifacts/v167_trial_point_restoration_diagnostic_20261002/role1/probe1",
+  "actual_safe_role_references": {
+    "0": "artifacts/v167_trial_point_restoration_diagnostic_20261002/role0/probe0",
+    "2": "artifacts/v167_trial_point_restoration_diagnostic_20261002/role2/probe0"
+  },
+  "execute_only_actual_failed_role": 1,
+  "complete_functions": 25,
+  "margin_repetitions": 2,
+  "OOF_chunks": 4,
+  "deployment_chunks": 12,
+  "proposed_caps": {
+    "heads": 98,
+    "features": 98,
+    "margin_gradients": 50,
+    "fixed_error_target_gradients": 0,
+    "full_original_class_gradients": 0,
+    "QP_solves": 1,
+    "finite_proposals": 1,
+    "fits": 0,
+    "permanent_updates": 0
+  },
+  "prior_actual_costs": {
+    "heads": 19080,
+    "all_complete_parameter_derivatives": 718,
+    "fits_since_V159": 9,
+    "permanent_updates_since_V159": 170
+  },
+  "future_cumulative_caps": {
+    "heads": 19178,
+    "all_complete_parameter_derivatives": 768,
+    "fits_since_V159": 9,
+    "permanent_updates_since_V159": 170
+  },
+  "local_floor_rule": {
+    "eps_dtype": "float64",
+    "scale": "max(1,abs(actual_trial_logq_truth),abs(actual_trial_logq_rival))",
+    "multiplier": 16,
+    "positive_if": "truth_index > rival_index",
+    "otherwise": 0,
+    "not_an_actual_acceptance_tolerance": true,
+    "not_a_certified_CUDA_bound_or_transfer_safety_distance": true
+  },
+  "new_Jacobians_at_actual_final_tie_parameter": true,
+  "old_class_gradients_remain_at_V164_origin": true,
+  "all_original_gold_rows_frequencies_denominators_targets_mixed_rows_and_cumulative_accepted_protection_unchanged": true,
+  "additional_candidate_repair_goal": "artifacts/v168_decision_floor_plan_20261002/four_observed_candidate_M_repairs.parquet",
+  "additional_goal_not_merged_into_origin_correct_mask": true,
+  "prospective_full_class_error_caps": {
+    "M": 864,
+    "S": 1156
+  },
+  "required_extra_checks": [
+    "complete_original_argmax_and_risk_guards",
+    "all_four_candidate_M_repairs_still_correct",
+    "safe_role_references_unchanged",
+    "full_checkpoint_and_original_q_logq_restoration"
+  ],
+  "raw_new_gradient_bytes": 424332800,
+  "largest_joint_matrix_bytes": 229139712,
+  "one_correction_only_no_automatic_second_or_floor_seed_step_change": true,
+  "new_official_calls_authorized_by_this_draft": false,
+  "new_fit_permission": false,
+  "quality_acceptance": false,
+  "model_promotion": false,
+  "qualification_and_physical_seal_still_required": true,
+  "source_sha256": {
+    "docs/V167_ROOT_RESULTS_AND_V168_DECISION_AWARE_FLOOR_PLAN_20261002.md": "0aded7726bfdb4b064beefa1b2b2c33d5974bb351e7cdd3b9db72825fdcfb330",
+    "artifacts/v167_independent_actual_trial_point_review_v2_20261002/review.json": "9cc7779dc4b2f267dc58621e2256376ecd9bc7b7de99a2c11ebf9af6522b7245",
+    "artifacts/v167_root_decision_tie_and_floor_review_20261002/review.json": "a0073ad533352fbb3a503c47ebf8f7adc182acd7913fd97fbf19df9772c92196",
+    "training/v167_independent_actual_trial_point_review.py": "90c181bc768bd505ed6a7aba97fe19bafad7d8006b7653fafc2bfaf25cd4dce1",
+    "training/v167_independent_actual_trial_point_review_v2.py": "be7d68f193307da4d7601f2845908dc944aceec0bda9067ef8c23b06b877fbff",
+    "training/v167_root_decision_tie_and_floor_review.py": "12d6bfeb81f37734b2779b9a335a81843d1ddb7e51dc934602bb8ee00ced4441",
+    "artifacts/v168_decision_floor_plan_20261002/four_observed_candidate_M_repairs.parquet": "2d106d8a3278aa41333ca951bce8516aeaa17e5c570e8693ae443bb7f4d91e50"
+  }
+}

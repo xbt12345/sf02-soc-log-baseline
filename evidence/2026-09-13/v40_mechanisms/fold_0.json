@@ -1,0 +1,1415 @@
+{
+  "fold": 0,
+  "partitions": {
+    "all": {
+      "fit": {
+        "seen_fit_pure_same_label": {
+          "rows": 904501,
+          "errors": 1741,
+          "body_keys": 335050,
+          "class_rows": [
+            839096,
+            47266,
+            18139
+          ],
+          "class_errors": [
+            12,
+            184,
+            1545
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 14642,
+          "errors": 1630,
+          "body_keys": 3818,
+          "class_rows": [
+            0,
+            8154,
+            6488
+          ],
+          "class_errors": [
+            0,
+            44,
+            1586
+          ]
+        },
+        "unseen_fit": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evaluation": {
+        "seen_fit_pure_same_label": {
+          "rows": 372178,
+          "errors": 592,
+          "body_keys": 142296,
+          "class_rows": [
+            366951,
+            3628,
+            1599
+          ],
+          "class_errors": [
+            0,
+            84,
+            508
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 322,
+          "errors": 202,
+          "body_keys": 41,
+          "class_rows": [
+            0,
+            300,
+            22
+          ],
+          "class_errors": [
+            0,
+            180,
+            22
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 7217,
+          "errors": 817,
+          "body_keys": 1897,
+          "class_rows": [
+            0,
+            3938,
+            3279
+          ],
+          "class_errors": [
+            0,
+            18,
+            799
+          ]
+        },
+        "unseen_fit": {
+          "rows": 79790,
+          "errors": 351,
+          "body_keys": 25721,
+          "class_rows": [
+            52651,
+            19840,
+            7299
+          ],
+          "class_errors": [
+            4,
+            74,
+            273
+          ]
+        }
+      }
+    },
+    "asa": {
+      "fit": {
+        "seen_fit_pure_same_label": {
+          "rows": 56660,
+          "errors": 1637,
+          "body_keys": 12823,
+          "class_rows": [
+            0,
+            44344,
+            12316
+          ],
+          "class_errors": [
+            0,
+            112,
+            1525
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 14642,
+          "errors": 1630,
+          "body_keys": 3818,
+          "class_rows": [
+            0,
+            8154,
+            6488
+          ],
+          "class_errors": [
+            0,
+            44,
+            1586
+          ]
+        },
+        "unseen_fit": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evaluation": {
+        "seen_fit_pure_same_label": {
+          "rows": 4124,
+          "errors": 514,
+          "body_keys": 1059,
+          "class_rows": [
+            0,
+            3046,
+            1078
+          ],
+          "class_errors": [
+            0,
+            16,
+            498
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 322,
+          "errors": 202,
+          "body_keys": 41,
+          "class_rows": [
+            0,
+            300,
+            22
+          ],
+          "class_errors": [
+            0,
+            180,
+            22
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 7217,
+          "errors": 817,
+          "body_keys": 1897,
+          "class_rows": [
+            0,
+            3938,
+            3279
+          ],
+          "class_errors": [
+            0,
+            18,
+            799
+          ]
+        },
+        "unseen_fit": {
+          "rows": 23988,
+          "errors": 337,
+          "body_keys": 5403,
+          "class_rows": [
+            0,
+            18964,
+            5024
+          ],
+          "class_errors": [
+            0,
+            66,
+            271
+          ]
+        }
+      }
+    },
+    "auth": {
+      "fit": {
+        "seen_fit_pure_same_label": {
+          "rows": 21,
+          "errors": 0,
+          "body_keys": 18,
+          "class_rows": [
+            15,
+            0,
+            6
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "unseen_fit": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evaluation": {
+        "seen_fit_pure_same_label": {
+          "rows": 12,
+          "errors": 0,
+          "body_keys": 10,
+          "class_rows": [
+            8,
+            0,
+            4
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "unseen_fit": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "flow": {
+      "fit": {
+        "seen_fit_pure_same_label": {
+          "rows": 2684,
+          "errors": 64,
+          "body_keys": 416,
+          "class_rows": [
+            0,
+            2684,
+            0
+          ],
+          "class_errors": [
+            0,
+            64,
+            0
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "unseen_fit": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "evaluation": {
+        "seen_fit_pure_same_label": {
+          "rows": 542,
+          "errors": 68,
+          "body_keys": 87,
+          "class_rows": [
+            0,
+            542,
+            0
+          ],
+          "class_errors": [
+            0,
+            68,
+            0
+          ]
+        },
+        "seen_fit_pure_opposite_label": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "seen_fit_conflicted": {
+          "rows": 0,
+          "errors": 0,
+          "body_keys": 0,
+          "class_rows": [
+            0,
+            0,
+            0
+          ],
+          "class_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "unseen_fit": {
+          "rows": 800,
+          "errors": 8,
+          "body_keys": 122,
+          "class_rows": [
+            0,
+            800,
+            0
+          ],
+          "class_errors": [
+            0,
+            8,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "fit_empirical_minimum_errors_all": 1466,
+  "fit_empirical_minimum_errors_asa": 1466,
+  "actual_fit_errors_all": 3371,
+  "actual_fit_errors_asa": 3267,
+  "top_asa_errors": [
+    {
+      "projection_id": 3505,
+      "errors": 180,
+      "eval_counts": [
+        0,
+        180,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        685
+      ],
+      "pred": 2,
+      "probabilities": [
+        3.421235207834774e-05,
+        0.019114516078282236,
+        0.9808512715696394
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 65536,
+        "dst_role": "dmz",
+        "icmp_code": 13,
+        "icmp_message": "destination_unreachable",
+        "icmp_type": 3,
+        "icmp_unreachable": "administratively_prohibited",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "icmp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 1388,
+      "errors": 156,
+      "eval_counts": [
+        0,
+        1214,
+        156
+      ],
+      "all_fit_key_counts": [
+        0,
+        2634,
+        354
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.0034593153489722193,
+        0.8746503197517218,
+        0.12189036489930605
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 65536,
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 348
+    },
+    {
+      "projection_id": 1623,
+      "errors": 82,
+      "eval_counts": [
+        0,
+        102,
+        82
+      ],
+      "all_fit_key_counts": [
+        0,
+        194,
+        150
+      ],
+      "pred": 1,
+      "probabilities": [
+        2.6064510097291666e-05,
+        0.6864605655960436,
+        0.31351336989385903
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 65536,
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 63
+    },
+    {
+      "projection_id": 8472,
+      "errors": 16,
+      "eval_counts": [
+        0,
+        16,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        4,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        1.4811357347215478e-07,
+        0.4897434105534119,
+        0.5102564413330146
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 1521,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 3
+    },
+    {
+      "projection_id": 2709,
+      "errors": 13,
+      "eval_counts": [
+        0,
+        4,
+        13
+      ],
+      "all_fit_key_counts": [
+        0,
+        14,
+        24
+      ],
+      "pred": 1,
+      "probabilities": [
+        6.512326183589916e-05,
+        0.817938931990992,
+        0.181995944747172
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 6514,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 8
+    },
+    {
+      "projection_id": 3538,
+      "errors": 10,
+      "eval_counts": [
+        0,
+        8,
+        10
+      ],
+      "all_fit_key_counts": [
+        0,
+        16,
+        12
+      ],
+      "pred": 1,
+      "probabilities": [
+        3.245629889355957e-05,
+        0.7562945056404792,
+        0.24367303806062737
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 9200,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 6
+    },
+    {
+      "projection_id": 2729,
+      "errors": 10,
+      "eval_counts": [
+        0,
+        4,
+        10
+      ],
+      "all_fit_key_counts": [
+        0,
+        24,
+        6
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.00016753902989685295,
+        0.8903926716438303,
+        0.10943978932627287
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 9090,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 6
+    },
+    {
+      "projection_id": 87840,
+      "errors": 10,
+      "eval_counts": [
+        0,
+        0,
+        10
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.00013577124586604353,
+        0.7976151001052437,
+        0.20224912864889022
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 8245,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 5
+    },
+    {
+      "projection_id": 3302,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        2.106863405898533e-06,
+        0.015088062383545355,
+        0.9849098307530486
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 37401,
+        "src_port_range": "user",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 3509,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        4.093330822894544e-06,
+        0.023070769451499308,
+        0.9769251372176778
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 55850,
+        "src_port_range": "dynamic",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 3511,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        7.479504350206684e-07,
+        0.019646290482287023,
+        0.9803529615672779
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 35069,
+        "src_port_range": "user",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 3512,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        1.5196064878436215e-06,
+        0.01718530987251538,
+        0.9828131705209968
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 34727,
+        "src_port_range": "user",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 3515,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        0
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        0
+      ],
+      "pred": 2,
+      "probabilities": [
+        1.2490438823476327e-06,
+        0.01983898140195029,
+        0.9801597695541674
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 51963,
+        "src_port_range": "dynamic",
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 1
+    },
+    {
+      "projection_id": 3313,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        168
+      ],
+      "all_fit_key_counts": [
+        0,
+        24,
+        354
+      ],
+      "pred": 2,
+      "probabilities": [
+        8.492783472635995e-06,
+        0.0021358932623744904,
+        0.9978556139541528
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 123,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "dmz",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 85
+    },
+    {
+      "projection_id": 2485,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        8,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        36,
+        4
+      ],
+      "pred": 1,
+      "probabilities": [
+        5.1941511163993765e-05,
+        0.8827293724093426,
+        0.11721868607949336
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 8000,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 6
+    },
+    {
+      "projection_id": 2030,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        100,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        156,
+        6
+      ],
+      "pred": 1,
+      "probabilities": [
+        6.0477328146867535e-06,
+        0.7494511452550793,
+        0.2505428070121061
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 514,
+        "dst_port_range": "system",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 8
+    },
+    {
+      "projection_id": 87467,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        5.596638180165025e-05,
+        0.7629539713635709,
+        0.23699006225462754
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 1701,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 9794,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        4,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.0002807218515989476,
+        0.8930640365113285,
+        0.10665524163707255
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 8222,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 87576,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        1.468597903065245e-06,
+        0.7074132228511419,
+        0.29258530855095494
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 49191,
+        "dst_port_range": "dynamic",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "udp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 87590,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        8.540665973027211e-05,
+        0.9209331899833912,
+        0.07898140335687849
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 843,
+        "dst_port_range": "system",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 1710,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        104,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        152,
+        4
+      ],
+      "pred": 1,
+      "probabilities": [
+        4.8674364254613744e-05,
+        0.8827751602043709,
+        0.11717616543137453
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 8080,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 25
+    },
+    {
+      "projection_id": 87437,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        0,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.00010629448367672032,
+        0.877314641092124,
+        0.1225790644241993
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 1293,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 6832,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        2,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.00014443776153886788,
+        0.8351394644198709,
+        0.16471609781859026
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 6690,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    },
+    {
+      "projection_id": 4563,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        24,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        26,
+        4
+      ],
+      "pred": 1,
+      "probabilities": [
+        5.456791088005384e-05,
+        0.8231093395770473,
+        0.1768360925120725
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 2000,
+        "dst_port_range": "user",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 9
+    },
+    {
+      "projection_id": 6682,
+      "errors": 8,
+      "eval_counts": [
+        0,
+        0,
+        8
+      ],
+      "all_fit_key_counts": [
+        0,
+        16,
+        2
+      ],
+      "pred": 1,
+      "probabilities": [
+        0.000464715292871559,
+        0.8888098881975003,
+        0.11072539650962829
+      ],
+      "facts": {
+        "action": "deny",
+        "dst_port_fixed": 82,
+        "dst_port_range": "system",
+        "dst_role": "dmz",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "src_role": "outside",
+        "transport_protocol": "tcp"
+      },
+      "text": "",
+      "body_keys": 4
+    }
+  ],
+  "original_gate": {
+    "fit_only": true,
+    "fit_conflicting_keys_excluded": 173,
+    "fit_rows_in_conflicted_keys": 14642,
+    "candidate_cells": [],
+    "eligible": false,
+    "reason": "No cross-body mixed-label cell with documented varying fact and identical remaining context"
+  },
+  "relaxed_text_removed_cells_diagnostic_only": [
+    {
+      "context": [
+        "outcome",
+        "windows_message",
+        [
+          "auth_result",
+          "dst_port_fixed",
+          "outcome",
+          "src_port_fixed"
+        ],
+        {
+          "dst_port_fixed": 65536,
+          "src_port_fixed": 65536
+        }
+      ],
+      "class_body_support": [
+        9720,
+        0,
+        15
+      ],
+      "examples": [
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: delegation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: entity detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account entity entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: entity detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account entity entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 59023 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: ::1 \\entity port: 0 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 64645 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 64644 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 64730 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: entity detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity: mgt entity id: entity linked entity id: entity entity entity entity entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 64537 detailed entity process: entity authentication entity: entity transited entity: - entity name (entity only): entity entity\\entity key length: 128 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 128 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: impersonation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 53412 detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: identification new entity: security id: entity account name: entity account entity: mgt entity id: entity linked entity id: entity entity entity entity entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: 64540 detailed entity process: entity authentication entity: entity transited entity: - entity name (entity only): entity entity\\entity key length: 128 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 128 processname -"
+        },
+        {
+          "label": 0,
+          "value": "success",
+          "text": "an account was entity logged on. subject: security id: entity account name: entity account entity\\entity entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: no impersonation level: impersonation new entity: security id: entity account name: entity account entity\\entity entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: c:\\entity\\entity\\entity\\entity entity entity: workstation name: entity \\entity port: - detailed entity process: w authentication entity: negotiate transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0"
+        }
+      ]
+    }
+  ],
+  "new_training_executed": false
+}

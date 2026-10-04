@@ -1,0 +1,124 @@
+﻿{
+    "status":  "verified",
+    "files":  [
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\data\\data\\train.parquet",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\data\\official\\train.parquet",
+                      "bytes":  127118646,
+                      "sha256":  "6B6D5E23CAEBFD1C4F6B70C9E58C27F437BCA7F0CD26497EEFA3E4908F2CB742",
+                      "reason":  "唯一官方数据副本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\data\\data\\valid_answer_private.parquet",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\data\\official\\valid_answer_private.parquet",
+                      "bytes":  2911348,
+                      "sha256":  "11D8C34DA6FDDC823E9DC8E12DE41BD8B66801D914E4A39B2B7E3161DE082A56",
+                      "reason":  "唯一官方数据副本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\data\\data\\valid_input.parquet",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\data\\official\\valid_input.parquet",
+                      "bytes":  69944975,
+                      "sha256":  "731AF597711AAE0B870912C36FC1A0F592FD6E53D911C7FEC6FE1405EC1A97B0",
+                      "reason":  "唯一官方数据副本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\audit_data.py",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\audit_data.py",
+                      "bytes":  4939,
+                      "sha256":  "3120B8A8884295AE5C8D2B4574A48F28317A43C2BA1E0E12E78A45F910E2344F",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\data_summary.json",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\data_summary.json",
+                      "bytes":  121922,
+                      "sha256":  "F68C9678C4813CF20E445EB1875F325341A050E60F59BC30EB871A1A7288604F",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\evaluate_existing_model.py",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\evaluate_existing_model.py",
+                      "bytes":  4083,
+                      "sha256":  "BCFCEA9F61C2FC8EDB3F8B8489CE55525C2919D74212C4A5F3D1D544E8DA4BE6",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\existing_model_full_valid.json",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\existing_model_full_valid.json",
+                      "bytes":  8457,
+                      "sha256":  "3AE42A14A6333306B9A397AF4011D49B68AF27CED80782FB2B2D24CDCD4CA453",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\independent_design_before_prior_review.md",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\independent_design_before_prior_review.md",
+                      "bytes":  4614,
+                      "sha256":  "1AF50F035857E825A52C6D895EF1245D5AE8C3D2E901E273E06E195D32DA2F00",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\official_task2_extracted.txt",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\official_task2_extracted.txt",
+                      "bytes":  3085,
+                      "sha256":  "4212D56C232D05C944E402ECE5351657373A84C8D47D37EB5609D60BBDE990D4",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\shortcut_diagnostics.json",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\shortcut_diagnostics.json",
+                      "bytes":  19485,
+                      "sha256":  "420AC62567E50BA0EDBFF31BB539F7BD19C7676461A474AFCD1A60AF17CE596A",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\shortcut_diagnostics.py",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\shortcut_diagnostics.py",
+                      "bytes":  3688,
+                      "sha256":  "B252BA1B53BB63B88369613E516831572B618F54396E603BC3C45784CBE42E4B",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\train_profile.json",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\train_profile.json",
+                      "bytes":  61258,
+                      "sha256":  "8DD6D0E6E89118914F3B42703C660AE68F6C8ADB72C3C982382EA30C02C85892",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\analysis_2026-09-11\\valid_input_profile.json",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\evidence\\2026-09-11\\valid_input_profile.json",
+                      "bytes":  54215,
+                      "sha256":  "8A5179C8ECD76A04DCA4E18245C3F795846FE0799890F9592F1285B4315FF311",
+                      "reason":  "全量数据审计与可复现脚本"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF-2026-02_第一性原理方案与现有工作复核_2026-09-11.md",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\docs\\历史分析_2026-09-11.md",
+                      "bytes":  39777,
+                      "sha256":  "02D656F6456ABB5D44B844EC975A3FE3C8F8D4A81E2B0A7D41CF1186864DDEE2",
+                      "reason":  "保留已执行实验及旧工作复核"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SOC日志威胁检测_深度调研_可靠性复核版_2026-06-29.md",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\docs\\reference\\历史文献复核_2026-06-29.md",
+                      "bytes":  24702,
+                      "sha256":  "19AA430087BB1046D2BA3455D34555D21977D256454A5619533DA764BB510BDA",
+                      "reason":  "保留经过来源审计的参考材料"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\附件2：第二届浙江省大学生人工智能竞赛赛题细则-算法挑战赛(1).docx",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\docs\\official\\附件2：第二届浙江省大学生人工智能竞赛赛题细则-算法挑战赛(1).docx",
+                      "bytes":  502941,
+                      "sha256":  "091B5B234FC6C06C69EEA79B4A71944845F6550C84606ADCFDE27940ABCADB3F",
+                      "reason":  "赛题规则原件"
+                  },
+                  {
+                      "source":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\关于举办中国移动杯·第二届浙江省大学生人工智能竞赛的预通知(1).pdf",
+                      "destination":  "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\docs\\official\\关于举办中国移动杯·第二届浙江省大学生人工智能竞赛的预通知(1).pdf",
+                      "bytes":  251336,
+                      "sha256":  "CC2CA80E05F979D9C757CEDA242670F6BB0BE3D936C47877D18F565C2DF0F041",
+                      "reason":  "赛事通知原件"
+                  }
+              ]
+}

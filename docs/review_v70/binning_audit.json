@@ -1,0 +1,4494 @@
+{
+  "scope": "Saved-model inference and representation audit only; no training or selection",
+  "new_fits": 0,
+  "sklearn_version": "1.6.1",
+  "limitations": [
+    "Empirical minimum row errors are representation-specific sample bounds, not causal label-noise claims or future error floors.",
+    "A numeric feature losing distinct values is not itself proof of a new full-input M/S collision.",
+    "Bin collisions demonstrate representational loss; correcting it need not improve held-out classification.",
+    "Leaf limits and training loss do not establish that larger trees will generalize.",
+    "All targets and evaluation sources are previously inspected development data.",
+    "Source groups are anonymized symbols and do not prove distinct physical entities."
+  ],
+  "input_sha256": {
+    "artifacts\\v69_support_control_20260921\\preregistered.json": "d51d9b50f271a71bb06ae75796fa7797f141734efd405cad4fa340334979b3f9",
+    "artifacts\\v69_support_control_20260921\\target_actual_model_inputs.parquet": "48e257ee2f483b4ce58ca45ac437a5555734ff748b815415ea45f7715c8fcc15",
+    "artifacts\\v61_source_factorial_20260914_r2\\records.parquet": "28045f25c7665cc0a69748f3a758431c4aec9b1abd5d2d2271107004572e1f7a",
+    "artifacts\\v61_source_factorial_20260914_r2\\context.npz": "0cdf123a265a4c3e4ead59c363c969641eef86b752b025d793693da69cdd2361",
+    "training\\run_v67_targeted.py": "155be49316261470003b236294daff3e718d7fa4c9f8ff2a9e13cf944df715ca",
+    "training\\run_v69_support_control.py": "37205a8ca917f3117df3d47636a65ce9038bde4e078c157cd7d8b9030b117040"
+  },
+  "models": [
+    {
+      "fold": 0,
+      "arm": "A_original_S",
+      "model_sha256": "293d595ba6c26bf9e7bc66368f1ef2388dd32aa85aefe3b68c001c5017530ee3",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 45086,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11343,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14170,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 45086,
+      "fit_S_rows": 390,
+      "exact_design": {
+        "unique_full_views": 8182,
+        "mixed_full_views": 13,
+        "mixed_rows": 1928,
+        "M_rows_in_mixed_views": 1888,
+        "S_rows_in_mixed_views": 40,
+        "S_sources_in_mixed_views": 20,
+        "minimum_empirical_row_errors": 40
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8182,
+        "mixed_full_views": 13,
+        "mixed_rows": 1928,
+        "M_rows_in_mixed_views": 1888,
+        "S_rows_in_mixed_views": 40,
+        "S_sources_in_mixed_views": 20,
+        "minimum_empirical_row_errors": 40
+      },
+      "post_binning": {
+        "unique_full_views": 7369,
+        "mixed_full_views": 30,
+        "mixed_rows": 2200,
+        "M_rows_in_mixed_views": 2126,
+        "S_rows_in_mixed_views": 74,
+        "S_sources_in_mixed_views": 37,
+        "minimum_empirical_row_errors": 74
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 17,
+      "binning_added_minimum_empirical_errors": 34,
+      "previously_pure_exact_S_rows_now_mixed": 34,
+      "previously_pure_exact_S_sources_now_mixed": 17,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5165,
+          "distinct_nonmissing_bins": 252,
+          "bins_merging_distinct_values": 252,
+          "maximum_distinct_values_per_bin": 34,
+          "training_rows_in_merged_nonmissing_bins": 32164,
+          "missing_fit_rows": 12922
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 2949,
+          "distinct_nonmissing_bins": 199,
+          "bins_merging_distinct_values": 185,
+          "maximum_distinct_values_per_bin": 39,
+          "training_rows_in_merged_nonmissing_bins": 29312,
+          "missing_fit_rows": 9522
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 28,
+          "distinct_nonmissing_bins": 28,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 28,
+          "distinct_nonmissing_bins": 28,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 26,
+          "distinct_nonmissing_bins": 26,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 52,
+          "distinct_nonmissing_bins": 52,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 50,
+          "distinct_nonmissing_bins": 50,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 19,
+          "distinct_nonmissing_bins": 19,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 19,
+          "distinct_nonmissing_bins": 19,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 63,
+          "distinct_nonmissing_bins": 63,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 62,
+          "distinct_nonmissing_bins": 62,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 156,
+        "same_exact_fit_M_rows": 8,
+        "same_binned_fit_M_rows": 32,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          170738,
+          170742,
+          356534,
+          356544,
+          405366,
+          405376,
+          514117,
+          514127,
+          616292,
+          616296,
+          759301,
+          759311,
+          807518,
+          807528,
+          1139119,
+          1139122,
+          1359094,
+          1359107,
+          1537534,
+          1537544,
+          1658250,
+          1658260,
+          1680508,
+          1680528
+        ],
+        "same_exact_fit_S_rows": 0,
+        "same_binned_fit_S_rows": 0
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 101,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 56,
+          "dst_port_range": 86,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 2257,
+          "dst_port_fixed": 2329,
+          "log_other_fact_states": 348,
+          "log_other_destinations": 200,
+          "log_other_dst_port_symbols": 205,
+          "log_other_src_port_symbols": 256,
+          "same_destination_fraction": 208,
+          "same_dst_port_fraction": 281,
+          "tcp_fraction": 129,
+          "udp_fraction": 55,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 289,
+          "dst_port_missing_fraction": 176,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 7,
+          "inside_destination_fraction": 13,
+          "protocol_diversity": 4,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6411,
+          "mixed_full_views": 30,
+          "mixed_rows": 2348,
+          "M_rows_in_mixed_views": 2272,
+          "S_rows_in_mixed_views": 76,
+          "S_sources_in_mixed_views": 38,
+          "minimum_empirical_row_errors": 76
+        },
+        "default_threshold_fit_errors": 184,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 184
+      }
+    },
+    {
+      "fold": 0,
+      "arm": "B_small_sources",
+      "model_sha256": "6a29f380e11efd16206e6656aaafc42f43a37b861f30502cea0dde81cddf30ee",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 45430,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11343,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14170,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 45430,
+      "fit_S_rows": 734,
+      "exact_design": {
+        "unique_full_views": 8325,
+        "mixed_full_views": 22,
+        "mixed_rows": 2174,
+        "M_rows_in_mixed_views": 2102,
+        "S_rows_in_mixed_views": 72,
+        "S_sources_in_mixed_views": 36,
+        "minimum_empirical_row_errors": 72
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8325,
+        "mixed_full_views": 22,
+        "mixed_rows": 2174,
+        "M_rows_in_mixed_views": 2102,
+        "S_rows_in_mixed_views": 72,
+        "S_sources_in_mixed_views": 36,
+        "minimum_empirical_row_errors": 72
+      },
+      "post_binning": {
+        "unique_full_views": 7482,
+        "mixed_full_views": 55,
+        "mixed_rows": 2778,
+        "M_rows_in_mixed_views": 2638,
+        "S_rows_in_mixed_views": 140,
+        "S_sources_in_mixed_views": 70,
+        "minimum_empirical_row_errors": 140
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 33,
+      "binning_added_minimum_empirical_errors": 68,
+      "previously_pure_exact_S_rows_now_mixed": 68,
+      "previously_pure_exact_S_sources_now_mixed": 34,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5258,
+          "distinct_nonmissing_bins": 252,
+          "bins_merging_distinct_values": 252,
+          "maximum_distinct_values_per_bin": 34,
+          "training_rows_in_merged_nonmissing_bins": 32403,
+          "missing_fit_rows": 13027
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 2982,
+          "distinct_nonmissing_bins": 199,
+          "bins_merging_distinct_values": 187,
+          "maximum_distinct_values_per_bin": 38,
+          "training_rows_in_merged_nonmissing_bins": 28868,
+          "missing_fit_rows": 9586
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 29,
+          "distinct_nonmissing_bins": 29,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 28,
+          "distinct_nonmissing_bins": 28,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 27,
+          "distinct_nonmissing_bins": 27,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 52,
+          "distinct_nonmissing_bins": 52,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 50,
+          "distinct_nonmissing_bins": 50,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 19,
+          "distinct_nonmissing_bins": 19,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 19,
+          "distinct_nonmissing_bins": 19,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 64,
+          "distinct_nonmissing_bins": 64,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 62,
+          "distinct_nonmissing_bins": 62,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 156,
+        "same_exact_fit_M_rows": 8,
+        "same_binned_fit_M_rows": 32,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          170738,
+          170742,
+          356534,
+          356544,
+          405366,
+          405376,
+          514117,
+          514127,
+          616292,
+          616296,
+          759301,
+          759311,
+          807518,
+          807528,
+          1139119,
+          1139122,
+          1359094,
+          1359107,
+          1537534,
+          1537544,
+          1658250,
+          1658260,
+          1680508,
+          1680528
+        ],
+        "same_exact_fit_S_rows": 4,
+        "same_binned_fit_S_rows": 10
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 120,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 31,
+          "dst_port_range": 70,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 1951,
+          "dst_port_fixed": 2198,
+          "log_other_fact_states": 457,
+          "log_other_destinations": 279,
+          "log_other_dst_port_symbols": 250,
+          "log_other_src_port_symbols": 323,
+          "same_destination_fraction": 166,
+          "same_dst_port_fraction": 419,
+          "tcp_fraction": 146,
+          "udp_fraction": 49,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 297,
+          "dst_port_missing_fraction": 186,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 6,
+          "inside_destination_fraction": 43,
+          "protocol_diversity": 9,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6605,
+          "mixed_full_views": 56,
+          "mixed_rows": 3192,
+          "M_rows_in_mixed_views": 3032,
+          "S_rows_in_mixed_views": 160,
+          "S_sources_in_mixed_views": 80,
+          "minimum_empirical_row_errors": 160
+        },
+        "default_threshold_fit_errors": 401,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 401
+      }
+    },
+    {
+      "fold": 0,
+      "arm": "C_all_sources",
+      "model_sha256": "0e9d7a54ca96d081b1d87bf6af7c96b1374c3c3b11bf983078322ebf62f30a5f",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 49080,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11343,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14170,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 49080,
+      "fit_S_rows": 4384,
+      "exact_design": {
+        "unique_full_views": 9229,
+        "mixed_full_views": 22,
+        "mixed_rows": 2174,
+        "M_rows_in_mixed_views": 2102,
+        "S_rows_in_mixed_views": 72,
+        "S_sources_in_mixed_views": 36,
+        "minimum_empirical_row_errors": 72
+      },
+      "post_preprocessor": {
+        "unique_full_views": 9229,
+        "mixed_full_views": 22,
+        "mixed_rows": 2174,
+        "M_rows_in_mixed_views": 2102,
+        "S_rows_in_mixed_views": 72,
+        "S_sources_in_mixed_views": 36,
+        "minimum_empirical_row_errors": 72
+      },
+      "post_binning": {
+        "unique_full_views": 8056,
+        "mixed_full_views": 54,
+        "mixed_rows": 2730,
+        "M_rows_in_mixed_views": 2588,
+        "S_rows_in_mixed_views": 142,
+        "S_sources_in_mixed_views": 71,
+        "minimum_empirical_row_errors": 142
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 32,
+      "binning_added_minimum_empirical_errors": 70,
+      "previously_pure_exact_S_rows_now_mixed": 70,
+      "previously_pure_exact_S_sources_now_mixed": 35,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5258,
+          "distinct_nonmissing_bins": 252,
+          "bins_merging_distinct_values": 252,
+          "maximum_distinct_values_per_bin": 34,
+          "training_rows_in_merged_nonmissing_bins": 32403,
+          "missing_fit_rows": 16677
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3066,
+          "distinct_nonmissing_bins": 203,
+          "bins_merging_distinct_values": 192,
+          "maximum_distinct_values_per_bin": 41,
+          "training_rows_in_merged_nonmissing_bins": 31424,
+          "missing_fit_rows": 10256
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 30,
+          "distinct_nonmissing_bins": 30,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 29,
+          "distinct_nonmissing_bins": 29,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 27,
+          "distinct_nonmissing_bins": 27,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 56,
+          "distinct_nonmissing_bins": 56,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 54,
+          "distinct_nonmissing_bins": 54,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 21,
+          "distinct_nonmissing_bins": 21,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 21,
+          "distinct_nonmissing_bins": 21,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 64,
+          "distinct_nonmissing_bins": 64,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 64,
+          "distinct_nonmissing_bins": 64,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 15,
+          "distinct_nonmissing_bins": 15,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 156,
+        "same_exact_fit_M_rows": 8,
+        "same_binned_fit_M_rows": 32,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          170738,
+          170742,
+          356534,
+          356544,
+          405366,
+          405376,
+          514117,
+          514127,
+          616292,
+          616296,
+          759301,
+          759311,
+          807518,
+          807528,
+          1139119,
+          1139122,
+          1359094,
+          1359107,
+          1537534,
+          1537544,
+          1658250,
+          1658260,
+          1680508,
+          1680528
+        ],
+        "same_exact_fit_S_rows": 4,
+        "same_binned_fit_S_rows": 12
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 96,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 39,
+          "dst_port_range": 73,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 1814,
+          "dst_port_fixed": 2174,
+          "log_other_fact_states": 601,
+          "log_other_destinations": 236,
+          "log_other_dst_port_symbols": 242,
+          "log_other_src_port_symbols": 347,
+          "same_destination_fraction": 181,
+          "same_dst_port_fraction": 403,
+          "tcp_fraction": 177,
+          "udp_fraction": 49,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 323,
+          "dst_port_missing_fraction": 178,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 4,
+          "inside_destination_fraction": 49,
+          "protocol_diversity": 14,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6602,
+          "mixed_full_views": 61,
+          "mixed_rows": 3326,
+          "M_rows_in_mixed_views": 3150,
+          "S_rows_in_mixed_views": 176,
+          "S_sources_in_mixed_views": 88,
+          "minimum_empirical_row_errors": 176
+        },
+        "default_threshold_fit_errors": 405,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 405
+      }
+    },
+    {
+      "fold": 1,
+      "arm": "A_original_S",
+      "model_sha256": "d9c9f19adbcddac52845bbaa3b44b6030997b2f347984ebb3039fe1ba35f8eed",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 44910,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 10817,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14872,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 44910,
+      "fit_S_rows": 282,
+      "exact_design": {
+        "unique_full_views": 7888,
+        "mixed_full_views": 9,
+        "mixed_rows": 950,
+        "M_rows_in_mixed_views": 922,
+        "S_rows_in_mixed_views": 28,
+        "S_sources_in_mixed_views": 14,
+        "minimum_empirical_row_errors": 28
+      },
+      "post_preprocessor": {
+        "unique_full_views": 7888,
+        "mixed_full_views": 9,
+        "mixed_rows": 950,
+        "M_rows_in_mixed_views": 922,
+        "S_rows_in_mixed_views": 28,
+        "S_sources_in_mixed_views": 14,
+        "minimum_empirical_row_errors": 28
+      },
+      "post_binning": {
+        "unique_full_views": 7069,
+        "mixed_full_views": 30,
+        "mixed_rows": 1288,
+        "M_rows_in_mixed_views": 1218,
+        "S_rows_in_mixed_views": 70,
+        "S_sources_in_mixed_views": 35,
+        "minimum_empirical_row_errors": 70
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 21,
+      "binning_added_minimum_empirical_errors": 42,
+      "previously_pure_exact_S_rows_now_mixed": 42,
+      "previously_pure_exact_S_sources_now_mixed": 21,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5017,
+          "distinct_nonmissing_bins": 251,
+          "bins_merging_distinct_values": 249,
+          "maximum_distinct_values_per_bin": 30,
+          "training_rows_in_merged_nonmissing_bins": 31708,
+          "missing_fit_rows": 13018
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 2814,
+          "distinct_nonmissing_bins": 201,
+          "bins_merging_distinct_values": 189,
+          "maximum_distinct_values_per_bin": 32,
+          "training_rows_in_merged_nonmissing_bins": 29348,
+          "missing_fit_rows": 9350
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 29,
+          "distinct_nonmissing_bins": 29,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 26,
+          "distinct_nonmissing_bins": 26,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 23,
+          "distinct_nonmissing_bins": 23,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 38,
+          "distinct_nonmissing_bins": 38,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 48,
+          "distinct_nonmissing_bins": 48,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 18,
+          "distinct_nonmissing_bins": 18,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 18,
+          "distinct_nonmissing_bins": 18,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 58,
+          "distinct_nonmissing_bins": 58,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 57,
+          "distinct_nonmissing_bins": 57,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 218,
+        "same_exact_fit_M_rows": 10,
+        "same_binned_fit_M_rows": 38,
+        "new_same_fit_M_rows_due_to_binning": 28,
+        "new_same_fit_M_sources_due_to_binning": 14,
+        "new_same_fit_M_row_positions": [
+          329942,
+          329952,
+          340210,
+          340220,
+          532566,
+          532567,
+          566459,
+          566464,
+          726153,
+          726173,
+          1103308,
+          1103309,
+          1109933,
+          1109943,
+          1152058,
+          1152063,
+          1177421,
+          1177424,
+          1398206,
+          1398216,
+          1638288,
+          1638298,
+          1695486,
+          1695495,
+          1928785,
+          1928788,
+          1929347,
+          1929349
+        ],
+        "same_exact_fit_S_rows": 0,
+        "same_binned_fit_S_rows": 2
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 143,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 55,
+          "dst_port_range": 60,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 2492,
+          "dst_port_fixed": 2531,
+          "log_other_fact_states": 386,
+          "log_other_destinations": 167,
+          "log_other_dst_port_symbols": 156,
+          "log_other_src_port_symbols": 127,
+          "same_destination_fraction": 131,
+          "same_dst_port_fraction": 232,
+          "tcp_fraction": 57,
+          "udp_fraction": 46,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 235,
+          "dst_port_missing_fraction": 123,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 6,
+          "inside_destination_fraction": 53,
+          "protocol_diversity": 0,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 5918,
+          "mixed_full_views": 29,
+          "mixed_rows": 1294,
+          "M_rows_in_mixed_views": 1222,
+          "S_rows_in_mixed_views": 72,
+          "S_sources_in_mixed_views": 36,
+          "minimum_empirical_row_errors": 72
+        },
+        "default_threshold_fit_errors": 138,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 138
+      }
+    },
+    {
+      "fold": 1,
+      "arm": "B_small_sources",
+      "model_sha256": "85d085966f7e808db93d217b03d2ff6a135aa668f662a9027c1be6d9fa921658",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 45254,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 10817,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14872,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 45254,
+      "fit_S_rows": 626,
+      "exact_design": {
+        "unique_full_views": 8030,
+        "mixed_full_views": 19,
+        "mixed_rows": 2368,
+        "M_rows_in_mixed_views": 2308,
+        "S_rows_in_mixed_views": 60,
+        "S_sources_in_mixed_views": 30,
+        "minimum_empirical_row_errors": 60
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8030,
+        "mixed_full_views": 19,
+        "mixed_rows": 2368,
+        "M_rows_in_mixed_views": 2308,
+        "S_rows_in_mixed_views": 60,
+        "S_sources_in_mixed_views": 30,
+        "minimum_empirical_row_errors": 60
+      },
+      "post_binning": {
+        "unique_full_views": 7198,
+        "mixed_full_views": 51,
+        "mixed_rows": 2938,
+        "M_rows_in_mixed_views": 2804,
+        "S_rows_in_mixed_views": 134,
+        "S_sources_in_mixed_views": 67,
+        "minimum_empirical_row_errors": 134
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 32,
+      "binning_added_minimum_empirical_errors": 74,
+      "previously_pure_exact_S_rows_now_mixed": 74,
+      "previously_pure_exact_S_sources_now_mixed": 37,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5112,
+          "distinct_nonmissing_bins": 251,
+          "bins_merging_distinct_values": 249,
+          "maximum_distinct_values_per_bin": 30,
+          "training_rows_in_merged_nonmissing_bins": 31947,
+          "missing_fit_rows": 13123
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 2849,
+          "distinct_nonmissing_bins": 197,
+          "bins_merging_distinct_values": 190,
+          "maximum_distinct_values_per_bin": 33,
+          "training_rows_in_merged_nonmissing_bins": 30400,
+          "missing_fit_rows": 9414
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 30,
+          "distinct_nonmissing_bins": 30,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 26,
+          "distinct_nonmissing_bins": 26,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 24,
+          "distinct_nonmissing_bins": 24,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 38,
+          "distinct_nonmissing_bins": 38,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 49,
+          "distinct_nonmissing_bins": 49,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 18,
+          "distinct_nonmissing_bins": 18,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 18,
+          "distinct_nonmissing_bins": 18,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 59,
+          "distinct_nonmissing_bins": 59,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 57,
+          "distinct_nonmissing_bins": 57,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 218,
+        "same_exact_fit_M_rows": 10,
+        "same_binned_fit_M_rows": 36,
+        "new_same_fit_M_rows_due_to_binning": 26,
+        "new_same_fit_M_sources_due_to_binning": 13,
+        "new_same_fit_M_row_positions": [
+          329942,
+          329952,
+          340210,
+          340220,
+          532566,
+          532567,
+          566459,
+          566464,
+          726153,
+          726173,
+          1043180,
+          1043190,
+          1109933,
+          1109943,
+          1152058,
+          1152063,
+          1177421,
+          1177424,
+          1398206,
+          1398216,
+          1638288,
+          1638298,
+          1695486,
+          1695495,
+          1929347,
+          1929349
+        ],
+        "same_exact_fit_S_rows": 0,
+        "same_binned_fit_S_rows": 2
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 127,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 13,
+          "dst_port_range": 55,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 1981,
+          "dst_port_fixed": 2213,
+          "log_other_fact_states": 476,
+          "log_other_destinations": 293,
+          "log_other_dst_port_symbols": 220,
+          "log_other_src_port_symbols": 191,
+          "same_destination_fraction": 135,
+          "same_dst_port_fraction": 346,
+          "tcp_fraction": 91,
+          "udp_fraction": 53,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 390,
+          "dst_port_missing_fraction": 294,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 2,
+          "inside_destination_fraction": 73,
+          "protocol_diversity": 47,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6291,
+          "mixed_full_views": 50,
+          "mixed_rows": 3404,
+          "M_rows_in_mixed_views": 3254,
+          "S_rows_in_mixed_views": 150,
+          "S_sources_in_mixed_views": 75,
+          "minimum_empirical_row_errors": 150
+        },
+        "default_threshold_fit_errors": 351,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 351
+      }
+    },
+    {
+      "fold": 1,
+      "arm": "C_all_sources",
+      "model_sha256": "9e48147ac8abff9dc29169673f3e1f4d8f6ee65a032871bc40885e71b36956f5",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 48904,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 10817,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 14872,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 48904,
+      "fit_S_rows": 4276,
+      "exact_design": {
+        "unique_full_views": 8934,
+        "mixed_full_views": 19,
+        "mixed_rows": 2368,
+        "M_rows_in_mixed_views": 2308,
+        "S_rows_in_mixed_views": 60,
+        "S_sources_in_mixed_views": 30,
+        "minimum_empirical_row_errors": 60
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8934,
+        "mixed_full_views": 19,
+        "mixed_rows": 2368,
+        "M_rows_in_mixed_views": 2308,
+        "S_rows_in_mixed_views": 60,
+        "S_sources_in_mixed_views": 30,
+        "minimum_empirical_row_errors": 60
+      },
+      "post_binning": {
+        "unique_full_views": 7764,
+        "mixed_full_views": 52,
+        "mixed_rows": 2832,
+        "M_rows_in_mixed_views": 2698,
+        "S_rows_in_mixed_views": 134,
+        "S_sources_in_mixed_views": 67,
+        "minimum_empirical_row_errors": 134
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 33,
+      "binning_added_minimum_empirical_errors": 74,
+      "previously_pure_exact_S_rows_now_mixed": 74,
+      "previously_pure_exact_S_sources_now_mixed": 37,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5112,
+          "distinct_nonmissing_bins": 251,
+          "bins_merging_distinct_values": 249,
+          "maximum_distinct_values_per_bin": 30,
+          "training_rows_in_merged_nonmissing_bins": 31947,
+          "missing_fit_rows": 16773
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 2929,
+          "distinct_nonmissing_bins": 202,
+          "bins_merging_distinct_values": 192,
+          "maximum_distinct_values_per_bin": 34,
+          "training_rows_in_merged_nonmissing_bins": 33194,
+          "missing_fit_rows": 10084
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 31,
+          "distinct_nonmissing_bins": 31,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 27,
+          "distinct_nonmissing_bins": 27,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 24,
+          "distinct_nonmissing_bins": 24,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 42,
+          "distinct_nonmissing_bins": 42,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 53,
+          "distinct_nonmissing_bins": 53,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 59,
+          "distinct_nonmissing_bins": 59,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 59,
+          "distinct_nonmissing_bins": 59,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 218,
+        "same_exact_fit_M_rows": 10,
+        "same_binned_fit_M_rows": 34,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          329942,
+          329952,
+          340210,
+          340220,
+          532566,
+          532567,
+          566459,
+          566464,
+          726153,
+          726173,
+          1043180,
+          1043190,
+          1109933,
+          1109943,
+          1177421,
+          1177424,
+          1398206,
+          1398216,
+          1638288,
+          1638298,
+          1695486,
+          1695495,
+          1929347,
+          1929349
+        ],
+        "same_exact_fit_S_rows": 0,
+        "same_binned_fit_S_rows": 2
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 115,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 15,
+          "dst_port_range": 43,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 1932,
+          "dst_port_fixed": 2153,
+          "log_other_fact_states": 682,
+          "log_other_destinations": 284,
+          "log_other_dst_port_symbols": 232,
+          "log_other_src_port_symbols": 170,
+          "same_destination_fraction": 177,
+          "same_dst_port_fraction": 357,
+          "tcp_fraction": 90,
+          "udp_fraction": 52,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 356,
+          "dst_port_missing_fraction": 254,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 5,
+          "inside_destination_fraction": 68,
+          "protocol_diversity": 15,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6429,
+          "mixed_full_views": 48,
+          "mixed_rows": 3556,
+          "M_rows_in_mixed_views": 3408,
+          "S_rows_in_mixed_views": 148,
+          "S_sources_in_mixed_views": 74,
+          "minimum_empirical_row_errors": 148
+        },
+        "default_threshold_fit_errors": 349,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 349
+      }
+    },
+    {
+      "fold": 2,
+      "arm": "A_original_S",
+      "model_sha256": "57979238c00aed2d199d755bb1148b241bd2933883b8908b5bf3d4095c379483",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 45924,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11175,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 13500,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 45924,
+      "fit_S_rows": 368,
+      "exact_design": {
+        "unique_full_views": 8259,
+        "mixed_full_views": 13,
+        "mixed_rows": 1992,
+        "M_rows_in_mixed_views": 1956,
+        "S_rows_in_mixed_views": 36,
+        "S_sources_in_mixed_views": 18,
+        "minimum_empirical_row_errors": 36
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8259,
+        "mixed_full_views": 13,
+        "mixed_rows": 1992,
+        "M_rows_in_mixed_views": 1956,
+        "S_rows_in_mixed_views": 36,
+        "S_sources_in_mixed_views": 18,
+        "minimum_empirical_row_errors": 36
+      },
+      "post_binning": {
+        "unique_full_views": 7459,
+        "mixed_full_views": 31,
+        "mixed_rows": 2248,
+        "M_rows_in_mixed_views": 2176,
+        "S_rows_in_mixed_views": 72,
+        "S_sources_in_mixed_views": 36,
+        "minimum_empirical_row_errors": 72
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 18,
+      "binning_added_minimum_empirical_errors": 36,
+      "previously_pure_exact_S_rows_now_mixed": 36,
+      "previously_pure_exact_S_sources_now_mixed": 18,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5190,
+          "distinct_nonmissing_bins": 250,
+          "bins_merging_distinct_values": 248,
+          "maximum_distinct_values_per_bin": 31,
+          "training_rows_in_merged_nonmissing_bins": 32588,
+          "missing_fit_rows": 13168
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3004,
+          "distinct_nonmissing_bins": 201,
+          "bins_merging_distinct_values": 183,
+          "maximum_distinct_values_per_bin": 36,
+          "training_rows_in_merged_nonmissing_bins": 28780,
+          "missing_fit_rows": 9776
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 30,
+          "distinct_nonmissing_bins": 30,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 30,
+          "distinct_nonmissing_bins": 30,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 23,
+          "distinct_nonmissing_bins": 23,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 52,
+          "distinct_nonmissing_bins": 52,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 50,
+          "distinct_nonmissing_bins": 50,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 63,
+          "distinct_nonmissing_bins": 63,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 65,
+          "distinct_nonmissing_bins": 65,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 204,
+        "same_exact_fit_M_rows": 6,
+        "same_binned_fit_M_rows": 30,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          234930,
+          234940,
+          257623,
+          257633,
+          329448,
+          329451,
+          331732,
+          331752,
+          568436,
+          568437,
+          644021,
+          644023,
+          785318,
+          785326,
+          937168,
+          937172,
+          1414187,
+          1414197,
+          1458050,
+          1458060,
+          1542850,
+          1542860,
+          1907101,
+          1907111
+        ],
+        "same_exact_fit_S_rows": 0,
+        "same_binned_fit_S_rows": 0
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 120,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 87,
+          "dst_port_range": 105,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 2167,
+          "dst_port_fixed": 2380,
+          "log_other_fact_states": 414,
+          "log_other_destinations": 176,
+          "log_other_dst_port_symbols": 259,
+          "log_other_src_port_symbols": 183,
+          "same_destination_fraction": 213,
+          "same_dst_port_fraction": 235,
+          "tcp_fraction": 141,
+          "udp_fraction": 79,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 270,
+          "dst_port_missing_fraction": 126,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 20,
+          "inside_destination_fraction": 23,
+          "protocol_diversity": 2,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6424,
+          "mixed_full_views": 32,
+          "mixed_rows": 2312,
+          "M_rows_in_mixed_views": 2236,
+          "S_rows_in_mixed_views": 76,
+          "S_sources_in_mixed_views": 38,
+          "minimum_empirical_row_errors": 76
+        },
+        "default_threshold_fit_errors": 166,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 166
+      }
+    },
+    {
+      "fold": 2,
+      "arm": "B_small_sources",
+      "model_sha256": "a23cd687f5ff96d3f2b4287abb3d795e6e258cbe8dc511ecf2506f5e1ed5ef06",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 46268,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11175,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 13500,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 46268,
+      "fit_S_rows": 712,
+      "exact_design": {
+        "unique_full_views": 8400,
+        "mixed_full_views": 23,
+        "mixed_rows": 2310,
+        "M_rows_in_mixed_views": 2240,
+        "S_rows_in_mixed_views": 70,
+        "S_sources_in_mixed_views": 35,
+        "minimum_empirical_row_errors": 70
+      },
+      "post_preprocessor": {
+        "unique_full_views": 8400,
+        "mixed_full_views": 23,
+        "mixed_rows": 2310,
+        "M_rows_in_mixed_views": 2240,
+        "S_rows_in_mixed_views": 70,
+        "S_sources_in_mixed_views": 35,
+        "minimum_empirical_row_errors": 70
+      },
+      "post_binning": {
+        "unique_full_views": 7576,
+        "mixed_full_views": 51,
+        "mixed_rows": 2856,
+        "M_rows_in_mixed_views": 2726,
+        "S_rows_in_mixed_views": 130,
+        "S_sources_in_mixed_views": 65,
+        "minimum_empirical_row_errors": 130
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 28,
+      "binning_added_minimum_empirical_errors": 60,
+      "previously_pure_exact_S_rows_now_mixed": 60,
+      "previously_pure_exact_S_sources_now_mixed": 30,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5286,
+          "distinct_nonmissing_bins": 250,
+          "bins_merging_distinct_values": 248,
+          "maximum_distinct_values_per_bin": 33,
+          "training_rows_in_merged_nonmissing_bins": 32827,
+          "missing_fit_rows": 13273
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3041,
+          "distinct_nonmissing_bins": 197,
+          "bins_merging_distinct_values": 184,
+          "maximum_distinct_values_per_bin": 36,
+          "training_rows_in_merged_nonmissing_bins": 29992,
+          "missing_fit_rows": 9840
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 31,
+          "distinct_nonmissing_bins": 31,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 30,
+          "distinct_nonmissing_bins": 30,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 24,
+          "distinct_nonmissing_bins": 24,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 52,
+          "distinct_nonmissing_bins": 52,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 50,
+          "distinct_nonmissing_bins": 50,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 20,
+          "distinct_nonmissing_bins": 20,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 64,
+          "distinct_nonmissing_bins": 64,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 65,
+          "distinct_nonmissing_bins": 65,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 204,
+        "same_exact_fit_M_rows": 6,
+        "same_binned_fit_M_rows": 28,
+        "new_same_fit_M_rows_due_to_binning": 22,
+        "new_same_fit_M_sources_due_to_binning": 11,
+        "new_same_fit_M_row_positions": [
+          234930,
+          234940,
+          257623,
+          257633,
+          329448,
+          329451,
+          331732,
+          331752,
+          568436,
+          568437,
+          785318,
+          785326,
+          937168,
+          937172,
+          1414187,
+          1414197,
+          1458050,
+          1458060,
+          1542850,
+          1542860,
+          1907101,
+          1907111
+        ],
+        "same_exact_fit_S_rows": 2,
+        "same_binned_fit_S_rows": 4
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 93,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 25,
+          "dst_port_range": 115,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 2111,
+          "dst_port_fixed": 2267,
+          "log_other_fact_states": 481,
+          "log_other_destinations": 197,
+          "log_other_dst_port_symbols": 232,
+          "log_other_src_port_symbols": 214,
+          "same_destination_fraction": 138,
+          "same_dst_port_fraction": 341,
+          "tcp_fraction": 180,
+          "udp_fraction": 51,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 292,
+          "dst_port_missing_fraction": 184,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 24,
+          "inside_destination_fraction": 40,
+          "protocol_diversity": 15,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6544,
+          "mixed_full_views": 57,
+          "mixed_rows": 3554,
+          "M_rows_in_mixed_views": 3398,
+          "S_rows_in_mixed_views": 156,
+          "S_sources_in_mixed_views": 78,
+          "minimum_empirical_row_errors": 156
+        },
+        "default_threshold_fit_errors": 371,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 371
+      }
+    },
+    {
+      "fold": 2,
+      "arm": "C_all_sources",
+      "model_sha256": "98749b6417f6d37c0f473f5951f305ff9014f7dc375d4be7615c5682905c5fdd",
+      "preprocessing": "model._preprocess_X(reset=False), then saved model._bin_mapper.transform",
+      "predict_path_replay": {
+        "fit": {
+          "rows": 49918,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "calibration": {
+          "rows": 11175,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        },
+        "evaluation": {
+          "rows": 13500,
+          "ordinary_vs_saved_max_abs": 0.0,
+          "binned_vs_ordinary_max_abs": 0.0
+        }
+      },
+      "fit_rows": 49918,
+      "fit_S_rows": 4362,
+      "exact_design": {
+        "unique_full_views": 9304,
+        "mixed_full_views": 23,
+        "mixed_rows": 2310,
+        "M_rows_in_mixed_views": 2240,
+        "S_rows_in_mixed_views": 70,
+        "S_sources_in_mixed_views": 35,
+        "minimum_empirical_row_errors": 70
+      },
+      "post_preprocessor": {
+        "unique_full_views": 9304,
+        "mixed_full_views": 23,
+        "mixed_rows": 2310,
+        "M_rows_in_mixed_views": 2240,
+        "S_rows_in_mixed_views": 70,
+        "S_sources_in_mixed_views": 35,
+        "minimum_empirical_row_errors": 70
+      },
+      "post_binning": {
+        "unique_full_views": 8168,
+        "mixed_full_views": 51,
+        "mixed_rows": 2862,
+        "M_rows_in_mixed_views": 2732,
+        "S_rows_in_mixed_views": 130,
+        "S_sources_in_mixed_views": 65,
+        "minimum_empirical_row_errors": 130
+      },
+      "binning_new_mixed_groups_without_preexisting_mixed_subgroup": 28,
+      "binning_added_minimum_empirical_errors": 60,
+      "previously_pure_exact_S_rows_now_mixed": 60,
+      "previously_pure_exact_S_sources_now_mixed": 30,
+      "feature_binning": [
+        {
+          "name": "action",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outcome",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "transport_protocol",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 2,
+          "distinct_nonmissing_bins": 2,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_role",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_range",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 4,
+          "distinct_nonmissing_bins": 4,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_type",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_code",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_message",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_unreachable",
+          "is_categorical": true,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 5286,
+          "distinct_nonmissing_bins": 250,
+          "bins_merging_distinct_values": 248,
+          "maximum_distinct_values_per_bin": 33,
+          "training_rows_in_merged_nonmissing_bins": 32827,
+          "missing_fit_rows": 16923
+        },
+        {
+          "name": "dst_port_fixed",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3120,
+          "distinct_nonmissing_bins": 204,
+          "bins_merging_distinct_values": 191,
+          "maximum_distinct_values_per_bin": 39,
+          "training_rows_in_merged_nonmissing_bins": 32536,
+          "missing_fit_rows": 10510
+        },
+        {
+          "name": "log_other_fact_states",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 32,
+          "distinct_nonmissing_bins": 32,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_destinations",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 25,
+          "distinct_nonmissing_bins": 25,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_dst_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 31,
+          "distinct_nonmissing_bins": 31,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "log_other_src_port_symbols",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 24,
+          "distinct_nonmissing_bins": 24,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 56,
+          "distinct_nonmissing_bins": 56,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "same_dst_port_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 54,
+          "distinct_nonmissing_bins": 54,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "tcp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 22,
+          "distinct_nonmissing_bins": 22,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "udp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 22,
+          "distinct_nonmissing_bins": 22,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "icmp_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "src_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 64,
+          "distinct_nonmissing_bins": 64,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dst_port_missing_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 67,
+          "distinct_nonmissing_bins": 67,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "outside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 1,
+          "distinct_nonmissing_bins": 1,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "dmz_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "inside_destination_fraction",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 17,
+          "distinct_nonmissing_bins": 17,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "protocol_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        },
+        {
+          "name": "destination_role_diversity",
+          "is_categorical": false,
+          "distinct_nonmissing_values": 3,
+          "distinct_nonmissing_bins": 3,
+          "bins_merging_distinct_values": 0,
+          "maximum_distinct_values_per_bin": 1,
+          "training_rows_in_merged_nonmissing_bins": 0,
+          "missing_fit_rows": 0
+        }
+      ],
+      "category_OOV": {
+        "action": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "outcome": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "transport_protocol": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_role": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "src_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "dst_port_range": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_type": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_code": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_message": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        },
+        "icmp_unreachable": {
+          "fit_rows": 0,
+          "evaluation_rows": 0,
+          "target_rows": 0
+        }
+      },
+      "target": {
+        "rows": 204,
+        "same_exact_fit_M_rows": 6,
+        "same_binned_fit_M_rows": 30,
+        "new_same_fit_M_rows_due_to_binning": 24,
+        "new_same_fit_M_sources_due_to_binning": 12,
+        "new_same_fit_M_row_positions": [
+          234930,
+          234940,
+          257623,
+          257633,
+          329448,
+          329451,
+          331732,
+          331752,
+          568436,
+          568437,
+          644021,
+          644023,
+          785318,
+          785326,
+          937168,
+          937172,
+          1414187,
+          1414197,
+          1458050,
+          1458060,
+          1542850,
+          1542860,
+          1907101,
+          1907111
+        ],
+        "same_exact_fit_S_rows": 2,
+        "same_binned_fit_S_rows": 2
+      },
+      "capacity": {
+        "iterations": 500,
+        "max_bins": 255,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 10,
+        "leaf_count_min_median_max": [
+          15,
+          15.0,
+          15
+        ],
+        "trees_reaching_max_leaf_nodes": 500,
+        "minimum_observed_training_leaf_support": 10,
+        "split_counts_by_feature": {
+          "action": 0,
+          "outcome": 0,
+          "transport_protocol": 97,
+          "src_role": 0,
+          "dst_role": 0,
+          "src_port_range": 44,
+          "dst_port_range": 94,
+          "icmp_type": 0,
+          "icmp_code": 0,
+          "icmp_message": 0,
+          "icmp_unreachable": 0,
+          "src_port_fixed": 1852,
+          "dst_port_fixed": 2208,
+          "log_other_fact_states": 715,
+          "log_other_destinations": 208,
+          "log_other_dst_port_symbols": 258,
+          "log_other_src_port_symbols": 278,
+          "same_destination_fraction": 155,
+          "same_dst_port_fraction": 333,
+          "tcp_fraction": 160,
+          "udp_fraction": 57,
+          "icmp_fraction": 0,
+          "src_port_missing_fraction": 289,
+          "dst_port_missing_fraction": 175,
+          "outside_destination_fraction": 0,
+          "dmz_destination_fraction": 23,
+          "inside_destination_fraction": 35,
+          "protocol_diversity": 19,
+          "destination_role_diversity": 0
+        },
+        "saved_score_empirical_collisions": {
+          "unique_full_views": 6668,
+          "mixed_full_views": 53,
+          "mixed_rows": 3514,
+          "M_rows_in_mixed_views": 3354,
+          "S_rows_in_mixed_views": 160,
+          "S_sources_in_mixed_views": 80,
+          "minimum_empirical_row_errors": 160
+        },
+        "default_threshold_fit_errors": 385,
+        "default_threshold_fit_M_errors": 0,
+        "default_threshold_fit_S_errors": 385
+      }
+    }
+  ],
+  "models_audited": 9,
+  "prediction_rows_replayed": 648405,
+  "audit_script_sha256": "53f22c6efea1bf0cf73ce88cd1d6ecaddfcfebdb48490a753f3123188ed4bb8a"
+}

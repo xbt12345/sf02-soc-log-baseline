@@ -1,0 +1,17 @@
+{
+  "full_official_train_restored_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "repeat_does_not_rewrite": true,
+  "existing_nonmatching_file_preserved": true,
+  "corrupt_part_rejected": true,
+  "cli_verify_only": {
+    "status": "transfer_files_verified",
+    "verified": true,
+    "directory": "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\platform\\upload_bundle",
+    "train_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "valid_input_sha256": "731af597711aae0b870912c36fc1a0f592fd6e53d911c7fec6fe1405ec1a97b0",
+    "note": "File identity verified; no training or detection-quality evaluation performed"
+  },
+  "python38_syntax_checked": true,
+  "execution_platform": "Local Windows Python 3.12.14; cloud execution pending",
+  "upload_limits": "All four files below 100,000,000 bytes"
+}

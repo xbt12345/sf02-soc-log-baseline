@@ -1,0 +1,366 @@
+{
+  "decision": "do_not_fit_or_promote_fact_text_C1_from_v3_prepare_0_3",
+  "scope": "Two actual official records show upstream aliases and identity fragments in the proposed main view; not a population frequency estimate or classifier causal-effect measurement.",
+  "code_sha256": "386818cba5e5e5f1e85fcdbac1c48342089d2dfc84e88d4db61e64b9df280c49",
+  "examples": [
+    {
+      "row_position": 129493,
+      "raw_message_sha256": "3752bf1b58ef691403ded2202d2f830c9328fc21c0d70a08b379add0bc5c3390",
+      "fields": [
+        {
+          "path": "behaviors.[].behavior_id",
+          "start": 305,
+          "end": 326,
+          "raw_field": "\"behavior_id\":\"10381\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].display_name",
+          "start": 770,
+          "end": 837,
+          "raw_field": "\"display_name\":\"ORG-9779ystemTamperORG-11922SensorDynamicUSER-5936\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].md5",
+          "start": 1013,
+          "end": 1059,
+          "raw_field": "\"md5\":\"d264f62721590f14bc54344f48a0CRED-25060\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].parent_details.parent_process_graph_id",
+          "start": 1232,
+          "end": 1322,
+          "raw_field": "\"parent_process_graph_id\":\"pid:3810ea13b98a42adb0ff227fbaf6169f:308CRED-301CRED-326404292\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].sha256",
+          "start": 2141,
+          "end": 2239,
+          "raw_field": "\"sha256\":\"350570713e0a7e3733f59623f880a442eCRED-257259b29a8d59bCRED-CRED-300345625a38edCRED-29622\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].tactic_id",
+          "start": 2267,
+          "end": 2287,
+          "raw_field": "\"tactic_id\":\"TA0005\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].technique_id",
+          "start": 2336,
+          "end": 2374,
+          "raw_field": "\"technique_id\":\"TCRED-2CRED-24120.001\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].triggering_process_graph_id",
+          "start": 2459,
+          "end": 2553,
+          "raw_field": "\"triggering_process_graph_id\":\"pid:3810ea13b98a42adb0ff227fbaf6169f:3084710057CRED-CRED-33049\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].user_id",
+          "start": 2554,
+          "end": 2644,
+          "raw_field": "\"user_id\":\"S-1-12-1-942142572-CRED-26CRED-239500278-15CRED-CRED-29666471-3CRED-2982797999\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].behavior_id",
+          "start": 2702,
+          "end": 2723,
+          "raw_field": "\"behavior_id\":\"10381\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].display_name",
+          "start": 3237,
+          "end": 3304,
+          "raw_field": "\"display_name\":\"ORG-9779ystemTamperORG-11922SensorDynamicUSER-5936\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].md5",
+          "start": 3526,
+          "end": 3566,
+          "raw_field": "\"md5\":\"cab368ed200c5b7e3ff38bca123b6d7b\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].parent_details.parent_process_graph_id",
+          "start": 3717,
+          "end": 3807,
+          "raw_field": "\"parent_process_graph_id\":\"pid:3810ea13b98a42adb0ff227fbaf6169f:3084710057CRED-CRED-33049\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].sha256",
+          "start": 4644,
+          "end": 4719,
+          "raw_field": "\"sha256\":\"1617dbc49cb323ef31c7caea831fe8b9aa9b79ed88eaab0c1febcc169e3abc60\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].tactic_id",
+          "start": 4747,
+          "end": 4767,
+          "raw_field": "\"tactic_id\":\"TA0005\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].technique_id",
+          "start": 4816,
+          "end": 4854,
+          "raw_field": "\"technique_id\":\"TCRED-2CRED-24120.001\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].triggering_process_graph_id",
+          "start": 4939,
+          "end": 5033,
+          "raw_field": "\"triggering_process_graph_id\":\"pid:3810ea13b98a42adb0ff227fbaf6169f:CRED-2988CRED-30387445369\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].user_id",
+          "start": 5034,
+          "end": 5124,
+          "raw_field": "\"user_id\":\"S-1-12-1-942142572-CRED-26CRED-239500278-15CRED-CRED-29666471-3CRED-2982797999\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "cid",
+          "start": 5323,
+          "end": 5375,
+          "raw_field": "\"cid\":\"47b7f823f5804dd98CRED-CRED-2388891183ba9999d\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "detection_id",
+          "start": 5500,
+          "end": 5576,
+          "raw_field": "\"detection_id\":\"ldt:3810ea13b98a42adb0ff227fbaf6169f:24481CRED-CRED-2946372\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "user-0010-1127.cid",
+          "start": 5835,
+          "end": 5887,
+          "raw_field": "\"cid\":\"47b7f823f5804dd98CRED-CRED-2388891183ba9999d\"",
+          "kept_by_field_removal": true
+        }
+      ]
+    },
+    {
+      "row_position": 442429,
+      "raw_message_sha256": "56a111726077f4e1347f3341ef2701464ce8b5fb021682ff72658d752c0a77f6",
+      "fields": [
+        {
+          "path": "behaviors.[].behavior_id",
+          "start": 335,
+          "end": 356,
+          "raw_field": "\"behavior_id\":\"10381\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].display_name",
+          "start": 796,
+          "end": 863,
+          "raw_field": "\"display_name\":\"ORG-9779ystemTamperORG-11922SensorDynamicUSER-5936\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].md5",
+          "start": 1039,
+          "end": 1085,
+          "raw_field": "\"md5\":\"d264f62721590f14bc54344f48a0CRED-25060\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].parent_details.parent_process_graph_id",
+          "start": 1258,
+          "end": 1348,
+          "raw_field": "\"parent_process_graph_id\":\"pid:6e36ac138a7a426fa5d2e4a45da72961:CRED-2382578CRED-25378679\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].sha256",
+          "start": 2167,
+          "end": 2265,
+          "raw_field": "\"sha256\":\"350570713e0a7e3733f59623f880a442eCRED-257259b29a8d59bCRED-CRED-300345625a38edCRED-29622\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].tactic_id",
+          "start": 2293,
+          "end": 2313,
+          "raw_field": "\"tactic_id\":\"TA0005\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].technique_id",
+          "start": 2362,
+          "end": 2400,
+          "raw_field": "\"technique_id\":\"TCRED-2CRED-24120.001\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].triggering_process_graph_id",
+          "start": 2485,
+          "end": 2585,
+          "raw_field": "\"triggering_process_graph_id\":\"pid:6e36ac138a7a426fa5d2e4a45da72961:CRED-238257CRED-2CRED-250300807\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "behaviors.[].user_id",
+          "start": 2586,
+          "end": 2673,
+          "raw_field": "\"user_id\":\"S-1-12-1-1CRED-2569046385-CRED-29665CRED-2541809-3992341668-2CRED-319524984\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "cid",
+          "start": 2807,
+          "end": 2859,
+          "raw_field": "\"cid\":\"47b7f823f5804dd98CRED-CRED-2388891183ba9999d\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "detection_id",
+          "start": 2985,
+          "end": 3057,
+          "raw_field": "\"detection_id\":\"ldt:6e36ac138a7a426fa5d2e4a45da72961:223CRED-2406737035\"",
+          "kept_by_field_removal": true
+        },
+        {
+          "path": "user-0010-1127.cid",
+          "start": 3316,
+          "end": 3368,
+          "raw_field": "\"cid\":\"47b7f823f5804dd98CRED-CRED-2388891183ba9999d\"",
+          "kept_by_field_removal": true
+        }
+      ]
+    }
+  ],
+  "keep_running": "Complete official-data group/support audit and N format-only negative control; do not report semantic acceptance.",
+  "next_minimal_change": "Within confirmed Falcon paths, isolate tactic_id, technique_id and detection display_name; mask entire identity/hash field values; put unresolved behavior_id into diagnostic view. Preserve commands, request payloads, parent/child roles and explicit boolean values. Rebuild normalized groups and rerun gates before C1. Repair escape semantics and recheck all final output identities before main training.",
+  "full_run_ipv4_residual_rows": 191731,
+  "verified_ip_residual_rows": [
+    112255,
+    112259,
+    131538,
+    148619,
+    149243
+  ],
+  "ip_root_cause_scope": "Five actual rows reproduced by independent reviewer: escaped tab/newline expanded after IPv4 masking creates new token boundaries. Not proven exhaustive for all residual rows.",
+  "escaping_counterexamples": [
+    {
+      "raw": "{\"command_line\": \"C:\\\\tools\\\\runner.exe\"}",
+      "prepared_text": "{\"command_line\": \"c:\\ ools\\ unner.exe\"}"
+    },
+    {
+      "raw": "shell command C:\\tools\\runner.exe",
+      "prepared_text": "shell command c: ools unner.exe"
+    }
+  ],
+  "escape_repair_requirement": "Remove global backslash-n/r/t substitution. Only decode verified JSON string boundaries with proper JSON escape semantics; preserve unknown/damaged text and command paths. Mask addresses within confirmed field/escape boundaries. Merely moving the existing substitution earlier is rejected because it corrupts Windows paths.",
+  "actual_ip_context_examples": [
+    {
+      "row_position": 112255,
+      "format": "windows_json_like",
+      "product": "Windows Active Directory",
+      "original_sha256": "0f9660239a60d26bab6bf10951e2fcb0440cbf08ab6d8f95e3db5b0047d752e7",
+      "residuals": [
+        {
+          "ip": "192.168.118.146",
+          "prepared_context": " entityrmation: workstation name: - \\entity entity address: 192.168.118.146 \\entity port: 63318 detailed entity entity: kerberos transi",
+          "raw_contexts": [
+            "on:\\n\\tWorkstation Name:\\t-\\n\\USER-7625 ORG-10379 Address:\\t192.168.118.146\\n\\USER-7625 Port:\\t\\t63318\\n\\nDetailed ORG-0829 USER-0010-4"
+          ]
+        }
+      ]
+    },
+    {
+      "row_position": 112259,
+      "format": "windows_json_like",
+      "product": "Windows Active Directory",
+      "original_sha256": "558d6a7889dba5d2a13a44ca110d628a5f5522d109dfd977e6b38bc97cd1c6a8",
+      "residuals": [
+        {
+          "ip": "10.243.130.79",
+          "prepared_context": ": 0xentityde69 entity entityrmation: entity entity address: 10.243.130.79 \\entity port: 6entity share entityrmation: share name: \\\\\\\\",
+          "raw_contexts": [
+            "G-10379 ORG-0706rmation:\\t\\n\\tORG-0198 ORG-9293 Address:\\t\\t10.243.130.79\\n\\USER-7625 Port:\\t\\t6CRED-CRED-297871\\n\\t\\nShare ORG-0706r"
+          ]
+        }
+      ]
+    },
+    {
+      "row_position": 131538,
+      "format": "windows_json_like",
+      "product": "<missing>",
+      "original_sha256": "2309a301c9d92c324e21a2b6960357444fd31111a2c3f50eee119440ca46b67b",
+      "residuals": [
+        {
+          "ip": "192.168.39.160",
+          "prepared_context": "entity://entity/2012/01/entitycontext/claims/x-ms-entity-ip 192.168.39.160 entity://entity/2014/09/entitycontext/claims/userip 192.168",
+          "raw_contexts": [
+            "t/2012/01/USER-9484context/claims/x-ms-USER-CRED-30678-ip \\n192.168.39.160 \\nORG-CRED-31206://USER-0010-17321.domain-0022.example.net/",
+            "n-0022.example.net/2014/09/USER-9484context/claims/userip \\n192.168.39.160 \\nORG-CRED-31206://USER-0010-17321.domain-0022.example.net/"
+          ]
+        },
+        {
+          "ip": "192.168.39.160",
+          "prepared_context": ".39.160 entity://entity/2014/09/entitycontext/claims/userip 192.168.39.160 entity://entity/ws/2008/06/entity/claims/entityaccountname ",
+          "raw_contexts": [
+            "t/2012/01/USER-9484context/claims/x-ms-USER-CRED-30678-ip \\n192.168.39.160 \\nORG-CRED-31206://USER-0010-17321.domain-0022.example.net/",
+            "n-0022.example.net/2014/09/USER-9484context/claims/userip \\n192.168.39.160 \\nORG-CRED-31206://USER-0010-17321.domain-0022.example.net/"
+          ]
+        }
+      ]
+    },
+    {
+      "row_position": 148619,
+      "format": "windows_json_like",
+      "product": "SentinelOne",
+      "original_sha256": "97beaf8ea165cf9b1eca431d339eba03fbb69d39f19bdd6b98d3e414354c83fd",
+      "residuals": [
+        {
+          "ip": "192.168.115.129",
+          "prepared_context": "\\entity entity entity\\\\entity\\entity entity entity address: 192.168.115.129 \\entity port: 55080 destination address: 100.64.52.192 dest",
+          "raw_contexts": [
+            "3.3.264\\\\ORG-3540\\USER-1430\\nORG-10379 ORG-1404 Address:\\t\\t192.168.115.129\\n\\USER-7625 Port:\\t\\t55080\\n\\tDestination Address:\\t100.64."
+          ]
+        },
+        {
+          "ip": "100.64.52.192",
+          "prepared_context": "s: 192.168.115.129 \\entity port: 55080 destination address: 100.64.52.192 destination port: 443 protocol: 6 entity entity: 14 filter ",
+          "raw_contexts": [
+            "115.129\\n\\USER-7625 Port:\\t\\t55080\\n\\tDestination Address:\\t100.64.52.192\\n\\tDestination Port:\\t\\t443\\n\\tProtocol:\\t\\t6\\n\\tORG-9508 U",
+            "3 USER-0010-1577 23.3.3.264\\\\USER-0010-1208\",\"DestAddress\":\"100.64.52.192\",\"DestPort\":\"443\",\"Direction\":\"%%CRED-2CRED-30401\",\"FilterO"
+          ]
+        }
+      ]
+    },
+    {
+      "row_position": 149243,
+      "format": "windows_json_like",
+      "product": "<missing>",
+      "original_sha256": "18ed88f7016f4f0d9705bbee86beb94179f92e3152e0b6ece38bf737764a6280",
+      "residuals": [
+        {
+          "ip": "192.168.112.207",
+          "prepared_context": "entity://entity/2012/01/entitycontext/claims/x-ms-entity-ip 192.168.112.207\", ,\"senderentity\":\"entity\",\"sensitivity\":\"normal\",\"winlog\":",
+          "raw_contexts": [
+            "t/2012/01/USER-9484context/claims/x-ms-USER-CRED-30678-ip \\n192.168.112.207\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"192.168.139.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

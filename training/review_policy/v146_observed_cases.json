@@ -1,0 +1,58 @@
+{
+  "latest_actual": "V146",
+  "status": "observed_bounded_path_failed_not_whole_goal_blocked",
+  "new_fits": 0,
+  "new_updates": 0,
+  "scope": "This registered restricted auxiliary path only; not a permanent prohibition on independent methods.",
+  "risks": [
+    {
+      "id": "V146_total_descent_and_TRAIN_protection_not_transfer",
+      "evidence": {
+        "fits": 6,
+        "gradients": 1200,
+        "proposals": 2408,
+        "updates": 1200,
+        "pure_TRAIN_errors": 0,
+        "correct_TRAIN_new_errors": 0,
+        "matched_M_repairs": 0,
+        "matched_M_new_errors": 8,
+        "matched_S_repairs": 0,
+        "matched_S_new_errors": 0
+      },
+      "required_action": "Stop this six-fit restricted auxiliary path; no same-configuration, lambda or seed extension and no quality promotion."
+    },
+    {
+      "id": "V146_joint_change_not_auxiliary_gain",
+      "evidence": {
+        "B_vs_V142_M_repairs": 0,
+        "B_vs_V142_M_new_errors": 2,
+        "B_vs_V142_S_repairs": 4,
+        "B_vs_V142_S_new_errors": 0,
+        "A_already_repaired_same_four_S": true
+      },
+      "required_action": "Keep B-versus-A, V142 and A0 comparisons separate; do not assign common S repairs to the auxiliary term or choose A after scoring."
+    },
+    {
+      "id": "V146_restricted_key_no_HELD_S_coverage",
+      "evidence": {
+        "aux_TRAIN_S_rows": [
+          34,
+          18,
+          26
+        ],
+        "all_ASA_S_rows": 34059,
+        "HELD_S_registered_key_coverage": 0,
+        "known_port_V142_S_errors": 578,
+        "direct_coverage": 0,
+        "remaining_S_errors": 576
+      },
+      "required_action": "Before a distinct fine-support mechanism, audit legal supervision semantics and coverage with correct controls; absence of this key is not absence of every support or causal proof."
+    }
+  ],
+  "evidence_sha256": {
+    "artifacts/v146_guarded_pair_training_20261001/final_delivery.json": "b874f0c4c85dbabfc7c94926e0bbbf660e50d1329bc87fa8b32e3460a7b28f0b",
+    "artifacts/v146_guarded_pair_training_20261001/quality.json": "5a645b545d01d8548644d674d5fe71af64343fd352e2977a3b0daca9c5c7b99b",
+    "artifacts/v146_guarded_pair_training_20261001/objective_journal_audit.json": "2ae3e45e8d88f547210c8f9c2d2d56ec1913f852027dc016c6688610b52983a5",
+    "artifacts/v146_guarded_pair_training_20261001/support_effect_audit.json": "4704a84c7116d128739865d19469c9d01816bb0df6779f51ec3da34e5c8babda"
+  }
+}

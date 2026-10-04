@@ -1,0 +1,61 @@
+{
+  "scope": "Post-inspection oracle offset tradeoff on v38 development only. Not calibration, model fitting or transferable improvement.",
+  "model_changed": false,
+  "trials": [
+    {
+      "oracle_target": "windows_missed_suspicious",
+      "offset": 1.246081981055302,
+      "confusion_matrix": [
+        [
+          167222,
+          0,
+          0
+        ],
+        [
+          3082,
+          6724,
+          284
+        ],
+        [
+          15,
+          687,
+          1061
+        ]
+      ],
+      "new_benign_errors": 0,
+      "previously_correct_M_now_S": 66,
+      "M_recall_before": 0.6729435084241824,
+      "M_recall_after": 0.666402378592666,
+      "S_recall_before": 0.598411798071469,
+      "S_recall_after": 0.6018150879183211
+    },
+    {
+      "oracle_target": "Duo_missed_suspicious",
+      "offset": 2.175482493580566,
+      "confusion_matrix": [
+        [
+          167222,
+          0,
+          0
+        ],
+        [
+          2864,
+          6638,
+          588
+        ],
+        [
+          5,
+          685,
+          1073
+        ]
+      ],
+      "new_benign_errors": 0,
+      "previously_correct_M_now_S": 152,
+      "M_recall_before": 0.6729435084241824,
+      "M_recall_after": 0.6578790882061447,
+      "S_recall_before": 0.598411798071469,
+      "S_recall_after": 0.608621667612025
+    }
+  ],
+  "script_sha256": "468bc366c16cb5ab5d8183276104f38a4868b2feac8dd5008a99ec5126c47ab1"
+}

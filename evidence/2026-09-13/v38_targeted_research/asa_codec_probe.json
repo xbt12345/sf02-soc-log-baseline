@@ -1,0 +1,79 @@
+{
+  "scope": "Already-inspected ASA hard, representation audit only; no SOC classifier fitted or accuracy improvement claimed",
+  "full_domain_roundtrip_cases": 65537,
+  "full_domain_roundtrip_passed": true,
+  "added_dimensions_both_ports": 34,
+  "uses_target_labels_to_define_encoding": false,
+  "uses_target_labels_to_measure_collision_floor": true,
+  "results": {
+    "frozen_encoder": {
+      "distinct_vectors": 1406,
+      "mixed_vectors": 130,
+      "mixed_rows": 54493,
+      "minimum_total_errors": 3246
+    },
+    "plus_source_fixed17": {
+      "distinct_vectors": 8382,
+      "mixed_vectors": 148,
+      "mixed_rows": 19768,
+      "minimum_total_errors": 2683
+    },
+    "plus_destination_fixed17": {
+      "distinct_vectors": 4992,
+      "mixed_vectors": 251,
+      "mixed_rows": 34577,
+      "minimum_total_errors": 2558
+    },
+    "plus_both_fixed17": {
+      "distinct_vectors": 10748,
+      "mixed_vectors": 172,
+      "mixed_rows": 12117,
+      "minimum_total_errors": 1776
+    },
+    "plus_coarse_port_ranges_only": {
+      "distinct_vectors": 1973,
+      "mixed_vectors": 168,
+      "mixed_rows": 48185,
+      "minimum_total_errors": 3118
+    },
+    "plus_hashed_facts_2pow20": {
+      "distinct_vectors": 10746,
+      "mixed_vectors": 173,
+      "mixed_rows": 12133,
+      "minimum_total_errors": 1782
+    },
+    "full_preencoder_information": {
+      "distinct_vectors": 10748,
+      "mixed_vectors": 172,
+      "mixed_rows": 12117,
+      "minimum_total_errors": 1776
+    }
+  },
+  "untrained_category_example": {
+    "known_coef": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "unseen_1": [
+      0,
+      1,
+      0
+    ],
+    "unseen_2": [
+      0,
+      0,
+      1
+    ],
+    "scores": [
+      0.0,
+      0.0
+    ]
+  },
+  "cautions": [
+    "Bit codes have arbitrary metric geometry; not a security-semantic embedding.",
+    "Missingness remains observable; not asserted harmless.",
+    "Exact source port may encode environment artifacts; this is an audit/control candidate only.",
+    "Hashing may collide and unseen buckets have no learned meaning."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "b0": {
+    "unique": 11026,
+    "mixed_groups": 62,
+    "mixed_rows": 3145,
+    "minimum_observed_label_errors": 960,
+    "suspicious_in_mixed_groups": 1159,
+    "suspicious_outside_mixed": 2314
+  },
+  "b1": {
+    "unique": 10748,
+    "mixed_groups": 172,
+    "mixed_rows": 12117,
+    "minimum_observed_label_errors": 1776,
+    "suspicious_in_mixed_groups": 2065,
+    "suspicious_outside_mixed": 1408
+  },
+  "facts": {
+    "unique": 10748,
+    "mixed_groups": 172,
+    "mixed_rows": 12117,
+    "minimum_observed_label_errors": 1776,
+    "suspicious_in_mixed_groups": 2065,
+    "suspicious_outside_mixed": 1408
+  }
+}

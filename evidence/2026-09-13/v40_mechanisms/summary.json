@@ -1,0 +1,1580 @@
+{
+  "scope": "Inspected v39 development; frozen model replay and fit-support diagnosis only",
+  "inputs": {
+    "rows.parquet": "e1b5add85250184f4975935fcd912cde82d83abb700f1fe88f8efa6b8dfc4df5",
+    "projections.parquet": "db23bf2603b938e7b502ba0061a368eda26d38e8fbfe82c8feb75da0fb8d030e",
+    "configuration.json": "9b4718a03df42d41ce78bb713310707c31c30fce7173f6c172961210c4cbf5e3"
+  },
+  "script_sha256": "6a5ec437b8523c6effaaaed859913e68f2a4eac81ff9df82cca585a4e7d206f7",
+  "models": [
+    {
+      "fold": 0,
+      "model_sha256": "23f1254683f4dd65fd4a727f3d198e42bc18cdac0c59dd5124e45c46b39b308f",
+      "evaluation_sha256": "39d79042b5629b4c170805684afa396e1f87552354bbeb565d73817c7a1307c6",
+      "replay_max_difference": 0.0
+    },
+    {
+      "fold": 1,
+      "model_sha256": "fd1e8f733707cc0f32ff2bbfe4fce154901861613e43aea870d76c9ad241ea7f",
+      "evaluation_sha256": "f6a2e93275345d166cc501156078776d1494d4c0b86ce759305dd0827da2fea4",
+      "replay_max_difference": 0.0
+    },
+    {
+      "fold": 2,
+      "model_sha256": "c209bc95f9e316198ab19ae597879521d770ee1d42c798d1b1db5278139b9ada",
+      "evaluation_sha256": "5c7f5435f97d35ffc739344fe6414b194be080623d8ae949063632685a64b4c1",
+      "replay_max_difference": 0.0
+    }
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "partitions": {
+        "all": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 904501,
+              "errors": 1741,
+              "body_keys": 335050,
+              "class_rows": [
+                839096,
+                47266,
+                18139
+              ],
+              "class_errors": [
+                12,
+                184,
+                1545
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14642,
+              "errors": 1630,
+              "body_keys": 3818,
+              "class_rows": [
+                0,
+                8154,
+                6488
+              ],
+              "class_errors": [
+                0,
+                44,
+                1586
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 372178,
+              "errors": 592,
+              "body_keys": 142296,
+              "class_rows": [
+                366951,
+                3628,
+                1599
+              ],
+              "class_errors": [
+                0,
+                84,
+                508
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 322,
+              "errors": 202,
+              "body_keys": 41,
+              "class_rows": [
+                0,
+                300,
+                22
+              ],
+              "class_errors": [
+                0,
+                180,
+                22
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 7217,
+              "errors": 817,
+              "body_keys": 1897,
+              "class_rows": [
+                0,
+                3938,
+                3279
+              ],
+              "class_errors": [
+                0,
+                18,
+                799
+              ]
+            },
+            "unseen_fit": {
+              "rows": 79790,
+              "errors": 351,
+              "body_keys": 25721,
+              "class_rows": [
+                52651,
+                19840,
+                7299
+              ],
+              "class_errors": [
+                4,
+                74,
+                273
+              ]
+            }
+          }
+        },
+        "asa": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 56660,
+              "errors": 1637,
+              "body_keys": 12823,
+              "class_rows": [
+                0,
+                44344,
+                12316
+              ],
+              "class_errors": [
+                0,
+                112,
+                1525
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14642,
+              "errors": 1630,
+              "body_keys": 3818,
+              "class_rows": [
+                0,
+                8154,
+                6488
+              ],
+              "class_errors": [
+                0,
+                44,
+                1586
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 4124,
+              "errors": 514,
+              "body_keys": 1059,
+              "class_rows": [
+                0,
+                3046,
+                1078
+              ],
+              "class_errors": [
+                0,
+                16,
+                498
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 322,
+              "errors": 202,
+              "body_keys": 41,
+              "class_rows": [
+                0,
+                300,
+                22
+              ],
+              "class_errors": [
+                0,
+                180,
+                22
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 7217,
+              "errors": 817,
+              "body_keys": 1897,
+              "class_rows": [
+                0,
+                3938,
+                3279
+              ],
+              "class_errors": [
+                0,
+                18,
+                799
+              ]
+            },
+            "unseen_fit": {
+              "rows": 23988,
+              "errors": 337,
+              "body_keys": 5403,
+              "class_rows": [
+                0,
+                18964,
+                5024
+              ],
+              "class_errors": [
+                0,
+                66,
+                271
+              ]
+            }
+          }
+        },
+        "auth": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 21,
+              "errors": 0,
+              "body_keys": 18,
+              "class_rows": [
+                15,
+                0,
+                6
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 12,
+              "errors": 0,
+              "body_keys": 10,
+              "class_rows": [
+                8,
+                0,
+                4
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "flow": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 2684,
+              "errors": 64,
+              "body_keys": 416,
+              "class_rows": [
+                0,
+                2684,
+                0
+              ],
+              "class_errors": [
+                0,
+                64,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 542,
+              "errors": 68,
+              "body_keys": 87,
+              "class_rows": [
+                0,
+                542,
+                0
+              ],
+              "class_errors": [
+                0,
+                68,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 800,
+              "errors": 8,
+              "body_keys": 122,
+              "class_rows": [
+                0,
+                800,
+                0
+              ],
+              "class_errors": [
+                0,
+                8,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "fit_minimum_errors_all": 1466,
+      "fit_minimum_errors_asa": 1466,
+      "actual_fit_errors_all": 3371,
+      "actual_fit_errors_asa": 3267,
+      "relaxed_cells": 1
+    },
+    {
+      "fold": 1,
+      "partitions": {
+        "all": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 904031,
+              "errors": 1698,
+              "body_keys": 336021,
+              "class_rows": [
+                839149,
+                47232,
+                17650
+              ],
+              "class_errors": [
+                10,
+                146,
+                1542
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14927,
+              "errors": 1733,
+              "body_keys": 3913,
+              "class_rows": [
+                0,
+                8182,
+                6745
+              ],
+              "class_errors": [
+                0,
+                66,
+                1667
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 367062,
+              "errors": 477,
+              "body_keys": 141270,
+              "class_rows": [
+                361760,
+                3750,
+                1552
+              ],
+              "class_errors": [
+                0,
+                12,
+                465
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 815,
+              "errors": 693,
+              "body_keys": 32,
+              "class_rows": [
+                0,
+                122,
+                693
+              ],
+              "class_errors": [
+                0,
+                0,
+                693
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 7026,
+              "errors": 870,
+              "body_keys": 1846,
+              "class_rows": [
+                0,
+                3934,
+                3092
+              ],
+              "class_errors": [
+                0,
+                76,
+                794
+              ]
+            },
+            "unseen_fit": {
+              "rows": 84789,
+              "errors": 463,
+              "body_keys": 25741,
+              "class_rows": [
+                57789,
+                19906,
+                7094
+              ],
+              "class_errors": [
+                6,
+                180,
+                277
+              ]
+            }
+          }
+        },
+        "asa": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 56374,
+              "errors": 1637,
+              "body_keys": 12882,
+              "class_rows": [
+                0,
+                44314,
+                12060
+              ],
+              "class_errors": [
+                0,
+                124,
+                1513
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14927,
+              "errors": 1733,
+              "body_keys": 3913,
+              "class_rows": [
+                0,
+                8182,
+                6745
+              ],
+              "class_errors": [
+                0,
+                66,
+                1667
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 4182,
+              "errors": 464,
+              "body_keys": 1053,
+              "class_rows": [
+                0,
+                3160,
+                1022
+              ],
+              "class_errors": [
+                0,
+                12,
+                452
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 815,
+              "errors": 693,
+              "body_keys": 32,
+              "class_rows": [
+                0,
+                122,
+                693
+              ],
+              "class_errors": [
+                0,
+                0,
+                693
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 7026,
+              "errors": 870,
+              "body_keys": 1846,
+              "class_rows": [
+                0,
+                3934,
+                3092
+              ],
+              "class_errors": [
+                0,
+                76,
+                794
+              ]
+            },
+            "unseen_fit": {
+              "rows": 23629,
+              "errors": 451,
+              "body_keys": 5315,
+              "class_rows": [
+                0,
+                19034,
+                4595
+              ],
+              "class_errors": [
+                0,
+                174,
+                277
+              ]
+            }
+          }
+        },
+        "auth": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 22,
+              "errors": 0,
+              "body_keys": 19,
+              "class_rows": [
+                15,
+                0,
+                7
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 11,
+              "errors": 0,
+              "body_keys": 9,
+              "class_rows": [
+                8,
+                0,
+                3
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "flow": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 2684,
+              "errors": 8,
+              "body_keys": 417,
+              "class_rows": [
+                0,
+                2684,
+                0
+              ],
+              "class_errors": [
+                0,
+                8,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 558,
+              "errors": 0,
+              "body_keys": 82,
+              "class_rows": [
+                0,
+                558,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 784,
+              "errors": 0,
+              "body_keys": 126,
+              "class_rows": [
+                0,
+                784,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "fit_minimum_errors_all": 1508,
+      "fit_minimum_errors_asa": 1508,
+      "actual_fit_errors_all": 3431,
+      "actual_fit_errors_asa": 3370,
+      "relaxed_cells": 1
+    },
+    {
+      "fold": 2,
+      "partitions": {
+        "all": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 904329,
+              "errors": 1655,
+              "body_keys": 335147,
+              "class_rows": [
+                839151,
+                47622,
+                17556
+              ],
+              "class_errors": [
+                10,
+                114,
+                1531
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14870,
+              "errors": 1829,
+              "body_keys": 3697,
+              "class_rows": [
+                0,
+                7796,
+                7074
+              ],
+              "class_errors": [
+                0,
+                210,
+                1619
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 370476,
+              "errors": 554,
+              "body_keys": 142455,
+              "class_rows": [
+                364566,
+                3990,
+                1920
+              ],
+              "class_errors": [
+                0,
+                2,
+                552
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 174,
+              "errors": 26,
+              "body_keys": 43,
+              "class_rows": [
+                0,
+                152,
+                22
+              ],
+              "class_errors": [
+                0,
+                4,
+                22
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 6990,
+              "errors": 792,
+              "body_keys": 1832,
+              "class_rows": [
+                0,
+                3616,
+                3374
+              ],
+              "class_errors": [
+                0,
+                10,
+                782
+              ]
+            },
+            "unseen_fit": {
+              "rows": 81811,
+              "errors": 316,
+              "body_keys": 25649,
+              "class_rows": [
+                54981,
+                19950,
+                6880
+              ],
+              "class_errors": [
+                6,
+                62,
+                248
+              ]
+            }
+          }
+        },
+        "asa": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 56433,
+              "errors": 1608,
+              "body_keys": 12949,
+              "class_rows": [
+                0,
+                44702,
+                11731
+              ],
+              "class_errors": [
+                0,
+                100,
+                1508
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 14870,
+              "errors": 1829,
+              "body_keys": 3697,
+              "class_rows": [
+                0,
+                7796,
+                7074
+              ],
+              "class_errors": [
+                0,
+                210,
+                1619
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 4595,
+              "errors": 544,
+              "body_keys": 1178,
+              "class_rows": [
+                0,
+                3442,
+                1153
+              ],
+              "class_errors": [
+                0,
+                2,
+                542
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 174,
+              "errors": 26,
+              "body_keys": 43,
+              "class_rows": [
+                0,
+                152,
+                22
+              ],
+              "class_errors": [
+                0,
+                4,
+                22
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 6990,
+              "errors": 792,
+              "body_keys": 1832,
+              "class_rows": [
+                0,
+                3616,
+                3374
+              ],
+              "class_errors": [
+                0,
+                10,
+                782
+              ]
+            },
+            "unseen_fit": {
+              "rows": 23891,
+              "errors": 308,
+              "body_keys": 5342,
+              "class_rows": [
+                0,
+                19038,
+                4853
+              ],
+              "class_errors": [
+                0,
+                60,
+                248
+              ]
+            }
+          }
+        },
+        "auth": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 23,
+              "errors": 0,
+              "body_keys": 19,
+              "class_rows": [
+                16,
+                0,
+                7
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 10,
+              "errors": 0,
+              "body_keys": 9,
+              "class_rows": [
+                7,
+                0,
+                3
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "flow": {
+          "fit": {
+            "seen_fit_pure_same_label": {
+              "rows": 2684,
+              "errors": 8,
+              "body_keys": 417,
+              "class_rows": [
+                0,
+                2684,
+                0
+              ],
+              "class_errors": [
+                0,
+                8,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "evaluation": {
+            "seen_fit_pure_same_label": {
+              "rows": 500,
+              "errors": 0,
+              "body_keys": 79,
+              "class_rows": [
+                0,
+                500,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_pure_opposite_label": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "seen_fit_conflicted": {
+              "rows": 0,
+              "errors": 0,
+              "body_keys": 0,
+              "class_rows": [
+                0,
+                0,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            },
+            "unseen_fit": {
+              "rows": 842,
+              "errors": 0,
+              "body_keys": 129,
+              "class_rows": [
+                0,
+                842,
+                0
+              ],
+              "class_errors": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "fit_minimum_errors_all": 1662,
+      "fit_minimum_errors_asa": 1662,
+      "actual_fit_errors_all": 3484,
+      "actual_fit_errors_asa": 3437,
+      "relaxed_cells": 1
+    }
+  ],
+  "new_training_executed": false,
+  "fresh_blind_test": false,
+  "caveats": [
+    "Fit purity is sample-dependent, not proof of ground truth or future identifiability.",
+    "Empirical fit lower bounds are descriptive, not a deployable classifier or attainable held-out score.",
+    "Relaxed text-free matches are diagnostic only and do not authorize contrastive training."
+  ]
+}

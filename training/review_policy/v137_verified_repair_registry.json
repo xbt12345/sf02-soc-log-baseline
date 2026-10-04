@@ -1,0 +1,54 @@
+{
+  "version": "V137-verified-repair-registry",
+  "classified_case_repair_sets": [],
+  "interpretation": "No current classification candidate has passed full task adoption. Verified engineering contracts are separate.",
+  "engineering_contracts": [
+    {
+      "id": "DATA-ORIGINAL-MASS",
+      "status": "verified_in_V135",
+      "scope": "Official 2056871-row identity/truth and all TRAIN-role original label multiplicity",
+      "evidence": "artifacts/v135_stable_learning_trial_20260930/verification.json",
+      "on_change": "Recompute independent official truth, role row identity and per-class mass; no fitting or adoption on failure",
+      "evidence_sha256": "68d6011a990eb4c1484846af8203e08ce8a99cd26ac660e691a85e7a60723b75"
+    },
+    {
+      "id": "NUM-ACTIVE-DENSE",
+      "status": "verified_in_V135_observed_scope",
+      "scope": "Actual input repeated forward/backward panels and matched first80 epoch trajectories on registered host/configuration",
+      "evidence": "artifacts/v135_stable_learning_trial_20260930/postflight_audit/audit.json",
+      "on_change": "Freeze existing dense kernel; changed imported compute code/configuration requires actual repeated forward and gradient/prefix replay",
+      "evidence_sha256": "3d22cfa76eea9890454427d9735946567a72326c6d5fb5a37b50c5595ece35c3"
+    },
+    {
+      "id": "HEADER-CLOCK-INVARIANCE",
+      "status": "input_contract_verified_classification_unresolved",
+      "scope": "Registered ASA header transformations and 682 affected original rows",
+      "evidence": "artifacts/v124_header_trial_20260929/input_preflight.json",
+      "on_change": "Replay actual original rows and registered clock-format variants; preserve event body/facts and all score rows; no clock or identity shortcut",
+      "evidence_sha256": "455b426a1fd521095d9165898c609b23ca1837278265f41fd4b6ddfd10c7dce1"
+    }
+  ],
+  "open_issues": [
+    "TRAIN-PURE-READOUT",
+    "CROSS-SOURCE-M-S",
+    "RETENTION-INPUT-COLLISION"
+  ],
+  "future_repair_closeout": {
+    "requires": "Actual model replay of full issue population, old correct controls, held/reference regression audit and scoped acceptance",
+    "store": [
+      "model_checkpoint",
+      "complete_source_data_role_bindings",
+      "original_row_ids",
+      "independent_truth",
+      "predictions",
+      "counterexamples",
+      "valid_scope",
+      "rollback_baseline"
+    ],
+    "immutable_accepted_guard_rows": true,
+    "later_new_errors_on_accepted_rows_max": 0,
+    "held_labels_in_future_training": false,
+    "failing_candidate_may_replace_baseline": false,
+    "scope_failure_is_not_hidden_by_global_metric": true
+  }
+}

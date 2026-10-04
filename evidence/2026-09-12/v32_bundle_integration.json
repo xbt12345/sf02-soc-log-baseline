@@ -1,0 +1,34 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "fold_0_exact_outer_file_match": true,
+    "fold_0_risk_report_match": true,
+    "fold_1_exact_outer_file_match": true,
+    "fold_1_risk_report_match": true,
+    "fold_2_exact_outer_file_match": true,
+    "fold_2_risk_report_match": true,
+    "independent_prediction_and_calibration_replay": true,
+    "shell_LF_only": true,
+    "live_training_sources_equal_frozen_bundle": true,
+    "python38_syntax": true
+  },
+  "packaged_contract_tests": 44,
+  "package_file_checks": 39,
+  "independent_controls_checks": 23,
+  "official_rows_replayed": 2056871,
+  "classifier_fits": 0,
+  "cloud_executed": false,
+  "assembly_and_extraction_actually_executed": true,
+  "archive_sha256": "3d8accb9f50dd33c3a0be9374d680662327505c15561796e0882509b9c02f8e8",
+  "scope": "Actual local upload-part assembly, extraction, file verification, boundary tests, complete controls and risk replay. Not C1 training or cloud runtime verification.",
+  "bash_syntax_check_exit_code": 0,
+  "packaged_main_resource_preflight": {
+    "status": "not_started_insufficient_available_memory",
+    "model_trained": false,
+    "resource_preflight": {
+      "available_bytes": 1201840128,
+      "estimated_required_bytes": 4539002084,
+      "method": "uncapped sampled word nnz * 0.67 * 8 * 2.5 plus 512 MiB, minimum 3 GiB; planning guard, not a peak guarantee"
+    }
+  }
+}

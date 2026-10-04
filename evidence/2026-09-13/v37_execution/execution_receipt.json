@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-09-13T04:29:37.754878+00:00",
+  "status": "ready_for_user_run_full_platform_C",
+  "official_input_rows": 2056871,
+  "input_gate_checks_passed": 17,
+  "input_gate": true,
+  "local_protocols_completed": [
+    "source_ad"
+  ],
+  "accepted_local_models": 2,
+  "local_fit_calls_including_report_correction": 12,
+  "local_probability_rows_replayed": 1823966,
+  "repaired_wrapper_pairs": 20872,
+  "repaired_wrapper_failures": 0,
+  "software_tests": 39,
+  "bundle_file": "C:\\Users\\xiabutian\\Desktop\\人工智能算法挑战杯\\SF02\\platform\\sf02_v37_update.py",
+  "download_file": "C:\\Users\\xiabutian\\Downloads\\sf02_v37_update.py",
+  "bundle_sha256": "cd3ec604306196c19d0eb2e165c7a0177befa7be270bde69a01ef95a3bbcb3d2",
+  "bundle_bytes": 146009,
+  "cloud_execution_performed": false,
+  "external_data_added": false,
+  "official_labels_changed": false,
+  "model_quality_accepted": false,
+  "phase_D": "conditional after matched full C review; not implemented in this batch",
+  "broken_document_links": [],
+  "cleanup_blocked_by_automatic_review": [
+    "artifacts/v37_prepared_r10_20260913",
+    "artifacts/v37_prepared_r11_20260913"
+  ],
+  "artifact_hashes": {
+    "README.md": "56365e423a84e7d8ecb21ed24bdcf47d509e4be578363c4da56ac4f1eecc8a8f",
+    "docs/TRAINING_PLAN.md": "62059a7a4db7d019ed79e8a2046cdbc183f6ec3ee52dce1db56fed889389b3ef",
+    "docs/V37_NEXT_PLAN.md": "0abe92d3b90f3d0b6e057e44659f74dfa70a43d36eb1c0c5973a5e55f4e8550e",
+    "docs/V37_EXECUTION_REVIEW.md": "116a8e290788ea845def27ae5c664042908c8e123d495232fa70e02d619fd942",
+    "training/README.md": "eaa6886a701256c42afc75a489f152d69fed4b57b3aeed9bb7afb8ef34cc9aa9",
+    "evidence/README.md": "1c1482fd11b3bf8964df20140160e834feb1bb427866b6ca63a069f60043963d",
+    "platform/V37_RUN.md": "020828be2adaaf322cf92d914f75637490fdff0a59fc69fbccf5ab841bd3eb7a",
+    "platform/sf02_v37_update.py": "cd3ec604306196c19d0eb2e165c7a0177befa7be270bde69a01ef95a3bbcb3d2",
+    "platform/v37_bundle_receipt.json": "98bd28e97e7b682a6d98cec8425866caf463c5832e16f7c377179dca93321308"
+  }
+}

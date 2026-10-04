@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-12T13:16:28.406532+00:00",
+  "scope": "Returned training evidence audit, fixed-model diagnosis, research and next-round plan; no new model training.",
+  "return_archive": {
+    "bytes": 122822841,
+    "sha256": "998d0d051631712731b905a3a2bc689e9325dfa2b58e257aa9c6d84c244276d7",
+    "files": 212,
+    "expanded_bytes": 128725846,
+    "all_extracted_files_still_byte_identical": true
+  },
+  "official_rows_rechecked": 2056871,
+  "tasks_verified": 9,
+  "classifier_fits_verified": 27,
+  "replayed_task_rows": 6089952,
+  "max_probability_absolute_difference": 9.238719940185547e-07,
+  "classification_replay_checks_passed": true,
+  "alarm_recomputation_uses_original_cloud_scores": true,
+  "cloud_full_prepared_corpus_rehashed": false,
+  "cloud_full_prepared_identity_basis": "Cloud receipt matches local canonical content and frozen code; full cloud prepared corpus is not in result ZIP.",
+  "initial_cross_version_replay_failed_and_explicit_old_formula_replay_passed": true,
+  "new_training_executed": false,
+  "external_soc_training_data_added": false,
+  "pretrained_weights_downloaded": false,
+  "cloud_browser_operated_this_review": false,
+  "open_source_candidates_reproduced": false,
+  "github_commit_identity_queries_rate_limited": true,
+  "current_plan_status": "v3.4 design only; implementation and cloud quality validation outstanding",
+  "historical_plan_snapshot": {
+    "path": "evidence\\2026-09-12\\training_plan_v331_before_v34.md",
+    "sha256": "8f5b94b26174ec6d448eb827b3b6a4573ddb32464844dfdacfef1709e1e07060"
+  },
+  "documents": {
+    "docs/V331_CLOUD_RESULT_REVIEW.md": "ce2279a9cff7e0f7b3ad14d9d05b6108cec82a7dfe8a09eda1578153571c3ebd",
+    "docs/V34_METHOD_RESEARCH.md": "bf641bc1abf7e3e7a83e52f6f621c27e1fb1ab2213f525d6b3e9b711002e609d",
+    "docs/TRAINING_PLAN.md": "14335148347a9b7ffec5575383ef7306e56e448f9ed8d6ef11be193b7c0dbc4f",
+    "README.md": "e22b8ffdd55a3296fcf86b25b6c6ae0e4f520a7fa3162fe6e6114184d43f7c42",
+    "training/README.md": "bb7ea40793d986fd09fade1a285e1f20f3905bf99ba1294c426de5b9f85cc697",
+    "platform/USAGE.md": "abd13e71eaac7257c88bffc9eb28bd5af39b6684cf35af62c78d684a9cdc2354",
+    "platform/PLATFORM_GUIDE.md": "c15c3b18e6e8a99d09e680c044f65efce833184e24e7451af27150415fc50fc9",
+    "platform/V331_RUN.md": "25e68c9afc741b553e837e02c49df7c35f897b498969fc2bbfb3da6bb9052d26",
+    "docs/V331_IMPLEMENTATION_REVIEW.md": "a2bc39d864cf5527601725f8c1b42b10dbb693585b45ddddfe2bf86e5e2a03ac"
+  },
+  "audit_scripts": {
+    "training/audit_v331_cloud_return.py": "53d7fb8195e6babd8c43598e24af55ded78ddcd19d0b42e3c52077ca65a3bf9d",
+    "training/diagnose_v331_failures.py": "7a405c756aded6e5a219dcc68ec554e966909101ed30e72b28b74ee662e91ebe",
+    "training/ablate_v331_carrier_features.py": "9a8342651716cde177a66f7947c7695c93166ea0bdae59e99d8ac82d328d1d9a"
+  },
+  "evidence": {
+    "v331_return_audit.json": "1c9da9a63f9e5aab13e6fb1f331b68c8a165c8071a757898254086dd1da7058c",
+    "v331_failure_diagnostics.json": "b4c018c96f60afba31ba72d45b2477e16c8ae546594b3735aa6b0155d5486505",
+    "v331_operator_ablation.json": "f6dc24541d1676bf99aa12853376d6dd1ad6311ab16c925e9fa9d8d41a464f36",
+    "v331_raw_case_examples.json": "e228dc5a8d1606d9b72bcbb77cf51b81c5009d1afff955bb66f597bccedb8c2c",
+    "v331_domain_diagnostic_arrays.npz": "8df25f54cc5a5df3d5e8d2ff9b5b9c8bb7eb26b7b16c1bf0a1811cc3d3dec61f",
+    "open_source_identity.json": "1ab89eff701cd266c3a5dcc4eeb6f9e8ebe3031dc73ca0a8d5a3196a5995a3a5"
+  },
+  "final_checks": {
+    "key_report_counts_match_machine_evidence": true,
+    "returned_files_unchanged": true,
+    "local_markdown_links_checked": 95,
+    "broken_local_links": []
+  },
+  "limitations": [
+    "Previously inspected evaluation records are development evidence, not a new blind test.",
+    "Group isolation does not guarantee independent incidents.",
+    "Two WAF suspicious rows form one group.",
+    "No claim of broad external transfer or market-leading performance."
+  ]
+}

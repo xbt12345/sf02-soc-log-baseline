@@ -1,0 +1,3210 @@
+{
+  "train": {
+    "file": "data\\data\\train.parquet",
+    "sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "rows": 2056871,
+    "columns": [
+      "event_id",
+      "timestamp",
+      "pipeline",
+      "src_ip",
+      "dst_ip",
+      "src_port",
+      "src_host",
+      "dst_host",
+      "username",
+      "message_sanitized",
+      "product_name",
+      "vendor_name",
+      "label_binary"
+    ],
+    "labels": {
+      "benign": 1899723,
+      "malicious": 111728,
+      "suspicious": 45420
+    },
+    "id_duplicates": 0,
+    "fields": {
+      "event_id": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 2056871,
+        "top": {
+          "EVT-0000000001": 1,
+          "EVT-0000000002": 1,
+          "EVT-0000000003": 1,
+          "EVT-0000000004": 1,
+          "EVT-0000000005": 1,
+          "EVT-0000000006": 1,
+          "EVT-0000000007": 1,
+          "EVT-0000000008": 1,
+          "EVT-0000000009": 1,
+          "EVT-0000000010": 1,
+          "EVT-0000000011": 1,
+          "EVT-0000000012": 1
+        }
+      },
+      "timestamp": {
+        "dtype": "float64",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 1957043,
+        "top": {
+          "1697715954.0": 400,
+          "1698135687.0": 348,
+          "1713794074.0": 240,
+          "1688960026.0": 208,
+          "1691983217.0": 202,
+          "1661350960.0": 148,
+          "1710545859.0": 140,
+          "1711326854.0": 140,
+          "1661131943.0": 132,
+          "1660976582.0": 124,
+          "1661350747.0": 124,
+          "1661350922.0": 124
+        }
+      },
+      "pipeline": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 4,
+        "top": {
+          "syslog": 1700533,
+          "aws_cloudtrail": 340131,
+          "network_flows": 16184,
+          "precinct_api": 23
+        }
+      },
+      "src_ip": {
+        "dtype": "str",
+        "null": 26,
+        "empty_or_null": 1424068,
+        "unique": 12654,
+        "top": {
+          "": 1424042,
+          "100.64.0.187": 41580,
+          "HOST-0319": 30532,
+          "100.64.0.211": 22240,
+          "100.64.0.212": 19193,
+          "100.64.0.194": 14454,
+          "100.64.0.203": 14133,
+          "100.64.0.186": 13625,
+          "-": 13533,
+          "HOST-0318": 12800,
+          "100.64.0.204": 12464,
+          "100.64.0.207": 11673
+        }
+      },
+      "dst_ip": {
+        "dtype": "str",
+        "null": 2,
+        "empty_or_null": 1877632,
+        "unique": 2176,
+        "top": {
+          "": 1877630,
+          "100.64.30.66": 11160,
+          "198.51.100.98": 10532,
+          "10.216.192.18": 9676,
+          "10.30.86.224": 4535,
+          "10.113.78.104": 4412,
+          "10.0.145.98": 4092,
+          "100.64.1.8": 3484,
+          "10.221.82.8": 3424,
+          "10.74.211.215": 2999,
+          "172.25.116.1": 2793,
+          "10.207.79.45": 2756
+        }
+      },
+      "src_port": {
+        "dtype": "str",
+        "null": 2066,
+        "empty_or_null": 1796777,
+        "unique": 26599,
+        "top": {
+          "": 1794711,
+          "54706": 3654,
+          "54428": 2366,
+          "0": 2106,
+          "<NULL>": 2066,
+          "61104": 1905,
+          "59962": 1898,
+          "58914": 777,
+          "62505": 684,
+          "52406": 600,
+          "58932": 517,
+          "56070": 491
+        }
+      },
+      "src_host": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 23,
+        "unique": 124,
+        "top": {
+          "HOST-0026": 340131,
+          "HOST-0032": 225482,
+          "192.168.150.162": 161910,
+          "HOST-0035": 156070,
+          "10.14.2.41": 152389,
+          "192.168.61.51": 120242,
+          "USER-0010-0018.domain-0022.example.net": 105425,
+          "USER-0010-0010.domain-0022.example.net": 94033,
+          "USER-0010-0012.domain-0022.example.net": 88139,
+          "USER-0010-0001.domain-0022.example.net": 73918,
+          "172.31.221.16": 64352,
+          "10.232.175.9": 48523
+        }
+      },
+      "dst_host": {
+        "dtype": "str",
+        "null": 111728,
+        "empty_or_null": 1671207,
+        "unique": 11,
+        "top": {
+          "": 1559479,
+          "ORG-0475": 225482,
+          "IP-6CRED-3005503B": 156070,
+          "<NULL>": 111728,
+          "USER-0010-0025.domain-0022.example.net": 4090,
+          "100.64.2.3": 6,
+          "USER-0010-0026.domain-0022.example.net": 4,
+          "USER-0010-0027.domain-0022.example.net": 4,
+          "10.184.211.180": 2,
+          "USER-0010-0028.domain-0022.example.net": 2,
+          "10.207.79.45": 2,
+          "100.64.2.39": 2
+        }
+      },
+      "username": {
+        "dtype": "str",
+        "null": 111688,
+        "empty_or_null": 1417673,
+        "unique": 1421,
+        "top": {
+          "": 1305985,
+          "USER-1194": 117279,
+          "<NULL>": 111688,
+          "USER-1192": 94462,
+          "USER-1359": 82130,
+          "USER-1367": 49742,
+          "USER-1195": 41473,
+          "USER-1211": 32894,
+          "-": 21268,
+          "USER-1360": 9736,
+          "USER-1261": 8846,
+          "USER-1365": 7641
+        }
+      },
+      "message_sanitized": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 356315,
+        "unique": 716699,
+        "top": {
+          "": 356315,
+          "Jan  6 12:10:01 USER-0010-0001 ORG-0501[17CRED-302110]: (USER-0010-1221) CMD (/usr/lib64/ORG-0532 1 1)": 1898,
+          "Jan  6 12:15:01 USER-0010-0001 ORG-0501[1767609]: (USER-0001) CMD (if [ -f ORG-6976 ]; then ORG-6976 --monitor_USER-0010-4035r > /dev/null 2>&1 ; fi)": 1897,
+          "Jan  7 03:45:44 USER-0010-0001 filebeat: USER-9546-01-07T03:45:44.573-0600#011CRED-24059#011[logstash]#011logstash/async.go:280#011Failed to publish USER-0010-56507s caused by: USER-CRED-30678 is not connected": 1897,
+          "Jan 19 23:53:01 USER-0010-0001 ORG-0501[1978565]: (USER-0010-1221) CMD (/usr/lib64/sa/sa2 -A)": 1897,
+          "Jan  7 03:45:44 USER-0010-0001 filebeat: USER-9546-01-07T03:45:44.573-0600#011ORG-0706#011[publisher]#011USER-0010-55040line/retry.go:219#011retryer: send unwait signal to consumer": 1896,
+          "Jan  6 12:20:01 USER-0010-0001 ORG-0501[1CRED-CRED-2961558]: (USER-0001) CMD (if [ -f ORG-6976 ]; then ORG-6976 --monitor_USER-0010-4035r > /dev/null 2>&1 ; fi)": 1896,
+          "Jan  7 03:45:44 USER-0010-0001 filebeat: USER-9546-01-07T03:45:44.573-0600#011ORG-0706#011[publisher]#011USER-0010-55040line/retry.go:223#011  done": 1896,
+          "Jan 14 USER-1860 ORG-0495: Removed session 8072896.": 1896,
+          "Jan  7 03:45:45 ORG-0495: Removed session 7CRED-3CRED-240689.": 1896,
+          "Jan  7 03:51:07 USER-0010-0001 sshd[43386]: Received disconnect from 10.182.42.183 port 60852:11: Terminating connection": 1896,
+          "Dec 31 03:24:44 USER-0010-0001 sshd[55CRED-25196]: Accepted password for USER-0001 from 10.182.42.183 port 59962 ORG-0487": 1896
+        }
+      },
+      "product_name": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 359027,
+        "unique": 18,
+        "top": {
+          "Windows Active Directory": 810333,
+          "Windows Logs": 381552,
+          "": 359027,
+          "AWS Instance Backup": 340131,
+          "VMWare VCenter": 88311,
+          "ASA Firewall": 34079,
+          "Linux PAM": 17822,
+          "AWS VPC Security": 10620,
+          "Barracuda WAF": 4130,
+          "ManageEngine ADManager": 4082,
+          "Cisco Network Operating System": 3697,
+          "Symantec Endpoint Protection": 2361
+        }
+      },
+      "vendor_name": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 359027,
+        "unique": 13,
+        "top": {
+          "Microsoft": 1191885,
+          "": 359027,
+          "Amazon Web Services": 350751,
+          "VMWare": 88311,
+          "Cisco": 38113,
+          "Linux": 17822,
+          "Barracuda": 4204,
+          "ManageEngine": 4082,
+          "Symantec": 2361,
+          "WitFoo": 219,
+          "Apache": 36,
+          "Crowdstrike": 35
+        }
+      },
+      "label_binary": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 3,
+        "top": {
+          "benign": 1899723,
+          "malicious": 111728,
+          "suspicious": 45420
+        }
+      }
+    },
+    "cross_tabs": {
+      "month_label": {
+        "2022-06": {
+          "benign": 0,
+          "malicious": 7192,
+          "suspicious": 0
+        },
+        "2022-07": {
+          "benign": 0,
+          "malicious": 5816,
+          "suspicious": 0
+        },
+        "2022-08": {
+          "benign": 0,
+          "malicious": 10892,
+          "suspicious": 0
+        },
+        "2022-09": {
+          "benign": 0,
+          "malicious": 2766,
+          "suspicious": 0
+        },
+        "2022-10": {
+          "benign": 0,
+          "malicious": 2374,
+          "suspicious": 0
+        },
+        "2022-11": {
+          "benign": 0,
+          "malicious": 1084,
+          "suspicious": 0
+        },
+        "2022-12": {
+          "benign": 0,
+          "malicious": 548,
+          "suspicious": 0
+        },
+        "2023-01": {
+          "benign": 0,
+          "malicious": 1480,
+          "suspicious": 0
+        },
+        "2023-02": {
+          "benign": 0,
+          "malicious": 2524,
+          "suspicious": 0
+        },
+        "2023-03": {
+          "benign": 0,
+          "malicious": 1692,
+          "suspicious": 0
+        },
+        "2023-04": {
+          "benign": 0,
+          "malicious": 1160,
+          "suspicious": 0
+        },
+        "2023-05": {
+          "benign": 0,
+          "malicious": 3134,
+          "suspicious": 0
+        },
+        "2023-06": {
+          "benign": 0,
+          "malicious": 8400,
+          "suspicious": 0
+        },
+        "2023-07": {
+          "benign": 0,
+          "malicious": 6518,
+          "suspicious": 0
+        },
+        "2023-08": {
+          "benign": 0,
+          "malicious": 5844,
+          "suspicious": 0
+        },
+        "2023-09": {
+          "benign": 0,
+          "malicious": 10092,
+          "suspicious": 0
+        },
+        "2023-10": {
+          "benign": 0,
+          "malicious": 8788,
+          "suspicious": 0
+        },
+        "2023-11": {
+          "benign": 0,
+          "malicious": 4772,
+          "suspicious": 0
+        },
+        "2023-12": {
+          "benign": 0,
+          "malicious": 6726,
+          "suspicious": 0
+        },
+        "2024-01": {
+          "benign": 0,
+          "malicious": 1110,
+          "suspicious": 0
+        },
+        "2024-02": {
+          "benign": 0,
+          "malicious": 2190,
+          "suspicious": 0
+        },
+        "2024-03": {
+          "benign": 0,
+          "malicious": 6396,
+          "suspicious": 0
+        },
+        "2024-04": {
+          "benign": 0,
+          "malicious": 3860,
+          "suspicious": 0
+        },
+        "2024-05": {
+          "benign": 0,
+          "malicious": 2228,
+          "suspicious": 0
+        },
+        "2024-06": {
+          "benign": 0,
+          "malicious": 2884,
+          "suspicious": 0
+        },
+        "2024-07": {
+          "benign": 1899700,
+          "malicious": 1258,
+          "suspicious": 45420
+        },
+        "2024-08": {
+          "benign": 23,
+          "malicious": 0,
+          "suspicious": 0
+        }
+      },
+      "pipeline": {
+        "syslog": {
+          "benign": 1543385,
+          "malicious": 111728,
+          "suspicious": 45420,
+          "total": 1700533
+        },
+        "aws_cloudtrail": {
+          "benign": 340131,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 340131
+        },
+        "network_flows": {
+          "benign": 16184,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 16184
+        },
+        "precinct_api": {
+          "benign": 23,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 23
+        }
+      },
+      "vendor_name": {
+        "Microsoft": {
+          "benign": 1191412,
+          "malicious": 0,
+          "suspicious": 473,
+          "total": 1191885
+        },
+        "": {
+          "benign": 247299,
+          "malicious": 111728,
+          "suspicious": 0,
+          "total": 359027
+        },
+        "Amazon Web Services": {
+          "benign": 340131,
+          "malicious": 0,
+          "suspicious": 10620,
+          "total": 350751
+        },
+        "VMWare": {
+          "benign": 88311,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 88311
+        },
+        "Cisco": {
+          "benign": 4042,
+          "malicious": 0,
+          "suspicious": 34071,
+          "total": 38113
+        },
+        "Linux": {
+          "benign": 17822,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 17822
+        },
+        "Barracuda": {
+          "benign": 4202,
+          "malicious": 0,
+          "suspicious": 2,
+          "total": 4204
+        },
+        "ManageEngine": {
+          "benign": 4082,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4082
+        },
+        "Symantec": {
+          "benign": 2361,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2361
+        },
+        "WitFoo": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 219,
+          "total": 219
+        },
+        "Apache": {
+          "benign": 36,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 36
+        },
+        "Crowdstrike": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 35,
+          "total": 35
+        },
+        "SentinelOne": {
+          "benign": 25,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 25
+        }
+      },
+      "product_name": {
+        "Windows Active Directory": {
+          "benign": 809860,
+          "malicious": 0,
+          "suspicious": 473,
+          "total": 810333
+        },
+        "Windows Logs": {
+          "benign": 381552,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 381552
+        },
+        "": {
+          "benign": 247299,
+          "malicious": 111728,
+          "suspicious": 0,
+          "total": 359027
+        },
+        "AWS Instance Backup": {
+          "benign": 340131,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 340131
+        },
+        "VMWare VCenter": {
+          "benign": 88311,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 88311
+        },
+        "ASA Firewall": {
+          "benign": 20,
+          "malicious": 0,
+          "suspicious": 34059,
+          "total": 34079
+        },
+        "Linux PAM": {
+          "benign": 17822,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 17822
+        },
+        "AWS VPC Security": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 10620,
+          "total": 10620
+        },
+        "Barracuda WAF": {
+          "benign": 4128,
+          "malicious": 0,
+          "suspicious": 2,
+          "total": 4130
+        },
+        "ManageEngine ADManager": {
+          "benign": 4082,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4082
+        },
+        "Cisco Network Operating System": {
+          "benign": 3697,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3697
+        },
+        "Symantec Endpoint Protection": {
+          "benign": 2361,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2361
+        },
+        "Duo": {
+          "benign": 325,
+          "malicious": 0,
+          "suspicious": 12,
+          "total": 337
+        },
+        "Precinct": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 219,
+          "total": 219
+        },
+        "Barracuda ESS": {
+          "benign": 74,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 74
+        },
+        "Apache Web Server": {
+          "benign": 36,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 36
+        },
+        "Falcon": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 35,
+          "total": 35
+        },
+        "SentinelOne": {
+          "benign": 25,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 25
+        }
+      },
+      "src_host": {
+        "HOST-0026": {
+          "benign": 340131,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 340131
+        },
+        "HOST-0032": {
+          "benign": 225482,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 225482
+        },
+        "192.168.150.162": {
+          "benign": 161910,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 161910
+        },
+        "HOST-0035": {
+          "benign": 156070,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 156070
+        },
+        "10.14.2.41": {
+          "benign": 152389,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 152389
+        },
+        "192.168.61.51": {
+          "benign": 120242,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 120242
+        },
+        "USER-0010-0018.domain-0022.example.net": {
+          "benign": 105394,
+          "malicious": 0,
+          "suspicious": 31,
+          "total": 105425
+        },
+        "USER-0010-0010.domain-0022.example.net": {
+          "benign": 93979,
+          "malicious": 0,
+          "suspicious": 54,
+          "total": 94033
+        },
+        "USER-0010-0012.domain-0022.example.net": {
+          "benign": 87755,
+          "malicious": 0,
+          "suspicious": 384,
+          "total": 88139
+        },
+        "USER-0010-0001.domain-0022.example.net": {
+          "benign": 73918,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 73918
+        },
+        "172.31.221.16": {
+          "benign": 0,
+          "malicious": 64352,
+          "suspicious": 0,
+          "total": 64352
+        },
+        "10.232.175.9": {
+          "benign": 20,
+          "malicious": 14444,
+          "suspicious": 34059,
+          "total": 48523
+        },
+        "USER-0010-0009.domain-0022.example.net": {
+          "benign": 35986,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 35986
+        },
+        "192.168.171.91": {
+          "benign": 0,
+          "malicious": 32856,
+          "suspicious": 0,
+          "total": 32856
+        },
+        "192.168.103.85": {
+          "benign": 27332,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 27332
+        },
+        "USER-0010-0007.domain-0022.example.net": {
+          "benign": 22574,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 22574
+        },
+        "USER-0010-0014.domain-0022.example.net": {
+          "benign": 18775,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 18775
+        },
+        "USER-0010-0016.domain-0022.example.net": {
+          "benign": 18311,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 18311
+        },
+        "10.251.238.34": {
+          "benign": 16184,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 16184
+        },
+        "USER-0010-0017.domain-0022.example.net": {
+          "benign": 15630,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 15630
+        },
+        "192.168.63.135": {
+          "benign": 15040,
+          "malicious": 0,
+          "suspicious": 4,
+          "total": 15044
+        },
+        "192.168.115.129": {
+          "benign": 13806,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 13806
+        },
+        "USER-0010-0019.domain-0022.example.net": {
+          "benign": 13780,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 13780
+        },
+        "HOST-0029": {
+          "benign": 13560,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 13560
+        },
+        "HOST-0034": {
+          "benign": 12776,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 12776
+        },
+        "USER-0010-0011.domain-0022.example.net": {
+          "benign": 12630,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 12630
+        },
+        "192.168.31.151": {
+          "benign": 12317,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 12317
+        },
+        "10.41.162.223": {
+          "benign": 10888,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 10888
+        },
+        "USER-0010-0008.domain-0022.example.net": {
+          "benign": 10678,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 10678
+        },
+        "USER-0010-0015.domain-0022.example.net": {
+          "benign": 10670,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 10670
+        },
+        "HOST-0031": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 10620,
+          "total": 10620
+        },
+        "USER-0010-0013.domain-0022.example.net": {
+          "benign": 10602,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 10602
+        },
+        "HOST-0027": {
+          "benign": 7254,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 7254
+        },
+        "HOST-0037": {
+          "benign": 6992,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6992
+        },
+        "HOST-0033": {
+          "benign": 6350,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6350
+        },
+        "192.168.89.159": {
+          "benign": 6197,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6197
+        },
+        "10.149.108.24": {
+          "benign": 4128,
+          "malicious": 50,
+          "suspicious": 2,
+          "total": 4180
+        },
+        "192.168.38.45": {
+          "benign": 4082,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4082
+        },
+        "HOST-0036": {
+          "benign": 3751,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3751
+        },
+        "192.168.91.252": {
+          "benign": 3429,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3429
+        },
+        "192.168.120.188": {
+          "benign": 3259,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3259
+        },
+        "192.168.173.93": {
+          "benign": 3095,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3095
+        },
+        "192.168.198.71": {
+          "benign": 3069,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3069
+        },
+        "192.168.254.149": {
+          "benign": 3057,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3057
+        },
+        "192.168.165.75": {
+          "benign": 3015,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 3015
+        },
+        "192.168.190.61": {
+          "benign": 2826,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2826
+        },
+        "10.217.84.101": {
+          "benign": 2361,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2361
+        },
+        "192.168.56.73": {
+          "benign": 1356,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1356
+        },
+        "HOST-0028": {
+          "benign": 1347,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1347
+        },
+        "192.168.247.200": {
+          "benign": 1217,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1217
+        },
+        "10.230.152.3": {
+          "benign": 1213,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1213
+        },
+        "192.168.88.100": {
+          "benign": 1181,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1181
+        },
+        "192.168.147.29": {
+          "benign": 1056,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1056
+        },
+        "10.190.96.179": {
+          "benign": 868,
+          "malicious": 2,
+          "suspicious": 0,
+          "total": 870
+        },
+        "10.154.28.225": {
+          "benign": 870,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 870
+        },
+        "10.221.203.254": {
+          "benign": 854,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 854
+        },
+        "10.27.23.125": {
+          "benign": 795,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 795
+        },
+        "USER-0010-0003.domain-0022.example.net": {
+          "benign": 761,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 761
+        },
+        "192.168.223.95": {
+          "benign": 744,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 744
+        },
+        "192.168.102.173": {
+          "benign": 732,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 732
+        }
+      },
+      "dst_host": {
+        "": {
+          "benign": 1514059,
+          "malicious": 0,
+          "suspicious": 45420,
+          "total": 1559479
+        },
+        "ORG-0475": {
+          "benign": 225482,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 225482
+        },
+        "IP-6CRED-3005503B": {
+          "benign": 156070,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 156070
+        },
+        "<NULL>": {
+          "benign": 0,
+          "malicious": 111728,
+          "suspicious": 0,
+          "total": 111728
+        },
+        "USER-0010-0025.domain-0022.example.net": {
+          "benign": 4090,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4090
+        },
+        "100.64.2.3": {
+          "benign": 6,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6
+        },
+        "USER-0010-0027.domain-0022.example.net": {
+          "benign": 4,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4
+        },
+        "USER-0010-0026.domain-0022.example.net": {
+          "benign": 4,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 4
+        },
+        "10.207.79.45": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        },
+        "10.184.211.180": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        },
+        "100.64.2.39": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        },
+        "USER-0010-0028.domain-0022.example.net": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        }
+      },
+      "message_empty_label": {
+        "false": {
+          "benign": 1543408,
+          "malicious": 111728,
+          "suspicious": 45420
+        },
+        "true": {
+          "benign": 356315,
+          "malicious": 0,
+          "suspicious": 0
+        }
+      }
+    },
+    "samples": {
+      "benign": [
+        {
+          "event_id": "EVT-0001492340",
+          "timestamp": 1721994326.441734,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-0035",
+          "dst_host": "IP-6CRED-3005503B",
+          "username": "USER-1389",
+          "message_sanitized": "<USER-0010-56507 xmlns='ORG-CRED-31206://USER-0010-17321.domain-0022.example.net/win/2004/08/USER-0010-56507s/USER-0010-56507'><USER-0086><Provider Name='USER-8162-ORG-0407-Security-Auditing' ORG-0515='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0010-56507ID>4776</USER-0010-56507ID><Version>0</Version><Level>0</Level><Task>CRED-2CRED-30391</Task><Opcode>0</Opcode><Keywords>0x80CRED-27800000000050</Keywords><ORG-1526Created USER-0086ORG-1526='USER-9546-07-26T11:35:47.07711CRED-25726Z'/><USER-0010-56507RecordID>CRED-29677CRED-239492</USER-0010-56507RecordID><Correlation/><Execution ProcessID='928' ThreadID='7100'/><Channel>Security</Channel><USER-3828>USER-0010-0022.USER-24351-0022.exampleUSER-8710</USER-3828><Security/></USER-0086><USER-0010-56507USER-0010-54061><USER-0010-54061 Name='USER-0010-4214Name'>USER-8162_AUTHENTICATION_USER-0010-4214_V1_0</USER-0010-54061><USER-0010-54061 Name='USER-0010-4999UserName'>USER-1389</USER-0010-54061><USER-0010-54061 Name='Workstation'>USER-0010-0676</USER-0010-54061><USER-0010-54061 Name='Status'>0x0</USER-0010-54061></USER-0010-56507USER-0010-54061><RenderingORG-0706 ORG-4806>The USER-3828 atUSER-0010-1591ted to valiORG-11677 the cUSER-CRED-30818ntials for an account.\r\n\r\nAuthentication USER-0010-4214:\tUSER-8162_AUTHENTICATION_USER-0010-4214_V1_0\r\nORG-0106 Account:\tUSER-1389\r\nUSER-0010-55454 Workstation:\tUSER-0010-0676\r\nCRED-24059 Code:\t0x0</CRED-23501><Level>ORG-0706rmation</Level><Task>CUSER-CRED-30818ntial Validation</Task><Opcode>ORG-0706</Opcode><Channel>Security</Channel><Provider>USER-8162 ORG-0407 security auditing.</Provider><Keywords><Keyword>Audit ORG-0893</Keyword></Keywords></RenderingORG-0706></USER-0010-56507>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001144148",
+          "timestamp": 1721993896.2353733,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "USER-0010-0008.domain-0022.example.net",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:38:07.316Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"1944c580-06d8-4390-a7cb-86ba1b035035\",\"id\":\"2a9c3fad-c33e-4316-92c6-e07c9b6c59a1\",\"name\":\"USER-0010-0197\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"Filtering USER-0010-3830 Connection\",\"code\":\"5156\",\"created\":\"USER-9546-07-26T11:38:09.225Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0008.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"The ORG-0407 Filtering USER-0010-3830 has permitted a connection.\\n\\nApplication ORG-0556 ID:\\t\\tCRED-2CRED-31036\\n\\tApplication Name:\\t\\\\USER-0010-1132\\\\USER-0010-1133\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3405\\USER-1430\\nORG-10379 USER-1851 Address:\\t\\t192.168.120.64\\n\\USER-7625 ORG-CRED-25694 ORG-12190 ORG-4734 USER-0010-54535:\\t\\t9\\n\\nFilter ORG-0706rmation:\\n\\tFilter USER-1839 ID:\\t70264\\n\\tLayer USER-3836/Accept\\n\\tLayer ORG-1518 ID:\\t44\\n\\tORG-4683 User ID:\\t\\tS-1-0-0\\n\\tORG-4683 USER-0010-1218 ID:\\tS-1-0-0\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0008.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0008.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"Application\":\"\\\\USER-0010-1132\\\\USER-0010-1133\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"DestAddress\":\"100.64.40.105\",\"DestPort\":\"5353\",\"Direction\":\"%%CRED-31876\",\"FilterOrigin\":\"Unknown\",\"FilterRTID\":\"70264\",\"ORG-9508USER-0010-54535\":\"9\",\"LayerName\":\"%%CRED-26651\",\"LayerRTID\":\"44\",\"ProcessID\":\"CRED-2CRED-31036\",\"Protocol\":\"17\",\"ORG-4683USER-0010-1218ID\":\"S-1-0-0\",\"ORG-4683UserID\":\"S-1-0-0\",\"USER-0010-55454Address\":\"192.168.186.18\",\"USER-0010-55454Port\":\"5353\"},\"USER-0010-56507_id\":\"5156\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":11940}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":CRED-253CRED-2573241,\"task\":\"Filtering USER-0010-3830 Connection\",\"version\":1}}",
+          "product_name": "Windows Active Directory",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001673700",
+          "timestamp": 1721994640.4893377,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "USER-0010-0009.domain-0022.example.net",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:50:32.206Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"260ede45-055c-4971-bf37-326b2746e6e0\",\"id\":\"e1107597-7f54-462a-9b3b-bb9b84ed48be\",\"name\":\"USER-0010-0199\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"Filtering USER-0010-3830 Connection\",\"code\":\"5156\",\"created\":\"USER-9546-07-26T11:50:33.634Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0009.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"The ORG-0407 Filtering USER-0010-3830 has permitted a connection.\\n\\nApplication ORG-0556 ID:\\t\\t4188\\n\\tApplication Name:\\t\\\\USER-0010-1132\\\\USER-0010-1149\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3405\\USER-1430\\nORG-10379 USER-1851 Address:\\t\\t192.168.31.174\\n\\USER-7625 ORG-CRED-25694 ORG-12190 Port:\\t\\t5353\\n\\tProtocol:\\t\\t17\\n\\nFilter ORG-0706rmation:\\n\\tFilter ORG-1518 ID:\\t88088\\n\\tLayer USER-3836/Accept\\n\\tLayer ORG-1518 ORG-9047-0009.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0009.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"Application\":\"\\\\USER-0010-1132\\\\USER-0010-1149\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"DestAddress\":\"100.64.40.105\",\"DestPort\":\"5353\",\"Direction\":\"%%CRED-31876\",\"FilterRTID\":\"88088\",\"LayerName\":\"%%CRED-26651\",\"LayerRTID\":\"44\",\"ProcessID\":\"4188\",\"Protocol\":\"17\",\"ORG-4683USER-0010-1218ID\":\"S-1-0-0\",\"ORG-4683UserID\":\"S-1-0-0\",\"USER-0010-55454Address\":\"192.168.235.186\",\"USER-0010-55454Port\":\"5353\"},\"USER-0010-56507_id\":\"5156\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":CRED-CRED-339766}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":2CRED-249CRED-2408549,\"task\":\"Filtering USER-0010-3830 Connection\",\"version\":1}}",
+          "product_name": "Windows Active Directory",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000847849",
+          "timestamp": 1721993485.425501,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "USER-0010-0012.domain-0022.example.net",
+          "dst_host": "",
+          "username": "USER-0954",
+          "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:30:29.786Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"CRED-24CRED-25582381-3d10-4395-bc1c-5cdb52ecb35e\",\"id\":\"12e13a9a-252a-493f-9c35-fa4d61abd0bc\",\"name\":\"USER-0010-0206\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0548\",\"code\":\"4768\",\"created\":\"USER-9546-07-26T11:30:30.494Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"A ORG-0745ntication ticket (TGT) was USER-9484ed.\\n\\nAccount ORG-0706rmation:\\n\\tAccount Name:\\t\\tUSER-0954\\n\\tSupplied Realm Name:\\tMDS-ORG-0016\\USER-1430\\tUser ID:\\t\\t\\tS-1-5-21-1000000000-2000000000-3000000000-3111\\n\\USER-9057 ORG-2499 Name:\\t\\tUSER-5726\\n\\tORG-0090 ID:\\t\\tS-1-5-21-1000000000-2000000000-3000000000-0007\\n\\nORG-10379 ORG-0752 Address:\\t\\t::1\\n\\tUSER-CRED-30678 Port:\\t\\t0ORG-0742 ORG-0706rmation:\\n\\tTicket Options:\\t\\t0x40CRED-CRED-2971010\\n\\tResult Code:\\t\\t0x0\\n\\tTicket Encryption Type:\\t0x12\\n\\tPre-Authentication Type:\\t2\\n\\nCertificate ORG-0706rmation:\\n\\tCertificate Issuer Name:\\t\\t\\n\\tCertificate ORG-0553 ORG-0706rmation is only provided if a certificate was used for pre-authentication.\\n\\nPre-authentication types, ticket options, encryption types and result codes are defined in RFC CRED-CRED-33162.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"IpAddress\":\"::1\",\"IpPort\":\"0\",\"PreAuthType\":\"2\",\"ORG-0090Name\":\"USER-5726\",\"USER-5935id\":\"S-1-5-21-1000000000-2000000000-3000000000-0007\",\"Status\":\"0x0\",\"USER-0010-4999USER-24351Name\":\"ORG-0015\",\"USER-0010-4999Sid\":\"S-1-5-21-1000000000-2000000000-3000000000-3111\",\"USER-0010-4999UserName\":\"USER-0954\",\"TicketEncryptionType\":\"0x12\",\"TicketOptions\":\"0x40CRED-CRED-2971010\"},\"USER-0010-56507_id\":\"4768\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":1036,\"thread\":{\"id\":CRED-CRED-29224}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":6067708237,\"task\":\"ORG-0548\"}}",
+          "product_name": "Windows Active Directory",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000717167",
+          "timestamp": 1721993334.3428154,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "100.64.0.196",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-0026",
+          "dst_host": "",
+          "username": "USER-1196",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001205509",
+          "timestamp": 1721994011.2480388,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-0035",
+          "dst_host": "IP-6CRED-3005503B",
+          "username": "-",
+          "message_sanitized": "<USER-0010-56507 xmlns='ORG-CRED-31206://USER-0010-17321.domain-0022.example.net/win/2004/08/USER-0010-56507s/USER-0010-56507'><USER-0086><Provider Name='USER-8162-ORG-0407-Security-Auditing' ORG-0515='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0010-56507ID>CRED-24911</USER-0010-56507ID><Version>2</Version><Level>0</Level><Task>13312</Task><Opcode>0</Opcode><Keywords>0x80CRED-27800000000050</Keywords><ORG-1526Created USER-0086ORG-1526='USER-9546-07-26T11:36:01.CRED-2CRED-2569392300Z'/><USER-0010-56507RecordID>CRED-29677CRED-29CRED-30756</USER-0010-56507RecordID><Correlation/><Execution ProcessID='4' ThreadID='5172'/><Channel>Security</Channel><USER-3828>USER-0010-0022.USER-24351-0022.exampleUSER-8710</USER-3828><Security/></USER-0086><USER-0010-56507USER-0010-54061><USER-0010-54061 Name='SubjectCRED-0339id'>S-1-5-18</USER-0010-54061><USER-0010-54061 Name='SubjectUserName'>IP-6CRED-CRED-29875503B$</USER-0010-54061><USER-0010-54061 Name='SubjectUSER-24351Name'>ORG-0443</USER-0010-54061><USER-0010-54061 Name='SubjectORG-0106Id'>0x3e7</USER-0010-54061><USER-0010-54061 Name='NewProcessId'>0x1938</USER-0010-54061><USER-0010-54061 Name='NewProcessName'>C:\\ORG-0407\\USER-1742\\USER-0010-1211\\USER-0010-1212\\USER-0010-1213</USER-0010-54061><USER-0010-54061 Name='TokenElevationType'>%%1936</USER-0010-54061><USER-0010-54061 Name='ProcessId'>0x428</USER-0010-54061><USER-0010-54061 USER-3780 Name='USER-0010-4999UserName'>-</USER-0010-54061><USER-0010-54061 Name='USER-0010-4999USER-24351Name'>-</USER-0010-54061><USER-0010-54061 Name='USER-0010-4999ORG-0106Id'>0x0</USER-0010-54061><USER-0010-54061 Name='ParentProcessName'>C:\\ORG-0407\\USER-1742\\USER-0010-1118</USER-0010-54061><USER-0010-54061 Name='MandatoryLUSER-CRED-25456'>S-1-16-16384</USER-0010-54061></USER-0010-56507USER-0010-54061><RenderingORG-0706 ORG-4806>A new process has been created.\r\n\r\nCreator Subject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tIP-6CRED-CRED-29875503B$\r\n\tAccount USER-24351:\t\tORG-0443\r\n\tORG-0106 ID:\t\t0x3E7\r\n\r\nUSER-0010-4999 Subject:\r\n\tSecurity ID:\t\tS-1-0-0\r\n\tAccount Name:\t\t-\r\n\tAccount USER-24351:\t\t-\r\n\tORG-0106 ID:\t\t0x0\r\n\r\nProcess ORG-0706rmation:\r\n\tNew Process ID:\t\t0x1938\r\n\tNew Process Name:\tC:\\ORG-0407\\USER-1742\\USER-0010-1211\\USER-0010-1212\\USER-0010-1213\r\n\tORG-CRED-29692\t%%1936\r\n\tMandatory LUSER-CRED-25456:\t\tS-1-16-16384\r\n\tCreator Process ID:\t0x428\r\n\tCreator Process Name:\tC:\\ORG-0407\\USER-1742\\USER-0010-1118\r\n\tORG-0587\t\r\n\r\nUSER-8067 indicates the type of token that was assigned to the new process in accordance with USER-6537 USER-0010-56492.\r\n\r\nType 1 is a full token with no privileges removed or groups ORG-4042d.  A full token is only used if USER-6537 is ORG-4042d or if the user is the built-in USER-0079 account or a ORG-0090 account.\r\n\r\nType 2 is an elevated token with no privileges removed or groups ORG-4042d.  An elevated token is used when USER-6537 is enabled and the user chooses to start the USER-0010-1129 using Run as USER-0079.  An elevated token is also used when an application is configured to always require ORG-3995 privilege or to always require maximum privilege, and the user is a member of the USER-0036 group.\r\n\r\nType 3 is a ORG-9886 token with ORG-3995 privileges removed and ORG-3995 groups ORG-4042d.  The ORG-9886 token is used when USER-6537 is enabled, the application does not require ORG-3995 privilege, and the user does not choose to start the USER-0010-1129 using Run as USER-0079.</CRED-23501><Level>ORG-0706rmation</Level><Task>ORG-0613</Task><Opcode>ORG-0706</Opcode><Channel>Security</Channel><Provider>USER-8162 ORG-0407 security auditing.</Provider><Keywords><Keyword>Audit ORG-0893</Keyword></Keywords></RenderingORG-0706></USER-0010-56507>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000503576",
+          "timestamp": 1721992976.198886,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "100.64.0.207",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-0026",
+          "dst_host": "",
+          "username": "USER-1192",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001211932",
+          "timestamp": 1721994019.4542348,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-0035",
+          "dst_host": "IP-6CRED-3005503B",
+          "username": "",
+          "message_sanitized": "<USER-0010-56507 xmlns='ORG-CRED-31206://USER-0010-17321.domain-0022.example.net/win/2004/08/USER-0010-56507s/USER-0010-56507'><USER-0086><Provider Name='USER-8162-ORG-0407-Security-Auditing' ORG-0515='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0010-56507ID>CRED-30095</USER-0010-56507ID><Version>0</Version><Level>0</Level><Task>CRED-CRED-33445</Task><Opcode>0</Opcode><Keywords>0x80CRED-27800000000050</Keywords><ORG-1526Created USER-0086ORG-1526='USER-9546-07-26T11:38:09.19CRED-23CRED-3041500Z'/><USER-0010-56507RecordID>CRED-296772CRED-CRED-239842</USER-0010-56507RecordID><Correlation/><Execution ProcessID='928' ThreadID='452'/><Channel>Security</Channel><USER-3828>USER-0010-0022.USER-24351-0022.exampleUSER-8710</USER-3828><Security/></USER-0086><USER-0010-56507USER-0010-54061><USER-0010-54061 Name='SubjectCRED-0339id'>S-1-5-21-1000000000-2000000000-3000000000-CRED-30964-CRED-30001</USER-0010-54061><USER-0010-54061 Name='SubjectUserName'>IP-6CRED-CRED-297851102$</USER-0010-54061><USER-0010-54061 Name='SubjectUSER-24351Name'>ORG-0443</USER-0010-54061><USER-0010-54061 Name='SubjectORG-0106Id'>0x17e40c63</USER-0010-54061><USER-0010-54061 Name='ORG-0198Server'>DS</USER-0010-54061><USER-0010-54061 Name='ORG-0198Type'>%{1CRED-CRED-298078a5b-6da0-11d0-afd3-00c04fd930c9}</USER-0010-54061><USER-0010-54061 Name='ORG-0198Name'>%{b0abb571-59ea-4a20-bf51-6a2f7b9dc1c5}</USER-0010-54061><USER-0010-54061 Name='ORG-1583Type'>ORG-0198 ORG-1738</USER-0010-54061><USER-0010-54061 USER-1852 Name='ORG-1738Mask'>0x100</USER-0010-54061><USER-0010-54061 Name='Properties'>%%CRED-CRED-239797\r\n\t\t{1131f6aa-9c07-11d1-f79f-00c04fc2dcd2}\r\n\t{1CRED-CRED-298078a5b-6da0-11d0-afd3-00c04fd930c9}\r\n</USER-0010-54061><USER-0010-54061 Name='AdditionalORG-0706'>-</USER-0010-54061><USER-0010-54061 Name='AdditionalORG-07062'></USER-0010-54061></USER-0010-56507USER-0010-54061><RenderingORG-0706 ORG-4806>An ORG-1583 was performed on an ORG-0198.\r\n\r\nSubject :\r\n\tSecurity ID:\t\tS-1-5-21-1000000000-2000000000-3000000000-CRED-30964-CRED-30001\r\n\tAccount Name:\t\tIP-6CRED-CRED-297851102$\r\n\tAccount USER-24351:\t\tORG-0443\r\n\tORG-0106 ID:\t\t0x17E40C63\r\n\r\nORG-0198:\r\n\tORG-0198 Server:\t\tDS\r\n\tORG-0198 Type:\t\t%{1CRED-CRED-298078a5b-6da0-11d0-afd3-00c04fd930c9}\r\n\tORG-0198 Name:\t\t%{b0abb571-59ea-4a20-bf51-6a2f7b9dc1c5}\r\n\tHandle ID:\t\t0x0\r\n\r\nORG-1583:\r\n\tORG-1583 Type:\t\tORG-0198 ORG-1738\r\n\tORG-1491:\t\tORG-0481:\t\t0x100\r\n\tProperties:\t\tORG-0482\r\n\t\t{1131f6aa-9c07-11d1-f79f-00c04fc2dcd2}\r\n\t{1CRED-CRED-298078a5b-6da0-11d0-afd3-00c04fd930c9}\r\n\r\n\r\nAdditional ORG-0706rmation:\r\n\tParameter 1:\t\t-\r\n\tParameter 2:\t\t</CRED-23501><Level>ORG-0706rmation</Level><Task>ORG-0469</Task><Opcode>ORG-0706</Opcode><Channel>Security</Channel><Provider>USER-8162 ORG-0407 security auditing.</Provider><Keywords><Keyword>Audit ORG-0893</Keyword></Keywords></RenderingORG-0706></USER-0010-56507>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000986742",
+          "timestamp": 1721993632.1024745,
+          "pipeline": "syslog",
+          "src_ip": "10.248.113.130",
+          "dst_ip": "",
+          "src_port": "61104",
+          "src_host": "USER-0010-0001.domain-0022.example.net",
+          "dst_host": "",
+          "username": "USER-0001",
+          "message_sanitized": "Jan 21 03:31:11 USER-0010-0001 sshd[CRED-CRED-238341364]: Accepted password for USER-0001 from 10.182.42.183 port 61104 ORG-0487",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001812956",
+          "timestamp": 1721994798.4442487,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "USER-0010-0001.domain-0022.example.net",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "Dec 30 20:00:01 USER-0010-0001 ORG-0501[3404690]: (USER-0010-1221) CMD (/usr/lib64/ORG-0532 1 1)",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "benign"
+        }
+      ],
+      "malicious": [
+        {
+          "event_id": "EVT-0000015979",
+          "timestamp": 1660063917.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.11.97",
+          "dst_ip": "100.64.31.150",
+          "src_port": "58694",
+          "src_host": "192.168.171.91",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<134>Original Address=100.64.31.177 1 CRED-29709CRED-2571674.2447CRED-252014 M36_MX67C_ORG-4068 flows src=100.64.11.97 dst=100.64.31.150 protocol=tcp sport=58694 dport=5699 pattern: 1 all",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000050441",
+          "timestamp": 1688960026.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.20.230",
+          "dst_ip": "172.27.35.73",
+          "src_port": "57810",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Jul 09 USER-9564 21:56:51: USER-0010-0324 Deny tcp src outside:100.64.98.77/CRED-250460 dst DMZ:172.22.230.18/1812 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000009664",
+          "timestamp": 1657437829.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.31.193",
+          "dst_ip": "100.64.30.66",
+          "src_port": "6198",
+          "src_host": "192.168.171.91",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<134>Original Address=192.168.231.251 1 16CRED-250401383.316151088 ORG-0891_MX400_1 flows src=100.64.31.193 dst=100.64.30.66 protocol=tcp sport=6198 dport=25 pattern: 1 dst 100.64.30.66",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000086849",
+          "timestamp": 1702397308.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.6.41",
+          "dst_ip": "172.19.155.85",
+          "src_port": "48473",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Dec 12 USER-9564 09:57:20: USER-0010-0324 Deny tcp src outside:100.64.69.39/CRED-249373 dst DMZ:172.22.182.116/3212 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000053416",
+          "timestamp": 1690008840.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.14.181",
+          "dst_ip": "172.16.249.139",
+          "src_port": "65520",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Jul 22 USER-9564 01:44:23: USER-0010-0324 Deny tcp src outside:100.64.86.18/65520 dst DMZ:172.29.161.76/23 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000089312",
+          "timestamp": 1703210975.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.1.212",
+          "dst_ip": "10.116.82.103",
+          "src_port": "50679",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Dec 21 USER-9564 19:37:22: USER-0010-0324 Deny tcp src outside:100.64.59.44/50679 dst inside:10.246.7.146/CRED-30996 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000104219",
+          "timestamp": 1713794400.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.23.70",
+          "dst_ip": "172.24.66.139",
+          "src_port": "47354",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Apr 22 USER-9546 08:25:17: USER-0010-0324 Deny tcp src outside:100.64.102.245/47354 dst DMZ:172.30.151.160/8728 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000056035",
+          "timestamp": 1690970293.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.19.24",
+          "dst_ip": "172.30.1.3",
+          "src_port": "51186",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Aug 02 USER-9564 04:27:35: USER-0010-0324 Deny tcp src outside:100.64.94.183/51186 dst DMZ:172.27.43.141/3390 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000001541",
+          "timestamp": 1655205842.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.30.121",
+          "dst_ip": "100.64.30.66",
+          "src_port": "36253",
+          "src_host": "192.168.171.91",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<134>Original Address=192.168.231.251 1 CRED-3224517975.20CRED-3138550 ORG-0891_MX400_1 flows src=100.64.30.121 dst=100.64.30.66 protocol=tcp sport=3CRED-25105 dport=25 pattern: 1 dst 100.64.30.66",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0000062598",
+          "timestamp": 1693993098.0,
+          "pipeline": "syslog",
+          "src_ip": "100.64.12.104",
+          "dst_ip": "172.28.22.161",
+          "src_port": "35312",
+          "src_host": "172.31.221.16",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<180>Sep 06 USER-9564 04:37:37: USER-0010-0324 Deny tcp src outside:100.64.81.129/CRED-299432 dst DMZ:172.21.92.237/5555 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        }
+      ],
+      "suspicious": [
+        {
+          "event_id": "EVT-0000337495",
+          "timestamp": 1721992605.910895,
+          "pipeline": "syslog",
+          "src_ip": "100.64.1.65",
+          "dst_ip": "10.221.82.8",
+          "src_port": "56450",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:05:59: USER-0010-0324 Deny tcp src outside:100.64.56.57/56450 dst dmz-1:10.160.146.178/7050 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0000930076",
+          "timestamp": 1721993571.9437425,
+          "pipeline": "syslog",
+          "src_ip": "10.160.95.249",
+          "dst_ip": "198.51.100.98",
+          "src_port": "54614",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:22:05: USER-0010-0324 Deny udp src dmz-2:10.201.205.42/54614 dst outside:100.64.54.208/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001797412",
+          "timestamp": 1721994782.888894,
+          "pipeline": "syslog",
+          "src_ip": "10.62.201.194",
+          "dst_ip": "198.51.100.98",
+          "src_port": "53716",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:42:17: USER-0010-0324 Deny udp src dmz-2:10.33.190.135/53716 dst outside:100.64.54.208/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001729091",
+          "timestamp": 1721994713.4307733,
+          "pipeline": "syslog",
+          "src_ip": "100.64.2.30",
+          "dst_ip": "10.184.211.180",
+          "src_port": "54706",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:41:11: USER-0010-0324 Deny udp src outside:100.64.60.170/5CRED-2CRED-24947 dst dmz-1:10.84.114.178/1813 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001816274",
+          "timestamp": 1721994802.141884,
+          "pipeline": "syslog",
+          "src_ip": "10.180.207.153",
+          "dst_ip": "100.64.1.7",
+          "src_port": "39208",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:42:39: USER-0010-0324 Deny udp src dmz-2:10.202.118.127/3CRED-CRED-29956 dst outside:100.64.54.228/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0000504041",
+          "timestamp": 1721992976.9167633,
+          "pipeline": "syslog",
+          "src_ip": "10.142.168.40",
+          "dst_ip": "100.64.1.8",
+          "src_port": "40234",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:12:15: USER-0010-0324 Deny udp src dmz-2:10.217.127.79/40234 dst outside:100.64.54.233/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0000141651",
+          "timestamp": 1721992274.4123783,
+          "pipeline": "syslog",
+          "src_ip": "10.106.83.171",
+          "dst_ip": "100.64.1.7",
+          "src_port": "54400",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:00:26: USER-0010-0324 Deny udp src dmz-2:10.23.95.33/5CRED-CRED-297851 dst outside:100.64.54.228/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001738537",
+          "timestamp": 1721994723.1331108,
+          "pipeline": "syslog",
+          "src_ip": "100.64.2.30",
+          "dst_ip": "10.221.82.8",
+          "src_port": "54706",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:41:19: USER-0010-0324 Deny tcp src outside:100.64.60.170/5CRED-2CRED-24947 dst dmz-1:10.160.146.178/1311 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001688339",
+          "timestamp": 1721994659.2256892,
+          "pipeline": "syslog",
+          "src_ip": "10.247.160.227",
+          "dst_ip": "198.51.100.98",
+          "src_port": "60406",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:40:16: USER-0010-0324 Deny udp src dmz-2:10.202.238.40/60406 dst outside:100.64.54.208/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0000301663",
+          "timestamp": 1721992527.747808,
+          "pipeline": "syslog",
+          "src_ip": "10.220.152.167",
+          "dst_ip": "172.25.116.1",
+          "src_port": "56405",
+          "src_host": "10.232.175.9",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-9546 06:04:39: USER-0010-0324 Deny udp src dmz-2:10.1.85.177/56405 dst dmz-1:172.25.112.208/53 by ORG-1738-group \"USER-6542\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        }
+      ]
+    },
+    "time": {
+      "min": "2022-06-13 07:32:15+00:00",
+      "max": "2024-08-22 20:11:27.973000288+00:00",
+      "unique": 1957043,
+      "invalid": 0,
+      "decreasing_adjacent": 0,
+      "months": {
+        "2024-07": 1946378,
+        "2022-08": 10892,
+        "2023-09": 10092,
+        "2023-10": 8788,
+        "2023-06": 8400,
+        "2022-06": 7192,
+        "2023-12": 6726,
+        "2023-07": 6518,
+        "2024-03": 6396,
+        "2023-08": 5844,
+        "2022-07": 5816,
+        "2023-11": 4772,
+        "2024-04": 3860,
+        "2023-05": 3134,
+        "2024-06": 2884,
+        "2022-09": 2766,
+        "2023-02": 2524,
+        "2022-10": 2374,
+        "2024-05": 2228,
+        "2024-02": 2190,
+        "2023-03": 1692,
+        "2023-01": 1480,
+        "2023-04": 1160,
+        "2024-01": 1110,
+        "2022-11": 1084,
+        "2022-12": 548,
+        "2024-08": 23
+      }
+    },
+    "message_length": {
+      "count": 2056871.0,
+      "mean": 1549.588866778714,
+      "std": 1519.8539645279352,
+      "min": 0.0,
+      "50%": 1784.0,
+      "90%": 3273.0,
+      "99%": 5400.0,
+      "max": 76954.0
+    },
+    "duplicates": {
+      "all_features": {
+        "unique_groups": 1967920,
+        "duplicate_extra_rows": 88951,
+        "conflicting_groups": 0,
+        "rows_in_conflicting_groups": 0
+      },
+      "without_timestamp": {
+        "unique_groups": 720215,
+        "duplicate_extra_rows": 1336656,
+        "conflicting_groups": 0,
+        "rows_in_conflicting_groups": 0
+      }
+    }
+  },
+  "valid_input": {
+    "file": "data\\data\\valid_input.parquet",
+    "sha256": "731af597711aae0b870912c36fc1a0f592fd6e53d911c7fec6fe1405ec1a97b0",
+    "rows": 2014052,
+    "columns": [
+      "event_id",
+      "timestamp",
+      "pipeline",
+      "src_ip",
+      "dst_ip",
+      "src_port",
+      "src_host",
+      "dst_host",
+      "username",
+      "message_sanitized",
+      "product_name",
+      "vendor_name",
+      "label_binary"
+    ],
+    "labels": {
+      "benign": 1959573,
+      "suspicious": 40427,
+      "malicious": 14052
+    },
+    "id_duplicates": 0,
+    "fields": {
+      "event_id": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 2014052,
+        "top": {
+          "EVT-0000000001": 1,
+          "EVT-0000000002": 1,
+          "EVT-0000000003": 1,
+          "EVT-0000000004": 1,
+          "EVT-0000000005": 1,
+          "EVT-0000000006": 1,
+          "EVT-0000000007": 1,
+          "EVT-0000000008": 1,
+          "EVT-0000000009": 1,
+          "EVT-0000000010": 1,
+          "EVT-0000000011": 1,
+          "EVT-0000000012": 1
+        }
+      },
+      "timestamp": {
+        "dtype": "float64",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 2000998,
+        "top": {
+          "1718060957.0": 328,
+          "1712037780.0": 128,
+          "1718465771.0": 112,
+          "1719154706.0": 106,
+          "1719583765.0": 106,
+          "1716105494.0": 100,
+          "1719157889.0": 94,
+          "1676896995.0": 80,
+          "1718987653.0": 78,
+          "1718988268.0": 78,
+          "1718466376.0": 76,
+          "1716366714.0": 74
+        }
+      },
+      "pipeline": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 2,
+        "top": {
+          "syslog": 1059760,
+          "aws_cloudtrail": 954292
+        }
+      },
+      "src_ip": {
+        "dtype": "str",
+        "null": 2,
+        "empty_or_null": 739253,
+        "unique": 2382,
+        "top": {
+          "": 739251,
+          "10.100.3.33": 159856,
+          "USER-0147-0541.example.HOST-2010": 132595,
+          "HOST-2723": 60642,
+          "10.100.3.36": 55411,
+          "10.100.3.37": 52965,
+          "10.100.3.35": 50542,
+          "10.100.3.34": 50197,
+          "10.100.3.44": 49947,
+          "10.100.3.51": 47540,
+          "USER-0147-0545.example.HOST-2010": 29829,
+          "10.100.3.41": 18586
+        }
+      },
+      "dst_ip": {
+        "dtype": "str",
+        "null": 54,
+        "empty_or_null": 1947771,
+        "unique": 700,
+        "top": {
+          "": 1947717,
+          "10.100.4.140": 13322,
+          "10.100.0.206": 8667,
+          "10.100.1.113": 4432,
+          "10.100.10.220": 3576,
+          "10.100.0.63": 3220,
+          "10.100.11.78": 2934,
+          "10.100.10.133": 2689,
+          "10.100.1.150": 2059,
+          "10.100.1.147": 1959,
+          "10.100.4.139": 1190,
+          "10.100.11.42": 1161
+        }
+      },
+      "src_port": {
+        "dtype": "str",
+        "null": 1416,
+        "empty_or_null": 1830057,
+        "unique": 13186,
+        "top": {
+          "": 1828641,
+          "<NULL>": 1416,
+          "0": 398,
+          "65126": 198,
+          "63479": 186,
+          "50912": 184,
+          "62340": 169,
+          "50911": 168,
+          "53310": 158,
+          "59015": 156,
+          "51907": 150,
+          "56372": 141
+        }
+      },
+      "src_host": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 140,
+        "top": {
+          "HOST-500049": 954292,
+          "HOST-500055": 292920,
+          "10.100.0.156": 200721,
+          "HOST-500059": 111659,
+          "HOST-500060": 46839,
+          "HOST-500081": 46602,
+          "HOST-500074": 44508,
+          "HOST-500065": 39810,
+          "HOST-500058": 39262,
+          "10.100.0.164": 38507,
+          "HOST-500086": 35085,
+          "HOST-500050": 19357
+        }
+      },
+      "dst_host": {
+        "dtype": "str",
+        "null": 13996,
+        "empty_or_null": 1427627,
+        "unique": 19,
+        "top": {
+          "": 1413631,
+          "HOST-500121": 292920,
+          "HOST-500120": 111659,
+          "HOST-500123": 46839,
+          "HOST-500125": 44508,
+          "HOST-500122": 39810,
+          "HOST-500124": 35085,
+          "<NULL>": 13996,
+          "HOST-500131": 8667,
+          "HOST-500126": 6811,
+          "HOST-500135": 60,
+          "HOST-500003": 12
+        }
+      },
+      "username": {
+        "dtype": "str",
+        "null": 13942,
+        "empty_or_null": 782656,
+        "unique": 6362,
+        "top": {
+          "": 768714,
+          "USER-503671": 298224,
+          "USER-503681": 256582,
+          "USER-503675": 116482,
+          "USER-504071": 109370,
+          "USER-503713": 50428,
+          "USER-504072": 50173,
+          "USER-500001": 35215,
+          "USER-503687": 31232,
+          "USER-503669": 30835,
+          "USER-504076": 24722,
+          "USER-504089": 17946
+        }
+      },
+      "message_sanitized": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 954292,
+        "unique": 179539,
+        "top": {
+          "": 954292,
+          "Configured ddtrace instrumentation for 1 integration(s). The following USER-0147-0219 have been patched: logging\n": 2771,
+          "INIT_START Runtime Version: python:3.11.v37\tRuntime Version ARN: arn:aws:iam::100000000597:sanitized/597\n": 1515,
+          "INIT_START Runtime Version: python:3.11.v37\tRuntime Version ARN: arn:aws:iam::100000000393:sanitized/393\n": 1257,
+          "INIT_START Runtime Version: dotnet:6.v35\tRuntime Version ARN: arn:aws:iam::100000001029:sanitized/1029\n": 663,
+          "Importing module ./USER-0147-0219/USER-0147-1910.example.HOST-2010-2010/4.1.309/USER-0147-1910.example.HOST-2010-2010.psd1\nImporting module ./USER-0147-0219/USER-0147-1911.example.HOST-2010-2010/4.1.309/USER-0147-1911.example.HOST-2010-2010.psd1\nImporting module ./USER-0147-0219/Mailozaurr/1.0.0/Mailozaurr.psd1\nImporting module ./USER-0147-0219/Posh-SSH/3.0.8/Posh-SSH.psd1\n": 448,
+          "2 100000000002 eni-0344fb8cbb0b6a030 - - - - - - - 1722044411 1722044442 - NOUSER-0147-0348": 226,
+          "2 100000000002 eni-0344fb8cbb0b6a030 - - - - - - - 1722044351 1722044382 - NOUSER-0147-0348": 226,
+          "2 100000000002 eni-0344fb8cbb0b6a030 - - - - - - - 1722044291 1722044322 - NOUSER-0147-0348": 226,
+          "2 100000000002 eni-0344fb8cbb0b6a030 - - - - - - - 172204CRED-1536 1722044502 - NOUSER-0147-0348": 224,
+          "REPORT ReUSER-0147-0160Id: e64eac31-17e0-4073-86e4-11032ea97b9d\tDuration: 773.46 ms\tBilled Duration: 774 ms\tMemory Size: 1024 MB\tMax Memory Used: 134 MB\tInit Duration: CRED-0417.55 ms\t\n": 201,
+          "END ReUSER-0147-0160Id: e64eac31-17e0-4073-86e4-11032ea97b9d\n": 201
+        }
+      },
+      "product_name": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 301333,
+        "unique": 14,
+        "top": {
+          "AWS Instance Backup": 954292,
+          "Windows Logs": 577632,
+          "": 301333,
+          "VMWare VCenter": 116391,
+          "ASA Firewall": 38507,
+          "Windows Active Directory": 13916,
+          "Barracuda WAF": 8737,
+          "AWS VPC Security": 1853,
+          "Falcon": 892,
+          "Graph": 200,
+          "Barracuda ESS": 168,
+          "Duo": 88
+        }
+      },
+      "vendor_name": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 301333,
+        "unique": 9,
+        "top": {
+          "Amazon Web Services": 956145,
+          "Microsoft": 591748,
+          "": 301333,
+          "VMWare": 116391,
+          "Cisco": 38595,
+          "Barracuda": 8905,
+          "Crowdstrike": 892,
+          "Apache": 34,
+          "Symantec": 9
+        }
+      },
+      "label_binary": {
+        "dtype": "str",
+        "null": 0,
+        "empty_or_null": 0,
+        "unique": 3,
+        "top": {
+          "benign": 1959573,
+          "suspicious": 40427,
+          "malicious": 14052
+        }
+      }
+    },
+    "cross_tabs": {
+      "month_label": {
+        "2022-05": {
+          "benign": 0,
+          "malicious": 4,
+          "suspicious": 0
+        },
+        "2022-06": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 0
+        },
+        "2022-08": {
+          "benign": 0,
+          "malicious": 286,
+          "suspicious": 0
+        },
+        "2022-09": {
+          "benign": 0,
+          "malicious": 20,
+          "suspicious": 0
+        },
+        "2022-10": {
+          "benign": 0,
+          "malicious": 268,
+          "suspicious": 0
+        },
+        "2022-11": {
+          "benign": 0,
+          "malicious": 540,
+          "suspicious": 0
+        },
+        "2022-12": {
+          "benign": 0,
+          "malicious": 336,
+          "suspicious": 0
+        },
+        "2023-01": {
+          "benign": 0,
+          "malicious": 92,
+          "suspicious": 0
+        },
+        "2023-02": {
+          "benign": 0,
+          "malicious": 1512,
+          "suspicious": 0
+        },
+        "2023-03": {
+          "benign": 0,
+          "malicious": 636,
+          "suspicious": 0
+        },
+        "2023-04": {
+          "benign": 0,
+          "malicious": 60,
+          "suspicious": 0
+        },
+        "2023-05": {
+          "benign": 0,
+          "malicious": 592,
+          "suspicious": 0
+        },
+        "2023-06": {
+          "benign": 0,
+          "malicious": 382,
+          "suspicious": 0
+        },
+        "2023-07": {
+          "benign": 0,
+          "malicious": 904,
+          "suspicious": 0
+        },
+        "2023-08": {
+          "benign": 0,
+          "malicious": 754,
+          "suspicious": 0
+        },
+        "2023-09": {
+          "benign": 0,
+          "malicious": 866,
+          "suspicious": 0
+        },
+        "2023-10": {
+          "benign": 0,
+          "malicious": 1052,
+          "suspicious": 0
+        },
+        "2023-11": {
+          "benign": 0,
+          "malicious": 454,
+          "suspicious": 0
+        },
+        "2023-12": {
+          "benign": 0,
+          "malicious": 730,
+          "suspicious": 0
+        },
+        "2024-01": {
+          "benign": 0,
+          "malicious": 56,
+          "suspicious": 0
+        },
+        "2024-03": {
+          "benign": 0,
+          "malicious": 596,
+          "suspicious": 0
+        },
+        "2024-04": {
+          "benign": 0,
+          "malicious": 354,
+          "suspicious": 0
+        },
+        "2024-05": {
+          "benign": 0,
+          "malicious": 938,
+          "suspicious": 0
+        },
+        "2024-06": {
+          "benign": 0,
+          "malicious": 2194,
+          "suspicious": 0
+        },
+        "2024-07": {
+          "benign": 1904009,
+          "malicious": 418,
+          "suspicious": 40091
+        },
+        "2024-08": {
+          "benign": 55564,
+          "malicious": 0,
+          "suspicious": 336
+        }
+      },
+      "pipeline": {
+        "syslog": {
+          "benign": 1005281,
+          "malicious": 14052,
+          "suspicious": 40427,
+          "total": 1059760
+        },
+        "aws_cloudtrail": {
+          "benign": 954292,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 954292
+        }
+      },
+      "vendor_name": {
+        "Amazon Web Services": {
+          "benign": 954292,
+          "malicious": 0,
+          "suspicious": 1853,
+          "total": 956145
+        },
+        "Microsoft": {
+          "benign": 591748,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 591748
+        },
+        "": {
+          "benign": 287281,
+          "malicious": 14052,
+          "suspicious": 0,
+          "total": 301333
+        },
+        "VMWare": {
+          "benign": 116391,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 116391
+        },
+        "Cisco": {
+          "benign": 121,
+          "malicious": 0,
+          "suspicious": 38474,
+          "total": 38595
+        },
+        "Barracuda": {
+          "benign": 8905,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 8905
+        },
+        "Crowdstrike": {
+          "benign": 801,
+          "malicious": 0,
+          "suspicious": 91,
+          "total": 892
+        },
+        "Apache": {
+          "benign": 34,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 34
+        },
+        "Symantec": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 9,
+          "total": 9
+        }
+      },
+      "product_name": {
+        "AWS Instance Backup": {
+          "benign": 954292,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 954292
+        },
+        "Windows Logs": {
+          "benign": 577632,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 577632
+        },
+        "": {
+          "benign": 287281,
+          "malicious": 14052,
+          "suspicious": 0,
+          "total": 301333
+        },
+        "VMWare VCenter": {
+          "benign": 116391,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 116391
+        },
+        "ASA Firewall": {
+          "benign": 34,
+          "malicious": 0,
+          "suspicious": 38473,
+          "total": 38507
+        },
+        "Windows Active Directory": {
+          "benign": 13916,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 13916
+        },
+        "Barracuda WAF": {
+          "benign": 8737,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 8737
+        },
+        "AWS VPC Security": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 1853,
+          "total": 1853
+        },
+        "Falcon": {
+          "benign": 801,
+          "malicious": 0,
+          "suspicious": 91,
+          "total": 892
+        },
+        "Graph": {
+          "benign": 200,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 200
+        },
+        "Barracuda ESS": {
+          "benign": 168,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 168
+        },
+        "Duo": {
+          "benign": 87,
+          "malicious": 0,
+          "suspicious": 1,
+          "total": 88
+        },
+        "Apache Web Server": {
+          "benign": 34,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 34
+        },
+        "Symantec Data Loss Prevention": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 9,
+          "total": 9
+        }
+      },
+      "src_host": {
+        "HOST-500049": {
+          "benign": 954292,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 954292
+        },
+        "HOST-500055": {
+          "benign": 292920,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 292920
+        },
+        "10.100.0.156": {
+          "benign": 200721,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 200721
+        },
+        "HOST-500059": {
+          "benign": 111659,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 111659
+        },
+        "HOST-500060": {
+          "benign": 46839,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 46839
+        },
+        "HOST-500081": {
+          "benign": 46602,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 46602
+        },
+        "HOST-500074": {
+          "benign": 44508,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 44508
+        },
+        "HOST-500065": {
+          "benign": 39810,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 39810
+        },
+        "HOST-500058": {
+          "benign": 39262,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 39262
+        },
+        "10.100.0.164": {
+          "benign": 34,
+          "malicious": 0,
+          "suspicious": 38473,
+          "total": 38507
+        },
+        "HOST-500086": {
+          "benign": 35085,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 35085
+        },
+        "HOST-500050": {
+          "benign": 19357,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 19357
+        },
+        "10.100.0.227": {
+          "benign": 18208,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 18208
+        },
+        "HOST-500056": {
+          "benign": 13197,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 13197
+        },
+        "HOST-500068": {
+          "benign": 10725,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 10725
+        },
+        "10.100.0.54": {
+          "benign": 8737,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 8737
+        },
+        "HOST-500057": {
+          "benign": 7249,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 7249
+        },
+        "HOST-500072": {
+          "benign": 7124,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 7124
+        },
+        "HOST-500108": {
+          "benign": 6811,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6811
+        },
+        "HOST-500061": {
+          "benign": 5985,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 5985
+        },
+        "10.100.1.2": {
+          "benign": 0,
+          "malicious": 5842,
+          "suspicious": 0,
+          "total": 5842
+        },
+        "10.100.10.202": {
+          "benign": 0,
+          "malicious": 4854,
+          "suspicious": 0,
+          "total": 4854
+        },
+        "HOST-500067": {
+          "benign": 2825,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2825
+        },
+        "HOST-500054": {
+          "benign": 2750,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2750
+        },
+        "HOST-500066": {
+          "benign": 2438,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2438
+        },
+        "HOST-500070": {
+          "benign": 2275,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2275
+        },
+        "10.100.0.144": {
+          "benign": 1838,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1838
+        },
+        "HOST-500071": {
+          "benign": 1679,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1679
+        },
+        "HOST-500115": {
+          "benign": 1621,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1621
+        },
+        "HOST-500078": {
+          "benign": 1608,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1608
+        },
+        "10.100.0.4": {
+          "benign": 1535,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1535
+        },
+        "HOST-500075": {
+          "benign": 1522,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1522
+        },
+        "HOST-500083": {
+          "benign": 1407,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1407
+        },
+        "HOST-500082": {
+          "benign": 1407,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1407
+        },
+        "HOST-500041": {
+          "benign": 1394,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1394
+        },
+        "HOST-500024": {
+          "benign": 1020,
+          "malicious": 0,
+          "suspicious": 92,
+          "total": 1112
+        },
+        "10.100.0.109": {
+          "benign": 1060,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 1060
+        },
+        "10.100.0.121": {
+          "benign": 947,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 947
+        },
+        "HOST-500094": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 930,
+          "total": 930
+        },
+        "10.100.0.137": {
+          "benign": 883,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 883
+        },
+        "HOST-500096": {
+          "benign": 844,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 844
+        },
+        "HOST-500089": {
+          "benign": 837,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 837
+        },
+        "HOST-500025": {
+          "benign": 836,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 836
+        },
+        "HOST-500076": {
+          "benign": 836,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 836
+        },
+        "HOST-500042": {
+          "benign": 833,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 833
+        },
+        "HOST-500029": {
+          "benign": 833,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 833
+        },
+        "HOST-500030": {
+          "benign": 833,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 833
+        },
+        "HOST-500043": {
+          "benign": 833,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 833
+        },
+        "10.100.1.33": {
+          "benign": 807,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 807
+        },
+        "10.100.0.124": {
+          "benign": 805,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 805
+        },
+        "HOST-500100": {
+          "benign": 791,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 791
+        },
+        "HOST-500053": {
+          "benign": 735,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 735
+        },
+        "HOST-500036": {
+          "benign": 726,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 726
+        },
+        "10.100.0.40": {
+          "benign": 706,
+          "malicious": 0,
+          "suspicious": 9,
+          "total": 715
+        },
+        "HOST-500114": {
+          "benign": 637,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 637
+        },
+        "HOST-500035": {
+          "benign": 622,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 622
+        },
+        "HOST-500026": {
+          "benign": 595,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 595
+        },
+        "HOST-500044": {
+          "benign": 581,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 581
+        },
+        "HOST-500084": {
+          "benign": 0,
+          "malicious": 0,
+          "suspicious": 560,
+          "total": 560
+        },
+        "HOST-500110": {
+          "benign": 530,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 530
+        }
+      },
+      "dst_host": {
+        "": {
+          "benign": 1373204,
+          "malicious": 0,
+          "suspicious": 40427,
+          "total": 1413631
+        },
+        "HOST-500121": {
+          "benign": 292920,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 292920
+        },
+        "HOST-500120": {
+          "benign": 111659,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 111659
+        },
+        "HOST-500123": {
+          "benign": 46839,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 46839
+        },
+        "HOST-500125": {
+          "benign": 44508,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 44508
+        },
+        "HOST-500122": {
+          "benign": 39810,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 39810
+        },
+        "HOST-500124": {
+          "benign": 35085,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 35085
+        },
+        "<NULL>": {
+          "benign": 0,
+          "malicious": 13996,
+          "suspicious": 0,
+          "total": 13996
+        },
+        "HOST-500131": {
+          "benign": 8667,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 8667
+        },
+        "HOST-500126": {
+          "benign": 6811,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6811
+        },
+        "HOST-500135": {
+          "benign": 60,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 60
+        },
+        "HOST-500002": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 0,
+          "total": 12
+        },
+        "HOST-500003": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 0,
+          "total": 12
+        },
+        "HOST-500004": {
+          "benign": 0,
+          "malicious": 12,
+          "suspicious": 0,
+          "total": 12
+        },
+        "HOST-500129": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 0,
+          "total": 8
+        },
+        "HOST-500128": {
+          "benign": 0,
+          "malicious": 8,
+          "suspicious": 0,
+          "total": 8
+        },
+        "HOST-500132": {
+          "benign": 6,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 6
+        },
+        "HOST-500127": {
+          "benign": 0,
+          "malicious": 4,
+          "suspicious": 0,
+          "total": 4
+        },
+        "HOST-500133": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        },
+        "HOST-500134": {
+          "benign": 2,
+          "malicious": 0,
+          "suspicious": 0,
+          "total": 2
+        }
+      },
+      "message_empty_label": {
+        "false": {
+          "benign": 1005281,
+          "malicious": 14052,
+          "suspicious": 40427
+        },
+        "true": {
+          "benign": 954292,
+          "malicious": 0,
+          "suspicious": 0
+        }
+      }
+    },
+    "samples": {
+      "benign": [
+        {
+          "event_id": "EVT-0000097084",
+          "timestamp": 1722343935.4202948,
+          "pipeline": "syslog",
+          "src_ip": "10.100.3.33",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500058",
+          "dst_host": "",
+          "username": "USER-503675",
+          "message_sanitized": "{\"USER-0147-2610Version\":\"1.10\",\"userUSER-0147-2002\":{\"type\":\"IAMUser\",\"principalId\":\"CRED-0001\",\"arn\":\"arn:aws:iam::100000001890:sanitized/2351 Linux/6.5.0-1023-aws OpenJDK_64-Bit_Server_VM/11.0.23+9-post-Ubuntu-1ubuntu120.04.2 USER-0147-2743/11.0.23 scala/2.13.10 ORG-0177/Ubuntu cfg/retry-mode/legacy\",\"reUSER-0147-0160USER-0147-1736\":{\"startTime\":\"Jul 30, USER-2670, 12:14:26 PM\",\"endTime\":\"Jul 30, USER-2670, 12:16:26 PM\",\"maxResults\":1000},\"responseElements\":null,\"reUSER-0147-0160ID\":\"092f58e7-0b2b-47bb-b2aa-dbac7302fb3b\",\"USER-0147-2610ID\":\"fad76ac7-a6eb-4572-a69c-4CRED-1CRED-0558e01499\",\"readOnly\":true,\"USER-0147-2610Type\":\"AwsApiCall\",\"ORG-0009USER-0147-2610\":true,\"recipienUSER-2662Id\":\"100000000004\",\"USER-0147-2610Category\":\"ORG-0009\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"USER-0013ProvidedUSER-0147Header\":\"USER-0147-1962.example.HOST-2010-0346}",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001727873",
+          "timestamp": 1722064769.6641796,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "10.100.3.33",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500049",
+          "dst_host": "",
+          "username": "USER-503669",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000012464",
+          "timestamp": 1722119687.2396212,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500055",
+          "dst_host": "HOST-500121",
+          "username": "",
+          "message_sanitized": "<USER-0147-2610 xmlns='ORG-1079://USER-0147-1363.microsoft.com/win/2004/08/USER-0147-2610s/USER-0147-2610'><ORG-0102><Provider Name='Microsoft-ORG-0011-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0147-2610ID>4672</USER-0147-2610ID><Version>0</Version><Level>0</Level><Task>12548</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated ORG-0102Time='USER-2670-07-27T22:25:33.58903CRED-1642Z'/><USER-0147-2610RecordID>48CRED-181546</USER-0147-2610RecordID><Correlation/><Execution ProcessID='656' ThreadID='268'/><Channel>Security</Channel><USER-0147-3457>USER-0147-1726.example.HOST-2010-2010</USER-0147-3457><Security/></ORG-0102><USER-0147-2610USER-0147-0348><USER-0147-0348 Name='SubjectUSER-1970id'>S-1-5-18</USER-0147-0348><USER-0147-0348 Name='SubjectUserName'>HOST-0060-1452$</USER-0147-0348><USER-0147-0348 Name='SubjectUSER-17805Name'>ORG-1109</USER-0147-0348><USER-0147-0348 Name='SubjecUSER-3013Id'>0x4188bc5e</USER-0147-0348><USER-0147-0348 Name='PrivilegeList'>SeSecurityPrivilege\r\n\t\t\tSeUSER-0147-1426Privilege\r\n\t\t\tSeReUSER-0147-1884Privilege\r\n\t\t\tSeTakeOwnershipPrivilege\r\n\t\t\tSeDebugPrivilege\r\n\t\t\tSeORG-0102EnvironmentPrivilege\r\n\t\t\tSeLoadDriverPrivilege\r\n\t\t\tSeImpersonatePrivilege\r\n\t\t\tSeDelegateSessionUserImpersonatePrivilege\r\n\t\t\tSeEnableDelegationPrivilege</USER-0147-0348></USER-0147-2610USER-0147-0348><RenderingInfo Culture='USER-0147-0830'><CRED-0179>Special privileges assigned to new ORG-0060.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tHOST-0060-1452$\r\n\tAccount USER-17805:\t\tORG-1109\r\n\tORG-0060 ID:\t\t0x4188BC5E\r\n\r\nPrivileges:\t\tSeSecurityPrivilege\r\n\t\t\tSeUSER-0147-1426Privilege\r\n\t\t\tSeReUSER-0147-1884Privilege\r\n\t\t\tSeTakeOwnershipPrivilege\r\n\t\t\tSeDebugPrivilege\r\n\t\t\tSeORG-0102EnvironmentPrivilege\r\n\t\t\tSeLoadDriverPrivilege\r\n\t\t\tSeImpersonatePrivilege\r\n\t\t\tSeDelegateSessionUserImpersonatePrivilege\r\n\t\t\tSeEnableDelegationPrivilege</CRED-0179><Level>Information</Level><Task>Special ORG-0060</Task><Opcode>Info</Opcode><Channel>Security</Channel><Provider>Microsoft ORG-0011 security auditing.</Provider><Keywords><Keyword>Audit Success</Keyword></Keywords></RenderingInfo></USER-0147-2610>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001158425",
+          "timestamp": 1722016917.1724772,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500055",
+          "dst_host": "HOST-500121",
+          "username": "",
+          "message_sanitized": "<USER-0147-2610 xmlns='ORG-1079://USER-0147-1363.microsoft.com/win/2004/08/USER-0147-2610s/USER-0147-2610'><ORG-0102><Provider Name='Microsoft-ORG-0011-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0147-2610ID>4672</USER-0147-2610ID><Version>0</Version><Level>0</Level><Task>12548</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated ORG-0102Time='USER-2670-07-26T17:57:54.745496200Z'/><USER-0147-2610RecordID>4843CRED-1959</USER-0147-2610RecordID><Correlation/><Execution ProcessID='656' ThreadID='268'/><Channel>Security</Channel><USER-0147-3457>USER-0147-1726.example.HOST-2010-2010</USER-0147-3457><Security/></ORG-0102><USER-0147-2610USER-0147-0348><USER-0147-0348 Name='SubjectUSER-1970id'>S-1-5-18</USER-0147-0348><USER-0147-0348 Name='SubjectUserName'>HOST-0060-1452$</USER-0147-0348><USER-0147-0348 Name='SubjectUSER-17805Name'>ORG-1109</USER-0147-0348><USER-0147-0348 Name='SubjecUSER-3013Id'>0x3c3f50bc</USER-0147-0348><USER-0147-0348 Name='PrivilegeList'>SeSecurityPrivilege\r\n\t\t\tSeUSER-0147-1426Privilege\r\n\t\t\tSeReUSER-0147-1884Privilege\r\n\t\t\tSeTakeOwnershipPrivilege\r\n\t\t\tSeDebugPrivilege\r\n\t\t\tSeORG-0102EnvironmentPrivilege\r\n\t\t\tSeLoadDriverPrivilege\r\n\t\t\tSeImpersonatePrivilege\r\n\t\t\tSeDelegateSessionUserImpersonatePrivilege\r\n\t\t\tSeEnableDelegationPrivilege</USER-0147-0348></USER-0147-2610USER-0147-0348><RenderingInfo Culture='USER-0147-0830'><CRED-0179>Special privileges assigned to new ORG-0060.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tHOST-0060-1452$\r\n\tAccount USER-17805:\t\tORG-1109\r\n\tORG-0060 ID:\t\t0x3C3F50BC\r\n\r\nPrivileges:\t\tSeSecurityPrivilege\r\n\t\t\tSeUSER-0147-1426Privilege\r\n\t\t\tSeReUSER-0147-1884Privilege\r\n\t\t\tSeTakeOwnershipPrivilege\r\n\t\t\tSeDebugPrivilege\r\n\t\t\tSeORG-0102EnvironmentPrivilege\r\n\t\t\tSeLoadDriverPrivilege\r\n\t\t\tSeImpersonatePrivilege\r\n\t\t\tSeDelegateSessionUserImpersonatePrivilege\r\n\t\t\tSeEnableDelegationPrivilege</CRED-0179><Level>Information</Level><Task>Special ORG-0060</Task><Opcode>Info</Opcode><Channel>Security</Channel><Provider>Microsoft ORG-0011 security auditing.</Provider><Keywords><Keyword>Audit Success</Keyword></Keywords></RenderingInfo></USER-0147-2610>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000453122",
+          "timestamp": 1722262881.5537603,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "10.100.3.36",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500049",
+          "dst_host": "",
+          "username": "USER-503671",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0001124593",
+          "timestamp": 1722432031.7867012,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500067",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "2 100000000002 eni-09380904df4353210 - - - - - - - 17CRED-05261560 17CRED-05261591 - NOUSER-0147-0348",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000832926",
+          "timestamp": 1722414598.7330747,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "10.100.3.36",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500049",
+          "dst_host": "",
+          "username": "USER-503671",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000551172",
+          "timestamp": 1722058360.7321727,
+          "pipeline": "syslog",
+          "src_ip": "",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500055",
+          "dst_host": "HOST-500121",
+          "username": "USER-504071",
+          "message_sanitized": "<USER-0147-2610 xmlns='ORG-1079://USER-0147-1363.microsoft.com/win/2004/08/USER-0147-2610s/USER-0147-2610'><ORG-0102><Provider Name='Microsoft-ORG-0011-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><USER-0147-2610ID>4634</USER-0147-2610ID><Version>0</Version><Level>0</Level><Task>1CRED-0603</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated ORG-0102Time='USER-2670-07-27T05:26:03.192571000Z'/><USER-0147-2610RecordID>4CRED-2172385</USER-0147-2610RecordID><Correlation/><Execution ProcessID='656' ThreadID='CRED-1911'/><Channel>Security</Channel><USER-0147-3457>USER-0147-1726.example.HOST-2010-2010</USER-0147-3457><Security/></ORG-0102><USER-0147-2610USER-0147-0348><USER-0147-0348 Name='USER-0147-3982USER-1970id'>S-1-5-18</USER-0147-0348><USER-0147-0348 Name='USER-0147-3982UserName'>HOST-0060-1452$</USER-0147-0348><USER-0147-0348 Name='USER-0147-3982USER-17805Name'>ORG-1109</USER-0147-0348><USER-0147-0348 Name='USER-0147-3982ORG-0060Id'>0x3eCRED-112906</USER-0147-0348><USER-0147-0348 Name='ORG-0060Type'>3</USER-0147-0348></USER-0147-2610USER-0147-0348><RenderingInfo Culture='USER-0147-0830'><CRED-0179>An account was logged off.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tHOST-0060-1452$\r\n\tAccount USER-17805:\t\tORG-1109\r\n\tORG-0060 ID:\t\t0x3ECRED-112906\r\n\r\nORG-0060 Type:\t\t\t3\r\n\r\nUSER-2693 USER-0147-2610 is generated when a ORG-0060 session is destroyed. It may be positively correlated with a ORG-0060 USER-0147-2610 using the ORG-0060 ID value. ORG-0060 IDs are only unique between reUSER-0147-1396s on the same USER-0147-3457.</CRED-0179><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Channel>Security</Channel><Provider>Microsoft ORG-0011 security auditing.</Provider><Keywords><Keyword>Audit Success</Keyword></Keywords></RenderingInfo></USER-0147-2610>",
+          "product_name": "Windows Logs",
+          "vendor_name": "Microsoft",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000746945",
+          "timestamp": 1722440799.5217822,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "10.100.3.37",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500049",
+          "dst_host": "",
+          "username": "USER-503671",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        },
+        {
+          "event_id": "EVT-0000605206",
+          "timestamp": 1722093080.3226645,
+          "pipeline": "aws_cloudtrail",
+          "src_ip": "10.100.3.51",
+          "dst_ip": "",
+          "src_port": "",
+          "src_host": "HOST-500049",
+          "dst_host": "",
+          "username": "USER-503671",
+          "message_sanitized": "",
+          "product_name": "AWS Instance Backup",
+          "vendor_name": "Amazon Web Services",
+          "label_binary": "benign"
+        }
+      ],
+      "malicious": [
+        {
+          "event_id": "EVT-0002003290",
+          "timestamp": 1679447301.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.11.7",
+          "dst_ip": "10.100.8.212",
+          "src_port": "61248",
+          "src_host": "10.100.10.202",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<164>Mar 21 USER-9564 18:15:29: USER-0010-0324 Deny tcp src inside:172.30.101.217/6CRED-23683 dst outside:100.64.132.52/25 by ORG-1738-group \"inside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002005225",
+          "timestamp": 1689523282.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.2.156",
+          "dst_ip": "10.100.5.77",
+          "src_port": "46497",
+          "src_host": "10.100.1.2",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<14>Jul 16 16:01:22 USER-0010-0051 1,USER-9564/07/16 16:01:22,0162010CRED-31358,TRAFFIC,drop,2561,USER-9564/07/16 16:01:22,10.100.2.156,10.100.5.77,100.64.52.151,100.64.52.151,Geo Block Inbound,,,not-applicable,vsys1,Untrust,Untrust,ethernet1/2,,USER-1223 Log Forward Only,USER-9564/07/16 16:01:22,0,1,CRED-249007,25022,0,0,0x0,tcp,deny,60,60,0,1,USER-9564/07/16 16:01:20,0,any,,7250CRED-31036CRED-299235337746,0x0,Netherlands,United HOST-54774s,,1,0,HOST-56492-deny,265,0,0,0,,USER-0010-0051,from-HOST-56492,,,0,,0,,N/A,0,0,0,0,e7553640-425c-4dda-8f02-57d4a3791c1c,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,USER-9564-07-16T16:01:22.397-07:00,,,unknown,unknown,unknown,1,,,not-applicable,no,no,0",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002011246",
+          "timestamp": 1716105494.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.10.122",
+          "dst_ip": "10.100.9.154",
+          "src_port": "51599",
+          "src_host": "10.100.10.202",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<164>May 19 USER-9546 02:49:47: USER-0010-0324 Deny udp src inside:172.28.193.4/51599 dst outside:100.64.137.85/123 by ORG-1738-group \"inside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002004456",
+          "timestamp": 1686586104.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.5.53",
+          "dst_ip": "10.100.1.91",
+          "src_port": "59091",
+          "src_host": "10.100.1.2",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<14>Jun 12 16:08:24 USER-0010-0051 1,USER-9564/06/12 16:08:24,0162010CRED-31358,TRAFFIC,drop,CRED-29809,USER-9564/06/12 16:08:24,10.100.1.91,10.100.5.53,100.64.52.151,100.64.52.151,Geo Block Inbound,,,not-applicable,vsys1,Untrust,Untrust,ethernet1/13,,USER-1223 Log Forward Only,USER-9564/06/12 16:08:24,0,1,5CRED-25250,59091,0,0,0x0,tcp,deny,60,60,0,1,USER-9564/06/12 16:08:22,0,any,0,CRED-3021910CRED-29895,0x0,Russian Federation,United HOST-54774s,0,1,0,HOST-56492-deny,253,0,0,0,,USER-0010-0051,from-HOST-56492,,,0,,0,,N/A,0,0,0,0,7ce986cd-09a4-4d62-9f2c-f3f40200a7b6,0,0,,,,,,,,100.64.52.151,,,,,,,,,,,,,,,,,,,,,,,,,,,USER-9564-06-12T16:08:24.504-07:00,,",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002004234",
+          "timestamp": 1685017788.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.6.116",
+          "dst_ip": "10.100.5.55",
+          "src_port": "57380",
+          "src_host": "10.100.1.2",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<14>May 25 12:29:48 USER-0010-0051 1,USER-9564/05/25 12:29:47,0162010CRED-31358,TRAFFIC,drop,CRED-29809,USER-9564/05/25 12:29:47,10.100.6.116,10.100.5.55,100.64.52.151,100.64.52.151,Geo Block Inbound,,,not-applicable,vsys1,Untrust,Untrust,ethernet1/2,,USER-1223 Log Forward Only,USER-9564/05/25 12:29:47,0,1,CRED-302370,1451,0,0,0x0,tcp,deny,60,60,0,1,USER-9564/05/25 12:29:45,0,any,0,5483351118,0x0,Russian Federation,United HOST-54774s,0,1,0,HOST-56492-deny,253,0,0,0,,USER-0010-0051,from-HOST-56492,,,0,,0,,N/A,0,0,0,0,7ce986cd-09a4-4d62-9f2c-f3f40200a7b6,0,0,,,,,,,,100.64.52.151,,,,,,,,,,,,,,,,,,,,,,,,,,,USER-9564-05-25T12:29:48.355-07:00,,",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002001352",
+          "timestamp": 1672261297.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.2.240",
+          "dst_ip": "10.100.0.175",
+          "src_port": "57141",
+          "src_host": "HOST-500006",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "2 100000000001 eni-0e33e10362ff2049e 10.100.2.240 10.100.0.175 57141 9696 6 1 44 167CRED-23823266 167CRED-23823297 REJECT OK",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002006558",
+          "timestamp": 1694369089.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.4.223",
+          "dst_ip": "10.100.5.60",
+          "src_port": "53815",
+          "src_host": "10.100.1.2",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<14>Sep 10 18:04:49 USER-0010-0051 1,USER-9564/09/10 18:04:48,0162010CRED-31358,TRAFFIC,drop,2562,USER-9564/09/10 18:04:48,10.100.4.223,10.100.5.60,100.64.52.151,100.64.52.151,Geo Block Inbound,,,not-applicable,vsys1,Untrust,Untrust,ethernet1/2,,USER-1223 Log Forward Only,USER-9564/09/10 18:04:48,0,1,53815,CRED-29765,0,0,0x0,tcp,deny,60,60,0,1,USER-9564/09/10 18:04:48,0,any,,7263CRED-25600CRED-25539CRED-24892021,0x0,China,United HOST-54774s,,1,0,HOST-56492-deny,265,0,0,0,,USER-0010-0051,from-HOST-56492,,,0,,0,,N/A,0,0,0,0,e7553640-425c-4dda-8f02-57d4a3791c1c,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,USER-9564-09-10T18:04:49.502-07:00,,,unknown,unknown,unknown,1,,,not-applicable,no,no,0",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002000994",
+          "timestamp": 1668217824.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.6.183",
+          "dst_ip": "10.100.0.85",
+          "src_port": "51058",
+          "src_host": "HOST-500011",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "2 100000000001 eni-02bc587cCRED-25037dc692 10.100.6.183 10.100.0.85 51058 3896 6 1 40 1CRED-25149CRED-32394 1CRED-251491CRED-30606 REJECT OK",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002012437",
+          "timestamp": 1718719750.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.10.170",
+          "dst_ip": "10.100.8.111",
+          "src_port": NaN,
+          "src_host": "10.100.10.202",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<164>Jun 18 USER-9546 08:58:55: USER-0010-0324 Deny icmp src inside:172.20.115.161 dst outside:10.100.8.111 (type 8, code 0) by ORG-1738-group \"inside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        },
+        {
+          "event_id": "EVT-0002011628",
+          "timestamp": 1718049438.0,
+          "pipeline": "syslog",
+          "src_ip": "10.100.11.27",
+          "dst_ip": "10.100.9.42",
+          "src_port": NaN,
+          "src_host": "10.100.10.202",
+          "dst_host": NaN,
+          "username": NaN,
+          "message_sanitized": "<164>Jun 10 USER-9546 14:14:59: USER-0010-0324 Deny icmp src inside:172.26.47.108 dst outside:10.100.9.42 (type 8, code 0) by ORG-1738-group \"inside_ORG-1738_in\" [0x0, 0x0]\n",
+          "product_name": "",
+          "vendor_name": "",
+          "label_binary": "malicious"
+        }
+      ],
+      "suspicious": [
+        {
+          "event_id": "EVT-0001838766",
+          "timestamp": 1722000822.6042628,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.5",
+          "dst_ip": "10.100.11.42",
+          "src_port": "51000",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 08:22:57: USER-0147-CRED-0801 Deny udp src dmz-2:10.115.58.109/51000 dst dmz-1:172.31.42.226/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001872562",
+          "timestamp": 1722045702.8278623,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.142",
+          "dst_ip": "10.100.10.220",
+          "src_port": "53172",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 20:50:56: USER-0147-CRED-0801 Deny udp src dmz-2:10.3.233.1/53172 dst dmz-1:172.29.211.76/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001899400",
+          "timestamp": 1721999307.7681403,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.66",
+          "dst_ip": "10.100.4.140",
+          "src_port": "51218",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 07:57:48: USER-0147-CRED-0801 Deny udp src dmz-2:10.110.125.62/51218 dst outside:100.64.121.151/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001862681",
+          "timestamp": 1722053006.6148615,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.142",
+          "dst_ip": "10.100.10.220",
+          "src_port": "57932",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 22:52:41: USER-0147-CRED-0801 Deny udp src dmz-2:10.3.233.1/57932 dst dmz-1:172.29.211.76/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001912643",
+          "timestamp": 1721994506.1929688,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.43",
+          "dst_ip": "10.100.1.150",
+          "src_port": "45158",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 06:37:40: USER-0147-CRED-0801 Deny udp src dmz-2:10.233.17.116/45158 dst outside:100.64.121.168/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001819804",
+          "timestamp": 1722017330.22721,
+          "pipeline": "syslog",
+          "src_ip": "10.100.8.242",
+          "dst_ip": "10.100.0.126",
+          "src_port": "23320",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 12:58:01: USER-0147-CRED-0801 Deny tcp src outside:100.64.123.200/23320 dst dmz-1:10.8.147.233/7434 by access-group \"outside_access_in\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001980180",
+          "timestamp": 1722047012.0493166,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.75",
+          "dst_ip": "10.100.1.113",
+          "src_port": "41087",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 21:12:42: USER-0147-CRED-0801 Deny udp src dmz-2:10.69.100.25/41087 dst outside:100.64.121.149/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001988711",
+          "timestamp": 1721997009.2434363,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.142",
+          "dst_ip": "10.100.10.220",
+          "src_port": "59460",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 07:19:27: USER-0147-CRED-0801 Deny udp src dmz-2:10.61.22.108/CRED-18000 dst dmz-1:172.29.211.76/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001846806",
+          "timestamp": 1722000872.8702881,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.147",
+          "dst_ip": "10.100.4.140",
+          "src_port": "59037",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 08:23:47: USER-0147-CRED-0801 Deny udp src dmz-2:10.104.16.239/5CRED-2288 dst outside:100.64.121.151/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        },
+        {
+          "event_id": "EVT-0001756055",
+          "timestamp": 1721994582.4618752,
+          "pipeline": "syslog",
+          "src_ip": "10.100.0.62",
+          "dst_ip": "10.100.4.140",
+          "src_port": "58834",
+          "src_host": "10.100.0.164",
+          "dst_host": "",
+          "username": "",
+          "message_sanitized": "<164>Jul 26 USER-2670 06:38:54: USER-0147-CRED-0801 Deny udp src dmz-2:10.191.119.123/58834 dst outside:100.64.121.151/53 by access-group \"dmz-2_access_in_1\" [0x0, 0x0]\n",
+          "product_name": "ASA Firewall",
+          "vendor_name": "Cisco",
+          "label_binary": "suspicious"
+        }
+      ]
+    },
+    "time": {
+      "min": "2022-05-30 14:43:45+00:00",
+      "max": "2024-08-01 04:38:28.733789921+00:00",
+      "unique": 2000998,
+      "invalid": 0,
+      "decreasing_adjacent": 1980101,
+      "months": {
+        "2024-07": 1944518,
+        "2024-08": 55900,
+        "2024-06": 2194,
+        "2023-02": 1512,
+        "2023-10": 1052,
+        "2024-05": 938,
+        "2023-07": 904,
+        "2023-09": 866,
+        "2023-08": 754,
+        "2023-12": 730,
+        "2023-03": 636,
+        "2024-03": 596,
+        "2023-05": 592,
+        "2022-11": 540,
+        "2023-11": 454,
+        "2023-06": 382,
+        "2024-04": 354,
+        "2022-12": 336,
+        "2022-08": 286,
+        "2022-10": 268,
+        "2023-01": 92,
+        "2023-04": 60,
+        "2024-01": 56,
+        "2022-09": 20,
+        "2022-06": 8,
+        "2022-05": 4
+      }
+    },
+    "message_length": {
+      "count": 2014052.0,
+      "mean": 1022.7535858061261,
+      "std": 1702.7664822585132,
+      "min": 0.0,
+      "50%": 104.0,
+      "90%": 2707.0,
+      "99%": 6027.0,
+      "max": 71999.0
+    },
+    "duplicates": {
+      "all_features": {
+        "unique_groups": 2002972,
+        "duplicate_extra_rows": 11080,
+        "conflicting_groups": 0,
+        "rows_in_conflicting_groups": 0
+      },
+      "without_timestamp": {
+        "unique_groups": 186167,
+        "duplicate_extra_rows": 1827885,
+        "conflicting_groups": 0,
+        "rows_in_conflicting_groups": 0
+      }
+    },
+    "overlap_with_train": {
+      "event_id_count": 2014052,
+      "all_features_rows": 0,
+      "without_timestamp_rows": 0,
+      "fields": {
+        "pipeline": {
+          "seen_row_fraction": 1.0,
+          "seen_nonempty_row_fraction": 1.0,
+          "shared_values": 2
+        },
+        "src_ip": {
+          "seen_row_fraction": 0.3670476233980056,
+          "seen_nonempty_row_fraction": 0.0,
+          "shared_values": 1
+        },
+        "dst_ip": {
+          "seen_row_fraction": 0.9670907205970849,
+          "seen_nonempty_row_fraction": 0.0,
+          "shared_values": 1
+        },
+        "src_host": {
+          "seen_row_fraction": 0.0,
+          "seen_nonempty_row_fraction": 0.0,
+          "shared_values": 0
+        },
+        "dst_host": {
+          "seen_row_fraction": 0.7088332376721157,
+          "seen_nonempty_row_fraction": 0.0,
+          "shared_values": 1
+        },
+        "username": {
+          "seen_row_fraction": 0.3885977124721705,
+          "seen_nonempty_row_fraction": 0.0,
+          "shared_values": 1
+        },
+        "product_name": {
+          "seen_row_fraction": 0.9998962290943829,
+          "seen_nonempty_row_fraction": 0.9998779718097365,
+          "shared_values": 12
+        },
+        "vendor_name": {
+          "seen_row_fraction": 1.0,
+          "seen_nonempty_row_fraction": 1.0,
+          "shared_values": 9
+        }
+      }
+    }
+  }
+}

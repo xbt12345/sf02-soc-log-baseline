@@ -1,0 +1,132 @@
+{
+  "version": "V140-ensemble-training-objective",
+  "status": "registered_design",
+  "issue": "TRAIN-PURE-READOUT",
+  "round": 2,
+  "budget": {
+    "old_fits": 6,
+    "new_fits_max": 6,
+    "chain_fits_max": 12,
+    "chain_rounds_max": 2,
+    "gradient_evaluations_per_fit": 200,
+    "accepted_updates_per_fit": 200
+  },
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "C",
+    "E"
+  ],
+  "candidate": "E",
+  "changed_factor": "member_mean_CE_vs_mean_probability_CE",
+  "start": "same_fold_V138_H_L_endpoint",
+  "trainable_parameters": 7677,
+  "original_TRAIN_frequency": true,
+  "HELD_used_for_training_or_selection": false,
+  "selection": "last_accepted_state_budget_or_numerical_no_change",
+  "old_C_margin_eligible": false,
+  "old_C_margin_executed": false,
+  "registered_guard_new_errors_max": 0,
+  "all_H_L_correct_pure_new_errors_max": 0,
+  "mastery": {
+    "pure_M_errors": 0,
+    "pure_S_errors": 0,
+    "full_M_errors": 0,
+    "full_S_errors_by_fold": [
+      22,
+      6,
+      28
+    ],
+    "distinct_accepted_window": 5
+  },
+  "task_adoption_quality": {
+    "full_original_rows": 2056871,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "all_class_precision_recall_f1_A0_protected": true,
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2074,
+    "ASA_total_errors_max": 2170,
+    "improved_outer_folds_min": 2,
+    "S_source_mean_recall_min": 0.1151252713,
+    "S_zero_recall_roots_max": 198,
+    "S_outside_big3_errors_max": 1372,
+    "root2868_M_errors_max": 48,
+    "header682_errors_max": 0,
+    "unknown186_S_errors_max": 184,
+    "non_ASA_errors_equal": 107,
+    "matched_H_A_M_S_both_protected": true,
+    "matched_at_least_one_class_strictly_improves": true
+  },
+  "risk_actions": {
+    "EARLY_SELECTION": "fixed_terminal_no_tie_early",
+    "OMITTED_POPULATION": "score_every_registered_row",
+    "WEAK_SUPPORT": "report_class_parameter_support_no_stop_authority",
+    "LOSS_NOT_TRANSFER": "training_loss_diagnostic_only",
+    "CLASS_TRADEOFF": "protect_each_class_from_raw_predictions",
+    "SOURCE_CONCENTRATION": "multiple_folds_and_outside_largest_groups",
+    "NUMERIC_AND_REFERENCE": "fresh_paired_baseline_and_conditional_seed_confirmation",
+    "LOCAL_MECHANISM": "bounded_primary_trial_without_fold_override",
+    "POSTHOC_RULE_CHANGE": "seal_before_fit_reject_changed_sources"
+  },
+  "inspected_development_not_blind": true,
+  "collusion_risk_reported": true,
+  "automatic_more_fits": false,
+  "solver": {
+    "name": "LBFGS",
+    "dtype": "float64",
+    "max_iter_per_call": 1,
+    "max_eval_per_call": 200,
+    "lr": 1,
+    "history_size": 20,
+    "tolerance_grad": 1e-07,
+    "tolerance_change": 1e-09,
+    "line_search_fn": "strong_wolfe"
+  },
+  "budget_rationale": "Preserve V138/V139 200 full-gradient evaluations per fit and 200 accepted-update cap; no evidence justifies 3x extension. Six remaining fits, at most 1200 new closures and 2400 cumulative primary closures. No score-driven extension.",
+  "research": [
+    {
+      "url": "https://github.com/yandex-research/tabm",
+      "use": "Intentional independent-member CE; objective difference is not a bug"
+    },
+    {
+      "url": "https://arxiv.org/abs/2301.11323",
+      "use": "Joint-loss collusion and transfer failure; fixed backbone limits scope, not proof of safety"
+    },
+    {
+      "url": "https://arxiv.org/abs/1612.01474",
+      "use": "Probability mixture predictive distribution; no claim this paper endorses joint training"
+    }
+  ],
+  "nonconvexity": "E is nonconvex even with frozen representation; no inference from old member-margin LP. Responsibility-weighted member gradient may concentrate.",
+  "falsification": "Any pure residual at endpoint/last five distinct states, any new pure-correct error or registered-guard regression means issue not solved. Loss decrease insufficient.",
+  "evidence_sha256": {
+    "training/review_policy/history_cases.json": "beee71dcd8a4bc85b457e82b3efbb7790f3c348d60d7421633949a3e8315b347",
+    "training/review_policy/v137_single_issue_plan.json": "b1246e47af72d32dac1e37fb84be11196f14664a02a58545e6dabc26ee2bff75",
+    "artifacts/v138_single_issue_round1_20260930/final_delivery.json": "760735954d170c6827dd8ae5e207e331c16acfa25ec9eb22917858625bf13905",
+    "artifacts/v138_single_issue_round1_20260930/run_seal.json": "b1980152ab4fc77579c1fd6726897e7bb624c3bb302635030ab7160f8aed2934",
+    "artifacts/v138_single_issue_round1_20260930/scoped_training_capabilities.json": "001d2fc2f21a8e6dfca2f0e249097490fcabc0bfd41578a10a210e9f80df2052",
+    "artifacts/v138_single_issue_round1_20260930/fold1_verified_TRAIN_guard.parquet": "b336bda8a6507fe984a8e06707f11c6e666430191ff5f59f6c1f5442e7a5be5b",
+    "docs/TRAIN_OBJECTIVE_EVIDENCE_NOTE_20261001.md": "04804f939ffbed846be998d3b80d19ee3f7e17e9549bd0a52dd6f5dafc5d1642",
+    "training/test_v116.py": "f29b8a2494d04558a9043f92be8df1c3a7626c0a6c562befa17822f8c57bec41",
+    "artifacts/v116_nested_selection_20260929/locked_selection.json": "323416026971059e7f88e19c61a838405512d001c7e1bdef2576e2ce63c20a6e",
+    "artifacts/v116_nested_selection_20260929/split_policy.json": "12c330a9efc003e89517c23000ce5d5620c84babf54bf964ec86070f7cb7208c",
+    "artifacts/v117_selection_failure_review_20260929/audit.json": "5985796464a0776a55b374c992c5fb49d9d688d4d9a1e1c33d084d15489361ec",
+    "docs/V81_ROOT_CAUSE_AND_TRAINING_RESET.md": "404e8ac8e9e1f8dd143f924ee3aad8a32eb149bbc6b93794a44fdbab6b64b948",
+    "docs/V110_LAYER_PROBE_TRAINING_RESULTS_AND_STOP_DECISION.md": "3501d58372504bbbc247a5bcdf91657fc04b813f516f7772ca53911e7e693fd9",
+    "docs/V104_OFFICIAL_COVERAGE_AND_INDEPENDENT_MODEL_TRAINING.md": "50ebf05f6d996a206aae566af6078a01bfc05e033c841b06add2c08f3d428350",
+    "artifacts/v113_case_training_20260929/OOF_ASA_decisions.parquet": "d7daba8d3bbfd71e63f3a76d2ddb73113046c20d2e2de9882bf9f04b464a74d1",
+    "docs/V113_CASE_TRAINING_RESULTS_AND_STOP.md": "bf8be3dbd1b29c0483057cbb982a2ad182e1adc71aafc86e65630f7df1c8052e",
+    "artifacts/v116_nested_selection_20260929/baseline_drift_audit.json": "d5fe242c37049d03e33d00f1e1c4454448854914b3f1ed3a2daa09217ed1cf70",
+    "artifacts/v117_selection_failure_review_20260929/frozen_member_audit.json": "2a35611fd7d9ea821931ff5f25031a7577595aa38758b1d781a3299a30d64853",
+    "artifacts/v118_retrospective_and_training_contract_20260929/probe_results.json": "6d7bdaafb363e28ebd1d4abd46313815bbf01bbfcf1839d3b75471deb057eee1",
+    "artifacts/v118_retrospective_and_training_contract_20260929/training_contract.json": "d86bb98f006975f58dbbfd19d2b207e09cfc6eb8cf0d8597ff0c3fc499715e8c",
+    "docs/V140_PRETRAIN_SINGLE_ISSUE_DECISION.md": "8378b78f15d49b22a9134693243af4295c7ce0ae7bfa51354a45bb032463faef"
+  }
+}

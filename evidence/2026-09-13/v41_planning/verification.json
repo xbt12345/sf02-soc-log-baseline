@@ -1,0 +1,29 @@
+{
+  "all_planning_checks_passed": true,
+  "new_soc_fits": 0,
+  "production_parser_modified": false,
+  "plan_complete": true,
+  "v41_model_implemented": false,
+  "model_quality_accepted": false,
+  "bound_files": {
+    "docs/V41_REASSESSMENT.md": "4d7d374a5aadefd91ff1782d09201d541b2c5bbec575f4098ba0a238758ea8a6",
+    "docs/V41_NEXT_PLAN.md": "c856c50f62ca443a2b4002d40163ae659cb5905ce8dd7ffd6cffc17357724ab2",
+    "docs/TRAINING_PLAN.md": "bdd9869f83f810535c95faee97b988cf6f2d49a263498b295b8a9dfdb089d80a",
+    "README.md": "8dcf169c0ff0bf1a409cf84e8dece7f4078e89612a5513f6f0d8a36cecbe740c",
+    "training/README.md": "c8a7d65b59078a2c58595a67e4087e91ae583807d5e689631c71e65423edcfd8",
+    "training/audit_v41_planning.py": "997fcf28a0b5935401ded36b9f5ad71d9f799b0c3046511806178f58a53c8fa6",
+    "evidence/2026-09-13/v41_planning/diagnosis.json": "461c14cbd08d4b46135006fa2082aa9520da41443db51f604590587612b05fd5",
+    "evidence/2026-09-13/v41_planning/native_status_probe.json": "428183bd75c6dfcdb1f560e2003cd2057a3900510c1bd9588f457742f4541abf",
+    "evidence/2026-09-13/v41_planning/sources.json": "3d23aeca817a752eea5cdd17ceca64655b2b681196bdd8bd487685862d998579"
+  },
+  "local_links_checked": 6,
+  "diagnosis_source_files_rechecked": 13,
+  "checks": [
+    "v40 factual sources unchanged",
+    "three-fold exact alias geometry rechecked",
+    "all 18 targeted native status carriers agree",
+    "parameter recoding census retained",
+    "P/F/D single-factor plan and native repair branch separated"
+  ],
+  "scope": "New diagnosis and next-step plan only; no new classifier or migration guarantee"
+}

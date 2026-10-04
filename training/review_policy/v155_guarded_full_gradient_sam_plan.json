@@ -1,0 +1,179 @@
+{
+  "version": "V155-full-gradient-first-order-neighborhood",
+  "fits": 6,
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "A",
+    "B"
+  ],
+  "candidate": "B",
+  "initialization": "same_fold_V146_A_fixed_endpoint_for_both_arms",
+  "trainable": "existing_second_layer_22528_only",
+  "new_parameters": 0,
+  "loss_A": "full_original_frequency_member_CE",
+  "loss_B": "first_order_full_gradient_neighborhood_member_CE",
+  "radius": "0.001_times_initial_parameter_L2_fixed_for_entire_fit_no_scan",
+  "solver": {
+    "max_updates": 200,
+    "max_proposals": 600,
+    "max_backtracks": 20,
+    "initial_step": 0.01,
+    "max_step": 0.01,
+    "min_step": 1e-08,
+    "shrink": 0.5,
+    "grow": 2.0,
+    "armijo": 0.0001,
+    "zero_gradient": 1e-15
+  },
+  "max_fit_full_gradients": {
+    "A": 200,
+    "B": 400
+  },
+  "max_fit_outer_gradient_attempts": 200,
+  "preflight_full_gradients": 9,
+  "preflight_dummy_gradients": 1,
+  "direction": "unit_L2_A_true_CE_gradient_B_first_order_shifted_CE_gradient_ignore_shift_derivative",
+  "proposal_proxy": "current_iteration_epsilon_frozen_across_backtracks_L_theta_trial_plus_epsilon",
+  "accepted_trial": "frozen_epsilon_proxy_Armijo_AND_unshifted_actual_all_correct_TRAIN_guard",
+  "endpoint": "last_accepted_on_registered_budget_or_registered_no_feasible_step_no_checkpoint_selection",
+  "proxy_not_exact_ball_maximum": true,
+  "moving_epsilon_risk_monotonic_not_claimed": true,
+  "ordinary_CE_monotonic_required": false,
+  "preserve_input_class_mass": true,
+  "HELD_used_for_fitting_or_selection": false,
+  "automatic_repeat": false,
+  "automatic_issue_closure": false,
+  "old_budgets": {
+    "old_head_chain_fits": 12,
+    "old_head_additional": 0,
+    "V142_existing_fits": 3,
+    "V146_existing_fits": 6,
+    "new_head_fits": 0
+  },
+  "TRAIN_acceptance": {
+    "pure_errors": 0,
+    "M_errors": 0,
+    "S_by_fold": [
+      22,
+      6,
+      28
+    ],
+    "correct_row_new_errors": 0,
+    "last_distinct_states": 5,
+    "guard_entry": "training/v142_retention_check.py"
+  },
+  "matched_effect_acceptance": {
+    "M_no_increase": true,
+    "S_no_increase": true,
+    "one_class_improves": true,
+    "two_folds_improve": true,
+    "outside_top3_S_no_increase": true
+  },
+  "confirmation": "none_automatic_new_confirmation_requires_separate_bound_plan_after_all_quality_gates",
+  "selection_labels": "none_fixed_resource_terminal",
+  "evaluation_scope": "previously_inspected_development",
+  "actual_compute_A_B_not_equal": true,
+  "new_independent_support_created": false,
+  "task_quality": {
+    "full_original_rows": 2056871,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "all_class_precision_recall_f1_A0_protected": true,
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2074,
+    "ASA_total_errors_max": 2170,
+    "improved_outer_folds_min": 2,
+    "S_source_mean_recall_min": 0.1151252713,
+    "S_zero_recall_roots_max": 198,
+    "S_outside_big3_errors_max": 1372,
+    "root2868_M_errors_max": 48,
+    "header682_errors_max": 0,
+    "unknown186_S_errors_max": 184,
+    "non_ASA_errors_equal": 107,
+    "matched_H_A_M_S_both_protected": true,
+    "matched_at_least_one_class_strictly_improves": true
+  },
+  "risk_actions": {
+    "EARLY_SELECTION": "fixed_terminal_no_tie_early",
+    "OMITTED_POPULATION": "score_every_registered_row",
+    "WEAK_SUPPORT": "report_class_parameter_support_no_stop_authority",
+    "LOSS_NOT_TRANSFER": "training_loss_diagnostic_only",
+    "CLASS_TRADEOFF": "protect_each_class_from_raw_predictions",
+    "SOURCE_CONCENTRATION": "multiple_folds_and_outside_largest_groups",
+    "NUMERIC_AND_REFERENCE": "fresh_paired_baseline_and_conditional_seed_confirmation",
+    "LOCAL_MECHANISM": "bounded_primary_trial_without_fold_override",
+    "POSTHOC_RULE_CHANGE": "seal_before_fit_reject_changed_sources"
+  },
+  "hypothesis_scope": "bounded_test_not_causal_proof_or_reproduction_of_stochastic_SAM",
+  "hypothesis": "V154 fixed legal TRAIN adversarial neighborhoods change probability/member loss while keeping TRAIN decisions. Optimizing their first-order proxy, against a matched ordinary CE baseline, may reduce source-excluded corrections without sacrificing the accepted original TRAIN decisions. Trial tests usefulness, not causation.",
+  "failure_and_stopping": "Any registered class/source matched-effect or full A0 gate failure refuses confirmation/replacement. No extra rho, seed, coefficient, input, teacher, checkpoint or fit after failure. Execution errors preserve sources/run; small no-feasible step is registered resource termination, not early quality selection.",
+  "irreducible_loss_scope": "V154 local-group empirical entropy is 71.2-88.4 percent of baseline member CE. No label removal/rewrite; pure/mixed/class member risks reported every full gradient. CE attribution does not imply gradient attribution.",
+  "reference_quality": {
+    "expected_full_rows": 2056871,
+    "asa_error_limits": {
+      "M": 318,
+      "S": 2074,
+      "total": 2170
+    },
+    "minimum_improved_folds": 2,
+    "protected_S_roots": [
+      21702,
+      20849,
+      29
+    ],
+    "required_full_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "source_scope": "Only official existing data; no private valid answers, new train sets, source identity inputs, product labels or outer targets.",
+  "new_fit_reason": "SAM-like neighborhood objective was previously deferred, never fitted. V154 supplies finite loss sensitivity; bounded test does not require prior proof of transfer causation. This is a new objective with new single-factor control, not V146 auxiliary continuation or old head-chain reset.",
+  "implementation_scope": "Full original-frequency gradients, all16 members; functional frozen adversary; shared unit-L2 guarded Armijo. First-order ignore epsilon derivative; not stochastic/minibatch paper reproduction, no exact ball maximization.",
+  "execution_review_adapter": "training/v155_runtime.py applicable resource-terminal profile calls experiment_review.check_bindings and evaluator uses evaluate_primary. Do not fake 25 epochs or legacy 6+12 profile; old source/seals unchanged.",
+  "primary_sources": [
+    "https://arxiv.org/abs/2010.01412",
+    "https://github.com/google-research/sam",
+    "https://arxiv.org/abs/2403.12350",
+    "https://proceedings.mlr.press/v70/dinh17b.html"
+  ],
+  "evidence_sha256": {
+    "docs/EXPERIMENT_REVIEW_RULES.md": "00de5f109bd5fbd5060bd8138c4fb5c4f9a3c59cb65cff9f8eeb09292520ab41",
+    "docs/V152_NEXT_TRAINING_DECISION_AND_CONDITIONAL_PLAN.md": "8636a39e14bb194b784eb5a5fc41432c36f140a79792473f6354ede68cf0a61d",
+    "docs/V153_TRAINING_TRANSFER_GAP_AND_NEXT_MECHANISM_REVIEW.md": "296d6394eb63d52922a8a66a00da19391106903e6f25e07fd1697b0c4b98db59",
+    "docs/V154_DIRECTIONAL_NEIGHBORHOOD_RESULTS_AND_DECISION.md": "71ef1b6186d1293b8e2539611351c3d5401c30ec2e6e5bd0fa73254aedfafd4e",
+    "docs/V154_INDEPENDENT_NEIGHBORHOOD_AND_LOSS_REVIEW.md": "77241557f9d960e3522b65bcdcbc1045da4f2139116d65eb2abb931a8ee5db77",
+    "artifacts/v154_directional_neighborhood_v2_20261001/audit.json": "8400b85a2b6c3fcd816e40a1a0385f838663039e6318e4094537837f6e9dd0aa",
+    "artifacts/v154_independent_fixed_neighborhood_v3_20261001/audit.json": "d655d656c522ed886ceb7b99acd96e7696b37991722e4f750b28fc086434158a",
+    "artifacts/v154_independent_ensemble_ce_floor_v2_20261001/audit.json": "9cea9fb3e3476fac4bcfdd7bcfc555fd766ef3dc752b38aa969937561911f000",
+    "training/review_policy/history_cases.json": "beee71dcd8a4bc85b457e82b3efbb7790f3c348d60d7421633949a3e8315b347",
+    "training/review_policy/v137_single_issue_plan.json": "b1246e47af72d32dac1e37fb84be11196f14664a02a58545e6dabc26ee2bff75",
+    "training/v155_runtime.py": "5fc2a666418a57117892e0b79ad021fee3b5c90842a5d37d4ed3adf45ee2bd24",
+    "training/v155_sam_objective.py": "62243e55fa356ec28b8362d2e70da34502931af961f5655219f72ee9d447e3ba",
+    "training/v155_train.py": "243fb1f0c693f83f4a28a2a30bdbf4efa13866f3206631bc652f9321b904eb95",
+    "training/v155_evaluate.py": "b06930147403cbf266b1d0640a2c3251b8ed778bab192d12fe6ea91f3f6bece7",
+    "training/test_v155_sam_objective.py": "e5d30d99cef6f51dddb29068cfb3c4f9babeec06fd079e93b4312e477f515949",
+    "artifacts/v146_guarded_pair_training_20261001/full_prediction_ledger.parquet": "5d36dd480abff1b67db1944e7ce36e57f99af16516559e90bcb3944787e437e1",
+    "artifacts/v146_guarded_pair_training_20261001/final_delivery.json": "b874f0c4c85dbabfc7c94926e0bbbf660e50d1329bc87fa8b32e3460a7b28f0b",
+    "artifacts/v146_guarded_pair_training_20261001/fold0_A/endpoint.pt": "272c1b004b1dd24d7c835e3c7b4b0887a4afdafd4480ef5c0e1a9f8fed32eb39",
+    "artifacts/v146_guarded_pair_training_20261001/fold0_A/sealed_all_prob.npy": "ff07e7702efd1d679cfb88c63b19b8c0b71eb7de3d4cdde81575bd343232271f",
+    "artifacts/v154_directional_neighborhood_v2_20261001/fold0_A/probe.json": "01b1ffd89e5d5dfa269f2b40614b274834ea206304ff08f9fddb9f7c8ffbfa17",
+    "artifacts/v146_guarded_pair_training_20261001/fold1_A/endpoint.pt": "593c5759123614778a6e78db673601adaaa3330cafe513e558cacc33383a3eed",
+    "artifacts/v146_guarded_pair_training_20261001/fold1_A/sealed_all_prob.npy": "8c5f272353583581ff4bda7bd5f177f69080147d94650ec1237469ecc4fbd198",
+    "artifacts/v154_directional_neighborhood_v2_20261001/fold1_A/probe.json": "e55beafd88acd76bc2b103c49e90c8fb03619fb827c3d293abe089e52bbb1d85",
+    "artifacts/v146_guarded_pair_training_20261001/fold2_A/endpoint.pt": "020b0b54e1758d4fc5be100a349da37fd6a42405e25044cea5e029c94cafcef6",
+    "artifacts/v146_guarded_pair_training_20261001/fold2_A/sealed_all_prob.npy": "be9f7d999924d922095b7e30256eb65859e03c8ee9ee28a0c0e3967b2e3df217",
+    "artifacts/v154_directional_neighborhood_v2_20261001/fold2_A/probe.json": "f715c83a305a219261e6bd283b06f14ec450716bc7ce294abdf9981d5036f2c0",
+    "artifacts/v155_independent_guard_containment_20261001/audit.json": "323e7f1f0b8025918345787f45f71fc3212b9bf197e4ac3e197c157155939f44",
+    "training/v155_independent_guard_containment.py": "b57b70b52b69ef3ffbefbacbfac95ac2296585ed7c074eaaf5e766d97a7bc2ce",
+    "docs/V155_NEIGHBORHOOD_TRIAL_DESIGN_AND_IMPLEMENTATION_REVIEW.md": "617387bb9e8575b33f7c7e5ad28d06fbfcc464ae5ea2ed2bd60aa76cdf9aefa7"
+  },
+  "initial_guard_containment": "actual_same_role_V146_A_correct_contains_V138_V140_V142_verified"
+}

@@ -1,0 +1,158 @@
+{
+  "version": "V139-direction-design",
+  "status": "design_only_runtime_not_implemented",
+  "latest_actual_training": "V138",
+  "new_fits": 0,
+  "new_updates": 0,
+  "decision": {
+    "recommend_one_bounded_new_mechanism_trial": true,
+    "continue_old_unconstrained_clearance": false,
+    "old_C_margin_round2_eligible": false,
+    "old_issue_closed": false,
+    "training_zero_not_prerequisite_for_transfer_review": true
+  },
+  "focus": "Limit source-out M regression introduced by further frozen-readout fitting while retaining verified TRAIN repairs",
+  "design_amendment": {
+    "previous_plan": "training/review_policy/v137_single_issue_plan.json",
+    "reason_evidence": "artifacts/v139_training_decision_review_20261001/source_regression_audit.json",
+    "old_C_margin_gates_not_claimed_met": true,
+    "requires_new_runtime_review": true,
+    "old_training_issue_kept_open": true,
+    "budget_renaming_forbidden": true
+  },
+  "scope": {
+    "original_rows": 2056871,
+    "ASA_rows": 112807,
+    "input_dimensions": 66287,
+    "members": 16,
+    "hidden": 128,
+    "facts": 495,
+    "trainable_parameters": 7677,
+    "legal_TRAIN_original_frequencies_only": true,
+    "backbone_inputs_and_other_formats_frozen": true,
+    "HELD_in_gradient_weights_or_lambda": false,
+    "rare_S_upsampling": false
+  },
+  "arms": {
+    "C": {
+      "start": "same fold V138 H_L accepted endpoint",
+      "anchor_penalty": false,
+      "role": "causal control only; no standalone promotion"
+    },
+    "P": {
+      "start": "same fold V138 H_L accepted endpoint",
+      "anchor_penalty": true,
+      "anchor": "same fold V135 R_decay actual readout",
+      "role": "sole preregistered candidate"
+    }
+  },
+  "objective": {
+    "CE": "original-row mean member CE",
+    "R": "squared Euclidean parameter distance to V135 R_decay / (2*7677)",
+    "lambda": "L2norm(TRAIN CE gradient at theta_ref) / L2norm((theta_start-theta_ref)/7677)",
+    "lambda_fixed_once_per_fold": true,
+    "lambda_grid_or_outer_selection": false,
+    "invalid_or_zero_gradient_or_distance_action": "abort; no fallback strength",
+    "lambda_rule_is_unvalidated_hypothesis": true
+  },
+  "budget": {
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "arms": [
+      "C",
+      "P"
+    ],
+    "new_primary_fits_max": 6,
+    "old_fits_consumed": 6,
+    "cumulative_chain_fits_max": 12,
+    "cumulative_chain_rounds_max": 2,
+    "gradient_evaluations_max_per_fit": 200,
+    "accepted_updates_max_per_fit": 200,
+    "after_failure": "stop this frozen-readout mechanism; no extra lambda seeds thresholds or renamed budget"
+  },
+  "optimizer": {
+    "method": "float64 torch LBFGS",
+    "settings": {
+      "max_iter_per_call": 1,
+      "max_eval_per_call": 200,
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-09,
+      "history_size": 20,
+      "line_search_fn": "strong_wolfe",
+      "lr": 1
+    },
+    "endpoint": "last actually accepted state at registered budget or numerical stop; no score-selected checkpoint",
+    "unaccepted_trial_rollback": true,
+    "setup_gradients_separately_logged": true
+  },
+  "retention": {
+    "capability_registry": "artifacts/v138_single_issue_round1_20260930/scoped_training_capabilities.json",
+    "guard": "artifacts/v138_single_issue_round1_20260930/fold1_verified_TRAIN_guard.parquet",
+    "guard_rows": 40879,
+    "registered_new_errors_max": 0,
+    "all_H_L_original_correct_pure_TRAIN_rows_and_64_repairs_replayed": true,
+    "last_window_actual_distinct_accepted_states": 5,
+    "no_HELD_repair_targeting": true,
+    "mixed_and_unknown_rows_never_dropped": true
+  },
+  "mechanism_quality_not_promotion": {
+    "ASA_M_errors_max": 1748,
+    "ASA_S_errors_max": 1655,
+    "matched_C_both_classes_protected": true,
+    "matched_at_least_one_strictly_improved": true,
+    "folds_both_protected_and_one_improved_min": 2,
+    "root2868_M_errors_max": 1040,
+    "source_panels_include_outside_big_groups": true,
+    "TRAIN_remaining16_not_hidden": true
+  },
+  "task_adoption_quality": {
+    "full_original_rows": 2056871,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "all_class_precision_recall_f1_A0_protected": true,
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2074,
+    "ASA_total_errors_max": 2170,
+    "improved_outer_folds_min": 2,
+    "S_source_mean_recall_min": 0.1151252713,
+    "S_zero_recall_roots_max": 198,
+    "S_outside_big3_errors_max": 1372,
+    "root2868_M_errors_max": 48,
+    "header682_errors_max": 0,
+    "unknown186_S_errors_max": 184,
+    "non_ASA_errors_equal": 107,
+    "matched_H_A_M_S_both_protected": true,
+    "matched_at_least_one_class_strictly_improves": true
+  },
+  "honesty": {
+    "already_inspected_development_folds": true,
+    "independent_blind_or_external_test_executed": false,
+    "source_diagnosis_not_fit_labels": true,
+    "mechanism_success_not_task_success": true,
+    "no_claim_issue_fully_solved_in_two_rounds": true
+  },
+  "runtime_readiness": {
+    "trainer_implemented": false,
+    "run_seal_created": false,
+    "current_plan_check_is_not_execution_authorization": true,
+    "must_upgrade_applicable_experiment_review_and_replay_history_before_updates": true
+  },
+  "evidence_sha256": {
+    "artifacts/v138_single_issue_round1_20260930/final_delivery.json": "760735954d170c6827dd8ae5e207e331c16acfa25ec9eb22917858625bf13905",
+    "artifacts/v138_single_issue_round1_20260930/run_seal.json": "b1980152ab4fc77579c1fd6726897e7bb624c3bb302635030ab7160f8aed2934",
+    "artifacts/v138_single_issue_round1_20260930/quality.json": "20db7dfe15a8b1516ae9c3c8a342107ca86b57c9e456f6afc77a3fb1fa271f89",
+    "artifacts/v138_single_issue_round1_20260930/scoped_training_capabilities.json": "001d2fc2f21a8e6dfca2f0e249097490fcabc0bfd41578a10a210e9f80df2052",
+    "artifacts/v138_single_issue_round1_20260930/fold1_verified_TRAIN_guard.parquet": "b336bda8a6507fe984a8e06707f11c6e666430191ff5f59f6c1f5442e7a5be5b",
+    "artifacts/v139_training_decision_review_20261001/member_requirement_audit.json": "7f6cbeb3d27269c0e8f6190c60ceb08027a4f8e6f72a1b4c7afed2b059d3f705",
+    "artifacts/v139_training_decision_review_20261001/remaining16_diagnosis.parquet": "70e3ceb0c1078c3fe609617957f4bb4850e5884c3667e81eee76b1b601cc5532",
+    "artifacts/v139_training_decision_review_20261001/diagnosis_receipt.json": "90698996b48fcb25a0e6b541123f4076e724c0e73fe7629eb8939df1603a4adf",
+    "artifacts/v139_training_decision_review_20261001/source_regression_audit.json": "cd4aec21eb3fbd20edc65afe03e5cab7d5dcab3c2e876580d6643ee9de4c3300",
+    "docs/V139_TRAINING_DECISION_AND_TARGETED_PLAN.md": "5dec457fda21e54201f5d075c2a109a1cafd1f95104ddb0c37ec137b80ddd704"
+  }
+}

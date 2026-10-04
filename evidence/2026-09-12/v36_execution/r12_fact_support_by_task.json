@@ -1,0 +1,796 @@
+{
+  "known_dev": [
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 48730
+    },
+    {
+      "role": 3,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 13774
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 8620
+    },
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 7624
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 34
+    },
+    {
+      "role": 3,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 10
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 6573
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 6560
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 64031
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 10659
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 13180
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 3406
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 20435
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 17231
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 414
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 6812
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 3406
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 138
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 64
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 64
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 23
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 39
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 2424
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 408
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 822
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 402
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 2
+    }
+  ],
+  "source_ad": [
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 10598
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 58696
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 9454
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 38
+    },
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 6
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 6573
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 6560
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 17482
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 26424
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 2991
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 26
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 4644
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 30
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 449
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 175
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 62
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 3030
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 558
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 468
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 67822
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 13735
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 6062
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 2
+    }
+  ],
+  "source_duo": [
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 10626
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 58784
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 9338
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 32
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 6
+    },
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 6
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 13133
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 12743
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 10698
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 81660
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 26506
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 422
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 3011
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 4542
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 63
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 183
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 62
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 3110
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 456
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 12
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 490
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 2
+    }
+  ],
+  "source_waf": [
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 10666
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 58758
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 9324
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 38
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 6
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 13133
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 81991
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 10082
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 26517
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 422
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 4532
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 3010
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 13028
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 195
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 63
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 62
+    },
+    {
+      "role": 3,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 4056
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 2
+    }
+  ],
+  "asa_hard": [
+    {
+      "role": 3,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 62796
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 12014
+    },
+    {
+      "role": 2,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 2356
+    },
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 1582
+    },
+    {
+      "role": 1,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 12
+    },
+    {
+      "role": 0,
+      "label_index": 1,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 32
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "session",
+      "outcome": "",
+      "rows": 13133
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 81956
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 10138
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 2573
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 23788
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 70
+    },
+    {
+      "role": 1,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 4225
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "success",
+      "rows": 13007
+    },
+    {
+      "role": 3,
+      "label_index": 2,
+      "category": "network",
+      "outcome": "blocked",
+      "rows": 3473
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 544
+    },
+    {
+      "role": 2,
+      "label_index": 2,
+      "category": "authentication",
+      "outcome": "failure",
+      "rows": 66
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "authentication",
+      "outcome": "",
+      "rows": 62
+    },
+    {
+      "role": 1,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 486
+    },
+    {
+      "role": 0,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 2984
+    },
+    {
+      "role": 2,
+      "label_index": 0,
+      "category": "",
+      "outcome": "",
+      "rows": 586
+    },
+    {
+      "role": 0,
+      "label_index": 2,
+      "category": "",
+      "outcome": "blocked",
+      "rows": 2
+    }
+  ]
+}

@@ -1,0 +1,3856 @@
+[
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":10000,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 54,
+    "labels_M_S": [
+      44,
+      10
+    ],
+    "body_groups": 15,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 15
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":10006,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":10024,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      24,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1024,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1026,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1027,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1028,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":10443,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 74,
+    "labels_M_S": [
+      64,
+      10
+    ],
+    "body_groups": 18,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 18
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":110,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 32,
+    "labels_M_S": [
+      20,
+      12
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":111,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1194,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      24,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":123,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 114,
+    "labels_M_S": [
+      104,
+      10
+    ],
+    "body_groups": 27,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 27
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":123,\"dst_port_range\":\"system\",\"dst_role\":\"outside\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"dmz\",\"transport_protocol\":\"udp\"}",
+    "rows": 554,
+    "labels_M_S": [
+      32,
+      522
+    ],
+    "body_groups": 265,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "acl",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 265
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1234,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 46,
+    "labels_M_S": [
+      36,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1270,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1311,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1360,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":137,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":137,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 58,
+    "labels_M_S": [
+      48,
+      10
+    ],
+    "body_groups": 14,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 14
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":138,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":139,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":143,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1433,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 210,
+    "labels_M_S": [
+      200,
+      10
+    ],
+    "body_groups": 41,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 41
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1433,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      4,
+      14
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1434,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1434,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      24,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1533,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":156,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1604,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":161,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 42,
+    "labels_M_S": [
+      32,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":162,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":16993,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      20,
+      2
+    ],
+    "body_groups": 5,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 5
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":17,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":170,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1707,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":17185,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":177,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":179,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":18082,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":18091,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":18092,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1812,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":18245,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      12,
+      2
+    ],
+    "body_groups": 4,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 4
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1911,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      12,
+      2
+    ],
+    "body_groups": 4,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 4
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":1935,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":194,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2000,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 62,
+    "labels_M_S": [
+      50,
+      12
+    ],
+    "body_groups": 17,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 17
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2049,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2080,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      12,
+      12
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2082,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2086,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 32,
+    "labels_M_S": [
+      22,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2087,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 42,
+    "labels_M_S": [
+      32,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":21,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 104,
+    "labels_M_S": [
+      94,
+      10
+    ],
+    "body_groups": 21,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 21
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2181,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":22,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 484,
+    "labels_M_S": [
+      474,
+      10
+    ],
+    "body_groups": 98,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "acl",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 98
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":23,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 1890,
+    "labels_M_S": [
+      1876,
+      14
+    ],
+    "body_groups": 372,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 372
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":23557,\"dst_port_range\":\"user\",\"dst_role\":\"outside\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"dmz\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2376,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 38,
+    "labels_M_S": [
+      28,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2377,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2401,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2427,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2484,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":25,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 80,
+    "labels_M_S": [
+      70,
+      10
+    ],
+    "body_groups": 19,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 19
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2541,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":26,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2628,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      12,
+      2
+    ],
+    "body_groups": 3,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 3
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":2638,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":264,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3128,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 98,
+    "labels_M_S": [
+      88,
+      10
+    ],
+    "body_groups": 24,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 24
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3268,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3283,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3283,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      14,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3306,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 56,
+    "labels_M_S": [
+      44,
+      12
+    ],
+    "body_groups": 14,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 14
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":3416,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 8,
+    "labels_M_S": [
+      4,
+      4
+    ],
+    "body_groups": 3,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 3
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":387,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":389,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 42,
+    "labels_M_S": [
+      32,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":4172,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      16,
+      2
+    ],
+    "body_groups": 5,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 5
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":4242,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":427,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":43,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":443,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 54,
+    "labels_M_S": [
+      52,
+      2
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":443,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 36,
+    "labels_M_S": [
+      24,
+      12
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":444,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 52,
+    "labels_M_S": [
+      40,
+      12
+    ],
+    "body_groups": 15,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 15
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":445,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 222,
+    "labels_M_S": [
+      212,
+      10
+    ],
+    "body_groups": 48,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 48
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":447,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      8,
+      4
+    ],
+    "body_groups": 4,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 4
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":44818,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      24,
+      2
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":4500,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":4567,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      24,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":465,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 54,
+    "labels_M_S": [
+      44,
+      10
+    ],
+    "body_groups": 13,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 13
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":49211,\"dst_port_range\":\"dynamic\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":500,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":500,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 20,
+    "labels_M_S": [
+      8,
+      12
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5000,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":50000,\"dst_port_range\":\"dynamic\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      24,
+      2
+    ],
+    "body_groups": 5,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 5
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5001,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 40,
+    "labels_M_S": [
+      30,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5004,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5005,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":50050,\"dst_port_range\":\"dynamic\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":502,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 36,
+    "labels_M_S": [
+      26,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":50580,\"dst_port_range\":\"dynamic\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5060,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 108,
+    "labels_M_S": [
+      98,
+      10
+    ],
+    "body_groups": 25,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 25
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5061,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":514,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":514,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 270,
+    "labels_M_S": [
+      256,
+      14
+    ],
+    "body_groups": 20,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 20
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":515,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":520,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5242,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":53,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 38,
+    "labels_M_S": [
+      28,
+      10
+    ],
+    "body_groups": 11,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 11
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":53,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 78,
+    "labels_M_S": [
+      68,
+      10
+    ],
+    "body_groups": 20,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 20
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":53,\"dst_port_range\":\"system\",\"dst_role\":\"outside\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"dmz\",\"transport_protocol\":\"udp\"}",
+    "rows": 6842,
+    "labels_M_S": [
+      4,
+      6838
+    ],
+    "body_groups": 1755,
+    "varying_raw_fields": [
+      "src_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "acl",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 1755
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5349,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5351,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 16,
+    "labels_M_S": [
+      6,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5353,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5353,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5432,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 98,
+    "labels_M_S": [
+      88,
+      10
+    ],
+    "body_groups": 28,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 28
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5443,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      16,
+      2
+    ],
+    "body_groups": 3,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 3
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5480,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5500,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":554,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 38,
+    "labels_M_S": [
+      28,
+      10
+    ],
+    "body_groups": 11,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 11
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5601,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5631,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5632,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5672,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      14,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5678,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5800,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 20,
+    "labels_M_S": [
+      10,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":587,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 52,
+    "labels_M_S": [
+      42,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":5938,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":60000,\"dst_port_range\":\"dynamic\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 20,
+    "labels_M_S": [
+      16,
+      4
+    ],
+    "body_groups": 5,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 5
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":623,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":623,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      14,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":631,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":636,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":6379,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 112,
+    "labels_M_S": [
+      102,
+      10
+    ],
+    "body_groups": 38,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 38
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":6443,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      12,
+      2
+    ],
+    "body_groups": 4,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 4
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":6514,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 55,
+    "labels_M_S": [
+      18,
+      37
+    ],
+    "body_groups": 23,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 23
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"icmp_code\":0,\"icmp_message\":\"echo_request\",\"icmp_type\":8,\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"icmp\"}",
+    "rows": 804,
+    "labels_M_S": [
+      798,
+      6
+    ],
+    "body_groups": 180,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 180
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"icmp_code\":13,\"icmp_message\":\"destination_unreachable\",\"icmp_type\":3,\"icmp_unreachable\":\"administratively_prohibited\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"icmp\"}",
+    "rows": 865,
+    "labels_M_S": [
+      180,
+      685
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"icmp_code\":3,\"icmp_message\":\"destination_unreachable\",\"icmp_type\":3,\"icmp_unreachable\":\"port\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"icmp\"}",
+    "rows": 158,
+    "labels_M_S": [
+      152,
+      6
+    ],
+    "body_groups": 27,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 27
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":43702,\"src_port_range\":\"user\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":49237,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":49862,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":50123,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":50159,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 10,
+    "labels_M_S": [
+      8,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":51809,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":53899,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 10,
+    "labels_M_S": [
+      8,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":55081,\"src_port_range\":\"dynamic\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 4358,
+    "labels_M_S": [
+      3848,
+      510
+    ],
+    "body_groups": 1088,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 1088
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 528,
+    "labels_M_S": [
+      296,
+      232
+    ],
+    "body_groups": 179,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "dst_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 179
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":65536,\"dst_role\":\"outside\",\"icmp_code\":3,\"icmp_message\":\"destination_unreachable\",\"icmp_type\":3,\"icmp_unreachable\":\"port\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"dmz\",\"transport_protocol\":\"icmp\"}",
+    "rows": 128,
+    "labels_M_S": [
+      106,
+      22
+    ],
+    "body_groups": 38,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 38
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":666,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":6690,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":6881,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 28,
+    "labels_M_S": [
+      18,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":69,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 36,
+    "labels_M_S": [
+      26,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":691,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7070,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7443,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 60,
+    "labels_M_S": [
+      44,
+      16
+    ],
+    "body_groups": 15,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 15
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7474,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":749,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7676,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":7779,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":29011,\"src_port_range\":\"user\",\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":80,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 210,
+    "labels_M_S": [
+      202,
+      8
+    ],
+    "body_groups": 47,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 47
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":80,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8000,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 56,
+    "labels_M_S": [
+      44,
+      12
+    ],
+    "body_groups": 16,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 16
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8001,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 40,
+    "labels_M_S": [
+      28,
+      12
+    ],
+    "body_groups": 11,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 11
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8005,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8008,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8009,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 16,
+    "labels_M_S": [
+      6,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":801,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 10,
+    "labels_M_S": [
+      8,
+      2
+    ],
+    "body_groups": 3,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 3
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8010,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8080,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 268,
+    "labels_M_S": [
+      256,
+      12
+    ],
+    "body_groups": 59,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 59
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8081,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 54,
+    "labels_M_S": [
+      44,
+      10
+    ],
+    "body_groups": 16,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 16
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8082,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 30,
+    "labels_M_S": [
+      20,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8083,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8086,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 16,
+    "labels_M_S": [
+      6,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8088,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 68,
+    "labels_M_S": [
+      58,
+      10
+    ],
+    "body_groups": 15,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 15
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8089,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 42,
+    "labels_M_S": [
+      32,
+      10
+    ],
+    "body_groups": 11,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 11
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8090,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 84,
+    "labels_M_S": [
+      72,
+      12
+    ],
+    "body_groups": 16,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 16
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8091,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":81,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 116,
+    "labels_M_S": [
+      106,
+      10
+    ],
+    "body_groups": 25,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 25
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8116,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8118,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      14,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8139,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8181,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":82,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8200,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8222,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":83,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 28,
+    "labels_M_S": [
+      18,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8500,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8545,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      10,
+      2
+    ],
+    "body_groups": 4,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 4
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8767,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":88,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 38,
+    "labels_M_S": [
+      28,
+      10
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":88,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8800,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 28,
+    "labels_M_S": [
+      18,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8834,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8880,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      24,
+      10
+    ],
+    "body_groups": 9,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 9
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":8888,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 44,
+    "labels_M_S": [
+      30,
+      14
+    ],
+    "body_groups": 14,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 14
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":89,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      24,
+      2
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9030,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9042,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 18,
+    "labels_M_S": [
+      8,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9060,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9060,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"udp\"}",
+    "rows": 8,
+    "labels_M_S": [
+      4,
+      4
+    ],
+    "body_groups": 3,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 3
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9090,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 44,
+    "labels_M_S": [
+      28,
+      16
+    ],
+    "body_groups": 14,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 14
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9091,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 12,
+    "labels_M_S": [
+      2,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9092,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9200,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 46,
+    "labels_M_S": [
+      24,
+      22
+    ],
+    "body_groups": 15,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 15
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9283,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 6,
+    "labels_M_S": [
+      4,
+      2
+    ],
+    "body_groups": 2,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 2
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9306,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 24,
+    "labels_M_S": [
+      12,
+      12
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9418,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 16,
+    "labels_M_S": [
+      6,
+      10
+    ],
+    "body_groups": 7,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 7
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9443,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 40,
+    "labels_M_S": [
+      30,
+      10
+    ],
+    "body_groups": 12,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 12
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":990,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 34,
+    "labels_M_S": [
+      30,
+      4
+    ],
+    "body_groups": 10,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 10
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":993,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 22,
+    "labels_M_S": [
+      12,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":994,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 14,
+    "labels_M_S": [
+      4,
+      10
+    ],
+    "body_groups": 6,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 6
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":995,\"dst_port_range\":\"system\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 52,
+    "labels_M_S": [
+      42,
+      10
+    ],
+    "body_groups": 14,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 14
+  },
+  {
+    "semantic_key": "{\"action\":\"deny\",\"dst_port_fixed\":9999,\"dst_port_range\":\"user\",\"dst_role\":\"dmz\",\"outcome\":\"blocked\",\"src_port_fixed\":65536,\"src_role\":\"outside\",\"transport_protocol\":\"tcp\"}",
+    "rows": 26,
+    "labels_M_S": [
+      16,
+      10
+    ],
+    "body_groups": 8,
+    "varying_raw_fields": [
+      "dst_zone",
+      "src_address",
+      "dst_address",
+      "src_port_token",
+      "header"
+    ],
+    "safe_observation_versions": 1,
+    "raw_body_versions": 8
+  }
+]

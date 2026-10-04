@@ -1,0 +1,65 @@
+{
+  "status": "leave_root_condition_evidence_not_training_qualification",
+  "latest_actual_classifier": "V146",
+  "new_model_forwards": 0,
+  "new_gradients": 0,
+  "new_fits": 0,
+  "new_updates": 0,
+  "quality_acceptance": false,
+  "issue_solved": false,
+  "next_classifier_training_registered": false,
+  "cases": [
+    {
+      "id": "V152-ROLE-EXPOSURE",
+      "independent_original_rows": 112807,
+      "legal_TRAIN_role_rows": 225614,
+      "two_key_query_rows": 451228,
+      "action": "Restore original-row summaries across the two legal roles. Do not count role exposure, duplicated queries or concentration as new independent labels."
+    },
+    {
+      "id": "V152-SUPPORTED-CONTROL-NOT-STABILITY",
+      "complete_key_multi_unopposed_S_role_rows": 330,
+      "omit_SRC_multi_unopposed_S_role_rows": 1004,
+      "only_training_role": 2,
+      "all_historic_outer_correct": true,
+      "unique_S_multi_unopposed_in_both_roles": 0,
+      "action": "Keep favorable support and root concentration scoped to this one role and existing correct controls. Do not claim difficult S coverage, stable correction or new training gain."
+    },
+    {
+      "id": "V152-ABSENT-EXACT-SUPPORT-CORRECT",
+      "S_without_complete_same_support_both_roles": 32781,
+      "historic_outer_correct": 31246,
+      "action": "Exact-key support absence is not a sufficient error cause or universal veto on compositional methods. New mechanisms still need lawful conditions, hard-versus-correct controls and matched classification evidence."
+    },
+    {
+      "id": "V152-HARD-ROLE-NOT-OUTER",
+      "known_hard_original_rows": 578,
+      "complete_same_support_any_role": 0,
+      "omit_SRC_same_support_any_role": 70,
+      "omit_SRC_same_support_both_roles": 22,
+      "omit_SRC_multi_same_roots_any_role": 0,
+      "action": "These legal TRAIN queries differ from the old outer query cohort with 48 matching S rows. Do not merge denominators, transfer single-root labels, erase port values or treat retrieval omission as label-preserving augmentation."
+    },
+    {
+      "id": "V152-RAW-FACT-SCOPE",
+      "legal_TRAIN_raw_pairs_verified": 9,
+      "action": "Equal parsed facts/masks with cross-root M/S quotes are not whole-input equivalence, label noise proof or a new context teacher. Product/facility/anonymous/time packaging still lacks threat qualification."
+    },
+    {
+      "id": "V152-CORRECTNESS-ROLE",
+      "prediction_source": "historical_outer_V146_B",
+      "action": "Historical outer correctness is descriptive control only. Do not use it as corresponding TRAIN-role retention proof, fit selection or weights."
+    }
+  ],
+  "source_sha256": {
+    "artifacts/v152_worker_support_review_20261001/audit.json": "69ebfeb3f668423e0130e05032039757fdbf4b23f8a3671190401977dec7d1d8",
+    "artifacts/v152_worker_support_review_20261001/all_query_root_mass_concentration.parquet": "f87ecb4bb3b54f7e91a3b749fd8aabd302becd38f0ea7225cc0f79f3e3beb533",
+    "artifacts/v152_worker_support_review_20261001/two_role_unique_original_support.parquet": "e49c8549982a2f6313c9d252566e346cff359604f7d9b233492a1591d7941f28",
+    "artifacts/v152_worker_support_review_20261001/original_counterexample_scope_review.json": "a6ea6569859cc31725ca03c247280bb6b720c3500d8af762b5cb1562dc4661df",
+    "artifacts/v152_independent_leave_root_conditions_20261001/audit.json": "23d70407984a9aab9b5284183e14128a851be8b8e72db0c8610f4fea06963f9a",
+    "artifacts/v152_independent_leave_root_conditions_20261001/original_support_and_domain_qualification.json": "0d00a2555d6a58e51ad252c1019ca60eeb9665f5191433e6e2676d51daaf47c3",
+    "docs/V152_NEXT_TRAINING_DECISION_AND_CONDITIONAL_PLAN.md": "8636a39e14bb194b784eb5a5fc41432c36f140a79792473f6354ede68cf0a61d",
+    "training/v152_worker_support_review.py": "b40acfb7f03329082311d27947aade8c45bc7cbe3ff00e7c5589d48a0f60e5ba",
+    "artifacts/v152_worker_support_review_attempt1_20261001/failure.json": "f5dac9e1100bea86dd7f90d7cc038383897177a72cb880705792818339f50c77"
+  }
+}

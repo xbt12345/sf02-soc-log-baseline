@@ -1,0 +1,7 @@
+﻿signature,benign,malicious,suspicious,total,active_signals,majority_label,class_count
+0,6253,201,83,6537,<none>,benign,3
+1,22,0,0,22,authentication_failure,benign,1
+2,538,0,0,538,session_opened,benign,1
+4,837,0,0,837,session_closed,benign,1
+8,0,520,67,587,access_denied,malicious,2
+16384,5,0,0,5,group_member_added,benign,1

@@ -1,0 +1,8902 @@
+{
+  "asa_hard_B2_CONTROL": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            10052,
+            2065
+          ],
+          "class_alert_counts": [
+            0,
+            10052,
+            2065
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 12117,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10052,
+              0
+            ],
+            [
+              0,
+              2065,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            10052,
+            2065
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.829578278451762,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9068519103252289,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 12117,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10052,
+            0
+          ],
+          [
+            0,
+            2065,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          10052,
+          2065
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.829578278451762,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9068519103252289,
+          0.0
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            52744,
+            1408
+          ],
+          "class_alert_counts": [
+            0,
+            52744,
+            1408
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 54152,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              52744,
+              0
+            ],
+            [
+              0,
+              1408,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            52744,
+            1408
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.9739991136061457,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9868283191139051,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 54152,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            52744,
+            0
+          ],
+          [
+            0,
+            1408,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          52744,
+          1408
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.9739991136061457,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9868283191139051,
+          0.0
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_counts": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 66269,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62796,
+              0
+            ],
+            [
+              0,
+              3473,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.947592388597987,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9730910781389223,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 66269,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            62796,
+            0
+          ],
+          [
+            0,
+            3473,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          62796,
+          3473
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.947592388597987,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9730910781389223,
+          0.0
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_counts": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 66269,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62796,
+              0
+            ],
+            [
+              0,
+              3473,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.947592388597987,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9730910781389223,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 66269,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            62796,
+            0
+          ],
+          [
+            0,
+            3473,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          62796,
+          3473
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.947592388597987,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9730910781389223,
+          0.0
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.02981686386629934,
+        "risk": {
+          "supported": true,
+          "threshold": 0.02981686386629934,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  },
+  "asa_hard_B2_REPAIRED": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            10052,
+            2065
+          ],
+          "class_alert_counts": [
+            0,
+            10052,
+            2065
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 12117,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10052,
+              0
+            ],
+            [
+              0,
+              2065,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            10052,
+            2065
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.829578278451762,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9068519103252289,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 12117,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10052,
+            0
+          ],
+          [
+            0,
+            2065,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          10052,
+          2065
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.829578278451762,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9068519103252289,
+          0.0
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            52744,
+            1408
+          ],
+          "class_alert_counts": [
+            0,
+            52744,
+            1408
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 54152,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              52744,
+              0
+            ],
+            [
+              0,
+              1408,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            52744,
+            1408
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.9739991136061457,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9868283191139051,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 54152,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            52744,
+            0
+          ],
+          [
+            0,
+            1408,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          52744,
+          1408
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.9739991136061457,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9868283191139051,
+          0.0
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_counts": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 66269,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62796,
+              0
+            ],
+            [
+              0,
+              3473,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.947592388597987,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9730910781389223,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 66269,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            62796,
+            0
+          ],
+          [
+            0,
+            3473,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          62796,
+          3473
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.947592388597987,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9730910781389223,
+          0.0
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_counts": [
+            0,
+            62796,
+            3473
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 66269,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62796,
+              0
+            ],
+            [
+              0,
+              3473,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            62796,
+            3473
+          ],
+          "class_recall": [
+            null,
+            1.0,
+            0.0
+          ],
+          "class_precision": [
+            null,
+            0.947592388597987,
+            null
+          ],
+          "class_f1": [
+            null,
+            0.9730910781389223,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 66269,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            62796,
+            0
+          ],
+          [
+            0,
+            3473,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          62796,
+          3473
+        ],
+        "class_recall": [
+          null,
+          1.0,
+          0.0
+        ],
+        "class_precision": [
+          null,
+          0.947592388597987,
+          null
+        ],
+        "class_f1": [
+          null,
+          0.9730910781389223,
+          0.0
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.000330957840987578,
+        "risk": {
+          "supported": true,
+          "threshold": 0.000330957840987578,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  },
+  "known_dev_B2_CONTROL": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            76112,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 76112,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              76112,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            76112,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76112,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 76112,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            76112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          76112,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            76375,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 76375,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              76375,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            76375,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76113,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 76375,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            76375,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          76375,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            347589,
+            30,
+            0
+          ],
+          "class_alert_counts": [
+            6110,
+            6,
+            0
+          ],
+          "class_alert_rates": [
+            0.017578231762224925,
+            0.2,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 347619,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              341479,
+              12,
+              6098
+            ],
+            [
+              24,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            347589,
+            30,
+            0
+          ],
+          "class_recall": [
+            0.982421768237775,
+            0.2,
+            null
+          ],
+          "class_precision": [
+            0.9999297224328922,
+            0.3333333333333333,
+            0.0
+          ],
+          "class_f1": [
+            0.9910984309787373,
+            0.25,
+            null
+          ]
+        },
+        "normal_alert_groups": 1,
+        "normal_groups": 76113,
+        "largest_normal_alert_group_rows": 6110
+      },
+      "argmax": {
+        "rows": 347619,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            347589,
+            0,
+            0
+          ],
+          [
+            30,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          347589,
+          30,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          0.0,
+          null
+        ],
+        "class_precision": [
+          0.9999136986183149,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.999956847447095,
+          0.0,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_counts": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 5854,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              5852
+            ]
+          ],
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_recall": [
+            null,
+            0.0,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            0.9996583532627263
+          ],
+          "class_f1": [
+            null,
+            0.0,
+            0.9998291474457544
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 5854,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            5852
+          ]
+        ],
+        "class_support": [
+          0,
+          2,
+          5852
+        ],
+        "class_recall": [
+          null,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          0.9996583532627263
+        ],
+        "class_f1": [
+          null,
+          0.0,
+          0.9998291474457544
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_counts": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 5854,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              5852
+            ]
+          ],
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_recall": [
+            null,
+            0.0,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            0.9996583532627263
+          ],
+          "class_f1": [
+            null,
+            0.0,
+            0.9998291474457544
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 5854,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            5852
+          ]
+        ],
+        "class_support": [
+          0,
+          2,
+          5852
+        ],
+        "class_recall": [
+          null,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          0.9996583532627263
+        ],
+        "class_f1": [
+          null,
+          0.0,
+          0.9998291474457544
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            357153,
+            32,
+            5852
+          ],
+          "class_alert_counts": [
+            6110,
+            8,
+            5852
+          ],
+          "class_alert_rates": [
+            0.017107514146598238,
+            0.25,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 363037,
+          "macro_f1": 0.6295730711577312,
+          "confusion_matrix": [
+            [
+              351043,
+              12,
+              6098
+            ],
+            [
+              24,
+              6,
+              2
+            ],
+            [
+              0,
+              0,
+              5852
+            ]
+          ],
+          "class_support": [
+            357153,
+            32,
+            5852
+          ],
+          "class_recall": [
+            0.9828924858534017,
+            0.1875,
+            1.0
+          ],
+          "class_precision": [
+            0.9999316369809751,
+            0.3333333333333333,
+            0.4896251673360107
+          ],
+          "class_f1": [
+            0.9913388495100393,
+            0.24,
+            0.6573803639631544
+          ]
+        },
+        "normal_alert_groups": 1,
+        "normal_groups": 76114,
+        "largest_normal_alert_group_rows": 6110
+      },
+      "argmax": {
+        "rows": 363037,
+        "macro_f1": 0.666595716800782,
+        "confusion_matrix": [
+          [
+            357153,
+            0,
+            0
+          ],
+          [
+            30,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            5852
+          ]
+        ],
+        "class_support": [
+          357153,
+          32,
+          5852
+        ],
+        "class_recall": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          0.9999160094405389,
+          null,
+          0.9996583532627263
+        ],
+        "class_f1": [
+          0.9999580029565919,
+          0.0,
+          0.9998291474457544
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.12016057451926045,
+        "risk": {
+          "supported": true,
+          "threshold": 0.12016057451926045,
+          "class_support": [
+            283872,
+            28570,
+            2742
+          ],
+          "class_alert_counts": [
+            0,
+            28570,
+            2737
+          ],
+          "class_alert_rates": [
+            0.0,
+            1.0,
+            0.9981765134938001
+          ]
+        },
+        "gated_classification": {
+          "rows": 315184,
+          "macro_f1": 0.9996928726679801,
+          "confusion_matrix": [
+            [
+              283872,
+              0,
+              0
+            ],
+            [
+              0,
+              28570,
+              0
+            ],
+            [
+              5,
+              0,
+              2737
+            ]
+          ],
+          "class_support": [
+            283872,
+            28570,
+            2742
+          ],
+          "class_recall": [
+            1.0,
+            1.0,
+            0.9981765134938001
+          ],
+          "class_precision": [
+            0.9999823867379182,
+            1.0,
+            1.0
+          ],
+          "class_f1": [
+            0.9999911932914016,
+            1.0,
+            0.9990874247125388
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 15783,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 315184,
+        "macro_f1": 0.9996928726679801,
+        "confusion_matrix": [
+          [
+            283872,
+            0,
+            0
+          ],
+          [
+            0,
+            28570,
+            0
+          ],
+          [
+            5,
+            0,
+            2737
+          ]
+        ],
+        "class_support": [
+          283872,
+          28570,
+          2742
+        ],
+        "class_recall": [
+          1.0,
+          1.0,
+          0.9981765134938001
+        ],
+        "class_precision": [
+          0.9999823867379182,
+          1.0,
+          1.0
+        ],
+        "class_f1": [
+          0.9999911932914016,
+          1.0,
+          0.9990874247125388
+        ]
+      }
+    }
+  },
+  "known_dev_B2_REPAIRED": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            76112,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 76112,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              76112,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            76112,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76112,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 76112,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            76112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          76112,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            377983,
+            30,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            0.0,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 378013,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              377983,
+              0,
+              0
+            ],
+            [
+              30,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            377983,
+            30,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            0.0,
+            null
+          ],
+          "class_precision": [
+            0.9999206376500279,
+            null,
+            null
+          ],
+          "class_f1": [
+            0.9999603172503558,
+            0.0,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76113,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 378013,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            377983,
+            0,
+            0
+          ],
+          [
+            30,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          377983,
+          30,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          0.0,
+          null
+        ],
+        "class_precision": [
+          0.9999206376500279,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.9999603172503558,
+          0.0,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            347589,
+            30,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            0.0,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 347619,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              347589,
+              0,
+              0
+            ],
+            [
+              30,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            347589,
+            30,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            0.0,
+            null
+          ],
+          "class_precision": [
+            0.9999136986183149,
+            null,
+            null
+          ],
+          "class_f1": [
+            0.999956847447095,
+            0.0,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76113,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 347619,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            347589,
+            0,
+            0
+          ],
+          [
+            30,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          347589,
+          30,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          0.0,
+          null
+        ],
+        "class_precision": [
+          0.9999136986183149,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.999956847447095,
+          0.0,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_counts": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 5854,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              5852
+            ]
+          ],
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_recall": [
+            null,
+            0.0,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            0.9996583532627263
+          ],
+          "class_f1": [
+            null,
+            0.0,
+            0.9998291474457544
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 5854,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            5852
+          ]
+        ],
+        "class_support": [
+          0,
+          2,
+          5852
+        ],
+        "class_recall": [
+          null,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          0.9996583532627263
+        ],
+        "class_f1": [
+          null,
+          0.0,
+          0.9998291474457544
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_counts": [
+            0,
+            2,
+            5852
+          ],
+          "class_alert_rates": [
+            null,
+            1.0,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 5854,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              5852
+            ]
+          ],
+          "class_support": [
+            0,
+            2,
+            5852
+          ],
+          "class_recall": [
+            null,
+            0.0,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            0.9996583532627263
+          ],
+          "class_f1": [
+            null,
+            0.0,
+            0.9998291474457544
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 5854,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            5852
+          ]
+        ],
+        "class_support": [
+          0,
+          2,
+          5852
+        ],
+        "class_recall": [
+          null,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          null,
+          null,
+          0.9996583532627263
+        ],
+        "class_f1": [
+          null,
+          0.0,
+          0.9998291474457544
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            388664,
+            28602,
+            8212
+          ],
+          "class_alert_counts": [
+            0,
+            28572,
+            8212
+          ],
+          "class_alert_rates": [
+            0.0,
+            0.99895112229914,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 425478,
+          "macro_f1": 0.978864412788479,
+          "confusion_matrix": [
+            [
+              388664,
+              0,
+              0
+            ],
+            [
+              30,
+              27742,
+              830
+            ],
+            [
+              0,
+              0,
+              8212
+            ]
+          ],
+          "class_support": [
+            388664,
+            28602,
+            8212
+          ],
+          "class_recall": [
+            1.0,
+            0.9699321725753444,
+            1.0
+          ],
+          "class_precision": [
+            0.9999228184638816,
+            1.0,
+            0.9082061490820615
+          ],
+          "class_f1": [
+            0.999961407742636,
+            0.9847366179185006,
+            0.9518952127043004
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 76114,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 425478,
+        "macro_f1": 0.6547970669285882,
+        "confusion_matrix": [
+          [
+            388664,
+            0,
+            0
+          ],
+          [
+            28600,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            8212
+          ]
+        ],
+        "class_support": [
+          388664,
+          28602,
+          8212
+        ],
+        "class_recall": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "class_precision": [
+          0.9314582614364048,
+          null,
+          0.9997565132700268
+        ],
+        "class_f1": [
+          0.9645129589740027,
+          0.0,
+          0.9998782418117619
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00011225433017303389,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00011225433017303389,
+          "class_support": [
+            252361,
+            0,
+            382
+          ],
+          "class_alert_counts": [
+            39,
+            0,
+            382
+          ],
+          "class_alert_rates": [
+            0.0001545405193353965,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 252743,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              252322,
+              0,
+              39
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              382
+            ]
+          ],
+          "class_support": [
+            252361,
+            0,
+            382
+          ],
+          "class_recall": [
+            0.9998454594806646,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            0.9073634204275535
+          ],
+          "class_f1": [
+            0.9999227237691779,
+            null,
+            0.9514321295143213
+          ]
+        },
+        "normal_alert_groups": 1,
+        "normal_groups": 15781,
+        "largest_normal_alert_group_rows": 39
+      },
+      "argmax": {
+        "rows": 252743,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            252361,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            377
+          ]
+        ],
+        "class_support": [
+          252361,
+          0,
+          382
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.9869109947643979
+        ],
+        "class_precision": [
+          0.9999801875054485,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          0.9999900936545895,
+          null,
+          0.9934123847167325
+        ]
+      }
+    }
+  },
+  "source_ad_B2_CONTROL": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 1136,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              1136,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 1136,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            1136,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          1136,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 1136,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              1136,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 1136,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            1136,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          1136,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.08424112190976386,
+        "risk": {
+          "supported": true,
+          "threshold": 0.08424112190976386,
+          "class_support": [
+            808724,
+            0,
+            473
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            473
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 809197,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              808724,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              473
+            ]
+          ],
+          "class_support": [
+            808724,
+            0,
+            473
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            1.0
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            1.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 74361,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 809197,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            808724,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            110,
+            0,
+            363
+          ]
+        ],
+        "class_support": [
+          808724,
+          0,
+          473
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.7674418604651163
+        ],
+        "class_precision": [
+          0.999864001760559,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          0.9999319962560848,
+          null,
+          0.868421052631579
+        ]
+      }
+    }
+  },
+  "source_ad_B2_REPAIRED": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 1136,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              1136,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 1136,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            1136,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          1136,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 1136,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              1136,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 1136,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            1136,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          1136,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 1136,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              1136,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            1136,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 1136,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            1136,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          1136,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.0004307151492931594,
+        "risk": {
+          "supported": true,
+          "threshold": 0.0004307151492931594,
+          "class_support": [
+            808724,
+            0,
+            473
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            473
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 809197,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              808724,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              473
+            ]
+          ],
+          "class_support": [
+            808724,
+            0,
+            473
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            1.0
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            1.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 74361,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 809197,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            808724,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            473,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          808724,
+          0,
+          473
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.9994154699041148,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.9997076495082269,
+          null,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_duo_B2_CONTROL": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            263,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 263,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              263,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            263,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 263,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            263,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          263,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            325,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 325,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              325,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            325,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 3,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 325,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            325,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          325,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.07823317991533109,
+        "risk": {
+          "supported": true,
+          "threshold": 0.07823317991533109,
+          "class_support": [
+            0,
+            0,
+            12
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            12
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 12,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            12
+          ],
+          "class_recall": [
+            null,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            1.0
+          ],
+          "class_f1": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 12,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            2
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          12
+        ],
+        "class_recall": [
+          null,
+          null,
+          0.16666666666666666
+        ],
+        "class_precision": [
+          0.0,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          null,
+          null,
+          0.2857142857142857
+        ]
+      }
+    }
+  },
+  "source_duo_B2_REPAIRED": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            263,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 263,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              263,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            263,
+            0,
+            0
+          ],
+          "class_recall": [
+            1.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            null
+          ],
+          "class_f1": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 1,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 263,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            263,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          263,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            325,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            62,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.19076923076923077,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 325,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              263,
+              0,
+              62
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            325,
+            0,
+            0
+          ],
+          "class_recall": [
+            0.8092307692307692,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            null,
+            0.0
+          ],
+          "class_f1": [
+            0.8945578231292517,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 2,
+        "normal_groups": 3,
+        "largest_normal_alert_group_rows": 39
+      },
+      "argmax": {
+        "rows": 325,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            325,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          325,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00038843325464199557,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00038843325464199557,
+          "class_support": [
+            0,
+            0,
+            12
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            12
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 12,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            12
+          ],
+          "class_recall": [
+            null,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            null,
+            1.0
+          ],
+          "class_f1": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 12,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            2
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          12
+        ],
+        "class_recall": [
+          null,
+          null,
+          0.16666666666666666
+        ],
+        "class_precision": [
+          0.0,
+          null,
+          1.0
+        ],
+        "class_f1": [
+          null,
+          null,
+          0.2857142857142857
+        ]
+      }
+    }
+  },
+  "source_waf_B2_CONTROL": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            4052,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            12,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            0.0029615004935834156,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 4052,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              4040,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            4052,
+            0,
+            0
+          ],
+          "class_recall": [
+            0.9970384995064165,
+            null,
+            null
+          ],
+          "class_precision": [
+            1.0,
+            0.0,
+            null
+          ],
+          "class_f1": [
+            0.9985170538803757,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 4,
+        "normal_groups": 96,
+        "largest_normal_alert_group_rows": 4
+      },
+      "argmax": {
+        "rows": 4052,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            4052,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          4052,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.034783182430696676,
+        "risk": {
+          "supported": true,
+          "threshold": 0.034783182430696676,
+          "class_support": [
+            76,
+            0,
+            2
+          ],
+          "class_alert_counts": [
+            56,
+            0,
+            2
+          ],
+          "class_alert_rates": [
+            0.7368421052631579,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 78,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              20,
+              56,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "class_support": [
+            76,
+            0,
+            2
+          ],
+          "class_recall": [
+            0.2631578947368421,
+            null,
+            0.0
+          ],
+          "class_precision": [
+            1.0,
+            0.0,
+            null
+          ],
+          "class_f1": [
+            0.4166666666666667,
+            null,
+            0.0
+          ]
+        },
+        "normal_alert_groups": 13,
+        "normal_groups": 17,
+        "largest_normal_alert_group_rows": 30
+      },
+      "argmax": {
+        "rows": 78,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            76,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          76,
+          0,
+          2
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.9743589743589743,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.987012987012987,
+          null,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_waf_B2_REPAIRED": {
+    "original_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "information_empty": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "unsupported": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_conflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_projection_nonconflict": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "ASA_relation_unseen": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            0,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            null,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 0,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            0,
+            0,
+            0
+          ],
+          "class_recall": [
+            null,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            null,
+            null
+          ],
+          "class_f1": [
+            null,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 0,
+        "normal_groups": 0,
+        "largest_normal_alert_group_rows": 0
+      },
+      "argmax": {
+        "rows": 0,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          0,
+          0,
+          0
+        ],
+        "class_recall": [
+          null,
+          null,
+          null
+        ],
+        "class_precision": [
+          null,
+          null,
+          null
+        ],
+        "class_f1": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "review": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            4112,
+            0,
+            0
+          ],
+          "class_alert_counts": [
+            4112,
+            0,
+            0
+          ],
+          "class_alert_rates": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "gated_classification": {
+          "rows": 4112,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              4112,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_support": [
+            4112,
+            0,
+            0
+          ],
+          "class_recall": [
+            0.0,
+            null,
+            null
+          ],
+          "class_precision": [
+            null,
+            0.0,
+            null
+          ],
+          "class_f1": [
+            0.0,
+            null,
+            null
+          ]
+        },
+        "normal_alert_groups": 98,
+        "normal_groups": 98,
+        "largest_normal_alert_group_rows": 2408
+      },
+      "argmax": {
+        "rows": 4112,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            4112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          4112,
+          0,
+          0
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          null
+        ],
+        "class_precision": [
+          1.0,
+          null,
+          null
+        ],
+        "class_f1": [
+          1.0,
+          null,
+          null
+        ]
+      }
+    },
+    "covered": {
+      "primary": {
+        "alpha": 0.001,
+        "name": "empirical_worst_source_global",
+        "threshold": 0.00016709326500186086,
+        "risk": {
+          "supported": true,
+          "threshold": 0.00016709326500186086,
+          "class_support": [
+            16,
+            0,
+            2
+          ],
+          "class_alert_counts": [
+            16,
+            0,
+            2
+          ],
+          "class_alert_rates": [
+            1.0,
+            null,
+            1.0
+          ]
+        },
+        "gated_classification": {
+          "rows": 18,
+          "macro_f1": null,
+          "confusion_matrix": [
+            [
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "class_support": [
+            16,
+            0,
+            2
+          ],
+          "class_recall": [
+            0.0,
+            null,
+            1.0
+          ],
+          "class_precision": [
+            null,
+            0.0,
+            1.0
+          ],
+          "class_f1": [
+            0.0,
+            null,
+            1.0
+          ]
+        },
+        "normal_alert_groups": 2,
+        "normal_groups": 2,
+        "largest_normal_alert_group_rows": 10
+      },
+      "argmax": {
+        "rows": 18,
+        "macro_f1": null,
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "class_support": [
+          16,
+          0,
+          2
+        ],
+        "class_recall": [
+          1.0,
+          null,
+          0.0
+        ],
+        "class_precision": [
+          0.8888888888888888,
+          null,
+          null
+        ],
+        "class_f1": [
+          0.9411764705882353,
+          null,
+          0.0
+        ]
+      }
+    }
+  }
+}

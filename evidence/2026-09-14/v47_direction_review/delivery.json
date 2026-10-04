@@ -1,0 +1,29 @@
+{
+  "status": "direction_replanned_with_verified_semantic_gap",
+  "date": "2026-09-14",
+  "new_classifier_fits": 0,
+  "production_parser_modified": false,
+  "model_replaced": false,
+  "labels_changed": false,
+  "platform_used": false,
+  "external_training_data_used": false,
+  "previous_ASA_calibration_priority_superseded": true,
+  "native_action_production_adapter_implemented": false,
+  "next_action": "Implement bounded vendor-documented action interpretation consistently in preparation and inference; then one matched old-pressure fit before three-fold regression.",
+  "verified_new_links": 13,
+  "file_sha256": {
+    "evidence/2026-09-14/v47_direction_review/audit.json": "1bbe931e2e32310819d37f39ba3a21cbc1b336ed95b0c0b805a920015fdd448b",
+    "evidence/2026-09-14/v47_direction_review/audit_v47_direction.py": "604fae2a460becc661c2838031ec0b546984e6aea0aebeef36b61b6cce57b187",
+    "evidence/2026-09-14/v47_direction_review/flow_semantics.parquet": "d847ba3f2687e3e51e50815ba59673ec91f00766f69040ad4c93d4ce115a9201",
+    "evidence/2026-09-14/v47_direction_review/inference_sensitivity.parquet": "9de062c7527ef03e5365826d8c1d973fc13f1136d317ecdd1aaf0b648caa8598",
+    "evidence/2026-09-14/v47_direction_review/official_task_verified.txt": "c364c4cb2a321aed26f28d574cb6d391cff58f1a428dd532360f85b051a4fc4e",
+    "evidence/2026-09-14/v47_direction_review/raw_semantic_examples.json": "e605bbfe096864257cbf4cf134e9ebdd0e929793bccf548a55793ea2a1fa3942",
+    "evidence/2026-09-14/v47_direction_review/research_sources.json": "4d8e07ec5af4ed00e3fef8e6b16c758538e6eef4fcf122560a6aa6325376bf9c",
+    "evidence/2026-09-14/v47_direction_review/verification.json": "d77d078f74cbffbd900773545c475b91f56743f93b02fb0d15b79b2181419ba4",
+    "README.md": "8af167479e70dd4964b2bdfeb6b9d14ad24eba2987c1f4dced597ce3ed0e6920",
+    "docs/TRAINING_PLAN.md": "a6d7a8d3ca40f9c8a6bf328016df2af36c993caea59588fed89255cc4b75daeb",
+    "training/README.md": "5084c2c29d36e82b120d3d4186947b08b375f2153956bacf6c00a952db0f7981",
+    "docs/V47_DIRECTION_RESET.md": "863d7aacb6cb08de268bff8e3bf7b5b2847aa29943feea353d371a85dd84bd42",
+    "training/audit_v47_direction.py": "604fae2a460becc661c2838031ec0b546984e6aea0aebeef36b61b6cce57b187"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "access_date": "2026-09-14",
+  "method": "Read primary papers and official project/documentation pages via web tool. No external training data or research dependencies installed.",
+  "sources": [
+    {
+      "title": "OCSF schema",
+      "url": "https://github.com/ocsf/ocsf-schema",
+      "type": "官方开源标准",
+      "decision": "借鉴事件语义和规范化；不当成攻击分类器"
+    },
+    {
+      "title": "InterpretML EBM",
+      "url": "https://interpret.ml/docs/ebm.html",
+      "type": "官方算法文档",
+      "decision": "候选非线性主效应与有限交互；尚未训练，不保证泛化"
+    },
+    {
+      "title": "InterpretML source",
+      "url": "https://github.com/interpretml/interpret",
+      "type": "作者开源项目",
+      "decision": "作为下一轮实现候选，不引用其他数据集成绩"
+    },
+    {
+      "title": "EBM API",
+      "url": "https://interpret.ml/docs/python/api/ExplainableBoostingClassifier.html",
+      "type": "官方接口文档",
+      "decision": "核查内部验证、bags和关闭早停；防止默认按行划分"
+    },
+    {
+      "title": "Missingness shifts",
+      "url": "https://arxiv.org/abs/2406.16484",
+      "type": "作者研究论文",
+      "decision": "区分缺失信息与缺失机制；本题机制未知"
+    },
+    {
+      "title": "Group DRO",
+      "url": "https://github.com/kohpangwei/group_DRO",
+      "type": "作者开源项目",
+      "decision": "借鉴最差组检查，不直接上权冲突样本"
+    },
+    {
+      "title": "Spurious features under shift",
+      "url": "https://proceedings.mlr.press/v139/zhou21g.html",
+      "type": "ICML一手论文",
+      "decision": "不充分分组也会使Group DRO失效"
+    },
+    {
+      "title": "Noisy labels reliability",
+      "url": "https://proceedings.mlr.press/v151/olmin22a.html",
+      "type": "AISTATS一手论文",
+      "decision": "稳健分类损失不保证概率校准"
+    },
+    {
+      "title": "Threshold tuning",
+      "url": "https://scikit-learn.org/stable/modules/classification_threshold.html",
+      "type": "官方文档",
+      "decision": "模型分数与决策分开；阈值拟合须样本外"
+    },
+    {
+      "title": "Sigma specification",
+      "url": "https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html",
+      "type": "官方规则规范",
+      "decision": "来源条件和误报说明；不将规则命中自动转成官方标签"
+    },
+    {
+      "title": "MAPIE risk control",
+      "url": "https://mapie.readthedocs.io/en/stable/content/risk-control/",
+      "type": "官方文档",
+      "decision": "独立风险输出；交换性等假设不能省略"
+    },
+    {
+      "title": "MAPIE exchangeability",
+      "url": "https://mapie.readthedocs.io/en/stable/content/exchangeability-testing/",
+      "type": "官方文档",
+      "decision": "分布变化可破坏统计保证，本题不声称95%可靠"
+    },
+    {
+      "title": "Loglizer",
+      "url": "https://github.com/logpai/loglizer",
+      "type": "作者开源项目",
+      "decision": "序列窗口需可信关联；本题不虚构时间或IP链"
+    },
+    {
+      "title": "Security ML pitfalls",
+      "url": "https://www.usenix.org/conference/usenixsecurity22/presentation/arp",
+      "type": "USENIX一手论文",
+      "decision": "采样偏差、泄漏及实际使用条件审查"
+    },
+    {
+      "title": "Windows event 4672",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672",
+      "type": "微软事件文档",
+      "decision": "SYSTEM登录也可产生事件；不能据事件号直接判恶意"
+    }
+  ]
+}

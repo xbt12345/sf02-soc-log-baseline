@@ -1,0 +1,26 @@
+torch @ https://download-r2.pytorch.org/whl/cpu/torch-2.7.1%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.2.3
+pyarrow==19.0.1
+scikit-learn==1.6.1
+joblib==1.6.0
+threadpoolctl==3.6.0
+tabm==0.0.3
+rtdl-num-embeddings==0.0.12
+filelock==3.32.6
+typing-extensions==4.16.0
+sympy==1.14.0
+networkx==3.6.1
+jinja2==3.1.6
+fsspec==2026.7.0
+setuptools==84.0.0
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+tzdata==2026.4
+cloudpickle==3.1.2
+six==1.17.0
+mpmath==1.3.0
+MarkupSafe==3.0.3
+pip==25.0.1
+packaging==26.3

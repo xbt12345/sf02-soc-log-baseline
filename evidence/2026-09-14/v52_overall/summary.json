@@ -1,0 +1,513 @@
+{
+  "status": "overall_diagnosis_no_new_model",
+  "scope": "Previously inspected official development folds; no relabeling, new training, selection or blind validation.",
+  "overall": {
+    "rows": 1378650,
+    "errors": 6022,
+    "confusion_B_M_S": [
+      [
+        1258682,
+        4,
+        12
+      ],
+      [
+        2,
+        82570,
+        554
+      ],
+      [
+        30,
+        5420,
+        31376
+      ]
+    ]
+  },
+  "macro_f1": 0.9591840487389445,
+  "by_route": {
+    "asa": {
+      "rows": 106953,
+      "errors": 5972,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          78192,
+          554
+        ],
+        [
+          0,
+          5418,
+          22789
+        ]
+      ]
+    },
+    "asa_acl": {
+      "rows": 16,
+      "errors": 16,
+      "confusion_B_M_S": [
+        [
+          0,
+          4,
+          12
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "asa_protocol": {
+      "rows": 48,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          48,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "audit_fields": {
+      "rows": 2931,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          2931,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "authentication": {
+      "rows": 33,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "bounded_payload": {
+      "rows": 30,
+      "errors": 30,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          0
+        ]
+      ]
+    },
+    "cef_fields": {
+      "rows": 3348,
+      "errors": 2,
+      "confusion_B_M_S": [
+        [
+          3302,
+          0,
+          0
+        ],
+        [
+          0,
+          44,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ]
+    },
+    "empty": {
+      "rows": 280203,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          280203,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "format_payload": {
+      "rows": 505,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          505,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "native_firewall": {
+      "rows": 260,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          260,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "native_flow": {
+      "rows": 4026,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4026,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "syslog_auth": {
+      "rows": 175,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          175
+        ]
+      ]
+    },
+    "syslog_body": {
+      "rows": 9854,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          9854,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "vpc_v2": {
+      "rows": 8024,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8024
+        ]
+      ]
+    },
+    "windows_message": {
+      "rows": 656959,
+      "errors": 2,
+      "confusion_B_M_S": [
+        [
+          656579,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          378
+        ]
+      ]
+    },
+    "windows_rendered": {
+      "rows": 305285,
+      "errors": 0,
+      "confusion_B_M_S": [
+        [
+          305285,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "ASA_error_fraction": 0.9916971105944868,
+  "ASA_support_partition": {
+    "seen_mixed_labels": {
+      "rows": 21233,
+      "errors": 2423,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          11448,
+          40
+        ],
+        [
+          0,
+          2383,
+          7362
+        ]
+      ]
+    },
+    "seen_pure_opposite_label": {
+      "rows": 1311,
+      "errors": 921,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          390,
+          184
+        ],
+        [
+          0,
+          737,
+          0
+        ]
+      ]
+    },
+    "seen_pure_same_label": {
+      "rows": 12901,
+      "errors": 1532,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9618,
+          30
+        ],
+        [
+          0,
+          1502,
+          1751
+        ]
+      ]
+    },
+    "unseen_combination_known_values": {
+      "rows": 20232,
+      "errors": 442,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16058,
+          208
+        ],
+        [
+          0,
+          234,
+          3732
+        ]
+      ]
+    },
+    "unseen_fact_value": {
+      "rows": 51276,
+      "errors": 654,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          40678,
+          92
+        ],
+        [
+          0,
+          562,
+          9944
+        ]
+      ]
+    }
+  },
+  "ASA_finite_input_floor_by_fold": [
+    {
+      "fold": 0,
+      "finite_evaluation_same_input_min_errors": 662,
+      "mixed_input_groups": 118
+    },
+    {
+      "fold": 1,
+      "finite_evaluation_same_input_min_errors": 634,
+      "mixed_input_groups": 103
+    },
+    {
+      "fold": 2,
+      "finite_evaluation_same_input_min_errors": 674,
+      "mixed_input_groups": 120
+    }
+  ],
+  "ASA_unique_full_retained_inputs": 16874,
+  "ASA_finite_input_floor_total": 1970,
+  "ASA_top_input_error_counts": [
+    685,
+    184,
+    180,
+    170,
+    156,
+    148,
+    82,
+    78,
+    72,
+    20
+  ],
+  "limit": "Finite evaluation input collisions are not proven mislabels, raw-data irreducibility, guaranteed learnable gains or real-world Bayes error.",
+  "bindings": {
+    "artifacts/v48_information_repair_r2_20260914/rows.parquet": "f3af3476e70168d343af203c245652883ca8ae6848928259dbda5606cdc64b85",
+    "artifacts/v48_information_repair_r2_20260914/projections.parquet": "923cb4c0f241f32b288a34b98b7c8bd70a7352249bfeab8bf96454cbc90f23e9",
+    "artifacts/v51_fact_residual_20260914/fold_0/evaluation.parquet": "9055055b584d79c4e3e3cb121811efe23ace6ae9039553fdd3d7371c3e06b40f",
+    "artifacts/v51_fact_residual_20260914/fold_1/evaluation.parquet": "5a3979ca8b2a94a08082dcfec4ee9dea548ef144c83cb59629dd487d782d67aa",
+    "artifacts/v51_fact_residual_20260914/fold_2/evaluation.parquet": "cbe5bb4ea3a47ee9d49f74fb7477ab7271a33cf50edbc6dd1b2973c31aa582d8",
+    "data/official/train.parquet": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "training/audit_v52_overall.py": "e151a3e7af184e5f905f6320b4980cbfc8a84dcf609087242d360394eba618e8"
+  }
+}

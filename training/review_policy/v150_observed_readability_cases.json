@@ -1,0 +1,51 @@
+{
+  "status": "factual_readability_not_threat_criterion",
+  "latest_actual_classifier": "V146",
+  "diagnostic_decoder_fits": 6,
+  "new_classifier_fits": 0,
+  "new_classifier_updates": 0,
+  "quality_acceptance": false,
+  "issue_solved": false,
+  "next_classifier_training_registered": false,
+  "cases": [
+    {
+      "id": "V150-READABLE-STILL-WRONG",
+      "original_rows": 578,
+      "all_observed_fields_exact_both_layers": 578,
+      "all_field_states_exact_both_layers": 578,
+      "classifier_errors": 576,
+      "action": "Do not justify a field-reconstruction classifier trial as repair for this cohort. Check category-conditioned support and missing context; historical HELD is diagnostic only."
+    },
+    {
+      "id": "V150-DECODER-UNSEEN-TYPE",
+      "inner_observed_type_rows": 1732,
+      "unseen_type8_rows": 1700,
+      "unseen_type8_errors": 1700,
+      "seen_type_rows": 32,
+      "H1_seen_errors": 0,
+      "H2_seen_errors": 0,
+      "action": "Separate decoder training exposure from backbone information. Linear-readout failure on unseen target values is not representation destruction or a new blind score."
+    },
+    {
+      "id": "V150-CORRECT-FIELD-ERROR-CONTROL",
+      "outer_correct_rare_same_class_S": 18669,
+      "H2_complete_ports_exact": 9842,
+      "action": "Keep correct rare controls and all ICMP/unknown/zero states; outside-field readout errors alone do not cause threat errors."
+    },
+    {
+      "id": "V150-FIT-COUNT",
+      "diagnostic_fits": 6,
+      "normal_equation_solves": 6,
+      "learned_decoder_coefficients": 4053504,
+      "action": "Count factual decoder fitting as six actual diagnostic fits. Classifier fits/gradients/updates remain zero; no automatic budget reset or classifier promotion."
+    }
+  ],
+  "source_sha256": {
+    "artifacts/v150_field_readout_diagnostic_20261001/result_audit.json": "df412e96f9e1fd1594acb63e39b393e5aa8fe1e85aee320b04d08b8f4c0660a0",
+    "artifacts/v150_field_readout_diagnostic_20261001/all_field_state_metrics.parquet": "f9e31ea9628306cef1ea61abacb0d9c568f1e408f7dfa0dd2bc9bee8a35cd199",
+    "artifacts/v150_field_readout_diagnostic_20261001/all_exact_value_metrics.parquet": "29b5635028cead5d51a55e4239bf3cef764c8a3d3a1c0bbafcc68e3828c0446a",
+    "artifacts/v150_field_readout_diagnostic_20261001/all_classifier_control_metrics.parquet": "82a865ef21ae499e91295d652b2c4146a0b2eaca7b3310994ffcc6f1f2ad6e7c",
+    "artifacts/v150_field_readout_diagnostic_20261001/registration.json": "36f540317e869064b461e27fdac5e0f96d5b01691615cdfc935ec72a2eeb8c51",
+    "training/review_policy/v150_field_readout_plan.json": "e9d0c94759bb4be4b58cfeff6ed51fc1e29cb46f8a88812bea898896d8053e68"
+  }
+}

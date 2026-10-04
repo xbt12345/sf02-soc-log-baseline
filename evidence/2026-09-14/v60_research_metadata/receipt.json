@@ -1,0 +1,46 @@
+{
+  "accessed_utc": "2026-09-14T14:28:21.886293+00:00",
+  "scope": "Public configuration/source metadata only. No model weights, training data, execution of downloaded code, or private uploads.",
+  "sources": [
+    {
+      "file": "securebert_config.json",
+      "url": "https://huggingface.co/cisco-ai/SecureBERT2.0-base/raw/main/config.json",
+      "bytes": 1220,
+      "sha256": "8a7388656e5d3a5e973dc26ac7ef3b145f6750c39521003652621ef2ff3e1f89",
+      "status": "read"
+    },
+    {
+      "file": "securebert_requirements.txt",
+      "url": "https://raw.githubusercontent.com/cisco-ai-defense/securebert2/main/requirements.txt",
+      "bytes": 4042,
+      "sha256": "2d21a504489237251995a11f301ad1a006975cfca7e15360ee135d90dd54efbb",
+      "status": "read"
+    },
+    {
+      "file": "logllm_model.py.txt",
+      "url": "https://raw.githubusercontent.com/guanwei49/LogLLM/master/model.py",
+      "bytes": 15692,
+      "sha256": "cc11464e4b64ed2f7271617e4fbcc02e578b48654e48d09063663bc1135bea17",
+      "status": "read"
+    },
+    {
+      "file": "securebert_repository.json",
+      "url": "https://api.github.com/repos/cisco-ai-defense/securebert2/commits/main",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "file": "logllm_repository.json",
+      "url": "https://api.github.com/repos/guanwei49/LogLLM/commits/master",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "file": "securebert_model_metadata.json",
+      "url": "https://huggingface.co/api/models/cisco-ai/SecureBERT2.0-base",
+      "bytes": 1915,
+      "sha256": "980d869aaf3033565602af907041a189963f9f23047a94a83c73cea41b7d5712",
+      "status": "read"
+    }
+  ]
+}

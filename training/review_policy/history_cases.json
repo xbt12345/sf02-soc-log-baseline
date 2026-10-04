@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "scope": "SF02 current N1 batch experiment; not universal model-training law.",
+  "risks": [
+    {
+      "id": "EARLY_SELECTION",
+      "rounds": "V116",
+      "observed_failure": "Relative ties on weak K/U metrics selected epoch15 although all trajectories completed25; S regression2542.",
+      "required_action": "fixed_terminal_no_tie_early",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "training/test_v116.py": "f29b8a2494d04558a9043f92be8df1c3a7626c0a6c562befa17822f8c57bec41",
+        "artifacts/v116_nested_selection_20260929/locked_selection.json": "323416026971059e7f88e19c61a838405512d001c7e1bdef2576e2ce63c20a6e"
+      }
+    },
+    {
+      "id": "OMITTED_POPULATION",
+      "rounds": "V116",
+      "observed_failure": "Missing parameters were absent from K/U selection; fold1 collateral6936 rows omitted from those scores.",
+      "required_action": "score_every_registered_row",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "artifacts/v116_nested_selection_20260929/split_policy.json": "12c330a9efc003e89517c23000ce5d5620c84babf54bf964ec86070f7cb7208c",
+        "artifacts/v117_selection_failure_review_20260929/audit.json": "5985796464a0776a55b374c992c5fb49d9d688d4d9a1e1c33d084d15489361ec"
+      }
+    },
+    {
+      "id": "WEAK_SUPPORT",
+      "rounds": "V117",
+      "observed_failure": "Known ICMP3/13 parameter had180 M and0 S in inner fit but685 S in K; parameter presence is not class support.",
+      "required_action": "report_class_parameter_support_no_stop_authority",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "artifacts/v117_selection_failure_review_20260929/audit.json": "5985796464a0776a55b374c992c5fb49d9d688d4d9a1e1c33d084d15489361ec"
+      }
+    },
+    {
+      "id": "LOSS_NOT_TRANSFER",
+      "rounds": "V81,V110",
+      "observed_failure": "Internal fit or source validation can improve while broader held-out classification deteriorates.",
+      "required_action": "training_loss_diagnostic_only",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "docs/V81_ROOT_CAUSE_AND_TRAINING_RESET.md": "404e8ac8e9e1f8dd143f924ee3aad8a32eb149bbc6b93794a44fdbab6b64b948",
+        "docs/V110_LAYER_PROBE_TRAINING_RESULTS_AND_STOP_DECISION.md": "3501d58372504bbbc247a5bcdf91657fc04b813f516f7772ca53911e7e693fd9"
+      }
+    },
+    {
+      "id": "CLASS_TRADEOFF",
+      "rounds": "V104,V113",
+      "observed_failure": "More epochs or lower total error can increase malicious misses; V113 M318->370 despite total2412->2190.",
+      "required_action": "protect_each_class_from_raw_predictions",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "docs/V104_OFFICIAL_COVERAGE_AND_INDEPENDENT_MODEL_TRAINING.md": "50ebf05f6d996a206aae566af6078a01bfc05e033c841b06add2c08f3d428350",
+        "artifacts/v113_case_training_20260929/OOF_ASA_decisions.parquet": "d7daba8d3bbfd71e63f3a76d2ddb73113046c20d2e2de9882bf9f04b464a74d1"
+      }
+    },
+    {
+      "id": "SOURCE_CONCENTRATION",
+      "rounds": "V113",
+      "observed_failure": "S gains in one large group did not establish wider source improvements.",
+      "required_action": "multiple_folds_and_outside_largest_groups",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "docs/V113_CASE_TRAINING_RESULTS_AND_STOP.md": "bf8be3dbd1b29c0483057cbb982a2ad182e1adc71aafc86e65630f7df1c8052e"
+      }
+    },
+    {
+      "id": "NUMERIC_AND_REFERENCE",
+      "rounds": "V116,V117",
+      "observed_failure": "Historical versus fresh baseline changed364 predictions; determinism flags did not achieve exact repeats.",
+      "required_action": "fresh_paired_baseline_and_conditional_seed_confirmation",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "artifacts/v116_nested_selection_20260929/baseline_drift_audit.json": "d5fe242c37049d03e33d00f1e1c4454448854914b3f1ed3a2daa09217ed1cf70",
+        "artifacts/v117_selection_failure_review_20260929/frozen_member_audit.json": "2a35611fd7d9ea821931ff5f25031a7577595aa38758b1d781a3299a30d64853"
+      }
+    },
+    {
+      "id": "LOCAL_MECHANISM",
+      "rounds": "V117,V118",
+      "observed_failure": "Batch-gradient reduction at one state did not generalize: fold2 ratio1.379507.",
+      "required_action": "bounded_primary_trial_without_fold_override",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "artifacts/v118_retrospective_and_training_contract_20260929/probe_results.json": "6d7bdaafb363e28ebd1d4abd46313815bbf01bbfcf1839d3b75471deb057eee1"
+      }
+    },
+    {
+      "id": "POSTHOC_RULE_CHANGE",
+      "rounds": "V116,V118",
+      "observed_failure": "Changing a checkpoint rule after inspected outer errors would invalidate claimed unseen model selection.",
+      "required_action": "seal_before_fit_reject_changed_sources",
+      "status": "historical_counterexample_retained",
+      "evidence_sha256": {
+        "artifacts/v118_retrospective_and_training_contract_20260929/training_contract.json": "d86bb98f006975f58dbbfd19d2b207e09cfc6eb8cf0d8597ff0c3fc499715e8c"
+      }
+    }
+  ]
+}

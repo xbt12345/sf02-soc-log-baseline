@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "known_dev_union_role_isolation": true,
+    "source_ad_union_role_isolation": true,
+    "source_duo_union_role_isolation": true,
+    "source_waf_union_role_isolation": true,
+    "asa_hard_union_role_isolation": true,
+    "all_official_rows": true,
+    "all_row_identities_and_labels_preserved": true,
+    "held_source_never_in_fit_selection_calibration": true,
+    "all_nonempty_exact_view_groups_inside_union": true,
+    "sampled_outer_metadata_invariant": true,
+    "official_input_hash": true
+  },
+  "all_checks_passed": true,
+  "rows": 2056871,
+  "exact_view_collisions": {
+    "B0": {
+      "unique_nonempty_original_input_views": 274475,
+      "mixed_label_input_groups": 75,
+      "mixed_rows": 4075,
+      "empirical_minimum_errors_fixed_representation": 1116,
+      "includes_nonempty_originals_projected_to_empty": true
+    },
+    "B1": {
+      "unique_nonempty_original_input_views": 212989,
+      "mixed_label_input_groups": 215,
+      "mixed_rows": 23220,
+      "empirical_minimum_errors_fixed_representation": 2510,
+      "includes_nonempty_originals_projected_to_empty": true
+    },
+    "B2": {
+      "unique_nonempty_original_input_views": 212989,
+      "mixed_label_input_groups": 215,
+      "mixed_rows": 23220,
+      "empirical_minimum_errors_fixed_representation": 2510,
+      "includes_nonempty_originals_projected_to_empty": true
+    }
+  },
+  "original_empty_rows": 356315,
+  "no_structured_facts_rows": 1939220,
+  "no_text_or_structured_facts_rows": 356578,
+  "independent_case_samples": 388,
+  "semantic_quality_certified": false,
+  "near_template_or_incident_isolation_proven": false,
+  "scope": "Full identities, labels, exact-view grouping, source holdout and sampled outer-field invariance. Does not certify target labels, all parser semantics, novel sources or genuine threat probabilities."
+}

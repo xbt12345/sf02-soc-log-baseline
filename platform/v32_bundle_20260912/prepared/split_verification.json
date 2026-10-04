@@ -1,0 +1,365 @@
+{
+  "scope": "Full row coverage, whole-group roles and engineering support checks; no claim of true incident independence, classifier quality or blind testing",
+  "checks": {
+    "prior_integrity_passed_for_this_corpus": true,
+    "corpus_identity": true,
+    "group_identity": true,
+    "split_identity": true,
+    "original_row_order_and_full_coverage": true,
+    "three_outer_folds": true,
+    "fold_0_valid_inner_roles": true,
+    "fold_0_whole_groups_only": true,
+    "fold_0_fit_benign_support": true,
+    "fold_0_fit_malicious_support": true,
+    "fold_0_fit_suspicious_support": true,
+    "fold_0_selection_benign_support": true,
+    "fold_0_selection_benign_no_majority_group": true,
+    "fold_0_selection_malicious_support": true,
+    "fold_0_selection_malicious_no_majority_group": true,
+    "fold_0_selection_suspicious_support": true,
+    "fold_0_selection_suspicious_no_majority_group": true,
+    "fold_0_calibration_benign_support": true,
+    "fold_0_calibration_benign_no_majority_group": true,
+    "fold_0_calibration_malicious_support": true,
+    "fold_0_calibration_malicious_no_majority_group": true,
+    "fold_0_calibration_suspicious_support": true,
+    "fold_0_calibration_suspicious_no_majority_group": true,
+    "fold_0_outer_benign_support": true,
+    "fold_0_outer_malicious_support": true,
+    "fold_0_outer_suspicious_support": true,
+    "fold_1_valid_inner_roles": true,
+    "fold_1_whole_groups_only": true,
+    "fold_1_fit_benign_support": true,
+    "fold_1_fit_malicious_support": true,
+    "fold_1_fit_suspicious_support": true,
+    "fold_1_selection_benign_support": true,
+    "fold_1_selection_benign_no_majority_group": true,
+    "fold_1_selection_malicious_support": true,
+    "fold_1_selection_malicious_no_majority_group": true,
+    "fold_1_selection_suspicious_support": true,
+    "fold_1_selection_suspicious_no_majority_group": true,
+    "fold_1_calibration_benign_support": true,
+    "fold_1_calibration_benign_no_majority_group": true,
+    "fold_1_calibration_malicious_support": true,
+    "fold_1_calibration_malicious_no_majority_group": true,
+    "fold_1_calibration_suspicious_support": true,
+    "fold_1_calibration_suspicious_no_majority_group": true,
+    "fold_1_outer_benign_support": true,
+    "fold_1_outer_malicious_support": true,
+    "fold_1_outer_suspicious_support": true,
+    "fold_2_valid_inner_roles": true,
+    "fold_2_whole_groups_only": true,
+    "fold_2_fit_benign_support": true,
+    "fold_2_fit_malicious_support": true,
+    "fold_2_fit_suspicious_support": true,
+    "fold_2_selection_benign_support": true,
+    "fold_2_selection_benign_no_majority_group": true,
+    "fold_2_selection_malicious_support": true,
+    "fold_2_selection_malicious_no_majority_group": true,
+    "fold_2_selection_suspicious_support": true,
+    "fold_2_selection_suspicious_no_majority_group": true,
+    "fold_2_calibration_benign_support": true,
+    "fold_2_calibration_benign_no_majority_group": true,
+    "fold_2_calibration_malicious_support": true,
+    "fold_2_calibration_malicious_no_majority_group": true,
+    "fold_2_calibration_suspicious_support": true,
+    "fold_2_calibration_suspicious_no_majority_group": true,
+    "fold_2_outer_benign_support": true,
+    "fold_2_outer_malicious_support": true,
+    "fold_2_outer_suspicious_support": true
+  },
+  "all_checks_passed": true,
+  "supports": [
+    {
+      "fold": 0,
+      "role": "fit",
+      "class": "benign",
+      "rows": 759889,
+      "nonempty_groups": 101022,
+      "largest_group_fraction": 0.0523974255572075
+    },
+    {
+      "fold": 0,
+      "role": "fit",
+      "class": "malicious",
+      "rows": 44690,
+      "nonempty_groups": 6789,
+      "largest_group_fraction": 0.07012754531215037
+    },
+    {
+      "fold": 0,
+      "role": "fit",
+      "class": "suspicious",
+      "rows": 18168,
+      "nonempty_groups": 2343,
+      "largest_group_fraction": 0.0877366798767063
+    },
+    {
+      "fold": 0,
+      "role": "selection",
+      "class": "benign",
+      "rows": 253297,
+      "nonempty_groups": 33561,
+      "largest_group_fraction": 0.13400743783573565
+    },
+    {
+      "fold": 0,
+      "role": "selection",
+      "class": "malicious",
+      "rows": 14898,
+      "nonempty_groups": 2261,
+      "largest_group_fraction": 0.09773123909249563
+    },
+    {
+      "fold": 0,
+      "role": "selection",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 777,
+      "largest_group_fraction": 0.19484808454425362
+    },
+    {
+      "fold": 0,
+      "role": "calibration",
+      "class": "benign",
+      "rows": 253296,
+      "nonempty_groups": 33587,
+      "largest_group_fraction": 0.1319532206948846
+    },
+    {
+      "fold": 0,
+      "role": "calibration",
+      "class": "malicious",
+      "rows": 14896,
+      "nonempty_groups": 2267,
+      "largest_group_fraction": 0.06928034371643395
+    },
+    {
+      "fold": 0,
+      "role": "calibration",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 786,
+      "largest_group_fraction": 0.08487450462351387
+    },
+    {
+      "fold": 0,
+      "role": "outer",
+      "class": "benign",
+      "rows": 633241,
+      "nonempty_groups": 84156,
+      "largest_group_fraction": 0.06297362380640484
+    },
+    {
+      "fold": 0,
+      "role": "outer",
+      "class": "malicious",
+      "rows": 37244,
+      "nonempty_groups": 5658,
+      "largest_group_fraction": 0.09139727204381914
+    },
+    {
+      "fold": 0,
+      "role": "outer",
+      "class": "suspicious",
+      "rows": 15140,
+      "nonempty_groups": 1931,
+      "largest_group_fraction": 0.4455746367239102
+    },
+    {
+      "fold": 1,
+      "role": "fit",
+      "class": "benign",
+      "rows": 759889,
+      "nonempty_groups": 100964,
+      "largest_group_fraction": 0.05248000881118632
+    },
+    {
+      "fold": 1,
+      "role": "fit",
+      "class": "malicious",
+      "rows": 44690,
+      "nonempty_groups": 6788,
+      "largest_group_fraction": 0.07616916536137838
+    },
+    {
+      "fold": 1,
+      "role": "fit",
+      "class": "suspicious",
+      "rows": 18168,
+      "nonempty_groups": 2323,
+      "largest_group_fraction": 0.37131219726992515
+    },
+    {
+      "fold": 1,
+      "role": "selection",
+      "class": "benign",
+      "rows": 253297,
+      "nonempty_groups": 33645,
+      "largest_group_fraction": 0.13395273799862967
+    },
+    {
+      "fold": 1,
+      "role": "selection",
+      "class": "malicious",
+      "rows": 14898,
+      "nonempty_groups": 2264,
+      "largest_group_fraction": 0.09773123909249563
+    },
+    {
+      "fold": 1,
+      "role": "selection",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 779,
+      "largest_group_fraction": 0.19484808454425362
+    },
+    {
+      "fold": 1,
+      "role": "calibration",
+      "class": "benign",
+      "rows": 253296,
+      "nonempty_groups": 33651,
+      "largest_group_fraction": 0.131912825870405
+    },
+    {
+      "fold": 1,
+      "role": "calibration",
+      "class": "malicious",
+      "rows": 14898,
+      "nonempty_groups": 2263,
+      "largest_group_fraction": 0.06927104309303263
+    },
+    {
+      "fold": 1,
+      "role": "calibration",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 781,
+      "largest_group_fraction": 0.08487450462351387
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "class": "benign",
+      "rows": 633241,
+      "nonempty_groups": 84066,
+      "largest_group_fraction": 0.0628913334642233
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "class": "malicious",
+      "rows": 37242,
+      "nonempty_groups": 5660,
+      "largest_group_fraction": 0.08415230116535095
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "class": "suspicious",
+      "rows": 15140,
+      "nonempty_groups": 1954,
+      "largest_group_fraction": 0.10528401585204755
+    },
+    {
+      "fold": 2,
+      "role": "fit",
+      "class": "benign",
+      "rows": 759889,
+      "nonempty_groups": 101063,
+      "largest_group_fraction": 0.052471679932631035
+    },
+    {
+      "fold": 2,
+      "role": "fit",
+      "class": "malicious",
+      "rows": 44690,
+      "nonempty_groups": 6810,
+      "largest_group_fraction": 0.07616916536137838
+    },
+    {
+      "fold": 2,
+      "role": "fit",
+      "class": "suspicious",
+      "rows": 18168,
+      "nonempty_groups": 2326,
+      "largest_group_fraction": 0.37131219726992515
+    },
+    {
+      "fold": 2,
+      "role": "selection",
+      "class": "benign",
+      "rows": 253297,
+      "nonempty_groups": 33564,
+      "largest_group_fraction": 0.157275568886145
+    },
+    {
+      "fold": 2,
+      "role": "selection",
+      "class": "malicious",
+      "rows": 14898,
+      "nonempty_groups": 2234,
+      "largest_group_fraction": 0.21036380722244596
+    },
+    {
+      "fold": 2,
+      "role": "selection",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 777,
+      "largest_group_fraction": 0.2632100396301189
+    },
+    {
+      "fold": 2,
+      "role": "calibration",
+      "class": "benign",
+      "rows": 253296,
+      "nonempty_groups": 33595,
+      "largest_group_fraction": 0.12794789540196363
+    },
+    {
+      "fold": 2,
+      "role": "calibration",
+      "class": "malicious",
+      "rows": 14898,
+      "nonempty_groups": 2274,
+      "largest_group_fraction": 0.027923211169284468
+    },
+    {
+      "fold": 2,
+      "role": "calibration",
+      "class": "suspicious",
+      "rows": 6056,
+      "nonempty_groups": 782,
+      "largest_group_fraction": 0.11245046235138706
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "class": "benign",
+      "rows": 633241,
+      "nonempty_groups": 84104,
+      "largest_group_fraction": 0.05358198046899297
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "class": "malicious",
+      "rows": 37242,
+      "nonempty_groups": 5657,
+      "largest_group_fraction": 0.03909564470221793
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "class": "suspicious",
+      "rows": 15140,
+      "nonempty_groups": 1952,
+      "largest_group_fraction": 0.07793923381770146
+    }
+  ],
+  "corpus_sha256": "95c79304fae8e60af997821b2ed279635e091ae74ffac3e694da29d3747d6c10",
+  "split_sha256": "182982d665547006e19c9295ac640c98c56f8d911ae2d89540a9ee67ba1acbbf",
+  "code_sha256": "9bb95a39e46e8dbe6e858f699e2c8333c399d111cc55ffcbfb8c0b4f07c23088"
+}

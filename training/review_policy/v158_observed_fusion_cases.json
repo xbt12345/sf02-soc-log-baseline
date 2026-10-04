@@ -1,0 +1,68 @@
+{
+  "version": "V158_actual_failed_probability_fusion_cases",
+  "failed_task_gates": [
+    "ASA_M_absolute",
+    "ASA_total_absolute",
+    "paired_M_S_protected",
+    "multiple_folds_improve",
+    "outside_largest_S_groups_protected",
+    "full_class_recall_F1_protected",
+    "full_precision_recall_F1_protected",
+    "S_source_mean_recall",
+    "S_zero_recall_roots",
+    "S_outside_top3",
+    "header682",
+    "root2868_M"
+  ],
+  "cases": [
+    {
+      "name": "lower_OOF_CE_and_TRAIN_retention_do_not_close_outer_quality",
+      "action": "Reject task adoption and automatic confirmation."
+    },
+    {
+      "name": "equal_total_error_hides_10_M_repairs_and_10_S_regressions",
+      "action": "Enforce both registered class protections and multiple folds."
+    },
+    {
+      "name": "strict_correct_control_regresses_at_origin_and_during_learning",
+      "action": "Keep all original controls and separate origin from learning."
+    },
+    {
+      "name": "all_17_negative_S_minus_M_cannot_be_repaired_by_convex_weights",
+      "action": "No claim that new conditions or additional iterations solve the proven 188 cases."
+    },
+    {
+      "name": "four_zero_accepted_stages_have_no_progress_file",
+      "action": "Require registered stop and exact state identity; do not rerun completed fits."
+    }
+  ],
+  "source_sha256": {
+    "training/v158_build_result_records.py": "057a53bbab7f0e53713382e145aa02dec4ec2a237702dd54d279436aca34b750",
+    "training/v158_replay_observed_cases.py": "aad42e50bb0c4a480634d379123b26414f1aa6b131d6f9a105a335681c89ce40",
+    "artifacts/v158_fusion_trial_20261001/final_delivery.json": "7ea7940d410c3a2b6eddb43aa159bea7125836890d72a03c6555b22e98c34f49",
+    "artifacts/v158_fusion_trial_20261001/quality.json": "c61a3a7b5e6e4f5f0283a0a74ff8abe91e80533fa52a8e95acf3296968635f6f",
+    "artifacts/v158_fusion_trial_20261001/verification.json": "ad5ba095b2f33d902f37b77d9951f12dae71320786e82fc133ef1a727d572c42",
+    "artifacts/v158_fusion_trial_20261001/learning_qualification.json": "d82baa07ca631989315694192f96c0953cc34d8b0e3e075d48102f92cb7010ae",
+    "artifacts/v158_fusion_trial_20261001/full_prediction_ledger.parquet": "7396642f747adc41a0e3b30221bc7b6cdaeeb9450e588c2acb4801943a516951",
+    "artifacts/v158_fusion_trial_20261001/ASA_prediction_ledger.parquet": "87d6d0767b5b249b6a80487b9880a30ef690013300d54a80d6c1185804f09b1a",
+    "artifacts/v158_fusion_trial_20261001/all_fixed_cohort_quality.json": "4871dc37b32fa2dc7f069083c392f39023c9e16c464ee1fb8ed42cb82baad346",
+    "artifacts/v158_current_pipeline_OOF_trial_20261001/base_phase_completion.json": "9d0dbff00f9c6a5515bfb735f1b21f3aa43f029c5ad53211dbd902f9a414972b",
+    "artifacts/v158_current_pipeline_OOF_trial_20261001/legacy_phase_completion.json": "ad5b407542031be498b085fd6e9367524f68d3e32e65a308cfba146366fc4ae2",
+    "artifacts/v158_current_pipeline_OOF_trial_20261001/execution_failure.json": "9ae2579e04e996cb3685904130fbe41d225a765f1c80285f770006d8b67464bf",
+    "artifacts/v158_legal_fusion_bank_20261001/failure.json": "717a91fc7847b44ff5c625efc888c86cf953d73461c51feb185b5661bdc99a26",
+    "artifacts/v158_zero_update_stage_identity_audit_20261001/audit.json": "c35806e0f6e51f9fdd7360d81cd681d61ff831a8ac75a89aa00138368775f2c5",
+    "artifacts/v158_saved_result_transfer_audit_20261001/audit.json": "f96a238305efd30d83d961cb3b992a4852f8e5ca1a186f6f7a0e56b4fcda6c29",
+    "artifacts/v158_saved_result_transfer_audit_20261001/all_ASA_origin_and_actual_endpoints.parquet": "3319ffce348100e6011d23052aba6b536480bee3db901a1110bced669e3b0e6e",
+    "artifacts/v158_fusion_trial_20261001/fold0_A/fit.json": "b4ca5a1926eb9a4c38e62971fd251d3eeb91f98981cc127b6f774d32a54e9b11",
+    "artifacts/v158_fusion_trial_20261001/fold0_B/fit.json": "dc6725310b59b50be8af009d90b56b31979a276fbeb04ae73a78bb6f87145949",
+    "artifacts/v158_fusion_trial_20261001/fold1_A/fit.json": "e32385f0a72e09c9596a0440e5947c6626f911743278c0b7f8dd061fa895999a",
+    "artifacts/v158_fusion_trial_20261001/fold1_B/fit.json": "dc0d86f0a331771feae88192c351d95d809ea8344eeba9460e7f2a1be6c5fadb",
+    "artifacts/v158_fusion_trial_20261001/fold2_A/fit.json": "ef08743ba488b2707761583cdee513551dbff316f5f24b5d41cb45613bc1697a",
+    "artifacts/v158_fusion_trial_20261001/fold2_B/fit.json": "439d9bb7c09388a8ddd6fb134691d40384be9adfbc08fb1c527a77b7437d61d1",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold0/deployment_probabilities.npy": "d236cfd0a2cbd9313a04edfdb1d17520bc9f210ca2f981929dedabc8fb664f7c",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold1/deployment_probabilities.npy": "44a28f3405137f227272eba53d85eee640cc54b268feb21ea7a8a0b242e64aad",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold2/deployment_probabilities.npy": "8413cfb7d270b0b4f177c0df821cc5a4a8207426e9beca9be3424b08af1174f6"
+  },
+  "automatic_extra_fits": false,
+  "quality_acceptance": false
+}

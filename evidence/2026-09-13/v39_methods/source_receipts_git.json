@@ -1,0 +1,121 @@
+{
+  "scope": "Read-only public git HEAD and raw source retrieval; prior GitHub API rate-limit failures retained; no package install, source execution, or dataset download",
+  "results": [
+    {
+      "repository": "PolinaKirichenko/deep_feature_reweighting",
+      "commit": "9d8d5de78feafb0ba99878b8a1f91c5cd942e62a",
+      "files": [
+        {
+          "path": "README.md",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\PolinaKirichenko__deep_feature_reweighting\\README.md",
+          "url": "https://raw.githubusercontent.com/PolinaKirichenko/deep_feature_reweighting/9d8d5de78feafb0ba99878b8a1f91c5cd942e62a/README.md",
+          "bytes": 8651,
+          "sha256": "a7bfd2b526ea5a7c560eb01fa8eb07290238234cc83554a2415b41fbd5d44719"
+        },
+        {
+          "path": "dfr_evaluate_spurious.py",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\PolinaKirichenko__deep_feature_reweighting\\dfr_evaluate_spurious.py",
+          "url": "https://raw.githubusercontent.com/PolinaKirichenko/deep_feature_reweighting/9d8d5de78feafb0ba99878b8a1f91c5cd942e62a/dfr_evaluate_spurious.py",
+          "bytes": 15424,
+          "sha256": "7b783562b3918cf155d5f632ab2b56cc85b75fb271edb47706c4e6f447ad2da5"
+        },
+        {
+          "path": "LICENSE",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\PolinaKirichenko__deep_feature_reweighting\\LICENSE",
+          "url": "https://raw.githubusercontent.com/PolinaKirichenko/deep_feature_reweighting/9d8d5de78feafb0ba99878b8a1f91c5cd942e62a/LICENSE",
+          "bytes": 1344,
+          "sha256": "d95545f9feffb45b9ccd0960658737aff3d6abbfd340f0e4929c2db292601193"
+        }
+      ],
+      "not_found": []
+    },
+    {
+      "repository": "HazyResearch/correct-n-contrast",
+      "commit": "eaa1c664fd2002ed4dd45344353583dbce31fac0",
+      "files": [
+        {
+          "path": "README.md",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\HazyResearch__correct-n-contrast\\README.md",
+          "url": "https://raw.githubusercontent.com/HazyResearch/correct-n-contrast/eaa1c664fd2002ed4dd45344353583dbce31fac0/README.md",
+          "bytes": 6913,
+          "sha256": "638192b3a9e1bdcad293afbecb80f110ab3ba03036bad12463637f005eafe9d8"
+        },
+        {
+          "path": "contrastive_supervised_loader.py",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\HazyResearch__correct-n-contrast\\contrastive_supervised_loader.py",
+          "url": "https://raw.githubusercontent.com/HazyResearch/correct-n-contrast/eaa1c664fd2002ed4dd45344353583dbce31fac0/contrastive_supervised_loader.py",
+          "bytes": 18611,
+          "sha256": "88d3910ccae08030f8eba2ef2ce870fb6a48e524e8a484d93ba5b28915e02833"
+        },
+        {
+          "path": "contrastive_network.py",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\HazyResearch__correct-n-contrast\\contrastive_network.py",
+          "url": "https://raw.githubusercontent.com/HazyResearch/correct-n-contrast/eaa1c664fd2002ed4dd45344353583dbce31fac0/contrastive_network.py",
+          "bytes": 12227,
+          "sha256": "81d065abf73557fbf1407158fda89f9597cf4e57543a0dde3b010d55cb04a27c"
+        },
+        {
+          "path": "LICENSE",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\HazyResearch__correct-n-contrast\\LICENSE",
+          "url": "https://raw.githubusercontent.com/HazyResearch/correct-n-contrast/eaa1c664fd2002ed4dd45344353583dbce31fac0/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "not_found": []
+    },
+    {
+      "repository": "ocsf/ocsf-schema",
+      "commit": "c1ab05a382ffc97250997ffe010f3f715a097c2a",
+      "files": [
+        {
+          "path": "README.md",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\README.md",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/README.md",
+          "bytes": 6516,
+          "sha256": "17ee1426d9eb19858965c62fa59b2e1d581df29e7ccfb5e166bd79fbafb424f7"
+        },
+        {
+          "path": "events/network/network_activity.json",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\events\\network\\network_activity.json",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/events/network/network_activity.json",
+          "bytes": 3827,
+          "sha256": "46d6150371e88b5048a0c100cf10919c9d6b92af52c16a8b40ac0738a63e613e"
+        },
+        {
+          "path": "events/iam/authentication.json",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\events\\iam\\authentication.json",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/events/iam/authentication.json",
+          "bytes": 5342,
+          "sha256": "d4ca744b7c57766245c087913af22f567c101fe619ea27c95b87a689b442bb60"
+        },
+        {
+          "path": "objects/network_connection_info.json",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\objects\\network_connection_info.json",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/objects/network_connection_info.json",
+          "bytes": 2231,
+          "sha256": "1781cbafd387eb58aa3282aa0faccfa1ac46edf9968d6602901794446608a961"
+        },
+        {
+          "path": "objects/network_endpoint.json",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\objects\\network_endpoint.json",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/objects/network_endpoint.json",
+          "bytes": 2071,
+          "sha256": "34813369c744b2dd9f98e46473ce70e5433c75bdb7224a32a83458831447e04a"
+        },
+        {
+          "path": "LICENSE",
+          "local": "evidence\\2026-09-13\\v39_methods\\sources\\ocsf__ocsf-schema\\LICENSE",
+          "url": "https://raw.githubusercontent.com/ocsf/ocsf-schema/c1ab05a382ffc97250997ffe010f3f715a097c2a/LICENSE",
+          "bytes": 10173,
+          "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+        }
+      ],
+      "not_found": []
+    },
+    {
+      "repository": "logpai/Drain3",
+      "error": "CalledProcessError(128, ['git', 'ls-remote', 'https://github.com/logpai/Drain3.git', 'HEAD'])"
+    }
+  ]
+}

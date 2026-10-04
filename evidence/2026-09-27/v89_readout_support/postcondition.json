@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "bound_artifacts_rehashed": 150,
+  "bound_artifacts_changed": [],
+  "authoritative_source_ids": [
+    "v89-delivery",
+    "v89-direction-review"
+  ],
+  "experiment_status": "readout_support_training_completed_no_model_promoted",
+  "quality_acceptance": false,
+  "mcp_tests_passed": 9,
+  "model_promoted": false,
+  "classifier_fits": 10,
+  "unfinished_training_ledger_records": 0,
+  "cloud_tunnel_connection_tested": false,
+  "scope": "Published local files and direct read-only MCP source queries checked; no claim of cloud connection or model quality acceptance."
+}

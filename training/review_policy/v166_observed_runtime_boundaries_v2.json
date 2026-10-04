@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "actual_diagnostic": "V166",
+  "inherit_applicable_constraints": "training/review_policy/v165_observed_boundaries.json",
+  "no_new_execution_authority": true,
+  "cases": [
+    {
+      "id": "V166-COVERED-LINEAR-SAFE-FINITE-UNSAFE",
+      "evidence": "artifacts/v166_saved_nonlinear_margin_residual_review_20261002/review.json",
+      "actual_fact": "Five role1 functions are already among25 constraints; every original-unit inequality passes with predicted c+A.e nonnegative, but actual margins are negative beyond original arithmetic resolution and create10 protected S errors",
+      "required_action": "Keep actual original-row finite classification and retention gates authoritative. Preserve all five complete function identities and actual residuals; qualify a new bounded nonlinear correction method before any new official call. Do not claim covered linear constraints certify nonlinear safety"
+    },
+    {
+      "id": "V166-KNOWN-RESIDUAL-NOT-MISSING-CAPACITY",
+      "evidence": "artifacts/v166_saved_residual_blocker_identity_review_20261002/review.json",
+      "actual_fact": "All five role1 blocking functions were measured; no fresh unmeasured function and the observed union remains25",
+      "required_action": "Do not enlarge the function limit or add unrelated normals to explain these known-function failures. Evaluate predicted versus actual margins and distinguish local approximation error from future genuinely uncovered functions"
+    },
+    {
+      "id": "V166-CLASS-TRADEOFF-NOT-JOINT-GAIN",
+      "evidence": "artifacts/v166_saved_coverage_quality_review_20261002/review.json",
+      "actual_fact": "Role1 repairs16 M rows but introduces10 protected S errors, so total pure errors fall1952to1946 while the candidate must be rejected",
+      "required_action": "Reject the actual candidate on any registered class or cumulative protection failure even when total errors or both fixed-target risks improve. Preserve complete original class masses, mixed rows and all earlier eight repairs"
+    },
+    {
+      "id": "V166-TWO-PASSES-NOT-THREE-ROLE-TRAINING-GATE",
+      "evidence": "artifacts/v166_independent_actual_coverage_review_20261002/review.json",
+      "actual_fact": "Roles0and2 pass and repair356and8 M rows, but role1 fails; all_three_actual_finite_guards_passed and supports_new_short_training_registration are false",
+      "required_action": "Keep all roles and the original all-role gate. Do not discard role1, choose only successful roles or promote temporary candidates. A new mechanism or training range requires a separate prospectively reviewed contract and physical source seal"
+    },
+    {
+      "id": "V166-TEMPORARY-REPAIRS-NOT-PERMANENT-MODEL",
+      "evidence": "artifacts/v166_results_20261002/actual_result_summary.json",
+      "actual_fact": "All actual endpoints were restored to V164; formal new fits and permanent updates are zero, despite temporary finite candidate repairs",
+      "required_action": "Preserve exact complete V164 parameters and original q/logq repeat policy on every failure or exception. Keep temporary candidate gains separate from submitted training gains, retain cumulative actual cost18784headsand618derivatives without budget reset, and keep latest full-population deliveryV159 until truly reverified"
+    }
+  ],
+  "actual_executed_evidence_replays": [
+    "training/v166_saved_nonlinear_margin_residual_review.py",
+    "training/v166_saved_residual_blocker_identity_review.py",
+    "training/v166_saved_coverage_quality_review.py",
+    "training/v166_independent_actual_coverage_review.py"
+  ],
+  "executable_constraint_replay": "training/v166_observed_runtime_failure_replay_v2.py",
+  "scope": "Observed supervised development counterexamples only; not global infeasibility, causality, classification mastery or independent-source acceptance",
+  "prior_registry": "training/review_policy/v166_observed_runtime_boundaries.json"
+}

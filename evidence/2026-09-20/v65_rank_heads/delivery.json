@@ -1,0 +1,695 @@
+{
+  "status": "inner_three_fold_rank_training_failed_gate_no_model_promoted",
+  "created_at_utc": "2026-09-20T08:13:29.330400+00:00",
+  "quality_acceptance": false,
+  "platform_used": false,
+  "neural_training_executed": true,
+  "validation_scope": "Three source-disjoint inner folds in original fit, 59,640 rows; six frozen-encoder head fits, 12 epochs each, 90 checkpoint metric replays, 15 weight/probability replays, 10 implementation tests. Adaptive development only, no old selection/outer evaluation, no model promotion or full SOC acceptance.",
+  "training_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.52.4",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "pyarrow": "19.0.1"
+  },
+  "head_training_loop_seconds": 132.20200000004843,
+  "six_head_fits_executed": true,
+  "epochs_per_head": 12,
+  "original_labels_changed": false,
+  "raw_port_information_retained": true,
+  "gate": {
+    "passed": false,
+    "all_folds_feasible": true,
+    "pooled_S_gain": 0.012722646310432576,
+    "per_fold_S_gain": [
+      0.0,
+      0.026515151515151547,
+      0.011494252873563204
+    ],
+    "all_hard_S_deltas": [
+      0.0,
+      0.0,
+      0.03954802259887006,
+      0.0,
+      0.017241379310344827,
+      0.0
+    ],
+    "no_hard_S_decline": true,
+    "some_hard_S_improvement": true,
+    "reason": "Insufficient pooled S gain and/or inconsistent hard-behavior transfer"
+  },
+  "aggregate_metrics": {
+    "H0_peak": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            43040,
+            104
+          ],
+          [
+            0,
+            654,
+            15830
+          ]
+        ],
+        "errors": 758,
+        "recall_B_M_S": [
+          null,
+          0.9975894678286668,
+          0.9603251637951954
+        ],
+        "macro_f1_M_S": 0.9839445154120784,
+        "macro_f1_B_M_S": 0.6559630102747189,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9804785639089331,
+        "cross_entropy": 0.08763258991637675
+      },
+      "M_source_recall": 0.9997781229199024,
+      "S_source_recall": 0.27735368956743,
+      "hard": {
+        "tcp": {
+          "1": 1.0,
+          "2": 0.00392156862745098
+        },
+        "udp": {
+          "1": 1.0,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 12,
+      "source_balanced": 0.6385659062436662,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.5568917430065214,
+          "source_balanced_ROC_AUC": 0.5820255113545166
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.5342539902873022,
+          "source_balanced_ROC_AUC": 0.5016561016675043
+        }
+      }
+    },
+    "H0_guarded": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            42934,
+            210
+          ],
+          [
+            0,
+            632,
+            15852
+          ]
+        ],
+        "errors": 842,
+        "recall_B_M_S": [
+          null,
+          0.9951325792694233,
+          0.9616597913127881
+        ],
+        "macro_f1_M_S": 0.9822091979314174,
+        "macro_f1_B_M_S": 0.6548061319542783,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9766034839590528,
+        "cross_entropy": 0.14627835911327158
+      },
+      "M_source_recall": 0.9971377856667407,
+      "S_source_recall": 0.29465648854961835,
+      "hard": {
+        "tcp": {
+          "1": 0.9976943831248467,
+          "2": 0.03058823529411765
+        },
+        "udp": {
+          "1": 0.9953703703703703,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 10,
+      "source_balanced": 0.6458971371081795,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.6754199199496451,
+          "source_balanced_ROC_AUC": 0.679726684819403
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.56603218949337,
+          "source_balanced_ROC_AUC": 0.6044839571024647
+        }
+      }
+    },
+    "H0_last": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            42614,
+            530
+          ],
+          [
+            0,
+            622,
+            15862
+          ]
+        ],
+        "errors": 1152,
+        "recall_B_M_S": [
+          null,
+          0.9877155572037827,
+          0.9622664401844213
+        ],
+        "macro_f1_M_S": 0.9758114101579247,
+        "macro_f1_B_M_S": 0.6505409401052832,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9696049865475453,
+        "cross_entropy": 0.19560634712816224
+      },
+      "M_source_recall": 0.9909042390515654,
+      "S_source_recall": 0.29961832061068705,
+      "hard": {
+        "tcp": {
+          "1": 0.9920297781224934,
+          "2": 0.03823529411764706
+        },
+        "udp": {
+          "1": 0.9884259259259259,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 2,
+      "source_balanced": 0.6452612798311262,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.670023220348086,
+          "source_balanced_ROC_AUC": 0.674208270046491
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.5314820032841499,
+          "source_balanced_ROC_AUC": 0.5533259448075167
+        }
+      }
+    },
+    "H1_last": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            42690,
+            454
+          ],
+          [
+            0,
+            646,
+            15838
+          ]
+        ],
+        "errors": 1100,
+        "recall_B_M_S": [
+          null,
+          0.9894770999443724,
+          0.9608104828925018
+        ],
+        "macro_f1_M_S": 0.9768595768614792,
+        "macro_f1_B_M_S": 0.6512397179076528,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9615787451844133,
+        "cross_entropy": 0.2247291759379791
+      },
+      "M_source_recall": 0.9924391886894661,
+      "S_source_recall": 0.28307888040712464,
+      "hard": {
+        "tcp": {
+          "1": 0.992990783277759,
+          "2": 0.012745098039215688
+        },
+        "udp": {
+          "1": 0.9942129629629629,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 2,
+      "source_balanced": 0.6377590345482954,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.6385355420976544,
+          "source_balanced_ROC_AUC": 0.6539540931923964
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.5191854491065871,
+          "source_balanced_ROC_AUC": 0.541069451741789
+        }
+      }
+    },
+    "coarse": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            43036,
+            108
+          ],
+          [
+            0,
+            658,
+            15826
+          ]
+        ],
+        "errors": 766,
+        "recall_B_M_S": [
+          null,
+          0.9974967550528463,
+          0.9600825042465421
+        ],
+        "macro_f1_M_S": 0.9837750643874037,
+        "macro_f1_B_M_S": 0.6558500429249358,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9646101885068096,
+        "cross_entropy": 0.46302808237847565
+      },
+      "M_source_recall": 0.9995562458398047,
+      "S_source_recall": 0.2748091603053435,
+      "hard": {
+        "tcp": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "udp": {
+          "1": 1.0,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 0,
+      "source_balanced": 0.6371827030725741,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.4999999999999435,
+          "source_balanced_ROC_AUC": 0.5
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.4999999999999957,
+          "source_balanced_ROC_AUC": 0.5
+        }
+      }
+    },
+    "H1_selected": {
+      "ASA": {
+        "rows": 59628,
+        "confusion_B_M_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            42956,
+            188
+          ],
+          [
+            0,
+            632,
+            15852
+          ]
+        ],
+        "errors": 820,
+        "recall_B_M_S": [
+          null,
+          0.9956424995364361,
+          0.9616597913127881
+        ],
+        "macro_f1_M_S": 0.9826667188415577,
+        "macro_f1_B_M_S": 0.6551111458943718,
+        "threat_to_benign": 0,
+        "normal_false_positive_rate": null,
+        "S_average_precision": 0.9818585325022053,
+        "cross_entropy": 0.08520246036834135
+      },
+      "M_source_recall": 0.9983359218992678,
+      "S_source_recall": 0.2900763358778626,
+      "hard": {
+        "tcp": {
+          "1": 0.9986509688496443,
+          "2": 0.023529411764705882
+        },
+        "udp": {
+          "1": 1.0,
+          "2": 0.0
+        }
+      },
+      "normal_control_errors": 10,
+      "source_balanced": 0.6442061288885652,
+      "normal_support": 12,
+      "conditional_ranking": {
+        "tcp": {
+          "rows": 39048,
+          "S_rows": 564,
+          "source_balanced_AP": 0.582479370121624,
+          "source_balanced_ROC_AUC": 0.5974783623602741
+        },
+        "udp": {
+          "rows": 3494,
+          "S_rows": 88,
+          "source_balanced_AP": 0.5404399574518799,
+          "source_balanced_ROC_AUC": 0.5099834305184088
+        }
+      }
+    }
+  },
+  "matched_selector_S_delta": -0.004580152671755725,
+  "normal_control_note": "Selected H1 fails 10 of 12 normal controls; one inner validation fold has no normal rows. No operational false-positive-rate claim.",
+  "verification": {
+    "implementation_tests": 10,
+    "metric_replays": 90,
+    "weight_replays": 15,
+    "max_replayed_probability_difference": 0.0,
+    "pair_exposures_reconstructed": 31584,
+    "previous_v64_bound_artifacts_unchanged": 22
+  },
+  "stopped_branch": "Expansion of this fixed-representation CE plus conditional-ranking configuration",
+  "next_direction": "Audit official raw-to-input evidence and safely supportable context before another loss/epoch expansion; use identical selectors on both arms and protect normal controls.",
+  "limitations": [
+    "One fixed seed; checkpoint selection uses these validation labels.",
+    "Source symbols are isolation proxies, not verified physical assets or domains.",
+    "Only 12 normal rows and a validation fold with none: no operational FPR estimate.",
+    "No official validation truth or full SOC quality acceptance.",
+    "Unchanged inputs do not establish that all useful event information is present."
+  ],
+  "artifact_sha256": {
+    "artifacts/v65_rank_heads_20260920/analysis.json": "a77475d5ad0d12af847e02685fe12d9bd4d44feb446c8c7105fa511c0ca3f7e2",
+    "artifacts/v65_rank_heads_20260920/analysis.log": "86af848841000438c4c05b4621bd92d71d5173ead0d89186400dd5c2708cb93e",
+    "artifacts/v65_rank_heads_20260920/behavior_effects.csv": "d2bce76dfda18cbcd348ad73eda11a20938d992fc3ea2142ba839a9e395ae77b",
+    "artifacts/v65_rank_heads_20260920/checkpoint_comparison.csv": "cd99ab879b86bbdd21e396854bff6c53434718de326a3fabe75f3b668591a3e1",
+    "artifacts/v65_rank_heads_20260920/coarse_oof.parquet": "3cbadc3240029ce031e6a23072159c81347047922dc56ce26b4616bbaa570908",
+    "artifacts/v65_rank_heads_20260920/fold0/coarse_reference.parquet": "f2a9adede9bded19adc4abb9bdfd4cb0294b09e2c39aaeac55fa66a09b467b7d",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/curve.json": "da1f3ba4c21c51d154acc95d4bac3714c7c623cd8d95f44f47f88fdc7069b729",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0038.parquet": "c54b9bdf985bc0b534c95846a8736d5b26b53df41eb1e0ea0065d52268200570",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0038.pt": "0fcb52e2b4a03a0ea554662ad199760508e447468d946b773f0a554596ee2ddc",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0038.pt.fit.parquet": "d8f4b7ca507ba52b3dd890421b549e8e14181a6363c381ab8676212d1506240f",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0077.parquet": "1075b030af91e7b5cfbef0fd0d5b3a9242895a3e8dd9e91cf40b65c2db49e284",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0077.pt": "879ba07d6873714378b47fd195200beb4fa05e432e2bf5c877f20e08ccc249b1",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0115.parquet": "c544afabd449f58aaff5f577defbc8d2e50594feea8bfa51f1d2834bdf2cc605",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0115.pt": "c5b4082bf19dc2a89fa7f5ad048efd10a7334ffff24bc8b8216e8abf4ee1b836",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0154.parquet": "788fe5fd25e1ebdb747d46948bd13a5aa1a0435414c5114acaf179a51cb71fab",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0154.pt": "a015bafddd13525b6ae80628dbde2f9fe057ec51de6f4204f6b3c12671db49e9",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0308.parquet": "648de50e8af19f970e07c0a3b85a67da8399524f303e756309d6472419642358",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0308.pt": "d7e8493c7c5a973d74159b0e885ac6fc6f523690ccaade2cfb87c6a754ec030b",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0462.parquet": "177f2361bf0889c3cd42ad9005a86a8bdc1e6c2235a54aab97a016f7fac3d28a",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0462.pt": "a7c8c158ae3950f590598f0658eecd44c55bfa7f5231340b90f48549c80d4389",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0616.parquet": "0c595c21e4043737b70ff8e18beaf4eae977981df9ec4c64ec37c542010fed45",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0616.pt": "e33647fc144d2b9746eec5245479cf79f8a8946f3c0dd8a7dd1c28436c84e0ab",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0770.parquet": "1fff00e6ef88a5232482c8762dd781d944a93549e414d2e7d8ac069d1458ecac",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0770.pt": "fe0ee1768e23f225a991ab1b7f46ce2e81d08c9f4aa3c8381c04c2355f9f579d",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0924.parquet": "0ea3182d7f5105d2897a4f5f28f0287e05e624a86942247021a5d613b0b573e8",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_0924.pt": "77d2d675c7ccb2c3ce0579c4876d77be805adccb759061d830768281c6002356",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1078.parquet": "f4c3bc54fde306d676d4aba100b607eece88f91a72a9149fb360fa30b8527465",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1078.pt": "0d80e2775c6c5b7c2be445c5d82887a45dffb48a08af1c4166586d25892673a4",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1078.pt.fit.parquet": "50f745f692d23cfee1b4d738410dcf1712a67a30457e503a62766fe987022b57",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1232.parquet": "72341cae9c1149698d039252d5b85d6d303c8c87c974c6032604dec7950f2489",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1232.pt": "3db8c54af1188630373f118301f734e85127ffa25f0b7655c65ea8b75a959db2",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1386.parquet": "f68251c71e504b2714ecf04317874f212a4e72a7922434fb3fd37f62c44c7f33",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1386.pt": "6c999af72aa9b3d82fe1b2d2e6b377229c02adb4f0761cc2747dcf230245f724",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1540.parquet": "7d8fd8ed53bfdd693bb091ff68683ef22924922d68cf1ac9a5f3c6b7f93e01ff",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1540.pt": "ca9bef50dbd3e316e2f7419abdaf92c631364b7ec231fb64c830d1cb2fa50213",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1694.parquet": "e178b31196097f9e04321e07979ccabd86a5fed99257267fcfa628d9e6b00f23",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1694.pt": "19a4c160d9602851bbc7c714b3d5e24026454b69a3e938af809a228d6c062c0f",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1848.parquet": "89818d46c07269510198b8f149a5546b8afdd6dfed34b8bf57d765b6e21b6553",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1848.pt": "9fdac7b6312e15c38d551235adecad55b3d3c8100cad14a437cfd8698ac3f92a",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1848.pt.fit.parquet": "0e9f821a9447b7aaabaf34dc035966e3863b03f00a7882198ba7362b202d075e",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/training.json": "1f59a35930ddf016e0513ccd333ad90ee6404ad3313a83ad6cc4bc9e8c5c9f03",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/curve.json": "1d964e18224fb70200c2094b14c49daa709a8d432b9bc6c5fd4d4ab25c253b20",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0038.parquet": "6ad1134f3a7d3decbf94b69753b99fc50794c1aa02c281f65ed1af500e0cb4fd",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0038.pt": "001db61cef0c92737ac2ceaf42069ccb813a500c2363f1cef49e9e60440ea4f3",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0038.pt.fit.parquet": "8d251bd85642631b2e81eaba571ecd9e9d3391bf0936c84664ca931e27e4b9fe",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0077.parquet": "68743f17b330d89e724ebe3d20cc517bbd06124750d96c5f9669d1391d9f8983",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0077.pt": "2ca5c98424e567ca4f1425c6228acd63dac1b36cb5c8319d6dd3fa8c4d516da8",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0115.parquet": "822c10f99b68ef81bd450bbc790e4887f45f7334060b2e08cf1fd5c0565c9280",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0115.pt": "3cc6b187034480fce0e893969f63197fe004fffbaf77ad8d118f598d92fcf2e3",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0154.parquet": "b3dc98b47c2c5c1c39fc2a3209e3dba0c220ea0a52e2dd139b28f2c84d741ad0",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0154.pt": "7aa618ab7299909647f48a65c119b5e61cc2d7aeaf4d1f43192327ac412ba7f3",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0308.parquet": "dd1ea521743111a67f2dff533c8c2d32252b955ae0befa131d8645a69bad150e",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0308.pt": "2953934e8adad81c33d528c9f90fa33cadcb52d9bc3da44a7c2b05c4f6377d71",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0462.parquet": "82088d90f37a9d033691f8ae67b7986b7310e4c2ad1c18814697523fba4d8c39",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0462.pt": "cf2da8dd8d7b4c27c20aee33df4bb7b10737b034a52e4884e0909868d6e04a45",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0616.parquet": "684f288c38f6a545283286f9bc20cfb2b73c87bc3a056275d69d5227ef0525b0",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0616.pt": "efe39bc670da2bef6f22d3619f2b5e0d2d288a70b1e9e412fe6bac7c51269087",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0770.parquet": "b396898d08cd298ee7f50cfd088a23232486509bfae657273bfb990baf28b5f8",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0770.pt": "f68f72739ee6037b70b40179e03a00c89b1ca748b35ccb06e0a32ccece1940ed",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0924.parquet": "f5d1fc458de559203a179988b9cdfc691968ffbb3becf1c39342e82b25890ba4",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_0924.pt": "0c523862b91c1e3f058f26fbe99d0e4a0bc2fe1deacf1b3e48bf50d10df75997",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1078.parquet": "cb5ce3b2202a752770fd60169eed7d8cf58105ba0502382894fcff240edb56c5",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1078.pt": "38cb6d4f105f6c8f9d84d6cd581f2e08a69df1f067789b7593dcc352175e3319",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1232.parquet": "be2dfb202f3d09d0ec15f7c0a46957dbc585aae719d0ae98962fb25e8a0a6d88",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1232.pt": "defc2fa3084347993c7a2f772490acafe2baa14fe54f11afee93f3cc997aa089",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1386.parquet": "20ab8309892bd52af9b9b44bd632437b46efa7f9f7be6f330757c8f19a3272b7",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1386.pt": "ff123df1b24761b8df47d98bb2544a36555072cc5f6066a04da4200976d9f364",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1540.parquet": "3a2bd35beeae68427d1a8db18e31f625868b2118efc45d6f896c292e7c709073",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1540.pt": "e08e2ac05bf7f56db89d3f3ffb890fee6c1f9d93a49508e208ce04acbcc13524",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1694.parquet": "f7b340d3de74a9de1c08702b1014cc641c3cbe4f116b072c4d65457f1465af4a",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1694.pt": "472f2e4eabc0deefa590c4aceca1258433370277145ac340380a5adf6476d60a",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1848.parquet": "cf8a32c9c1b48d6c35e1d0aa21127f21080630d23119762feba8146d25f20dc8",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1848.pt": "0acf8d35730389f8f22f32e38b45f269ca91aa4801c3429fe8229f4141cfada4",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1848.pt.fit.parquet": "1c622e1b09598d7728585ad64f37d8e0678a75274d243eff0c42d23f777dc813",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/training.json": "7b4dfe87de2baa9d31f03c9930edc1aee9b358d718dcc9ff549b4ba4d902ae6d",
+    "artifacts/v65_rank_heads_20260920/fold0/pair_exposures.parquet": "b44b14b180e1ad86cc0e81f0fd1f94532efdeb10c120b69a1d343fa94097bd42",
+    "artifacts/v65_rank_heads_20260920/fold0/pair_schedule.json": "b08ed868e4600afc9729abe9bed57b9395af0be6f7c61c6c596273da6fe45b0a",
+    "artifacts/v65_rank_heads_20260920/fold0/preprocessing.json": "23e1c27f7f39704b4259b3edfc27a06d66f3f49656dede2d0ba7b10912703cf2",
+    "artifacts/v65_rank_heads_20260920/fold0/references_before_H1.json": "13d132c7070479932a85f3714bcfa56c26dbf62903f2b78edf73c639b26afbfa",
+    "artifacts/v65_rank_heads_20260920/fold0/selection.json": "0823501af3f16af8da1cccd0b620ed51fc0fa4dcb37f1e755b451d29039693b7",
+    "artifacts/v65_rank_heads_20260920/fold1/coarse_reference.parquet": "3dcd16113579bfd9d3121957527756f4539118c0da87a63ae7f791cd9cce8824",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/curve.json": "f8fb3c96f9dc707e2d868a2f1d28eff7d149a3269263f76c88fde87eeee1c5ea",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0037.parquet": "7d61f5bb1311322ab860ae84b6ae199500050813c3ef5717e9c07722ff109855",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0037.pt": "d73cd6112e2e4a629c71130018f730b550a843ce957c8b542ef644602b79b887",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0075.parquet": "f7aaa20a9b249c49c9fa0c325d39f233d853906de8d86505565e0a84f6016068",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0075.pt": "126a481c545fc2f9cc1786448d57cb6bda4ca3fe1dec3a8c87dc89e61a1fbc9b",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0113.parquet": "8a46f61df983cb99ff334b9ccb28c505a9b6b321b6487bafe5793375970a8642",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0113.pt": "8d4878532df544f8d8790647911d69d070f1b521859ec9aee3b6b73705c54cff",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0151.parquet": "1121f87d97d902300eb24fa653418fb81209e6dcf323525285e7bf8f5e92b74b",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0151.pt": "259691ff815a5c8f8d25c916393655f3f0a9d23f1a68001cb66767084893088d",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0302.parquet": "6f1309c12bf67211d357c6eba75941bc4ad7c30a9a678007071b6f98e6f10c5e",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0302.pt": "44b45980a3f8531818c00eecb323ed30afc118a95aeb58660449fc415e1fde1c",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0453.parquet": "211a70d1b80734488a7b5e287932c93893fabe75e66cb826010202b0ec1bb1a7",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0453.pt": "bfde056ab6a725760e814bb2139acb36a35d8a2c923c6daf534fa3644f9b9637",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0604.parquet": "7d0767bc451e59fc006933824f4f6373ab341bcb536272c221bbdbf3cd6bb0c4",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0604.pt": "6121e2e5355fbd4a8658fbd99d2cfa41e7d1625bf7ed473451b987efa963e3f3",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0604.pt.fit.parquet": "cb4096b1440a39d1e2eb39cb49683aff71cd3d21b924acc9dbbcfc75c06e168a",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0755.parquet": "25de94e9b4c3d92a295a7f22ebb0b59e11ee67e7b2405642f57d6a21b1f293ea",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0755.pt": "2a15c6cd700aeb8fa1c5e2d888e59f8f8e6ba803cc6fa2ec5a5e27ff273831ce",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0906.parquet": "f21aef99cbc003a7ae5f160f98c04815f4af9eee9c277e0b616168fcfc3a9e02",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_0906.pt": "bd7b075e88d5252cfe0e3f0342c41c0d14aa87996bff345fb6df28bfa0773c4e",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1057.parquet": "56496e30fa1ea7b8df1dc024263d8a517bfc84ebf7cb3b6b3c3d7212ab616fd5",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1057.pt": "1581717a8c9eff9ac2bee66c7f0ba709a6cea8d8c5cfe2623fea270140fd01ea",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1208.parquet": "0bf41c5be2b7316a6920adfff0ea5040a207f9d87298fd00e2479714b0113bac",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1208.pt": "7ee40adb3661c13d640cda467b6f9d1a0cbc2ed40622b141196849ed84c09027",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1359.parquet": "36821ce8b61ae4f3772c71828963fdbdc78316032237724e5611a63db0aa3bcf",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1359.pt": "c465423d8b24415bdf078fc3470454ec7603261b7420eb08c78012e7bb6738ec",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1510.parquet": "64ce3028c63dcfc053d9456f254b41af3afb92f8a322b253b9c0412a17f93f39",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1510.pt": "0c3646dc3659c248d2369927989307b5b592b27cc87fcc583617674e7bb706cb",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1661.parquet": "fd94c3a255eed6041e650de2cc6b7c40f01bdba46ca63b489c28470acde4b493",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1661.pt": "ef13fa5d5abbe1ec4acb903dda8d9413fd9b7b1ed950d9e2a8307504c1895840",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1661.pt.fit.parquet": "6c50925ecb8018343a519685f1786b38a3790530c2fff2b44b68113eec959273",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1812.parquet": "56baec7a337c32dd065c5f44d7b24663164a24ad65a5a367e6ce5a5d5c1a9dbe",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1812.pt": "76bfde322a2d0c778345dcbfbd80f9967967dd7c9abea7319e0aca07d29db504",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1812.pt.fit.parquet": "8b305fd06e29950116c840112aec6252fde98eea07cd68cf854233bd504dc6b9",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/training.json": "7e245c1c690373322c9ab5bf2f7d87e1f0f4e57621b40977109de58cde3ea6b6",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/curve.json": "8a0f7e53309025f926107adddba2b61b5dddc0321f1c37cd8d9bd3a3909d081e",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0037.parquet": "450d87dd87443973d0c5ab0d63d739d48a3d7be922374e029c63a4106f3fb0dd",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0037.pt": "6db66d7183ee449f553070d5745a61838aec470523295773b14f7d49e69bfb6e",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0075.parquet": "832dd9697824df0b6e4e40b2a7ea434b85d11c6c542c33d682ea9e8babb75e40",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0075.pt": "6d8daa18762c89820928a6091a1609c46d1e02ab1d3ff502af3a20fa5e2af61b",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0113.parquet": "5549683eb3cad646ba1f8b6bc74021f3899cddb56334fb3cbb3d6b6fd0fff2ac",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0113.pt": "97aa8bae0f81632394e1b92a82e6dedc0344e0696f7c8229699172af43ac79fe",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0151.parquet": "7a12a11210bf1cd3ac6a375c6b83ed49a6128481b5ec2124abdf2e38d097db7b",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0151.pt": "fc1e018b9420a8bcefc16c703a068d79834f880278ab14740d6bbceb73c27f7a",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0302.parquet": "33f62294d5b615db14ceb7226cb4364d06e590326e4f8775e0f1a0039e651161",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0302.pt": "caea630140937064e13863f6ff00705ad008ce76ad78e8192cc449332dbd9ab3",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0302.pt.fit.parquet": "1e447312e2952017f01cd50d7c346c63408f2ea73f28625fb5af33efe11f3da5",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0453.parquet": "b79d3d46ce7eed01bae702d8a3b624ff5114a9fc6192c32aaa76d7d1fd203436",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0453.pt": "a4f3d922c05aa8f2a7dd53d6569b8f376727d02fe7fe71a502268f1679ac1884",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0604.parquet": "6de74a655e566ca41bfaa0f8e340386b775a1a4005497acbf8ce84d49efa9c73",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0604.pt": "d89124bae4cdb5153801ce3e503c3a257126be6d1c574cf0407e91d58c13e3e9",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0755.parquet": "8c9b01e0d115a9f708812686d787f72ec9d93cd69f63fdeb26a98488e04caab2",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0755.pt": "fdc565c0773faf4152d6097357db0c9eb13d5c34ee3491fcbcd473c009e6792f",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0906.parquet": "1dd033bc087b8cf2c3398e6237e47f769d9965f7a46ba7dc3f0a4e6360a0cc05",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_0906.pt": "14473d9d632392a6f84deeb4e6bef908ffb7b5b898c75301c93a300bc73ccf6a",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1057.parquet": "66ec2cac464f5a752732bc732dba4a2b7af8056d2e2bfdb4fee8b07110b58f70",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1057.pt": "6d1180f862473bc42ee6b7b8d6829dc19d5f0adeff78df30b4d949a8f9af8aa0",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1208.parquet": "0278b6f1cc368230f565d4ddab9020c80f9491d801c74adf83492e9310e7d2e5",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1208.pt": "04ded5251a20c9c31cbca4f5028c12019fccc7ecfbcaa292ab9434886f30472d",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1359.parquet": "5be08f421b8aa238ca4a186d501211d4d8ea120febc45b18b50abac42f049849",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1359.pt": "8c7277df7279058c2840f0199cf6f374b4525476b1d81cc235177fc116d7d038",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1510.parquet": "c7855a4957aeda5d53225055b1ad0e793dfec59c2a6d690db987fc03bd3ca726",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1510.pt": "0fecc13e325410c57664ca68438cfc17a3febdff759c76fb99207bb09b503d3c",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1661.parquet": "bb1cdd7401d12587bed800199b9f3fec4fbaa243dad6925ca8f8ca80be5aa7c6",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1661.pt": "31908ef602f746aca7de72954c25269203629dc869ed408001f224eec2bda53b",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1812.parquet": "d256eb3a075e43fca8def3023a5b404f3fefec59685dc4d31faf3ee7cf3df808",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1812.pt": "5a11c0391a95c9bb651a1ff13d0be4f3ace09fa0977830288d7060a085e62d2a",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1812.pt.fit.parquet": "3b321e1e426a421737c2dd6023fcb484b51938affaf609cd1dc2197bcc364eda",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/training.json": "df86a18780383808bbc5bb677714fcc9f66192a2c66fc11bb9806d00c6f7ebb0",
+    "artifacts/v65_rank_heads_20260920/fold1/pair_exposures.parquet": "0b6598f7d6c0a4002c7df9083014d96ef7c2d728f99029d3f9ab8c0c4826b172",
+    "artifacts/v65_rank_heads_20260920/fold1/pair_schedule.json": "d28d5451ec65e06b2485941ea8d00bfeacb70e52052fe24059d3e5fef81a6f96",
+    "artifacts/v65_rank_heads_20260920/fold1/preprocessing.json": "cf2da53e951b68530cad342b35b57bc3c7f7f3496926697a57bb3afd3d4a6208",
+    "artifacts/v65_rank_heads_20260920/fold1/references_before_H1.json": "24fe4e86e2874d62f2440682919ecc7964186db647511adbd39d46cc69e4bb19",
+    "artifacts/v65_rank_heads_20260920/fold1/selection.json": "7e9f13eace60773796f39c743d43f9cfa0bcee67b848298999f72716bafbd37d",
+    "artifacts/v65_rank_heads_20260920/fold2/coarse_reference.parquet": "822a3b0f8acbda7f83df391c7839696af0df94e3d9af5e11b8a3eba6b04bd844",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/curve.json": "03439ea234a1d43c32ab232fb0c6e5ff552f7b1882dbe535bc21f1d16321008c",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0040.parquet": "eeca70594c4355de68fed06519ee8b1815cb8dc77f795b483c2006ab7b4864be",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0040.pt": "35c523669980fc7a84c17e25356b98591b358c5531b77b2479b93a6b8984e15a",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0081.parquet": "56240759ab000b6820e0c5773097ef42c56930e4df5671359f731c87e922d11d",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0081.pt": "d0b1e32bfc26c8c4c5b2650baf5b6c3e2ccbfa34582aa3cdd75ad3eb8efefb24",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0122.parquet": "51fb7f9aa6711006fdca7bdddd221f8b3ad25f3eb6d983e8781f37a81f9f9381",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0122.pt": "7f194e583ff82195184288b7fb7ee4fbe1276e1b40bbe72530137d90bb979e1e",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0163.parquet": "d5516dc1d171798de0e3b2a238dddee4cf8a633cc9f3aa2769d798dc85a49d50",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0163.pt": "439c1215a659cc3d9f3e0fc5f33e175ce75cc3155979a9ce455e949e2136dce5",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0326.parquet": "3cfec86b50f9d312948c0bf9d734443ce3216539e110e47df2d48f6d4cf2f414",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0326.pt": "5da3c0d1b216184991bf6467d2ad2f2c0f0bd9017609cb1aaa1724f9b0cc2555",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0326.pt.fit.parquet": "9f4c6016f5ab3deec766db172b0909724fa1a8347ffd2168eb3a61f11b9fc0d2",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0489.parquet": "057aa095319f879c166d7ce6b5e1645c9a22ffb9f650fe96114b948ad8b1f9e8",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0489.pt": "668445b9e9bc9ce014a89dec29bcdcf34bf99f97c2ce008356b9c0606c05eb66",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0652.parquet": "663f96d09473f40d440f7fecc4ef6a852a7784cbfe246c12d0da4a7e237406ba",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0652.pt": "32e414ed4cf83296d6ae3c01669fc9645bb081a11db43095f2860ad4e6544482",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0815.parquet": "4ae9faef5750d987e761c4ff2d80b6fa31fcb29ae1a8271f2bf153e93f080631",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0815.pt": "cd6b14e9f250756d331ba8eb1db81a8ffb8177dd3bb4da89b71d32e7f4ce0c99",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0978.parquet": "43d7e85fa179ef9f0d7a17f2d809a24d2bf8ffd0c8bb99187b9080ca5ef194da",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0978.pt": "bfe9785dfd3d1000683e84a4a3ff63f14e2da2d63d2f6d0f351047724da77877",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_0978.pt.fit.parquet": "7142f2151a8ce8951e7fd9ba5461d6612c9a7ff8d67c89043299ea75be6326eb",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1141.parquet": "cc39dae2639b0faff4389959823583be9d9a04154d5d0b7f646fd0ed8a36c550",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1141.pt": "f3b31725a3a57834aaa0355630e603f4ab7bb0d9af4ee6b02522a8effe3b27d4",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1304.parquet": "14a2d644c89552e57b163af9a55a9a9022bb631bd42d3a8e23f6d5efc8760263",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1304.pt": "dc5a1949c49bb87e971cf29a9e3675cc05efeda17d7320f309a29a490872d4c0",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1467.parquet": "4fcf5262e9f01d4b4c047f0007492c539c912ea6b5557e204e18e6008bfbb659",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1467.pt": "7a303431afaa0a50fa426069fd7c8f86181f30b17a3cc780d59ad222e6d9f515",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1630.parquet": "0d6e9d4263afe8dffbf903460c3f336d4e9d3002e283c54970e2e7fce5779355",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1630.pt": "15aad34b1c93557d464bc24ec3f5ca8c3b6627d6b404226e8efe4899d13c6bdb",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1793.parquet": "74418a22de319aea23b69a64900fa20bc9a65fed9458d2c0b10c19d011776330",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1793.pt": "78a77fa178896e383c3a3b3a3d6f5b99bca5ccd70effc32fd2fcfb68d200f166",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1956.parquet": "ef2446b090961dd497a81bae57dfe0ffa0354c70723b02c9386fac1f8aff1d69",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1956.pt": "b47b5687f1d698be83a2acaad31ab5711b383273559cb6b28684b5e34f844000",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1956.pt.fit.parquet": "c132bad7fd60e272691035d1c6dbdf05ba4b1f0453eeee7f938924c0fb506093",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/training.json": "6bef5fa19681d378519ffba9956e71589083e82f1cbdd6d10d00397f72ff840d",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/curve.json": "617d4bbef543018c817900a5723c8a8fe3b83a7a9cfdff607aa147cb5c93d696",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0040.parquet": "fe21b51e23a663a595f146075bac6b4b5d11595571fc551d2b53125d6f9d843c",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0040.pt": "cd5ae7bf5f3c5c5a37d2bd0da7a50d27c7acc22be799ee9f45a477b34f0a5ceb",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0081.parquet": "e64b042b38f5e8f6ac35f4b4b987b855bdf0fab7dd47bdb1bf22d783a83d511b",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0081.pt": "eba5bbda534becee86e905f487d75b71b1e175acd1d9b9d13f6b0c67f6c413f6",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0122.parquet": "7da47b4813513d2a3ad3b56800e27570e56a0847539fdd989ff5db45b8d29d4e",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0122.pt": "2acdcd84bd1405f098104963c9a5091687c0107b1e1216bf60fd83f1fdfb01b1",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0163.parquet": "62470dc124845ca59d3db43b5db5e625c0778d4d62b6a0552f939af9f40ad6a8",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0163.pt": "05b57697f72543f50da65bff0f419662756e5293516a2157cf04daf326606732",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0326.parquet": "06f01a8506f820ea18e22898a5dbc6451b747ab7175a5951a9e1d1f9dabeb08f",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0326.pt": "38da86bac0cf10059da6fe05f1ca2bb62b2faaa422b071764df5e9fc9595c21a",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0489.parquet": "ef7b9f381cfa861967f83c76982ddb94627ccd37870b4c3e2ae570d58b2c23e5",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0489.pt": "59d22544554231a84a3fcd4611e17f17c3f52407ee5d31f62748c6d3d00b4c8e",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0489.pt.fit.parquet": "18bae94555648addf8393e22344459c97270a7ef51a2d2bbd9b89cc9e27de2d6",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0652.parquet": "742f72683046389a51e2499c136b30738c26aa7d4520cc0d07f11a37be807dab",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0652.pt": "b3a349eb3696780336f289e7a418627ff4a060291ba787ca526b6d2800475439",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0815.parquet": "749fd1dbf673cf885caf204bd7741c9d54593e0bcc2945bf11bd0f48dc01bd43",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0815.pt": "b01266abb90cacecf02cec7d53b00fe0409c383073ad0ec52dad10c05a9ec3ac",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0978.parquet": "fb2a792484c1b321fb38e712b525412d9419ed5d625304bdb1e1668039dc5cfe",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_0978.pt": "176dd3726b060823a1029386e19e1a28bf8bf7a583adc22f8d6a11572a62c057",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1141.parquet": "a438bfdc959b09f1a547a2552d59bcfea9b8064f5a287bd8f783061104398b53",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1141.pt": "fe88d2e2ab7b0ce35afffa20648b9fc99b04dbf7caf7bd131ee42148483a91cc",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1304.parquet": "b9d735e7084ac27f9a32085786d7f7bd7336ec111cc792a130245bf8e3e78dab",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1304.pt": "e50bc83b788310dded900c8af535a0cb7ad51b04a7e1f18a05d673ac6a10bd43",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1467.parquet": "e563107d70a94e1a1687eab9eecc5bb916d5495202932eac55637f8203b57e01",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1467.pt": "c5937cb65e5e205b808052442094ac55043f1a82228a8deb0c1958f725075f87",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1630.parquet": "83b3bb3cfba16b330041666ccfd3737881d69db7436f01803c00fc19e424aed5",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1630.pt": "e8d29768a7e041db10a02cdc2460d59d8bc1a26ba593126169d39c72fea5a864",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1793.parquet": "c09408ef6289bfd04559f363a6e20b266997bf962e0a64ce4a143058ff8f7c2e",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1793.pt": "5877ec34f53c92701bf054004ea36b92702aeb0401dafca21818e8a54e7ebe05",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1956.parquet": "e7370cebd37f8c0a9652e0ea5b880bc5e532149923aab476a71416abcc558f1e",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1956.pt": "f0d1bb84ea73efe21719d014e8a781d7b3e2caf10d43823492cf696b0d95c18b",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1956.pt.fit.parquet": "367d203b177e7556566bdf219dd2b2971b2cec3878b7125b99b2b4d86404613d",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/training.json": "e83f949225066d6e661384862e318d711c59f9b264e9446f96c6fe0b98dc2611",
+    "artifacts/v65_rank_heads_20260920/fold2/pair_exposures.parquet": "b8b4647b92da7f35e635c897e072ad78e97e5b2d898efc4304c26bb6592e9b3a",
+    "artifacts/v65_rank_heads_20260920/fold2/pair_schedule.json": "d8b1d9d22e519ded0ac18d86a0d5d8ab1d668e12102df4c1db2c70be4a66ac62",
+    "artifacts/v65_rank_heads_20260920/fold2/preprocessing.json": "b09137ad445c2914ac77ca118111ad82ab0a687ca1962d524b4c4f542d20dbb6",
+    "artifacts/v65_rank_heads_20260920/fold2/references_before_H1.json": "c5fca444c2d58e0c6d8139011e2b39723573daa9aa04d0db245cea3bdde72051",
+    "artifacts/v65_rank_heads_20260920/fold2/selection.json": "e5a5559b8ad2d5d3b9634131198499a826c0f7c3959a38aec24b6bc978b7717f",
+    "artifacts/v65_rank_heads_20260920/fold_manifest.parquet": "b2e6a891775f473a36d291e737cb5c57669912d255b4b475aef0822c014e900e",
+    "artifacts/v65_rank_heads_20260920/H0_guarded_oof.parquet": "2cc38530a5dc96d0c2dfa3a49b9d56950aa4da899a24581c113db086d67760a4",
+    "artifacts/v65_rank_heads_20260920/H0_last_oof.parquet": "c7ee4635df4436a987a38a0bf6a6bea5c7e6c02b4974336f32c8739b569e27ba",
+    "artifacts/v65_rank_heads_20260920/H0_peak_oof.parquet": "66ff90e020aae3efe8e70d4d68f0e45ded199347382c4584dfeb2e3030b276e2",
+    "artifacts/v65_rank_heads_20260920/H1_last_oof.parquet": "86bb2c11738c33f2b7a2a039717b80b92fd5bfe6a9a9f4998a096cafd315f7d6",
+    "artifacts/v65_rank_heads_20260920/H1_selected_oof.parquet": "8ec95c7c10402d5fff38436b1ac179195c4e761ba5f2133f7d06acf3e3e6ffc3",
+    "artifacts/v65_rank_heads_20260920/preregistered.json": "e539da9572d6ffe18c76891b1b292ce48eb9091210142a048b1b5ff4253d24ea",
+    "artifacts/v65_rank_heads_20260920/source_effects.parquet": "bdf023ebbd4c4cf11eed06158e5fb5406b3346ed750df6fa936ee8ba1040ea8a",
+    "artifacts/v65_rank_heads_20260920/tests.log": "a5b25ec0ba451cb33e2de431b80b5311669f0fc2350a8402be355f0772f1d047",
+    "artifacts/v65_rank_heads_20260920/text_cache_receipt.json": "3a3045fbc0c4900feba31561f6ad11166fa6e606bbdaa47469128fd68fa67e37",
+    "artifacts/v65_rank_heads_20260920/training.log": "9e74df7f28222196b1848ee8ab873ae2450d05fdcc5e593232ef9d8ffa889824",
+    "artifacts/v65_rank_heads_20260920/training_complete.json": "e6bc4f177478fd5cfeff3c88aa6c2f7a96ce9e3faebf1e4def78a86bba6e4889",
+    "artifacts/v65_rank_heads_20260920/unique_text.parquet": "262558f2f18088cbbb52a3799090d4bd6ba16980cdfbfcf84b0326d34af15e18",
+    "artifacts/v65_rank_heads_20260920/upstream_text_features.npy": "d10e1e1a6a0b5e24d22de6bac7f2f884eb0e3dba1b7e1d85602501d39a10195f",
+    "docs/V65_EXECUTION_REVIEW.md": "e59d91ca9cae7bf633336dc0c06c4bfe15b205460d29075ae123835aa8e27be1",
+    "training/analyze_v65_rank_heads.py": "de4c9be730465ff3d169fc072c2eed8526aff5aaee27b4fcc9e50b8486f86612",
+    "training/finalize_v65_review.py": "831d0ac0127b16f680f4ae0eae315e7778779dd72a77d5b558fa0413782e9131",
+    "training/test_v65_analysis.py": "47b266817df419b480b6da9b474300716de373635e22f77618fea93b610e0eef",
+    "training/test_v65_rank_heads.py": "c999f995fec5521df54dd3f215653fa223c7b2fa152f7c571dc5f26435e521f8",
+    "training/train_v65_rank_heads.py": "ce66ae00916ce67fbcc6022c89f5170ee249e21fa9fef2af4fcf72326ac1a7ac"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "scope": "Post-hoc diagnosis of previously inspected official development; not an input rule, relabeling or new selection criterion.",
+  "icmp_3_13": {
+    "observed_key": [
+      "deny",
+      "blocked",
+      "icmp",
+      "outside",
+      "dmz",
+      "__MISSING__",
+      "__MISSING__",
+      "__MISSING__",
+      "__MISSING__",
+      "3",
+      "13",
+      "destination_unreachable",
+      "administratively_prohibited"
+    ],
+    "rows": 865,
+    "body_groups": 2,
+    "class_rows_B_M_S": [
+      0,
+      180,
+      685
+    ],
+    "protocol_support": [
+      {
+        "protocol": "pressure",
+        "fit_same_key_labels_B_M_S": [
+          0,
+          0,
+          0
+        ],
+        "evaluation_same_key_labels_B_M_S": [
+          0,
+          180,
+          685
+        ],
+        "fit_code13_rows": 0,
+        "fit_same_key_bodies": 0
+      },
+      {
+        "protocol": "fold_0",
+        "fit_same_key_labels_B_M_S": [
+          0,
+          0,
+          685
+        ],
+        "evaluation_same_key_labels_B_M_S": [
+          0,
+          180,
+          0
+        ],
+        "fit_code13_rows": 685,
+        "fit_same_key_bodies": 1
+      },
+      {
+        "protocol": "fold_1",
+        "fit_same_key_labels_B_M_S": [
+          0,
+          180,
+          0
+        ],
+        "evaluation_same_key_labels_B_M_S": [
+          0,
+          0,
+          685
+        ],
+        "fit_code13_rows": 180,
+        "fit_same_key_bodies": 1
+      },
+      {
+        "protocol": "fold_2",
+        "fit_same_key_labels_B_M_S": [
+          0,
+          180,
+          685
+        ],
+        "evaluation_same_key_labels_B_M_S": [
+          0,
+          0,
+          0
+        ],
+        "fit_code13_rows": 865,
+        "fit_same_key_bodies": 2
+      }
+    ],
+    "v51_primary": {
+      "rows": 865,
+      "errors": 865,
+      "confusion_B_M_S": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ],
+        [
+          0,
+          685,
+          0
+        ]
+      ],
+      "recall_B_M_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "class_errors_B_M_S": [
+        0,
+        180,
+        685
+      ],
+      "macro_f1_M_S": 0.0,
+      "ASA_to_normal": 0
+    },
+    "pressure_suspicious_share": 0.9345156889495225,
+    "same_observation_nonidentifiability": "One single deterministic classifier for these same observed inputs cannot classify both labels correctly. Per-fold training here exposes the opposite-label body; the pressure fit exposes neither body. This does not prove which official label is objectively right."
+  },
+  "mixed_keys": 215,
+  "mixed_keys_at_most_2_bodies": 16,
+  "source_bindings": {
+    "artifacts\\v54_method_change_20260914\\rows.parquet": "729a26c11b060cd4a9ec5e56d607b6831adb42e4a5f310302e70989fcefa4883",
+    "artifacts\\v54_method_change_20260914\\observations.parquet": "dfe057100cc6cbec16087ed28407796b0cfbe78d54a558d5d4489d5f1ffb86f0"
+  }
+}

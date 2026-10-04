@@ -1,0 +1,152 @@
+{
+  "scope": "Only allowed development benign rows. Protocol word AND action/flow word is candidate discovery, not proof of genuine network telemetry or parser failure. No training or evaluation split changes.",
+  "allowed_normal_rows": 1258698,
+  "candidate_rows": 16,
+  "by_route": {
+    "asa_acl": {
+      "rows": 16,
+      "body_groups": 8
+    }
+  },
+  "examples": [
+    {
+      "row_position": 405367,
+      "route": "asa_acl",
+      "body_group": "157078",
+      "raw_length": 139,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:08:51: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.56.162/4CRED-CRED-297951 to outside:100.64.56.163/22\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 22,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    },
+    {
+      "row_position": 1561126,
+      "route": "asa_acl",
+      "body_group": "593774",
+      "raw_length": 137,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:36:07: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.60.37/5CRED-CRED-29716 to outside:100.64.56.163/23\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 23,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    },
+    {
+      "row_position": 1598853,
+      "route": "asa_acl",
+      "body_group": "606625",
+      "raw_length": 126,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:37:34: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.60.88/37546 to outside:100.64.56.163/22\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 22,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 37546,
+        "src_port_range": "user",
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    },
+    {
+      "row_position": 1741778,
+      "route": "asa_acl",
+      "body_group": "641194",
+      "raw_length": 139,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:41:20: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.60.168/5CRED-2CRED-24947 to outside:100.64.56.163/22\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 22,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    },
+    {
+      "row_position": 1744696,
+      "route": "asa_acl",
+      "body_group": "642427",
+      "raw_length": 139,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:41:24: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.60.168/5CRED-2CRED-24947 to outside:100.64.56.163/80\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 80,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    },
+    {
+      "row_position": 1752883,
+      "route": "asa_acl",
+      "body_group": "645478",
+      "raw_length": 140,
+      "protocol_contexts": [
+        {
+          "start": 47,
+          "end": 50,
+          "context": "<164>Jul 26 USER-9546 06:41:31: USER-0010-0331 TCP ORG-1738 denied by ACL from 100.64.60.168/5CRED-2CRED-24947 to outside:100.64.56.163/443\n"
+        }
+      ],
+      "retained_facts": {
+        "action": "deny",
+        "dst_port_fixed": 443,
+        "dst_port_range": "system",
+        "dst_role": "outside",
+        "outcome": "blocked",
+        "src_port_fixed": 65536,
+        "transport_protocol": "tcp"
+      },
+      "retained_text_preview": ""
+    }
+  ]
+}

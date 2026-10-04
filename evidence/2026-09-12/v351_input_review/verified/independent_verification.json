@@ -1,0 +1,10 @@
+{
+  "all_checks_passed": true,
+  "rows": 2056871,
+  "patched_rows": 47044,
+  "labels_and_positions_unchanged": true,
+  "old_text_hashes_match": true,
+  "new_nonempty_text_partition_matches_independent_dictionary_encoding": true,
+  "union_partition_matches_independent_graph_components": true,
+  "scope": "Artifact equivalence and repeat constraints only, not semantic completeness or model quality"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "v111_no_fit_review_and_plan_completed",
+  "actual_classifier_fits_this_request": 0,
+  "actual_calibration_fits": 0,
+  "quality_acceptance": false,
+  "model_promoted": false,
+  "last_training_delivery": "v110-delivery",
+  "summary": "v11.1完成零拟合根因复核。最新训练仍为v11.0的6次拟合、0次校准，质量未通过、无模型晋升。P2三折训练CE下降35.5%至53.8%，来源外CE均上升；接口名称干预令目标组988条预测翻转，也使24条S转为M，不能当修复成绩。下一轮先做接口名称隔离的资格审查，再用原TabM目标开展两臂同划分对照，不叠加配权或继续P1/P2。",
+  "validation_scope": "Identity, full-row replay, algebraic score decomposition and support/intervention recount. No new model quality or blind-transfer claim.",
+  "artifact_sha256": {
+    "docs/V111_ROOT_MECHANISM_REVIEW_AND_NEXT_PLAN.md": "08b707ae66b311c9d8cfe9af3bf623b88e0eff84376a4633b6b51b7ae43142de",
+    "artifacts/v111_root_review_20260929/interface_intervention_predictions.parquet": "b83d02fb5f9cef02a2bf3086436932c0a047de9092d357ae43c49b2bc6ce42aa",
+    "artifacts/v111_root_review_20260929/interface_sensitivity.json": "9b2041ee7eae02fb83fde83a3cec994aa137a97acc69fde54fb9be877eea6a49",
+    "artifacts/v111_root_review_20260929/N1_interface_control.json": "5b459ce20055e7c243f7d98d6521355f86f258239f62e6fcbfa9edf3d7538402",
+    "artifacts/v111_root_review_20260929/objective_and_margin_diagnosis.json": "3279d00dba7191ce7b12a7f65e3e5e3a958879c58f74c0e1ab27a5132fc7530f",
+    "artifacts/v111_root_review_20260929/P2_margin_decomposition.parquet": "d3d3ced5111ac776d526f8a02005664be040b34736950167148714cbb54fc9a8",
+    "artifacts/v111_root_review_20260929/root2868_factual_score_terms.csv": "cec55d975b79f4aa6f4095ca853e37041a1441271459f3adcdf33ae324b73713",
+    "artifacts/v111_root_review_20260929/support_eligibility.json": "9d133e721a864509c240ef7129cd01aec636758c8cf52dbf089ed7e8e43ca074",
+    "artifacts/v111_root_review_20260929/train_side_support.parquet": "0d510d71bbb85a3dc8c2b019a5c28a44b28e02aa1a7282572b8f6f77a91300f5",
+    "training/v111_objective_diagnosis.py": "c30b7334d1fe4b5db66548b5dc3e37deb7c3d30ef949fde27b91a18d91329968",
+    "training/v111_support_eligibility.py": "0f5b892a2de592a953b83db44d15f7e0970425fd4d03e0ff9504aec44256899b",
+    "training/v111_interface_sensitivity.py": "17bfe131d5469a9c0044afbe95488dde800b7b298b06b64b2f5b25c79b51b29a",
+    "training/v111_n1_interface_control.py": "275b83a30a84b82e3714f130ee803d00e3de2312a3a2ad6369f008fa40b39987",
+    "artifacts/v111_root_review_20260929/verification.json": "57c030aebca8784f7b578c376df8da8c1ecf3adce693a9722a1cf0a658480792"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "actual_complete_function_cases_not_new_training_or_model_authority",
+  "latest_actual_training": "V155",
+  "successful_classifier_forward_calls": 36,
+  "failed_classifier_forward_calls": 12,
+  "cumulative_classifier_forward_calls": 48,
+  "new_classifier_fits": 0,
+  "new_gradients": 0,
+  "new_updates": 0,
+  "actual_outer_M_S_errors": {
+    "1": 1904,
+    "2": 1629
+  },
+  "mean_logit_diagnostic_M_S_errors": {
+    "1": 2008,
+    "2": 1639
+  },
+  "hard578_outer_errors": 576,
+  "hard578_unanimous_M_rows": 188,
+  "hard578_facts_positive_S_margin_rows": 486,
+  "strict51_real_errors": 0,
+  "cases": [
+    "Actual mean-member probabilities are not mean logits; replacing rule would worsen both classes.",
+    "Legal TRAIN mastery coexists with outer body margin reversal; continued TRAIN confidence is not transfer.",
+    "Large body or direct-field components are additive algebra, not semantic cause or permission to remove fields.",
+    "No new semantic or cross-source class teacher was created; eligibility, efficacy and promotion remain distinct."
+  ],
+  "source_sha256": {
+    "artifacts/v157_complete_function_logit_audit_v2_20261001/audit.json": "2ebc3dbae4927dafb11b52076579e2affe4f008808d344bf8c7913630cea34ea",
+    "artifacts/v157_complete_function_logit_audit_v2_20261001/v2_verification.json": "c2cf4121fbaadb66a9df2eff2fef4b04799771f862118eec352ebccd04232622",
+    "artifacts/v157_complete_function_logit_audit_v2_20261001/v2_fixed_cohort_function_summary.parquet": "081122c87ec7e41221a3f38c8377ebc7ca8a2f8745fbba257bc493cd42d75519",
+    "artifacts/v157_complete_function_logit_audit_v2_20261001/v2_all_field_fixed_cohort_summary.parquet": "0bdaabae5265a8bd0050dc366e90e86f351b6397b0434581a2eaa09e3ac98d97",
+    "artifacts/v157_complete_function_logit_audit_v2_20261001/new_M16_fixed_all_roles.parquet": "9b22ddec21c62889ff6bb8a9219adf81a4b45dc51fd0f6236af9eac9e71ed72d",
+    "artifacts/v157_complete_function_logit_audit_20261001/failure.json": "fc852585763b5a9a4e7114afda25efba29a08c20721fa1e9c26c29ab0f9dcd45",
+    "artifacts/v156_conditional_representation_neighborhood_20261001/all_original_role_neighbors.parquet": "74d1c68b6ffb5cbd8b901923b56064bd27cd06469047a3147aee1e508c7f8e63"
+  }
+}

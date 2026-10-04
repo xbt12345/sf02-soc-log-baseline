@@ -1,0 +1,259 @@
+{
+  "new_fits": 0,
+  "saved_averaged_predictions_all_rows_match": true,
+  "rows_per_model": 2056871,
+  "scope": "Last iterate is a diagnostic of averaging sensitivity, not a certified optimizer minimum or a selected checkpoint. No private target predictions or scores recomputed.",
+  "rare_cells": [
+    {
+      "arm": "D",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 8,
+      "averaged_errors": 8,
+      "last_iterate_errors": 8
+    },
+    {
+      "arm": "E",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 8,
+      "averaged_errors": 8,
+      "last_iterate_errors": 8
+    },
+    {
+      "arm": "F",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 8,
+      "averaged_errors": 0,
+      "last_iterate_errors": 0
+    },
+    {
+      "arm": "D",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 4,
+      "averaged_errors": 4,
+      "last_iterate_errors": 4
+    },
+    {
+      "arm": "E",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 4,
+      "averaged_errors": 4,
+      "last_iterate_errors": 4
+    },
+    {
+      "arm": "F",
+      "route": "authentication",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 4,
+      "averaged_errors": 0,
+      "last_iterate_errors": 0
+    },
+    {
+      "arm": "D",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 25,
+      "averaged_errors": 25,
+      "last_iterate_errors": 25
+    },
+    {
+      "arm": "E",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 25,
+      "averaged_errors": 25,
+      "last_iterate_errors": 25
+    },
+    {
+      "arm": "F",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 25,
+      "averaged_errors": 0,
+      "last_iterate_errors": 0
+    },
+    {
+      "arm": "D",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 10,
+      "averaged_errors": 10,
+      "last_iterate_errors": 10
+    },
+    {
+      "arm": "E",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 10,
+      "averaged_errors": 10,
+      "last_iterate_errors": 10
+    },
+    {
+      "arm": "F",
+      "route": "bounded_payload",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 10,
+      "averaged_errors": 5,
+      "last_iterate_errors": 0
+    },
+    {
+      "arm": "D",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 22,
+      "averaged_errors": 22,
+      "last_iterate_errors": 22
+    },
+    {
+      "arm": "E",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 22,
+      "averaged_errors": 22,
+      "last_iterate_errors": 22
+    },
+    {
+      "arm": "F",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 22,
+      "averaged_errors": 22,
+      "last_iterate_errors": 22
+    },
+    {
+      "arm": "D",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "validation",
+      "rows": 8,
+      "averaged_errors": 8,
+      "last_iterate_errors": 8
+    },
+    {
+      "arm": "E",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "validation",
+      "rows": 8,
+      "averaged_errors": 8,
+      "last_iterate_errors": 8
+    },
+    {
+      "arm": "F",
+      "route": "unsupported",
+      "label": "malicious",
+      "role": "validation",
+      "rows": 8,
+      "averaged_errors": 8,
+      "last_iterate_errors": 8
+    },
+    {
+      "arm": "D",
+      "route": "windows_message",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 2,
+      "averaged_errors": 2,
+      "last_iterate_errors": 2
+    },
+    {
+      "arm": "E",
+      "route": "windows_message",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 2,
+      "averaged_errors": 2,
+      "last_iterate_errors": 2
+    },
+    {
+      "arm": "F",
+      "route": "windows_message",
+      "label": "malicious",
+      "role": "fit",
+      "rows": 2,
+      "averaged_errors": 2,
+      "last_iterate_errors": 2
+    },
+    {
+      "arm": "D",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 38,
+      "averaged_errors": 38,
+      "last_iterate_errors": 20
+    },
+    {
+      "arm": "E",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 38,
+      "averaged_errors": 38,
+      "last_iterate_errors": 20
+    },
+    {
+      "arm": "F",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "fit",
+      "rows": 38,
+      "averaged_errors": 3,
+      "last_iterate_errors": 0
+    },
+    {
+      "arm": "D",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 435,
+      "averaged_errors": 435,
+      "last_iterate_errors": 92
+    },
+    {
+      "arm": "E",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 435,
+      "averaged_errors": 435,
+      "last_iterate_errors": 118
+    },
+    {
+      "arm": "F",
+      "route": "windows_message",
+      "label": "suspicious",
+      "role": "validation",
+      "rows": 435,
+      "averaged_errors": 10,
+      "last_iterate_errors": 0
+    }
+  ],
+  "source_sha256": "e268d388f199650b771a4b8986577bf2b602a0b16401239a6c5a01b61bedaf0a",
+  "model_sha256": {
+    "D": "bcf9fbb1a1a0b3e218b8055f4d251f88630c90745cf0c70b2c0ce79da0e3f5e3",
+    "E": "ad4c267c60924bab13f12254d5217ba16b557a1a14c3f41ba5cc3567a58aea7a",
+    "F": "899951ca4597e14592870f175964f98869acccdcb1f296b13100f105725dd524"
+  },
+  "table_sha256": "96a7828fec1a7a60e7894e4677579bc679489fc1b35c6b7779681c949bf8396b",
+  "quality_acceptance": false
+}

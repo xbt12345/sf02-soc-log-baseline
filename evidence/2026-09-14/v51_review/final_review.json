@@ -1,0 +1,20 @@
+{
+  "new_classifier_fits": 4,
+  "pressure_before_after_errors": [
+    894,
+    884
+  ],
+  "primary_before_after_errors": [
+    6022,
+    6022
+  ],
+  "primary_fixes": 0,
+  "primary_regressions": 0,
+  "development_conditions_passed": true,
+  "external_validation": false,
+  "production_promoted": false,
+  "probability_rows_replayed": 1557725,
+  "all_saved_objectives_reconstructed": true,
+  "learned_base_states_preserved": true,
+  "scope": "Accepted local development improvement only; existing ASA and evidence-support limitations remain."
+}

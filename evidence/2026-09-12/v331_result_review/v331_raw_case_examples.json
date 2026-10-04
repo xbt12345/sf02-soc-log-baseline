@@ -1,0 +1,272 @@
+[
+  {
+    "row_position": 11852,
+    "message_sanitized": "<164>Jul 23 2022 09:02:26: USER-0010-0324 Deny tcp src outside:100.64.126.143/CRED-250250 dst dmz-1:10.208.162.175/44719 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1658713095.0,
+    "src_ip": "100.64.42.147",
+    "dst_ip": "10.221.82.8",
+    "src_host": "10.232.175.9",
+    "dst_host": null,
+    "username": null
+  },
+  {
+    "row_position": 11853,
+    "message_sanitized": "<164>Jul 23 2022 09:01:47: USER-0010-0324 Deny tcp src outside:100.64.117.64/50397 dst dmz-1:10.208.162.175/CRED-25170 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1658713095.0,
+    "src_ip": "100.64.32.232",
+    "dst_ip": "10.221.82.8",
+    "src_host": "10.232.175.9",
+    "dst_host": null,
+    "username": null
+  },
+  {
+    "row_position": 11866,
+    "message_sanitized": "<164>Jul 23 2022 09:03:31: USER-0010-0324 Deny tcp src outside:100.64.126.146/CRED-238957 dst dmz-1:10.86.185.58/44818 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1658713545.0,
+    "src_ip": "10.113.105.99",
+    "dst_ip": "100.64.42.148",
+    "src_host": "10.232.175.9",
+    "dst_host": null,
+    "username": null
+  },
+  {
+    "row_position": 11867,
+    "message_sanitized": "<164>Jul 23 2022 09:04:19: USER-0010-0324 Deny tcp src outside:100.64.77.19/CRED-27168 dst dmz-1:10.86.185.58/CRED-30837 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1658713545.0,
+    "src_ip": "100.64.10.42",
+    "dst_ip": "10.113.105.99",
+    "src_host": "10.232.175.9",
+    "dst_host": null,
+    "username": null
+  },
+  {
+    "row_position": 111738,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:09:53.506Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"19c04280-a087-CRED-30149-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405CRED-CRED-29393\",\"name\":\"USER-0010-0196\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"File USER-0086\",\"code\":\"4658\",\"created\":\"USER-9546-07-26T11:09:56.963Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"The handle to an ORG-0198 was closed.\\n\\nSubject :\\n\\tSecurity ID:\\t\\tS-1-5-20\\n\\tAccount ORG-4653 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E4\\n\\nORG-0198:\\n\\tORG-0198 USER-3777 ID:\\t\\t0x640\\n\\USER-8912 ORG-0556 ID:\\t\\t0xb8c\\n\\tProcess Name:\\t\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"HandleId\":\"0x640\",\"ORG-0198Server\":\"Security\",\"ProcessId\":\"0xb8c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e4\",\"SubjectUserName\":\"USER-0069\",\"SubjectCRED-0339id\":\"S-1-5-20\"},\"USER-0010-56507_id\":\"4658\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":CRED-CRED-28381}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":105759602,\"task\":\"File USER-0086\"}}",
+    "timestamp": 1721992220.5643404,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "USER-0010-0007.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 111739,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:09:53.506Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"19c04280-a087-CRED-30149-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405CRED-CRED-29393\",\"name\":\"USER-0010-0196\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"File USER-0086\",\"code\":\"4658\",\"created\":\"USER-9546-07-26T11:09:56.963Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"The handle to an ORG-0198 was closed.\\n\\nSubject :\\n\\tSecurity ID:\\t\\tS-1-5-20\\n\\tAccount ORG-4653 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E4\\n\\nORG-0198:\\n\\tORG-0198 USER-3777 ID:\\t\\t0x2850\\n\\USER-8912 ORG-0556 ID:\\t\\t0xb8c\\n\\tProcess Name:\\t\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"HandleId\":\"0x2850\",\"ORG-0198Server\":\"Security\",\"ProcessId\":\"0xb8c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e4\",\"SubjectUserName\":\"USER-0069\",\"SubjectCRED-0339id\":\"S-1-5-20\"},\"USER-0010-56507_id\":\"4658\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":CRED-CRED-28381}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":10575CRED-25688,\"task\":\"File USER-0086\"}}",
+    "timestamp": 1721992220.5643787,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "USER-0010-0007.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 111740,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:09:53.506Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"19c04280-a087-CRED-30149-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405CRED-CRED-29393\",\"name\":\"USER-0010-0196\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"Handle Manipulation\",\"code\":\"4690\",\"created\":\"USER-9546-07-26T11:09:56.963Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An atUSER-0010-1591t was made to duplicate a handle to an ORG-0198.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-20\\n\\tAccount ORG-4653 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E4\\n\\USER-5931 Handle ORG-2730 Handle ID:\\t0x640\\n\\USER-7625 Process ID:\\t0xb8c\\n\\nNew Handle ORG-0706rmation:\\n\\tUSER-0010-4999 Handle ID:\\t0x2850\\n\\tUSER-0010-4999 Process ID:\\t0x4\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"USER-0010-55454HandleId\":\"0x640\",\"USER-0010-55454ProcessId\":\"0xb8c\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e4\",\"SubjectUserName\":\"USER-0069\",\"SubjectCRED-0339id\":\"S-1-5-20\",\"USER-0010-4999HandleId\":\"0x2850\",\"USER-0010-4999ProcessId\":\"0x4\"},\"USER-0010-56507_id\":\"4690\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":CRED-CRED-28381}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":105759603,\"task\":\"Handle Manipulation\"}}",
+    "timestamp": 1721992220.564404,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "USER-0010-0007.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 111742,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:09:53.506Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"19c04280-a087-CRED-30149-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405CRED-CRED-29393\",\"name\":\"USER-0010-0196\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"File USER-0086\",\"code\":\"CRED-CRED-34060\",\"created\":\"USER-9546-07-26T11:09:56.963Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"A handle to an ORG-0198 was USER-9484ed.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-20\\n\\tAccount ORG-4653 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E4\\n\\nORG-0198:\\n\\tORG-0198 Server:\\t\\tSecurity\\n\\tORG-0198 Type:\\t\\tFile\\n\\tORG-0198 Name:\\t\\tC:\\\\ORG-0407\\\\USER-0010-1124\\\\USER-0010-1125\\\\$$_USER-1742_migwiz_replacementmanifests_USER-8162-ORG-0407-ORG-4021USER-5935-USER-0010-54533erver-licensing_10d3d9d8CRED-CRED-332580d9c.cdf-ms\\n\\tHandle ID:\\t\\t0x640\\n\\tORG-11855 Attributes:\\t-\\n\\USER-8912 ORG-0556 ID:\\t\\t0xb8c\\n\\tProcess Name:\\t\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3405\\USER-1430\\nORG-1738 USER-9484 ORG-0706rmation:\\n\\tTransUSER-0010-0121 ID:\\t\\t{00000000-0000-0000-0000-100000000009}\\n\\tORG-1491:\\t\\tREAD_ORG-0661\\n\\t\\t\\t\\tSYNCHRONIZE\\n\\t\\t\\t\\tORG-1492 (or ORG-1493)\\n\\t\\t\\t\\tReadEA\\n\\t\\t\\t\\tReadAttributes\\n\\t\\t\\t\\t\\n\\tORG-1738 Reasons:\\t\\tREAD_ORG-0661:\\tGranted by\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\tSYNCHRONIZE:\\tGranted by\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\tORG-1492 (or ORG-1493):\\tGranted by\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\tReadEA:\\tGranted by\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\tReadAttributes:\\tGranted by\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t\\n\\tORG-1738 Mask:\\t\\t0x120089\\n\\tPrivileges Used for ORG-1738 USER-6455:\\t-\\n\\tRestricted SID Count:\\t0\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0007.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"ORG-1738List\":\"%%1538\\n\\t\\t\\t\\t%%1541\\n\\t\\t\\t\\t%%4416\\n\\t\\t\\t\\t%%4419\\n\\t\\t\\t\\t%%4423\\n\\t\\t\\t\\t\",\"ORG-1738Mask\":\"0x120089\",\"ORG-1738Reason\":\"%%1538:\\t%%1801\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t%%1541:\\t%%1801\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t%%4416:\\t%%1801\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t%%4419:\\t%%1801\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t%%4423:\\t%%1801\\tD:(A;;0x1200a9;;;BU)\\n\\t\\t\\t\\t\",\"HandleId\":\"0x640\",\"ORG-0198Name\":\"C:\\\\ORG-0407\\\\USER-0010-1124\\\\USER-0010-1125\\\\$$_USER-1742_migwiz_replacementmanifests_USER-8162-ORG-0407-ORG-4021USER-5935-USER-0010-54533erver-licensing_10d3d9d8CRED-CRED-332580d9c.cdf-ms\",\"ORG-0198Server\":\"Security\",\"ORG-0198Type\":\"File\",\"PrivilegeList\":\"-\",\"ProcessId\":\"0xb8c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1121\",\"ORG-11855Attributes\":\"-\",\"RestrictedSidCount\":\"0\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e4\",\"SubjectUserName\":\"USER-0069\",\"SubjectCRED-0339id\":\"S-1-5-20\",\"TransUSER-0010-0121Id\":\"{00000000-0000-0000-0000-100000000009}\"},\"USER-0010-56507_id\":\"CRED-CRED-34060\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":4,\"thread\":{\"id\":CRED-CRED-28381}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":10575CRED-CRED-30050,\"task\":\"File USER-0086\",\"version\":1}}",
+    "timestamp": 1721992220.5644524,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "USER-0010-0007.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 115905,
+    "message_sanitized": "<164>Jul 26 USER-9546 05:59:48: USER-0010-0324 Deny tcp src outside:100.64.55.34/43411 dst dmz-1:10.36.34.45/445 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1721992232.324944,
+    "src_ip": "100.64.1.18",
+    "dst_ip": "10.207.79.45",
+    "src_host": "10.232.175.9",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 121649,
+    "message_sanitized": "<164>Jul 26 USER-9546 06:00:01: USER-0010-0324 Deny tcp src outside:100.64.55.14/5CRED-29769 dst dmz-1:10.68.135.59/9686 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1721992245.4884968,
+    "src_ip": "100.64.1.14",
+    "dst_ip": "10.74.211.215",
+    "src_host": "10.232.175.9",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 121865,
+    "message_sanitized": "<164>Jul 26 USER-9546 05:59:59: USER-0010-0324 Deny tcp src outside:100.64.55.29/46993 dst dmz-1:10.84.114.178/110 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1721992245.7460933,
+    "src_ip": "100.64.1.17",
+    "dst_ip": "10.184.211.180",
+    "src_host": "10.232.175.9",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 122451,
+    "message_sanitized": "<164>Jul 26 USER-9546 05:59:59: USER-0010-0324 Deny tcp src outside:100.64.55.24/1183 dst dmz-1:10.84.114.178/1CRED-30133 by ORG-1738-group \"outside_ORG-1738_in\" [0x0, 0x0]\n",
+    "timestamp": 1721992246.7470808,
+    "src_ip": "10.184.211.180",
+    "dst_ip": "100.64.1.16",
+    "src_host": "10.232.175.9",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 134220,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:10:08.448Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"CRED-24CRED-25582381-3d10-4395-bc1c-5cdb52ecb35e\",\"id\":\"12e13a9a-252a-493f-9c35-fa4d61abd0bc\",\"name\":\"USER-0010-0206\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4625\",\"created\":\"USER-9546-07-26T11:10:08.678Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"failure\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account failed to log on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-18\\n\\tAccount ORG-4643 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E7\\n\\nORG-0106 Type:\\t\\t\\t3\\n\\nAccount For Which ORG-0106 Failed:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount Name:\\t\\t\\n\\tAccount USER-24351:\\t\\t\\n\\USER-7624 ORG-0706rmation:\\n\\tFailure Reason:\\t\\tUnknown user name or bad password.\\n\\tStatus:\\t\\t\\t0xC000006D\\n\\tSub Status:\\t\\t0xC0000064\\n\\USER-8912 ORG-0706rmation:\\n\\tCaller Process ID:\\t0x40c\\n\\tCaller Process Name:\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3411\\USER-1430\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\tORG-0891-ORG-0023\\USER-1430\\USER-7625 ORG-10379 Address:\\t192.168.147.151\\n\\USER-7625 Port:\\t\\t58382\\n\\nDetailed ORG-0823 Process:\\t\\tSchannel\\n\\tAuthentication USER-0010-4214:\\tKerberos\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 USER-9484 fails. It is generated on the USER-3828 where ORG-1738 was atUSER-0010-1591ted.\\n\\nThe Subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 Type field indicates the kind of ORG-0106 that was USER-9484ed. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe Process ORG-0706rmation fields indicate which account and process on the USER-0086 USER-9484ed ORG-2395 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"Kerberos\",\"FailureReason\":\"%%2313\",\"IpAddress\":\"192.168.141.126\",\"IpPort\":\"58382\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ProcessName\":\"Schannel\",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x40c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1155\",\"Status\":\"0xc000006d\",\"SubStatus\":\"0xc0000064\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e7\",\"SubjectUserName\":\"USER-0109\",\"SubjectCRED-0339id\":\"S-1-5-18\",\"USER-0010-4999CRED-0339id\":\"S-1-0-0\",\"TransmittedUSER-5935\":\"-\",\"WorkstationName\":\"USER-0010-0206\"},\"USER-0010-56507_id\":\"4625\",\"keywords\":[\"Audit Failure\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":1036,\"thread\":{\"id\":8604}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":6067660825,\"task\":\"ORG-0106\"}}",
+    "timestamp": 1721992263.8996067,
+    "src_ip": "192.168.147.151",
+    "dst_ip": "",
+    "src_host": "USER-0010-0012.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 134227,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:10:08.519Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"CRED-24CRED-25582381-3d10-4395-bc1c-5cdb52ecb35e\",\"id\":\"12e13a9a-252a-493f-9c35-fa4d61abd0bc\",\"name\":\"USER-0010-0206\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4625\",\"created\":\"USER-9546-07-26T11:10:08.680Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"failure\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account failed to log on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-18\\n\\tAccount ORG-4643 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E7\\n\\nORG-0106 Type:\\t\\t\\t3\\n\\nAccount For Which ORG-0106 Failed:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount Name:\\t\\t\\n\\tAccount USER-24351:\\t\\t\\n\\USER-7624 ORG-0706rmation:\\n\\tFailure Reason:\\t\\tUnknown user name or bad password.\\n\\tStatus:\\t\\t\\t0xC000006D\\n\\tSub Status:\\t\\t0xC0000064\\n\\USER-8912 ORG-0706rmation:\\n\\tCaller Process ID:\\t0x40c\\n\\tCaller Process Name:\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3411\\USER-1430\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\tORG-0891-ORG-0023\\USER-1430\\USER-7625 ORG-10379 Address:\\t192.168.147.151\\n\\USER-7625 Port:\\t\\t58383\\n\\nDetailed ORG-0823 Process:\\t\\tSchannel\\n\\tAuthentication USER-0010-4214:\\tKerberos\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 USER-9484 fails. It is generated on the USER-3828 where ORG-1738 was atUSER-0010-1591ted.\\n\\nThe Subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 Type field indicates the kind of ORG-0106 that was USER-9484ed. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe Process ORG-0706rmation fields indicate which account and process on the USER-0086 USER-9484ed ORG-2395 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"Kerberos\",\"FailureReason\":\"%%2313\",\"IpAddress\":\"192.168.141.126\",\"IpPort\":\"58383\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ProcessName\":\"Schannel\",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x40c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1155\",\"Status\":\"0xc000006d\",\"SubStatus\":\"0xc0000064\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e7\",\"SubjectUserName\":\"USER-0109\",\"SubjectCRED-0339id\":\"S-1-5-18\",\"USER-0010-4999CRED-0339id\":\"S-1-0-0\",\"TransmittedUSER-5935\":\"-\",\"WorkstationName\":\"USER-0010-0206\"},\"USER-0010-56507_id\":\"4625\",\"keywords\":[\"Audit Failure\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":1036,\"thread\":{\"id\":6544}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":6067660838,\"task\":\"ORG-0106\"}}",
+    "timestamp": 1721992263.8998039,
+    "src_ip": "192.168.147.151",
+    "dst_ip": "",
+    "src_host": "USER-0010-0012.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 135391,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:10:08.600Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"CRED-24CRED-25582381-3d10-4395-bc1c-5cdb52ecb35e\",\"id\":\"12e13a9a-252a-493f-9c35-fa4d61abd0bc\",\"name\":\"USER-0010-0206\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4625\",\"created\":\"USER-9546-07-26T11:10:09.723Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"failure\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account failed to log on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-18\\n\\tAccount ORG-4643 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E7\\n\\nORG-0106 Type:\\t\\t\\t3\\n\\nAccount For Which ORG-0106 Failed:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount Name:\\t\\t\\n\\tAccount USER-24351:\\t\\t\\n\\USER-7624 ORG-0706rmation:\\n\\tFailure Reason:\\t\\tUnknown user name or bad password.\\n\\tStatus:\\t\\t\\t0xC000006D\\n\\tSub Status:\\t\\t0xC0000064\\n\\USER-8912 ORG-0706rmation:\\n\\tCaller Process ID:\\t0x40c\\n\\tCaller Process Name:\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3411\\USER-1430\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\tORG-0891-ORG-0023\\USER-1430\\USER-7625 ORG-10379 Address:\\t192.168.147.151\\n\\USER-7625 Port:\\t\\t5CRED-25391\\n\\nDetailed ORG-0823 Process:\\t\\tSchannel\\n\\tAuthentication USER-0010-4214:\\tKerberos\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 USER-9484 fails. It is generated on the USER-3828 where ORG-1738 was atUSER-0010-1591ted.\\n\\nThe Subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 Type field indicates the kind of ORG-0106 that was USER-9484ed. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe Process ORG-0706rmation fields indicate which account and process on the USER-0086 USER-9484ed ORG-2395 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"Kerberos\",\"FailureReason\":\"%%2313\",\"IpAddress\":\"192.168.141.126\",\"IpPort\":\"5CRED-25391\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ProcessName\":\"Schannel\",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x40c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1155\",\"Status\":\"0xc000006d\",\"SubStatus\":\"0xc0000064\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e7\",\"SubjectUserName\":\"USER-0109\",\"SubjectCRED-0339id\":\"S-1-5-18\",\"USER-0010-4999CRED-0339id\":\"S-1-0-0\",\"TransmittedUSER-5935\":\"-\",\"WorkstationName\":\"USER-0010-0206\"},\"USER-0010-56507_id\":\"4625\",\"keywords\":[\"Audit Failure\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":1036,\"thread\":{\"id\":6544}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":6067660850,\"task\":\"ORG-0106\"}}",
+    "timestamp": 1721992265.5759404,
+    "src_ip": "192.168.147.151",
+    "dst_ip": "",
+    "src_host": "USER-0010-0012.domain-0022.example.net",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 143024,
+    "message_sanitized": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:10:09.749Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"c7c916ce-56ef-4255-9f46-4ca9ce1b5050\",\"id\":\"9c19b391-75f6-44e4-a324-d6fa6da22ca7\",\"name\":\"USER-0010-0225\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4625\",\"created\":\"USER-9546-07-26T11:10:11.594Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"failure\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account failed to log on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount ORG-0502 USER-24351:\\t\\t-\\n\\tORG-0106 ID:\\t\\t0x0\\n\\nORG-0106 Type:\\t\\t\\t3\\n\\nAccount For Which ORG-0106 Failed:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount Name:\\t\\HOST-1218-0290$\\n\\tAccount ORG-CRED-25687\\USER-1430\\USER-7624 ORG-0706rmation:\\n\\tFailure Reason:\\t\\tUnknown user name or bad password.\\n\\tStatus:\\t\\t\\t0xC000006D\\n\\tSub Status:\\t\\t0xC0000064\\n\\USER-8912 ORG-0706rmation:\\n\\tCaller Process ID:\\t0x0\\n\\tCaller Process Name:\\t-\\n\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\tORG-0891-ORG-0075\\USER-1430\\USER-7625 ORG-10379 Address:\\t192.168.172.29\\n\\USER-7625 Port:\\t\\t56892\\n\\nDetailed ORG-0823 Process:\\t\\tORG-0504Ssp \\n\\tAuthentication USER-0010-4214:\\tORG-0504\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 USER-9484 fails. It is generated on the USER-3828 where ORG-1738 was atUSER-0010-1591ted.\\n\\nThe Subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 Type field indicates the kind of ORG-0106 that was USER-9484ed. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe Process ORG-0706rmation fields indicate which account and process on the USER-0086 USER-9484ed ORG-2395 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"ORG-0504\",\"FailureReason\":\"%%2313\",\"IpAddress\":\"192.168.187.244\",\"IpPort\":\"56892\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ProcessName\":\"ORG-0504Ssp \",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x0\",\"ProcessName\":\"-\",\"Status\":\"0xc000006d\",\"SubStatus\":\"0xc0000064\",\"SubjectUSER-24351Name\":\"-\",\"SubjectORG-0106Id\":\"0x0\",\"SubjectUserName\":\"-\",\"SubjectCRED-0339id\":\"S-1-0-0\",\"USER-0010-4999USER-24351Name\":\"ORG-0015\",\"USER-0010-4999UserName\":\"USER-0006\",\"USER-0010-4999CRED-0339id\":\"S-1-0-0\",\"TransmittedUSER-5935\":\"-\",\"WorkstationName\":\"USER-0010-0259\"},\"USER-0010-56507_id\":\"4625\",\"keywords\":[\"Audit Failure\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":660,\"thread\":{\"id\":9152}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":513180446,\"task\":\"ORG-0106\"}}",
+    "timestamp": 1721992276.352453,
+    "src_ip": "192.168.172.29",
+    "dst_ip": "",
+    "src_host": "USER-0010-0018.domain-0022.example.net",
+    "dst_host": "",
+    "username": "USER-0006"
+  },
+  {
+    "row_position": 198528,
+    "message_sanitized": "ORG-1780 ::: CRED-23501Type=auth_ORG-0893 ::: USER-0010-1129=USER-5841 ::: streamName=ORG-2927 ::: userName=user-0051@exampleUSER-8710 ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"USER-0010name\":\"D-ORG-0315\",\"ip\":\"100.64.52.151\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"USER-0010-4218_version\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_USER-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"USER-0010-56492_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"Not USER-9484ed\",\"trust_level\":\"UNSET\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"USER-0010-56492_enabled\":false,\"reason\":\"Known ORG-1738 IP\",\"trust_level\":\"NORMAL\"}},\"alias\":\"\",\"application\":{\"key\":\"DIR75ZP575GMX3E3CEZE\",\"name\":\"USER-8162 RDP\"},\"auth_USER-0010-1127\":{\"ip\":\"100.64.33.221\",\"key\":\"DPZDQ7VU9DP24ZB91W9N\",\"location\":{\"city\":\"ORG-4048\",\"country\":\"United USER-0010-54774s\",\"USER-0010-54774\":\"Georgia\"},\"name\":\"478-714-9793\"},\"USER-0010-1CRED-23741\":\"user-0051@exampleUSER-8710\",\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"duo_push\",\"isoORG-1526stamp\":\"USER-9546-07-26T10:55:51.5CRED-299054+00:00\",\"ood_USER-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"user_USER-28756\",\"result\":\"ORG-0893\",\"ORG-1526stamp\":1721991351,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"ab5ba3e4-c152-443a-a14e-3CRED-296972cCRED-CRED-2987537\",\"user\":{\"groups\":[\"DuoCRED-0339 (from AD sync \\\"AD Sync\\\")\"],\"key\":\"DU5GKZ6H547I081919Z0\",\"name\":\"USER-0268\"}} ::: tags=[user_USER-28756]",
+    "timestamp": 1721992361.7418718,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": "USER-0203"
+  },
+  {
+    "row_position": 199208,
+    "message_sanitized": "ORG-1780 ::: CRED-23501Type=auth_ORG-0893 ::: tags=[allow_unenrolled_user] ::: USER-0010-1129=USER-5841 ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"USER-0010name\":\"USER-0010-54278K\",\"ip\":\"100.64.0.185\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"USER-0010-4218_version\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{},\"alias\":\"unknown\",\"application\":{\"key\":\"DIR75ZP575GMX3E3CEZE\",\"name\":\"USER-8162 RDP\"},\"auth_USER-0010-1127\":{\"ip\":null,\"key\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"name\":null},\"USER-0010-1CRED-23741\":null,\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"not_available\",\"isoORG-1526stamp\":\"USER-9546-07-26T11:00:14.570801+00:00\",\"ood_USER-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"allow_unenrolled_user\",\"result\":\"ORG-0893\",\"ORG-1526stamp\":1721991614,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"b6ee9410-80ff-47ec-b98e-29d8698b3489\",\"user\":{\"groups\":[],\"key\":null,\"name\":\"USER-0087\"}} ::: streamName=ORG-2927",
+    "timestamp": 1721992362.7429216,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": ""
+  },
+  {
+    "row_position": 201840,
+    "message_sanitized": "ORG-1780 ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"USER-0010name\":\"USER-9431\",\"ip\":\"100.64.52.151\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"USER-0010-4218_version\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_USER-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"USER-0010-56492_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"Not USER-9484ed\",\"trust_level\":\"UNSET\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"USER-0010-56492_enabled\":false,\"reason\":\"Known ORG-1738 IP\",\"trust_level\":\"NORMAL\"}},\"alias\":\"\",\"application\":{\"key\":\"DIR75ZP575GMX3E3CEZE\",\"name\":\"USER-8162 RDP\"},\"auth_USER-0010-1127\":{\"ip\":null,\"key\":\"DHZTWN5YS8IE91RZLUU8\",\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"name\":\"Duo-D100 2788CRED-2493678GO6OATH\"},\"USER-0010-1CRED-23741\":\"user-0103@exampleUSER-8710\",\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"hardware_token\",\"isoORG-1526stamp\":\"USER-9546-07-26T10:48:40.515111+00:00\",\"ood_USER-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"valid_passcode\",\"result\":\"ORG-0893\",\"ORG-1526stamp\":172CRED-3272420,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"37fc01e5-581b-4091-8996-1fbe171156f4\",\"user\":{\"groups\":[\"DuoCRED-0339 (from AD sync \\\"AD Sync\\\")\"],\"key\":\"DU56F8SKQEN3ZTKK3ZZC\",\"name\":\"USER-0283\"}} ::: streamName=ORG-2927 ::: userName=user-0103@exampleUSER-8710 ::: CRED-23501Type=auth_ORG-0893 ::: USER-0010-1129=USER-5841 ::: tags=[valid_passcode]",
+    "timestamp": 1721992366.7386582,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": "USER-0229"
+  },
+  {
+    "row_position": 247265,
+    "message_sanitized": "<190>Jul 26 06:13:46 USER-0010-4334 CEF:0|USER-0010-57562|WAF|1220|1000|GET|5|cat=TR dvc=10.208.162.175 duser=\"-\" in=296 out=CRED-327265 suser=\"-\" src=100.64.55.159 spt=54187 ORG-3027\" ORG-9066=USER-0010-0025.USER-24351-0022.exampleUSER-8710 outcome=200 suid=\"-\" USER-9484Method=GET app=TLSv1.3 msg=\"-\" USER-9484Context=\"-\" dst=10.38.148.233 ORG-1812 rt=172CRED-327CRED-2903355  start=Jul 26 USER-9546 06:13:46  USER-9484=/servlet/eAndar.WebFileLibrary/3433/CRED-30CRED-299353CRED-CRED-330660/profile-complete_no%20ribbon.png USER-9484USER-CRED-30678Application=\"USER-7922 (ORG-0407 NT 5.1; rv:11.0) ORG-0492 Firefox/11.0 (via ggpht.com GoogleImageProxy)\" dvcUSER-0010=USER-0010-0041 externalId=190eebf32b9-7972a443 cs1LUSER-CRED-25456=ORG-0494 cs1=\"-\" cs2LUSER-CRED-25456=Protected cs2=PROTECTED cs3LUSER-CRED-25456=ProxyIP cs3=100.64.1.37 cs4LUSER-CRED-25456=ProfileMatched cs4=USER-0010-54599 cs6LUSER-CRED-25456=WFMatched cs6=VALID cn1LUSER-CRED-25456=ORG-0090Port USER-6582 cn2LUSER-CRED-25456=CacheHit cn2=0 cn3LUSER-CRED-25456=ProxyPort cn3=54187 flexNumber1LUSER-CRED-25456=ORG-1704) flexNumber1=54 flexNumber2LUSER-CRED-25456=USER-1840) flexNumber2=86 flexString1LUSER-CRED-25456=ProtocolVersion flexString1=ORG-CRED-31206/1.1 USER-0010-57562WafCustomHeader1=\"-\" USER-0010-57562WafCustomHeader2=\"-\" USER-0010-57562WafCustomHeader3=\"-\" USER-0010-57562WafResponseType=SERVER USER-0010-57562WafSessionID=\"-\" \n",
+    "timestamp": 1721992435.9449637,
+    "src_ip": "100.64.1.37",
+    "dst_ip": "10.0.145.98",
+    "src_host": "10.149.108.24",
+    "dst_host": "USER-0010-0025.domain-0022.example.net",
+    "username": "-"
+  },
+  {
+    "row_position": 248597,
+    "message_sanitized": "<190>Jul 26 06:13:48 USER-0010-4334 CEF:0|USER-0010-57562|WAF|1220|1000|GET|5|cat=TR dvc=10.208.162.175 duser=\"-\" in=296 out=CRED-327265 suser=\"-\" src=100.64.55.156 spt=64072 ORG-3027\" ORG-9066=USER-0010-0025.USER-24351-0022.exampleUSER-8710 outcome=200 suid=\"-\" USER-9484Method=GET app=TLSv1.3 msg=\"-\" USER-9484Context=\"-\" dst=10.38.148.233 ORG-1812 rt=172CRED-327CRED-2903735  start=Jul 26 USER-9546 06:13:48  USER-9484=/servlet/eAndar.WebFileLibrary/3433/CRED-30CRED-299353CRED-CRED-330660/profile-complete_no%20ribbon.png USER-9484USER-CRED-30678Application=\"USER-7922 (ORG-0407 NT 5.1; rv:11.0) ORG-0492 Firefox/11.0 (via ggpht.com GoogleImageProxy)\" dvcUSER-0010=USER-0010-0041 externalId=190eebf3b92-167bef5b cs1LUSER-CRED-25456=ORG-0494 cs1=\"-\" cs2LUSER-CRED-25456=Protected cs2=PROTECTED cs3LUSER-CRED-25456=ProxyIP cs3=100.64.1.36 cs4LUSER-CRED-25456=ProfileMatched cs4=USER-0010-54599 cs6LUSER-CRED-25456=WFMatched cs6=VALID cn1LUSER-CRED-25456=ORG-0090Port USER-6582 cn2LUSER-CRED-25456=CacheHit cn2=0 cn3LUSER-CRED-25456=ProxyPort cn3=64072 flexNumber1LUSER-CRED-25456=ORG-1704) flexNumber1=65 flexNumber2LUSER-CRED-25456=USER-1840) flexNumber2=101 flexString1LUSER-CRED-25456=ProtocolVersion flexString1=ORG-CRED-31206/1.1 USER-0010-57562WafCustomHeader1=\"-\" USER-0010-57562WafCustomHeader2=\"-\" USER-0010-57562WafCustomHeader3=\"-\" USER-0010-57562WafResponseType=SERVER USER-0010-57562WafSessionID=\"-\" \n",
+    "timestamp": 1721992437.9466486,
+    "src_ip": "100.64.1.36",
+    "dst_ip": "10.0.145.98",
+    "src_host": "10.149.108.24",
+    "dst_host": "USER-0010-0025.domain-0022.example.net",
+    "username": "-"
+  },
+  {
+    "row_position": 252040,
+    "message_sanitized": "<190>Jul 26 06:13:51 USER-0010-4334 CEF:0|USER-0010-57562|WAF|1220|1000|GET|5|cat=TR dvc=10.208.162.175 duser=\"-\" in=373 out=CRED-239669 suser=\"-\" src=100.64.55.153 spt=3CRED-CRED-297994 ORG-3027\" ORG-9066=USER-0010-0025.USER-24351-0022.exampleUSER-8710 outcome=200 suid=\"-\" USER-9484Method=GET app=TLSv1.3 msg=\"-\" USER-9484Context=\"-\" dst=10.38.148.233 ORG-1812 rt=172CRED-3272CRED-2535685  start=Jul 26 USER-9546 06:13:51  USER-9484=/crm/ORG-9537 USER-9484USER-CRED-30678Application=\"USER-7922 (ORG-0407 NT 6.2; WOW64) ORG-2350/537.4 (ORG-0491, like ORG-0492) Chrome/98 Safari/537.4 (StatusCake)\" dvcUSER-0010=USER-0010-0041 externalId=190eebf45bd-819915a4 cs1LUSER-CRED-25456=ORG-0494 cs1=\"-\" cs2LUSER-CRED-25456=Protected cs2=PROTECTED cs3LUSER-CRED-25456=ProxyIP cs3=100.64.1.35 cs4LUSER-CRED-25456=ProfileMatched cs4=USER-0010-54599 cs6LUSER-CRED-25456=WFMatched cs6=VALID cn1LUSER-CRED-25456=ORG-0090Port USER-6582 cn2LUSER-CRED-25456=CacheHit cn2=0 cn3LUSER-CRED-25456=ProxyPort cn3=3CRED-CRED-297994 flexNumber1LUSER-CRED-25456=ORG-1704) flexNumber1=348 flexNumber2LUSER-CRED-25456=USER-1840) ORG-27CRED-25190 flexString1LUSER-CRED-25456=ProtocolVersion flexString1=ORG-CRED-31206/1.1 USER-0010-57562WafCustomHeader1=\"-\" USER-0010-57562WafCustomHeader2=\"-\" USER-0010-57562WafCustomHeader3=\"-\" USER-0010-57562WafResponseType=SERVER USER-0010-57562WafSessionID=\"-\" \n",
+    "timestamp": 1721992442.9515247,
+    "src_ip": "100.64.1.35",
+    "dst_ip": "10.0.145.98",
+    "src_host": "10.149.108.24",
+    "dst_host": "USER-0010-0025.domain-0022.example.net",
+    "username": "-"
+  },
+  {
+    "row_position": 332810,
+    "message_sanitized": "<190>Jul 26 06:16:23 USER-0010-4334 CEF:0|USER-0010-57562|WAF|1220|1000|GET|5|cat=TR dvc=10.208.162.175 duser=\"-\" in=226 out=5699 suser=\"-\" ORG-9658 spt=54070 ORG-3027\" ORG-9066=USER-0010-0025.USER-24351-0022.exampleUSER-8710 outcome=200 suid=\"-\" USER-9484Method=GET app=TLSv1.2 msg=\"-\" USER-9484Context=\"-\" dst=10.38.148.233 ORG-1812 rt=172CRED-CRED-28849CRED-CRED-297423  start=Jul 26 USER-9546 06:16:23  USER-9484=/outlook/assets/icon-144.png USER-9484USER-CRED-30678Application=\"USER-0010-56575/4.0 (compatible; ms-office; ORG-2963 16)\" dvcUSER-0010=USER-0010-0041 externalId=190eec1983c-40943f70 cs1LUSER-CRED-25456=ORG-0494 cs1=\"-\" cs2LUSER-CRED-25456=Protected cs2=PROTECTED cs3LUSER-CRED-25456=ProxyIP cs3=100.64.1.67 cs4LUSER-CRED-25456=ProfileMatched cs4=USER-0010-54599 cs6LUSER-CRED-25456=WFMatched cs6=VALID cn1LUSER-CRED-25456=ORG-0090Port USER-6582 cn2LUSER-CRED-25456=CacheHit cn2=0 cn3LUSER-CRED-25456=ProxyPort cn3=54070 flexNumber1LUSER-CRED-25456=ORG-1704) flexNumber1=7 flexNumber2LUSER-CRED-25456=USER-1840) flexNumber2=55 flexString1LUSER-CRED-25456=ProtocolVersion flexString1=ORG-CRED-31206/1.1 USER-0010-57562WafCustomHeader1=\"-\" USER-0010-57562WafCustomHeader2=\"-\" USER-0010-57562WafCustomHeader3=\"-\" USER-0010-57562WafResponseType=SERVER USER-0010-57562WafSessionID=\"-\" \n",
+    "timestamp": 1721992594.3405814,
+    "src_ip": "100.64.1.67",
+    "dst_ip": "10.0.145.98",
+    "src_host": "10.149.108.24",
+    "dst_host": "USER-0010-0025.domain-0022.example.net",
+    "username": "-"
+  },
+  {
+    "row_position": 441158,
+    "message_sanitized": "ORG-1780 ::: streamName=ORG-2927 ::: tags=[no_response] ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"epkey\":null,\"USER-0010name\":null,\"ip\":\"100.64.52.151\",\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null}},\"alias\":\"\",\"application\":{\"key\":\"DIBE3VETN055FUSIDPC8\",\"name\":\"AWS USER-CRED-30678 VPN\"},\"auth_USER-0010-1127\":{\"ip\":null,\"key\":\"DPSH5S416UGQQL9GWA6G\",\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"name\":\"412-370-9347\"},\"USER-0010-1CRED-23741\":\"user-0819@exampleUSER-8710\",\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"duo_push\",\"isoORG-1526stamp\":\"USER-9546-07-26T11:00:57.963780+00:00\",\"ood_USER-0010-1219\":null,\"reason\":\"no_response\",\"result\":\"denied\",\"ORG-1526stamp\":17219CRED-CRED-2980737,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"67ca3e81-5815-4ed1-92a1-3616fa888a39\",\"user\":{\"groups\":[],\"key\":\"DUJCLW3N9SAXF4WG6Y0A\",\"name\":\"USER-1413\"}} ::: userName=user-0819@exampleUSER-8710 ::: USER-0010-1129=USER-5841 ::: CRED-23501Type=auth_failure",
+    "timestamp": 1721992859.0292988,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": "USER-1343"
+  },
+  {
+    "row_position": 483275,
+    "message_sanitized": "ORG-1780 ::: CRED-23501Type=auth_failure ::: streamName=ORG-2927 ::: USER-0010-1129=USER-5841 ::: tags=[invalid_passcode] ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"USER-0010name\":\"D-9H8GD53\",\"ip\":\"100.64.52.151\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"USER-0010-4218_version\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_USER-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"USER-0010-56492_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"Not USER-9484ed\",\"trust_level\":\"UNSET\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"USER-0010-56492_enabled\":false,\"reason\":\"Known ORG-1738 IP\",\"trust_level\":\"NORMAL\"}},\"alias\":\"\",\"application\":{\"key\":\"DIR75ZP575GMX3E3CEZE\",\"name\":\"USER-8162 RDP\"},\"auth_USER-0010-1127\":{\"ip\":null,\"key\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"name\":null},\"USER-0010-1CRED-23741\":\"user-0247@exampleUSER-8710\",\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"sms_passcode\",\"isoORG-1526stamp\":\"USER-9546-07-26T11:07:27.177427+00:00\",\"ood_USER-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"invalid_passcode\",\"result\":\"denied\",\"ORG-1526stamp\":1721992047,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"6416CRED-25381-896f-4913-8a93-bead05f7b0ad\",\"user\":{\"groups\":[\"DuoCRED-0339 (from AD sync \\\"AD Sync\\\")\"],\"key\":\"DU7YLZSK0QBYFF7SU8G2\",\"name\":\"USER-0251\"}} ::: userName=user-0247@exampleUSER-8710",
+    "timestamp": 1721992940.025947,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": "USER-0808"
+  },
+  {
+    "row_position": 1321175,
+    "message_sanitized": "ORG-1780 ::: CRED-23501={\"ORG-1738_USER-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"USER-0010name\":\"USER-8857\",\"ip\":\"100.64.52.151\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"USER-0010-4218_version\":null,\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_USER-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"USER-0010-56492_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"Not USER-9484ed\",\"trust_level\":\"UNSET\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"USER-0010-56492_enabled\":false,\"reason\":\"Known ORG-1738 IP\",\"trust_level\":\"NORMAL\"}},\"alias\":\"\",\"application\":{\"key\":\"DIR75ZP575GMX3E3CEZE\",\"name\":\"USER-8162 RDP\"},\"auth_USER-0010-1127\":{\"ip\":null,\"key\":\"DPNO9QT6DKNUZR1VQCG5\",\"location\":{\"city\":null,\"country\":null,\"USER-0010-54774\":null},\"name\":\"404-274-3822\"},\"USER-0010-1CRED-23741\":\"user-0053@exampleUSER-8710\",\"USER-0010-56507_type\":\"authentication\",\"fUSER-0010-15196\":\"phone_call\",\"isoORG-1526stamp\":\"USER-9546-07-26T11:30:11.661024+00:00\",\"ood_USER-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"call_not_answered\",\"result\":\"denied\",\"ORG-1526stamp\":17CRED-CRED-28950411,\"trusted_USER-0010-CRED-29699_status\":\"unknown\",\"txid\":\"e112ab20-4580-4f30-ba2c-1CRED-CRED-29207973bc42\",\"user\":{\"groups\":[\"DuoCRED-0339 (from AD sync \\\"AD Sync\\\")\"],\"key\":\"DUX7JG1IES7XUQ9477OA\",\"name\":\"USER-0323\"}} ::: CRED-23501Type=auth_failure ::: userName=user-0053@exampleUSER-8710 ::: tags=[call_not_answered] ::: USER-0010-1129=USER-5841 ::: streamName=ORG-2927",
+    "timestamp": 1721994137.118605,
+    "src_ip": "",
+    "dst_ip": "",
+    "src_host": "HOST-0019",
+    "dst_host": "",
+    "username": "USER-0204"
+  },
+  {
+    "row_position": 1477712,
+    "message_sanitized": "<185>Jul 26 06:45:01 USER-0010-4334 CEF:0|USER-0010-57562|WAF|1220|119|MALFORMED_VERSION|1|cat=WF dst=10.59.104.218 ORG-1812 act=DENY msg=[PRI * ORG-CRED-31206/2.0] duser=\"-\" src=100.64.60.17 spt=4CRED-CRED-239091 USER-9484Method=PRI app=TLSv1.3 USER-9484Context=\"-\" start=Jul 26 USER-9546 06:45:01  rt=17CRED-CRED-33684CRED-2987775  USER-9484=/* USER-9484USER-CRED-30678Application=\"Unknown\" dvcUSER-0010=USER-0010-0041 externalId=190eedbd0de-9c5372a cn2=4CRED-CRED-239091 cn2LUSER-CRED-25456=ProxyPort cs1=global cs1LUSER-CRED-25456=RuleID cs2=NONE cs2LUSER-CRED-25456=FollowUpUSER-0010-0121 cs3=GLOBAL cs3LUSER-CRED-25456=RuleType cs4=Protocol Violations cs4LUSER-CRED-25456=AttackGroup cs5=100.64.2.2 cs5LUSER-CRED-25456=ProxyIP cs6=\"-\" cs6LUSER-CRED-25456=SessionID \n",
+    "timestamp": 1721994311.6991775,
+    "src_ip": "100.64.2.2",
+    "dst_ip": "10.184.211.180",
+    "src_host": "10.149.108.24",
+    "dst_host": "",
+    "username": "-"
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "status": "first_principles_review_completed_no_new_fit",
+  "quality_acceptance": false,
+  "all_issues_solved": false,
+  "model_promoted": false,
+  "actual_new_fits": 0,
+  "actual_classifier_fits": 0,
+  "actual_calibration_fits": 0,
+  "new_full_data_final_fit": false,
+  "new_full_development_replay": false,
+  "new_full_task_pipeline_replay": false,
+  "platform_used": false,
+  "external_training_data_used": false,
+  "pseudo_labels_used": false,
+  "development_not_blind": true,
+  "latest_executed_training_delivery": "evidence/2026-09-27/v89_readout_support/delivery.json",
+  "latest_full_development_delivery": "evidence/2026-09-27/v79_execution/delivery.json",
+  "latest_full_development_errors": 5947,
+  "validation_scope": "No-fit audit of empirical representation ambiguity and component support. 9 representation-role and 3 ASA bounds independently recomputed; 52 saved S errors replayed and two representative pairs traced to actual corrective text matrices. 805 historical bound files unchanged. Not proof of semantic sufficiency, Bayes error, new generalization, model quality or a live cloud connection.",
+  "ASA_fit_representation_bounds": {
+    "R0": {
+      "rows": 38771,
+      "minimum_deterministic_lookup_errors": 22,
+      "mixed_groups": 1
+    },
+    "partial_facts_no_hash": {
+      "rows": 38771,
+      "minimum_deterministic_lookup_errors": 880,
+      "mixed_groups": 19
+    },
+    "R0_plus_facts": {
+      "rows": 38771,
+      "minimum_deterministic_lookup_errors": 22,
+      "mixed_groups": 1
+    }
+  },
+  "support_S_error_views": {
+    "R0_complete_current_encoding": {
+      "S_error_rows": 52,
+      "distinct_inputs": 26,
+      "errors_with_other_class_same_input": 0,
+      "errors_where_S_is_strict_minority_against_M": 0
+    },
+    "literal_partial_facts_no_hash": {
+      "S_error_rows": 52,
+      "distinct_inputs": 21,
+      "errors_with_other_class_same_input": 14,
+      "errors_where_S_is_strict_minority_against_M": 14
+    },
+    "R0_plus_partial_facts": {
+      "S_error_rows": 52,
+      "distinct_inputs": 26,
+      "errors_with_other_class_same_input": 0,
+      "errors_where_S_is_strict_minority_against_M": 0
+    }
+  },
+  "fine_S_independent_support": [
+    {
+      "key": [
+        "deny",
+        "blocked",
+        "tcp",
+        "outside",
+        "dmz",
+        "445"
+      ],
+      "S_rows": 6,
+      "S_components": 2,
+      "S_complete_R0_inputs": 3,
+      "S_error_rows": 6,
+      "can_populate_three_disjoint_component_roles_with_this_class": false
+    },
+    {
+      "key": [
+        "deny",
+        "blocked",
+        "tcp",
+        "outside",
+        "dmz",
+        "65536"
+      ],
+      "S_rows": 68,
+      "S_components": 21,
+      "S_complete_R0_inputs": 34,
+      "S_error_rows": 44,
+      "can_populate_three_disjoint_component_roles_with_this_class": true
+    },
+    {
+      "key": [
+        "deny",
+        "blocked",
+        "udp",
+        "outside",
+        "dmz",
+        "65536"
+      ],
+      "S_rows": 6,
+      "S_components": 2,
+      "S_complete_R0_inputs": 3,
+      "S_error_rows": 2,
+      "can_populate_three_disjoint_component_roles_with_this_class": false
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "source_sha256": "7c666cd2da6b6ddde29b2bcdbba438f5386c9b551a8485711fc70210abbfaa15",
+    "new_fits": 0,
+    "original_labels_checked": 2056871,
+    "grouping_bounds_independently_recomputed": 9,
+    "ASA_bounds_recomputed": 3,
+    "support_error_rows_verified": 52,
+    "representative_context_pairs_and_actual_R0_text_matrices_verified": 2,
+    "prior_bound_files_rehashed": 805,
+    "prior_bound_files_changed": [],
+    "receipt_sha256": {
+      "evidence/2026-09-27/v79_execution/delivery.json": "6a387d109c0501ea2a8d8cbc3b3ffc424e36d57e57ffd82d7e400b038340ef50",
+      "artifacts/v80_attribution_20260927/review_receipt.json": "3480b88b45cc25ad9170ce771637a3e1fb9e5062b29f1eec17cc252855891e23",
+      "evidence/2026-09-27/v81_diagnosis/delivery.json": "9a41b1407dfa4c121226e097d717e07243de9ab81970e2aaf70ec69d2cfcc49a",
+      "evidence/2026-09-27/v82_capacity/delivery.json": "33b068f6689d990e11d6762e2bad8ee69cef7c616a7c8acfb595c92cd67a6a35",
+      "evidence/2026-09-27/v83_root_review/delivery.json": "dade677c00b19db7873fb8bac8d2faf092538976edd5433c56bfb90a41f2f7e1",
+      "evidence/2026-09-27/v84_preservation/delivery.json": "5d2b419171b16a5bc5a31ee866357af0f548ed9b5688721ecab36e4817157c6f",
+      "evidence/2026-09-27/v85_protection/delivery.json": "72faafa85de6f14e3dfd9fe5a4b3e927bb48d64a93e7f2e2814452c4ce3ac723",
+      "evidence/2026-09-27/v86_boundary_review/delivery.json": "8336a0afa9da832c8069b2a7fddb534d22eb6039d53252029e8b8612910de056",
+      "evidence/2026-09-27/v87_solver_supervision/delivery.json": "302850394e7285045e16806c53d02b0b350e666828162b2bb163b7d47c477dfb",
+      "evidence/2026-09-27/v88_root_review/delivery.json": "97157ac041aaa8bdd89ae2337c92ffe07818b319908a16dd9bcbb3d896d5c22c",
+      "evidence/2026-09-27/v89_readout_support/delivery.json": "8fe1ca13069a6037486f99aba0d355a93c2ba5249410675be3098f53dfcee5b4",
+      "evidence/2026-09-28/v90_root_review/delivery.json": "3f375f0b116af9b8d897097c4c035bf885aa5d6d2f88fd9c579f337553213895"
+    },
+    "outputs_sha256": {
+      "audit.json": "4924733d8944fc39a28a2be27b35daeb58cf584c612fcf075de6a1076b970682",
+      "context_counterexamples.json": "90a9a2bc7ba8a67621eae48a97c11b32902c20022141f64a1add0d7e4fb24f50",
+      "current_input_context.json": "16b91a7f6307cd1570ef949f17f6113d51dc8ff6cfc7b2d0abfaff8f4df77597",
+      "support_S_error_rows.npy": "8eafe66c59a2e6ec2384365ce57b656fc3a6616ec91c3677395689f4b8da3dab"
+    },
+    "seconds": 29.78100000001723,
+    "scope": "Independent pandas label grouping and support counts;52 saved error rows replayed;two representative context pairs checked against actual corrective byte matrices. Reuses v89 literal extractor verified in v90; not semantic sufficiency or new generalization."
+  },
+  "current_plan": "docs/V91_FIRST_PRINCIPLES_RESEARCH_AND_PLAN.md",
+  "artifact_sha256": {
+    "artifacts/v91_first_principles_20260928/audit.json": "4924733d8944fc39a28a2be27b35daeb58cf584c612fcf075de6a1076b970682",
+    "artifacts/v91_first_principles_20260928/context_counterexamples.json": "90a9a2bc7ba8a67621eae48a97c11b32902c20022141f64a1add0d7e4fb24f50",
+    "artifacts/v91_first_principles_20260928/current_input_context.json": "16b91a7f6307cd1570ef949f17f6113d51dc8ff6cfc7b2d0abfaff8f4df77597",
+    "artifacts/v91_first_principles_20260928/support_S_error_rows.npy": "8eafe66c59a2e6ec2384365ce57b656fc3a6616ec91c3677395689f4b8da3dab",
+    "artifacts/v91_first_principles_20260928/verification.json": "569febb442c7aad656548525847190b8a2f89e549d0df4d62a077aad6da83887",
+    "docs/V91_FIRST_PRINCIPLES_RESEARCH_AND_PLAN.md": "e22b6da1936d5bff04647b5fe820b5be6f247c5206e7ec998fca5e316a177c4b",
+    "training/v91_evidence_audit.py": "e493f87282ab20659911aaf58e296c57130c0eb7f9bae659408bec356730a0ce",
+    "training/v91_publish.py": "ba6d9ed566a8de95e79d8657748022ecdcb5f999404ad340f81270920d7ee307",
+    "training/v91_verify.py": "7c666cd2da6b6ddde29b2bcdbba438f5386c9b551a8485711fc70210abbfaa15"
+  }
+}

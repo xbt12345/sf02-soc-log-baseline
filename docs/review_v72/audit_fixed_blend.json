@@ -1,0 +1,1938 @@
+{
+  "new_fits": 0,
+  "experiment": "Exactly one fixed equal score blend B69+R71; same frozen source roles; no weights selected",
+  "scope": "Already inspected adaptive development. Recalibrated fixed blend is a diagnostic candidate, not an accepted model.",
+  "primary_budget": 0.01,
+  "results": {
+    "0.001": {
+      "vs_historical": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 338,
+          "fixed": 68,
+          "broken": 218,
+          "source_recall": 0.996791832587904
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 612,
+          "fixed": 36,
+          "broken": 16,
+          "source_recall": 0.2886223191566703
+        },
+        "target_fixed": 36,
+        "target_remaining": 542,
+        "outside_target_S_broken": 16,
+        "total_errors": 950,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 4
+      },
+      "vs_B69": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 338,
+          "fixed": 256,
+          "broken": 24,
+          "source_recall": 0.996791832587904
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 612,
+          "fixed": 0,
+          "broken": 28,
+          "source_recall": 0.2886223191566703
+        },
+        "target_fixed": 36,
+        "target_remaining": 542,
+        "outside_target_S_broken": 2,
+        "total_errors": 950,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 4
+      },
+      "hard_rates": {
+        "M": {
+          "rows": 41890,
+          "source_symbols": 4401,
+          "row_recall": 0.9947958940081165,
+          "source_recall": 0.9971690046520528
+        },
+        "S": {
+          "rows": 652,
+          "source_symbols": 189,
+          "row_recall": 0.0705521472392638,
+          "source_recall": 0.019148400100781053
+        }
+      },
+      "cells": [
+        {
+          "fold": 0,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12772,
+            "source_symbols": 1360,
+            "row_recall": 0.9948324459755715,
+            "source_recall": 0.9961580882352942
+          },
+          "S": {
+            "rows": 144,
+            "source_symbols": 53,
+            "row_recall": 0.05555555555555555,
+            "source_recall": 0.024258760107816708
+          }
+        },
+        {
+          "fold": 0,
+          "protocol": "udp",
+          "M": {
+            "rows": 1230,
+            "source_symbols": 155,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 24,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "tcp",
+          "M": {
+            "rows": 13390,
+            "source_symbols": 1360,
+            "row_recall": 0.9976101568334578,
+            "source_recall": 0.9966544117647059
+          },
+          "S": {
+            "rows": 228,
+            "source_symbols": 59,
+            "row_recall": 0.043859649122807015,
+            "source_recall": 0.01694915254237288
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "udp",
+          "M": {
+            "rows": 1226,
+            "source_symbols": 145,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 28,
+            "source_symbols": 6,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12322,
+            "source_symbols": 1357,
+            "row_recall": 0.9902613212140886,
+            "source_recall": 0.9980219524492883
+          },
+          "S": {
+            "rows": 192,
+            "source_symbols": 58,
+            "row_recall": 0.14583333333333334,
+            "source_recall": 0.022988505747126436
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "udp",
+          "M": {
+            "rows": 950,
+            "source_symbols": 132,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 36,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        }
+      ],
+      "confusion_B_M_S": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          42806,
+          338
+        ],
+        [
+          0,
+          612,
+          15872
+        ]
+      ],
+      "row_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "1": {
+          "precision": 0.9859044635865309,
+          "recall": 0.9921657704431671,
+          "f1-score": 0.9890252073658187,
+          "support": 43144.0
+        },
+        "2": {
+          "precision": 0.9791486736582357,
+          "recall": 0.9628730890560544,
+          "f1-score": 0.97094268061418,
+          "support": 16484.0
+        },
+        "accuracy": 0.9840710932260228,
+        "macro avg": {
+          "precision": 0.9883510457482556,
+          "recall": 0.985012953166407,
+          "f1-score": 0.9866559626599996,
+          "support": 59640.0
+        },
+        "weighted avg": {
+          "precision": 0.9840400555593503,
+          "recall": 0.9840710932260228,
+          "f1-score": 0.9840295555639675,
+          "support": 59640.0
+        }
+      }
+    },
+    "0.005": {
+      "vs_historical": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 462,
+          "fixed": 68,
+          "broken": 342,
+          "source_recall": 0.9948898066110473
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 596,
+          "fixed": 50,
+          "broken": 14,
+          "source_recall": 0.29734641948382406
+        },
+        "target_fixed": 50,
+        "target_remaining": 528,
+        "outside_target_S_broken": 14,
+        "total_errors": 1058,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 5
+      },
+      "vs_B69": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 462,
+          "fixed": 180,
+          "broken": 72,
+          "source_recall": 0.9948898066110473
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 596,
+          "fixed": 2,
+          "broken": 14,
+          "source_recall": 0.29734641948382406
+        },
+        "target_fixed": 50,
+        "target_remaining": 528,
+        "outside_target_S_broken": 0,
+        "total_errors": 1058,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 5
+      },
+      "hard_rates": {
+        "M": {
+          "rows": 41890,
+          "source_symbols": 4401,
+          "row_recall": 0.9918357603246598,
+          "source_recall": 0.9952211675519178
+        },
+        "S": {
+          "rows": 652,
+          "source_symbols": 189,
+          "row_recall": 0.0950920245398773,
+          "source_recall": 0.03124212648022172
+        }
+      },
+      "cells": [
+        {
+          "fold": 0,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12772,
+            "source_symbols": 1360,
+            "row_recall": 0.9920137801440652,
+            "source_recall": 0.9952757352941175
+          },
+          "S": {
+            "rows": 144,
+            "source_symbols": 53,
+            "row_recall": 0.08333333333333333,
+            "source_recall": 0.029649595687331536
+          }
+        },
+        {
+          "fold": 0,
+          "protocol": "udp",
+          "M": {
+            "rows": 1230,
+            "source_symbols": 155,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 24,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "tcp",
+          "M": {
+            "rows": 13390,
+            "source_symbols": 1360,
+            "row_recall": 0.9958177744585511,
+            "source_recall": 0.9961151960784314
+          },
+          "S": {
+            "rows": 228,
+            "source_symbols": 59,
+            "row_recall": 0.05263157894736842,
+            "source_recall": 0.022598870056497175
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "udp",
+          "M": {
+            "rows": 1226,
+            "source_symbols": 145,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 28,
+            "source_symbols": 6,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12322,
+            "source_symbols": 1357,
+            "row_recall": 0.9850673591949359,
+            "source_recall": 0.9931294706922058
+          },
+          "S": {
+            "rows": 192,
+            "source_symbols": 58,
+            "row_recall": 0.19791666666666666,
+            "source_recall": 0.05172413793103448
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "udp",
+          "M": {
+            "rows": 950,
+            "source_symbols": 132,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 36,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        }
+      ],
+      "confusion_B_M_S": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          42682,
+          462
+        ],
+        [
+          0,
+          596,
+          15888
+        ]
+      ],
+      "row_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "1": {
+          "precision": 0.9862285687878368,
+          "recall": 0.9892916743927314,
+          "f1-score": 0.98775774687001,
+          "support": 43144.0
+        },
+        "2": {
+          "precision": 0.971743119266055,
+          "recall": 0.9638437272506674,
+          "f1-score": 0.9677773040141316,
+          "support": 16484.0
+        },
+        "accuracy": 0.9822602280348759,
+        "macro avg": {
+          "precision": 0.9859905626846306,
+          "recall": 0.9843784672144662,
+          "f1-score": 0.9851783502947139,
+          "support": 59640.0
+        },
+        "weighted avg": {
+          "precision": 0.9822276819209269,
+          "recall": 0.9822602280348759,
+          "f1-score": 0.9822377818633242,
+          "support": 59640.0
+        }
+      }
+    },
+    "0.01": {
+      "vs_historical": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 600,
+          "fixed": 68,
+          "broken": 480,
+          "source_recall": 0.9906148636512516
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 590,
+          "fixed": 56,
+          "broken": 14,
+          "source_recall": 0.3068884042166485
+        },
+        "target_fixed": 56,
+        "target_remaining": 522,
+        "outside_target_S_broken": 14,
+        "total_errors": 1190,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 8
+      },
+      "vs_B69": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 600,
+          "fixed": 106,
+          "broken": 136,
+          "source_recall": 0.9906148636512516
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 590,
+          "fixed": 2,
+          "broken": 8,
+          "source_recall": 0.3068884042166485
+        },
+        "target_fixed": 56,
+        "target_remaining": 522,
+        "outside_target_S_broken": 0,
+        "total_errors": 1190,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 8
+      },
+      "hard_rates": {
+        "M": {
+          "rows": 41890,
+          "source_symbols": 4401,
+          "row_recall": 0.9885414179995226,
+          "source_recall": 0.9908432607307864
+        },
+        "S": {
+          "rows": 652,
+          "source_symbols": 189,
+          "row_recall": 0.10429447852760736,
+          "source_recall": 0.044469639707734945
+        }
+      },
+      "cells": [
+        {
+          "fold": 0,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12772,
+            "source_symbols": 1360,
+            "row_recall": 0.9888819292201692,
+            "source_recall": 0.9898835784313726
+          },
+          "S": {
+            "rows": 144,
+            "source_symbols": 53,
+            "row_recall": 0.09722222222222222,
+            "source_recall": 0.039083557951482474
+          }
+        },
+        {
+          "fold": 0,
+          "protocol": "udp",
+          "M": {
+            "rows": 1230,
+            "source_symbols": 155,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 24,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "tcp",
+          "M": {
+            "rows": 13390,
+            "source_symbols": 1360,
+            "row_recall": 0.9932785660941,
+            "source_recall": 0.9926348039215688
+          },
+          "S": {
+            "rows": 228,
+            "source_symbols": 59,
+            "row_recall": 0.07017543859649122,
+            "source_recall": 0.05649717514124293
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "udp",
+          "M": {
+            "rows": 1226,
+            "source_symbols": 145,
+            "row_recall": 0.9738988580750407,
+            "source_recall": 0.9763546798029555
+          },
+          "S": {
+            "rows": 28,
+            "source_symbols": 6,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12322,
+            "source_symbols": 1357,
+            "row_recall": 0.9827950008115566,
+            "source_recall": 0.9903498613889181
+          },
+          "S": {
+            "rows": 192,
+            "source_symbols": 58,
+            "row_recall": 0.19791666666666666,
+            "source_recall": 0.05172413793103448
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "udp",
+          "M": {
+            "rows": 950,
+            "source_symbols": 132,
+            "row_recall": 0.9957894736842106,
+            "source_recall": 0.9962121212121212
+          },
+          "S": {
+            "rows": 36,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        }
+      ],
+      "confusion_B_M_S": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          42544,
+          600
+        ],
+        [
+          0,
+          590,
+          15894
+        ]
+      ],
+      "row_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "1": {
+          "precision": 0.9863216951824547,
+          "recall": 0.9860930836269238,
+          "f1-score": 0.9862073761561464,
+          "support": 43144.0
+        },
+        "2": {
+          "precision": 0.9636231356857039,
+          "recall": 0.9642077165736471,
+          "f1-score": 0.9639153374977257,
+          "support": 16484.0
+        },
+        "accuracy": 0.9800469483568075,
+        "macro avg": {
+          "precision": 0.9833149436227195,
+          "recall": 0.983433600066857,
+          "f1-score": 0.9833742378846241,
+          "support": 59640.0
+        },
+        "weighted avg": {
+          "precision": 0.9800507542856299,
+          "recall": 0.9800469483568075,
+          "f1-score": 0.9800488172399948,
+          "support": 59640.0
+        }
+      }
+    },
+    "0.02": {
+      "vs_historical": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 860,
+          "fixed": 68,
+          "broken": 740,
+          "source_recall": 0.9807493458147996
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 578,
+          "fixed": 68,
+          "broken": 14,
+          "source_recall": 0.32788077062886223
+        },
+        "target_fixed": 66,
+        "target_remaining": 512,
+        "outside_target_S_broken": 14,
+        "total_errors": 1438,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 12
+      },
+      "vs_B69": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 860,
+          "fixed": 12,
+          "broken": 302,
+          "source_recall": 0.9807493458147996
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 578,
+          "fixed": 12,
+          "broken": 6,
+          "source_recall": 0.32788077062886223
+        },
+        "target_fixed": 66,
+        "target_remaining": 512,
+        "outside_target_S_broken": 0,
+        "total_errors": 1438,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 12
+      },
+      "hard_rates": {
+        "M": {
+          "rows": 41890,
+          "source_symbols": 4401,
+          "row_recall": 0.9823346860825973,
+          "source_recall": 0.9807401276044767
+        },
+        "S": {
+          "rows": 652,
+          "source_symbols": 189,
+          "row_recall": 0.12269938650306748,
+          "source_recall": 0.07357016880826404
+        }
+      },
+      "cells": [
+        {
+          "fold": 0,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12772,
+            "source_symbols": 1360,
+            "row_recall": 0.983401190103351,
+            "source_recall": 0.9824387254901962
+          },
+          "S": {
+            "rows": 144,
+            "source_symbols": 53,
+            "row_recall": 0.1527777777777778,
+            "source_recall": 0.10512129380053908
+          }
+        },
+        {
+          "fold": 0,
+          "protocol": "udp",
+          "M": {
+            "rows": 1230,
+            "source_symbols": 155,
+            "row_recall": 1.0,
+            "source_recall": 1.0
+          },
+          "S": {
+            "rows": 24,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "tcp",
+          "M": {
+            "rows": 13390,
+            "source_symbols": 1360,
+            "row_recall": 0.9861090365944735,
+            "source_recall": 0.9800081699346406
+          },
+          "S": {
+            "rows": 228,
+            "source_symbols": 59,
+            "row_recall": 0.07894736842105263,
+            "source_recall": 0.07344632768361582
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "udp",
+          "M": {
+            "rows": 1226,
+            "source_symbols": 145,
+            "row_recall": 0.967373572593801,
+            "source_recall": 0.9694581280788176
+          },
+          "S": {
+            "rows": 28,
+            "source_symbols": 6,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12322,
+            "source_symbols": 1357,
+            "row_recall": 0.9758156143483201,
+            "source_recall": 0.9778222269010773
+          },
+          "S": {
+            "rows": 192,
+            "source_symbols": 58,
+            "row_recall": 0.20833333333333334,
+            "source_recall": 0.06896551724137931
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "udp",
+          "M": {
+            "rows": 950,
+            "source_symbols": 132,
+            "row_recall": 0.9957894736842106,
+            "source_recall": 0.9962121212121212
+          },
+          "S": {
+            "rows": 36,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        }
+      ],
+      "confusion_B_M_S": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          42284,
+          860
+        ],
+        [
+          0,
+          578,
+          15906
+        ]
+      ],
+      "row_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "1": {
+          "precision": 0.9865148616490131,
+          "recall": 0.9800667531985907,
+          "f1-score": 0.9832802362625863,
+          "support": 43144.0
+        },
+        "2": {
+          "precision": 0.9487057139448885,
+          "recall": 0.9649356952196069,
+          "f1-score": 0.9567518796992481,
+          "support": 16484.0
+        },
+        "accuracy": 0.9758886653252851,
+        "macro avg": {
+          "precision": 0.9784068585313005,
+          "recall": 0.9816674828060657,
+          "f1-score": 0.9800107053206114,
+          "support": 59640.0
+        },
+        "weighted avg": {
+          "precision": 0.976067440973383,
+          "recall": 0.9758886653252851,
+          "f1-score": 0.9759513832708825,
+          "support": 59640.0
+        }
+      }
+    },
+    "0.05": {
+      "vs_historical": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 1644,
+          "fixed": 68,
+          "broken": 1524,
+          "source_recall": 0.9537355471735326
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 542,
+          "fixed": 102,
+          "broken": 12,
+          "source_recall": 0.38444202108324244
+        },
+        "target_fixed": 96,
+        "target_remaining": 482,
+        "outside_target_S_broken": 12,
+        "total_errors": 2186,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 25
+      },
+      "vs_B69": {
+        "B": {
+          "rows": 12,
+          "errors": 0,
+          "fixed": 0,
+          "broken": 0,
+          "source_recall": 1.0
+        },
+        "M": {
+          "rows": 43144,
+          "errors": 1644,
+          "fixed": 0,
+          "broken": 1074,
+          "source_recall": 0.9537355471735326
+        },
+        "S": {
+          "rows": 16484,
+          "errors": 542,
+          "fixed": 42,
+          "broken": 0,
+          "source_recall": 0.38444202108324244
+        },
+        "target_fixed": 96,
+        "target_remaining": 482,
+        "outside_target_S_broken": 0,
+        "total_errors": 2186,
+        "normal_to_threat": 0,
+        "threat_to_normal": 0,
+        "target_sources_with_repairs": 25
+      },
+      "hard_rates": {
+        "M": {
+          "rows": 41890,
+          "source_symbols": 4401,
+          "row_recall": 0.9636190021484842,
+          "source_recall": 0.9530756898684642
+        },
+        "S": {
+          "rows": 652,
+          "source_symbols": 189,
+          "row_recall": 0.17791411042944785,
+          "source_recall": 0.15197782816830435
+        }
+      },
+      "cells": [
+        {
+          "fold": 0,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12772,
+            "source_symbols": 1360,
+            "row_recall": 0.9622611963670529,
+            "source_recall": 0.9506425070028012
+          },
+          "S": {
+            "rows": 144,
+            "source_symbols": 53,
+            "row_recall": 0.25,
+            "source_recall": 0.20485175202156336
+          }
+        },
+        {
+          "fold": 0,
+          "protocol": "udp",
+          "M": {
+            "rows": 1230,
+            "source_symbols": 155,
+            "row_recall": 0.9934959349593496,
+            "source_recall": 0.9870967741935484
+          },
+          "S": {
+            "rows": 24,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "tcp",
+          "M": {
+            "rows": 13390,
+            "source_symbols": 1360,
+            "row_recall": 0.9737117251680358,
+            "source_recall": 0.9600510620915031
+          },
+          "S": {
+            "rows": 228,
+            "source_symbols": 59,
+            "row_recall": 0.14035087719298245,
+            "source_recall": 0.1807909604519774
+          }
+        },
+        {
+          "fold": 1,
+          "protocol": "udp",
+          "M": {
+            "rows": 1226,
+            "source_symbols": 145,
+            "row_recall": 0.964110929853181,
+            "source_recall": 0.9625615763546796
+          },
+          "S": {
+            "rows": 28,
+            "source_symbols": 6,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "tcp",
+          "M": {
+            "rows": 12322,
+            "source_symbols": 1357,
+            "row_recall": 0.9491965590001623,
+            "source_recall": 0.9421798785837104
+          },
+          "S": {
+            "rows": 192,
+            "source_symbols": 58,
+            "row_recall": 0.25,
+            "source_recall": 0.12413793103448276
+          }
+        },
+        {
+          "fold": 2,
+          "protocol": "udp",
+          "M": {
+            "rows": 950,
+            "source_symbols": 132,
+            "row_recall": 0.9873684210526316,
+            "source_recall": 0.9886363636363636
+          },
+          "S": {
+            "rows": 36,
+            "source_symbols": 7,
+            "row_recall": 0.0,
+            "source_recall": 0.0
+          }
+        }
+      ],
+      "confusion_B_M_S": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          41500,
+          1644
+        ],
+        [
+          0,
+          542,
+          15942
+        ]
+      ],
+      "row_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "1": {
+          "precision": 0.9871081299652729,
+          "recall": 0.9618950491377711,
+          "f1-score": 0.9743385063273308,
+          "support": 43144.0
+        },
+        "2": {
+          "precision": 0.9065165472534971,
+          "recall": 0.967119631157486,
+          "f1-score": 0.9358379806281186,
+          "support": 16484.0
+        },
+        "accuracy": 0.963346747149564,
+        "macro avg": {
+          "precision": 0.9645415590729233,
+          "recall": 0.9763382267650856,
+          "f1-score": 0.9700588289851497,
+          "support": 59640.0
+        },
+        "weighted avg": {
+          "precision": 0.9648358806865925,
+          "recall": 0.963346747149564,
+          "f1-score": 0.9637024444946389,
+          "support": 59640.0
+        }
+      }
+    }
+  },
+  "role_geometry": [
+    {
+      "fold": 0,
+      "role": "fit",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 40098,
+          "source_symbols": 4333,
+          "row_recall": 0.9990024440121702,
+          "source_recall": 0.9981075467343642
+        },
+        "S": {
+          "rows": 650,
+          "source_symbols": 186,
+          "row_recall": 0.6384615384615384,
+          "source_recall": 0.4260752688172043
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 40098,
+          "source_symbols": 4333,
+          "row_recall": 0.9936156416778892,
+          "source_recall": 0.9902543785419391
+        },
+        "S": {
+          "rows": 650,
+          "source_symbols": 186,
+          "row_recall": 0.7461538461538462,
+          "source_recall": 0.5869175627240143
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.950923354457015,
+        "source_standardized_pAUC_1pct": 0.7468775463769388
+      }
+    },
+    {
+      "fold": 0,
+      "role": "fit",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 4598,
+          "source_symbols": 454,
+          "row_recall": 1.0,
+          "source_recall": 1.0
+        },
+        "S": {
+          "rows": 84,
+          "source_symbols": 20,
+          "row_recall": 0.6428571428571429,
+          "source_recall": 0.325
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 4598,
+          "source_symbols": 454,
+          "row_recall": 0.9939103958242714,
+          "source_recall": 0.9900881057268722
+        },
+        "S": {
+          "rows": 84,
+          "source_symbols": 20,
+          "row_recall": 0.8809523809523809,
+          "source_recall": 0.75
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.968259649674848,
+        "source_standardized_pAUC_1pct": 0.8480840324972883
+      }
+    },
+    {
+      "fold": 0,
+      "role": "calibration",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 9926,
+          "source_symbols": 1081,
+          "row_recall": 0.9901269393511989,
+          "source_recall": 0.9925785787317506
+        },
+        "S": {
+          "rows": 139,
+          "source_symbols": 41,
+          "row_recall": 0.014388489208633094,
+          "source_recall": 0.024390243902439025
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 9926,
+          "source_symbols": 1081,
+          "row_recall": 0.9901269393511989,
+          "source_recall": 0.9925785787317506
+        },
+        "S": {
+          "rows": 139,
+          "source_symbols": 41,
+          "row_recall": 0.014388489208633094,
+          "source_recall": 0.024390243902439025
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.763200987841643,
+        "source_standardized_pAUC_1pct": 0.5027643467966669
+      }
+    },
+    {
+      "fold": 0,
+      "role": "calibration",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 1248,
+          "source_symbols": 122,
+          "row_recall": 0.9967948717948718,
+          "source_recall": 0.9918032786885246
+        },
+        "S": {
+          "rows": 30,
+          "source_symbols": 8,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 1248,
+          "source_symbols": 122,
+          "row_recall": 0.9967948717948718,
+          "source_recall": 0.9918032786885246
+        },
+        "S": {
+          "rows": 30,
+          "source_symbols": 8,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.5845041684181059,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    },
+    {
+      "fold": 0,
+      "role": "evaluation",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 12772,
+          "source_symbols": 1360,
+          "row_recall": 0.9888819292201692,
+          "source_recall": 0.9898835784313726
+        },
+        "S": {
+          "rows": 144,
+          "source_symbols": 53,
+          "row_recall": 0.09722222222222222,
+          "source_recall": 0.039083557951482474
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 12772,
+          "source_symbols": 1360,
+          "row_recall": 0.9901346695897275,
+          "source_recall": 0.9928247549019609
+        },
+        "S": {
+          "rows": 144,
+          "source_symbols": 53,
+          "row_recall": 0.09722222222222222,
+          "source_recall": 0.039083557951482474
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.7507904381375656,
+        "source_standardized_pAUC_1pct": 0.5112052951454601
+      }
+    },
+    {
+      "fold": 0,
+      "role": "evaluation",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 1230,
+          "source_symbols": 155,
+          "row_recall": 1.0,
+          "source_recall": 1.0
+        },
+        "S": {
+          "rows": 24,
+          "source_symbols": 7,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 1230,
+          "source_symbols": 155,
+          "row_recall": 0.9967479674796748,
+          "source_recall": 0.9935483870967742
+        },
+        "S": {
+          "rows": 24,
+          "source_symbols": 7,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.7752319508448531,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    },
+    {
+      "fold": 1,
+      "role": "fit",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 39788,
+          "source_symbols": 4357,
+          "row_recall": 0.9994973358801649,
+          "source_recall": 0.9990819371126922
+        },
+        "S": {
+          "rows": 558,
+          "source_symbols": 174,
+          "row_recall": 0.6075268817204301,
+          "source_recall": 0.4339080459770115
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 39788,
+          "source_symbols": 4357,
+          "row_recall": 0.9953754900975168,
+          "source_recall": 0.9912663803184806
+        },
+        "S": {
+          "rows": 558,
+          "source_symbols": 174,
+          "row_recall": 0.7222222222222222,
+          "source_recall": 0.5842911877394635
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.9519274516989936,
+        "source_standardized_pAUC_1pct": 0.7570021266533845
+      }
+    },
+    {
+      "fold": 1,
+      "role": "fit",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 4840,
+          "source_symbols": 462,
+          "row_recall": 1.0,
+          "source_recall": 1.0
+        },
+        "S": {
+          "rows": 68,
+          "source_symbols": 19,
+          "row_recall": 0.7941176470588235,
+          "source_recall": 0.631578947368421
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 4840,
+          "source_symbols": 462,
+          "row_recall": 0.9962809917355372,
+          "source_recall": 0.9902597402597403
+        },
+        "S": {
+          "rows": 68,
+          "source_symbols": 19,
+          "row_recall": 0.8529411764705882,
+          "source_recall": 0.7368421052631579
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.9779657477025905,
+        "source_standardized_pAUC_1pct": 0.8620351701547155
+      }
+    },
+    {
+      "fold": 1,
+      "role": "calibration",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 9618,
+          "source_symbols": 1057,
+          "row_recall": 0.9933458099396965,
+          "source_recall": 0.9903815830968148
+        },
+        "S": {
+          "rows": 147,
+          "source_symbols": 47,
+          "row_recall": 0.027210884353741496,
+          "source_recall": 0.0035460992907801418
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 9618,
+          "source_symbols": 1057,
+          "row_recall": 0.9933458099396965,
+          "source_recall": 0.9903815830968148
+        },
+        "S": {
+          "rows": 147,
+          "source_symbols": 47,
+          "row_recall": 0.027210884353741496,
+          "source_recall": 0.0035460992907801418
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.7332851495421009,
+        "source_standardized_pAUC_1pct": 0.4983140730547625
+      }
+    },
+    {
+      "fold": 1,
+      "role": "calibration",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 1010,
+          "source_symbols": 124,
+          "row_recall": 0.996039603960396,
+          "source_recall": 0.9919354838709677
+        },
+        "S": {
+          "rows": 42,
+          "source_symbols": 10,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 1010,
+          "source_symbols": 124,
+          "row_recall": 0.996039603960396,
+          "source_recall": 0.9919354838709677
+        },
+        "S": {
+          "rows": 42,
+          "source_symbols": 10,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.5967185099846447,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    },
+    {
+      "fold": 1,
+      "role": "evaluation",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 13390,
+          "source_symbols": 1360,
+          "row_recall": 0.9932785660941,
+          "source_recall": 0.9926348039215688
+        },
+        "S": {
+          "rows": 228,
+          "source_symbols": 59,
+          "row_recall": 0.07017543859649122,
+          "source_recall": 0.05649717514124293
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 13390,
+          "source_symbols": 1360,
+          "row_recall": 0.9914861837191934,
+          "source_recall": 0.9902450980392159
+        },
+        "S": {
+          "rows": 228,
+          "source_symbols": 59,
+          "row_recall": 0.07017543859649122,
+          "source_recall": 0.05649717514124293
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.7367004647604789,
+        "source_standardized_pAUC_1pct": 0.5149844993216901
+      }
+    },
+    {
+      "fold": 1,
+      "role": "evaluation",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 1226,
+          "source_symbols": 145,
+          "row_recall": 0.9738988580750407,
+          "source_recall": 0.9763546798029555
+        },
+        "S": {
+          "rows": 28,
+          "source_symbols": 6,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 1226,
+          "source_symbols": 145,
+          "row_recall": 0.9902120717781403,
+          "source_recall": 0.9911330049261085
+        },
+        "S": {
+          "rows": 28,
+          "source_symbols": 6,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.5367000748709807,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    },
+    {
+      "fold": 2,
+      "role": "fit",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 40694,
+          "source_symbols": 4360,
+          "row_recall": 0.999115348700054,
+          "source_recall": 0.9985719746614241
+        },
+        "S": {
+          "rows": 650,
+          "source_symbols": 182,
+          "row_recall": 0.6507692307692308,
+          "source_recall": 0.43589743589743585
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 40694,
+          "source_symbols": 4360,
+          "row_recall": 0.9940040300781442,
+          "source_recall": 0.9902981651376146
+        },
+        "S": {
+          "rows": 650,
+          "source_symbols": 182,
+          "row_recall": 0.7646153846153846,
+          "source_recall": 0.6208791208791209
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.9565897140414196,
+        "source_standardized_pAUC_1pct": 0.757786923737323
+      }
+    },
+    {
+      "fold": 2,
+      "role": "fit",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 4862,
+          "source_symbols": 474,
+          "row_recall": 1.0,
+          "source_recall": 1.0
+        },
+        "S": {
+          "rows": 62,
+          "source_symbols": 19,
+          "row_recall": 0.7096774193548387,
+          "source_recall": 0.5526315789473685
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 4862,
+          "source_symbols": 474,
+          "row_recall": 0.9950637597696421,
+          "source_recall": 0.990506329113924
+        },
+        "S": {
+          "rows": 62,
+          "source_symbols": 19,
+          "row_recall": 0.7419354838709677,
+          "source_recall": 0.5789473684210527
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.9685209860093293,
+        "source_standardized_pAUC_1pct": 0.7884157630256547
+      }
+    },
+    {
+      "fold": 2,
+      "role": "calibration",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 9780,
+          "source_symbols": 1057,
+          "row_recall": 0.9903885480572597,
+          "source_recall": 0.9905370095057892
+        },
+        "S": {
+          "rows": 91,
+          "source_symbols": 40,
+          "row_recall": 0.04395604395604396,
+          "source_recall": 0.05
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 9780,
+          "source_symbols": 1057,
+          "row_recall": 0.9903885480572597,
+          "source_recall": 0.9905370095057892
+        },
+        "S": {
+          "rows": 91,
+          "source_symbols": 40,
+          "row_recall": 0.04395604395604396,
+          "source_recall": 0.05
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.7876887716122276,
+        "source_standardized_pAUC_1pct": 0.5113219836172339
+      }
+    },
+    {
+      "fold": 2,
+      "role": "calibration",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 1264,
+          "source_symbols": 125,
+          "row_recall": 0.9936708860759493,
+          "source_recall": 0.992
+        },
+        "S": {
+          "rows": 40,
+          "source_symbols": 9,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 1264,
+          "source_symbols": 125,
+          "row_recall": 0.9936708860759493,
+          "source_recall": 0.992
+        },
+        "S": {
+          "rows": 40,
+          "source_symbols": 9,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.5737678932125301,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    },
+    {
+      "fold": 2,
+      "role": "evaluation",
+      "protocol": "tcp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 12322,
+          "source_symbols": 1357,
+          "row_recall": 0.9827950008115566,
+          "source_recall": 0.9903498613889181
+        },
+        "S": {
+          "rows": 192,
+          "source_symbols": 58,
+          "row_recall": 0.19791666666666666,
+          "source_recall": 0.05172413793103448
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 12322,
+          "source_symbols": 1357,
+          "row_recall": 0.9902613212140886,
+          "source_recall": 0.9980219524492883
+        },
+        "S": {
+          "rows": 192,
+          "source_symbols": 58,
+          "row_recall": 0.14583333333333334,
+          "source_recall": 0.022988505747126436
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.720154053542857,
+        "source_standardized_pAUC_1pct": 0.5176728269474343
+      }
+    },
+    {
+      "fold": 2,
+      "role": "evaluation",
+      "protocol": "udp",
+      "frozen_cut_rates": {
+        "M": {
+          "rows": 950,
+          "source_symbols": 132,
+          "row_recall": 0.9957894736842106,
+          "source_recall": 0.9962121212121212
+        },
+        "S": {
+          "rows": 36,
+          "source_symbols": 7,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "own_role_oracle_rates": {
+        "M": {
+          "rows": 950,
+          "source_symbols": 132,
+          "row_recall": 0.991578947368421,
+          "source_recall": 0.9924242424242424
+        },
+        "S": {
+          "rows": 36,
+          "source_symbols": 7,
+          "row_recall": 0.0,
+          "source_recall": 0.0
+        }
+      },
+      "ranking": {
+        "source_AUC": 0.5041836110017969,
+        "source_standardized_pAUC_1pct": 0.49748743718592964
+      }
+    }
+  ],
+  "calibration_thresholds": {
+    "0": {
+      "0.001": {
+        "tcp": 0.2603451992662991,
+        "udp": 0.36241332285540107
+      },
+      "0.005": {
+        "tcp": 0.19144039875937535,
+        "udp": 0.36241332285540107
+      },
+      "0.01": {
+        "tcp": 0.14406400436875752,
+        "udp": 0.2657130291303806
+      },
+      "0.02": {
+        "tcp": 0.09711860933018247,
+        "udp": 0.23105558707828558
+      },
+      "0.05": {
+        "tcp": 0.053968631737723864,
+        "udp": 0.09073458983985293
+      }
+    },
+    "1": {
+      "0.001": {
+        "tcp": 0.354209240950828,
+        "udp": 0.48799417681337537
+      },
+      "0.005": {
+        "tcp": 0.21664721898252767,
+        "udp": 0.48799417681337537
+      },
+      "0.01": {
+        "tcp": 0.13404653840575093,
+        "udp": 0.1507436702503384
+      },
+      "0.02": {
+        "tcp": 0.08171961203540686,
+        "udp": 0.127680734734731
+      },
+      "0.05": {
+        "tcp": 0.05542661230895268,
+        "udp": 0.10735524293576934
+      }
+    },
+    "2": {
+      "0.001": {
+        "tcp": 0.41786727260103246,
+        "udp": 0.24406767659843664
+      },
+      "0.005": {
+        "tcp": 0.1743679142854351,
+        "udp": 0.24406767659843664
+      },
+      "0.01": {
+        "tcp": 0.12370711804377263,
+        "udp": 0.19589647068080066
+      },
+      "0.02": {
+        "tcp": 0.09160272615339397,
+        "udp": 0.15362486936837516
+      },
+      "0.05": {
+        "tcp": 0.048727248063765535,
+        "udp": 0.07740512456164926
+      }
+    }
+  },
+  "primary_all_M_budgets_pass": false,
+  "decision_oracle_unions": {
+    "B+R": {
+      "scope": "Label-aware union of existing decisions only, not trainable routing or bound on all blends",
+      "target_correct_by_any": 64,
+      "target_common_wrong": 514,
+      "all_rows_oracle_errors": 972,
+      "all_rows_all_models_correct": 58230
+    },
+    "B+Q+R": {
+      "scope": "Label-aware union of existing decisions only, not trainable routing or bound on all blends",
+      "target_correct_by_any": 70,
+      "target_common_wrong": 508,
+      "all_rows_oracle_errors": 934,
+      "all_rows_all_models_correct": 58174
+    }
+  },
+  "B_R_error_overlap": [
+    {
+      "label": 0,
+      "rows": 12,
+      "both_wrong": 0,
+      "B_only_correct": 0,
+      "R_only_correct": 0,
+      "both_correct": 12
+    },
+    {
+      "label": 1,
+      "rows": 43144,
+      "both_wrong": 390,
+      "B_only_correct": 242,
+      "R_only_correct": 180,
+      "both_correct": 42332
+    },
+    {
+      "label": 2,
+      "rows": 16484,
+      "both_wrong": 582,
+      "B_only_correct": 14,
+      "R_only_correct": 2,
+      "both_correct": 15886
+    }
+  ],
+  "quality_acceptance": false,
+  "inputs_sha256": {
+    "artifacts\\v69_support_control_20260921\\B_small_sources_budget0.01_oof.parquet": "4da199810c9865a9b3234d862a8098247bd8374f56a3f978e8e53649fd27ce01",
+    "artifacts\\v71_resolution_20260921\\Q_old_bins_budget0.01_oof.parquet": "eb2eaee6a9b8cb03060c5e45c6bdc1e6445d2dd6ba7a90e14c1e728f1d0822c3",
+    "artifacts\\v71_resolution_20260921\\R_observed_budget0.01_oof.parquet": "745656fcb1ab3337bfc54f4c9942ae56ec888e49e601a1193737aedd46c0bb35",
+    "artifacts\\v69_support_control_20260921\\fold0_roles.parquet": "6c8b9533db5fde57112dd8301018d99227fb2307aef84814295af27fcbdfaec0",
+    "artifacts\\v71_resolution_20260921\\fold0_roles.parquet": "f4f51d33765a98054611f8efc787be2f21fcfdf36d16978c2591feb24fac98aa",
+    "artifacts\\v69_support_control_20260921\\fold0\\B_small_sources\\fit.parquet": "b703a31967e66c454dcd9f60f417f1f44ba8612289754813b29089dcf6791b77",
+    "artifacts\\v71_resolution_20260921\\fold0\\R_observed\\fit.parquet": "584f0cdb4c8b003f92c151071e2f5434c09b9a9a7cafd150aa34946f201c8d6e",
+    "artifacts\\v69_support_control_20260921\\fold0\\B_small_sources\\calibration.parquet": "fb5e463ffc46aa62caeaf534dc298a5b7a7ceb3f9f15772735b1a29398148df7",
+    "artifacts\\v71_resolution_20260921\\fold0\\R_observed\\calibration.parquet": "5d16ec36eed74efa447e3069b259c87f75373ff3664a4f572c41684d52de1a48",
+    "artifacts\\v69_support_control_20260921\\fold0\\B_small_sources\\evaluation.parquet": "bc08dd35ddf32fe99729c883254c5bf9a6255c182c8d849d5c5e321d219e67a8",
+    "artifacts\\v71_resolution_20260921\\fold0\\R_observed\\evaluation.parquet": "38c35ec93e0bcb2d78476acb6a1cb9a802ee0a6611a4a30b094d0ef30b11fd0b",
+    "artifacts\\v69_support_control_20260921\\fold1_roles.parquet": "e958cccbcd16e715aee13bef8f5a8f21c1fc9ced6ab2d9bb00b0d4450b3c90b1",
+    "artifacts\\v71_resolution_20260921\\fold1_roles.parquet": "1c652ba225e715e28bfd95ce636aefa943bad07c2c061859cc4a5a7bd1d4f04c",
+    "artifacts\\v69_support_control_20260921\\fold1\\B_small_sources\\fit.parquet": "7b9a6e21018ba1172d7ffbfc1b4a29ca10e85193cd35a32d1232ff1bc2c82c9e",
+    "artifacts\\v71_resolution_20260921\\fold1\\R_observed\\fit.parquet": "69786244aae072fa4f7af74d24f04ee6bc88845cf46b78279fe4dae8be0a9b77",
+    "artifacts\\v69_support_control_20260921\\fold1\\B_small_sources\\calibration.parquet": "850a77b523f2c2c420d351dbd5189fcacf48f9b08da0bbb998f0000dcf811885",
+    "artifacts\\v71_resolution_20260921\\fold1\\R_observed\\calibration.parquet": "f5efbcd98cd12ec54a8709b8d14c7f03b21a831034b5034910ac8378984de309",
+    "artifacts\\v69_support_control_20260921\\fold1\\B_small_sources\\evaluation.parquet": "0540a560a5aad61b774c1c3efcee1c0fc205a0624d499abdc3d629aab9199ef3",
+    "artifacts\\v71_resolution_20260921\\fold1\\R_observed\\evaluation.parquet": "52d41e13d1b05322eb9701500ae569702faa85676f8a8bd68560fdc01ca28a57",
+    "artifacts\\v69_support_control_20260921\\fold2_roles.parquet": "e1029e21a4a8a5217f464ec1affcc4419fc9811a5f386fbfc0bf8e0a84ba4507",
+    "artifacts\\v71_resolution_20260921\\fold2_roles.parquet": "62d214ecae8bcd07214dcb9bb48bdaf6fb2b7a46a43c064ca0531fe26534641b",
+    "artifacts\\v69_support_control_20260921\\fold2\\B_small_sources\\fit.parquet": "6c80bc41a1ea467b4fe24c9e2e222524ff64560ca3aa5e2bbcd2b3bbbf6d4454",
+    "artifacts\\v71_resolution_20260921\\fold2\\R_observed\\fit.parquet": "63064b7d0ed41772011f4c3f197e24231775d08d48879ff9d82e2f681cc32232",
+    "artifacts\\v69_support_control_20260921\\fold2\\B_small_sources\\calibration.parquet": "b3b983e449353264a40448d2e49bf9928dbace7ef53a23747a177e412468ee8d",
+    "artifacts\\v71_resolution_20260921\\fold2\\R_observed\\calibration.parquet": "342ffae5d279945782f59eb5d439ad1e2d3b6218a8d371a0783b9a515264c6ff",
+    "artifacts\\v69_support_control_20260921\\fold2\\B_small_sources\\evaluation.parquet": "910a7a49eec91a434b263421b7cd7d9b1cb7d93cd44a22e9fe2f8afcb59fe297",
+    "artifacts\\v71_resolution_20260921\\fold2\\R_observed\\evaluation.parquet": "89e86425f44a383ec23dabcdb75c0a0b2139827b585faba20926e1b24990018c"
+  },
+  "script_sha256": "ba7084fc064e68958c25d265221cc7d38ec86a0c1e565facc86306c617f44aba"
+}

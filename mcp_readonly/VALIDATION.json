@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-09-19T15:39:29.862784+00:00",
+  "local_http_mcp_verified": true,
+  "latest_plan_fetch_verified": true,
+  "tests_passed": 8,
+  "powershell_scripts_parse": true,
+  "tunnel_client_version": "0.0.14",
+  "release_archive_sha256_verified": "784ab8da7b5a88f0109f1fd8aaf0a1c86067430b896dddf307ef7e3cc49fa1a5",
+  "tunnel_control_plane_authenticated": false,
+  "chatgpt_scan_tools_verified": false,
+  "chatgpt_tool_call_verified": false,
+  "new_model_training_executed": false,
+  "remaining": "Create an account-side tunnel and runtime key locally, connect it, scan/select the app in ChatGPT, and perform an actual tool call. Restart an older local server process to load code changes.",
+  "file_sha256": {
+    "mcp_readonly/server.py": "4cf2a4aeebfff2a82fa13f3b7b353cd21a10d11d58858cc6ae552147de2145b0",
+    "mcp_readonly/catalog.json": "44b5750857ba8ca70cc20e70dc393662e4c396bb8d96f2725789e6b2210d9c0d",
+    "mcp_readonly/connect_tunnel.ps1": "6311a70360d18730689efa4501f8ab924caf21bb9ab2b16aeafca4c5f53da9f2",
+    "mcp_readonly/start_local.ps1": "39ac32b1f17f0c9a216f4f437a441a46e895edb8d0ba71a3b404ecf7f3959663",
+    "mcp_readonly/check_connection.py": "970a801e14ffe618f3ad4f6dd5bd0ea8bedaa411b7c72e22d3138840e29cd1f7",
+    "docs/V63_RESEARCH_AND_TRAINING_PLAN.md": "93a85a24f5eb8d9412a48394709fa86ce1f2bd3ebb7080e85188fcebbe028576"
+  }
+}

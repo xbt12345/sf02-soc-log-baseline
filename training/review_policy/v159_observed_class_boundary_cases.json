@@ -1,0 +1,80 @@
+{
+  "version": "V159_actual_class_boundary_failure_cases",
+  "observed_cases": [
+    {
+      "name": "nonconvex_complete_input_capacity_not_equal_actual_learned_classification",
+      "observed": "B OOF errors7030, pure current input errors6824; only38 OOF repairs and2 outer M repairs",
+      "action": "Do not close training or transfer issues; qualify a single new mechanism before new official calls"
+    },
+    {
+      "name": "risk_common_descent_not_equal_exact_classification_feasible_direction",
+      "observed": "all six last proposals pass finite risk-only review but fail registered classification guard",
+      "action": "Separate OOF/deployment blockers; retain exact guards; no feasibility-set or convergence claim"
+    },
+    {
+      "name": "zero_output_initialization_hides_million_parameter_input_capacity",
+      "observed": "all initial hidden/input/opinion gradients0; fold1B accepted0 updates",
+      "action": "Candidate mechanism only, not certified causal explanation; do not mix initialization and constrained direction changes"
+    },
+    {
+      "name": "source_CE_sum_needs_row_error_propagation",
+      "observed": "25 saved tables exactly self-consistent; old point8eps test failed actual replay without saving actual failed sums",
+      "action": "Propagate separate per-row stableCE and clippedCE envelopes; keep predictions/support/errors exact"
+    },
+    {
+      "name": "source_table_must_match_its_actual_original_row_ledger",
+      "observed": "endpoint rows paired with accepted-source table caused2 mismatched root5605 reductions; correct pair passes",
+      "action": "Use original paired rows; save actual outputs before assert and preserve all failed costs"
+    },
+    {
+      "name": "partial_cache_has_full_q_provenance_boundary",
+      "observed": "first3 actual replay FIT rows saved, fullq not saved; actual fullargmax assertion inferred from later failure control flow",
+      "action": "State boundary explicitly; preserve frozen q identity; do not claim full actual q cache"
+    }
+  ],
+  "automatic_extra_fit": false,
+  "source_sha256": {
+    "training/v159_build_complete_result_records.py": "3a2b0e4c260cbf5e79b2098afe1cd3b79c2df3dfad2ee4585984e439c3f19524",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/final_delivery.json": "39eb8c7e411bfdab6c071ac219ab3e0e2ced680b5403f547d07eca1f2a7234c1",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/quality.json": "a19949ed538699e9e69201193b588f4d5c4548dee5a4aeccea0647bd8c17a6ee",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/verification.json": "b416349b4f7a4b7cca3ea892fcb0f367aa0b11bb2eff712bb185c3c18861a691",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/learning_qualification.json": "9cfc93360c98bb2a824597ad93b4bb6340d936e930b443149630c52b93d89e20",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/full_prediction_ledger.parquet": "37bf49ff2f0667b3c70f54f772b477e7d4b3fa190aa6047097413ba562c17907",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/ASA_prediction_ledger.parquet": "89cd539efc6a38c09c80f6b7c4e68a87fc5e70552d53f8a31066b03eeb259c86",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/all_fixed_cohort_quality.json": "8a1725092b656e3937b1274cd1e8e6ee0f197b0fbf9e1acc706a488938b13780",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/all_source_class_quality.parquet": "4a39dd794295f45c2bc9a60aaf9ffbcdba076b4262b198f593f356ed11a94438",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/evaluation_failure.json": "73be03e8ecad0f6b48e9d8e9d8f6610f064e71b0c217ee08b58f7aea6523bd3d",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/evaluation_failure_v5.json": "bb9de485612dc1d9e13f2d06ead734def647664fd9c51c8070e87e6b468f041e",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/evaluation_original_console.txt": "901f9cb3f1fe4d330d9563c13c24fb417c7e241d15b90fa9c6e0076c0028ad74",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/evaluation_v5_original_console.txt": "9749f3231a04422c1fe3c1b6e88d8886766424e1ed5698fad8b690e0c96d54c2",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/evaluation_v7_original_console.txt": "ace8ddbc1620081fbf90ffee008f70fc556b95765a956ee590af57bfc0fc11e6",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/run_seal.json": "5ddf026d6d6d66712cf904904413303c71ebdf6540b0188e6264c9ff513f4d7b",
+    "artifacts/v159_saved_proposal_guard_obstruction_review_20261002/review.json": "117291a712187bc13718c282226f764065880768b94bca8e49f9ecdc3c37b032",
+    "artifacts/v159_cached_evaluation_review_20261002/qualification.json": "a5f618d8382069c85f0219f06d20a42852a267340b9d6ee54324ec9487a266c9",
+    "artifacts/v159_evaluation_cached_continuation_20261002/run_seal.json": "2865a18b9535d836e3ef1031207fd9efaec718c771b0839f956f395e7fa2ca28",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_A/fit.json": "3fc254f26445010abe7e206575476f338c8bd0fbe9a6ff8593f99138d1262eb8",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_A/endpoint_OOF_rows.parquet": "6f355c39950fc2e62f4750bf5213f2080c4f7cc45e38c71dc5e8ab2dd0572df9",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_A/endpoint_deployment_rows.parquet": "ffcaa5767daf3664cca21f5adfc8b9dd6e4e77b64e36ddbbc598b9d15dbecc71",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_A/calls.jsonl": "044f2f8759f17936138d1a462c1ca5a03a51c943a87d5b3302344f9da5ecbf73",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_B/fit.json": "145387675b97414e1e8be6196df3ce8830203f6b2b3e58db7df95f83dd7eeacd",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_B/endpoint_OOF_rows.parquet": "6b161a320dcd0262ffc0687a519f0a6135f41553ef20a583ac18a46986a393d2",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_B/endpoint_deployment_rows.parquet": "e3c51d3e0a4b882a13aba22b11f20131b5d1b964ce788e4da7fca1b0bd5012c9",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold0_B/calls.jsonl": "97d3b45106f763ecd964e6e1ed785a24f492b347418ca9e01b9de2c49d067efa",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_A/fit.json": "2149a4ab48837b4f1a5e1e7bba6352bcef663e9f9e257d7611ad43d23333de9f",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_A/endpoint_OOF_rows.parquet": "1d8d5dd626c8949dc2d9f62a88f474d18a9176945e0696616c364f22a6fcfe73",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_A/endpoint_deployment_rows.parquet": "b5cfd68541320fa858d171088350fc6e5e8561dbe38e4c8727885ac330456e50",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_A/calls.jsonl": "caf7386e9e178ccb4e2f876df637a11160f96e42cc0c6b59a912cd80a9f11877",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_B/fit.json": "c684d36a2cacaa811337c5cf0e9bdefec501d4fcfc2c6932e414442a39a105d3",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_B/endpoint_OOF_rows.parquet": "85fb3a0162c47437730e9f22666fd06b4b7cb0da837314a5288ffa0414be758e",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_B/endpoint_deployment_rows.parquet": "607c28bae34b44f5a5da1bab9c2be3d0f02bde7723988b72d666ff740267498f",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold1_B/calls.jsonl": "8f89d2e4acb08f4bba864a803540ea5625ef2b4a5ee39f4c315020e5a439603a",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_A/fit.json": "facdecaa942e9354ca3320ea64d3fedd5b2f3a0d50b66d6c3e1ca7dcc7deea60",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_A/endpoint_OOF_rows.parquet": "f799dd791cdd242da5cc927656044bb678be9564ad494af8eea2ec87f72d3e4b",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_A/endpoint_deployment_rows.parquet": "ac76acfbcc9e85e0db1372119e4f4a93579d73abcec4fb1276236a536855bf78",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_A/calls.jsonl": "362614f4ad93662c597a4d54d55375fb762d82888b3c95306da858e4d11442bc",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_B/fit.json": "b79f51e319f2011a603107c26ec3ae880f9a763afec5e7a651816e6b9cffd68b",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_B/endpoint_OOF_rows.parquet": "2ab1fc207b4a1dd08d27907ac4b7354b784c325a36a3c8a1fa633d2de3524cae",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_B/endpoint_deployment_rows.parquet": "fe02e98c38e697186eab9b0a55dde2e562986e1e241ac8521a9bbf4864084a3f",
+    "artifacts/v159_class_boundary_numeric_trial_20261002/fold2_B/calls.jsonl": "2027922570e9eaf414c3dd69ebc5284c4cd3ffc8a54ffae92031a9f2dd3a82d2"
+  }
+}

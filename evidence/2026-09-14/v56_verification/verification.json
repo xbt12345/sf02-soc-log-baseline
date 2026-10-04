@@ -1,0 +1,153 @@
+{
+  "all_checks_passed": true,
+  "protocols": [
+    {
+      "protocol": "body",
+      "checked": [
+        {
+          "candidate": "uniform_0.1",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 2.801712204186236e-07
+        },
+        {
+          "candidate": "uniform_1.0",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 6.077890037395741e-08
+        },
+        {
+          "candidate": "uniform_10.0",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 8.31962698162877e-09
+        },
+        {
+          "candidate": "support_0.1",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 6.517273098179382e-07
+        },
+        {
+          "candidate": "support_1.0",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 3.8874710037823753e-07
+        },
+        {
+          "candidate": "support_10.0",
+          "full_original_rows_objective_checked": 44177,
+          "scaled_gradient": 4.205564287015895e-08
+        }
+      ],
+      "selection_verified": true
+    },
+    {
+      "protocol": "behavior_0",
+      "checked": [
+        {
+          "candidate": "uniform_0.1",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 3.141421738697125e-07
+        },
+        {
+          "candidate": "uniform_1.0",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 2.9835175375425354e-07
+        },
+        {
+          "candidate": "uniform_10.0",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 1.8326187010640962e-08
+        },
+        {
+          "candidate": "support_0.1",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 1.133083198261786e-06
+        },
+        {
+          "candidate": "support_1.0",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 2.7041617689401094e-07
+        },
+        {
+          "candidate": "support_10.0",
+          "full_original_rows_objective_checked": 32800,
+          "scaled_gradient": 1.0842451562702119e-07
+        }
+      ],
+      "selection_verified": true
+    },
+    {
+      "protocol": "behavior_1",
+      "checked": [
+        {
+          "candidate": "uniform_0.1",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 1.204557322852011e-07
+        },
+        {
+          "candidate": "uniform_1.0",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 3.612835087601853e-08
+        },
+        {
+          "candidate": "uniform_10.0",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 4.1287060171933766e-09
+        },
+        {
+          "candidate": "support_0.1",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 1.1306998286891323e-06
+        },
+        {
+          "candidate": "support_1.0",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 1.1958241487180726e-06
+        },
+        {
+          "candidate": "support_10.0",
+          "full_original_rows_objective_checked": 45040,
+          "scaled_gradient": 6.941361040954972e-09
+        }
+      ],
+      "selection_verified": true
+    },
+    {
+      "protocol": "behavior_2",
+      "checked": [
+        {
+          "candidate": "uniform_0.1",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 9.709627199002402e-08
+        },
+        {
+          "candidate": "uniform_1.0",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 6.056993695212799e-08
+        },
+        {
+          "candidate": "uniform_10.0",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 7.875537713641784e-09
+        },
+        {
+          "candidate": "support_0.1",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 1.5758733841783312e-06
+        },
+        {
+          "candidate": "support_1.0",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 4.3591071031889157e-07
+        },
+        {
+          "candidate": "support_10.0",
+          "full_original_rows_objective_checked": 54693,
+          "scaled_gradient": 1.9787896381131036e-08
+        }
+      ],
+      "selection_verified": true
+    }
+  ],
+  "score_rows_replayed": 6096420,
+  "max_probability_difference": 4.440892098500626e-16,
+  "max_original_row_objective_difference": 5.551115123125783e-17,
+  "scope": "All 24 residual objectives replayed on original rows, independent support counts and correction lookup, all calibration and selected evaluation scores, split/model bindings. Does not establish real incident independence, label semantics, posterior calibration or blind transfer."
+}

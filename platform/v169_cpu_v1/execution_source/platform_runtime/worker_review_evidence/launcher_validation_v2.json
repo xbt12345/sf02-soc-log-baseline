@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "wrong_host",
+      "actual_exit": 1,
+      "diagnostic_and_two_ZIPs_present": true,
+      "every_member_SHA256_and_CRC_verified": true,
+      "retry_refused_original_archive_unchanged": true,
+      "private_installation_absent": true
+    },
+    {
+      "case": "source_tamper",
+      "actual_exit": 1,
+      "diagnostic_and_two_ZIPs_present": true,
+      "every_member_SHA256_and_CRC_verified": true,
+      "retry_refused_original_archive_unchanged": true,
+      "private_installation_absent": true
+    },
+    {
+      "case": "full_new_evidence_and_original_input_references",
+      "all_new_checkpoints_and_outputs_preserved": true,
+      "latest_commit_and_complete_endpoint_in_review": true,
+      "original_input_not_deleted_or_repeated": true,
+      "traversal_absolute_and_backslash_paths_refused": true
+    }
+  ],
+  "Python38_launcher_syntax_passed": true,
+  "official_calls": 0,
+  "fits": 0,
+  "permanent_updates": 0,
+  "platform_numeric_qualification": false,
+  "source_sha256": {
+    "run_platform.py": "a1a2f4891a9b421d72799cf3d0d9ff0b3fe8170c35e2d35697d657d55602ed07",
+    "platform_runtime/root_offline_bootstrap_v1.py": "faadbd71a847c74db197f6da854be1d4cf2b075da9d5f7935d63ac6954652ffb"
+  }
+}

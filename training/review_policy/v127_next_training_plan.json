@@ -1,0 +1,329 @@
+{
+  "version": "V127",
+  "status": "design_only_runtime_not_implemented_or_sealed",
+  "latest_actual_training": "V125",
+  "classifier_fits_this_review": 0,
+  "optimizer_steps_this_review": 0,
+  "calibration_fits_this_review": 0,
+  "quality_acceptance": false,
+  "model_promoted": false,
+  "hypothesis": "Under a shared verified header projection and exact frozen base, Pre-LN body residuals may learn useful input-specific differences and improve full source-held classification beyond the unchanged original baseline and a numerically converged constant offset. This is untested.",
+  "evidence": {
+    "review": "docs/V127_EVIDENCE_BASED_PLAN_REFINEMENT.md",
+    "mechanism_probe": "artifacts/v127_plan_review_20260929/mechanism_probe.json",
+    "projection_probe": "artifacts/v127_plan_review_20260929/header_projection.json",
+    "parent_review": "artifacts/v126_frozen_review_20260929/verification.json",
+    "parent_delivery": "artifacts/v125_order_trial_20260929/delivery.json",
+    "risk_actions": "training/review_policy/v127_risk_actions.json"
+  },
+  "data": {
+    "external_training_data": false,
+    "full_scoring_rows": 2056871,
+    "ASA_original_rows": 112807,
+    "ASA_M_rows": 78748,
+    "ASA_S_rows": 34059,
+    "outer_folds": "unchanged V106 source/body-closed development folds",
+    "labels_unchanged": true,
+    "original_row_frequency_unchanged": true,
+    "body_input": "reuse verified V125 ordered bytes, lengths and raw-span ledger; no truncation or field removal",
+    "unknown_parameter_imputation": false,
+    "old_local_logical_batch_unit": true,
+    "all_legally_available_fit_rows": true,
+    "non_ASA_routes_frozen_but_full_task_scored": true,
+    "audit_slices_are_not_weights_or_inference_routes": true,
+    "source_support_resolution_separate": true,
+    "common_header_projection": {
+      "source": "training/v124_header.py:transform",
+      "base_input": "artifacts/v124_header_trial_20260929/B_header_ASA.npz",
+      "rows_verified": 112807,
+      "changed_original_input_rows": 682,
+      "raw_body_bytes_or_fact_values_changed": 0,
+      "cross_fold_input_merges": 0,
+      "empirical_input_collision_floor": 28,
+      "old_local_units_preserved": true,
+      "canonical_real_and_sanitized_clock_variants_equal": true,
+      "unknown_header_policy": "preserve raw and fail preflight; no claim arbitrary unseen-format recognition is solved",
+      "observed_cost_same_frozen_base": {
+        "new_M_errors": 0,
+        "new_S_errors": 40
+      },
+      "not_promoted_without_quality": true
+    }
+  },
+  "base": {
+    "source": "V125 A epoch25 per fold",
+    "frozen_parameters": true,
+    "frozen_buffers": true,
+    "eval_mode": true,
+    "optimizer_contains_base": false,
+    "shared_exact_base_across_arms": true,
+    "cache": "AH canonical-input float32 per-local per-member three-class logits, K=16; also retain original A0 scores as immutable quality comparator",
+    "hash_and_prediction_replay_before_after": true,
+    "base_freeze_exception": "Identical saved base shared by AH/K/W/P; raw-input A0 also retained. New bases only in preregistered conditional seed confirmation.",
+    "freeze_does_not_protect_all_combined_predictions": true
+  },
+  "arms": {
+    "A0": {
+      "role": "hard original-input quality reference",
+      "fits": 0,
+      "M_errors": 318,
+      "S_errors": 2074
+    },
+    "AH": {
+      "role": "canonical-input frozen reference; not replacement candidate",
+      "fits": 0,
+      "M_errors": 318,
+      "S_errors": 2114
+    },
+    "K": {
+      "role": "nonpromotable converged constant-offset control",
+      "module": "centered3class offset b=(u,v,-u-v)",
+      "optimizer": "L-BFGS-B",
+      "fits": 3
+    },
+    "W": {
+      "role": "nonpromotable norm-scheme control",
+      "module": "V125 BodyBranch Post-LN",
+      "schedule": "stable",
+      "fits": 3
+    },
+    "P": {
+      "role": "sole preregistered candidate",
+      "module": "Pre-LN BodyBranch plus final LayerNorm",
+      "schedule": "stable",
+      "fits": 3
+    }
+  },
+  "branch": {
+    "dimension": 64,
+    "layers": 2,
+    "heads": 4,
+    "feed_forward": 128,
+    "activation": "GELU",
+    "dropout": 0,
+    "positions": "same fixed sinusoidal",
+    "pooling": "masked mean",
+    "output": "zero-initialized shared additive three-class residual for all16 base members",
+    "layer_initialization_report_required": true,
+    "pretrained_download": false,
+    "norm_scheme_is_one_factor_including_final_norm": true,
+    "sequence_order_benefit_claim_allowed": false,
+    "matching_tensor_initializations_W_P": true,
+    "zero_residual_returns": "AH, not A0; the projection cost remains counted against A0"
+  },
+  "training": {
+    "seed": 12701,
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "primary_fits": 9,
+    "primary_network_fits": 6,
+    "primary_constant_offset_fits": 3,
+    "external_or_holdout_calibration_fits": 0,
+    "fit_order": [
+      [
+        0,
+        "K"
+      ],
+      [
+        0,
+        "W"
+      ],
+      [
+        0,
+        "P"
+      ],
+      [
+        1,
+        "P"
+      ],
+      [
+        1,
+        "W"
+      ],
+      [
+        1,
+        "K"
+      ],
+      [
+        2,
+        "W"
+      ],
+      [
+        2,
+        "K"
+      ],
+      [
+        2,
+        "P"
+      ]
+    ],
+    "epochs": 50,
+    "selector": "fixed epoch50; P only; all other endpoints diagnostic",
+    "checkpoints": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      15,
+      20,
+      25,
+      35,
+      50
+    ],
+    "expected_steps_per_arm": [
+      3650,
+      1600,
+      3650
+    ],
+    "expected_primary_steps": 17800,
+    "logical_old_local_batch_size": 256,
+    "loss": "original-row-frequency three-class mean-member CE with fixed base member logits",
+    "optimizer": "AdamW",
+    "weight_decay": 0.0003,
+    "schedules": {
+      "stable": {
+        "peak_lr": 0.0003,
+        "warmup_fraction": 0.1,
+        "formula": "lr(step)=peak_lr*min(step/warmup_steps,1), one-based step; warmup_steps=ceil(0.1*total_steps)",
+        "after_warmup": "constant"
+      }
+    },
+    "class_or_group_reweighting": false,
+    "gradient_clipping": false,
+    "base_unfreezing": false,
+    "adaptive_outer_selection": false,
+    "threshold_tuning": false,
+    "candidate_substitution": false,
+    "automatic_epoch_extension": false,
+    "budget_not_convergence_claim": true,
+    "microbatching": "common original-row mass denominator and one optimizer step per logical old-local batch; no dropped final batch",
+    "step_count_scope": "17800 AdamW updates for W/P only; K optimizer iterations/function calls are recorded separately and never claimed as zero training",
+    "learning_rate_causality_claim_allowed": false
+  },
+  "preupdate_contract": [
+    "Implement version-specific plan/runtime checker; do not run old V125 trainer under a new filename without adapting its contract.",
+    "Seal all actual imported project sources, dependencies, official data, folds, input mappings, base states and caches before any update; require seal in every fit.",
+    "Recheck exact row identities, class masses, old-local mapping and full byte coverage; keep every unsupported/unknown row.",
+    "Audit optimizer parameter IDs, no base gradient, tensor/buffer identity and exact base probability replay within registered numeric tolerance.",
+    "Verify common initialization tensors and schedules, deterministic small-batch forward/backward; zero head permits zero encoder gradient on first step only as an expected observation, not a permanent assumption.",
+    "New risk replay must reject missing constant control, hidden control promotion, identity changes, probability averaging before member loss, or attribution from date correlation alone.",
+    "Verify canonical text equivalence and body/fact preservation across all registered ASA rows and header variants; freeze both A0 and AH predictions, count all40 new errors.",
+    "K analytic gradient checked against float64 finite differences on fixed synthetic logits; no SOC fitting during this review. Fit K only in registered training stage.",
+    "Build new V127 runtime contract; the prior V126 checker and training entry are not compatible with this design."
+  ],
+  "required_diagnostics": [
+    "Per-step LR, module gradient/update norms, M/S loss contributions, finite checks and actual class mass.",
+    "Per-checkpoint original-row per-class member and ensemble CE, confusion, nonconflict errors; distinct rows separated from fold roles.",
+    "Branch M/S residual spread and pooled variation on train and held separately; spread alone is not an acceptance gate.",
+    "Every branch checkpoint compared with its train-frequency mean-constant replacement; no held labels used to form the constant.",
+    "Compare P with converged K as well as A0; certify numerical stationarity for the stated regularized CE target, not globally minimum0-1 error. A solver budget alone does not certify convergence.",
+    "Full112807 ASA, full2056871 task, 136unique/206roles priority fitS, historical62/186/192/1796,682header,root29,allremaining.",
+    "Each class/fold/root repairs and regressions; separate original-row macro and source-group macro, zero-recall groups and outside-top3.",
+    "All validation predictions come from registered models; official independent truth recount does not substitute model replay.",
+    "Track attention entropy, token/pooled representation diversity, residual output diversity separately; do not label high-entropy pooled collapse as low-entropy collapse.",
+    "Compute true parameter gradients in addition to logit-gradient absolute-mass summaries; class imbalance alone is not evidence of gradient starvation.",
+    "Decompose projection cost AH-A0, bias gap K-AH, model-versus-constant gap P-K, and final net P-A0; original-row paired transitions mandatory.",
+    "Track the40 newly wrong canonical-input S records as audit only; no lookup rule or extra weights."
+  ],
+  "mechanism_progress": {
+    "scope": "research only; P learned input alignment must be supported by constant and permuted interventions; never grants promotion",
+    "P_fit_nonconflict_S_errors_below_A0_and_K": true,
+    "P_fit_nonconflict_M_no_regression": true,
+    "real_branch_vs_train_constant_CE_and_decisions_reported": true,
+    "per_fold_evidence_required": true,
+    "higher_variance_is_not_success": true
+  },
+  "primary_quality": {
+    "candidate": "P",
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2074,
+    "ASA_total_errors_max": 2170,
+    "official_pass_line": false,
+    "paired_A0_M_S_recall_precision_F1_no_regression": true,
+    "full_task_each_class_recall_precision_F1_no_regression": true,
+    "at_least_two_improving_folds": true,
+    "outside_top3_S_roots_no_regression": true,
+    "S_group_macro_no_regression": true,
+    "S_zero_recall_groups_no_increase": true,
+    "additional_classification_benefit_over_K_required": true,
+    "ASA_total_errors_strictly_less_than_K": true,
+    "zero_prediction_flips_registered_harmless_header_variants": true,
+    "all_original_quality_protections_retained": true,
+    "hard_reference": "A0 original-input V125A, not the weaker AH",
+    "projection_cost_included": true,
+    "converged_K_required": true
+  },
+  "confirmation": {
+    "only_after_all_primary_quality_and_integrity_gates": true,
+    "seeds": [
+      12702,
+      12703
+    ],
+    "procedure": "For each seed/fold fit original A25, freeze weights, derive AH canonical cache, train P50; score relative to original A0 and AH; no alternate seed or arm. Confirms overall recipe, not isolated LN causal effect.",
+    "additional_fits": 12,
+    "additional_steps": 26700,
+    "model_promotion_automatic": false,
+    "independent_blind_test": false
+  },
+  "failure_actions": [
+    "Nonfinite state, changed sealed dependency, missing rows or base mutation: stop invalid execution, retain evidence, no silent resume with changed policy.",
+    "Near-constant dynamics alone triggers recorded diagnosis, not opportunistic stopping or hyperparameter change; complete registered budget if execution remains valid.",
+    "Failure to learn beyond constant offsets: reject stable-branch hypothesis within this architecture/data/budget; no automatic epochs or architecture enlargement.",
+    "Fit improves but source-held classification fails: reject transfer and stop this miniature body-branch route; next proposal must address observable behavior support with its own controls.",
+    "Any gate fails: preserve all arms, no control-as-candidate substitution or favorable-fold cherry-pick.",
+    "Header projection/variant equality fails or body/facts change: execution input contract invalid; no new fit until diagnosed and resealed.",
+    "K stationarity or finite-solution check fails: report control invalid, never call P input learning established from that comparison.",
+    "P only recovers the40 projection-induced errors but does not improve original A0: no new net classification benefit."
+  ],
+  "unresolved": [
+    "Pre-LN and warmup are externally supported but no V127 classification benefit has been trained or verified.",
+    "Known header forms are closed at the input boundary; arbitrary unseen formats and semantic sufficiency remain unproved.",
+    "Fine same-class support gaps and M/S label interpretation remain unresolved.",
+    "Frozen parameters do not protect combined predictions; full per-class regression gates remain.",
+    "Logit-gradient mass does not certify encoder gradients or disprove all feature starvation.",
+    "Old development folds remain observed; no independent blind-test claim.",
+    "V127 training runtime and prefit execution seal not implemented."
+  ],
+  "supersedes_design": "V126 only; never rewrites V125 training results or retroactively passes failed candidates",
+  "constant_control": {
+    "objective": "original-row mean-member3class CE(z_AH+b,y)+(1e-6/2)*sum(b**2)",
+    "parameterization": "b=(u,v,-u-v)",
+    "dtype": "float64",
+    "initial_parameters": [
+      0,
+      0
+    ],
+    "optimizer": "scipy.optimize.minimize L-BFGS-B, full train-side batch, analytic gradient",
+    "l2_coefficient": 1e-06,
+    "options": {
+      "maxiter": 1000,
+      "maxfun": 5000,
+      "gtol": 1e-08,
+      "ftol": 1e-15,
+      "maxls": 50
+    },
+    "independent_gradient_inf_max": 1e-07,
+    "objective_increase_tolerance": 1e-10,
+    "finite_solution_required": true,
+    "failure_action": "K invalid; cannot claim beating a well-optimized constant control; preserve receipts and diagnose before new version",
+    "optimality_scope": "Numerical convergence of the stated regularized CE target only, not globally minimum0-1 error",
+    "heldout_labels_or_calibration_set_used": false
+  },
+  "diagnostic_interventions": {
+    "not_training_or_selection": true,
+    "branch_off": "returns AH with exact base parameter/buffer hashes and registered numeric replay",
+    "fit_mean_constant": "train-original-frequency mean residual per fold; never use held labels or held frequencies to form it",
+    "permuted_residual": {
+      "seed": 12711,
+      "unit": "individual original row, within each fold-specific fit/held role",
+      "order": "sort original row_position then NumPy RNG(seed+100*fold+role_id) permutation, role_id fit0 held1",
+      "uses_labels": false,
+      "preserves_original_row_marginal_residual_distribution": true,
+      "purpose": "input/output alignment diagnosis only; not a valid deployable classifier or word-order ablation"
+    }
+  }
+}

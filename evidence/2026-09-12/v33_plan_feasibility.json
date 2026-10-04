@@ -1,0 +1,6474 @@
+{
+  "status": "plan_diagnostics_only_no_new_model",
+  "scope": "Post-hoc feasibility on already inspected v3.2 calibration/OOF outputs. Conditional cutoffs are diagnostic only, not validated or deployed v3.3 policy.",
+  "source_sha256": "cb2fd51e299ec907ff7ed79a8e5067fd93798cdc596f52c24817ede2a8256693",
+  "runtime": {
+    "cloud_round_seconds": 6091.460967930034,
+    "classifier_fit_seconds": 1214.8050385494716,
+    "other_seconds": 4876.655929380562,
+    "fit_fraction": 0.19942753387817896,
+    "note": "Residual is not a profiler breakdown; includes I/O, transforms, selection inference, serialization, diagnostics and other overhead."
+  },
+  "roles": [
+    {
+      "fold": 0,
+      "roles": {
+        "fit": {
+          "rows": 822747,
+          "nonempty_groups": 110136,
+          "blank_rows": 142435
+        },
+        "fit_selection": {
+          "rows": 1096998,
+          "nonempty_groups": 146732,
+          "blank_rows": 190027
+        },
+        "calibration": {
+          "rows": 274248,
+          "nonempty_groups": 36627,
+          "blank_rows": 47564
+        },
+        "outer": {
+          "rows": 685625,
+          "nonempty_groups": 91730,
+          "blank_rows": 118724
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "roles": {
+        "fit": {
+          "rows": 822747,
+          "nonempty_groups": 110057,
+          "blank_rows": 142492
+        },
+        "fit_selection": {
+          "rows": 1096998,
+          "nonempty_groups": 146739,
+          "blank_rows": 190000
+        },
+        "calibration": {
+          "rows": 274250,
+          "nonempty_groups": 36690,
+          "blank_rows": 47501
+        },
+        "outer": {
+          "rows": 685623,
+          "nonempty_groups": 91660,
+          "blank_rows": 118814
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "roles": {
+        "fit": {
+          "rows": 822747,
+          "nonempty_groups": 110176,
+          "blank_rows": 142394
+        },
+        "fit_selection": {
+          "rows": 1096998,
+          "nonempty_groups": 146746,
+          "blank_rows": 189982
+        },
+        "calibration": {
+          "rows": 274250,
+          "nonempty_groups": 36644,
+          "blank_rows": 47556
+        },
+        "outer": {
+          "rows": 685623,
+          "nonempty_groups": 91699,
+          "blank_rows": 118777
+        }
+      }
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "product": "<missing>",
+      "budget": 0.0001,
+      "outer_support": [
+        247299,
+        111728,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        23924,
+        26094,
+        30892
+      ],
+      "calibration_normal_groups_each_fold": [
+        3214,
+        3269,
+        3197
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          1,
+          111726,
+          0
+        ],
+        "rates": [
+          4.0436880052082705e-06,
+          0.9999820993842188,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          49,
+          111726,
+          0
+        ],
+        "rates": [
+          0.00019814071225520522,
+          0.9999820993842188,
+          null
+        ]
+      }
+    },
+    {
+      "product": "<missing>",
+      "budget": 0.001,
+      "outer_support": [
+        247299,
+        111728,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        23924,
+        26094,
+        30892
+      ],
+      "calibration_normal_groups_each_fold": [
+        3214,
+        3269,
+        3197
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          23,
+          111726,
+          0
+        ],
+        "rates": [
+          9.300482411979021e-05,
+          0.9999820993842188,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          253,
+          111726,
+          0
+        ],
+        "rates": [
+          0.0010230530653176923,
+          0.9999820993842188,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Windows Active Directory",
+      "budget": 0.0001,
+      "outer_support": [
+        809860,
+        0,
+        473
+      ],
+      "calibration_normal_rows_each_fold": [
+        108693,
+        113428,
+        100552
+      ],
+      "calibration_normal_groups_each_fold": [
+        25425,
+        25489,
+        25511
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          473
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          89,
+          0,
+          473
+        ],
+        "rates": [
+          0.0001098955375003087,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "product": "Windows Active Directory",
+      "budget": 0.001,
+      "outer_support": [
+        809860,
+        0,
+        473
+      ],
+      "calibration_normal_rows_each_fold": [
+        108693,
+        113428,
+        100552
+      ],
+      "calibration_normal_groups_each_fold": [
+        25425,
+        25489,
+        25511
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          172,
+          0,
+          473
+        ],
+        "rates": [
+          0.00021238238707924827,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          892,
+          0,
+          473
+        ],
+        "rates": [
+          0.0011014249376435433,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "product": "Linux PAM",
+      "budget": 0.0001,
+      "outer_support": [
+        17822,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        1617,
+        2521,
+        2419
+      ],
+      "calibration_normal_groups_each_fold": [
+        1052,
+        1022,
+        1020
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          20,
+          0,
+          0
+        ],
+        "rates": [
+          0.001122208506340478,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Linux PAM",
+      "budget": 0.001,
+      "outer_support": [
+        17822,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        1617,
+        2521,
+        2419
+      ],
+      "calibration_normal_groups_each_fold": [
+        1052,
+        1022,
+        1020
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          20,
+          0,
+          0
+        ],
+        "rates": [
+          0.001122208506340478,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "AWS Instance Backup",
+      "budget": 0.0001,
+      "outer_support": [
+        340131,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        45435,
+        45333,
+        45398
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "AWS Instance Backup",
+      "budget": 0.001,
+      "outer_support": [
+        340131,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        45435,
+        45333,
+        45398
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Cisco Network Operating System",
+      "budget": 0.0001,
+      "outer_support": [
+        3697,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        510,
+        501,
+        510
+      ],
+      "calibration_normal_groups_each_fold": [
+        496,
+        489,
+        505
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.0016229375169055991,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Cisco Network Operating System",
+      "budget": 0.001,
+      "outer_support": [
+        3697,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        510,
+        501,
+        510
+      ],
+      "calibration_normal_groups_each_fold": [
+        496,
+        489,
+        505
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.0016229375169055991,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "ASA Firewall",
+      "budget": 0.0001,
+      "outer_support": [
+        20,
+        0,
+        34059
+      ],
+      "calibration_normal_rows_each_fold": [
+        4,
+        2,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        2,
+        1,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          16,
+          0,
+          34059
+        ],
+        "rates": [
+          0.8,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "ASA Firewall",
+      "budget": 0.001,
+      "outer_support": [
+        20,
+        0,
+        34059
+      ],
+      "calibration_normal_rows_each_fold": [
+        4,
+        2,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        2,
+        1,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          18,
+          0,
+          34059
+        ],
+        "rates": [
+          0.9,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "VMWare VCenter",
+      "budget": 0.0001,
+      "outer_support": [
+        88311,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        10483,
+        11427,
+        12070
+      ],
+      "calibration_normal_groups_each_fold": [
+        2333,
+        2337,
+        2339
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          21,
+          0,
+          0
+        ],
+        "rates": [
+          0.00023779597105683323,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "VMWare VCenter",
+      "budget": 0.001,
+      "outer_support": [
+        88311,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        10483,
+        11427,
+        12070
+      ],
+      "calibration_normal_groups_each_fold": [
+        2333,
+        2337,
+        2339
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          115,
+          0,
+          0
+        ],
+        "rates": [
+          0.0013022160319778964,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          105,
+          0,
+          0
+        ],
+        "rates": [
+          0.0011889798552841661,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Precinct",
+      "budget": 0.0001,
+      "outer_support": [
+        0,
+        0,
+        219
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          219
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "Precinct",
+      "budget": 0.001,
+      "outer_support": [
+        0,
+        0,
+        219
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          219
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "Barracuda ESS",
+      "budget": 0.0001,
+      "outer_support": [
+        74,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        8,
+        6,
+        8
+      ],
+      "calibration_normal_groups_each_fold": [
+        4,
+        3,
+        4
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          18,
+          0,
+          0
+        ],
+        "rates": [
+          0.24324324324324326,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Barracuda ESS",
+      "budget": 0.001,
+      "outer_support": [
+        74,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        8,
+        6,
+        8
+      ],
+      "calibration_normal_groups_each_fold": [
+        4,
+        3,
+        4
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          18,
+          0,
+          0
+        ],
+        "rates": [
+          0.24324324324324326,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Falcon",
+      "budget": 0.0001,
+      "outer_support": [
+        0,
+        0,
+        35
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          25
+        ],
+        "rates": [
+          null,
+          null,
+          0.7142857142857143
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "Falcon",
+      "budget": 0.001,
+      "outer_support": [
+        0,
+        0,
+        35
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          25
+        ],
+        "rates": [
+          null,
+          null,
+          0.7142857142857143
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "SentinelOne",
+      "budget": 0.0001,
+      "outer_support": [
+        25,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        7,
+        4,
+        4
+      ],
+      "calibration_normal_groups_each_fold": [
+        7,
+        4,
+        3
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.12,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "SentinelOne",
+      "budget": 0.001,
+      "outer_support": [
+        25,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        7,
+        4,
+        4
+      ],
+      "calibration_normal_groups_each_fold": [
+        7,
+        4,
+        3
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.12,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Apache Web Server",
+      "budget": 0.0001,
+      "outer_support": [
+        36,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        6,
+        2,
+        2
+      ],
+      "calibration_normal_groups_each_fold": [
+        3,
+        1,
+        1
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Apache Web Server",
+      "budget": 0.001,
+      "outer_support": [
+        36,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        6,
+        2,
+        2
+      ],
+      "calibration_normal_groups_each_fold": [
+        3,
+        1,
+        1
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Duo",
+      "budget": 0.0001,
+      "outer_support": [
+        325,
+        0,
+        12
+      ],
+      "calibration_normal_rows_each_fold": [
+        45,
+        37,
+        41
+      ],
+      "calibration_normal_groups_each_fold": [
+        45,
+        37,
+        41
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          108,
+          0,
+          8
+        ],
+        "rates": [
+          0.3323076923076923,
+          null,
+          0.6666666666666666
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          5
+        ],
+        "rates": [
+          0.012307692307692308,
+          null,
+          0.4166666666666667
+        ]
+      }
+    },
+    {
+      "product": "Duo",
+      "budget": 0.001,
+      "outer_support": [
+        325,
+        0,
+        12
+      ],
+      "calibration_normal_rows_each_fold": [
+        45,
+        37,
+        41
+      ],
+      "calibration_normal_groups_each_fold": [
+        45,
+        37,
+        41
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          223,
+          0,
+          10
+        ],
+        "rates": [
+          0.6861538461538461,
+          null,
+          0.8333333333333334
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          5
+        ],
+        "rates": [
+          0.012307692307692308,
+          null,
+          0.4166666666666667
+        ]
+      }
+    },
+    {
+      "product": "Barracuda WAF",
+      "budget": 0.0001,
+      "outer_support": [
+        4128,
+        0,
+        2
+      ],
+      "calibration_normal_rows_each_fold": [
+        540,
+        540,
+        560
+      ],
+      "calibration_normal_groups_each_fold": [
+        268,
+        268,
+        275
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          32,
+          0,
+          2
+        ],
+        "rates": [
+          0.007751937984496124,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          2
+        ],
+        "rates": [
+          0.0014534883720930232,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "product": "Barracuda WAF",
+      "budget": 0.001,
+      "outer_support": [
+        4128,
+        0,
+        2
+      ],
+      "calibration_normal_rows_each_fold": [
+        540,
+        540,
+        560
+      ],
+      "calibration_normal_groups_each_fold": [
+        268,
+        268,
+        275
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          1236,
+          0,
+          2
+        ],
+        "rates": [
+          0.29941860465116277,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          2
+        ],
+        "rates": [
+          0.0014534883720930232,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.0001,
+      "outer_support": [
+        2361,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        262,
+        253,
+        309
+      ],
+      "calibration_normal_groups_each_fold": [
+        149,
+        155,
+        146
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0008470986869970351,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.001,
+      "outer_support": [
+        2361,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        262,
+        253,
+        309
+      ],
+      "calibration_normal_groups_each_fold": [
+        149,
+        155,
+        146
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.0012706480304955528,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0008470986869970351,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "ManageEngine ADManager",
+      "budget": 0.0001,
+      "outer_support": [
+        4082,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        606,
+        562,
+        491
+      ],
+      "calibration_normal_groups_each_fold": [
+        435,
+        423,
+        396
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          16,
+          0,
+          0
+        ],
+        "rates": [
+          0.0039196472317491425,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          25,
+          0,
+          0
+        ],
+        "rates": [
+          0.006124448799608035,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "ManageEngine ADManager",
+      "budget": 0.001,
+      "outer_support": [
+        4082,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        606,
+        562,
+        491
+      ],
+      "calibration_normal_groups_each_fold": [
+        435,
+        423,
+        396
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          170,
+          0,
+          0
+        ],
+        "rates": [
+          0.04164625183733464,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          25,
+          0,
+          0
+        ],
+        "rates": [
+          0.006124448799608035,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "AWS VPC Security",
+      "budget": 0.0001,
+      "outer_support": [
+        0,
+        0,
+        10620
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          10620
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "AWS VPC Security",
+      "budget": 0.001,
+      "outer_support": [
+        0,
+        0,
+        10620
+      ],
+      "calibration_normal_rows_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "calibration_normal_groups_each_fold": [
+        0,
+        0,
+        0
+      ],
+      "all_folds_supported": false,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          10620
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "product": "Windows Logs",
+      "budget": 0.0001,
+      "outer_support": [
+        381552,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        61156,
+        52586,
+        60040
+      ],
+      "calibration_normal_groups_each_fold": [
+        154,
+        153,
+        157
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1786,
+          0,
+          0
+        ],
+        "rates": [
+          0.004680882291273536,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "product": "Windows Logs",
+      "budget": 0.001,
+      "outer_support": [
+        381552,
+        0,
+        0
+      ],
+      "calibration_normal_rows_each_fold": [
+        61156,
+        52586,
+        60040
+      ],
+      "calibration_normal_groups_each_fold": [
+        154,
+        153,
+        157
+      ],
+      "all_folds_supported": true,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1786,
+          0,
+          0
+        ],
+        "rates": [
+          0.004680882291273536,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "per_fold_conditional": [
+    {
+      "fold": 0,
+      "product": "<missing>",
+      "budget": 0.0001,
+      "calibration_support": [
+        23924,
+        14896,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3214,
+      "outer_support": [
+        77920,
+        37244,
+        0
+      ],
+      "source_threshold": 0.008237481117248537,
+      "global": {
+        "alerts": [
+          0,
+          37244,
+          0
+        ],
+        "rates": [
+          0.0,
+          1.0,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          10,
+          37244,
+          0
+        ],
+        "rates": [
+          0.00012833675564681725,
+          1.0,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "<missing>",
+      "budget": 0.001,
+      "calibration_support": [
+        23924,
+        14896,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3214,
+      "outer_support": [
+        77920,
+        37244,
+        0
+      ],
+      "source_threshold": 0.006452620029449464,
+      "global": {
+        "alerts": [
+          4,
+          37244,
+          0
+        ],
+        "rates": [
+          5.13347022587269e-05,
+          1.0,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          64,
+          37244,
+          0
+        ],
+        "rates": [
+          0.0008213552361396304,
+          1.0,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Windows Active Directory",
+      "budget": 0.0001,
+      "calibration_support": [
+        108693,
+        0,
+        84
+      ],
+      "calibration_normal_nonempty_groups": 25425,
+      "outer_support": [
+        287434,
+        0,
+        210
+      ],
+      "source_threshold": 0.005623161792755128,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          210
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          33,
+          0,
+          210
+        ],
+        "rates": [
+          0.00011480896484062428,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Windows Active Directory",
+      "budget": 0.001,
+      "calibration_support": [
+        108693,
+        0,
+        84
+      ],
+      "calibration_normal_nonempty_groups": 25425,
+      "outer_support": [
+        287434,
+        0,
+        210
+      ],
+      "source_threshold": 0.004873275756835938,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          210
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          320,
+          0,
+          210
+        ],
+        "rates": [
+          0.001113299052999993,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Linux PAM",
+      "budget": 0.0001,
+      "calibration_support": [
+        1617,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1052,
+      "outer_support": [
+        5823,
+        0,
+        0
+      ],
+      "source_threshold": 0.0010482072830200197,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Linux PAM",
+      "budget": 0.001,
+      "calibration_support": [
+        1617,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1052,
+      "outer_support": [
+        5823,
+        0,
+        0
+      ],
+      "source_threshold": 0.0010482072830200197,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "AWS Instance Backup",
+      "budget": 0.0001,
+      "calibration_support": [
+        45435,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113339,
+        0,
+        0
+      ],
+      "source_threshold": 0.0015915036201477053,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "AWS Instance Backup",
+      "budget": 0.001,
+      "calibration_support": [
+        45435,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113339,
+        0,
+        0
+      ],
+      "source_threshold": 0.0015915036201477053,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Cisco Network Operating System",
+      "budget": 0.0001,
+      "calibration_support": [
+        510,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 496,
+      "outer_support": [
+        1213,
+        0,
+        0
+      ],
+      "source_threshold": 0.00614762306213379,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Cisco Network Operating System",
+      "budget": 0.001,
+      "calibration_support": [
+        510,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 496,
+      "outer_support": [
+        1213,
+        0,
+        0
+      ],
+      "source_threshold": 0.00614762306213379,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "ASA Firewall",
+      "budget": 0.0001,
+      "calibration_support": [
+        4,
+        0,
+        4278
+      ],
+      "calibration_normal_nonempty_groups": 2,
+      "outer_support": [
+        8,
+        0,
+        14616
+      ],
+      "source_threshold": 0.058144271373748786,
+      "global": {
+        "alerts": [
+          8,
+          0,
+          14616
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          14616
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "ASA Firewall",
+      "budget": 0.001,
+      "calibration_support": [
+        4,
+        0,
+        4278
+      ],
+      "calibration_normal_nonempty_groups": 2,
+      "outer_support": [
+        8,
+        0,
+        14616
+      ],
+      "source_threshold": 0.058144271373748786,
+      "global": {
+        "alerts": [
+          8,
+          0,
+          14616
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          14616
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "VMWare VCenter",
+      "budget": 0.0001,
+      "calibration_support": [
+        10483,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2333,
+      "outer_support": [
+        28177,
+        0,
+        0
+      ],
+      "source_threshold": 0.011270225048065187,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "VMWare VCenter",
+      "budget": 0.001,
+      "calibration_support": [
+        10483,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2333,
+      "outer_support": [
+        28177,
+        0,
+        0
+      ],
+      "source_threshold": 0.010235548019409181,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          30,
+          0,
+          0
+        ],
+        "rates": [
+          0.0010646981580721866,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Precinct",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        35
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        64
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          64
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "Precinct",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        35
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        64
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          64
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "Barracuda ESS",
+      "budget": 0.0001,
+      "calibration_support": [
+        8,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        24,
+        0,
+        0
+      ],
+      "source_threshold": 0.0021264553070068364,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          8,
+          0,
+          0
+        ],
+        "rates": [
+          0.3333333333333333,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Barracuda ESS",
+      "budget": 0.001,
+      "calibration_support": [
+        8,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        24,
+        0,
+        0
+      ],
+      "source_threshold": 0.0021264553070068364,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          8,
+          0,
+          0
+        ],
+        "rates": [
+          0.3333333333333333,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Falcon",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        5
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        10
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          null,
+          null,
+          0.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "Falcon",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        5
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        10
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          null,
+          null,
+          0.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "SentinelOne",
+      "budget": 0.0001,
+      "calibration_support": [
+        7,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 7,
+      "outer_support": [
+        9,
+        0,
+        0
+      ],
+      "source_threshold": 0.0006890296936035157,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.3333333333333333,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "SentinelOne",
+      "budget": 0.001,
+      "calibration_support": [
+        7,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 7,
+      "outer_support": [
+        9,
+        0,
+        0
+      ],
+      "source_threshold": 0.0006890296936035157,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.3333333333333333,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Apache Web Server",
+      "budget": 0.0001,
+      "calibration_support": [
+        6,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        18,
+        0,
+        0
+      ],
+      "source_threshold": 0.0014753937721252444,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Apache Web Server",
+      "budget": 0.001,
+      "calibration_support": [
+        6,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        18,
+        0,
+        0
+      ],
+      "source_threshold": 0.0014753937721252444,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Duo",
+      "budget": 0.0001,
+      "calibration_support": [
+        45,
+        0,
+        2
+      ],
+      "calibration_normal_nonempty_groups": 45,
+      "outer_support": [
+        102,
+        0,
+        2
+      ],
+      "source_threshold": 0.004495441913604737,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          0.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.00980392156862745,
+          null,
+          0.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Duo",
+      "budget": 0.001,
+      "calibration_support": [
+        45,
+        0,
+        2
+      ],
+      "calibration_normal_nonempty_groups": 45,
+      "outer_support": [
+        102,
+        0,
+        2
+      ],
+      "source_threshold": 0.004495441913604737,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          0.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.00980392156862745,
+          null,
+          0.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Barracuda WAF",
+      "budget": 0.0001,
+      "calibration_support": [
+        540,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 268,
+      "outer_support": [
+        1384,
+        0,
+        2
+      ],
+      "source_threshold": 0.017314791679382328,
+      "global": {
+        "alerts": [
+          32,
+          0,
+          2
+        ],
+        "rates": [
+          0.023121387283236993,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          2
+        ],
+        "rates": [
+          0.002890173410404624,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Barracuda WAF",
+      "budget": 0.001,
+      "calibration_support": [
+        540,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 268,
+      "outer_support": [
+        1384,
+        0,
+        2
+      ],
+      "source_threshold": 0.017314791679382328,
+      "global": {
+        "alerts": [
+          472,
+          0,
+          2
+        ],
+        "rates": [
+          0.34104046242774566,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          2
+        ],
+        "rates": [
+          0.002890173410404624,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.0001,
+      "calibration_support": [
+        262,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 149,
+      "outer_support": [
+        772,
+        0,
+        0
+      ],
+      "source_threshold": 0.009173214435577394,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.0012953367875647669,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.001,
+      "calibration_support": [
+        262,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 149,
+      "outer_support": [
+        772,
+        0,
+        0
+      ],
+      "source_threshold": 0.009173214435577394,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.0012953367875647669,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "ManageEngine ADManager",
+      "budget": 0.0001,
+      "calibration_support": [
+        606,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 435,
+      "outer_support": [
+        1341,
+        0,
+        0
+      ],
+      "source_threshold": 0.014927566051483156,
+      "global": {
+        "alerts": [
+          16,
+          0,
+          0
+        ],
+        "rates": [
+          0.011931394481730051,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          16,
+          0,
+          0
+        ],
+        "rates": [
+          0.011931394481730051,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "ManageEngine ADManager",
+      "budget": 0.001,
+      "calibration_support": [
+        606,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 435,
+      "outer_support": [
+        1341,
+        0,
+        0
+      ],
+      "source_threshold": 0.014927566051483156,
+      "global": {
+        "alerts": [
+          104,
+          0,
+          0
+        ],
+        "rates": [
+          0.07755406413124534,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          16,
+          0,
+          0
+        ],
+        "rates": [
+          0.011931394481730051,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "AWS VPC Security",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        1652
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        236
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          236
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "AWS VPC Security",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        1652
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        236
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          236
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 0,
+      "product": "Windows Logs",
+      "budget": 0.0001,
+      "calibration_support": [
+        61156,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 154,
+      "outer_support": [
+        115677,
+        0,
+        0
+      ],
+      "source_threshold": 0.00031602382659912115,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          254,
+          0,
+          0
+        ],
+        "rates": [
+          0.0021957692540435867,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 0,
+      "product": "Windows Logs",
+      "budget": 0.001,
+      "calibration_support": [
+        61156,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 154,
+      "outer_support": [
+        115677,
+        0,
+        0
+      ],
+      "source_threshold": 0.00031602382659912115,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          254,
+          0,
+          0
+        ],
+        "rates": [
+          0.0021957692540435867,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "<missing>",
+      "budget": 0.0001,
+      "calibration_support": [
+        26094,
+        14898,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3269,
+      "outer_support": [
+        96937,
+        37242,
+        0
+      ],
+      "source_threshold": 0.0018088221549987795,
+      "global": {
+        "alerts": [
+          0,
+          37242,
+          0
+        ],
+        "rates": [
+          0.0,
+          1.0,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          15,
+          37242,
+          0
+        ],
+        "rates": [
+          0.0001547396762845972,
+          1.0,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "<missing>",
+      "budget": 0.001,
+      "calibration_support": [
+        26094,
+        14898,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3269,
+      "outer_support": [
+        96937,
+        37242,
+        0
+      ],
+      "source_threshold": 0.0013641715049743655,
+      "global": {
+        "alerts": [
+          4,
+          37242,
+          0
+        ],
+        "rates": [
+          4.126391367589259e-05,
+          1.0,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          69,
+          37242,
+          0
+        ],
+        "rates": [
+          0.0007118025109091472,
+          1.0,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Windows Active Directory",
+      "budget": 0.0001,
+      "calibration_support": [
+        113428,
+        0,
+        113
+      ],
+      "calibration_normal_nonempty_groups": 25489,
+      "outer_support": [
+        250786,
+        0,
+        122
+      ],
+      "source_threshold": 0.002853453159332276,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          122
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          37,
+          0,
+          122
+        ],
+        "rates": [
+          0.00014753614635585718,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Windows Active Directory",
+      "budget": 0.001,
+      "calibration_support": [
+        113428,
+        0,
+        113
+      ],
+      "calibration_normal_nonempty_groups": 25489,
+      "outer_support": [
+        250786,
+        0,
+        122
+      ],
+      "source_threshold": 0.0020313858985900883,
+      "global": {
+        "alerts": [
+          37,
+          0,
+          122
+        ],
+        "rates": [
+          0.00014753614635585718,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          301,
+          0,
+          122
+        ],
+        "rates": [
+          0.0012002264879219732,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Linux PAM",
+      "budget": 0.0001,
+      "calibration_support": [
+        2521,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1022,
+      "outer_support": [
+        4813,
+        0,
+        0
+      ],
+      "source_threshold": 0.00013983249664306643,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          18,
+          0,
+          0
+        ],
+        "rates": [
+          0.003739871182214835,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Linux PAM",
+      "budget": 0.001,
+      "calibration_support": [
+        2521,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1022,
+      "outer_support": [
+        4813,
+        0,
+        0
+      ],
+      "source_threshold": 0.00013983249664306643,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          18,
+          0,
+          0
+        ],
+        "rates": [
+          0.003739871182214835,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "AWS Instance Backup",
+      "budget": 0.0001,
+      "calibration_support": [
+        45333,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113495,
+        0,
+        0
+      ],
+      "source_threshold": 0.00028616189956665044,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "AWS Instance Backup",
+      "budget": 0.001,
+      "calibration_support": [
+        45333,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113495,
+        0,
+        0
+      ],
+      "source_threshold": 0.00028616189956665044,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Cisco Network Operating System",
+      "budget": 0.0001,
+      "calibration_support": [
+        501,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 489,
+      "outer_support": [
+        1251,
+        0,
+        0
+      ],
+      "source_threshold": 0.001245379447937012,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0015987210231814548,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Cisco Network Operating System",
+      "budget": 0.001,
+      "calibration_support": [
+        501,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 489,
+      "outer_support": [
+        1251,
+        0,
+        0
+      ],
+      "source_threshold": 0.001245379447937012,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0015987210231814548,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "ASA Firewall",
+      "budget": 0.0001,
+      "calibration_support": [
+        2,
+        0,
+        4254
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        8,
+        0,
+        10442
+      ],
+      "source_threshold": 0.02862554788589478,
+      "global": {
+        "alerts": [
+          8,
+          0,
+          10442
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          10442
+        ],
+        "rates": [
+          0.75,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "ASA Firewall",
+      "budget": 0.001,
+      "calibration_support": [
+        2,
+        0,
+        4254
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        8,
+        0,
+        10442
+      ],
+      "source_threshold": 0.02862554788589478,
+      "global": {
+        "alerts": [
+          8,
+          0,
+          10442
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          10442
+        ],
+        "rates": [
+          0.75,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "VMWare VCenter",
+      "budget": 0.0001,
+      "calibration_support": [
+        11427,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2337,
+      "outer_support": [
+        29620,
+        0,
+        0
+      ],
+      "source_threshold": 0.00348043441772461,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          15,
+          0,
+          0
+        ],
+        "rates": [
+          0.0005064145847400405,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "VMWare VCenter",
+      "budget": 0.001,
+      "calibration_support": [
+        11427,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2337,
+      "outer_support": [
+        29620,
+        0,
+        0
+      ],
+      "source_threshold": 0.0033553838729858403,
+      "global": {
+        "alerts": [
+          79,
+          0,
+          0
+        ],
+        "rates": [
+          0.0026671168129642135,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          33,
+          0,
+          0
+        ],
+        "rates": [
+          0.001114112086428089,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Precinct",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        29
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        73
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          73
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "Precinct",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        29
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        73
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          73
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "Barracuda ESS",
+      "budget": 0.0001,
+      "calibration_support": [
+        6,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        28,
+        0,
+        0
+      ],
+      "source_threshold": 0.00047504901885986334,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.14285714285714285,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Barracuda ESS",
+      "budget": 0.001,
+      "calibration_support": [
+        6,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        28,
+        0,
+        0
+      ],
+      "source_threshold": 0.00047504901885986334,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.14285714285714285,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Falcon",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        6
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        15
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          15
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "Falcon",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        6
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        15
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          15
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "SentinelOne",
+      "budget": 0.0001,
+      "calibration_support": [
+        4,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        8,
+        0,
+        0
+      ],
+      "source_threshold": 0.00023621320724487307,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "SentinelOne",
+      "budget": 0.001,
+      "calibration_support": [
+        4,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        8,
+        0,
+        0
+      ],
+      "source_threshold": 0.00023621320724487307,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Apache Web Server",
+      "budget": 0.0001,
+      "calibration_support": [
+        2,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        6,
+        0,
+        0
+      ],
+      "source_threshold": 0.0002048611640930176,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Apache Web Server",
+      "budget": 0.001,
+      "calibration_support": [
+        2,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        6,
+        0,
+        0
+      ],
+      "source_threshold": 0.0002048611640930176,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Duo",
+      "budget": 0.0001,
+      "calibration_support": [
+        37,
+        0,
+        2
+      ],
+      "calibration_normal_nonempty_groups": 37,
+      "outer_support": [
+        117,
+        0,
+        4
+      ],
+      "source_threshold": 0.025691509246826175,
+      "global": {
+        "alerts": [
+          44,
+          0,
+          3
+        ],
+        "rates": [
+          0.37606837606837606,
+          null,
+          0.75
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          3
+        ],
+        "rates": [
+          0.017094017094017096,
+          null,
+          0.75
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Duo",
+      "budget": 0.001,
+      "calibration_support": [
+        37,
+        0,
+        2
+      ],
+      "calibration_normal_nonempty_groups": 37,
+      "outer_support": [
+        117,
+        0,
+        4
+      ],
+      "source_threshold": 0.025691509246826175,
+      "global": {
+        "alerts": [
+          117,
+          0,
+          4
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          3
+        ],
+        "rates": [
+          0.017094017094017096,
+          null,
+          0.75
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Barracuda WAF",
+      "budget": 0.0001,
+      "calibration_support": [
+        540,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 268,
+      "outer_support": [
+        1352,
+        0,
+        0
+      ],
+      "source_threshold": 0.006109595298767091,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Barracuda WAF",
+      "budget": 0.001,
+      "calibration_support": [
+        540,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 268,
+      "outer_support": [
+        1352,
+        0,
+        0
+      ],
+      "source_threshold": 0.006109595298767091,
+      "global": {
+        "alerts": [
+          410,
+          0,
+          0
+        ],
+        "rates": [
+          0.3032544378698225,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.0001,
+      "calibration_support": [
+        253,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 155,
+      "outer_support": [
+        799,
+        0,
+        0
+      ],
+      "source_threshold": 0.004099786281585694,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.001,
+      "calibration_support": [
+        253,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 155,
+      "outer_support": [
+        799,
+        0,
+        0
+      ],
+      "source_threshold": 0.004099786281585694,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "ManageEngine ADManager",
+      "budget": 0.0001,
+      "calibration_support": [
+        562,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 423,
+      "outer_support": [
+        1407,
+        0,
+        0
+      ],
+      "source_threshold": 0.0031988620758056645,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          5,
+          0,
+          0
+        ],
+        "rates": [
+          0.0035536602700781805,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "ManageEngine ADManager",
+      "budget": 0.001,
+      "calibration_support": [
+        562,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 423,
+      "outer_support": [
+        1407,
+        0,
+        0
+      ],
+      "source_threshold": 0.0031988620758056645,
+      "global": {
+        "alerts": [
+          34,
+          0,
+          0
+        ],
+        "rates": [
+          0.024164889836531627,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          5,
+          0,
+          0
+        ],
+        "rates": [
+          0.0035536602700781805,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "AWS VPC Security",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        1652
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        4484
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          4484
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "AWS VPC Security",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        1652
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        4484
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          4484
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 1,
+      "product": "Windows Logs",
+      "budget": 0.0001,
+      "calibration_support": [
+        52586,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 153,
+      "outer_support": [
+        132614,
+        0,
+        0
+      ],
+      "source_threshold": 4.577636718750001e-05,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          512,
+          0,
+          0
+        ],
+        "rates": [
+          0.0038608291733904414,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "product": "Windows Logs",
+      "budget": 0.001,
+      "calibration_support": [
+        52586,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 153,
+      "outer_support": [
+        132614,
+        0,
+        0
+      ],
+      "source_threshold": 4.577636718750001e-05,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          512,
+          0,
+          0
+        ],
+        "rates": [
+          0.0038608291733904414,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "<missing>",
+      "budget": 0.0001,
+      "calibration_support": [
+        30892,
+        14898,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3197,
+      "outer_support": [
+        72442,
+        37242,
+        0
+      ],
+      "source_threshold": 0.0021118521690368657,
+      "global": {
+        "alerts": [
+          1,
+          37240,
+          0
+        ],
+        "rates": [
+          1.3804146765688412e-05,
+          0.9999462971913431,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          24,
+          37240,
+          0
+        ],
+        "rates": [
+          0.0003312995223765219,
+          0.9999462971913431,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "<missing>",
+      "budget": 0.001,
+      "calibration_support": [
+        30892,
+        14898,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3197,
+      "outer_support": [
+        72442,
+        37242,
+        0
+      ],
+      "source_threshold": 0.0013291835784912112,
+      "global": {
+        "alerts": [
+          15,
+          37240,
+          0
+        ],
+        "rates": [
+          0.0002070622014853262,
+          0.9999462971913431,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          120,
+          37240,
+          0
+        ],
+        "rates": [
+          0.0016564976118826095,
+          0.9999462971913431,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Windows Active Directory",
+      "budget": 0.0001,
+      "calibration_support": [
+        100552,
+        0,
+        68
+      ],
+      "calibration_normal_nonempty_groups": 25511,
+      "outer_support": [
+        271640,
+        0,
+        141
+      ],
+      "source_threshold": 0.003163218498229981,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          141
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          19,
+          0,
+          141
+        ],
+        "rates": [
+          6.994551612428214e-05,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Windows Active Directory",
+      "budget": 0.001,
+      "calibration_support": [
+        100552,
+        0,
+        68
+      ],
+      "calibration_normal_nonempty_groups": 25511,
+      "outer_support": [
+        271640,
+        0,
+        141
+      ],
+      "source_threshold": 0.0022438168525695805,
+      "global": {
+        "alerts": [
+          135,
+          0,
+          141
+        ],
+        "rates": [
+          0.0004969812987777941,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          271,
+          0,
+          141
+        ],
+        "rates": [
+          0.0009976439405094979,
+          null,
+          1.0
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Linux PAM",
+      "budget": 0.0001,
+      "calibration_support": [
+        2419,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1020,
+      "outer_support": [
+        7186,
+        0,
+        0
+      ],
+      "source_threshold": 0.00017130374908447268,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.00027831895352073476,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Linux PAM",
+      "budget": 0.001,
+      "calibration_support": [
+        2419,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1020,
+      "outer_support": [
+        7186,
+        0,
+        0
+      ],
+      "source_threshold": 0.00017130374908447268,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.00027831895352073476,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "AWS Instance Backup",
+      "budget": 0.0001,
+      "calibration_support": [
+        45398,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113297,
+        0,
+        0
+      ],
+      "source_threshold": 0.0002748370170593262,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "AWS Instance Backup",
+      "budget": 0.001,
+      "calibration_support": [
+        45398,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        113297,
+        0,
+        0
+      ],
+      "source_threshold": 0.0002748370170593262,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Cisco Network Operating System",
+      "budget": 0.0001,
+      "calibration_support": [
+        510,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 505,
+      "outer_support": [
+        1233,
+        0,
+        0
+      ],
+      "source_threshold": 0.0011081099510192873,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.0032441200324412004,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Cisco Network Operating System",
+      "budget": 0.001,
+      "calibration_support": [
+        510,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 505,
+      "outer_support": [
+        1233,
+        0,
+        0
+      ],
+      "source_threshold": 0.0011081099510192873,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.0032441200324412004,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "ASA Firewall",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        4065
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        4,
+        0,
+        9001
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          9001
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "ASA Firewall",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        4065
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        4,
+        0,
+        9001
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          2,
+          0,
+          9001
+        ],
+        "rates": [
+          0.5,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "VMWare VCenter",
+      "budget": 0.0001,
+      "calibration_support": [
+        12070,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2339,
+      "outer_support": [
+        30514,
+        0,
+        0
+      ],
+      "source_threshold": 0.003209173679351807,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.0001966310545978895,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "VMWare VCenter",
+      "budget": 0.001,
+      "calibration_support": [
+        12070,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 2339,
+      "outer_support": [
+        30514,
+        0,
+        0
+      ],
+      "source_threshold": 0.00273585319519043,
+      "global": {
+        "alerts": [
+          36,
+          0,
+          0
+        ],
+        "rates": [
+          0.001179786327587337,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          42,
+          0,
+          0
+        ],
+        "rates": [
+          0.0013764173821852264,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Precinct",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        29
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        82
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          82
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "Precinct",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        29
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        82
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          82
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "Barracuda ESS",
+      "budget": 0.0001,
+      "calibration_support": [
+        8,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        22,
+        0,
+        0
+      ],
+      "source_threshold": 0.0005441308021545411,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.2727272727272727,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Barracuda ESS",
+      "budget": 0.001,
+      "calibration_support": [
+        8,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 4,
+      "outer_support": [
+        22,
+        0,
+        0
+      ],
+      "source_threshold": 0.0005441308021545411,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.2727272727272727,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Falcon",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        5
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        10
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          10
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "Falcon",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        5
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        10
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          10
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "SentinelOne",
+      "budget": 0.0001,
+      "calibration_support": [
+        4,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        8,
+        0,
+        0
+      ],
+      "source_threshold": 0.00026136636734008794,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "SentinelOne",
+      "budget": 0.001,
+      "calibration_support": [
+        4,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 3,
+      "outer_support": [
+        8,
+        0,
+        0
+      ],
+      "source_threshold": 0.00026136636734008794,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Apache Web Server",
+      "budget": 0.0001,
+      "calibration_support": [
+        2,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        12,
+        0,
+        0
+      ],
+      "source_threshold": 0.00020140409469604495,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Apache Web Server",
+      "budget": 0.001,
+      "calibration_support": [
+        2,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 1,
+      "outer_support": [
+        12,
+        0,
+        0
+      ],
+      "source_threshold": 0.00020140409469604495,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Duo",
+      "budget": 0.0001,
+      "calibration_support": [
+        41,
+        0,
+        1
+      ],
+      "calibration_normal_nonempty_groups": 41,
+      "outer_support": [
+        106,
+        0,
+        6
+      ],
+      "source_threshold": 0.017596721649169925,
+      "global": {
+        "alerts": [
+          64,
+          0,
+          5
+        ],
+        "rates": [
+          0.6037735849056604,
+          null,
+          0.8333333333333334
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          2
+        ],
+        "rates": [
+          0.009433962264150943,
+          null,
+          0.3333333333333333
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Duo",
+      "budget": 0.001,
+      "calibration_support": [
+        41,
+        0,
+        1
+      ],
+      "calibration_normal_nonempty_groups": 41,
+      "outer_support": [
+        106,
+        0,
+        6
+      ],
+      "source_threshold": 0.017596721649169925,
+      "global": {
+        "alerts": [
+          106,
+          0,
+          6
+        ],
+        "rates": [
+          1.0,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          2
+        ],
+        "rates": [
+          0.009433962264150943,
+          null,
+          0.3333333333333333
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Barracuda WAF",
+      "budget": 0.0001,
+      "calibration_support": [
+        560,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 275,
+      "outer_support": [
+        1392,
+        0,
+        0
+      ],
+      "source_threshold": 0.0053554773330688485,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0014367816091954023,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Barracuda WAF",
+      "budget": 0.001,
+      "calibration_support": [
+        560,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 275,
+      "outer_support": [
+        1392,
+        0,
+        0
+      ],
+      "source_threshold": 0.0053554773330688485,
+      "global": {
+        "alerts": [
+          354,
+          0,
+          0
+        ],
+        "rates": [
+          0.2543103448275862,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          2,
+          0,
+          0
+        ],
+        "rates": [
+          0.0014367816091954023,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.0001,
+      "calibration_support": [
+        309,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 146,
+      "outer_support": [
+        790,
+        0,
+        0
+      ],
+      "source_threshold": 0.006528735160827638,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.0012658227848101266,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Symantec Endpoint Protection",
+      "budget": 0.001,
+      "calibration_support": [
+        309,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 146,
+      "outer_support": [
+        790,
+        0,
+        0
+      ],
+      "source_threshold": 0.006528735160827638,
+      "global": {
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.0037974683544303796,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.0012658227848101266,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "ManageEngine ADManager",
+      "budget": 0.0001,
+      "calibration_support": [
+        491,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 396,
+      "outer_support": [
+        1334,
+        0,
+        0
+      ],
+      "source_threshold": 0.0032079815864562993,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.0029985007496251873,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "ManageEngine ADManager",
+      "budget": 0.001,
+      "calibration_support": [
+        491,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 396,
+      "outer_support": [
+        1334,
+        0,
+        0
+      ],
+      "source_threshold": 0.0032079815864562993,
+      "global": {
+        "alerts": [
+          32,
+          0,
+          0
+        ],
+        "rates": [
+          0.0239880059970015,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          4,
+          0,
+          0
+        ],
+        "rates": [
+          0.0029985007496251873,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "AWS VPC Security",
+      "budget": 0.0001,
+      "calibration_support": [
+        0,
+        0,
+        1888
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        5900
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          5900
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "AWS VPC Security",
+      "budget": 0.001,
+      "calibration_support": [
+        0,
+        0,
+        1888
+      ],
+      "calibration_normal_nonempty_groups": 0,
+      "outer_support": [
+        0,
+        0,
+        5900
+      ],
+      "source_threshold": null,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          5900
+        ],
+        "rates": [
+          null,
+          null,
+          1.0
+        ]
+      },
+      "source_conditional": null
+    },
+    {
+      "fold": 2,
+      "product": "Windows Logs",
+      "budget": 0.0001,
+      "calibration_support": [
+        60040,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 157,
+      "outer_support": [
+        133261,
+        0,
+        0
+      ],
+      "source_threshold": 4.816055297851563e-05,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1020,
+          0,
+          0
+        ],
+        "rates": [
+          0.007654152377664883,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "product": "Windows Logs",
+      "budget": 0.001,
+      "calibration_support": [
+        60040,
+        0,
+        0
+      ],
+      "calibration_normal_nonempty_groups": 157,
+      "outer_support": [
+        133261,
+        0,
+        0
+      ],
+      "source_threshold": 4.816055297851563e-05,
+      "global": {
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      "source_conditional": {
+        "alerts": [
+          1020,
+          0,
+          0
+        ],
+        "rates": [
+          0.007654152377664883,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "zero_error_iid_requirements": [
+    {
+      "target_fpr": 0.0001,
+      "minimum_zero_error_iid_validation_trials": 29956,
+      "one_sided_95_upper_at_minimum": 9.999941531978722e-05
+    },
+    {
+      "target_fpr": 0.001,
+      "minimum_zero_error_iid_validation_trials": 2995,
+      "one_sided_95_upper_at_minimum": 0.000999744420901142
+    }
+  ],
+  "source_holdout_support_current_groups": [
+    {
+      "sources": [
+        "Windows Active Directory"
+      ],
+      "target_rows": 810333,
+      "linked_other_rows_excluded": 0,
+      "remaining_rows_by_class": [
+        1089863,
+        111728,
+        44947
+      ],
+      "remaining_nonempty_groups_by_class": [
+        60623,
+        16975,
+        5498
+      ],
+      "held_rows_by_class": [
+        809860,
+        0,
+        473
+      ],
+      "held_nonempty_groups_by_class": [
+        191703,
+        0,
+        339
+      ]
+    },
+    {
+      "sources": [
+        "Duo"
+      ],
+      "target_rows": 337,
+      "linked_other_rows_excluded": 0,
+      "remaining_rows_by_class": [
+        1899398,
+        111728,
+        45408
+      ],
+      "remaining_nonempty_groups_by_class": [
+        252001,
+        16975,
+        5825
+      ],
+      "held_rows_by_class": [
+        325,
+        0,
+        12
+      ],
+      "held_nonempty_groups_by_class": [
+        325,
+        0,
+        12
+      ]
+    },
+    {
+      "sources": [
+        "Barracuda WAF"
+      ],
+      "target_rows": 4130,
+      "linked_other_rows_excluded": 0,
+      "remaining_rows_by_class": [
+        1895595,
+        111728,
+        45418
+      ],
+      "remaining_nonempty_groups_by_class": [
+        250278,
+        16975,
+        5836
+      ],
+      "held_rows_by_class": [
+        4128,
+        0,
+        2
+      ],
+      "held_nonempty_groups_by_class": [
+        2048,
+        0,
+        1
+      ]
+    }
+  ],
+  "optimistic_outer_score_limits": {
+    "scope": "Uses each already-seen outer fold's labels to bound attainable recall of its frozen score at an empirical FPR budget. This is deliberately label-informed and is NOT a calibrated performance estimate or selectable policy.",
+    "results": [
+      {
+        "product": "<missing>",
+        "budget": 0.0001,
+        "support": [
+          247299,
+          111728,
+          0
+        ],
+        "alerts": [
+          21,
+          111726,
+          0
+        ],
+        "rates": [
+          8.491744810937368e-05,
+          0.9999820993842188,
+          null
+        ]
+      },
+      {
+        "product": "<missing>",
+        "budget": 0.001,
+        "support": [
+          247299,
+          111728,
+          0
+        ],
+        "alerts": [
+          245,
+          111726,
+          0
+        ],
+        "rates": [
+          0.0009907035612760262,
+          0.9999820993842188,
+          null
+        ]
+      },
+      {
+        "product": "Windows Active Directory",
+        "budget": 0.0001,
+        "support": [
+          809860,
+          0,
+          473
+        ],
+        "alerts": [
+          71,
+          0,
+          473
+        ],
+        "rates": [
+          8.766947373620131e-05,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "Windows Active Directory",
+        "budget": 0.001,
+        "support": [
+          809860,
+          0,
+          473
+        ],
+        "alerts": [
+          794,
+          0,
+          473
+        ],
+        "rates": [
+          0.000980416368261181,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "Linux PAM",
+        "budget": 0.0001,
+        "support": [
+          17822,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Linux PAM",
+        "budget": 0.001,
+        "support": [
+          17822,
+          0,
+          0
+        ],
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          0.0003366625519021434,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "AWS Instance Backup",
+        "budget": 0.0001,
+        "support": [
+          340131,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "AWS Instance Backup",
+        "budget": 0.001,
+        "support": [
+          340131,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Cisco Network Operating System",
+        "budget": 0.0001,
+        "support": [
+          3697,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Cisco Network Operating System",
+        "budget": 0.001,
+        "support": [
+          3697,
+          0,
+          0
+        ],
+        "alerts": [
+          3,
+          0,
+          0
+        ],
+        "rates": [
+          0.0008114687584527996,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "ASA Firewall",
+        "budget": 0.0001,
+        "support": [
+          20,
+          0,
+          34059
+        ],
+        "alerts": [
+          0,
+          0,
+          34059
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "ASA Firewall",
+        "budget": 0.001,
+        "support": [
+          20,
+          0,
+          34059
+        ],
+        "alerts": [
+          0,
+          0,
+          34059
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "VMWare VCenter",
+        "budget": 0.0001,
+        "support": [
+          88311,
+          0,
+          0
+        ],
+        "alerts": [
+          6,
+          0,
+          0
+        ],
+        "rates": [
+          6.794170601623807e-05,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "VMWare VCenter",
+        "budget": 0.001,
+        "support": [
+          88311,
+          0,
+          0
+        ],
+        "alerts": [
+          87,
+          0,
+          0
+        ],
+        "rates": [
+          0.000985154737235452,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Barracuda ESS",
+        "budget": 0.0001,
+        "support": [
+          74,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Barracuda ESS",
+        "budget": 0.001,
+        "support": [
+          74,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "SentinelOne",
+        "budget": 0.0001,
+        "support": [
+          25,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "SentinelOne",
+        "budget": 0.001,
+        "support": [
+          25,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Apache Web Server",
+        "budget": 0.0001,
+        "support": [
+          36,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Apache Web Server",
+        "budget": 0.001,
+        "support": [
+          36,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Duo",
+        "budget": 0.0001,
+        "support": [
+          325,
+          0,
+          12
+        ],
+        "alerts": [
+          0,
+          0,
+          5
+        ],
+        "rates": [
+          0.0,
+          null,
+          0.4166666666666667
+        ]
+      },
+      {
+        "product": "Duo",
+        "budget": 0.001,
+        "support": [
+          325,
+          0,
+          12
+        ],
+        "alerts": [
+          0,
+          0,
+          5
+        ],
+        "rates": [
+          0.0,
+          null,
+          0.4166666666666667
+        ]
+      },
+      {
+        "product": "Barracuda WAF",
+        "budget": 0.0001,
+        "support": [
+          4128,
+          0,
+          2
+        ],
+        "alerts": [
+          0,
+          0,
+          2
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "Barracuda WAF",
+        "budget": 0.001,
+        "support": [
+          4128,
+          0,
+          2
+        ],
+        "alerts": [
+          0,
+          0,
+          2
+        ],
+        "rates": [
+          0.0,
+          null,
+          1.0
+        ]
+      },
+      {
+        "product": "Symantec Endpoint Protection",
+        "budget": 0.0001,
+        "support": [
+          2361,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Symantec Endpoint Protection",
+        "budget": 0.001,
+        "support": [
+          2361,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "ManageEngine ADManager",
+        "budget": 0.0001,
+        "support": [
+          4082,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "ManageEngine ADManager",
+        "budget": 0.001,
+        "support": [
+          4082,
+          0,
+          0
+        ],
+        "alerts": [
+          1,
+          0,
+          0
+        ],
+        "rates": [
+          0.0002449779519843214,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Windows Logs",
+        "budget": 0.0001,
+        "support": [
+          381552,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      },
+      {
+        "product": "Windows Logs",
+        "budget": 0.001,
+        "support": [
+          381552,
+          0,
+          0
+        ],
+        "alerts": [
+          0,
+          0,
+          0
+        ],
+        "rates": [
+          0.0,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "No next-round source policy was selected by these outer results; all are already seen development diagnostics.",
+    "Product identity is diagnostic routing metadata, not a classifier feature or proof of an independent organization.",
+    "IID binomial bounds require independent trials and a fixed threshold tested on separate data; neither row count nor approximate group count establishes these assumptions.",
+    "Source holdout counts must be repeated after repaired grouping; unsupported classes cannot be evaluated as full three-class Macro-F1."
+  ],
+  "elapsed_seconds": 2.2579213999852072
+}

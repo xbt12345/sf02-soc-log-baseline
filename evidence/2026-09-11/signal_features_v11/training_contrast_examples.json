@@ -1,0 +1,486 @@
+[
+  {
+    "row_position": 46,
+    "label": "malicious",
+    "product": "",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>original address=<entity> 1 <entity>.<entity>cred-308864 <entity>_mx400_1 flows src=<entity> dst=<entity> protocol=udp sport=4104 dport=4104 pattern: 1 dst <entity>",
+    "full_characters": 169,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 69,
+    "label": "malicious",
+    "product": "",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>original address=<entity> 1 <entity>.0cred-252243916 m72_mx67c_org-4405 flows src=<entity> dst=<entity> protocol=tcp sport=4cred-25598 dport=9092 pattern: 1 all",
+    "full_characters": 165,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 11886,
+    "label": "malicious",
+    "product": "",
+    "signature": 8,
+    "active_signals": [
+      "access_denied"
+    ],
+    "message_preview": "<164>jul 23 2022 <entity>: <entity> deny tcp src outside:<entity>/<entity> dst dmz-1:<entity>/<entity> by <entity>-group \"outside_org-1738_in\" [0x0, 0x0]",
+    "full_characters": 153,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 13734,
+    "label": "malicious",
+    "product": "",
+    "signature": 8,
+    "active_signals": [
+      "access_denied"
+    ],
+    "message_preview": "<164>aug 01 2022 <entity>: <entity> deny tcp src outside:<entity>/44387 dst dmz-1:<entity>/<entity> by <entity>-group \"outside_org-1738_in\" [0x0, 0x0]",
+    "full_characters": 150,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 111732,
+    "label": "benign",
+    "product": "",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "2 100000000006 eni-<entity> - - - - - - - 1721cred-3105226 1721cred-3105257 - nouser-0010-54061",
+    "full_characters": 95,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 111757,
+    "label": "benign",
+    "product": "Windows Active Directory",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"19c04280-a087-<entity>-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405cred-<entity>\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"file <entity>\",\"code\":\"4658\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"<entity>\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"the handle to an <entity> was closed.\\n\\nsubject :\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount <entity> <entity>\\<entity>\\torg-0106 id:\\t\\t0x3e4\\n\\norg-0198:\\n\\torg-0198 <entity> id:\\t\\t0xb04\\n\\<entity> <entity> id:\\t\\t0xb8c\\n\\tprocess name:\\t\\tc:\\\\<entity>\\\\<entity>\\\\<entity>\",\"organization\":\"<entity>\",\"senderuser-0010\":\"<entity>.<entity>.exampleuser-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winuser-0010-56507log\",\"channel\":\"security\",\"<entity>_name\":\"<entity>.<entity>.exampleuser-8710\",\"<entity>_user-0010-54061\":{\"handleid\":\"0xb04\",\"<entity>server\":\"security\",\"processid\":\"0xb8c\",\"processname\":\"c:\\\\<entity>\\\\<entity>\\\\<entity>\",\"subjectuser-24351name\":\"<entity>\",\"subjectorg-0106id\":\"0x3e4\",\"subjectusername\":\"<entity>\",\"subjectcred-0339id\":\"s-1-5-20\"},\"<entity>_id\":\"4658\",\"keywords\":[\"audit <entity>\"],\"opcode\":\"<entity>\",\"process\":{\"pid\":4,\"thread\":{\"id\":<entity>}},\"provider_org-0515\":\"{<entity>}\",\"provider_name\":\"<entity>-<entity>-security-auditing\",\"record_id\":105761234,\"task\":\"file <entity>\"}}",
+    "full_characters": 1611,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 111808,
+    "label": "benign",
+    "product": "",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "2 100000000006 eni-<entity> - - - - - - - 1721cred-3105286 1721991917 - nouser-0010-54061",
+    "full_characters": 89,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 111988,
+    "label": "benign",
+    "product": "Windows Active Directory",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"19c04280-a087-<entity>-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405cred-<entity>\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"file <entity>\",\"code\":\"<entity>\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"<entity>\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"a handle to an <entity> was <entity>ed.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-20\\n\\taccount <entity> <entity>\\<entity>\\torg-0106 id:\\t\\t0x3e4\\n\\norg-0198:\\n\\torg-0198 server:\\t\\tsecurity\\n\\torg-0198 type:\\t\\tfile\\n\\torg-0198 name:\\t\\tc:\\\\<entity>\\\\<entity>\\\\<entity>\\\\$$_user-0086user-0010-54533_user-8162.<entity>.filepicker_cw5n1h2txyewy_7f0cdb3cdcf67613.cdf-ms\\n\\thandle id:\\t\\t0xb04\\n\\torg-11855 attributes:\\t-\\n\\<entity> <entity> id:\\t\\t0xb8c\\n\\tprocess name:\\t\\tc:\\\\<entity>\\\\<entity>\\\\<entity>\\<entity>\\norg-1738 <entity> <entity>rmation:\\n\\ttransuser-0010-0121 id:\\t\\t{<entity>}\\n\\torg-1491:\\t\\tread_org-0661\\n\\t\\t\\t\\tsynchronize\\n\\t\\t\\t\\torg-1492 (or <entity>)\\n\\t\\t\\t\\treadea\\n\\t\\t\\t\\treadattributes\\n\\t\\t\\t\\t\\n\\torg-1738 reasons:\\t\\tread_org-0661:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\tsynchronize:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\torg-1492 (or <entity>):\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\treadea:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\treadattributes:\\tgranted by\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t\\n\\torg-1738 mask:\\t\\t0x120089\\n\\tprivileges used for <entity> <entity>:\\t-\\n\\trestricted sid count:\\t0\",\"organization\":\"<entity>\",\"sampleorg-1526\":\"1.72cred-<entity>e9\",\"senderuser-0010\":\"<entity>.<entity>.exampleuser-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winuser-0010-56507log\",\"channel\":\"security\",\"<entity>_name\":\"<entity>.<entity>.exampleuser-8710\",\"<entity>_user-0010-54061\":{\"<entity>list\":\"%%1538\\n\\t\\t\\t\\t%%1541\\n\\t\\t\\t\\t%%4416\\n\\t\\t\\t\\t%%4419\\n\\t\\t\\t\\t%%4423\\n\\t\\t\\t\\t\",\"<entity>mask\":\"0x120089\",\"<entity>reason\":\"%%1538:\\t%%1801\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t%%1541:\\t%%1801\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t%%4416:\\t%%1801\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t%%4419:\\t%%1801\\td:(a;;0x1200a9;;;bu)\\n\\t\\t\\t\\t%%4423:\\t%%1801\\td:(a;;0x1200a9;;;bu)\\n\\t",
+    "full_characters": 3196,
+    "preview_truncated": true
+  },
+  {
+    "row_position": 115388,
+    "label": "benign",
+    "product": "VMWare VCenter",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>1 user-<entity> <entity> eam-<entity> - - - user-<entity> | <entity> | vim-monitor | <entity>.<entity> | 190 | [retry:login:<entity>.<entity>.exampleuser-8710:<entity>] re-login to <entity> because method: <entity>org-1526 of <entity> <entity>: null::<entity>instance:<entity>instance failed due to expired <entity> session: null",
+    "full_characters": 334,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 115996,
+    "label": "suspicious",
+    "product": "ASA Firewall",
+    "signature": 8,
+    "active_signals": [
+      "access_denied"
+    ],
+    "message_preview": "<164>jul 26 <entity> <entity>: <entity> deny udp src dmz-2:<entity>/62182 dst dmz-1:<entity>/53 by <entity>-group \"<entity>\" [0x0, 0x0]",
+    "full_characters": 135,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 116372,
+    "label": "benign",
+    "product": "VMWare VCenter",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>1 user-<entity><entity>:00 <entity> sps - - - user-<entity> [pool-2-thread-5] <entity> opid= <entity>.<entity>.exampleuser-8710 - [<entity>-<entity>] <entity> thread count is: 1, <entity> size is: 20, queue size: 0, <entity> spent waiting in queue: 0 millis",
+    "full_characters": 262,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 116857,
+    "label": "suspicious",
+    "product": "ASA Firewall",
+    "signature": 8,
+    "active_signals": [
+      "access_denied"
+    ],
+    "message_preview": "<164>jul 26 <entity> <entity>: <entity> deny udp src dmz-2:<entity>/4cred-30861 dst outside:<entity>/53 by <entity>-group \"<entity>\" [0x0, 0x0]",
+    "full_characters": 143,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 141394,
+    "label": "benign",
+    "product": "Cisco Network Operating System",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<189><entity>: <entity>: jul 26 <entity> cdt: %iluser-0010-54513-5-detect: <entity> gi1/0/41: <entity> detected: <entity>",
+    "full_characters": 121,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 148622,
+    "label": "benign",
+    "product": "SentinelOne",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"<entity>\",\"id\":\"<entity>\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"filtering <entity> connection\",\"code\":\"5158\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"<entity>\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"the <entity> filtering <entity> has permitted a bind to a <entity> port.\\n\\napplication <entity> id:\\t\\t2692\\n\\tapplication name:\\t\\\\<entity>\\\\<entity>\\\\<entity> <entity>\\\\<entity>\\\\<entity> <entity> <entity>\\\\<entity>\\<entity>\\norg-10379 <entity> <entity> port:\\t\\t55080\\n\\tprotocol:\\t\\t6\\n\\nfilter <entity>rmation:\\n\\tfilter <entity> id:\\t0\\n\\tlayer name:\\t\\torg-11855 assignment\\n\\tlayer <entity> id:\\t36\",\"organization\":\"<entity>\",\"senderuser-0010\":\"<entity>\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winuser-0010-56507log\",\"channel\":\"security\",\"<entity>_name\":\"<entity>.<entity>.exampleuser-8710\",\"<entity>_user-0010-54061\":{\"application\":\"\\\\<entity>\\\\<entity>\\\\<entity> <entity>\\\\<entity>\\\\<entity> <entity> <entity>\\\\<entity>\",\"filterrtid\":\"0\",\"layername\":\"%%<entity>\",\"layerrtid\":\"36\",\"processid\":\"2692\",\"protocol\":\"6\",\"<entity>address\":\"<entity>\",\"<entity>port\":\"55080\"},\"<entity>_id\":\"5158\",\"keywords\":[\"audit <entity>\"],\"opcode\":\"<entity>\",\"process\":{\"pid\":4,\"thread\":{\"id\":8164}},\"provider_org-0515\":\"{<entity>}\",\"provider_name\":\"<entity>-<entity>-security-auditing\",\"record_id\":3cred-33608617,\"task\":\"filtering <entity> connection\"}}",
+    "full_characters": 1693,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 163530,
+    "label": "benign",
+    "product": "Cisco Network Operating System",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<189><entity>: <entity>: jul 26 <entity> cdt: %iluser-0010-54513-5-<entity>_disconnect: <entity> gi1/0/41: pd removed",
+    "full_characters": 117,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 195593,
+    "label": "benign",
+    "product": "SentinelOne",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"19c04280-a087-<entity>-b485-35afffa5b578\",\"id\":\"393e65fd-5766-48fd-a0e2-71855405cred-<entity>\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"filtering <entity> connection\",\"code\":\"5156\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"<entity>\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"the <entity> filtering <entity> has permitted a connection.\\n\\napplication <entity> id:\\t\\t3380\\n\\tapplication name:\\t\\\\<entity>\\\\<entity>\\\\<entity> <entity>\\\\<entity>\\\\<entity> <entity> <entity>\\\\<entity>\\<entity>\\norg-10379 <entity> port:\\t\\tcred-250995\\n\\tdestination address:\\t100.64.52.192\\n\\tdestination port:\\t\\t443\\n\\tprotocol:\\t\\t6\\n\\torg-9508 <entity>:\\t\\t9\\n\\nfilter <entity>rmation:\\n\\tfilter origin:\\t\\ts1-<entity>\\<entity>\\tfilter <entity> id:\\t78200\\n\\tlayer <entity> id:\\t48\\n\\torg-4683 user id:\\t\\ts-1-0-0\\n\\torg-4683 <entity> id:\\ts-1-0-0\",\"organization\":\"<entity>\",\"senderuser-0010\":\"<entity>.<entity>.exampleuser-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winuser-0010-56507log\",\"channel\":\"security\",\"<entity>_name\":\"<entity>.<entity>.exampleuser-8710\",\"<entity>_user-0010-54061\":{\"application\":\"\\\\<entity>\\\\<entity>\\\\<entity> <entity>\\\\<entity>\\\\<entity> <entity> <entity>\\\\<entity>\",\"destaddress\":\"<entity>\",\"destport\":\"443\",\"direction\":\"%%<entity>cred-30401\",\"filterorigin\":\"s1-<entity>\",\"filterrtid\":\"78200\",\"<entity>user-0010-54535\":\"9\",\"layername\":\"%%<entity>\",\"layerrtid\":\"48\",\"processid\":\"3380\",\"protocol\":\"6\",\"<entity>user-0010-1218id\":\"s-1-0-0\",\"<entity>userid\":\"s-1-0-0\",\"<entity>address\":\"<entity>\",\"<entity>port\":\"<entity>\"},\"<entity>_id\":\"5156\",\"keywords\":[\"audit <entity>\"],\"opcode\":\"<entity>\",\"process\":{\"pid\":4,\"thread\":{\"id\":11920}},\"provider_org-0515\":\"{<entity>}\",\"provider_name\":\"<entity>-<entity>-security-auditing\",\"record_id\":105775902,\"task\":\"filtering <entity> connection\",\"version\":1}}",
+    "full_characters": 2152,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 211849,
+    "label": "suspicious",
+    "product": "Windows Active Directory",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"<entity>\",\"id\":\"5fc2f4d2-daa9-4a5f-bc1f-616cred-31cred-25588b10\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"<entity>\",\"code\":\"4625\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"failure\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount <entity> <entity>:\\t\\t-\\n\\torg-0106 id:\\t\\t0x0\\n\\norg-0106 type:\\t\\t\\t3\\n\\naccount for which <entity> failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\tuser-0004\\n\\taccount <entity>\\<entity>\\<entity> <entity>rmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\<entity> <entity>rmation:\\n\\tcaller process id:\\t0x0\\n\\tcaller process name:\\t-\\n\\norg-10379 <entity>rmation:\\n\\tworkstation name:\\td-<entity>\\<entity>\\<entity> <entity> address:\\t192.168.81.243\\n\\<entity> port:\\t\\t49942\\n\\ndetailed <entity> process:\\t\\torg-0504ssp \\n\\tauthentication <entity>:\\torg-0504\\n\\ttransited <entity>:\\t-\\n\\tuser-0010-4214 name (<entity> only):\\t-\\n\\tkey length:\\t\\t0\\n\\nuser-9570 <entity> is generated when a <entity> <entity> fails. it is generated on the <entity> where <entity> was atuser-0010-1591ted.\\n\\nthe subject fields indicate the account on the <entity> <entity> which <entity>ed the <entity>. <entity> is most <entity>ly a <entity> such as the server <entity>, or a <entity> process such as <entity> or <entity>.\\n\\nthe <entity> type field indicates the kind of <entity> that was <entity>ed. the most <entity> types are 2 (intercred-24062) and 3 (<entity>).\\n\\nthe process <entity>rmation fields indicate which account and process on the <entity> <entity>ed <entity> fields indicate where a <entity> <entity> <entity> originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication <entity>rmation fields provide detailed <entity>rmation about <entity> specific <entity> <entity>.\\n\\t- transited <entity> indicate which intermediate <entity> have participated in <entity> <entity> <entity> name indicates which sub-protocol was used",
+    "full_characters": 3524,
+    "preview_truncated": true
+  },
+  {
+    "row_position": 224804,
+    "label": "suspicious",
+    "product": "Windows Active Directory",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"<entity>cred-<entity>\",\"id\":\"<entity>\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"<entity>\",\"code\":\"4625\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"failure\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"an account failed to log on.\\n\\nsubject:\\n\\tsecurity id:\\t\\ts-1-5-18\\n\\taccount <entity> <entity>\\<entity>\\torg-0106 id:\\t\\t0x3e7\\n\\norg-0106 type:\\t\\t\\t3\\n\\naccount for which <entity> failed:\\n\\tsecurity id:\\t\\ts-1-0-0\\n\\taccount name:\\t\\t\\n\\taccount <entity>:\\t\\t\\n\\<entity> <entity>rmation:\\n\\tfailure reason:\\t\\tunknown user name or bad password.\\n\\tstatus:\\t\\t\\t0xc000006d\\n\\tsub status:\\t\\t0xc0000064\\n\\<entity> <entity>rmation:\\n\\tcaller process id:\\t0x40c\\n\\tcaller process name:\\tc:\\\\<entity>\\\\<entity>\\\\<entity>\\<entity>\\norg-10379 <entity>rmation:\\n\\tworkstation name:\\torg-0891-<entity>\\<entity>\\<entity> <entity> address:\\t192.168.147.151\\n\\<entity> port:\\t\\t58537\\n\\ndetailed <entity> process:\\t\\tschannel\\n\\tauthentication <entity>:\\tkerberos\\n\\ttransited <entity>:\\t-\\n\\tuser-0010-4214 name (<entity> only):\\t-\\n\\tkey length:\\t\\t0\\n\\nuser-9570 <entity> is generated when a <entity> <entity> fails. it is generated on the <entity> where <entity> was atuser-0010-1591ted.\\n\\nthe subject fields indicate the account on the <entity> <entity> which <entity>ed the <entity>. <entity> is most <entity>ly a <entity> such as the server <entity>, or a <entity> process such as <entity> or <entity>.\\n\\nthe <entity> type field indicates the kind of <entity> that was <entity>ed. the most <entity> types are 2 (intercred-24062) and 3 (<entity>).\\n\\nthe process <entity>rmation fields indicate which account and process on the <entity> <entity>ed <entity> fields indicate where a <entity> <entity> <entity> originated. workstation name is not always available and may be left blank in some cases.\\n\\nthe authentication <entity>rmation fields provide detailed <entity>rmation about <entity> specific <entity> <entity>.\\n\\t- transited <entity> indicate which intermediate <entity> have participated in <entity> <entity> <entity> name indicates which sub-protoc",
+    "full_characters": 3587,
+    "preview_truncated": true
+  },
+  {
+    "row_position": 239026,
+    "label": "benign",
+    "product": "Barracuda ESS",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "1064 <6> user-<entity> <entity>.<entity>.exampleuser-8710 ess70460[1]: {\"<entity>_id\":\"172cred-3272803-<entity>\",\"src_ip\":\"<entity>\",\"hdr_from\":\"the wallace center \\<entity>@exampleuser-8710\\<entity>\",\"account_id\":\"ess70460\",\"<entity>_id\":\"<entity>\",\"ptr_record\":\"<entity>.<entity>.exampleuser-8710\",\"attachments\":null,\"recipients\":[{\"<entity>\":\"allowed\",\"reason\":\"\",\"reason_extra\":\"\",\"delivered\":\"delivered\",\"delivery_detail\":\"<entity>-org.mail.protection.outlook.com.:25:250 2.6.0 \\<entity>@exampleuser-8710\\<entity> [<entity>id=15cred-2984788610640, <entity>name=ph0pr15mb5120.namprd15.prod.outlook.com] <entity>cred-30131 bytes in 0.118, 1129.667 kb/sec queued mail for delivery\",\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"taxonomy\":\"none\"}],\"hdr_to\":\"\\<entity>@exampleuser-8710\\<entity>\",\"recipient_count\":1,\"dst_user-24351\":\"<entity>.org\",\"size\":115183,\"subject\":\"🌞the wallace center's <entity> <entity>s🌞\",\"env_from\":\"<entity>@exampleuser-8710\",\"<entity>stamp\":\"user-<entity>\",\"geoip\":\"usa\",\"tls\":true}",
+    "full_characters": 1016,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 249354,
+    "label": "benign",
+    "product": "VMWare VCenter",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<134>1 user-<entity><entity>:00 <entity> eam-<entity> - - - user-<entity> | warn | vim-async-1 | <entity>.<entity> | 227 | [retry:login:<entity>.<entity>.exampleuser-8710:<entity>] re-login failed, due to:",
+    "full_characters": 205,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 364994,
+    "label": "benign",
+    "product": "Barracuda ESS",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "816 <6> user-<entity> <entity>.<entity>.exampleuser-8710 ess70460[1]: {\"<entity>_id\":\"172cred-3273061-111060-<entity>\",\"src_ip\":\"<entity>\",\"hdr_from\":\"anti-glucose mineral \\<entity>@exampleuser-8710\\<entity>\",\"account_id\":\"ess70460\",\"<entity>_id\":\"<entity>\",\"ptr_record\":\"<entity>-<entity>.<entity>.exampleuser-8710\",\"attachments\":null,\"recipients\":[{\"<entity>\":\"quarantined\",\"reason\":\"geoip\",\"reason_extra\":\"origin:<entity>, in <entity> settings: <entity>.org\",\"delivered\":\"not_delivered\",\"delivery_detail\":\"\",\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"taxonomy\":\"<entity>\"}],\"hdr_to\":\"<entity>@exampleuser-8710\",\"recipient_count\":1,\"dst_user-24351\":\"<entity>.org\",\"size\":5565,\"subject\":\"the #1 “miracle”mineral missing in blood sugar patients\",\"env_from\":\"<entity>@exampleuser-8710\",\"<entity>stamp\":\"user-<entity>\",\"geoip\":\"ind\",\"tls\":true}",
+    "full_characters": 849,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 379604,
+    "label": "benign",
+    "product": "Symantec Endpoint Protection",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<2>jul 26 <entity> <entity> <entity>: <entity>,<entity> <entity> ip: <entity>,<entity> port: 5355,<entity> <entity> mac: 01005e0000fc,<entity> <entity> ip: <entity>,<entity> <entity> name: <entity>.<entity>.exampleuser-8710,<entity> port: 57313,<entity> <entity> mac: 005056b892fc,udp,inbound,begin: user-<entity>,end <entity>: user-<entity>,occurrences: 1,application: c:/<entity>/<entity>/<entity>,rule: allow ipv4 llmnr from <entity> ip addresses,location: <entity>,user name: <entity>,<entity> name: nt <entity>,<entity>: allowed,sha-256: 7fd065bac18c52cred-<entity>ae44cred-cred-<entity>,md-5: 8a0a29438052faed8acred-<entity>da50455756",
+    "full_characters": 640,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 379941,
+    "label": "benign",
+    "product": "Symantec Endpoint Protection",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<6>jul 26 <entity> <entity> <entity>: site: site <entity>,server name: <entity>,<entity> name: <entity>.exampleuser-8710,the <entity> server received the <entity> log <entity>fully,rsod0013,<entity>,<entity>.exampleuser-8710",
+    "full_characters": 224,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 380798,
+    "label": "suspicious",
+    "product": "Precinct",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<142>jul 26 <entity> <entity> <entity>: <entity> duration: 6837:06:22 count: <entity>; <entity>rmational: authentication failure.\u0000",
+    "full_characters": 130,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 386794,
+    "label": "benign",
+    "product": "VMWare VCenter",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<134>1 user-<entity><entity>:00 <entity> eam-<entity> - - - user-<entity> | warn | vim-async-1 | <entity>.<entity> | 227 | [retry:login:<entity>.<entity>.exampleuser-8710:<entity>] re-login failed, due to:",
+    "full_characters": 205,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 442429,
+    "label": "suspicious",
+    "product": "Falcon",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: filename=<entity> ::: <entity>ip=<entity> ::: filepath=\\<entity>\\<entity>\\<entity>\\<entity> ::: filehash=350570713e0a7e3733f59623f880a442ecred-257259b29a8d59bcred-<entity>a38edcred-29622 ::: streamname=crowdstrike detection ::: <entity>={\"behaviors\":[{\"alleged_filetype\":\"exe\",\"behavior_id\":\"10381\",\"cmdline\":\"c:\\\\<entity>\\\\<entity>\",\"confidence\":80,\"<entity>_graph_id\":\"ctg:<entity>:223cred-2406737035\",\"description\":\"a process atuser-0010-1591ted to modify <entity> used for <entity> sensor dynamic <entity>. <entity> is indicative of an atuser-0010-1591t to tamper with <entity> sensor. investigate the file <entity> <entity> and process tree.\",\"<entity>_id\":\"<entity>\",\"display_name\":\"<entity>ystemtamperorg-11922sensordynamicuser-5936\",\"filename\":\"<entity>\",\"filepath\":\"\\\\<entity>\\\\<entity>\\\\<entity>\\\\<entity>\",\"ioc_description\":\"\",\"ioc_user-0010-55454\":\"\",\"ioc_type\":\"\",\"ioc_value\":\"\",\"md5\":\"d264f62721590f14bc54344f48a0cred-25060\",\"<entity>ive\":\"keep <entity>\",\"parent_details\":{\"parent_cmdline\":\"c:\\\\<entity>\\\\<entity>\\\\<entity>\",\"parent_md5\":\"5cdc907ccred-cred-<entity>\",\"parent_process_graph_id\":\"pid:<entity>:<entity>cred-25378679\",\"parent_sha256\":\"004cred-<entity>\"},\"pattern_disposition\":<entity>,\"pattern_disposition_details\":{\"blocking_unsupported_or_org-4042d\":false,\"<entity>up_safeguard_enabled\":false,\"critical_process_org-4042d\":false,\"detect\":false,\"fs_org-1583_blocked\":true,\"handle_org-1583_downgraded\":false,\"inddet_mask\":false,\"indicator\":false,\"kill_user-0010-0121_failed\":false,\"kill_parent\":false,\"kill_process\":false,\"kill_subprocess\":false,\"<entity>_blocked\":false,\"<entity>_org-4042d\":false,\"process_blocked\":false,\"quarantine_file\":false,\"quarantine_user-0010-1218\":false,\"<entity>-<entity>_org-1583_blocked\":false,\"<entity>ing\":false,\"sensor_only\":false,\"suspend_parent\":false,\"suspend_process\":false},\"scenario\":\"suspicious_activity\",\"severity\":70,\"sha256\":\"350570713e0a7e3733f59623f880a442ecred-257259b29a8d59bcred-<entity>a38edcred-29622\",\"tactic\":\"defense evasion\",\"tactic_id\":\"ta0005\",\"technique\":\"<entity> or modify <entity>\",\"technique_id\":\"tcred-2cred-24120.001\",\"<entity>late_instance_id\":\"2933\",\"<entity>stamp\":\"user-<entity>\",\"triggering_process_graph_id\":\"pid:<entity>:<entity>cred-2cred-250300807\",\"user_id\":\"s-1-12-1-1cred-2569046385-<entity>cred-2541809-3992341668-2cred-319524984\",\"user_name\":\"<entity>\"}],\"behaviors_processed\":[\"pid:<en",
+    "full_characters": 4049,
+    "preview_truncated": true
+  },
+  {
+    "row_position": 464387,
+    "label": "benign",
+    "product": "Barracuda WAF",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<190>jul 26 <entity> <entity> cef:0|<entity>|waf|1220|1000|get|5|cat=tr dvc=<entity> duser=\"-\" in=738 out=4340 suser=\"-\" src=<entity> spt=55036 <entity>\" <entity>=<entity>.<entity>.exampleuser-8710 outcome=200 suid=\"-\" <entity>method=get app=tlsv1.3 msg=\"-\" <entity>context=\"-\" dst=<entity> <entity> rt=1721992cred-2553726 start=jul 26 <entity> <entity> <entity>=/servlet/eandar.webfilelibrary/3433/<entity>cred-3160433/icon-reset.png <entity>user-<entity>application=\"<entity> (<entity> nt 10.0; <entity>; x64) <entity>/537.36 (<entity>, like <entity>) chrome/<entity> safari/537.36 edg/<entity> oneoutlook/1.<entity>.717.400\" dvcuser-0010=<entity> externalid=190eec66cf1-de9bcred-29697 cs1luser-<entity>=<entity> cs1=\"-\" cs2luser-<entity>=protected cs2=protected cs3luser-<entity>=proxyip cs3=<entity> cs4luser-<entity>=profilematched cs4=<entity> cs6luser-<entity>=wfmatched cs6=valid cn1luser-<entity>=<entity>port <entity> cn2luser-<entity>=cachehit cn2=0 cn3luser-<entity>=proxyport cn3=55036 flexnumber1luser-<entity>=<entity>) flexnumber1=60 flexnumber2luser-<entity>=<entity>) flexnumber2=101 flexstring1luser-<entity>=protocolversion flexstring1=<entity>/1.1 <entity>wafcustomheader1=\"-\" <entity>wafcustomheader2=\"-\" <entity>wafcustomheader3=\"-\" <entity>wafresponsetype=server <entity>wafsessionid=\"-\"",
+    "full_characters": 1311,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 483275,
+    "label": "suspicious",
+    "product": "Duo",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: <entity>type=auth_failure ::: streamname=<entity> ::: <entity>=<entity> ::: tags=[invalid_passcode] ::: <entity>={\"<entity>_user-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"<entity>name\":\"d-9h8gd53\",\"ip\":\"<entity>\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"<entity>_version\":null,\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_user-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"<entity>_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"not <entity>ed\",\"trust_level\":\"unset\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"<entity>_enabled\":false,\"reason\":\"known <entity> ip\",\"trust_level\":\"normal\"}},\"alias\":\"\",\"application\":{\"key\":\"dir75zp575gmx3e3ceze\",\"name\":\"<entity> rdp\"},\"auth_user-0010-1127\":{\"ip\":null,\"key\":null,\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"name\":null},\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"<entity>_type\":\"authentication\",\"fuser-0010-15196\":\"sms_passcode\",\"isoorg-1526stamp\":\"user-<entity>\",\"ood_user-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"invalid_passcode\",\"result\":\"denied\",\"<entity>stamp\":1721992047,\"trusted_user-0010-<entity>_status\":\"unknown\",\"txid\":\"6416cred-25381-896f-4913-8a93-bead05f7b0ad\",\"user\":{\"groups\":[\"duocred-0339 (from ad sync \\\"ad sync\\\")\"],\"key\":\"du7ylzsk0qbyff7su8g2\",\"name\":\"<entity>\"}} ::: username=<entity>@exampleuser-8710",
+    "full_characters": 1574,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 496952,
+    "label": "benign",
+    "product": "ManageEngine ADManager",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<110>user-<entity> <entity> adauditplus: [ category = <entity>reports ] [ report_profile = all <entity> <entity> ] [ username = <entity> ] [ <entity>_ip_address = <entity> ] [ <entity>_user-0010_name = <entity>.<entity>.exampleuser-8710 ] [ <entity>_generated = 1721991237 ] [ record_number = 60676cred-31533 ] [ <entity>_type = 8 ] [ <entity>_type_text = <entity> ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity>_org-0090 = <entity> ] [ user_sid = s-1-5-21-1000000000-2000000000-3000000000-0022 ] [ <entity>_code = 0x0 ] [ <entity>_code_text = - ] [ <entity>_number = 4768 ] [ reuser-6328s = a <entity>ntication ticket (tgt) was <entity>ed. ] [ pre_authentication_type = 2 ] [ transited_user-5935 = null ] [ ticket_options = 0x40cred-<entity> ] [ ticket_encryption_type = 0x12 ] [ <entity>_port = 0 ] [ certificate_thumbprint = null ] [ certificate_serial_number = null ] [ certificate_issuer_name = null ] [ user_sam_account_name = null ] [ <entity> = <entity> connector ] [ user_principal_name = null ] [ user_org-0515 = null ] [ user_distinguish_name = cn=<entity> connector,cn=<entity> <entity> accounts,dc=<entity>,dc=<entity> ] [ user_ou_org-0515 = {<entity>} ] [ user_department = null ] [ user_manager_name = null ] [ <entity>_user-0010_user-24351_name = <entity>.<entity>.exampleuser-8710 ] [ <entity>_name = null ] [ log_file_name = null ] [ keywords_name = null ] [ task_category_name = null ] [ task_category_id = null ] [ extra_column1 = a <entity>ntication ticket (tgt) was <entity>ed for <entity> from <entity>.<entity>.exampleuser-8710. status : <entity>. ] [ extra_column2 = null ] [ extra_column3 = null ] [ extra_column4 = null ] [ extra_column5 = null ] [ extra_column6 = null ] [ extra_column7 = null ] [ extra_column8 = null ] [ extra_column9 = null ] [ extra_column10 = null ] [ configured_user-24351_name = null ]",
+    "full_characters": 1902,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 497643,
+    "label": "benign",
+    "product": "ManageEngine ADManager",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<110>user-<entity> <entity> adauditplus: [ category = <entity>reports ] [ report_profile = all <entity> <entity> ] [ username = <entity> ] [ <entity>_ip_address = <entity> ] [ <entity>_user-0010_name = <entity>.<entity>.exampleuser-8710 ] [ <entity>_generated = 17219cred-<entity> ] [ record_number = 6067633691 ] [ <entity>_type = 16 ] [ <entity>_type_text = failure ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity>_org-0090 = <entity>/<entity>.<entity>.exampleuser-8710 ] [ user_sid = s-1-0-0 ] [ <entity>_code = 0x6 ] [ <entity>_code_text = bad user name ] [ <entity>_number = 4768 ] [ reuser-6328s = a <entity>ntication ticket (tgt) was <entity>ed. ] [ pre_authentication_type = - ] [ transited_user-5935 = null ] [ ticket_options = 0x40cred-<entity> ] [ ticket_encryption_type = 0xffffffff ] [ <entity>_port = 0 ] [ certificate_thumbprint = null ] [ certificate_serial_number = null ] [ certificate_issuer_name = null ] [ user_sam_account_name = null ] [ <entity> = null ] [ user_principal_name = null ] [ user_org-0515 = null ] [ user_distinguish_name = null ] [ user_ou_org-0515 = null ] [ user_department = null ] [ user_manager_name = null ] [ <entity>_user-0010_user-24351_name = <entity>.<entity>.exampleuser-8710 ] [ <entity>_name = null ] [ log_file_name = null ] [ keywords_name = null ] [ task_category_name = null ] [ task_category_id = null ] [ extra_column1 = a <entity>ntication ticket (tgt) was <entity>ed for <entity> from <entity>.<entity>.exampleuser-8710. status : failure. . <entity> : bad user name ] [ extra_column2 = null ] [ extra_column3 = null ] [ extra_column4 = null ] [ extra_column5 = null ] [ extra_column6 = null ] [ extra_column7 = null ] [ extra_column8 = null ] [ extra_column9 = null ] [ extra_column10 = null ] [ configured_user-24351_name = null ]",
+    "full_characters": 1854,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 520000,
+    "label": "benign",
+    "product": "Barracuda WAF",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<190>jul 26 <entity> <entity> cef:0|<entity>|waf|1220|1000|get|5|cat=tr dvc=<entity> duser=\"-\" in=867 out=13453 suser=\"-\" src=<entity> spt=<entity> <entity>cookies=jsessionid\\=a072b91f6dc2cred-<entity> <entity>=<entity>.<entity>.exampleuser-8710 outcome=200 suid=\"-\" <entity>method=get app=tlsv1.3 msg=\"-\" <entity>context=<entity>s://<entity>.<entity>.exampleuser-8710/crm/<entity>?<entity>=sessionorg-1526out dst=<entity> <entity> rt=1721cred-2cred-3023399768 start=jul 26 <entity> <entity> <entity>=/servlet/eandar.webfilelibrary/3332/<entity>cred-296692/soc_noncpa_trans_small.png <entity>user-<entity>application=\"<entity> (<entity> nt 10.0; <entity>; x64) <entity>/537.36 (<entity>, like <entity>) chrome/<entity> safari/537.36\" dvcuser-0010=<entity> externalid=190eec7f34b-40c76a48 cs1luser-<entity>=<entity> cs1=\"-\" cs2luser-<entity>=protected cs2=protected cs3luser-<entity>=proxyip <entity> cs4luser-<entity>=profilematched cs4=<entity> cs6luser-<entity>=wfmatched cs6=valid cn1luser-<entity>=<entity>port <entity> cn2luser-<entity>=cachehit cn2=0 cn3luser-<entity>=proxyport cn3=<entity> flexnumber1luser-<entity>=<entity>) flexnumber1=13 flexnumber2luser-<entity>=<entity>) flexnumber2=13 flexstring1luser-<entity>=protocolversion flexstring1=<entity>/1.1 <entity>wafcustomheader1=\"-\" <entity>wafcustomheader2=\"-\" <entity>wafcustomheader3=\"-\" <entity>wafresponsetype=server <entity>wafsessionid=\"-\"",
+    "full_characters": 1409,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 601915,
+    "label": "suspicious",
+    "product": "AWS VPC Security",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "2 100000013063 <entity> <entity> <entity> 4cred-29842 3378 6 1 44 1721992754 1721992777 reject ok",
+    "full_characters": 97,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 602483,
+    "label": "suspicious",
+    "product": "AWS VPC Security",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "2 100000013063 <entity> <entity> <entity> 54428 <entity> 6 1 40 1721992816 172199cred-23956 reject ok",
+    "full_characters": 101,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 671517,
+    "label": "suspicious",
+    "product": "Precinct",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<142>jul 26 <entity> <entity> <entity>: <entity> duration: 6837:15:23 count: <entity>; <entity>rmational: authentication failure.\u0000",
+    "full_characters": 130,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 741661,
+    "label": "benign",
+    "product": "Windows Logs",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<<entity> xmlns='<entity>://<entity>.domain-0022.example.net/win/2004/08/<entity>s/<entity>'><<entity>><provider name='<entity>-<entity>-security-auditing' <entity>='{<entity>}'/><<entity>id><entity></<entity>id><version>0</version><level>0</level><task>1cred-29881</task><opcode>0</opcode><keywords>0x80cred-27800000000050</keywords><<entity>created <entity>org-1526='user-<entity><entity>z'/><<entity>recordid>4cred-<entity></<entity>recordid><correlation/><execution processid='4' threadid='3600'/><channel>security</channel><<entity>><entity>.<entity>.exampleuser-8710</<entity>><security/></<entity>><<entity>user-0010-54061><<entity> name='subjectcred-0339id'>s-1-5-18</<entity>><<entity> name='subjectusername'><entity>$</<entity>><<entity> name='subjectuser-24351name'><entity></<entity>><<entity> name='subjectorg-0106id'>0x3e7</<entity>><<entity> name='<entity>server'>nt <entity> / authentication <entity></<entity>><<entity> name='<entity>'>lsaregisterorg-0106process()</<entity>><<entity> name='privilegelist'>setcbprivilege</<entity>><<entity> name='processid'>0x290</<entity>><<entity> name='processname'>c:\\<entity>\\<entity>\\<entity></<entity>></<entity>user-0010-54061><renderingorg-0706 <entity>>a privileged <entity> was called. subject: security id: s-1-5-18 account name: <entity>$ account <entity>: <entity> <entity> id: 0x3e7 <entity>: server: nt <entity> / authentication <entity> <entity> name: lsaregisterorg-0106process() process: process id: 0x290 process name: <entity>: setcbprivilege</<entity>><level><entity>rmation</level><task>sensitive privilege use</task><opcode><entity></opcode><channel>security</channel><provider><entity> <entity> security auditing.</provider><keywords><keyword>audit <entity></keyword></keywords></renderingorg-0706></<entity>>",
+    "full_characters": 1785,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 742500,
+    "label": "benign",
+    "product": "Windows Logs",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<<entity> xmlns='<entity>://<entity>.domain-0022.example.net/win/2004/08/<entity>s/<entity>'><<entity>><provider name='<entity>-<entity>-security-auditing' <entity>='{<entity>}'/><<entity>id><entity></<entity>id><version>0</version><level>0</level><task>1cred-29881</task><opcode>0</opcode><keywords>0x80cred-27800000000050</keywords><<entity>created <entity>org-1526='user-<entity><entity>cred-2462400z'/><<entity>recordid>4cred-<entity></<entity>recordid><correlation/><execution processid='4' threadid='5396'/><channel>security</channel><<entity>><entity>.<entity>.exampleuser-8710</<entity>><security/></<entity>><<entity>user-0010-54061><<entity> name='subjectcred-0339id'>s-1-5-18</<entity>><<entity> name='subjectusername'><entity>$</<entity>><<entity> name='subjectuser-24351name'><entity></<entity>><<entity> name='subjectorg-0106id'>0x3e7</<entity>><<entity> name='<entity>server'>nt <entity> / authentication <entity></<entity>><<entity> name='<entity>'>lsaregisterorg-0106process()</<entity>><<entity> name='privilegelist'>setcbprivilege</<entity>><<entity> name='processid'>0x290</<entity>><<entity> name='processname'>c:\\<entity>\\<entity>\\<entity></<entity>></<entity>user-0010-54061><renderingorg-0706 <entity>>a privileged <entity> was called. subject: security id: s-1-5-18 account name: <entity>$ account <entity>: <entity> <entity> id: 0x3e7 <entity>: server: nt <entity> / authentication <entity> <entity> name: lsaregisterorg-0106process() process: process id: 0x290 process name: <entity>: setcbprivilege</<entity>><level><entity>rmation</level><task>sensitive privilege use</task><opcode><entity></opcode><channel>security</channel><provider><entity> <entity> security auditing.</provider><keywords><keyword>audit <entity></keyword></keywords></renderingorg-0706></<entity>>",
+    "full_characters": 1797,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1060535,
+    "label": "benign",
+    "product": "Apache Web Server",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>1 user-<entity><entity>:00 <entity> vapi-<entity>-<entity>-<entity> - - - user-<entity> | vapi-i/o dispatcher-1 | <entity> - - [26/jul/<entity>:<entity> +0000] \"<entity> /rest/com/vmware/cis/authz/privilege?~<entity>=batch-has-privileges <entity>/1.1\" 200 16 \"-\" \"go-<entity>-<entity>/1.1\" 7",
+    "full_characters": 296,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1205603,
+    "label": "benign",
+    "product": "Windows Logs",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<<entity> xmlns='<entity>://<entity>.domain-0022.example.net/win/2004/08/<entity>s/<entity>'><<entity>><provider name='<entity>-<entity>-security-auditing' <entity>='{<entity>}'/><<entity>id>4771</<entity>id><version>0</version><level>0</level><task>14339</task><opcode>0</opcode><keywords>0x8011000000000090</keywords><<entity>created <entity>org-1526='user-<entity><entity>z'/><<entity>recordid><entity>cred-<entity></<entity>recordid><correlation/><execution processid='928' threadid='2712'/><channel>security</channel><<entity>><entity>.<entity>.exampleuser-8710</<entity>><security/></<entity>><<entity>user-0010-54061><<entity> name='<entity>username'><entity></<entity>><<entity> name='<entity>sid'>s-1-5-21-1000000000-2000000000-3000000000-3744</<entity>><<entity> name='<entity>name'><entity>/<entity>.<entity>.exampleuser-8710</<entity>><<entity> name='ticketoptions'>0x40cred-<entity></<entity>><<entity> name='status'>0x18</<entity>><<entity> name='preauthtype'>2</<entity>><<entity> name='ipaddress'>::ffff:<entity></<entity>><<entity> name='ipport'>50834</<entity>><<entity> name='certissuername'></<entity>><<entity> name='certserialnumber'></<entity>><<entity> name='certthumbprint'></<entity>></<entity>user-0010-54061><renderingorg-0706 <entity>>kerberos pre-authentication failed. account <entity>rmation: security id: s-1-5-21-1000000000-2000000000-3000000000-3744 account name: <entity> <entity> <entity>rmation: <entity> name: <entity>/<entity>.<entity>.exampleuser-8710 <entity> <entity>rmation: <entity> address: ::ffff:<entity> <entity> port: 50834 additional <entity>rmation: ticket options: 0x40cred-<entity> failure code: 0x18 pre-authentication type: 2 certificate <entity>rmation: certificate issuer name: certificate serial number: certificate thumbprint: certificate <entity>rmation is only provided if a certificate was used for pre-authentication. pre-authentication types, ticket options and failure codes are defined in rfc <entity>. if the ticket was malformed or <entity> during transit and could not be decrypted, then many fields in <entity> <entity> might not be present.</<entity>><level><entity>rmation</level><task><entity></task><opcode><entity></opcode><channel>security</channel><provider><entity> <entity> security auditing.</provider><keywords><keyword>audit failure</keyword></keywords></renderingorg-0706></<entity>>",
+    "full_characters": 2367,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1253130,
+    "label": "benign",
+    "product": "Windows Logs",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<<entity> xmlns='<entity>://<entity>.domain-0022.example.net/win/2004/08/<entity>s/<entity>'><<entity>><provider name='<entity>-<entity>-security-auditing' <entity>='{<entity>}'/><<entity>id>4771</<entity>id><version>0</version><level>0</level><task>14339</task><opcode>0</opcode><keywords>0x8011000000000090</keywords><<entity>created <entity>org-1526='user-<entity><entity>z'/><<entity>recordid><entity>cred-29025</<entity>recordid><correlation/><execution processid='928' threadid='2712'/><channel>security</channel><<entity>><entity>.<entity>.exampleuser-8710</<entity>><security/></<entity>><<entity>user-0010-54061><<entity> name='<entity>username'><entity></<entity>><<entity> name='<entity>sid'>s-1-5-21-1000000000-2000000000-3000000000-3744</<entity>><<entity> name='<entity>name'><entity>/<entity>.<entity>.exampleuser-8710</<entity>><<entity> name='ticketoptions'>0x40cred-<entity></<entity>><<entity> name='status'>0x18</<entity>><<entity> name='preauthtype'>2</<entity>><<entity> name='ipaddress'>::ffff:<entity></<entity>><<entity> name='ipport'>5cred-24935</<entity>><<entity> name='certissuername'></<entity>><<entity> name='certserialnumber'></<entity>><<entity> name='certthumbprint'></<entity>></<entity>user-0010-54061><renderingorg-0706 <entity>>kerberos pre-authentication failed. account <entity>rmation: security id: s-1-5-21-1000000000-2000000000-3000000000-3744 account name: <entity> <entity> <entity>rmation: <entity> name: <entity>/<entity>.<entity>.exampleuser-8710 <entity> <entity>rmation: <entity> address: ::ffff:<entity> <entity> port: 5cred-24935 additional <entity>rmation: ticket options: 0x40cred-<entity> failure code: 0x18 pre-authentication type: 2 certificate <entity>rmation: certificate issuer name: certificate serial number: certificate thumbprint: certificate <entity>rmation is only provided if a certificate was used for pre-authentication. pre-authentication types, ticket options and failure codes are defined in rfc <entity>. if the ticket was malformed or <entity> during transit and could not be decrypted, then many fields in <entity> <entity> might not be present.</<entity>><level><entity>rmation</level><task><entity></task><opcode><entity></opcode><channel>security</channel><provider><entity> <entity> security auditing.</provider><keywords><keyword>audit failure</keyword></keywords></renderingorg-0706></<entity>>",
+    "full_characters": 2376,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1314001,
+    "label": "benign",
+    "product": "Duo",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: <entity>type=auth_org-0893 ::: <entity>=<entity> ::: username=<entity>@exampleuser-8710 ::: tags=[user_user-28756] ::: streamname=<entity> ::: <entity>={\"<entity>_user-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"<entity>name\":\"d-1kbzf24\",\"ip\":\"<entity>\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"<entity>_version\":null,\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_user-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"<entity>_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"not <entity>ed\",\"trust_level\":\"unset\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"<entity>_enabled\":false,\"reason\":\"known <entity> ip\",\"trust_level\":\"normal\"}},\"alias\":\"\",\"application\":{\"key\":\"dir75zp575gmx3e3ceze\",\"name\":\"<entity> rdp\"},\"auth_user-0010-1127\":{\"ip\":\"<entity>\",\"key\":\"dpadjr5hkb4sik70xvz3\",\"location\":{\"city\":\"decatur\",\"country\":\"united <entity>s\",\"<entity>\":\"georgia\"},\"name\":\"706-983-1708\"},\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"<entity>_type\":\"authentication\",\"fuser-0010-15196\":\"duo_push\",\"isoorg-1526stamp\":\"user-<entity><entity>cred-30632+00:00\",\"ood_user-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"user_user-28756\",\"result\":\"<entity>\",\"<entity>stamp\":1721992765,\"trusted_user-0010-<entity>_status\":\"unknown\",\"txid\":\"<entity>\",\"user\":{\"groups\":[\"duocred-0339 (from ad sync \\\"ad sync\\\")\"],\"key\":\"dun42l7nnfvfsfk01jj8\",\"name\":\"<entity>\"}}",
+    "full_characters": 1619,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1316041,
+    "label": "benign",
+    "product": "Duo",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: streamname=<entity> ::: username=<entity>@exampleuser-8710 ::: tags=[user_user-28756] ::: <entity>={\"<entity>_user-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"<entity>name\":\"l-1w1nhs3\",\"ip\":\"<entity>\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"<entity>_version\":null,\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_user-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"<entity>_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"not <entity>ed\",\"trust_level\":\"unset\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"<entity>_enabled\":false,\"reason\":\"known <entity> ip\",\"trust_level\":\"normal\"}},\"alias\":\"\",\"application\":{\"key\":\"dir75zp575gmx3e3ceze\",\"name\":\"<entity> rdp\"},\"auth_user-0010-1127\":{\"ip\":\"<entity>\",\"key\":\"dp1u1wjemirs4lpsd5rj\",\"location\":{\"city\":\"pooler\",\"country\":\"united <entity>s\",\"<entity>\":\"georgia\"},\"name\":\"912-667-3928\"},\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"<entity>_type\":\"authentication\",\"fuser-0010-15196\":\"duo_push\",\"isoorg-1526stamp\":\"user-<entity>\",\"ood_user-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"user_user-28756\",\"result\":\"<entity>\",\"<entity>stamp\":1721cred-2cred-3023339,\"trusted_user-0010-<entity>_status\":\"unknown\",\"txid\":\"<entity>\",\"user\":{\"groups\":[\"duocred-0339 (from ad sync \\\"ad sync\\\")\"],\"key\":\"dupakwatacf7r1qq7b5n\",\"name\":\"<entity>\"}} ::: <entity>type=auth_org-0893 ::: <entity>=<entity>",
+    "full_characters": 1606,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1557416,
+    "label": "benign",
+    "product": "Apache Web Server",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<134>1 user-<entity>.<entity>cred-25376-05:00 <entity> vapi-<entity>-<entity>-<entity> - - - user-<entity> | vapi-i/o dispatcher-0 | <entity> - - [26/jul/<entity>:<entity> +0000] \"<entity> /rest/com/vmware/cis/authz/privilege?~<entity>=batch-has-privileges <entity>/1.1\" 200 16 \"-\" \"go-<entity>-<entity>/1.1\" 7",
+    "full_characters": 310,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1752893,
+    "label": "benign",
+    "product": "ASA Firewall",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<164>jul 26 <entity> <entity>: <entity> tcp <entity> denied by acl from <entity>/5cred-2cred-24947 to outside:<entity>/443",
+    "full_characters": 122,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1763166,
+    "label": "suspicious",
+    "product": "Duo",
+    "signature": 0,
+    "active_signals": [],
+    "message_preview": "<entity> ::: tags=[no_response] ::: <entity>=<entity> ::: username=<entity>@exampleuser-8710 ::: <entity>={\"<entity>_user-0010-1127\":{\"browser\":null,\"browser_version\":null,\"epkey\":null,\"flash_version\":null,\"<entity>name\":\"<entity>\",\"ip\":\"<entity>\",\"is_encryption_enabled\":\"unknown\",\"is_firewall_enabled\":\"unknown\",\"is_password_set\":\"unknown\",\"<entity>_version\":null,\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"os\":null,\"os_version\":null},\"adaptive_trust_assessments\":{\"more_user-9522_auth\":{\"detected_attack_detectors\":null,\"features_version\":null,\"model_version\":null,\"<entity>_enabled\":true,\"preview_mode_enabled\":false,\"reason\":\"not <entity>ed\",\"trust_level\":\"unset\"},\"remember_me\":{\"features_version\":\"3.0\",\"model_version\":\"2022.07.19.001\",\"<entity>_enabled\":false,\"reason\":\"known <entity> ip\",\"trust_level\":\"normal\"}},\"alias\":\"\",\"application\":{\"key\":\"dir75zp575gmx3e3ceze\",\"name\":\"<entity> rdp\"},\"auth_user-0010-1127\":{\"ip\":null,\"key\":\"dp8auic2wxt72md5kicp\",\"location\":{\"city\":null,\"country\":null,\"<entity>\":null},\"name\":\"678-571-4718\"},\"<entity>cred-23741\":\"<entity>@exampleuser-8710\",\"<entity>_type\":\"authentication\",\"fuser-0010-15196\":\"duo_push\",\"isoorg-1526stamp\":\"user-<entity><entity>+00:00\",\"ood_user-0010-1219\":null,\"rbfs_triggered_attacks\":null,\"reason\":\"no_response\",\"result\":\"denied\",\"<entity>stamp\":17cred-<entity>,\"trusted_user-0010-<entity>_status\":\"unknown\",\"txid\":\"8cred-cred-<entity>\",\"user\":{\"groups\":[\"duocred-0339 (from ad sync \\\"ad sync\\\")\"],\"key\":\"duh2l6e1lle627q97il9\",\"name\":\"<entity>\"}} ::: <entity>type=auth_failure ::: streamname=<entity>",
+    "full_characters": 1583,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 1801114,
+    "label": "benign",
+    "product": "ManageEngine ADManager",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<110>user-<entity> <entity> adauditplus: [ category = <entity>reports ] [ report_profile = all <entity> <entity> ] [ username = <entity> ] [ <entity>_ip_address = <entity> ] [ <entity>_user-0010_name = <entity>.<entity>.exampleuser-8710 ] [ <entity>_generated = 17cred-<entity> ] [ record_number = 1354cred-<entity> ] [ <entity>_type = 16 ] [ <entity>_type_text = failure ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity> = <entity>.<entity>.exampleuser-8710 ] [ <entity>_org-0090 = <entity>/<entity> ] [ user_sid = s-1-5-21-1000000000-2000000000-3000000000-3570 ] [ <entity>_code = 0x18 ] [ <entity>_code_text = bad password ] [ <entity>_number = 4771 ] [ reuser-6328s = kerberos pre-authentication failed. ] [ pre_authentication_type = 2 ] [ transited_user-5935 = null ] [ ticket_options = 0x40cred-<entity> ] [ ticket_encryption_type = null ] [ <entity>_port = 54241 ] [ certificate_thumbprint = null ] [ certificate_serial_number = null ] [ certificate_issuer_name = null ] [ user_sam_account_name = null ] [ <entity> = <entity> ] [ user_principal_name = null ] [ user_org-0515 = null ] [ user_distinguish_name = cn=<entity>, <entity>,ou=<entity> desktop <entity>,ou=<entity> <entity> <entity>,ou=<entity> <entity>,ou=<entity>,dc=<entity>,dc=<entity> ] [ user_ou_org-0515 = {<entity>} ] [ user_department = null ] [ user_manager_name = null ] [ <entity>_user-0010_user-24351_name = <entity>/<entity> ] [ <entity>_name = null ] [ log_file_name = null ] [ keywords_name = null ] [ task_category_name = null ] [ task_category_id = null ] [ extra_column1 = kerberos pre-authentication failed for <entity> from <entity>.<entity>.exampleuser-8710. status : failure. failure reason : bad password. . <entity> : bad password ] [ extra_column2 = null ] [ extra_column3 = null ] [ extra_column4 = null ] [ extra_column5 = null ] [ extra_column6 = null ] [ extra_column7 = null ] [ extra_column8 = null ] [ extra_column9 = null ] [ extra_column10 = null ] [ configured_user-24351_name = null ]",
+    "full_characters": 1999,
+    "preview_truncated": false
+  },
+  {
+    "row_position": 2004528,
+    "label": "benign",
+    "product": "Windows Active Directory",
+    "signature": 1,
+    "active_signals": [
+      "authentication_failure"
+    ],
+    "message_preview": "<entity> ::: {\"@metauser-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@<entity>stamp\":\"user-<entity>\",\"<entity>\":{\"ephemeral_id\":\"<entity>\",\"id\":\"5fc2f4d2-daa9-4a5f-bc1f-616cred-31cred-25588b10\",\"name\":\"<entity>\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"<entity>\":{\"<entity>\":\"<entity>\",\"code\":\"4771\",\"created\":\"user-<entity>\",\"kind\":\"<entity>\",\"outcome\":\"failure\",\"provider\":\"<entity>-<entity>-security-auditing\"},\"<entity>\":{\"name\":\"<entity>.<entity>.exampleuser-8710\"},\"log\":{\"level\":\"<entity>rmation\"},\"<entity>\":\"kerberos pre-authentication failed.\\n\\naccount <entity>rmation:\\n\\tsecurity id:\\t\\ts-1-5-21-1000000000-2000000000-3000000000-2961\\n\\taccount name:\\t\\tavu\\n\\<entity> <entity> name:\\t\\tuser-5726/<entity>.<entity>.exampleuser-8710\\n\\norg-10379 <entity> address:\\t\\t100.100.64.88.88.130.119\\n\\tuser-<entity> port:\\t\\t54389org-0742 <entity>rmation:\\n\\tticket options:\\t\\t0x40cred-<entity>\\n\\tfailure code:\\t\\t0x18\\n\\tpre-authentication type:\\t2\\n\\ncertificate <entity>rmation:\\n\\tcertificate issuer name:\\t\\t\\n\\tcertificate serial number: \\t\\n\\tcertificate thumbprint:\\t\\t\\n\\ncertificate <entity>rmation is only provided if a certificate was used for pre-authentication.\\n\\npre-authentication types, ticket options and failure codes are defined in rfc <entity>.\\n\\nif the ticket was malformed or <entity> during transit and could not be decrypted, then many fields in <entity> <entity> might not be present.\",\"organization\":\"<entity>\",\"senderuser-0010\":\"<entity>.<entity>.exampleuser-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winuser-0010-56507log\",\"channel\":\"security\",\"<entity>_name\":\"<entity>.<entity>.exampleuser-8710\",\"<entity>_user-0010-54061\":{\"ipaddress\":\"100.100.64.88.88.130.119\",\"ipport\":\"54389\",\"preauthtype\":\"2\",\"<entity>name\":\"<entity>/<entity>.<entity>.exampleuser-8710\",\"status\":\"0x18\",\"<entity>sid\":\"s-1-5-21-1000000000-2000000000-3000000000-2961\",\"<entity>username\":\"<entity>\",\"ticketoptions\":\"0x40cred-<entity>\"},\"<entity>_id\":\"4771\",\"keywords\":[\"audit failure\"],\"opcode\":\"<entity>\",\"process\":{\"pid\":676,\"thread\":{\"id\":5788}},\"provider_org-0515\":\"{<entity>}\",\"provider_name\":\"<entity>-<entity>-security-auditing\",\"record_id\":1354cred-2391937,\"task\":\"<entity>\"}}",
+    "full_characters": 2244,
+    "preview_truncated": false
+  }
+]

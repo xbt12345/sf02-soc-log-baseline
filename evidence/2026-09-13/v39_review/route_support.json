@@ -1,0 +1,569 @@
+[
+  {
+    "scope": "official_all",
+    "route": "asa",
+    "label": 1,
+    "rows": 78748,
+    "legacy_components": 27,
+    "raw_message_keys": 16796,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "asa",
+    "label": 2,
+    "rows": 34059,
+    "legacy_components": 9,
+    "raw_message_keys": 17016,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "asa_acl",
+    "label": 0,
+    "rows": 16,
+    "legacy_components": 1,
+    "raw_message_keys": 8,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "asa_protocol",
+    "label": 1,
+    "rows": 48,
+    "legacy_components": 2,
+    "raw_message_keys": 11,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "audit_fields",
+    "label": 0,
+    "rows": 8577,
+    "legacy_components": 66,
+    "raw_message_keys": 7884,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "authentication",
+    "label": 0,
+    "rows": 325,
+    "legacy_components": 3,
+    "raw_message_keys": 325,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "authentication",
+    "label": 2,
+    "rows": 12,
+    "legacy_components": 3,
+    "raw_message_keys": 12,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "bounded_payload",
+    "label": 2,
+    "rows": 35,
+    "legacy_components": 5,
+    "raw_message_keys": 35,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "cef_fields",
+    "label": 0,
+    "rows": 4136,
+    "legacy_components": 101,
+    "raw_message_keys": 2072,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "cef_fields",
+    "label": 1,
+    "rows": 44,
+    "legacy_components": 7,
+    "raw_message_keys": 8,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "cef_fields",
+    "label": 2,
+    "rows": 2,
+    "legacy_components": 1,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "empty",
+    "label": 0,
+    "rows": 356315,
+    "legacy_components": 356315,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "format_payload",
+    "label": 0,
+    "rows": 1009,
+    "legacy_components": 155,
+    "raw_message_keys": 554,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "native_firewall",
+    "label": 1,
+    "rows": 260,
+    "legacy_components": 2,
+    "raw_message_keys": 33,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "native_flow",
+    "label": 1,
+    "rows": 32596,
+    "legacy_components": 6,
+    "raw_message_keys": 5981,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "syslog_auth",
+    "label": 2,
+    "rows": 219,
+    "legacy_components": 217,
+    "raw_message_keys": 219,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "syslog_body",
+    "label": 0,
+    "rows": 17794,
+    "legacy_components": 2,
+    "raw_message_keys": 15883,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "unsupported",
+    "label": 0,
+    "rows": 271477,
+    "legacy_components": 1,
+    "raw_message_keys": 101059,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "unsupported",
+    "label": 1,
+    "rows": 30,
+    "legacy_components": 1,
+    "raw_message_keys": 4,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "vpc_v2",
+    "label": 0,
+    "rows": 30131,
+    "legacy_components": 1,
+    "raw_message_keys": 111,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "vpc_v2",
+    "label": 2,
+    "rows": 10620,
+    "legacy_components": 11,
+    "raw_message_keys": 45,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "windows_message",
+    "label": 0,
+    "rows": 828391,
+    "legacy_components": 75781,
+    "raw_message_keys": 546682,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "windows_message",
+    "label": 1,
+    "rows": 2,
+    "legacy_components": 1,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "windows_message",
+    "label": 2,
+    "rows": 473,
+    "legacy_components": 326,
+    "raw_message_keys": 473,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "official_all",
+    "route": "windows_rendered",
+    "label": 0,
+    "rows": 381552,
+    "legacy_components": 246,
+    "raw_message_keys": 1485,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "asa",
+    "label": 1,
+    "rows": 78746,
+    "legacy_components": 26,
+    "raw_message_keys": 16795,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "asa",
+    "label": 2,
+    "rows": 28207,
+    "legacy_components": 8,
+    "raw_message_keys": 14084,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "asa_acl",
+    "label": 0,
+    "rows": 16,
+    "legacy_components": 1,
+    "raw_message_keys": 8,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "asa_protocol",
+    "label": 1,
+    "rows": 48,
+    "legacy_components": 2,
+    "raw_message_keys": 11,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "audit_fields",
+    "label": 0,
+    "rows": 2931,
+    "legacy_components": 25,
+    "raw_message_keys": 2672,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "authentication",
+    "label": 0,
+    "rows": 23,
+    "legacy_components": 1,
+    "raw_message_keys": 23,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "authentication",
+    "label": 2,
+    "rows": 10,
+    "legacy_components": 2,
+    "raw_message_keys": 10,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "bounded_payload",
+    "label": 2,
+    "rows": 30,
+    "legacy_components": 4,
+    "raw_message_keys": 30,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "cef_fields",
+    "label": 0,
+    "rows": 3302,
+    "legacy_components": 63,
+    "raw_message_keys": 1651,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "cef_fields",
+    "label": 1,
+    "rows": 44,
+    "legacy_components": 7,
+    "raw_message_keys": 8,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "cef_fields",
+    "label": 2,
+    "rows": 2,
+    "legacy_components": 1,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "empty",
+    "label": 0,
+    "rows": 280203,
+    "legacy_components": 280203,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "format_payload",
+    "label": 0,
+    "rows": 505,
+    "legacy_components": 80,
+    "raw_message_keys": 250,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "native_firewall",
+    "label": 1,
+    "rows": 260,
+    "legacy_components": 2,
+    "raw_message_keys": 33,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "native_flow",
+    "label": 1,
+    "rows": 4026,
+    "legacy_components": 5,
+    "raw_message_keys": 671,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "syslog_auth",
+    "label": 2,
+    "rows": 175,
+    "legacy_components": 174,
+    "raw_message_keys": 175,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "syslog_body",
+    "label": 0,
+    "rows": 9854,
+    "legacy_components": 1,
+    "raw_message_keys": 7947,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "vpc_v2",
+    "label": 2,
+    "rows": 8024,
+    "legacy_components": 10,
+    "raw_message_keys": 34,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "windows_message",
+    "label": 0,
+    "rows": 656579,
+    "legacy_components": 60202,
+    "raw_message_keys": 409142,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "windows_message",
+    "label": 1,
+    "rows": 2,
+    "legacy_components": 1,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "windows_message",
+    "label": 2,
+    "rows": 378,
+    "legacy_components": 256,
+    "raw_message_keys": 378,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_allowed_dev",
+    "route": "windows_rendered",
+    "label": 0,
+    "rows": 305285,
+    "legacy_components": 198,
+    "raw_message_keys": 1175,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "asa",
+    "label": 1,
+    "rows": 71908,
+    "legacy_components": 15,
+    "raw_message_keys": 15311,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "asa",
+    "label": 2,
+    "rows": 27474,
+    "legacy_components": 5,
+    "raw_message_keys": 13720,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "asa_acl",
+    "label": 0,
+    "rows": 16,
+    "legacy_components": 1,
+    "raw_message_keys": 8,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "audit_fields",
+    "label": 0,
+    "rows": 280,
+    "legacy_components": 9,
+    "raw_message_keys": 144,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "bounded_payload",
+    "label": 2,
+    "rows": 25,
+    "legacy_components": 3,
+    "raw_message_keys": 25,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "cef_fields",
+    "label": 1,
+    "rows": 22,
+    "legacy_components": 3,
+    "raw_message_keys": 4,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "empty",
+    "label": 0,
+    "rows": 242137,
+    "legacy_components": 242137,
+    "raw_message_keys": 1,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "format_payload",
+    "label": 0,
+    "rows": 253,
+    "legacy_components": 40,
+    "raw_message_keys": 149,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "native_firewall",
+    "label": 1,
+    "rows": 260,
+    "legacy_components": 2,
+    "raw_message_keys": 33,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "native_flow",
+    "label": 1,
+    "rows": 846,
+    "legacy_components": 3,
+    "raw_message_keys": 101,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "syslog_auth",
+    "label": 2,
+    "rows": 153,
+    "legacy_components": 152,
+    "raw_message_keys": 153,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "syslog_body",
+    "label": 0,
+    "rows": 9854,
+    "legacy_components": 1,
+    "raw_message_keys": 7947,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "vpc_v2",
+    "label": 2,
+    "rows": 7080,
+    "legacy_components": 7,
+    "raw_message_keys": 30,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "windows_message",
+    "label": 0,
+    "rows": 571890,
+    "legacy_components": 52422,
+    "raw_message_keys": 362647,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "windows_message",
+    "label": 2,
+    "rows": 331,
+    "legacy_components": 211,
+    "raw_message_keys": 331,
+    "raw_keys_not_independent_incident_count": true
+  },
+  {
+    "scope": "v38_final_fit",
+    "route": "windows_rendered",
+    "label": 0,
+    "rows": 267046,
+    "legacy_components": 174,
+    "raw_message_keys": 1023,
+    "raw_keys_not_independent_incident_count": true
+  }
+]

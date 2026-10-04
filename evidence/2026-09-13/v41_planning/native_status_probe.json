@@ -1,0 +1,806 @@
+{
+  "scope": "Targeted raw-byte candidates on all 18 Windows regressions; regex probes do not establish a production parser boundary or full coverage",
+  "official_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "records": [
+    {
+      "row_position": 211849,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1045,
+            1068
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1072,
+            1097
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3255,
+            3274
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3277,
+            3299
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "3f4079243c02c443a3f9aa7739e884eef5979e47e83582a1ae10f8053058847b",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 216826,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1045,
+            1068
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1072,
+            1097
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3255,
+            3274
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3277,
+            3299
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "59d36909309a077797855b398e12f173efe8b443913f7e0c7001d190722dc946",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 225673,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3268,
+            3287
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3290,
+            3312
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "58f033032c8e0316d98c2421c3a73187ad2bf3b53593209ae6b874fd3b245f04",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 306181,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1046,
+            1069
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1073,
+            1098
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3256,
+            3275
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3278,
+            3300
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "a34fb9d67b603449cb49faf66a13e70dd590548d1645bddd60fbbeabacf4ac7f",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 321295,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3280,
+            3299
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3302,
+            3324
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "201a884500af30e70c29396ab764f327cb71b6a74ae29819c47140ba5ff768f7",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 326629,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1045,
+            1068
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1072,
+            1097
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3255,
+            3274
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3277,
+            3299
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "6457aa17b6d02e92baf6f5647bbd66fc4519ab389d4d23d6ec486aa4f369d935",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 362827,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3280,
+            3299
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3302,
+            3324
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "26a92f2b799875413a5ef8e34a407fb407b4568258e3d1d6114f14825f903785",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 420010,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3268,
+            3287
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3290,
+            3312
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "00bfce36704280dd76f6497f096e8eb0a549b0ad5eb18f637cdb6fe397df829b",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 462265,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1051,
+            1074
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1078,
+            1103
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3269,
+            3288
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3291,
+            3313
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "68bfe18810ee8e58d7685a9e979b47d77281e253b41452df95e507d062332f9d",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 464667,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1051,
+            1074
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1078,
+            1103
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3269,
+            3288
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3291,
+            3313
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "f056ceb0d47b996b822318939588f5c879c39cab55792a97499217a1e9fd285c",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 595528,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3268,
+            3287
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3290,
+            3312
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "11775cdb2b0dc12901fc41a7cec14f30f39980e369f6d40f48a517812b7c0674",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 631934,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1051,
+            1074
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1078,
+            1103
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3269,
+            3288
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3291,
+            3313
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "d320c5982c5415ad91bbe285a6b2f9d652f9eb1dd6899f02cc0dbd332ed3ea17",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 921214,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1056,
+            1079
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1083,
+            1108
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3275,
+            3294
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3297,
+            3319
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "0dc2dca636c3fcbea3b6a03b6ac9a2a4802ecb89a57870bb56f022baa1f6d41f",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 1198539,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3268,
+            3287
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3290,
+            3312
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "4edf96fc046d4ae0c79fddc2cb8a6b426cb63f6e26898d002c4dee6cda557138",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 1324089,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3280,
+            3299
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3302,
+            3324
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "e1c34801dd0fa676dd1d1348e98b4904cba5124df0fc217bbc20b2837f4c5069",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 1870764,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1056,
+            1079
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1083,
+            1108
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3266,
+            3285
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3288,
+            3310
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "512be2b86eb5b490a6c875785c896e40bc9687eb9f91367ced48b61ca0864b71",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 1870767,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1046,
+            1069
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1073,
+            1098
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3245,
+            3264
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3267,
+            3289
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "ad8a480f36ce57e45e82a37e8f45579b76eec8877e45a413189ce6298ca3c96f",
+      "projection_reproduced": true
+    },
+    {
+      "row_position": 2044745,
+      "status_candidates": [
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Status",
+          "value": "0xC000006D",
+          "span": [
+            1050,
+            1073
+          ]
+        },
+        {
+          "carrier": "rendered_escaped_message",
+          "key": "Sub Status",
+          "value": "0xC0000064",
+          "span": [
+            1077,
+            1102
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "Status",
+          "value": "0xc000006d",
+          "span": [
+            3290,
+            3309
+          ]
+        },
+        {
+          "carrier": "literal_native_key",
+          "key": "SubStatus",
+          "value": "0xc0000064",
+          "span": [
+            3312,
+            3334
+          ]
+        }
+      ],
+      "structured_status_present": false,
+      "raw_sha256": "b82ec323b787f974ef77a2c911463f3025ef58307291d125d29fac8105da0864",
+      "projection_reproduced": true
+    }
+  ],
+  "all_18_have_status_and_substatus_candidates": true,
+  "existing_structured_extractions": 0,
+  "candidate_span_counts": [
+    4
+  ],
+  "new_model_fits": 0,
+  "initial_probe_limitation": "Whitespace-only matching missed literal escaped tabs; an unanchored word-boundary probe could misname Sub Status as Status. Revised diagnostic anchors to field separators and verifies agreement with native quoted keys. This still is not a production parser.",
+  "both_carriers_agree_for_all_targets": true
+}

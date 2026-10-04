@@ -1,0 +1,275 @@
+{
+  "status": "targeted_repairs_and_normal_gate_verified_MS_unresolved_no_model_promoted",
+  "created_at_utc": "2026-09-20T08:54:56.906515+00:00",
+  "quality_acceptance": false,
+  "validation_scope": "Original-fit development only: 59,640 official raw-message replays; symmetric selection and normal guard replay; nine logistic normal-gate fits and weight reloads; new three-source supported normal folds. Normal controls fixed 10/12 to 0/12 without new threat-to-B errors. No new M/S improvement, blind evaluation, full SOC acceptance or operational FPR claim.",
+  "linear_normal_gate_fits": 9,
+  "new_M_S_models_trained": 0,
+  "neural_training_executed": false,
+  "platform_used": false,
+  "all_issues_solved": false,
+  "issues": [
+    {
+      "id": "selection_asymmetry",
+      "state": "implementation_repaired_and_historical_replay_verified"
+    },
+    {
+      "id": "missing_normal_guard",
+      "state": "implementation_repaired_missing_support_fails_closed"
+    },
+    {
+      "id": "empty_normal_validation_fold",
+      "state": "new_whole_source_manifest_verified_normal_gate_refitted"
+    },
+    {
+      "id": "normal_control_classification",
+      "state": "narrow_control_repair_verified_not_full_SOC"
+    },
+    {
+      "id": "neighbor_cap_as_main_cause",
+      "state": "ruled_out_for_current_626_failed_hard_S_rows"
+    },
+    {
+      "id": "redacted_port_and_category_OOV",
+      "state": "distinguished_unknowns_preserved_no_value_imputation"
+    },
+    {
+      "id": "contradictory_observable_labels",
+      "state": "diagnosed_original_rows_and_labels_retained_underlying_criteria_unresolved"
+    },
+    {
+      "id": "structured_body_endpoint_mapping",
+      "state": "ambiguous_maps_quarantined_local_bijections_challenged_no_qualified_new_context"
+    },
+    {
+      "id": "ASA_M_S_new_source_transfer",
+      "state": "unresolved_no_new_M_S_gain_claim"
+    }
+  ],
+  "verification": {
+    "verification_passed": true,
+    "quality_acceptance": false,
+    "previous_v65_bound_files_unchanged": 250,
+    "same_selector_and_normal_guards_replayed_folds": 3,
+    "normal_models_restored": 9,
+    "max_probability_difference": 5.421010862427522e-19,
+    "rows_per_three_model_gate": 59640,
+    "new_manifest_no_group_crossing": true,
+    "normal_controls_errors_after_repair": 0,
+    "additional_threat_to_B": 0,
+    "scope": "Actual normal-gate reload and prediction replay, fit-only scaling, split and endpoint-quarantine checks. No new M/S model or external quality acceptance.",
+    "source_sha256": "913892148125f0fef9afe987a79aeb63912e2d4fe24e7728dd76dd1e4f609f33"
+  },
+  "implementation_tests_passed": 8,
+  "normal_control_original_errors": 10,
+  "normal_control_errors_after_repair": 0,
+  "normal_control_rows": 12,
+  "normal_source_symbols": 3,
+  "added_threat_to_B": 0,
+  "threat_rows_evaluated": 59628,
+  "new_manifest": {
+    "changed_rows": 16,
+    "moved_source_groups": 2,
+    "validation_counts": {
+      "0": {
+        "1": 14578,
+        "2": 5876,
+        "0": 2
+      },
+      "1": {
+        "1": 14986,
+        "2": 6234,
+        "0": 8
+      },
+      "2": {
+        "1": 13580,
+        "2": 4374,
+        "0": 2
+      }
+    },
+    "rule": "Deterministic hash order of existing normal source groups, round-robin across three folds; move entire groups including their threat rows. No score/seed search, no role crossing.",
+    "warning": "This is a new adaptive development manifest. Old v65 heads are not valid fold-matched models for this manifest and must not be reused as such.",
+    "source_sha256": "baa2d9ff2a0fda047626f3a956097369859ddee3b1be315b09af95194142bfc9"
+  },
+  "key_failure_slices": [
+    {
+      "slice": "all",
+      "rows": 59640,
+      "sources": 4771,
+      "H1_errors": 830,
+      "empty_context": 15258,
+      "cap_removed_entries": 13867,
+      "source_port_OOV": 31191,
+      "destination_port_OOV": 12742,
+      "src_redacted": 18038,
+      "dst_redacted": 8814,
+      "validation_input_conflict": 1066,
+      "no_same_label_training_exact_view": null
+    },
+    {
+      "slice": "hard_S",
+      "rows": 652,
+      "sources": 189,
+      "H1_errors": 626,
+      "empty_context": 292,
+      "cap_removed_entries": 0,
+      "source_port_OOV": 394,
+      "destination_port_OOV": 172,
+      "src_redacted": 178,
+      "dst_redacted": 130,
+      "validation_input_conflict": 48,
+      "no_same_label_training_exact_view": 622
+    },
+    {
+      "slice": "failed_hard_S",
+      "rows": 626,
+      "sources": 185,
+      "H1_errors": 626,
+      "empty_context": 292,
+      "cap_removed_entries": 0,
+      "source_port_OOV": 384,
+      "destination_port_OOV": 172,
+      "src_redacted": 162,
+      "dst_redacted": 130,
+      "validation_input_conflict": 48,
+      "no_same_label_training_exact_view": 596
+    },
+    {
+      "slice": "normal",
+      "rows": 12,
+      "sources": 3,
+      "H1_errors": 10,
+      "empty_context": 4,
+      "cap_removed_entries": 0,
+      "source_port_OOV": 2,
+      "destination_port_OOV": 0,
+      "src_redacted": 10,
+      "dst_redacted": 0,
+      "validation_input_conflict": 0,
+      "no_same_label_training_exact_view": null
+    }
+  ],
+  "structured_body_audit": {
+    "failed_S_source_symbols": 185,
+    "matching_structured_source_rows": 0,
+    "matching_same_collector_body_mention_rows": 626,
+    "same_collector_non_ASA_rows": 0,
+    "same_collector_non_ASA_source_symbols": 0,
+    "structured_body_consistency_by_class": {
+      "0": {
+        "rows": 12,
+        "structured_src_nonempty": 0,
+        "structured_dst_nonempty": 0,
+        "structured_src_matches_body": 0,
+        "structured_dst_matches_body": 0
+      },
+      "1": {
+        "rows": 43144,
+        "structured_src_nonempty": 43144,
+        "structured_dst_nonempty": 43144,
+        "structured_src_matches_body": 690,
+        "structured_dst_matches_body": 148
+      },
+      "2": {
+        "rows": 16484,
+        "structured_src_nonempty": 16484,
+        "structured_dst_nonempty": 16484,
+        "structured_src_matches_body": 0,
+        "structured_dst_matches_body": 0
+      }
+    },
+    "same_collector_ASA_outside_current_fit": 0,
+    "scope": "Read-only official train context scan; no new context labels read. Supplied structured-source equality and same-collector raw IP mentions checked separately. A raw IP mention is not necessarily a source endpoint. Collector token presence is a candidate filter, not verified physical host/session linkage. Other-partition rows are not admitted to model context.",
+    "source_sha256": "20f0ddbae8bfdaae45b83345f2173e700b8abbb36d4659577da2d1e5706cd1fb"
+  },
+  "endpoint_mapping": {
+    "result": {
+      "src": {
+        "structured_symbols": 4499,
+        "body_symbols": 4769,
+        "structured_maps_many": 113,
+        "body_maps_many": 346,
+        "max_bodies_per_structured": 39,
+        "max_structured_per_body": 28,
+        "all_bijective": false,
+        "eligible_rows": 38983,
+        "eligible_failed_hard_S_rows": 342
+      },
+      "dst": {
+        "structured_symbols": 615,
+        "body_symbols": 121,
+        "structured_maps_many": 170,
+        "body_maps_many": 48,
+        "max_bodies_per_structured": 27,
+        "max_structured_per_body": 40,
+        "all_bijective": false,
+        "eligible_rows": 15790,
+        "eligible_failed_hard_S_rows": 0
+      }
+    },
+    "source_sha256": "b64fd8c0bc6d563d836dc085b48e711477e0b9301166af4a17f1163d855c2904",
+    "scope": "Label-free per-collector symbol mapping audit on current fit records. Many-to-many mappings are quarantined. Even bijection alone does not establish physical entity identity or temporal sessions."
+  },
+  "bridge_challenge": {
+    "fit_locally_bijective_failed_source_pairs": 107,
+    "pairs_invalidated_on_other_same_collector_ASA": 28,
+    "outside_fit_structured_matches": 592,
+    "outside_fit_same_collector_rows": 312,
+    "same_collector_non_ASA_candidates_after_mapping_challenge": 0,
+    "cross_collector_candidates_unqualified": 280,
+    "source_sha256": "a9da07de2f805d4d949ca1856719b46a49565ba892eadab43ef3e827f8b503d0",
+    "scope": "No context labels read, no candidates admitted to training. Local bijection is challenged on other ASA bodies; even survivors require provenance before cross-collector/physical-entity inference."
+  },
+  "next_direction": "Retain proven selector/normal-control repairs; resolve observable M/S criteria and endpoint provenance before broader context integration or another loss/epoch expansion. No literal-ID shortcut or automatic relabeling.",
+  "artifact_sha256": {
+    "artifacts/v66_issue_resolution_20260920/audit.json": "8c6c2d1b64d9e9708665a1b55f9d2ab13d533214a4f95f84ae64e8bbfa2f1e3a",
+    "artifacts/v66_issue_resolution_20260920/audit.log": "a0a90071cf1fe17829aa1d14579c4a75457556a21cc80b63a967b374b12a2480",
+    "artifacts/v66_issue_resolution_20260920/bridge_candidates_private.parquet": "565d36d23c503f01f31d4fa058c8171cad58ca0ffd178b4880c1b57207178d70",
+    "artifacts/v66_issue_resolution_20260920/context_bridge.json": "a813ed10e295eadc660ce7b869f36e85e4fb7ca15a2de3208786cd376e61971a",
+    "artifacts/v66_issue_resolution_20260920/context_candidates_private.parquet": "3814c82562cbae7540b344a4bc8316024cda4212eafa9e6b6dbde66922378351",
+    "artifacts/v66_issue_resolution_20260920/context_coverage.json": "d663a05a4f2cb0fb7e3e4de6c02dd3bc23353193b3b3bbd46b5a67d3c94f7119",
+    "artifacts/v66_issue_resolution_20260920/endpoint_mapping.json": "cbf3f67b15bc80bb291460336af26fcc2722a799199d7f09f9f1523883cf3394",
+    "artifacts/v66_issue_resolution_20260920/endpoint_mapping_private.parquet": "1f54cf8b50848963765c1c63bdf3ac10dad40c81e197a367ec755c7b1140bf81",
+    "artifacts/v66_issue_resolution_20260920/failure_slices.csv": "d6ce4fd9eddad4283ba579a2ddee4d8c9217ef7792183895879dbe94e77080be",
+    "artifacts/v66_issue_resolution_20260920/issue_ledger.json": "07a9dadc548790d5b4e6dbaf1bf875c39880621d9375f99fccae8ccf20a34f57",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/analysis.json": "d70a97ea89dd9622e133460c6d74d6849de45ca1320a3368d7933bb098b3c194",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/balanced_gate_fold0.joblib": "f27202aa794708a7393277b8f5e7b0c8c558587eee5b6ecf339084315e99b79a",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/balanced_gate_fold1.joblib": "f8f153e299221ba51361b089396e360648ed6fad4fb3300c53e85b616e17b4ac",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/balanced_gate_fold2.joblib": "757c891a3c79746624c8adf2b2ad8966fb4760ca05bcb512f3a3fba9aae3def8",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/balanced_gate_oof.parquet": "a11f5f1bfd3fdc28b26b78794ed9145d0ddbd6b06f7c964a1cb408b2aa0f5f65",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/preregistered.json": "4d079e16193302822eb0a21f501e879663106c630949e22cb66018683a31fd13",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/training.log": "fcc61d092f9668e0560647fd2cb72931ffea671b97c5466093b89ba04ddc83d2",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/unweighted_gate_fold0.joblib": "0a7261e01d022463e91b30f11d10915acc97b0fe2d97ec68bc1eebb728dd773e",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/unweighted_gate_fold1.joblib": "ea2fee90e475cbcf1b89414fcefac811b84be0291ca50b517d47927cfd8db216",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/unweighted_gate_fold2.joblib": "09931f1ead3422de9e96c756da68fb610410947afb98ba6b2bcc833d5b5bca05",
+    "artifacts/v66_issue_resolution_20260920/normal_gate/unweighted_gate_oof.parquet": "097199829bcfc75c2cdcc2b012b2f6d5e58a86645daa2e9849dbb92fb06f2626",
+    "artifacts/v66_issue_resolution_20260920/nuisance_private_diagnostic.parquet": "cf82bd0f0fc7930a167a5dd5f49d7de5bfa46d1f542a70e4d5c8cdccdd6525a5",
+    "artifacts/v66_issue_resolution_20260920/raw_roundtrip_receipts.parquet": "3b76ead69ea67554dd5b0a9f2598d2d81f9cd9dc5532e1a03d0c45ac0083b9cd",
+    "artifacts/v66_issue_resolution_20260920/row_diagnosis.parquet": "e623763f2b113c8c3f8f894e59c70939dd20c067fc0e788945767f0604bd6058",
+    "artifacts/v66_issue_resolution_20260920/safe_residual.parquet": "934f58b5553555f1afa6334522705876ea8f19884d986a9852ce5168ac8413e9",
+    "artifacts/v66_issue_resolution_20260920/selection_replay.json": "1c88542f216b983657d30a074e416a07a70f1a41f903dc2513076b710d241869",
+    "artifacts/v66_issue_resolution_20260920/structured_body_consistency.parquet": "4c06483ac38c66ac1b5166c70a3640e3c34519770ebf6bcbaaa3558e57bb01cc",
+    "artifacts/v66_issue_resolution_20260920/supported_fold_manifest.parquet": "28f228261cdf5c31f80b29b01c029e83effc2f61374ddd0cc032caa3002d6d03",
+    "artifacts/v66_issue_resolution_20260920/supported_folds.json": "bfaefb6d2db9e202cb118f686c484a0995ef17a06ed252a594355e5bd48422ee",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/analysis.json": "c91dca4fe14ba4932b655befb4563b5ab51877da739d51c3b2cc21ad6e711cdb",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/fold0.joblib": "00d78b885c1e52ae050cce97d7ada26dab84879bdb070d5d4494f83490a8dd43",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/fold1.joblib": "9185728c11c0e05a5c600b3d1bc20ad3dd0b649b0f976c0fd9106a9c966a90b5",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/fold2.joblib": "64a88cbdea081c71d8551f598ce806b976e5cae5f8c3659fac5d37e439cf15a1",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/oof.parquet": "dfcf67ce68ba75535882e4648e765f1ef964af20877637b078070973729751d2",
+    "artifacts/v66_issue_resolution_20260920/supported_normal_gate/preregistered.json": "6d77672c5187e06ad26b7cd6c8fcead359d6363e6b4a0c0cf0a9ce8a73aeaa1f",
+    "artifacts/v66_issue_resolution_20260920/tests.log": "f308a44e9bbeddd45d769ad48da834b0d2ea031179d7f924fc3e5b58a613a164",
+    "artifacts/v66_issue_resolution_20260920/verification.json": "5eb597d62ca652284ea713e18aae0b161a187516f211b59ffbf9ff7f17faff45",
+    "docs/V66_CAUSES_AND_REPAIRS.md": "76746a0b4e13dfc3d6202622415ce0bbfe99d08defb544998fd69dead82a8afd",
+    "training/audit_v66_context_bridge.py": "a9da07de2f805d4d949ca1856719b46a49565ba892eadab43ef3e827f8b503d0",
+    "training/audit_v66_context_coverage.py": "20f0ddbae8bfdaae45b83345f2173e700b8abbb36d4659577da2d1e5706cd1fb",
+    "training/audit_v66_endpoint_mapping.py": "b64fd8c0bc6d563d836dc085b48e711477e0b9301166af4a17f1163d855c2904",
+    "training/audit_v66_failures.py": "633af09ecd15d70ba237383ded877bef1ff17eec404fb198f96b80945b79d1e1",
+    "training/finalize_v66_review.py": "090a3ccc5600310a32489d4b0ae782970079f5e7c8d2ff13e46a3b7d9d022f36",
+    "training/prepare_v66_supported_folds.py": "baa2d9ff2a0fda047626f3a956097369859ddee3b1be315b09af95194142bfc9",
+    "training/probe_v66_normal_gate.py": "834785213963439a123bc98f0852d5afc3446613d882ad5f36d037aaea8ab4e7",
+    "training/replicate_v66_normal_gate.py": "89e29c341dfb694634b8cae8ee8e29f0905af398657e57d6215cd58ccb0d79f8",
+    "training/test_v66_repairs.py": "cea7b9987a1d70e92d4d9efdb3df7f7a3ab2c8704d5e2bd8693dd8ce2c6ffac1",
+    "training/v66_selection.py": "55447c6c342a90fce7c5c770a161988fbdad7bc545ab108312115888a0b0456f",
+    "training/verify_v66_repairs.py": "913892148125f0fef9afe987a79aeb63912e2d4fe24e7728dd76dd1e4f609f33"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "new_fits": 0,
+  "scope": "Saved fit predictions only; terminal derivatives of unweighted binary logistic loss with respect to margin.",
+  "limitations": [
+    "Not training trajectory or leaf-wise gain.",
+    "Class gradient totals do not establish how well useful features receive updates.",
+    "Does not identify optimal class weights or prove a reweighting benefit."
+  ],
+  "entries": [
+    {
+      "fold": 0,
+      "arm": "Q_old_bins",
+      "label": 1,
+      "rows": 44696,
+      "row_fraction": 0.9838432753686991,
+      "terminal_loss_fraction": 0.25418067255686994,
+      "terminal_absolute_gradient_fraction": 0.49980422188696455,
+      "terminal_hessian_fraction": 0.8881228735669153,
+      "mean_terminal_absolute_gradient": 0.009988080414879981,
+      "signed_gradient_sum": 446.4272422234756
+    },
+    {
+      "fold": 0,
+      "arm": "Q_old_bins",
+      "label": 2,
+      "rows": 734,
+      "row_fraction": 0.0161567246313009,
+      "terminal_loss_fraction": 0.7458193274431302,
+      "terminal_absolute_gradient_fraction": 0.5001957781130355,
+      "terminal_hessian_fraction": 0.11187712643308467,
+      "mean_terminal_absolute_gradient": 0.6086879862378521,
+      "signed_gradient_sum": -446.7769818985835
+    },
+    {
+      "fold": 0,
+      "arm": "R_observed",
+      "label": 1,
+      "rows": 44696,
+      "row_fraction": 0.9838432753686991,
+      "terminal_loss_fraction": 0.26004406053895074,
+      "terminal_absolute_gradient_fraction": 0.49932928665056553,
+      "terminal_hessian_fraction": 0.876739663135996,
+      "mean_terminal_absolute_gradient": 0.009898782667881634,
+      "signed_gradient_sum": 442.4359901236375
+    },
+    {
+      "fold": 0,
+      "arm": "R_observed",
+      "label": 2,
+      "rows": 734,
+      "row_fraction": 0.0161567246313009,
+      "terminal_loss_fraction": 0.7399559394610492,
+      "terminal_absolute_gradient_fraction": 0.5006707133494345,
+      "terminal_hessian_fraction": 0.12326033686400387,
+      "mean_terminal_absolute_gradient": 0.6043931545273525,
+      "signed_gradient_sum": -443.62457542307675
+    },
+    {
+      "fold": 1,
+      "arm": "Q_old_bins",
+      "label": 1,
+      "rows": 44628,
+      "row_fraction": 0.9861669686657533,
+      "terminal_loss_fraction": 0.2559524732417268,
+      "terminal_absolute_gradient_fraction": 0.49958907863200835,
+      "terminal_hessian_fraction": 0.8849343308053157,
+      "mean_terminal_absolute_gradient": 0.009076419563610971,
+      "signed_gradient_sum": 405.06245228483044
+    },
+    {
+      "fold": 1,
+      "arm": "Q_old_bins",
+      "label": 2,
+      "rows": 626,
+      "row_fraction": 0.013833031334246697,
+      "terminal_loss_fraction": 0.7440475267582732,
+      "terminal_absolute_gradient_fraction": 0.5004109213679917,
+      "terminal_hessian_fraction": 0.11506566919468426,
+      "mean_terminal_absolute_gradient": 0.6481290657858784,
+      "signed_gradient_sum": -405.72879518195987
+    },
+    {
+      "fold": 1,
+      "arm": "R_observed",
+      "label": 1,
+      "rows": 44628,
+      "row_fraction": 0.9861669686657533,
+      "terminal_loss_fraction": 0.2595043840975407,
+      "terminal_absolute_gradient_fraction": 0.4989694517846457,
+      "terminal_hessian_fraction": 0.8709780713482145,
+      "mean_terminal_absolute_gradient": 0.008805209055836321,
+      "signed_gradient_sum": 392.9588697438634
+    },
+    {
+      "fold": 1,
+      "arm": "R_observed",
+      "label": 2,
+      "rows": 626,
+      "row_fraction": 0.013833031334246697,
+      "terminal_loss_fraction": 0.7404956159024593,
+      "terminal_absolute_gradient_fraction": 0.5010305482153543,
+      "terminal_hessian_fraction": 0.12902192865178552,
+      "mean_terminal_absolute_gradient": 0.6303227916274357,
+      "signed_gradient_sum": -394.5820675587747
+    },
+    {
+      "fold": 2,
+      "arm": "Q_old_bins",
+      "label": 1,
+      "rows": 45556,
+      "row_fraction": 0.9846113944843088,
+      "terminal_loss_fraction": 0.25729868844966913,
+      "terminal_absolute_gradient_fraction": 0.49945781075280915,
+      "terminal_hessian_fraction": 0.8833356718676552,
+      "mean_terminal_absolute_gradient": 0.00937802600786079,
+      "signed_gradient_sum": 427.22535281410615
+    },
+    {
+      "fold": 2,
+      "arm": "Q_old_bins",
+      "label": 2,
+      "rows": 712,
+      "row_fraction": 0.01538860551569119,
+      "terminal_loss_fraction": 0.7427013115503309,
+      "terminal_absolute_gradient_fraction": 0.5005421892471908,
+      "terminal_hessian_fraction": 0.11666432813234473,
+      "mean_terminal_absolute_gradient": 0.6013383519707582,
+      "signed_gradient_sum": -428.1529066031799
+    },
+    {
+      "fold": 2,
+      "arm": "R_observed",
+      "label": 1,
+      "rows": 45556,
+      "row_fraction": 0.9846113944843088,
+      "terminal_loss_fraction": 0.2604532579154094,
+      "terminal_absolute_gradient_fraction": 0.4991245637376273,
+      "terminal_hessian_fraction": 0.8745018953148732,
+      "mean_terminal_absolute_gradient": 0.009230927622321755,
+      "signed_gradient_sum": 420.5241387624899
+    },
+    {
+      "fold": 2,
+      "arm": "R_observed",
+      "label": 2,
+      "rows": 712,
+      "row_fraction": 0.01538860551569119,
+      "terminal_loss_fraction": 0.7395467420845906,
+      "terminal_absolute_gradient_fraction": 0.5008754362623726,
+      "terminal_hessian_fraction": 0.12549810468512673,
+      "mean_terminal_absolute_gradient": 0.5926956318611845,
+      "signed_gradient_sum": -421.9992898851633
+    }
+  ],
+  "inputs_sha256": {
+    "artifacts\\v71_resolution_20260921\\fold0\\Q_old_bins\\fit.parquet": "f846d24d7de290c9ba7f31dd3fdd1e246cccd5f30be08c62cbdf0b250683fc9a",
+    "artifacts\\v71_resolution_20260921\\fold0\\R_observed\\fit.parquet": "584f0cdb4c8b003f92c151071e2f5434c09b9a9a7cafd150aa34946f201c8d6e",
+    "artifacts\\v71_resolution_20260921\\fold1\\Q_old_bins\\fit.parquet": "e1780dc9a30e38bb9ac543d2a8cf1788f2384d5d842a13aaca5b634b05ffa321",
+    "artifacts\\v71_resolution_20260921\\fold1\\R_observed\\fit.parquet": "69786244aae072fa4f7af74d24f04ee6bc88845cf46b78279fe4dae8be0a9b77",
+    "artifacts\\v71_resolution_20260921\\fold2\\Q_old_bins\\fit.parquet": "bb504c7d1bc6d0c6475d4d6a445a6ce871d58e24c4e4de9b980e687a522f84d3",
+    "artifacts\\v71_resolution_20260921\\fold2\\R_observed\\fit.parquet": "63064b7d0ed41772011f4c3f197e24231775d08d48879ff9d82e2f681cc32232"
+  },
+  "script_sha256": "3111d8735545b6ea86e57efe80b8fcecd9ce8fe9c34df37f70db64c69ec5bc27"
+}

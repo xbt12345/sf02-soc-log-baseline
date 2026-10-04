@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "new_bound_files_rehashed": 80,
+  "changed": [],
+  "delivery_sha256": "72faafa85de6f14e3dfd9fe5a4b3e927bb48d64a93e7f2e2814452c4ce3ac723",
+  "catalog_sha256": "ce55866e30be5fa4b86a3375aabf833ab9cd9ef660663d7e7fe6fcd3615cbb5b",
+  "catalog_document_hashes_checked": 50,
+  "actual_classifier_fits": 4,
+  "quality_acceptance": false,
+  "model_promoted": false,
+  "math_checks_passed": 7,
+  "readonly_mcp_tests_passed": 9,
+  "current_source_ids": [
+    "v85-delivery",
+    "v85-direction-review"
+  ],
+  "scope": "Published files and in-process readonly MCP status reread; not live ChatGPT tunnel or model-quality acceptance.",
+  "postcondition_runtime_repair": "Initial checker imported training.run_v75 from MCP-only environment lacking joblib. Final checker uses standard-library streaming hashes, keeps runtime environments and frozen artifacts unchanged."
+}

@@ -1,0 +1,103 @@
+{
+  "scope": "Input identity, original-record recount, fixed-prediction diagnostic and source/document verification; not new model acceptance.",
+  "all_evidence_checks_passed": true,
+  "checks": {
+    "old_plan_snapshot_identity": true,
+    "assumption_script_identity": true,
+    "decision_script_identity": true,
+    "official_data_identity": true,
+    "prepared_identity_rows.parquet": true,
+    "prepared_identity_projections.parquet": true,
+    "frozen_training_sources_unchanged": true,
+    "model_unchanged_A_SEMANTIC": true,
+    "model_unchanged_B_DESTINATION": true,
+    "model_unchanged_C_BOTH": true,
+    "decision_input_identity": true,
+    "assumption_model_identity": true,
+    "saved_decisions_match_argmax": true,
+    "baseline_4008_errors": true,
+    "decision_recount_windows_missed_suspicious": true,
+    "M_to_S_recount_windows_missed_suspicious": true,
+    "zero_new_normal_errors_windows_missed_suspicious": true,
+    "decision_recount_Duo_missed_suspicious": true,
+    "M_to_S_recount_Duo_missed_suspicious": true,
+    "zero_new_normal_errors_Duo_missed_suspicious": true,
+    "both_offsets_lower_macro_f1": true,
+    "865_distinct_row_positions": true,
+    "official_row_count": true,
+    "original_messages_labels_and_interfaces_match": true,
+    "386_raw_2_bodies_1_normalized": true,
+    "code13_minimum_180": true,
+    "code13_label_support": true,
+    "13_source_snapshots_unchanged": true,
+    "local_links_exist_or_this_receipt": true
+  },
+  "diagnostic_comparison": [
+    {
+      "target": "frozen_C",
+      "errors": 4008,
+      "macro_f1": 0.8254874566300493,
+      "class_f1": [
+        0.9905841722868407,
+        0.7730403597654694,
+        0.7128378378378378
+      ],
+      "S_precision": 0.8813700918964077
+    },
+    {
+      "target": "windows_missed_suspicious",
+      "errors": 4068,
+      "macro_f1": 0.8139974115340208,
+      "class_f1": [
+        0.9908248183183672,
+        0.7684132335295126,
+        0.6827541827541828
+      ],
+      "S_precision": 0.7888475836431227
+    },
+    {
+      "target": "Duo_missed_suspicious",
+      "errors": 4142,
+      "macro_f1": 0.7935552551669319,
+      "class_f1": [
+        0.9914945466080465,
+        0.7624188824441509,
+        0.6267523364485982
+      ],
+      "S_precision": 0.645996387718242
+    }
+  ],
+  "missing_links": [],
+  "files_sha256": {
+    "evidence/2026-09-13/v39_methods/asa_code13_audit.parquet": "0ad4e16bd441a16a18fbef8aecd89b37ec243bafe7ecfe3c2c67e542eda4983c",
+    "evidence/2026-09-13/v39_methods/assumption_probes.json": "477f39e75bbf4acc9f4c5ff5512d980a980ad33fd4d89c6f92af3345db30ae5c",
+    "evidence/2026-09-13/v39_methods/decision_tradeoff.json": "728aa58258a34a7dd01bda3db40204cc4c5fa578842a612d9a1fbbf0a778a696",
+    "evidence/2026-09-13/v39_methods/plan_before_method_review.md": "f643672568e8cdc09522d65d00ff55ac1c70c1bb32ac9784551e53cd836e0d60",
+    "evidence/2026-09-13/v39_methods/source_receipts.json": "d7397ad45ae1c542a2b1a70f4ff6f88be02bc8eca512ab1f7c3f6adce7a20a23",
+    "evidence/2026-09-13/v39_methods/source_receipts_git.json": "b5e0e1893a941a0107860e8196742b93e8a72ecc249b17a9e9c0edfdf2e81b81",
+    "evidence/2026-09-13/v39_methods/sources/HazyResearch__correct-n-contrast/contrastive_network.py": "81d065abf73557fbf1407158fda89f9597cf4e57543a0dde3b010d55cb04a27c",
+    "evidence/2026-09-13/v39_methods/sources/HazyResearch__correct-n-contrast/contrastive_supervised_loader.py": "88d3910ccae08030f8eba2ef2ce870fb6a48e524e8a484d93ba5b28915e02833",
+    "evidence/2026-09-13/v39_methods/sources/HazyResearch__correct-n-contrast/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "evidence/2026-09-13/v39_methods/sources/HazyResearch__correct-n-contrast/README.md": "638192b3a9e1bdcad293afbecb80f110ab3ba03036bad12463637f005eafe9d8",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/LICENSE": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/README.md": "17ee1426d9eb19858965c62fa59b2e1d581df29e7ccfb5e166bd79fbafb424f7",
+    "evidence/2026-09-13/v39_methods/sources/PolinaKirichenko__deep_feature_reweighting/dfr_evaluate_spurious.py": "7b783562b3918cf155d5f632ab2b56cc85b75fb271edb47706c4e6f447ad2da5",
+    "evidence/2026-09-13/v39_methods/sources/PolinaKirichenko__deep_feature_reweighting/LICENSE": "d95545f9feffb45b9ccd0960658737aff3d6abbfd340f0e4929c2db292601193",
+    "evidence/2026-09-13/v39_methods/sources/PolinaKirichenko__deep_feature_reweighting/README.md": "a7bfd2b526ea5a7c560eb01fa8eb07290238234cc83554a2415b41fbd5d44719",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/objects/network_connection_info.json": "1781cbafd387eb58aa3282aa0faccfa1ac46edf9968d6602901794446608a961",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/objects/network_endpoint.json": "34813369c744b2dd9f98e46473ce70e5433c75bdb7224a32a83458831447e04a",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/events/iam/authentication.json": "d4ca744b7c57766245c087913af22f567c101fe619ea27c95b87a689b442bb60",
+    "evidence/2026-09-13/v39_methods/sources/ocsf__ocsf-schema/events/network/network_activity.json": "46d6150371e88b5048a0c100cf10919c9d6b92af52c16a8b40ac0738a63e613e",
+    "docs/V39_METHOD_RESEARCH.md": "2963c7d03f6081d19df72bb1591dc68e4f333b1551a4a94a2541afa9e84931ca",
+    "docs/V39_NEXT_PLAN.md": "c876cbc010256a5a0e30f89978dc625eb25ebe3323eb290148bf669f7edc5238",
+    "docs/TRAINING_PLAN.md": "39390e2d4d326f68c37437e5f5217913bfaaebc4c46dcf1ffc43057e39161216",
+    "README.md": "ae29c69cc7895be6ef00fce60ca677121789b4b6e24ee8ca04f6412f02000cda",
+    "training/verify_v39_methods.py": "de24fc6a5fd30153643486658658fc7cf9c11c7471ef04e3f366bc3c49790e58",
+    "training/audit_v39_method_assumptions.py": "3d3b8acc3dddf8f56ae4ff7cb6f7dbb4c9bd20d29dda5d9073d77858fd6e8008",
+    "training/audit_v39_decision_tradeoff.py": "468bc366c16cb5ab5d8183276104f38a4868b2feac8dd5008a99ec5126c47ab1",
+    "training/collect_v39_method_sources.py": "c3b5c4a9c8092f6e9831087f184f3a5c5b4e6180667298b2ae64911009f77947"
+  },
+  "new_model_trained": false,
+  "platform_used": false,
+  "external_training_data_used": false
+}

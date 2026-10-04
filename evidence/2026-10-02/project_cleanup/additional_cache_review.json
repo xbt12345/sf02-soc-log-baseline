@@ -1,0 +1,60 @@
+{
+  "reviewed_before_deletion": true,
+  "files": [
+    {
+      "path": "artifacts/v82_capacity_20260927/primary_kernel.npy",
+      "bytes": 468547712,
+      "mtime_ns": 1790481991262387600,
+      "sha256": "0ce99a26ececc86965b130da819c503e27a6f8d2999296f916305d658b7eb85e",
+      "reason": "Generated Nystroem transform cache; trained basis.joblib and classifier outputs retained"
+    },
+    {
+      "path": "artifacts/v82_capacity_20260927/ASA_zero_M_kernel.npy",
+      "bytes": 468547712,
+      "mtime_ns": 1790482100182383100,
+      "sha256": "c1146d0e4930ceafee746a092b3f881f45a25edfab54948bf206cd337eea7959",
+      "reason": "Generated Nystroem transform cache; trained basis.joblib and classifier outputs retained"
+    },
+    {
+      "path": "artifacts/v82_capacity_20260927/CEF_zero_M_kernel.npy",
+      "bytes": 468547712,
+      "mtime_ns": 1790482233393773100,
+      "sha256": "a87eb7c29d28154377504721035c41863645699ac15ced3f6c322de5765455c9",
+      "reason": "Generated Nystroem transform cache; trained basis.joblib and classifier outputs retained"
+    },
+    {
+      "path": "artifacts/v89_readout_support_20260927/A0_hidden.npy",
+      "bytes": 234273920,
+      "mtime_ns": 1790521035329720900,
+      "sha256": "00154b8e2c6ba519f36398821589cef3caa1c4629c562e38ad9addb1716245a9",
+      "reason": "Regenerable hidden representation cache; trained models, saved decisions and method evidence retained"
+    },
+    {
+      "path": "artifacts/v89_readout_support_20260927/A3_hidden.npy",
+      "bytes": 234273920,
+      "mtime_ns": 1790521040434001600,
+      "sha256": "6e5646e8dcc3abf1a0653e32094ba7e43719af2015ab04bac6fb8e3a106d2ba2",
+      "reason": "Regenerable hidden representation cache; trained models, saved decisions and method evidence retained"
+    },
+    {
+      "path": "artifacts/v32_prepare_20260912/prepared_corpus.parquet",
+      "bytes": 214029240,
+      "mtime_ns": 1789178229912304700,
+      "sha256": "20146e31fd168042bcf83cce85ccd17d803c3b262c3494d1a5398531e41ba463",
+      "reason": "Superseded V32 preparation cache; later final corpus, official raw data, preparation source and reports retained"
+    },
+    {
+      "path": "artifacts/v32_ready_20260912/prepared_corpus.parquet",
+      "bytes": 215503369,
+      "mtime_ns": 1789179038965262800,
+      "sha256": "95c79304fae8e60af997821b2ed279635e091ae74ffac3e694da29d3747d6c10",
+      "reason": "Superseded V32 preparation cache; later final corpus, official raw data, preparation source and reports retained"
+    }
+  ],
+  "actual_source_evidence": [
+    "training/v82_capacity.py:kernel_features",
+    "training/v89_execute.py:precompute_hidden"
+  ],
+  "zero_live_dependency_intersection": true,
+  "raw_data_and_model_parameters_kept": true
+}

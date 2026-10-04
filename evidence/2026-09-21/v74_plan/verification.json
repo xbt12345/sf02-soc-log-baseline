@@ -1,0 +1,18 @@
+{
+  "status": "train_support_rechecked_and_plan_updated",
+  "new_fits": 0,
+  "answers_read_by_new_audit": false,
+  "quality_promoted": false,
+  "all_model_issues_solved": false,
+  "rows_checked": 2056871,
+  "route_mismatches": 0,
+  "support_counts_match_v73": true,
+  "source_and_input_hashes_match": true,
+  "latest_model_result": "v73-delivery",
+  "artifact_sha256": {
+    "artifacts/v74_train_support_audit_20260921/support.json": "a46c6ad552c2b36dc8b9bf463ba6bb0b85345e82ce52391a5cd43ff8d45ca565",
+    "docs/V74_INFORMATION_AND_SUPPORT_PLAN.md": "efbdcbc90032142445ae0a28c57b7a6b280879080aa0eb4a9f7abca1bd66d539",
+    "training/v74_support_audit.py": "69f60dc068c38f769ecac6f0969ccaa32e751475511bbcea960f2733733bba67"
+  },
+  "empty_source_strings_are_not_valid_sources": true
+}

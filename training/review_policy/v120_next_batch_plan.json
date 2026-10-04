@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "experiment_id": "V120_N1_mass_stratified_batches",
+  "status": "refined_plan_not_training_registration",
+  "risk_registry": "training/review_policy/history_cases.json",
+  "evidence_sha256": {
+    "training/test_v116.py": "f29b8a2494d04558a9043f92be8df1c3a7626c0a6c562befa17822f8c57bec41",
+    "artifacts/v116_nested_selection_20260929/locked_selection.json": "323416026971059e7f88e19c61a838405512d001c7e1bdef2576e2ce63c20a6e",
+    "artifacts/v116_nested_selection_20260929/split_policy.json": "12c330a9efc003e89517c23000ce5d5620c84babf54bf964ec86070f7cb7208c",
+    "artifacts/v117_selection_failure_review_20260929/audit.json": "5985796464a0776a55b374c992c5fb49d9d688d4d9a1e1c33d084d15489361ec",
+    "docs/V81_ROOT_CAUSE_AND_TRAINING_RESET.md": "404e8ac8e9e1f8dd143f924ee3aad8a32eb149bbc6b93794a44fdbab6b64b948",
+    "docs/V110_LAYER_PROBE_TRAINING_RESULTS_AND_STOP_DECISION.md": "3501d58372504bbbc247a5bcdf91657fc04b813f516f7772ca53911e7e693fd9",
+    "docs/V104_OFFICIAL_COVERAGE_AND_INDEPENDENT_MODEL_TRAINING.md": "50ebf05f6d996a206aae566af6078a01bfc05e033c841b06add2c08f3d428350",
+    "artifacts/v113_case_training_20260929/OOF_ASA_decisions.parquet": "d7daba8d3bbfd71e63f3a76d2ddb73113046c20d2e2de9882bf9f04b464a74d1",
+    "docs/V113_CASE_TRAINING_RESULTS_AND_STOP.md": "bf8be3dbd1b29c0483057cbb982a2ad182e1adc71aafc86e65630f7df1c8052e",
+    "artifacts/v116_nested_selection_20260929/baseline_drift_audit.json": "d5fe242c37049d03e33d00f1e1c4454448854914b3f1ed3a2daa09217ed1cf70",
+    "artifacts/v117_selection_failure_review_20260929/frozen_member_audit.json": "2a35611fd7d9ea821931ff5f25031a7577595aa38758b1d781a3299a30d64853",
+    "artifacts/v118_retrospective_and_training_contract_20260929/probe_results.json": "6d7bdaafb363e28ebd1d4abd46313815bbf01bbfcf1839d3b75471deb057eee1",
+    "artifacts/v118_retrospective_and_training_contract_20260929/training_contract.json": "d86bb98f006975f58dbbfd19d2b207e09cfc6eb8cf0d8597ff0c3fc499715e8c",
+    "training/review_policy/history_cases.json": "beee71dcd8a4bc85b457e82b3efbb7790f3c348d60d7421633949a3e8315b347",
+    "training/experiment_review.py": "a0faa3312cbb39d3c6bcb62d7a2b290fe18eae14579278b0ff26479fdf2b768e",
+    "docs/EXPERIMENT_REVIEW_RULES.md": "201d7ef1b3d663d01cfdc5bdfa2aac8edda5da53e1b6f41d8a9ec73102edf135",
+    "training/review_policy/next_batch_plan.json": "082f7894df6eafc0776415a6a04d5aebdab22069035f842a0c70390c22a33a3d",
+    "docs/V120_EVIDENCE_TARGETED_NEXT_TRAINING_PLAN.md": "6d47d08cbeddfc4ca467f6973e6be6267a733f70afbb982581848505ec18c7f4",
+    "artifacts/v120_plan_refinement_20260929/feasibility_audit.json": "52f55fa526c5d1ed6d0ef57d198a4c30afa6d38cdadafb4c7888de273cb338be",
+    "training/v120_plan_feasibility_audit.py": "4878c7e6f112952f07fd446700ae7697cc01658e259f0e0ed740127540575a6b",
+    "docs/V112_FINE_CONTROL_AND_TEXT_DEPENDENCE_PLAN.md": "5d79d5b4f399b4888f356cbf4d099cb1757398a4dc239ee190d8058122da55f6"
+  },
+  "primary_endpoint": "per_class_predictions_on_complete_population",
+  "changed_factors": [
+    "batch_organization"
+  ],
+  "paired_fresh_baseline": true,
+  "preserve_input_class_mass": true,
+  "selection_labels": "none_fixed_terminal",
+  "evaluation_scope": "previously_inspected_development",
+  "confirmation_condition": "all_primary_quality_gates_pass",
+  "best_seed_selection": false,
+  "primary_fits": 6,
+  "confirmation_fits": 12,
+  "max_fits": 18,
+  "primary_seed": 10201,
+  "confirmation_seeds": [
+    10202,
+    10203
+  ],
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "fold_specific_method_override": false,
+  "complete_population_scoring": true,
+  "training_epochs": 25,
+  "selector": {
+    "kind": "fixed_terminal",
+    "epoch": 25,
+    "tie_policy": "retain_registered_reference"
+  },
+  "monitor": [
+    "per_class_correct",
+    "per_class_checkpoint_CE",
+    "per_class_Brier",
+    "fit_nonconflict_errors",
+    "support_by_class_and_parameter",
+    "missing_parameter_rows",
+    "source_concentration",
+    "paired_repairs_regressions",
+    "online_CE_separate_from_checkpoint_CE"
+  ],
+  "risk_actions": {
+    "EARLY_SELECTION": "fixed_terminal_no_tie_early",
+    "OMITTED_POPULATION": "score_every_registered_row",
+    "WEAK_SUPPORT": "report_class_parameter_support_no_stop_authority",
+    "LOSS_NOT_TRANSFER": "training_loss_diagnostic_only",
+    "CLASS_TRADEOFF": "protect_each_class_from_raw_predictions",
+    "SOURCE_CONCENTRATION": "multiple_folds_and_outside_largest_groups",
+    "NUMERIC_AND_REFERENCE": "fresh_paired_baseline_and_conditional_seed_confirmation",
+    "LOCAL_MECHANISM": "bounded_primary_trial_without_fold_override",
+    "POSTHOC_RULE_CHANGE": "seal_before_fit_reject_changed_sources"
+  },
+  "quality_profile": {
+    "expected_full_rows": 2056871,
+    "asa_error_limits": {
+      "M": 318,
+      "S": 2094,
+      "total": 2170
+    },
+    "minimum_improved_folds": 2,
+    "protected_S_roots": [
+      21702,
+      20849,
+      29
+    ],
+    "required_full_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "execution_limits": [
+    "No new classifier fitted by this review.",
+    "A real trainer and all its data/code dependencies must be sealed before use.",
+    "25 epochs and error budgets apply to this plan only; revised policies need new evidence and replay before outcome inspection.",
+    "V120 refinements are a plan: actual next trainer and dual-ledger runtime checks still need implementation before fitting.",
+    "No new classification efficacy was measured in this refinement."
+  ],
+  "base_plan": "training/review_policy/next_batch_plan.json",
+  "source_of_direction": "docs/V120_EVIDENCE_TARGETED_NEXT_TRAINING_PLAN.md",
+  "latest_actual_training": "V116",
+  "actual_trainer_integrated": false,
+  "architecture": {
+    "input": "unchanged_N1",
+    "model": "SparseTabM",
+    "members": 16,
+    "dtype": "float32",
+    "loss": "original_row_frequency_member_mean_three_class_CE"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.002,
+    "weight_decay": 0.0003,
+    "same_initial_state_per_pair": true
+  },
+  "batch_contract": {
+    "A": "uniform_unique_input_batches",
+    "B": "original_class_mass_stratified_batches",
+    "logical_batches": "ceil(unique_fit_inputs / 256)",
+    "loss_denominator": "16 * (original_fit_rows / logical_batches)",
+    "B_target_class_mass_per_batch": "fit_class_mass / logical_batches",
+    "per_input_class_mass_tolerance_float64": 1e-08,
+    "allow_variable_logical_batch_size": true,
+    "default_microbatching": false,
+    "drop_last": false,
+    "updates_per_logical_batch": 1,
+    "rng": "seed + fold initialized once per arm, advances across epochs",
+    "if_chunking_required": "Define and seal before fit; sum chunk gradients using same logical denominator, zero once and step once; verify equivalence.",
+    "unsupported_mass": "Reject nonzero benign mass for current ASA-only stratified planner."
+  },
+  "expected_primary_schedule": [
+    {
+      "fold": 0,
+      "train_rows": 92337,
+      "class_mass": [
+        0,
+        58840,
+        33497
+      ],
+      "unique_inputs": 18543,
+      "logical_batches_per_epoch": 73,
+      "registered_optimizer_steps_per_arm": 1825,
+      "B_unique_inputs_per_batch_max": 295
+    },
+    {
+      "fold": 1,
+      "train_rows": 40957,
+      "class_mass": [
+        0,
+        38886,
+        2071
+      ],
+      "unique_inputs": 8086,
+      "logical_batches_per_epoch": 32,
+      "registered_optimizer_steps_per_arm": 800,
+      "B_unique_inputs_per_batch_max": 297
+    },
+    {
+      "fold": 2,
+      "train_rows": 92320,
+      "class_mass": [
+        0,
+        59770,
+        32550
+      ],
+      "unique_inputs": 18463,
+      "logical_batches_per_epoch": 73,
+      "registered_optimizer_steps_per_arm": 1825,
+      "B_unique_inputs_per_batch_max": 296
+    }
+  ],
+  "diagnostic_checkpoints": [
+    1,
+    2,
+    5,
+    10,
+    15,
+    20,
+    25
+  ],
+  "evaluation_contract": {
+    "raw_ASA_rows": 112807,
+    "full_task_rows": 2056871,
+    "expert_columns": [
+      "row_position",
+      "expert_pred_A",
+      "expert_pred_B"
+    ],
+    "full_columns": [
+      "row_position",
+      "teacher_prediction",
+      "gate_open",
+      "final_pred_A",
+      "final_pred_B"
+    ],
+    "reference_fields": [
+      "row_position",
+      "fold",
+      "root",
+      "truth",
+      "route"
+    ],
+    "source_of_reference": "Independent bound official-label mapping and source-closed folds; prediction file metadata is not authoritative.",
+    "apply_ASA_budgets_to": "raw_expert_predictions_on_all_ASA_rows",
+    "apply_full_class_protection_to": "routed_final_predictions_on_every_official_row",
+    "combine": "Require complete identities AND expert ASA gates AND full-system per-class gates AND replay/composition/completed-fit verification.",
+    "current_teacher_excluded_ASA_rows": 0,
+    "frozen_non_ASA_errors": 107,
+    "unchanged_non_ASA_predictions_required": true,
+    "outer_labels_read_for_fit_or_selection": false,
+    "base_checker_limit": "V119 standalone evaluator is not a complete implementation of this dual-ledger contract; integrate and test before any fit."
+  },
+  "support_contract": {
+    "bins": [
+      "parameter_missing",
+      "parameter_unseen",
+      "parameter_seen_class_absent",
+      "same_class_one_root",
+      "same_class_multiple_roots"
+    ],
+    "fit_only_support_counts": true,
+    "true_class_used_only_in_evaluation": true,
+    "weight_or_model_input": false,
+    "counts_from_audit": "Parameter support is a coarse proxy, not full behavioral support or proof of identifiability.",
+    "same_population_all_arms": true,
+    "no_new_synthetic_labels": true
+  },
+  "confirmation_gates": [
+    "Every registered seed has nonincreasing paired ASA total error.",
+    "Summed paired M errors and summed paired S errors cannot increase.",
+    "No best seed or post-hoc ensemble."
+  ],
+  "runtime_acceptance_before_fit": [
+    "Variable logical batches retain exact per-input/class counts and original normalization.",
+    "Actual optimizer step counts and input exposure match the registered schedule.",
+    "ASA-only class-mass precondition is enforced.",
+    "Expert and composed full-task ledgers have separate, fully checked populations.",
+    "Runtime, full dependency inventory and true-reference identities are bound before optimizer steps.",
+    "All V119 historical counterexamples still reject; technical failures do not become early candidates."
+  ],
+  "new_risk_constraints": [
+    {
+      "id": "LOGICAL_BATCH_STEP_CONFOUND",
+      "evidence": "2603/4450 B batches exceed 256; naive chunk steps 7053 vs4450",
+      "action": "One step per logical batch, no truncation; chunk accumulation only if preregistered and verified."
+    },
+    {
+      "id": "SUPPORT_SCOPE_CONFLATION",
+      "evidence": "Inner fold1 ICMP S0; full legal outer fit S685. Remaining S errors1962/2434 are parameter-unseen or class-absent.",
+      "action": "Audit each actual fit pool and exhaustive support strata; do not infer all failures are undertraining."
+    },
+    {
+      "id": "ROUTING_ATTRIBUTION",
+      "evidence": "Historical ASA gate exclusions0; nonASA errors107.",
+      "action": "Keep separate raw/routed predictions; freeze other paths but count their errors."
+    },
+    {
+      "id": "WEAK_COMPARISON",
+      "evidence": "V116 selected15 vs25 added2542 S errors.",
+      "action": "B competes with fresh fixed25 A; reverting failed selection is not new algorithm improvement."
+    }
+  ]
+}

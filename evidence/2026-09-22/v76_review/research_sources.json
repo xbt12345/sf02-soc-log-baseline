@@ -1,0 +1,83 @@
+{
+  "review_date": "2026-09-22",
+  "scope": "Primary sources read for planning only. No third-party training data, model downloads or repository code execution.",
+  "sources": [
+    {
+      "title": "WILDS",
+      "url": "https://proceedings.mlr.press/v139/koh21a.html",
+      "code_url": "https://github.com/p-lambda/wilds",
+      "read_scope": "论文页面和官方仓库说明",
+      "application_and_limits": "采用域划分和逐组评价；不引入其外部数据。"
+    },
+    {
+      "title": "DomainBed",
+      "url": "https://github.com/facebookresearch/DomainBed",
+      "code_url": null,
+      "read_scope": "官方仓库说明和模型选择协议",
+      "application_and_limits": "仓库已归档；只借验证方法，不用目标标签oracle选择。"
+    },
+    {
+      "title": "TESSERACT",
+      "url": "https://www.usenix.org/conference/usenixsecurity19/presentation/pendlebury",
+      "code_url": null,
+      "read_scope": "USENIX论文页",
+      "application_and_limits": "取样偏差审查；时间切分须有可靠时间语义。仓库访问429，未审查代码。"
+    },
+    {
+      "title": "Decoupling Representation and Classifier",
+      "url": "https://arxiv.org/abs/1910.09217",
+      "code_url": "https://github.com/facebookresearch/classifier-balancing",
+      "read_scope": "论文摘要和作者仓库说明",
+      "application_and_limits": "图像长尾研究；当前固定字节特征不能仅靠冻结表示获得同类收益。"
+    },
+    {
+      "title": "Frustratingly Easy Domain Adaptation",
+      "url": "https://aclanthology.org/P07-1033/",
+      "code_url": null,
+      "read_scope": "ACL论文页",
+      "application_and_limits": "共享与特定部分分离；其目标监督假设不解决本项目零支持。"
+    },
+    {
+      "title": "Group DRO",
+      "url": "https://arxiv.org/abs/1911.08731",
+      "code_url": null,
+      "read_scope": "原论文摘要",
+      "application_and_limits": "正则化和最差组泛化；本项目已有失败，不原样重启。"
+    },
+    {
+      "title": "LogLLM",
+      "url": "https://arxiv.org/html/2411.08561v3",
+      "code_url": null,
+      "read_scope": "论文正文、方法和消融",
+      "application_and_limits": "序列异常而非SOC三分类；不复制全数据Drain对照和一刀切动态字段删除。未验证作者代码仓库。"
+    },
+    {
+      "title": "Dos and Don'ts of Machine Learning in Computer Security",
+      "url": "https://www.usenix.org/conference/usenixsecurity22/presentation/arp",
+      "code_url": null,
+      "read_scope": "USENIX论文页及论文",
+      "application_and_limits": "用于泄漏、取样和指标审查，不代表本项目提升。"
+    },
+    {
+      "title": "SGDClassifier",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html",
+      "code_url": null,
+      "read_scope": "官方API文档；本地安装版本partial_fit文档复核",
+      "application_and_limits": "partial_fit一轮不保证收敛；控制优化目标一致性。"
+    },
+    {
+      "title": "Loglizer",
+      "url": "https://github.com/logpai/loglizer",
+      "code_url": null,
+      "read_scope": "官方仓库说明",
+      "application_and_limits": "系统日志异常检测示例，不能直接替代SOC单事件M/S。"
+    },
+    {
+      "title": "Transfer Learning Library",
+      "url": "https://github.com/thuml/Transfer-Learning-Library",
+      "code_url": null,
+      "read_scope": "官方仓库说明",
+      "application_and_limits": "作为方法索引；边际域对齐可能混合M/S，不作本轮默认训练方案。"
+    }
+  ]
+}

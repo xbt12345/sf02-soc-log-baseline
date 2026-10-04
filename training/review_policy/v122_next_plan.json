@@ -1,0 +1,116 @@
+{
+  "version": "V122",
+  "status": "design_complete_trainer_and_runtime_contract_not_implemented",
+  "latest_actual_training": "V121",
+  "classifier_fits_this_review": 0,
+  "optimizer_steps_this_review": 0,
+  "model_promoted": false,
+  "purpose": "Test a concrete sanitized-clock header parsing fix with original-row classification and behavioral invariance reported separately.",
+  "primary_factor": "ASA header normalization only: digit clock and observed sanitized/nested-identity clock mapped to the same absolute-clock representation with verified event-body boundary.",
+  "arms": {
+    "A": "Original N1, original uniform old-local batches",
+    "B": "N1 with canonical full syslog time header; same old-local units and row frequency; no B deduplication"
+  },
+  "constants": {
+    "outer_folds": "V106 body-closed folds",
+    "model": "existing SparseTabM K16 H128",
+    "epochs": 25,
+    "seed": 10201,
+    "optimizer": "AdamW lr=.002 weight_decay=.0003",
+    "objective": "original-row frequency multiclass member CE",
+    "batch_old_local_units": 256,
+    "steps_per_fold_per_arm": [
+      1825,
+      800,
+      1825
+    ],
+    "primary_fits": 6,
+    "primary_total_steps": 8900,
+    "calibration_fits": 0,
+    "diagnostic_checkpoints": [
+      1,
+      2,
+      5,
+      10,
+      15,
+      20,
+      25
+    ]
+  },
+  "input_preflight": {
+    "all_ASA_rows": 112807,
+    "expected_changed_rows": 682,
+    "M_changed": 44,
+    "S_changed": 638,
+    "body_byte_change": 0,
+    "fact_metadata_coordinate_change": 0,
+    "expected_empirical_collision_floor": 28,
+    "previous_empirical_collision_floor": 26,
+    "cross_fold_input_keys_allowed": 0,
+    "old_local_splits_allowed": 0,
+    "retain_every_original_row_and_label": true,
+    "keep_old_sampling_units_even_if_new_inputs_merge": true,
+    "unknown_header": "preserve raw and report unresolved; no broad regex stripping"
+  },
+  "quality_contract": {
+    "full_original_rows": 2056871,
+    "ASA_rows": 112807,
+    "ASA_M_errors_max": 318,
+    "ASA_S_errors_max": 2094,
+    "ASA_total_errors_max": 2170,
+    "not_official_passing_line": true,
+    "paired_M_S_recall_and_F1_protection": true,
+    "full_B_M_S_recall_and_F1_protection": true,
+    "minimum_improving_folds": 2,
+    "outside_top3_S_roots_protected": true,
+    "S_group_macro_recall_no_decrease": true,
+    "S_zero_recall_root_count_no_increase": true,
+    "raw_case_repair_and_regression_report": true,
+    "report_time_invariance_separately_from_classification": true
+  },
+  "conditional_confirmation": {
+    "only_after_all_primary_quality_gates": true,
+    "seeds": [
+      10202,
+      10203
+    ],
+    "additional_fits": 12,
+    "no_seed_substitution": true,
+    "not_an_external_blind_test": true
+  },
+  "pending_before_any_fit": [
+    "Implement separate versioned header transformer and raw-span ledger; do not edit sealed sources.",
+    "Rebuild inference-equivalent B view, preserving old local batch units and row counts.",
+    "Extend experiment_review contract to input-only paired experiment; do not impersonate old batch-only contract.",
+    "Replay V116 premature selection and V121 batch failure constraints plus new header-backtracking and collision cases.",
+    "Seal actual source, dependencies, data, transforms, folds and evaluation before updates."
+  ],
+  "evidence_audit_next": {
+    "persistent_S_rows": 2236,
+    "all_seven_checkpoints_wrong": true,
+    "prioritized_fact_support_buckets": {
+      "same_only": 2,
+      "both": 130,
+      "opposite_only": 262,
+      "neither_exact": 1842
+    },
+    "priority_is_not_sample_weight": true,
+    "per_row_required": [
+      "raw evidence spans",
+      "parsed facts and residual difference",
+      "fit-only same/opposite class support and roots",
+      "evidence sufficiency status"
+    ],
+    "no_label_guesses_or_pseudo_attacks": true
+  },
+  "failure_action": "Stop this configuration on primary quality failure; preserve valid input-contract repair separately; do not rescue by epoch/seed/threshold selection. Further classifier changes require a new evidenced discriminative mechanism.",
+  "validation_scope": "Repeatedly observed official development folds; no external labeled test or competition submission.",
+  "evidence_sha256": {
+    "docs/V122_COMPLETE_REVIEW_AND_EVIDENCE_FIRST_PLAN.md": "8853712f1eba9352cfd4a1c7f294edcbf114af6ca5a1a5df1585c871b0472d37",
+    "artifacts/v122_evidence_review_20260929/review.json": "b5ce8e0e91ce523b5741ba15e78c3e10ccac43baef0085a219abfac1a48997f3",
+    "artifacts/v122_evidence_review_20260929/clock_gap_audit.json": "2649ef086f596b5222fb7f54f3f21f6ea8d6ab26489800761cc59258237724a3",
+    "artifacts/v122_evidence_review_20260929/date_only_probe.json": "478b85bf37cee285f43acbefc52b1f560022c432b9581a4b01781544dc93105b",
+    "artifacts/v122_evidence_review_20260929/schedule_compatibility.json": "83ec64373e5f6f5e45aeb7eb643b83f813cc7355ed46e2d083fd2ab8185c35a7",
+    "artifacts/v122_evidence_review_20260929/case_cards.json": "25b18871b54335051d1e7e4b3e4c1e5ac455026e8bd6a35716cd36d33c27041f"
+  }
+}

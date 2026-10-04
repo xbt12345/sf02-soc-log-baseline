@@ -1,0 +1,256 @@
+{
+  "scope": "Full official train only; all outputs are development diagnostics, not unseen validation",
+  "input_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "rows": 2056871,
+  "labels": {
+    "malicious": 111728,
+    "benign": 1899723,
+    "suspicious": 45420
+  },
+  "empty_or_whitespace_message_by_class": {
+    "benign": 356315
+  },
+  "raw_message_exact_hash": {
+    "unique_groups": 716699,
+    "mixed_label_groups": 0,
+    "rows_in_mixed_label_groups": 0,
+    "minimum_empirical_mistakes_for_deterministic_message_only_classifier": 0,
+    "per_class_raw_unique_groups_including_empty": {
+      "benign": 676064,
+      "malicious": 22834,
+      "suspicious": 17801
+    },
+    "largest_conflict_groups": [],
+    "interpretation": "Same exact visible message may be separate real events. Conflict may mean missing context or differing annotations, not necessarily mislabeled data. This bound applies only to a deterministic message-only classifier on this observed dataset; not to models with additional valid evidence or generalization. Hash collision not separately checked."
+  },
+  "source_label_message_presence": [
+    {
+      "source": "<missing>",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 231115
+    },
+    {
+      "source": "<missing>",
+      "label": "benign",
+      "message_empty": true,
+      "rows": 16184
+    },
+    {
+      "source": "<missing>",
+      "label": "malicious",
+      "message_empty": false,
+      "rows": 111728
+    },
+    {
+      "source": "ASA Firewall",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 20
+    },
+    {
+      "source": "ASA Firewall",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 34059
+    },
+    {
+      "source": "AWS Instance Backup",
+      "label": "benign",
+      "message_empty": true,
+      "rows": 340131
+    },
+    {
+      "source": "AWS VPC Security",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 10620
+    },
+    {
+      "source": "Apache Web Server",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 36
+    },
+    {
+      "source": "Barracuda ESS",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 74
+    },
+    {
+      "source": "Barracuda WAF",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 4128
+    },
+    {
+      "source": "Barracuda WAF",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 2
+    },
+    {
+      "source": "Cisco Network Operating System",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 3697
+    },
+    {
+      "source": "Duo",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 325
+    },
+    {
+      "source": "Duo",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 12
+    },
+    {
+      "source": "Falcon",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 35
+    },
+    {
+      "source": "Linux PAM",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 17822
+    },
+    {
+      "source": "ManageEngine ADManager",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 4082
+    },
+    {
+      "source": "Precinct",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 219
+    },
+    {
+      "source": "SentinelOne",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 25
+    },
+    {
+      "source": "Symantec Endpoint Protection",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 2361
+    },
+    {
+      "source": "VMWare VCenter",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 88311
+    },
+    {
+      "source": "Windows Active Directory",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 809860
+    },
+    {
+      "source": "Windows Active Directory",
+      "label": "suspicious",
+      "message_empty": false,
+      "rows": 473
+    },
+    {
+      "source": "Windows Logs",
+      "label": "benign",
+      "message_empty": false,
+      "rows": 381552
+    }
+  ],
+  "v2_selection_by_class": {
+    "benign": {
+      "old_train_dev_rows": 58555,
+      "retained_rows": 27953,
+      "retained_fraction": 0.47738024079924857
+    },
+    "malicious": {
+      "old_train_dev_rows": 4556,
+      "retained_rows": 135,
+      "retained_fraction": 0.029631255487269536
+    },
+    "suspicious": {
+      "old_train_dev_rows": 1951,
+      "retained_rows": 1165,
+      "retained_fraction": 0.5971296770886725
+    }
+  },
+  "v2_usage_class_component_counts": [
+    {
+      "usage": "development",
+      "label": "benign",
+      "rows": 2444,
+      "components": 845,
+      "largest_component_rows": 55
+    },
+    {
+      "usage": "development",
+      "label": "malicious",
+      "rows": 27,
+      "components": 11,
+      "largest_component_rows": 14
+    },
+    {
+      "usage": "development",
+      "label": "suspicious",
+      "rows": 1,
+      "components": 1,
+      "largest_component_rows": 1
+    },
+    {
+      "usage": "fit",
+      "label": "benign",
+      "rows": 20876,
+      "components": 5547,
+      "largest_component_rows": 353
+    },
+    {
+      "usage": "fit",
+      "label": "malicious",
+      "rows": 87,
+      "components": 42,
+      "largest_component_rows": 8
+    },
+    {
+      "usage": "fit",
+      "label": "suspicious",
+      "rows": 365,
+      "components": 17,
+      "largest_component_rows": 220
+    },
+    {
+      "usage": "inner_calibration",
+      "label": "benign",
+      "rows": 4633,
+      "components": 1006,
+      "largest_component_rows": 660
+    },
+    {
+      "usage": "inner_calibration",
+      "label": "malicious",
+      "rows": 21,
+      "components": 7,
+      "largest_component_rows": 14
+    },
+    {
+      "usage": "inner_calibration",
+      "label": "suspicious",
+      "rows": 799,
+      "components": 2,
+      "largest_component_rows": 785
+    }
+  ],
+  "elapsed_seconds": 11.530197399988538,
+  "audit_code_sha256": "6d918ca7c5433b1936fc43ec8546ace995e51e7e6d4d679d4e84290643be61fd"
+}

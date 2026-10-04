@@ -1,0 +1,304 @@
+{
+  "study_execution_and_identity_verified": true,
+  "prior_frozen_results": {
+    "v51": {
+      "frozen_files_unchanged": 106,
+      "excluded_mutable_entries": [
+        "README.md",
+        "docs/TRAINING_PLAN.md",
+        "training/README.md"
+      ]
+    },
+    "v52": {
+      "frozen_files_unchanged": 44,
+      "excluded_mutable_entries": [
+        "README.md",
+        "docs/TRAINING_PLAN.md",
+        "training/README.md"
+      ]
+    },
+    "v53": {
+      "frozen_files_unchanged": 285,
+      "excluded_mutable_entries": [
+        "README.md",
+        "docs/TRAINING_PLAN.md",
+        "training/README.md"
+      ]
+    }
+  },
+  "source_training_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+  "completed_SVC_estimators": 19,
+  "completed_MLP_optimization_runs": 12,
+  "inner_MLP_checkpoints_are_not_separate_fits": true,
+  "protocol_completion": {
+    "pressure": {
+      "kernel": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected": "LOCAL",
+          "ranking": {
+            "LINEAR": [
+              0,
+              -0.8862196986241537,
+              -0.9368096048882665,
+              0,
+              1650
+            ],
+            "SMOOTH": [
+              0,
+              -0.8757370604935576,
+              -0.9477417830387526,
+              0,
+              1340
+            ],
+            "LOCAL": [
+              0,
+              -0.897794278226687,
+              -0.9525441137221711,
+              0,
+              1230
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      },
+      "neural": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected_epochs": 60,
+          "ranking": {
+            "10": [
+              0,
+              -0.9010701026424983,
+              -0.9408938081479559,
+              4,
+              1554
+            ],
+            "30": [
+              0,
+              -0.8986678314042368,
+              -0.949014094705414,
+              4,
+              1328
+            ],
+            "60": [
+              0,
+              -0.9130814588338065,
+              -0.9498271937681608,
+              2,
+              1318
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      }
+    },
+    "fold_0": {
+      "kernel": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected": "LINEAR",
+          "ranking": {
+            "LINEAR": [
+              0,
+              -0.7657534246575343,
+              -0.9027923601679604,
+              0,
+              1699
+            ],
+            "SMOOTH": [
+              0,
+              -0.7575342465753425,
+              -0.907241433298994,
+              0,
+              1585
+            ],
+            "LOCAL": [
+              0,
+              -0.7608219178082192,
+              -0.9115497597091398,
+              0,
+              1539
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      },
+      "neural": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected_epochs": 30,
+          "ranking": {
+            "10": [
+              0,
+              -0.7679452054794521,
+              -0.8922577519830664,
+              4,
+              1933
+            ],
+            "30": [
+              0,
+              -0.7679452054794521,
+              -0.8979347118726169,
+              2,
+              1831
+            ],
+            "60": [
+              0,
+              -0.7657534246575343,
+              -0.9037178153706662,
+              0,
+              1717
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      }
+    },
+    "fold_1": {
+      "kernel": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected": "LOCAL",
+          "ranking": {
+            "LINEAR": [
+              0,
+              -0.8939224756739512,
+              -0.9388249787197691,
+              0,
+              1117
+            ],
+            "SMOOTH": [
+              0,
+              -0.8805232094432924,
+              -0.9496172806086932,
+              0,
+              901
+            ],
+            "LOCAL": [
+              0,
+              -0.8983888977508374,
+              -0.9497065744826276,
+              0,
+              911
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      },
+      "neural": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected_epochs": 60,
+          "ranking": {
+            "10": [
+              0,
+              -0.9063646514595629,
+              -0.9374534737488193,
+              2,
+              1155
+            ],
+            "30": [
+              0,
+              -0.9047695007178178,
+              -0.9407698143070435,
+              2,
+              1089
+            ],
+            "60": [
+              0,
+              -0.907002711756261,
+              -0.9492376527929369,
+              2,
+              927
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      }
+    },
+    "fold_2": {
+      "kernel": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected": "LOCAL",
+          "ranking": {
+            "LINEAR": [
+              0,
+              -0.7798340778557754,
+              -0.8948813714691783,
+              0,
+              1846
+            ],
+            "SMOOTH": [
+              0,
+              -0.77297383535418,
+              -0.9063885473573101,
+              0,
+              1613
+            ],
+            "LOCAL": [
+              0,
+              -0.7914805360561583,
+              -0.9099647182674544,
+              0,
+              1569
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      },
+      "neural": {
+        "fit_receipt_verified": true,
+        "evaluation_receipt_verified": true,
+        "selection": {
+          "selected_epochs": 60,
+          "ranking": {
+            "10": [
+              0,
+              -0.7961072112316528,
+              -0.8963539505421941,
+              4,
+              1844
+            ],
+            "30": [
+              0,
+              -0.7956285896617741,
+              -0.8992028754045593,
+              4,
+              1787
+            ],
+            "60": [
+              0,
+              -0.7978621569878749,
+              -0.9042544169066932,
+              4,
+              1691
+            ]
+          },
+          "selected_before_outer_evaluation": true
+        }
+      }
+    }
+  },
+  "evidence_files_checked": 19,
+  "score_rows_independently_replayed": 3343166,
+  "raw_original_cases_per_final_bundle": 706,
+  "raw_final_bundles_checked": 11,
+  "new_candidate_quality_passed": false,
+  "production_promoted": false,
+  "ASA_solved": false,
+  "official_training_only": true,
+  "new_dependencies_installed": false,
+  "platform_used": false,
+  "execution_note": "After independent fold1/fold2 completion, the old serial dispatcher reached existing fold1 and was rejected before any new fit/write. All eight protocol-family fits and evaluations are complete. Some workers used 2 and others 4 BLAS threads; model/data settings unchanged.",
+  "cleanup_note": "Deletion of this run __pycache__ was blocked by automatic approval policy; cache retained and excluded from study bindings. No alternative deletion attempted.",
+  "future_not_executed": "Group DRO and stronger-regularization factorial with behavior-group inner validation; no claim that it can resolve identical-observation label conflicts."
+}

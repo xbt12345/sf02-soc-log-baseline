@@ -1,0 +1,24 @@
+{
+  "version": "V131-exec-V130",
+  "status": "implementation_ready_for_preflight_not_trained",
+  "plan_sha256": "e620d7bd5705a742e659740a9499f84585fb0910da6281a3ee6c91c1711f4193",
+  "run_directory": "artifacts/v131_learning_trial_20260930",
+  "primary_order": [
+    "R",
+    "O",
+    "C",
+    "CO"
+  ],
+  "execution_changes": [
+    "Sparse first-layer builds only the active batch columns: exact original function and gradients; all parameters/features retained. Must pass toy and real input forward/gradient comparison before updates.",
+    "Model expansion uses the registered common-block copy and zero extra readout connections; no entirely zero extra channels.",
+    "Per-member training CE, fixed global denominators, all original row masses retained.",
+    "New held scores are saved separately; no held metrics before training-only selection.",
+    "If TRAIN qualification fails, full-population hybrid counts are diagnostics and cannot pass the uniform-candidate gate."
+  ],
+  "fit_updates_cap": 46000,
+  "training_fits_cap": 10,
+  "no_seed_or_threshold_search": true,
+  "no_auto_promotion": true,
+  "frozen_design_status_preserved": "V130 design file stays immutable; this execution contract supplies runtime readiness, never retroactively rewrites its planning evidence."
+}

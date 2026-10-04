@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "actual_diagnostic": "V165",
+  "inherit_applicable_constraints": "training/review_policy/v164_root_failure_constraints.json",
+  "no_new_execution_authority": true,
+  "cases": [
+    {
+      "id": "V165-LESS-REGRESSION-IS-NOT-SAFE-GAIN",
+      "evidence": "artifacts/v165_independent_actual_decision_floor_review_20261002/review.json",
+      "actual_fact": "all three treatments reduce collateral versus confidence-restoring controls yet create76/32/14 new original malicious errors versus actual V164 origins",
+      "required_action": "Evaluate both actual origin and matched rejected control. Reject every original guard failure even if treatment has fewer errors than the rejected control; preserve origin checkpoint and original denominator"
+    },
+    {
+      "id": "V165-KNOWN-CONSTRAINT-SAFETY-NOT-FULL-SAFETY",
+      "evidence": "artifacts/v165_independent_blocker_coverage_review_20261002/review.json",
+      "actual_fact": "all measured4/16/10 margin functions classify correctly while20/9/4 unmeasured functions contain all treatment blockers",
+      "required_action": "Check actual complete original population after every proposal; measured-function safety cannot bypass original-row class counts, cumulative repair or mastery checks. Bind and audit complete input identities of fresh blockers"
+    },
+    {
+      "id": "V165-FIXED-25-IS-ONLY-CURRENT-COVERAGE",
+      "evidence": "artifacts/v165_independent_blocker_coverage_review_20261002/review.json",
+      "actual_fact": "joint observed current sets are24/25/14, not proof that25 covers future parameters or later proposals",
+      "required_action": "Use a new prospectively bound method and budget for adding fresh functions; never modify V164/V165 contracts, silently drop additional blockers, or treat new capacity exhaustion as global infeasibility"
+    }
+  ],
+  "actual_executed_reviews": [
+    "training/v165_independent_actual_decision_floor_review.py",
+    "training/v165_independent_blocker_coverage_review.py"
+  ],
+  "future_qualification_requires_source_hashes_and_real_counterexample_replay": true
+}

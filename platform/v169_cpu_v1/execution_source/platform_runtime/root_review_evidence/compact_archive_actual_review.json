@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "actual_compact_archive_raw_call_log_present_and_byte_identical": true,
+  "every_selected_review_member_SHA_and_CRC_verified": true,
+  "all_new_checkpoints_in_full_archive": true,
+  "input_references_hash_correct_and_original_not_deleted": true,
+  "full_archive_hash_link_verified": true,
+  "official_model_calls": 0,
+  "scope": "Toy archive collection only; no model replay or data quality validation"
+}

@@ -1,0 +1,5825 @@
+{
+  "scope": "Read-only fixed v65 epoch-12 OOF development diagnostics; no training and no current-calibration thresholding",
+  "new_fits": 0,
+  "checkpoint_selection": "Original predeclared terminal epoch 12 for both H0/H1, not best checkpoints",
+  "encoder_provenance": {
+    "revision": "7f7c16d1b2316c5046759667ed97f527aa1b7709",
+    "original_upstream_asset_hashes_verified": true,
+    "supervised_v61_checkpoint_used": false,
+    "frozen_features_sha256": "d10e1e1a6a0b5e24d22de6bac7f2f884eb0e3dba1b7e1d85602501d39a10195f"
+  },
+  "checkpoint_provenance": [
+    {
+      "fold": 0,
+      "arm": "H0",
+      "epoch": 12,
+      "step": 1848,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold0\\H0\\step_1848.pt",
+      "checkpoint_sha256": "9fdac7b6312e15c38d551235adecad55b3d3c8100cad14a437cfd8698ac3f92a",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold0\\H0\\step_1848.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    },
+    {
+      "fold": 1,
+      "arm": "H0",
+      "epoch": 12,
+      "step": 1812,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold1\\H0\\step_1812.pt",
+      "checkpoint_sha256": "76bfde322a2d0c778345dcbfbd80f9967967dd7c9abea7319e0aca07d29db504",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold1\\H0\\step_1812.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    },
+    {
+      "fold": 2,
+      "arm": "H0",
+      "epoch": 12,
+      "step": 1956,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold2\\H0\\step_1956.pt",
+      "checkpoint_sha256": "b47b5687f1d698be83a2acaad31ab5711b383273559cb6b28684b5e34f844000",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold2\\H0\\step_1956.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    },
+    {
+      "fold": 0,
+      "arm": "H1",
+      "epoch": 12,
+      "step": 1848,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold0\\H1\\step_1848.pt",
+      "checkpoint_sha256": "0acf8d35730389f8f22f32e38b45f269ca91aa4801c3429fe8229f4141cfada4",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold0\\H1\\step_1848.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    },
+    {
+      "fold": 1,
+      "arm": "H1",
+      "epoch": 12,
+      "step": 1812,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold1\\H1\\step_1812.pt",
+      "checkpoint_sha256": "5a11c0391a95c9bb651a1ff13d0be4f3ace09fa0977830288d7060a085e62d2a",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold1\\H1\\step_1812.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    },
+    {
+      "fold": 2,
+      "arm": "H1",
+      "epoch": 12,
+      "step": 1956,
+      "checkpoint_file": "artifacts\\v65_rank_heads_20260920\\fold2\\H1\\step_1956.pt",
+      "checkpoint_sha256": "f0d1bb84ea73efe21719d014e8a781d7b3e2caf10d43823492cf696b0d95c18b",
+      "predictions_file": "artifacts\\v65_rank_heads_20260920\\fold2\\H1\\step_1956.parquet",
+      "predictions_exactly_match_terminal_oof": true
+    }
+  ],
+  "role_overlap": [
+    {
+      "fold": 0,
+      "current_calibration_rows_seen_in_v65_head_training": 5998,
+      "old_train_rows": 39172,
+      "current_calibration_rows": 11343,
+      "common_evaluation_rows": 14170
+    },
+    {
+      "fold": 1,
+      "current_calibration_rows_seen_in_v65_head_training": 5472,
+      "old_train_rows": 38426,
+      "current_calibration_rows": 10817,
+      "common_evaluation_rows": 14872
+    },
+    {
+      "fold": 2,
+      "current_calibration_rows_seen_in_v65_head_training": 5830,
+      "old_train_rows": 41682,
+      "current_calibration_rows": 11175,
+      "common_evaluation_rows": 13500
+    }
+  ],
+  "rows": 42542,
+  "S_rows": 652,
+  "S_sources": 189,
+  "cells": [
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "M_rows": 12772,
+      "S_rows": 144,
+      "M_sources": 1360,
+      "S_sources": 53,
+      "models": {
+        "B69": {
+          "source_AUC": 0.7305541295305099,
+          "source_standardized_pAUC_1pct": 0.516467604392663,
+          "oracle_cut_NOT_DEPLOYABLE": 0.17768833547643464,
+          "oracle_S_source_recall": 0.04582210242587602,
+          "oracle_S_rows_correct": 14,
+          "oracle_target_repairs": 14,
+          "oracle_M_row_error": 0.007516442217350454,
+          "oracle_M_source_error": 0.009405637254902066
+        },
+        "H0": {
+          "source_AUC": 0.6990201716605828,
+          "source_standardized_pAUC_1pct": 0.5115700589518072,
+          "oracle_cut_NOT_DEPLOYABLE": 0.3497338593006134,
+          "oracle_S_source_recall": 0.03773584905660377,
+          "oracle_S_rows_correct": 4,
+          "oracle_target_repairs": 4,
+          "oracle_M_row_error": 0.005010961478233636,
+          "oracle_M_source_error": 0.009999999999999898
+        },
+        "H1": {
+          "source_AUC": 0.6885498546046409,
+          "source_standardized_pAUC_1pct": 0.5103151718637607,
+          "oracle_cut_NOT_DEPLOYABLE": 0.19003182649612427,
+          "oracle_S_source_recall": 0.07547169811320754,
+          "oracle_S_rows_correct": 8,
+          "oracle_target_repairs": 6,
+          "oracle_M_row_error": 0.005167554024428437,
+          "oracle_M_source_error": 0.009926470588235259
+        }
+      }
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "M_rows": 1230,
+      "S_rows": 24,
+      "M_sources": 155,
+      "S_sources": 7,
+      "models": {
+        "B69": {
+          "source_AUC": 0.7441628264208902,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.1141017638194503,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.0032520325203252032,
+          "oracle_M_source_error": 0.006451612903225823
+        },
+        "H0": {
+          "source_AUC": 0.5158801843317956,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.7741659283638,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.0032520325203252032,
+          "oracle_M_source_error": 0.006451612903225823
+        },
+        "H1": {
+          "source_AUC": 0.4882887864823337,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.2815118134021759,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.0065040650406504065,
+          "oracle_M_source_error": 0.009677419354838679
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "M_rows": 13390,
+      "S_rows": 228,
+      "M_sources": 1360,
+      "S_sources": 59,
+      "models": {
+        "B69": {
+          "source_AUC": 0.7340865943553555,
+          "source_standardized_pAUC_1pct": 0.513958125623132,
+          "oracle_cut_NOT_DEPLOYABLE": 0.15244780225226556,
+          "oracle_S_source_recall": 0.05649717514124293,
+          "oracle_S_rows_correct": 16,
+          "oracle_target_repairs": 4,
+          "oracle_M_row_error": 0.0070201643017177,
+          "oracle_M_source_error": 0.009914215686274486
+        },
+        "H0": {
+          "source_AUC": 0.6769129155012494,
+          "source_standardized_pAUC_1pct": 0.5190725979515395,
+          "oracle_cut_NOT_DEPLOYABLE": 0.3371650278568268,
+          "oracle_S_source_recall": 0.05084745762711865,
+          "oracle_S_rows_correct": 18,
+          "oracle_target_repairs": 2,
+          "oracle_M_row_error": 0.007766990291262136,
+          "oracle_M_source_error": 0.009117647058823564
+        },
+        "H1": {
+          "source_AUC": 0.6595949986483567,
+          "source_standardized_pAUC_1pct": 0.5066865289113127,
+          "oracle_cut_NOT_DEPLOYABLE": 0.09967231005430222,
+          "oracle_S_source_recall": 0.03389830508474576,
+          "oracle_S_rows_correct": 8,
+          "oracle_target_repairs": 2,
+          "oracle_M_row_error": 0.007318894697535474,
+          "oracle_M_source_error": 0.00985294117647062
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "M_rows": 1226,
+      "S_rows": 28,
+      "M_sources": 145,
+      "S_sources": 6,
+      "models": {
+        "B69": {
+          "source_AUC": 0.5264436295283288,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.18887194872985796,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.009787928221859706,
+          "oracle_M_source_error": 0.008866995073891548
+        },
+        "H0": {
+          "source_AUC": 0.5706310672502525,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.2703283131122589,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.0065252854812398045,
+          "oracle_M_source_error": 0.006896551724137945
+        },
+        "H1": {
+          "source_AUC": 0.5733242959019318,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.051346950232982635,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.0032626427406199023,
+          "oracle_M_source_error": 0.006896551724137945
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "M_rows": 12322,
+      "S_rows": 192,
+      "M_sources": 1357,
+      "S_sources": 58,
+      "models": {
+        "B69": {
+          "source_AUC": 0.7130753202505353,
+          "source_standardized_pAUC_1pct": 0.5126938972737596,
+          "oracle_cut_NOT_DEPLOYABLE": 0.5247939441440151,
+          "oracle_S_source_recall": 0.020114942528735632,
+          "oracle_S_rows_correct": 26,
+          "oracle_target_repairs": 26,
+          "oracle_M_row_error": 0.009738678785911378,
+          "oracle_M_source_error": 0.0018783140607598892
+        },
+        "H0": {
+          "source_AUC": 0.6509857435060082,
+          "source_standardized_pAUC_1pct": 0.5003943787595355,
+          "oracle_cut_NOT_DEPLOYABLE": 0.5837540626525879,
+          "oracle_S_source_recall": 0.02442528735632184,
+          "oracle_S_rows_correct": 12,
+          "oracle_target_repairs": 10,
+          "oracle_M_row_error": 0.009089433533517287,
+          "oracle_M_source_error": 0.009978290744687257
+        },
+        "H1": {
+          "source_AUC": 0.6249632739349412,
+          "source_standardized_pAUC_1pct": 0.5000254376766559,
+          "oracle_cut_NOT_DEPLOYABLE": 0.4125683009624481,
+          "oracle_S_source_recall": 0.020114942528735632,
+          "oracle_S_rows_correct": 6,
+          "oracle_target_repairs": 6,
+          "oracle_M_row_error": 0.006654763837039441,
+          "oracle_M_source_error": 0.009759206516759988
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "M_rows": 950,
+      "S_rows": 36,
+      "M_sources": 132,
+      "S_sources": 7,
+      "models": {
+        "B69": {
+          "source_AUC": 0.502540147142424,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.13229953364239275,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.008421052631578947,
+          "oracle_M_source_error": 0.007575757575757569
+        },
+        "H0": {
+          "source_AUC": 0.5710484547671111,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.1932581514120102,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.004210526315789474,
+          "oracle_M_source_error": 0.007575757575757569
+        },
+        "H1": {
+          "source_AUC": 0.5591264375355326,
+          "source_standardized_pAUC_1pct": 0.49748743718592964,
+          "oracle_cut_NOT_DEPLOYABLE": 0.3858788013458252,
+          "oracle_S_source_recall": 0.0,
+          "oracle_S_rows_correct": 0,
+          "oracle_target_repairs": 0,
+          "oracle_M_row_error": 0.004210526315789474,
+          "oracle_M_source_error": 0.007575757575757569
+        }
+      }
+    }
+  ],
+  "per_S_source_ranking": [
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2840,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.41934465452849495,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2846,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8344406512606127,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2853,
+      "model": "B69",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.932638055222223,
+      "oracle_S_recall": 0.42857142857142855
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2859,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6452739845939007,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2863,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6428834285151547,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2867,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8997102591037668,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2875,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8620141806723838,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2880,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.7832090336135413,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2895,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.711033788515485,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2898,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5911685924370244,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2906,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5559970238095647,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2908,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.9964767156864246,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2926,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9396314775911724,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2932,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.4782878402798195,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2951,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5798328081232963,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2973,
+      "model": "B69",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.11935885840037892,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2979,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6653352591037092,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2985,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7339382002801965,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2996,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7525901610645139,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3002,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9867340686275986,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3006,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4894794584500723,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3012,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6237053571429138,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3016,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9458814775911742,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3025,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6806906512605756,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3028,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5434051120448552,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3033,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9825061274511274,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3035,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7127494747899951,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3045,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8620141806723838,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3060,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6832641806723408,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3064,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8268426120449249,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3069,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8318671218488477,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3070,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8620141806723838,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3081,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8142323179272765,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3093,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7842078081233471,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3102,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7882519257704071,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3129,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9661825980393589,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3140,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 1.0000000000001494,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3158,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9696139705883794,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3191,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.49609710550889646,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3194,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7625166316527522,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3195,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6610337885154735,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3206,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.3730801646376114,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3218,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5784847689076095,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3223,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9804840686275981,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3232,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9825061274511274,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3242,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9089014355743578,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3247,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6310582983193869,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3255,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8142323179272765,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3260,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9081661414567105,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3263,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5391158963585806,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3267,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7981783963586454,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3353,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.2708994629722335,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3355,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5178066643324329,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2840,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7444061085973899,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2846,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7201168929111093,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2853,
+      "model": "H0",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.08011569075912651,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2859,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9875000000001732,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2863,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2003203961252152,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2867,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7997794117648276,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2875,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9477941176472228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2880,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.27481676003735916,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2895,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7664649321268078,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2898,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7068815987934582,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2906,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5964649321267608,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2908,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.21997775617339618,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2926,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9110294117648603,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2932,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.24878151260504866,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2951,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4695858471594087,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2973,
+      "model": "H0",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.1155239344754464,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2979,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6700155542987342,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2985,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.891176470588384,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2996,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9977941176472351,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3002,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6377639517346154,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3006,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9852941176472318,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3012,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8926470588236786,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3016,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9750000000001708,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3025,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8636029411766115,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3028,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9029411764707405,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3033,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5979355203620553,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3035,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5832296380091102,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3045,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9477941176472228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3060,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.710190422322871,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3064,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.55896493212675,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3069,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6307786576169667,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3070,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9477941176472228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3081,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5494061085973356,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3093,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8027205882354167,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3102,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9216911764707447,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3129,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9209558823530974,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3140,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.475284376571174,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3158,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9808823529413486,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3191,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9783088235295831,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3194,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6138668929110795,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3195,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.49928355957771225,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3206,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.46886408730163165,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3218,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9867647058825262,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3223,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6384992458522627,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3232,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.848088235294254,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3242,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7134992458522837,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3247,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7524943438915104,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3255,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7510237556562158,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3260,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8477205882354304,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3263,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6370286576169681,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3267,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6300433634993194,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3353,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.45210218702868826,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3355,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9970588235295879,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2840,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7872794117648213,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2846,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7204845399699299,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2853,
+      "model": "H1",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.03564311193964279,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2859,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9922794117648767,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2863,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2282288619906085,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2867,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7376225490197087,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2875,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9625000000001633,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2880,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2533456336677233,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2895,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6249780040221912,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2898,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6892345399699212,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2906,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6601291478130499,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2908,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.19680159481737014,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2926,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8938970588236753,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2932,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.24115484188490272,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2951,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.506291029232239,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2973,
+      "model": "H1",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.1641448774473071,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2979,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.7085265837104995,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2985,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9094852941177972,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 2996,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9322794117648624,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3002,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7131315987934571,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3006,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9981617647060549,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3012,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7429166666667689,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3016,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9322794117648624,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3025,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7805392156863876,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3028,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8052941176471796,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3033,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6641732654601099,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3035,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3493129623644521,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3045,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9625000000001633,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3060,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7809068627452113,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3064,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.33979703099190217,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3069,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5682868275515846,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3070,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9625000000001633,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3081,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4027688447173975,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3093,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6750188536954066,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3102,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7891176470589395,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3129,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7421813725491216,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3140,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.9845588235295809,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3158,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9904411764707587,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3191,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9259558823530957,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3194,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7942647058824704,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3195,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5073939704087099,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3206,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6657459778784115,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3218,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9411764705883926,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3223,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7057786576169846,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3232,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8958823529413228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3242,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4651054460245919,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3247,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.715337481146399,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3255,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9259558823530957,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3260,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7972058823530596,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3263,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6943815987934522,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3267,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6801659125189375,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3353,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3579526682468054,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "tcp",
+      "group": 3355,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9926470588237003,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 2919,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4918279569892452,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3022,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7763440860215013,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3055,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6605376344085984,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3112,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8741935483870916,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3241,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9193548387096725,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3243,
+      "model": "B69",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.5223655913978476,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3271,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9645161290322534,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 2919,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5580645161290338,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3022,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5580645161290338,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3055,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.3973118279569916,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3112,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6741935483870976,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3241,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8870967741935487,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3243,
+      "model": "H0",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.07513978494623652,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3271,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.46129032258064673,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 2919,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6032258064516084,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3022,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5838709677419313,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3055,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.37849462365591213,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3112,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6483870967741888,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3241,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7709677419354791,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3243,
+      "model": "H1",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.017376344086021504,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 0,
+      "protocol": "udp",
+      "group": 3271,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4156989247311804,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2843,
+      "model": "B69",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.42811217105337146,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2847,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.991556372549187,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2864,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9690890522877428,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2872,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.857285539215818,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2886,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.5714129130673766,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2894,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6788813555726126,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2902,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.8763927881760131,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2905,
+      "model": "B69",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.9149560556547321,
+      "oracle_S_recall": 0.3333333333333333
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2911,
+      "model": "B69",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.9982230392158551,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2931,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.50052239019154,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2937,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.857285539215818,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2943,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9690890522877428,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2946,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.40789085043551654,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2948,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8727267156864106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2952,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.2790186202686233,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2956,
+      "model": "B69",
+      "S_rows": 16,
+      "AUC_against_source_balanced_M": 0.5113755076623169,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2961,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9564419934642102,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2964,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7241982323233281,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2968,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8170053475937039,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2976,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9604861111112702,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2984,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9972426470589922,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2987,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9880637254903627,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2991,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.640216017642559,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2998,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6604295581869867,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3011,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9200081699347885,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3013,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.4291077978394384,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3026,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8877022058824923,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3041,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8355943627452244,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3042,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8921139705883759,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3053,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6057429784268636,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3071,
+      "model": "B69",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.6639464355090131,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3072,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.689198232323318,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3084,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.857285539215818,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3096,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9471282679740116,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3098,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.46048741699480455,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3099,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.640216017642559,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3100,
+      "model": "B69",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.4229461469902867,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3114,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8181082887701748,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3116,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9630596405230357,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3118,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.60537533136804,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3139,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.426568380557374,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3148,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7950170825907267,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3160,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7681075460488315,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3165,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.49350730764337536,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3169,
+      "model": "B69",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.33960759624363607,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3185,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9825490196080081,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3189,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7083158793821484,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3207,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.931245915032831,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3215,
+      "model": "B69",
+      "S_rows": 46,
+      "AUC_against_source_balanced_M": 0.016524454817412045,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3230,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.935044934640675,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3251,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9720302287583319,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3259,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.840006127451108,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3270,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6376424882307935,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3272,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.857285539215818,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3292,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9810784313727136,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3313,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.857285539215818,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3318,
+      "model": "B69",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.37841673236895423,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3356,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5390150372503737,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3363,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7859384284017766,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2843,
+      "model": "H0",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.9997549019609581,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2847,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8941911764707304,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2864,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9658823529413392,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2872,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9526470588236884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2886,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.5146752450980789,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2894,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9894117647060521,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2902,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.04772206595963073,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2905,
+      "model": "H0",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.5682271241830629,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2911,
+      "model": "H0",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.9980392156864475,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2931,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.40033700980394593,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2937,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9526470588236884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2943,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.978627450980559,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2946,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.1883530177050588,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2948,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6993137254902833,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2952,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5063909313725852,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2956,
+      "model": "H0",
+      "S_rows": 16,
+      "AUC_against_source_balanced_M": 0.03647614824208121,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2961,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.560386029411815,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2964,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6659620098039991,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2968,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6144301470588878,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2976,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6184742647059478,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2984,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8833718487396338,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2987,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7985049019608981,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2991,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9753186274511463,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2998,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7481127450981395,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3011,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9305882352942698,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3013,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.03978532361914521,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3026,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9217647058825027,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3041,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8841071428572811,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3042,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8703816526611983,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3053,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.32094187675071717,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3071,
+      "model": "H0",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.25830712432032293,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3072,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.835367647058948,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3084,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9526470588236884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3096,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.869646358543551,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3098,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2867352014335255,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3099,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7767156862746187,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3100,
+      "model": "H0",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.2045720684664269,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3114,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9180882352942663,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3116,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6230085784314396,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3118,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7759803921569715,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3139,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.12935553819178303,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3148,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.835367647058948,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3160,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8986029411766137,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3165,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.1652797076550112,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3169,
+      "model": "H0",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.7625612745099087,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3185,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9291176470589753,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3189,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8280147058824752,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3207,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8419852941177735,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3215,
+      "model": "H0",
+      "S_rows": 46,
+      "AUC_against_source_balanced_M": 0.006615721262310072,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3230,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.907426470588381,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3251,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6184742647059478,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3259,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9975490196080157,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3270,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6170036764706532,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3272,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9526470588236884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3292,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8986029411766137,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3313,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9526470588236884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3318,
+      "model": "H0",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.2663112998653201,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3356,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7562009803922596,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3363,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5482046568627921,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2843,
+      "model": "H1",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.999183006536124,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2847,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.633027836134526,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2864,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7357843137255901,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2872,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.962205882353106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2886,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.487682072829165,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2894,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9445588235295711,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2902,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.05631033306778012,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2905,
+      "model": "H1",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.4635622860255559,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2911,
+      "model": "H1",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.7780637254903068,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2931,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5586073179272221,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2937,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.962205882353106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2943,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9423529411766293,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2946,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2256531229588694,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2948,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9478676470589839,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2952,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6652757352942,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2956,
+      "model": "H1",
+      "S_rows": 16,
+      "AUC_against_source_balanced_M": 0.05535397652347019,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2961,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4819774159664191,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2964,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6309322478992315,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2968,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5866430322129453,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2976,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5533867296919267,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2984,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7499019607844178,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2987,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.617402836134522,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2991,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9449264705883947,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 2998,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7318627450981378,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3011,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9294852941178019,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3013,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.07655306870770076,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3026,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9069012605043488,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3041,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8966071428572872,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3042,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8446078431373828,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3053,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4023570261438143,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3071,
+      "model": "H1",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.3384975400416745,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3072,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.818872549019729,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3084,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.962205882353106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3096,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8438725490197355,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3098,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.31794564289513005,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3099,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7854901960785438,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3100,
+      "model": "H1",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.1914156936870724,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3114,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6309322478992315,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3116,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5704420518207837,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3118,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7924754901961929,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3139,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.14416674716830669,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3148,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.742401960784416,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3160,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8796708683474775,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3165,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.099348414680814,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3169,
+      "model": "H1",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.8218023459384989,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3185,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9390441176472165,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3189,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.791372549019722,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3207,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8181372549020817,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3215,
+      "model": "H1",
+      "S_rows": 46,
+      "AUC_against_source_balanced_M": 0.031056118538834637,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3230,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8929306722690508,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3251,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5223205532213285,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3259,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9916176470589969,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3270,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5763244047619619,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3272,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.962205882353106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3292,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8811414565827721,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3313,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.962205882353106,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3318,
+      "model": "H1",
+      "S_rows": 8,
+      "AUC_against_source_balanced_M": 0.5517800245098572,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3356,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7891666666667801,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "tcp",
+      "group": 3363,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4960215336134789,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 2837,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.8364532019704312,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3073,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7189162561576266,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3173,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6087356321839021,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3215,
+      "model": "B69",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.0529632802646297,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3245,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3765959328028284,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3352,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.5649974737905721,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 2837,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2353008111328951,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3073,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.565517241379305,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3173,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7724137931034369,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3215,
+      "model": "H0",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.026416626851409473,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3245,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8689655172413651,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3352,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.9551724137930868,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 2837,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.11117441279360328,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3073,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6413793103448228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3173,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7103448275862,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3215,
+      "model": "H1",
+      "S_rows": 14,
+      "AUC_against_source_balanced_M": 0.09084032813525234,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3245,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9724137931034339,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 1,
+      "protocol": "udp",
+      "group": 3352,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.913793103448263,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2841,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.606004725643629,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2842,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9148770045969524,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2868,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4823036927863745,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2882,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8536705618135033,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2888,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8536705618135033,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2914,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6433003181621362,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2915,
+      "model": "B69",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.9997095474250629,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2923,
+      "model": "B69",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.3150215896104802,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2942,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9920240911785446,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2955,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9427922237428245,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2963,
+      "model": "B69",
+      "S_rows": 12,
+      "AUC_against_source_balanced_M": 0.9958176576296749,
+      "oracle_S_recall": 0.16666666666666666
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2969,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8762343404568683,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2971,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8002438853212436,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2972,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9463540021756413,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2978,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.6037193973634604,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2983,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4359543694657905,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2994,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4460086441847667,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3001,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4026705555876269,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3018,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8745148612134389,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3037,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8536705618135033,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3040,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5963502006059075,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3044,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5024952919020721,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3052,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8293522125135787,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3056,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.753423167350935,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3058,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7150901849317352,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3079,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7474049899989325,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3085,
+      "model": "B69",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.2888679893059757,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3086,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9281766501736793,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3094,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7150901849317352,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3095,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.5172599285116111,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3106,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5871387046589672,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3107,
+      "model": "B69",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.24201786754951413,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3108,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9089816471909097,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3110,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9883394927997685,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3117,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8723041021861732,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3125,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.8076437870652867,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3134,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8752517808891943,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3143,
+      "model": "B69",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.23088835732689042,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3144,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8536705618135033,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3155,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.37120236859491884,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3157,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9868656534482579,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3163,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8168245780257387,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3178,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8536705618135033,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3179,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5512998444280676,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3182,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7474049899989325,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3187,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5483276017358555,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3190,
+      "model": "B69",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.8535881123836168,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3204,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7991385058076105,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3213,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.67357704319752,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3219,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7314998069972155,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3221,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3048657074259039,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3228,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9761202933641876,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3235,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9427922237428245,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3257,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6746824227111526,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3262,
+      "model": "B69",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.5593158929010025,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3348,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7032994701196501,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3350,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5871387046589672,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3365,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8784450994841345,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2841,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.09097992272891055,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2842,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9874763488617215,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2868,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5245025792188591,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2882,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9438098747236228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2888,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9438098747236228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2914,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.13511945407844805,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2915,
+      "model": "H0",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.9902046113910159,
+      "oracle_S_recall": 0.4166666666666667
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2923,
+      "model": "H0",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.3416388841039832,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2942,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6883198231392633,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2955,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8381847211986984,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2963,
+      "model": "H0",
+      "S_rows": 12,
+      "AUC_against_source_balanced_M": 0.04746807086304386,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2969,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8109186931957526,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2971,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9830508474575925,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2972,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7499999999999825,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2978,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.9764185703757948,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2983,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4282731515598068,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2994,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8944362564480175,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3001,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5977032670105524,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3018,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5667526406288292,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3037,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9438098747236228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3040,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9600221075902391,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3044,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5538565463031113,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3052,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8820314419061364,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3056,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.824551707197225,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3058,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9080692704494902,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3079,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4927536231884037,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3085,
+      "model": "H0",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.4644439086400631,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3086,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5075534266764894,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3094,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9080692704494902,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3095,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.15573207243049453,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3106,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7570007369196585,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3107,
+      "model": "H0",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.1190107134002129,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3108,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6220216163104761,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3110,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6956890198968164,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3117,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7838983050847241,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3125,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.3431473545036335,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3134,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7137067059690343,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3143,
+      "model": "H0",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.27699067939798216,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3144,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9438098747236228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3155,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5494350282485798,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3157,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9903901690931538,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3163,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8911201179071184,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3178,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9438098747236228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3179,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9823139277818371,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3182,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7577376565954135,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3187,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5785433554409147,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3190,
+      "model": "H0",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.13159166102448652,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3204,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5044215180545297,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3213,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6320928518791322,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3219,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5335912552198421,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3221,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7284450994841409,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3228,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8403954802259646,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3235,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5914394497666318,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3257,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6905305821665291,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3262,
+      "model": "H0",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.2810632816743907,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3348,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.502210759027264,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3350,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7577376565954135,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3365,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4750675509702745,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2841,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.08120902283009437,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2842,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9796583613827133,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2868,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5607169175702619,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2882,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9563225716504625,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2888,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9563225716504625,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2914,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.16616309075110078,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2915,
+      "model": "H1",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.90989076770208,
+      "oracle_S_recall": 0.16666666666666666
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2923,
+      "model": "H1",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.41109840830476757,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2942,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.43392434455270507,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2955,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8102551335417641,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2963,
+      "model": "H1",
+      "S_rows": 12,
+      "AUC_against_source_balanced_M": 0.026523454751128082,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2969,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7228322279537972,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2971,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9917146328347105,
+      "oracle_S_recall": 1.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2972,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.577359020247736,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2978,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.9743771037064676,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2983,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3927182526833834,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 2994,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6550426360669382,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3001,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.703070498648959,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3018,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4984626565105312,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3037,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9563225716504625,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3040,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9763422228418152,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3044,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.586816156086596,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3052,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7848131477092145,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3056,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6729182019159731,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3058,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9311444827288228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3079,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5651384356247943,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3085,
+      "model": "H1",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.8113794339659928,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3086,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.41542766069124454,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3094,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9311444827288228,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3095,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.3370073666262395,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3106,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6015545496017022,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3107,
+      "model": "H1",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.13133511520869243,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3108,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6140821840895426,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3110,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5372951538758425,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3117,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8745663128124096,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3125,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.503516897335125,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3134,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6684966838614411,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3143,
+      "model": "H1",
+      "S_rows": 6,
+      "AUC_against_source_balanced_M": 0.19936407764303699,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3144,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9563225716504625,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3155,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5028841745650635,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3157,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.989872333645322,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3163,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.8598279192973034,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3178,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.9563225716504625,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3179,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.681945467943975,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3182,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6756816507000548,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3187,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5607169175702619,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3190,
+      "model": "H1",
+      "S_rows": 10,
+      "AUC_against_source_balanced_M": 0.1053944736922495,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3204,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4113009105070145,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3213,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5934484331683937,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3219,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5544531003263425,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3221,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6056076078183562,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3228,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7330262834684126,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3235,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6656542793978139,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3257,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6812085482682196,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3262,
+      "model": "H1",
+      "S_rows": 4,
+      "AUC_against_source_balanced_M": 0.25660965289044657,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3348,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4470730970529693,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3350,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6172755026844828,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "tcp",
+      "group": 3365,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.48691758159036364,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3021,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.29924242424242437,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3029,
+      "model": "B69",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.07322180134680133,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3233,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5059687786960534,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3244,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.613406795224982,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3253,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5514233241506001,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3360,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6588613406795285,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3369,
+      "model": "B69",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.815656565656576,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3021,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7992424242424344,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3029,
+      "model": "H0",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.2535375304771854,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3233,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6153581267217682,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3244,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.48708677685950597,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3253,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.6532369146005571,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3360,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.42372589531680593,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3369,
+      "model": "H0",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7651515151515244,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3021,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7291666666666752,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3029,
+      "model": "H1",
+      "S_rows": 24,
+      "AUC_against_source_balanced_M": 0.37164447505356785,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3233,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.4733126721763107,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3244,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.5263429752066147,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3253,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.651342975206618,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3360,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.3723025711662088,
+      "oracle_S_recall": 0.0
+    },
+    {
+      "fold": 2,
+      "protocol": "udp",
+      "group": 3369,
+      "model": "H1",
+      "S_rows": 2,
+      "AUC_against_source_balanced_M": 0.7897727272727375,
+      "oracle_S_recall": 0.0
+    }
+  ],
+  "mean_six_cell_pAUC": {
+    "B69": 0.5059303231412239,
+    "H0": 0.5039165578701118,
+    "H1": 0.5015815750015863
+  },
+  "comparisons": {
+    "H0": {
+      "fixed_argmax_vs_B_frozen_budget_UNMATCHED": {
+        "target_repairs": 18,
+        "M": {
+          "candidate_errors": 266,
+          "reference_errors": 450,
+          "candidate_only_correct_rows": 398,
+          "reference_only_correct_rows": 214,
+          "candidate_only_correct_sources": 56,
+          "reference_only_correct_sources": 39,
+          "source_recall_candidate": 0.9914804374927074,
+          "source_recall_reference": 0.989317206330983,
+          "sources_improved": 56,
+          "sources_worsened": 39,
+          "source_recall_gain": 0.002163231161724327,
+          "gain_without_best_source": 0.001936450077897446,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 616,
+          "reference_errors": 578,
+          "candidate_only_correct_rows": 14,
+          "reference_only_correct_rows": 52,
+          "candidate_only_correct_sources": 5,
+          "reference_only_correct_sources": 11,
+          "source_recall_candidate": 0.03439153439153439,
+          "source_recall_reference": 0.05346434870244394,
+          "sources_improved": 5,
+          "sources_worsened": 11,
+          "source_recall_gain": -0.019072814310909552,
+          "gain_without_best_source": -0.024493414387031412,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            258973,
+            258977,
+            271031,
+            271041,
+            639179,
+            639182,
+            1407323,
+            1407333,
+            1586630,
+            1586635,
+            1993260,
+            1993265
+          ]
+        }
+      },
+      "own_evaluation_oracle_vs_B_own_evaluation_oracle_NOT_DEPLOYABLE": {
+        "target_repairs": 16,
+        "M": {
+          "candidate_errors": 296,
+          "reference_errors": 334,
+          "candidate_only_correct_rows": 294,
+          "reference_only_correct_rows": 256,
+          "candidate_only_correct_sources": 42,
+          "reference_only_correct_sources": 45,
+          "source_recall_candidate": 0.9903338921743831,
+          "source_recall_reference": 0.9927797652504357,
+          "sources_improved": 42,
+          "sources_worsened": 45,
+          "source_recall_gain": -0.0024458730760528197,
+          "gain_without_best_source": -0.0026737016835701043,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 618,
+          "reference_errors": 596,
+          "candidate_only_correct_rows": 14,
+          "reference_only_correct_rows": 36,
+          "candidate_only_correct_sources": 5,
+          "reference_only_correct_sources": 8,
+          "source_recall_candidate": 0.033950617283950615,
+          "source_recall_reference": 0.03665910808767952,
+          "sources_improved": 5,
+          "sources_worsened": 8,
+          "source_recall_gain": -0.0027084908037288986,
+          "gain_without_best_source": -0.008042046605876393,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            258973,
+            258977,
+            271031,
+            271041,
+            639179,
+            639182,
+            1407323,
+            1407333,
+            1586630,
+            1586635,
+            1993260,
+            1993265
+          ]
+        }
+      },
+      "own_evaluation_oracle_vs_B_frozen_budget_UNMATCHED": {
+        "target_repairs": 16,
+        "M": {
+          "candidate_errors": 296,
+          "reference_errors": 450,
+          "candidate_only_correct_rows": 410,
+          "reference_only_correct_rows": 256,
+          "candidate_only_correct_sources": 56,
+          "reference_only_correct_sources": 45,
+          "source_recall_candidate": 0.9903338921743831,
+          "source_recall_reference": 0.989317206330983,
+          "sources_improved": 56,
+          "sources_worsened": 45,
+          "source_recall_gain": 0.0010166858433998676,
+          "gain_without_best_source": 0.0007896441810915497,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 618,
+          "reference_errors": 578,
+          "candidate_only_correct_rows": 14,
+          "reference_only_correct_rows": 54,
+          "candidate_only_correct_sources": 5,
+          "reference_only_correct_sources": 11,
+          "source_recall_candidate": 0.033950617283950615,
+          "source_recall_reference": 0.05346434870244394,
+          "sources_improved": 5,
+          "sources_worsened": 11,
+          "source_recall_gain": -0.019513731418493323,
+          "gain_without_best_source": -0.024936676798378923,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            258973,
+            258977,
+            271031,
+            271041,
+            639179,
+            639182,
+            1407323,
+            1407333,
+            1586630,
+            1586635,
+            1993260,
+            1993265
+          ]
+        }
+      }
+    },
+    "H1": {
+      "fixed_argmax_vs_B_frozen_budget_UNMATCHED": {
+        "target_repairs": 6,
+        "M": {
+          "candidate_errors": 198,
+          "reference_errors": 450,
+          "candidate_only_correct_rows": 432,
+          "reference_only_correct_rows": 180,
+          "candidate_only_correct_sources": 56,
+          "reference_only_correct_sources": 33,
+          "source_recall_candidate": 0.9929387465174785,
+          "source_recall_reference": 0.989317206330983,
+          "sources_improved": 56,
+          "sources_worsened": 33,
+          "source_recall_gain": 0.00362154018649552,
+          "gain_without_best_source": 0.003395090536537905,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 640,
+          "reference_errors": 578,
+          "candidate_only_correct_rows": 8,
+          "reference_only_correct_rows": 70,
+          "candidate_only_correct_sources": 2,
+          "reference_only_correct_sources": 12,
+          "source_recall_candidate": 0.011463844797178132,
+          "source_recall_reference": 0.05346434870244394,
+          "sources_improved": 2,
+          "sources_worsened": 12,
+          "source_recall_gain": -0.04200050390526581,
+          "gain_without_best_source": -0.04754305977710234,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            258973,
+            258977,
+            271031,
+            271041,
+            615010,
+            615017
+          ]
+        }
+      },
+      "own_evaluation_oracle_vs_B_own_evaluation_oracle_NOT_DEPLOYABLE": {
+        "target_repairs": 14,
+        "M": {
+          "candidate_errors": 262,
+          "reference_errors": 334,
+          "candidate_only_correct_rows": 316,
+          "reference_only_correct_rows": 244,
+          "candidate_only_correct_sources": 42,
+          "reference_only_correct_sources": 46,
+          "source_recall_candidate": 0.990083334868611,
+          "source_recall_reference": 0.9927797652504357,
+          "sources_improved": 42,
+          "sources_worsened": 46,
+          "source_recall_gain": -0.0026964303818248496,
+          "gain_without_best_source": -0.002924315934184355,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 630,
+          "reference_errors": 596,
+          "candidate_only_correct_rows": 18,
+          "reference_only_correct_rows": 52,
+          "candidate_only_correct_sources": 7,
+          "reference_only_correct_sources": 9,
+          "source_recall_candidate": 0.03791887125220459,
+          "source_recall_reference": 0.03665910808767952,
+          "sources_improved": 7,
+          "sources_worsened": 9,
+          "source_recall_gain": 0.0012597631645250695,
+          "gain_without_best_source": -0.004052684903748733,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            241770,
+            241780,
+            258973,
+            258977,
+            271031,
+            271041,
+            329448,
+            329451,
+            615010,
+            615017,
+            1399105,
+            1399115,
+            1586630,
+            1586635,
+            1993260,
+            1993265
+          ]
+        }
+      },
+      "own_evaluation_oracle_vs_B_frozen_budget_UNMATCHED": {
+        "target_repairs": 14,
+        "M": {
+          "candidate_errors": 262,
+          "reference_errors": 450,
+          "candidate_only_correct_rows": 432,
+          "reference_only_correct_rows": 244,
+          "candidate_only_correct_sources": 56,
+          "reference_only_correct_sources": 46,
+          "source_recall_candidate": 0.990083334868611,
+          "source_recall_reference": 0.989317206330983,
+          "sources_improved": 56,
+          "sources_worsened": 46,
+          "source_recall_gain": 0.0007661285376278379,
+          "gain_without_best_source": 0.0005390299304772988,
+          "candidate_only_correct_row_positions": []
+        },
+        "S": {
+          "candidate_errors": 630,
+          "reference_errors": 578,
+          "candidate_only_correct_rows": 18,
+          "reference_only_correct_rows": 70,
+          "candidate_only_correct_sources": 7,
+          "reference_only_correct_sources": 12,
+          "source_recall_candidate": 0.03791887125220459,
+          "source_recall_reference": 0.05346434870244394,
+          "sources_improved": 7,
+          "sources_worsened": 12,
+          "source_recall_gain": -0.015545477450239356,
+          "gain_without_best_source": -0.020947315096251272,
+          "candidate_only_correct_row_positions": [
+            140188,
+            140198,
+            241770,
+            241780,
+            258973,
+            258977,
+            271031,
+            271041,
+            329448,
+            329451,
+            615010,
+            615017,
+            1399105,
+            1399115,
+            1586630,
+            1586635,
+            1993260,
+            1993265
+          ]
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Identical evaluation rows/folds do not imply matched training population, calibration roles, or model budgets.",
+    "v65 trained on some rows now assigned to v69 calibration, so no new thresholds are fitted using that calibration.",
+    "Terminal epoch choice is fixed here; all methods and development data have still been inspected adaptively.",
+    "Evaluation-answer oracle cutoffs are only fixed-score diagnostic upper frontiers, never deployable estimates.",
+    "Argmax neural decisions and B frozen-budget decisions do not have matched operating costs.",
+    "Per-S-source AUC uses that S source against source-balanced M; it is not a within-single-class AUC.",
+    "Source symbols need not denote independent physical hosts, and row-level unique corrections can share source fingerprints.",
+    "No ensemble weights, best checkpoint, seed, budget, or router have been selected by this audit."
+  ],
+  "input_sha256": {
+    "training\\train_v65_rank_heads.py": "ce66ae00916ce67fbcc6022c89f5170ee249e21fa9fef2af4fcf72326ac1a7ac",
+    "artifacts/v65_rank_heads_20260920/preregistered.json": "e539da9572d6ffe18c76891b1b292ce48eb9091210142a048b1b5ff4253d24ea",
+    "artifacts/v65_rank_heads_20260920/text_cache_receipt.json": "3a3045fbc0c4900feba31561f6ad11166fa6e606bbdaa47469128fd68fa67e37",
+    "artifacts\\v61_asset_cache\\securebert2\\download_receipt.json": "e6e644eb3b85879785b7dbf45ed3dd62dbb05d6d41ccdcd8d584b01284141059",
+    "artifacts\\v61_asset_cache\\securebert2\\config.json": "8a7388656e5d3a5e973dc26ac7ef3b145f6750c39521003652621ef2ff3e1f89",
+    "artifacts\\v61_asset_cache\\securebert2\\model.safetensors": "c7ec0c57894c6e26ca7a06bd924ded9409c05724e7acdc8ac6bec963ef25b623",
+    "artifacts\\v61_asset_cache\\securebert2\\special_tokens_map.json": "ea97ecdbcc73713039d8d64dbb05e3689495c96657fbd9a18f5bed381be81049",
+    "artifacts\\v61_asset_cache\\securebert2\\tokenizer.json": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+    "artifacts\\v61_asset_cache\\securebert2\\tokenizer_config.json": "c16f1b07f93d05be753ec0acf8cb511d895a8bdb09669f6b156df81e3f96c2eb",
+    "artifacts/v65_rank_heads_20260920/upstream_text_features.npy": "d10e1e1a6a0b5e24d22de6bac7f2f884eb0e3dba1b7e1d85602501d39a10195f",
+    "artifacts/v65_rank_heads_20260920/unique_text.parquet": "262558f2f18088cbbb52a3799090d4bd6ba16980cdfbfcf84b0326d34af15e18",
+    "artifacts/v65_rank_heads_20260920/fold_manifest.parquet": "b2e6a891775f473a36d291e737cb5c57669912d255b4b475aef0822c014e900e",
+    "artifacts\\v61_source_factorial_20260914_r2\\records.parquet": "28045f25c7665cc0a69748f3a758431c4aec9b1abd5d2d2271107004572e1f7a",
+    "artifacts\\v67_targeted_20260920\\manifest.parquet": "d4ebdb8e1bd92404c41dfb087a12a457f4b4d07dc4dca5a5eb18257c8e0c2baf",
+    "artifacts\\v69_support_control_20260921\\B_small_sources_budget0.01_oof.parquet": "4da199810c9865a9b3234d862a8098247bd8374f56a3f978e8e53649fd27ce01",
+    "artifacts\\v69_support_control_20260921\\fold0_roles.parquet": "6c8b9533db5fde57112dd8301018d99227fb2307aef84814295af27fcbdfaec0",
+    "artifacts\\v69_support_control_20260921\\fold1_roles.parquet": "e958cccbcd16e715aee13bef8f5a8f21c1fc9ced6ab2d9bb00b0d4450b3c90b1",
+    "artifacts\\v69_support_control_20260921\\fold2_roles.parquet": "e1029e21a4a8a5217f464ec1affcc4419fc9811a5f386fbfc0bf8e0a84ba4507",
+    "artifacts/v65_rank_heads_20260920/H0_last_oof.parquet": "c7ee4635df4436a987a38a0bf6a6bea5c7e6c02b4974336f32c8739b569e27ba",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/curve.json": "da1f3ba4c21c51d154acc95d4bac3714c7c623cd8d95f44f47f88fdc7069b729",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1848.parquet": "89818d46c07269510198b8f149a5546b8afdd6dfed34b8bf57d765b6e21b6553",
+    "artifacts/v65_rank_heads_20260920/fold0/H0/step_1848.pt": "9fdac7b6312e15c38d551235adecad55b3d3c8100cad14a437cfd8698ac3f92a",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/curve.json": "f8fb3c96f9dc707e2d868a2f1d28eff7d149a3269263f76c88fde87eeee1c5ea",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1812.parquet": "56baec7a337c32dd065c5f44d7b24663164a24ad65a5a367e6ce5a5d5c1a9dbe",
+    "artifacts/v65_rank_heads_20260920/fold1/H0/step_1812.pt": "76bfde322a2d0c778345dcbfbd80f9967967dd7c9abea7319e0aca07d29db504",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/curve.json": "03439ea234a1d43c32ab232fb0c6e5ff552f7b1882dbe535bc21f1d16321008c",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1956.parquet": "ef2446b090961dd497a81bae57dfe0ffa0354c70723b02c9386fac1f8aff1d69",
+    "artifacts/v65_rank_heads_20260920/fold2/H0/step_1956.pt": "b47b5687f1d698be83a2acaad31ab5711b383273559cb6b28684b5e34f844000",
+    "artifacts/v65_rank_heads_20260920/H1_last_oof.parquet": "86bb2c11738c33f2b7a2a039717b80b92fd5bfe6a9a9f4998a096cafd315f7d6",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/curve.json": "1d964e18224fb70200c2094b14c49daa709a8d432b9bc6c5fd4d4ab25c253b20",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1848.parquet": "cf8a32c9c1b48d6c35e1d0aa21127f21080630d23119762feba8146d25f20dc8",
+    "artifacts/v65_rank_heads_20260920/fold0/H1/step_1848.pt": "0acf8d35730389f8f22f32e38b45f269ca91aa4801c3429fe8229f4141cfada4",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/curve.json": "8a0f7e53309025f926107adddba2b61b5dddc0321f1c37cd8d9bd3a3909d081e",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1812.parquet": "d256eb3a075e43fca8def3023a5b404f3fefec59685dc4d31faf3ee7cf3df808",
+    "artifacts/v65_rank_heads_20260920/fold1/H1/step_1812.pt": "5a11c0391a95c9bb651a1ff13d0be4f3ace09fa0977830288d7060a085e62d2a",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/curve.json": "617d4bbef543018c817900a5723c8a8fe3b83a7a9cfdff607aa147cb5c93d696",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1956.parquet": "e7370cebd37f8c0a9652e0ea5b880bc5e532149923aab476a71416abcc558f1e",
+    "artifacts/v65_rank_heads_20260920/fold2/H1/step_1956.pt": "f0d1bb84ea73efe21719d014e8a781d7b3e2caf10d43823492cf696b0d95c18b"
+  },
+  "script_sha256": "ed5d1dcce76e7894309abfe551d721f9d5a2b3b54998d520f684475be136074d"
+}

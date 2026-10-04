@@ -1,0 +1,30 @@
+{
+  "version": "V158_actual_whole_bank_convex_capacity_case",
+  "source_sha256": {
+    "training/v158_replay_full_bank_capacity.py": "b798b871c0e0ada9cea09fc8fd8b6291aca34778412dbe78b5755fde53b9e909",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/audit.json": "659b9ee22a1008a0e3e086b470924ed5ba1ccb3aed092072b564990d7257ffa8",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/all_original_ASA_initial_endpoint_and_capacity.parquet": "f81163f059a22c76b00cc193ece7a208f29175ef306b0c9f6e07e8f5834a14ac",
+    "artifacts/v158_fusion_trial_20261001/ASA_prediction_ledger.parquet": "87d6d0767b5b249b6a80487b9880a30ef690013300d54a80d6c1185804f09b1a",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold0/deployment_probabilities.npy": "d236cfd0a2cbd9313a04edfdb1d17520bc9f210ca2f981929dedabc8fb664f7c",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold1/deployment_probabilities.npy": "44a28f3405137f227272eba53d85eee640cc54b268feb21ea7a8a0b242e64aad",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold2/deployment_probabilities.npy": "8413cfb7d270b0b4f177c0df821cc5a4a8207426e9beca9be3424b08af1174f6"
+  },
+  "fixed_bank_scope": "All112807 original ASA rows with own-outer-fold deployed17 probabilities.",
+  "observed": {
+    "1": {
+      "original_rows": 78748,
+      "all17_strict_wrong_margin_rows": 148,
+      "errors_with_some_correct_expert": 266,
+      "errors_without_correct_expert": 148
+    },
+    "2": {
+      "original_rows": 34059,
+      "all17_strict_wrong_margin_rows": 979,
+      "errors_with_some_correct_expert": 893,
+      "errors_without_correct_expert": 979
+    }
+  },
+  "proof": "For each strict case and every expert, p_true-p_other<0; every nonnegative normalized combination has negative true-versus-other margin.",
+  "required_action": "Do not claim additional iterations, new scoring conditions, or convex-weight tuning can repair these fixed-bank cases; do not remove them from quality denominators.",
+  "limits": "Model-family representability only; not raw-input indistinguishability, causal identification, or authorization for new fits."
+}

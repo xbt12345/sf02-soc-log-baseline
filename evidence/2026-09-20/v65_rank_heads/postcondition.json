@@ -1,0 +1,9 @@
+{
+  "artifact_hashes_verified": 250,
+  "catalog_documents_verified": 14,
+  "training_tests_passed": 10,
+  "readonly_mcp_tests_passed": 8,
+  "quality_acceptance": false,
+  "delivery_sha256": "ec7e0bca74353c6690e52dbce111ab14bda08d1f1129ceebea9ea4d103e48702",
+  "scope": "Post-write hash verification and local MCP test execution; no remote Tunnel test or model quality acceptance."
+}

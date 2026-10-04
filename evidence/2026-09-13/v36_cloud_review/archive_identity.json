@@ -1,0 +1,33 @@
+{
+  "zip_sha256": "4173c40fece8bcf0871dac50e29a6fcc437b566611c2fc3c812515de57e8090f",
+  "entries": 173,
+  "crc_passed": true,
+  "runtime_matches_issued_bundle": {
+    "audit_v36_prepared.py": true,
+    "local_reference.json": true,
+    "patch_v36_fallback.py": true,
+    "patch_v36_native_facts.py": true,
+    "review_v36_round.py": true,
+    "run_v32_train.py": true,
+    "run_v36_prepare.py": true,
+    "run_v36_train.py": true,
+    "soc_v32_prepare.py": true,
+    "soc_v3_prepare.py": true,
+    "test_v36_execution.py": true,
+    "test_v36_learning.py": true,
+    "test_v36_representation.py": true,
+    "v32_features.py": true,
+    "v32_finalize.py": true,
+    "v32_model_diagnostics.py": true,
+    "v32_split.py": true,
+    "v331_common.py": true,
+    "v331_prepare.py": true,
+    "v351_safeguards.py": true,
+    "v36_batch.json": true,
+    "v36_infer.py": true,
+    "v36_learning.py": true,
+    "v36_pipeline.py": true,
+    "v36_representation.py": true
+  },
+  "extracted_to": "C:\\Users\\xiabutian\\Desktop\\\u4eba\u5de5\u667a\u80fd\u7b97\u6cd5\u6311\u6218\u676f\\SF02\\artifacts\\v36_cloud_20260912T191112Z"
+}

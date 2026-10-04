@@ -1,0 +1,349 @@
+{
+  "scope": "Existing adaptive development results only; no fit, no new predictions, no model promotion.",
+  "new_fits": 0,
+  "oracle_warning": "Uses outer answers to diagnose each fixed score function. Not independent validation; not a bound for other models or non-threshold rules.",
+  "grouping_warning": "Source symbols are not established real entities; no independence or external-domain guarantee.",
+  "target_units": {
+    "rows": 578,
+    "source_symbols": 162,
+    "raw_hashes": 282,
+    "normalized_texts": 253
+  },
+  "target_buckets": [
+    {
+      "bucket": "novel_input_with_context",
+      "rows": 332,
+      "sources": 39,
+      "raw_hashes": 159
+    },
+    {
+      "bucket": "novel_input_without_context",
+      "rows": 236,
+      "sources": 118,
+      "raw_hashes": 118
+    },
+    {
+      "bucket": "same_encoded_input_seen_as_M",
+      "rows": 10,
+      "sources": 5,
+      "raw_hashes": 5
+    }
+  ],
+  "auxiliary_hard_S": {
+    "rows": 4069,
+    "source_symbols": 125,
+    "dominant_group": 3225,
+    "dominant_rows": 3650,
+    "dominant_fraction": 0.8970262963873188,
+    "all_hard_S_rows_in_prepared_pool": 4721
+  },
+  "inner_training_priors": [
+    {
+      "outer_fold": 0,
+      "dominant_group_inner_fold": [
+        0
+      ],
+      "inner_training_S_fractions": [
+        0.015426237610884212,
+        0.10187784338398993,
+        0.1047442856795112
+      ],
+      "refit_training_S_fraction": 0.07535210102113434
+    },
+    {
+      "outer_fold": 1,
+      "dominant_group_inner_fold": [
+        0
+      ],
+      "inner_training_S_fractions": [
+        0.013919336520429993,
+        0.10181826916148248,
+        0.1042355061580054
+      ],
+      "refit_training_S_fraction": 0.07476432075819225
+    },
+    {
+      "outer_fold": 2,
+      "dominant_group_inner_fold": [
+        0
+      ],
+      "inner_training_S_fractions": [
+        0.013876228096829738,
+        0.10372775431486951,
+        0.10038101171790755
+      ],
+      "refit_training_S_fraction": 0.07354361383464554
+    }
+  ],
+  "fold_protocol_frontiers": [
+    {
+      "arm": "coarse",
+      "fold": 0,
+      "protocol": "tcp",
+      "M_rows": 12772,
+      "S_rows": 144,
+      "M_source_symbols": 1360,
+      "S_source_symbols": 53,
+      "source_balanced_ROC_AUC": 0.6967361153274378,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5052350370317851,
+      "oracle_M_row_error": 0.008769182586908864,
+      "oracle_M_source_mean_error": 0.0034558823529411767,
+      "oracle_S_row_recall": 0.027777777777777776,
+      "oracle_S_source_mean_recall": 0.005390835579514824,
+      "oracle_target_repairs": 4,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.12293366061783202
+    },
+    {
+      "arm": "coarse",
+      "fold": 0,
+      "protocol": "udp",
+      "M_rows": 1230,
+      "S_rows": 24,
+      "M_source_symbols": 155,
+      "S_source_symbols": 7,
+      "source_balanced_ROC_AUC": 0.5865437788018413,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5692749461593684,
+      "oracle_M_row_error": 0.00975609756097561,
+      "oracle_M_source_mean_error": 0.0064516129032258064,
+      "oracle_S_row_recall": 0.4166666666666667,
+      "oracle_S_source_mean_recall": 0.14285714285714288,
+      "oracle_target_repairs": 10,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.3773921691777809
+    },
+    {
+      "arm": "coarse",
+      "fold": 1,
+      "protocol": "tcp",
+      "M_rows": 13390,
+      "S_rows": 228,
+      "M_source_symbols": 1360,
+      "S_source_symbols": 59,
+      "source_balanced_ROC_AUC": 0.675322259533458,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5106152154166413,
+      "oracle_M_row_error": 0.009858103061986557,
+      "oracle_M_source_mean_error": 0.0034090909090909094,
+      "oracle_S_row_recall": 0.043859649122807015,
+      "oracle_S_source_mean_recall": 0.016949152542372885,
+      "oracle_target_repairs": 0,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.16222007057546228
+    },
+    {
+      "arm": "coarse",
+      "fold": 1,
+      "protocol": "udp",
+      "M_rows": 1226,
+      "S_rows": 28,
+      "M_source_symbols": 145,
+      "S_source_symbols": 6,
+      "source_balanced_ROC_AUC": 0.46481643183291366,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.49748743718592964,
+      "oracle_M_row_error": 0.009787928221859706,
+      "oracle_M_source_mean_error": 0.0029556650246305416,
+      "oracle_S_row_recall": 0.0,
+      "oracle_S_source_mean_recall": 0.0,
+      "oracle_target_repairs": 0,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.2315904199863946
+    },
+    {
+      "arm": "coarse",
+      "fold": 2,
+      "protocol": "tcp",
+      "M_rows": 12322,
+      "S_rows": 192,
+      "M_source_symbols": 1357,
+      "S_source_symbols": 58,
+      "source_balanced_ROC_AUC": 0.716785446150827,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5144789667424441,
+      "oracle_M_row_error": 0.009738678785911378,
+      "oracle_M_source_mean_error": 0.0019344141488577748,
+      "oracle_S_row_recall": 0.1875,
+      "oracle_S_source_mean_recall": 0.034482758620689655,
+      "oracle_target_repairs": 36,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.20481499116307508
+    },
+    {
+      "arm": "coarse",
+      "fold": 2,
+      "protocol": "udp",
+      "M_rows": 950,
+      "S_rows": 36,
+      "M_source_symbols": 132,
+      "S_source_symbols": 7,
+      "source_balanced_ROC_AUC": 0.4918437622983117,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.49748743718592964,
+      "oracle_M_row_error": 0.008421052631578947,
+      "oracle_M_source_mean_error": 0.007575757575757576,
+      "oracle_S_row_recall": 0.0,
+      "oracle_S_source_mean_recall": 0.0,
+      "oracle_target_repairs": 0,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.16794270447460677
+    },
+    {
+      "arm": "numeric",
+      "fold": 0,
+      "protocol": "tcp",
+      "M_rows": 12772,
+      "S_rows": 144,
+      "M_source_symbols": 1360,
+      "S_source_symbols": 53,
+      "source_balanced_ROC_AUC": 0.7484135997960448,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5181266779965067,
+      "oracle_M_row_error": 0.009708737864077669,
+      "oracle_M_source_mean_error": 0.009889705882352943,
+      "oracle_S_row_recall": 0.08333333333333333,
+      "oracle_S_source_mean_recall": 0.07816711590296496,
+      "oracle_target_repairs": 10,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.14380773418144943
+    },
+    {
+      "arm": "numeric",
+      "fold": 0,
+      "protocol": "udp",
+      "M_rows": 1230,
+      "S_rows": 24,
+      "M_source_symbols": 155,
+      "S_source_symbols": 7,
+      "source_balanced_ROC_AUC": 0.818605222734254,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5262024407753051,
+      "oracle_M_row_error": 0.0032520325203252032,
+      "oracle_M_source_mean_error": 0.0064516129032258064,
+      "oracle_S_row_recall": 0.16666666666666666,
+      "oracle_S_source_mean_recall": 0.05714285714285715,
+      "oracle_target_repairs": 4,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.09272590189593234
+    },
+    {
+      "arm": "numeric",
+      "fold": 1,
+      "protocol": "tcp",
+      "M_rows": 13390,
+      "S_rows": 228,
+      "M_source_symbols": 1360,
+      "S_source_symbols": 59,
+      "source_balanced_ROC_AUC": 0.7483998728257945,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5241969281064336,
+      "oracle_M_row_error": 0.009708737864077669,
+      "oracle_M_source_mean_error": 0.009836601307189542,
+      "oracle_S_row_recall": 0.10526315789473684,
+      "oracle_S_source_mean_recall": 0.10451977401129944,
+      "oracle_target_repairs": 10,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.11058306706814576
+    },
+    {
+      "arm": "numeric",
+      "fold": 1,
+      "protocol": "udp",
+      "M_rows": 1226,
+      "S_rows": 28,
+      "M_source_symbols": 145,
+      "S_source_symbols": 6,
+      "source_balanced_ROC_AUC": 0.5805692391899209,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.4987251528578834,
+      "oracle_M_row_error": 0.008156606851549755,
+      "oracle_M_source_mean_error": 0.0026525198938992045,
+      "oracle_S_row_recall": 0.0,
+      "oracle_S_source_mean_recall": 0.0,
+      "oracle_target_repairs": 0,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.4456914762675223
+    },
+    {
+      "arm": "numeric",
+      "fold": 2,
+      "protocol": "tcp",
+      "M_rows": 12322,
+      "S_rows": 192,
+      "M_source_symbols": 1357,
+      "S_source_symbols": 58,
+      "source_balanced_ROC_AUC": 0.7288627887673371,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.5251013401702086,
+      "oracle_M_row_error": 0.009414056159714333,
+      "oracle_M_source_mean_error": 0.0025598262420975064,
+      "oracle_S_row_recall": 0.22916666666666666,
+      "oracle_S_source_mean_recall": 0.048850574712643674,
+      "oracle_target_repairs": 44,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.3743105958965434
+    },
+    {
+      "arm": "numeric",
+      "fold": 2,
+      "protocol": "udp",
+      "M_rows": 950,
+      "S_rows": 36,
+      "M_source_symbols": 132,
+      "S_source_symbols": 7,
+      "source_balanced_ROC_AUC": 0.6613803074030378,
+      "source_balanced_standardized_partial_AUC_at_1pct": 0.49748743718592964,
+      "oracle_M_row_error": 0.008421052631578947,
+      "oracle_M_source_mean_error": 0.004476584022038568,
+      "oracle_S_row_recall": 0.0,
+      "oracle_S_source_mean_recall": 0.0,
+      "oracle_target_repairs": 0,
+      "diagnostic_only_cutoff_NOT_FOR_DEPLOYMENT": 0.0970941545729122
+    }
+  ],
+  "coarse_changed_S_sources": [
+    {
+      "group": 2843,
+      "rows": 6,
+      "old_correct": 6,
+      "new_correct": 0
+    },
+    {
+      "group": 2853,
+      "rows": 14,
+      "old_correct": 0,
+      "new_correct": 2
+    },
+    {
+      "group": 2905,
+      "rows": 6,
+      "old_correct": 6,
+      "new_correct": 0
+    },
+    {
+      "group": 2915,
+      "rows": 24,
+      "old_correct": 0,
+      "new_correct": 24
+    },
+    {
+      "group": 2963,
+      "rows": 12,
+      "old_correct": 0,
+      "new_correct": 12
+    },
+    {
+      "group": 2978,
+      "rows": 4,
+      "old_correct": 4,
+      "new_correct": 0
+    },
+    {
+      "group": 3243,
+      "rows": 10,
+      "old_correct": 0,
+      "new_correct": 10
+    }
+  ],
+  "coarse_S_source_recall": {
+    "before": 0.2900763358778626,
+    "after": 0.2906215921483097,
+    "gain_percentage_points": 0.05452562704471031
+  },
+  "prepared_pool_source_purity": {
+    "groups": 7937,
+    "single_label_groups": 7936,
+    "mixed_label_groups": 1
+  },
+  "input_sha256": {
+    "artifacts/v61_source_factorial_20260914_r2/records.parquet": "28045f25c7665cc0a69748f3a758431c4aec9b1abd5d2d2271107004572e1f7a",
+    "artifacts/v67_targeted_20260920/manifest.parquet": "d4ebdb8e1bd92404c41dfb087a12a457f4b4d07dc4dca5a5eb18257c8e0c2baf",
+    "artifacts/v67_delivery_tables_20260920/target_578_ledger.parquet": "3cc8d8f17ccdacc85e948ed89b960087106e975b259e6a58f9272dc244eeb6b1",
+    "artifacts/v67_expansion_20260920/fold0/inner_manifest.parquet": "9cdbfd30799814818edcdc36be984445c538ef69d20d3a1412d153c449581e4f",
+    "artifacts/v67_expansion_20260920/fold1/inner_manifest.parquet": "8c838f5502a4d5690ab29f507c018fb8555e99f223f9ff9740bbe0f19f23d27b",
+    "artifacts/v67_expansion_20260920/fold2/inner_manifest.parquet": "89b3dbd3bce3ffb958cc291b352569a106e2ee294bc5a7d459aea308f5e45c55",
+    "artifacts/v67_expansion_20260920/coarse_oof.parquet": "3889b1d86cd85bb42a912f10c01b74a5fbea5fa57e80311ee17017716ff5954d",
+    "artifacts/v67_expansion_20260920/numeric_oof.parquet": "69be4a6973cc4066fbe6d1527d0a821ae2397e41a7ea05bb53f45fc9425f9076"
+  },
+  "script_sha256": "6c4dc849073c83da7e37e4390803ef546dbf421e29878473a2a3801cc037ad65"
+}

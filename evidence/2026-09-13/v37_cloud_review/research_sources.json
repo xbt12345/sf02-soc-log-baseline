@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-13",
+  "scope": "Targeted primary-source verification; no external training data or package install",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.5/modules/classification_threshold.html",
+      "use": "Separate scoring and decisions; threshold isolation; not an unknown-domain guarantee",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/calibration.html",
+      "use": "Probability calibration scope; not a remedy for missing source support",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v97/zhao19a.html",
+      "use": "Conditional-shift counterexample to invariance alone",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v89/johansson19a.html",
+      "use": "Support and representation information loss",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/asa-syslog/syslog-messages-101001-to-199021.html",
+      "use": "106023 ACL denial and contextual interpretation",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://aclanthology.org/2020.acl-main.442/",
+      "use": "Behavioral testing method; not SOC performance evidence",
+      "access_status": "read_current_turn"
+    },
+    {
+      "url": "https://github.com/ocsf/ocsf-schema/blob/c1ab05a382ffc97250997ffe010f3f715a097c2a/events/network/network_activity.json",
+      "use": "Shared semantic network event fields",
+      "access_status": "current_fetch_failed; prior research reference only; not used as fresh evidence"
+    }
+  ]
+}

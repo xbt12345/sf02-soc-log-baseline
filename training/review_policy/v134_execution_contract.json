@@ -1,0 +1,12 @@
+{
+  "version": "V134-exec-V133",
+  "plan_sha256": "915d831cc5eb9c51ed461d5997a97643ce21d1ad4db94403a7d2cc1550207e08",
+  "candidate": "R_decay",
+  "output": "artifacts/v134_stable_learning_trial_20260930",
+  "trainer": "training/v134_train.py",
+  "runtime_adapter": "training/v134_runtime.py",
+  "trainer_implemented": true,
+  "historical_sources_unchanged": true,
+  "source_binding_required_before_update": true,
+  "model_promoted": false
+}

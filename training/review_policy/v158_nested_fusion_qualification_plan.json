@@ -1,0 +1,53 @@
+{
+  "version": "V158-nested-fusion-qualification-only",
+  "official_classifier_forward_calls": 0,
+  "official_features_calls": 0,
+  "new_fits": 0,
+  "new_gradients": 0,
+  "new_updates": 0,
+  "outer_folds": [
+    0,
+    1,
+    2
+  ],
+  "inner_folds": [
+    0,
+    1,
+    2
+  ],
+  "split": "unchanged_V128_root_hash_no_labels_no_reroll",
+  "all_supervised_base_stages": [
+    "V135_R_decay_full_network",
+    "V138_H_L_readout",
+    "V140_C_readout",
+    "V142_S2_second",
+    "V146_A_second"
+  ],
+  "planned_new_base_pipelines": 9,
+  "planned_new_base_stage_fits": 45,
+  "planned_new_fusion_fits": 6,
+  "planned_new_formal_fits_total": 51,
+  "current_V146_seen_TRAIN_arrays_are_not_OOF": true,
+  "old_V128_bank_is_not_same_current_pipeline": true,
+  "official_training_activation": false,
+  "automatic_reroll_or_fit": false,
+  "source_sha256": {
+    "training/v158_prepare_nested_qualification.py": "44269f9207b0403fd02045dcc9658c3455adc0817a5befec5798b2335628eee9",
+    "training/v158_fusion_contract.py": "e31298f82242ddffb2849eaecda6431af654fd0012c5414e9ee305dbaaed8f7c",
+    "training/v158_fusion_prototype.py": "15e2a4c5bf533babad0b8e2a39606752c23f801c993b02482098851114c585fc",
+    "training/test_v158_fusion_contract.py": "f1d8eabf587c2608495ba4fb3ced44180f05ea596d21795fbe096c3156b4546a",
+    "training/v128_prepare_roles.py": "c5a435a0cae7af7dacf63457bac146a3b7e97cb4bce89cb1c446a7f9c62d33ad",
+    "training/v128_train_r3.py": "3028e796f28f10e3b8c95aa00052bd964f55287cffbe72bf1b73b1146edca6c5",
+    "training/v135_train.py": "6508380d5aa332ae79cd29336f9a9a7073462737421e37ffd5e8d74c0884287d",
+    "training/v138_train.py": "b71944a765e4317f6a662adb22603a0e83d275280c6d5fe613e9db1c0fef2b3a",
+    "training/v140_train.py": "7c6700d8a51e96c2fed4053eb8a77c1c79d2ff2a14b081c4f419e9e649f2ee69",
+    "training/v142_train.py": "5d625df29ad2018f61585a442c1123458497cc85442f6c522e3c82bb5deeee61",
+    "training/v146_train.py": "12b0ccc8bda38f59e9f4a9eae13cb081f69ab8081c7c9dbd6e4e86cd00b56120",
+    "training/v131_common.py": "abbe2c45dc1878cc5707ad749ae5a7dcba99af4f85e87ecf729b5559ce97a93f",
+    "training/experiment_review.py": "a0faa3312cbb39d3c6bcb62d7a2b290fe18eae14579278b0ff26479fdf2b768e",
+    "docs/EXPERIMENT_REVIEW_RULES.md": "00de5f109bd5fbd5060bd8138c4fb5c4f9a3c59cb65cff9f8eeb09292520ab41",
+    "docs/V157_MEMBER_FUSION_HISTORY_AND_QUALIFICATION.md": "66af9ebf7075617713b482ff80463f83c32ce9cf78cb12cc2c893bb218f9e60d",
+    "docs/V158_NESTED_FUSION_QUALIFICATION_DESIGN.md": "a24238216f58128bf49af5309bdc70c67f18c8de5f839c0d35444297a60c36e8",
+    "artifacts/v130_learning_review_20260930_r2/training_role_error_ledger.parquet": "5bc914a4d7a77b80faa7fd6a3b1d49305928efc54e46e23ddd474e33dab38df8"
+  }
+}

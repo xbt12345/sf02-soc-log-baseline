@@ -1,9 +1,9 @@
+# Historical baseline replay configuration. Current transfer plan: docs/TRAINING_PLAN.md.
 paths:
-  raw_zip_path: C:/Users/xiabutian/Downloads/data.zip
-  extracted_dir: C:/Users/xiabutian/sf02_data/data
-  train_path: C:/Users/xiabutian/sf02_data/data/train.parquet
-  predict_path: C:/Users/xiabutian/sf02_data/data/valid_input.parquet
-  artifacts_dir: ./artifacts
+  extracted_dir: ./data/official
+  train_path: ./data/official/train.parquet
+  predict_path: ./data/official/valid_input.parquet
+  artifacts_dir: ./artifacts/legacy_replay
 
 features:
   id_col: event_id
@@ -34,6 +34,9 @@ split:
   primary_strategy: stratified_group
   comparison_strategies:
     - stratified_group
+    - group_by:src_ip
+    - group_by:src_host
+    - group_by:username
     - stratified_random
     - chronological
   val_size: 0.1

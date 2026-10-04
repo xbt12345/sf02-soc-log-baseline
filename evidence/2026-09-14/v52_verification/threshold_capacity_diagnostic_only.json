@@ -1,0 +1,14 @@
+{
+  "R": {
+    "status": "EVALUATION_LABEL_ORACLE_NOT_A_LEARNED_THRESHOLD",
+    "any_threshold_meets_base_class_error_limits": true,
+    "minimum_errors_within_constraints": 827,
+    "no_threshold_selected_saved_or_applied": true
+  },
+  "I": {
+    "status": "EVALUATION_LABEL_ORACLE_NOT_A_LEARNED_THRESHOLD",
+    "any_threshold_meets_base_class_error_limits": false,
+    "minimum_errors_within_constraints": null,
+    "no_threshold_selected_saved_or_applied": true
+  }
+}

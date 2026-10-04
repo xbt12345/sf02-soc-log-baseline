@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-20T15:07:17.593721+00:00",
+  "bound_files_verified": 213,
+  "catalog_documents_verified": 18,
+  "mcp_tests_passed": 8,
+  "implementation_tests_passed": 5,
+  "models_reloaded": 96,
+  "accepted_repairs": 0,
+  "quality_acceptance": false,
+  "delivery_sha256": "c85c13a12ebb582b85f3bec5ca00a7239adf8dddc64b801832f5088936335235",
+  "catalog_sha256": "687445b716f8c0d6290412e02cb457c51b28c1fb7852f51ab88ea84d890a3a5f",
+  "mcp_test_log_sha256": "d5ffb731a90c292733926cefa62f3dc50c8fcd91db4ee17a6c5650c7d192db39",
+  "recovery_notes": [
+    "First model verification completed replays but failed reading the previous delivery hash-map key; corrected verification rerun passed. Empty failed directory removed.",
+    "Initial MCP status lacked validation_scope; required delivery contract corrected and eight tests passed. Model scores unchanged."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Diagnostic arithmetic, identity and document linkage review only; no implementation or model acceptance.",
+  "version": "v3.3.1",
+  "checks": {
+    "script_identity": true,
+    "historical_v33_preserved": true,
+    "full_row_count": true,
+    "prior_confusion_reproduced_by_disagreement": true,
+    "prepared_conflicts_match_prior_audit": true,
+    "all_identity_and_role_checks": true,
+    "local_links_resolve": true
+  },
+  "all_checks_passed": true,
+  "new_parser_implemented": false,
+  "new_model_trained": false,
+  "new_platform_runner_implemented": false,
+  "identity_sha256": {
+    "docs\\TRAINING_PLAN.md": "cef027c75a584f63e23bb30b8056c78a9ef58359f771c363458cfe5d588cd745",
+    "docs\\V33_LABEL_REVIEW.md": "5e3baf4dce9204feb70c21b9dd9f2d831cc44d838960b3aa9e2e92345bde974d",
+    "training\\audit_v33_label_influence.py": "20354a50afcc4b99e45f7ff9312d12470ed14f3d64a8239757f59d3fefd29dba",
+    "evidence\\2026-09-12\\v33_label_influence_audit.json": "80cd1e725fbe228fe39c388c532eeb7ba0832bebef5fe9e2253af349839a4bd1",
+    "evidence\\2026-09-12\\training_plan_v33_before_label_review.md": "e47763ca67a8938b1b350ce2a359d709a5850d0c09b12d42132676777813301a"
+  }
+}

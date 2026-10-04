@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "historical_counterexample_for_future_plans",
+  "source_round": "V121",
+  "risk_id": "LOCAL_MECHANISM_REAL_FIT_FAILURE",
+  "observed": "Paired original-frequency stratified batches achieved lower fold1 fit error and S ensemble CE, yet source-heldout M and S errors both rose sharply; 6-fit primary gate failed.",
+  "evidence": {
+    "artifacts/v121_paired_batch_training_20260929/primary_evaluation.json": "a0ee0c97f2cb290266338716776d29da38b6accab836fb99ca14ae5daf57e8b1",
+    "artifacts/v121_paired_batch_training_20260929/postfit_audit.json": "475dc270724a94a9b7fad0f8b81cbaf216503bdf471d7fa87fa111074002db8d",
+    "docs/V121_BATCH_TRAINING_RESULTS_AND_STOP.md": "50b5875c73c021d55128a54932a8e4b619533fc27bef734a0d10490253b69c0f"
+  },
+  "required_action_for_related_future_plan": "Do not repeat this batch configuration or treat lower fit error, CE, or frozen-gradient variance as classification benefit; report fresh paired M/S outcomes across all source-closed folds and keep the failed large groups in the denominator.",
+  "decision": "Stop the registered B batch branch; no 12 confirmation fits, no threshold/weight rescue, no promotion.",
+  "scope": "Previously inspected official development folds; not a proof of universal impossibility or external transfer."
+}

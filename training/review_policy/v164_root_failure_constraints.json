@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "actual_round": "V164",
+  "scope": "Supervised current-input classifier development; not complete task acceptance",
+  "no_new_training_permission": true,
+  "cases": [
+    {
+      "id": "V164-HISTORICAL-EIGHT-NOT-NEW-GAIN",
+      "fact": "role1 has eight repairs from V159 but zero additional repairs from the qualified V163 candidate",
+      "evidence": "artifacts/v164_independent_actual_short_trajectory_review_20261002/review.json",
+      "required_action": "Always report matched previous-round endpoint and original fixed-endpoint deltas separately; refuse to recount the eight old repairs as V164 gain"
+    },
+    {
+      "id": "V164-FUNCTION-CAP-NOT-INFEASIBILITY",
+      "fact": "terminal complete function unions 25,27,32 exceed the registered cap24 before fresh derivative measurements",
+      "evidence": "artifacts/v164_independent_capacity_stop_review_20261002/review.json",
+      "required_action": "Preserve capped stop and distinguish resource truncation from lack of a qualified direction; do not raise a bound retrospectively or infer global model inability"
+    },
+    {
+      "id": "V164-PROTECT-DECISION-NOT-ORIGINAL-CONFIDENCE",
+      "fact": "all six recorded restorations were reproduced and zero-margin linear counterfactuals require no larger correction, but have no actual classification evidence yet",
+      "evidence": "artifacts/v164_independent_decision_floor_counterfactual_20261002/review.json",
+      "required_action": "Specify exactly which margin is protected; any decision-floor variant still needs original complete finite class-count, prior-mastery and original-row protection checks; local vector qualification cannot authorize fit or promotion"
+    },
+    {
+      "id": "V164-READOUT-BOUND-DOES-NOT-EQUAL-CLASSIFICATION",
+      "fact": "role2 increases its M/S readout bound from0.9142 to2.5502 across three actual accepted states while pure errors remain1586",
+      "evidence": "artifacts/v164_independent_actual_short_trajectory_review_20261002/review.json",
+      "required_action": "Treat fixed-readout override bounds as state-dependent necessary conditions, not permanent capacity or learning success; score real class repairs, regressions and unresolved margins"
+    },
+    {
+      "id": "V164-NO-LOSS-FOR-CLASS-TRADEOFF",
+      "fact": "role0 base probe repairs384M and loses8S; its following restoration gains8S and loses78M; both lower fixed-error objectives and both are rejected",
+      "evidence": "artifacts/v164_independent_actual_short_trajectory_review_20261002/review.json",
+      "required_action": "Require each original-class count and registered correct-row retention separately; neither aggregate error reduction nor lower two-class target loss can override rejection"
+    }
+  ],
+  "executed_replay_evidence": [
+    "training/v164_independent_actual_short_trajectory_review.py",
+    "training/v164_independent_capacity_stop_review.py",
+    "training/v164_independent_decision_floor_counterfactual.py"
+  ],
+  "do_not_automatically_rerun_existing_artifact_directories": true,
+  "new_qualification_must_bind_original_evidence_and_actual_source_hashes": true
+}

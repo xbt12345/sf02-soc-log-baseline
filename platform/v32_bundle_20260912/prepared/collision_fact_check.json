@@ -1,0 +1,9 @@
+{
+  "rows": 2423,
+  "groups": 49,
+  "raw_to_prepared_fact_mismatches": [],
+  "groups_with_multiple_checked_fact_signatures": [],
+  "all_checked_facts_preserved": true,
+  "checked_fields": "Action, protocol, src/dst interface direction, complete valid ports, ICMP type/code, visible hex codes",
+  "limitations": "Partial redacted ports remain unknown. Narrow fact comparison is not full semantic equivalence, label correctness or missing-context proof."
+}

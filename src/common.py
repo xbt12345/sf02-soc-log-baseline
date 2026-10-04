@@ -17,6 +17,9 @@ def load_config(config_path: str | Path) -> dict[str, Any]:
     with config_file.open('r', encoding='utf-8') as fh:
         config = yaml.safe_load(fh)
     config['__config_dir__'] = str(config_file.parent)
+    for key, value in config.get('paths', {}).items():
+        if value and not Path(value).is_absolute():
+            config['paths'][key] = str((config_file.parent / value).resolve())
     return config
 
 
@@ -107,6 +110,14 @@ def build_group_key(df: pd.DataFrame, entity_cols: list[str]) -> pd.Series:
     return group_key.astype(str)
 
 
+def build_single_group_key(df: pd.DataFrame, col: str) -> pd.Series:
+    if col not in df.columns:
+        raise ValueError(f'Group column not found: {col}')
+    candidate = df[col].fillna('').astype(str).str.strip()
+    candidate = candidate.mask(candidate.eq(''), '__MISSING__')
+    return (col + '=' + candidate).astype(str)
+
+
 def _split_random(
     df: pd.DataFrame,
     y: pd.Series,
@@ -182,6 +193,10 @@ def split_train_val_test(
         return _split_random(df, y, val_size, test_size, seed)
     if strategy == 'stratified_group':
         groups = build_group_key(df, config['features']['entity_cols'])
+        return _split_group(df, y, groups, val_size, test_size, seed)
+    if strategy.startswith('group_by:'):
+        group_col = strategy.split(':', 1)[1]
+        groups = build_single_group_key(df, group_col)
         return _split_group(df, y, groups, val_size, test_size, seed)
     if strategy == 'chronological':
         return _split_time(df, val_size, test_size)

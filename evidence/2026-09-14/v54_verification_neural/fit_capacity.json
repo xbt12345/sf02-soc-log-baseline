@@ -1,0 +1,178 @@
+{
+  "pressure": {
+    "floor": {
+      "rows": 99398,
+      "observation_keys": 15664,
+      "minimum_empirical_errors": 2306,
+      "minimum_empirical_nll": 0.05441941117101575
+    },
+    "models": {
+      "NEURAL": {
+        "rows": 99398,
+        "errors": 2356,
+        "confusion_B_M_S": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            71322,
+            586
+          ],
+          [
+            0,
+            1770,
+            25704
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9918506981142571,
+          0.9355754531557109
+        ],
+        "class_errors_B_M_S": [
+          0,
+          586,
+          1770
+        ],
+        "macro_f1_M_S": 0.9699652899389157,
+        "ASA_to_normal": 0,
+        "nll": 0.057457998394966125
+      }
+    }
+  },
+  "fold_0": {
+    "floor": {
+      "rows": 71314,
+      "observation_keys": 11586,
+      "minimum_empirical_errors": 1466,
+      "minimum_empirical_nll": 0.049016603877966296
+    },
+    "models": {
+      "NEURAL": {
+        "rows": 71314,
+        "errors": 1472,
+        "confusion_B_M_S": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            52278,
+            220
+          ],
+          [
+            0,
+            1252,
+            17552
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.995809364166254,
+          0.9334184216124229
+        ],
+        "class_errors_B_M_S": [
+          0,
+          220,
+          1252
+        ],
+        "macro_f1_M_S": 0.9729359527044821,
+        "ASA_to_normal": 0,
+        "nll": 0.05110083147883415
+      }
+    }
+  },
+  "fold_1": {
+    "floor": {
+      "rows": 71311,
+      "observation_keys": 11669,
+      "minimum_empirical_errors": 1508,
+      "minimum_empirical_nll": 0.049191378025582135
+    },
+    "models": {
+      "NEURAL": {
+        "rows": 71311,
+        "errors": 1520,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            52106,
+            390
+          ],
+          [
+            0,
+            1130,
+            17675
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.992570862541908,
+          0.9399095985110343
+        ],
+        "class_errors_B_M_S": [
+          0,
+          390,
+          1130
+        ],
+        "macro_f1_M_S": 0.9721990508141667,
+        "ASA_to_normal": 0,
+        "nll": 0.05038544535636902
+      }
+    }
+  },
+  "fold_2": {
+    "floor": {
+      "rows": 71313,
+      "observation_keys": 11610,
+      "minimum_empirical_errors": 1662,
+      "minimum_empirical_nll": 0.05497950043513511
+    },
+    "models": {
+      "NEURAL": {
+        "rows": 71313,
+        "errors": 1706,
+        "confusion_B_M_S": [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            51786,
+            712
+          ],
+          [
+            0,
+            994,
+            17811
+          ]
+        ],
+        "recall_B_M_S": [
+          1.0,
+          0.9864375785744219,
+          0.9471417176282904
+        ],
+        "class_errors_B_M_S": [
+          0,
+          712,
+          994
+        ],
+        "macro_f1_M_S": 0.9690461636497338,
+        "ASA_to_normal": 0,
+        "nll": 0.05648616701364517
+      }
+    }
+  }
+}

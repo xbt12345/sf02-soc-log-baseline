@@ -1,0 +1,4060 @@
+{
+  "status": "returned_run_locally_replayed_not_transfer_validated",
+  "archive_sha256": "cc3ef531763615704820025673aed4db8966e02658ccb3148b888b76f4b28270",
+  "source_file_sha256": "2498ec2c0038be288c842b71b719d327bb098ebf0ec58dd6d0d8230dba841f8f",
+  "checks": {
+    "source_run_v32_train.py": true,
+    "source_v32_features.py": true,
+    "source_soc_v3_prepare.py": true,
+    "source_soc_v32_prepare.py": true,
+    "source_v32_finalize.py": true,
+    "source_v32_model_diagnostics.py": true,
+    "prepared_corpus.parquet_identity": true,
+    "split_manifest.parquet_identity": true,
+    "model_stress_fixtures.json_identity": true,
+    "original_train_identity": true,
+    "group_manifest_identity": true,
+    "fold0_outer_predictions.parquet": true,
+    "fold0_calibration_predictions.parquet": true,
+    "fold0_model.joblib": true,
+    "fold0_vectorizer.joblib": true,
+    "fold0_positions_labels": true,
+    "fold0_C1_score_decisions": true,
+    "fold0_N_relearned_frequencies": true,
+    "fold0_refit_members": true,
+    "fold0_group_role_-1": true,
+    "fold0_group_role_0": true,
+    "fold0_group_role_3": true,
+    "fold0_group_role_4": true,
+    "fold0_C_0_1_fit.json": true,
+    "fold0_C_1_0_fit.json": true,
+    "fold0_refit_fit.json": true,
+    "fold0_C_selection": true,
+    "fold0_N_threshold0": true,
+    "fold0_N_calibration_rates0": true,
+    "fold0_N_outer_rates0": true,
+    "fold0_C1_W_threshold0": true,
+    "fold0_C1_W_calibration_rates0": true,
+    "fold0_C1_W_outer_rates0": true,
+    "fold0_N_threshold1": true,
+    "fold0_N_calibration_rates1": true,
+    "fold0_N_outer_rates1": true,
+    "fold0_C1_W_threshold1": true,
+    "fold0_C1_W_calibration_rates1": true,
+    "fold0_C1_W_outer_rates1": true,
+    "fold0_N_threshold2": true,
+    "fold0_N_calibration_rates2": true,
+    "fold0_N_outer_rates2": true,
+    "fold0_C1_W_threshold2": true,
+    "fold0_C1_W_calibration_rates2": true,
+    "fold0_C1_W_outer_rates2": true,
+    "fold1_outer_predictions.parquet": true,
+    "fold1_calibration_predictions.parquet": true,
+    "fold1_model.joblib": true,
+    "fold1_vectorizer.joblib": true,
+    "fold1_positions_labels": true,
+    "fold1_C1_score_decisions": true,
+    "fold1_N_relearned_frequencies": true,
+    "fold1_refit_members": true,
+    "fold1_group_role_-1": true,
+    "fold1_group_role_0": true,
+    "fold1_group_role_3": true,
+    "fold1_group_role_4": true,
+    "fold1_C_0_1_fit.json": true,
+    "fold1_C_1_0_fit.json": true,
+    "fold1_refit_fit.json": true,
+    "fold1_C_selection": true,
+    "fold1_N_threshold0": true,
+    "fold1_N_calibration_rates0": true,
+    "fold1_N_outer_rates0": true,
+    "fold1_C1_W_threshold0": true,
+    "fold1_C1_W_calibration_rates0": true,
+    "fold1_C1_W_outer_rates0": true,
+    "fold1_N_threshold1": true,
+    "fold1_N_calibration_rates1": true,
+    "fold1_N_outer_rates1": true,
+    "fold1_C1_W_threshold1": true,
+    "fold1_C1_W_calibration_rates1": true,
+    "fold1_C1_W_outer_rates1": true,
+    "fold1_N_threshold2": true,
+    "fold1_N_calibration_rates2": true,
+    "fold1_N_outer_rates2": true,
+    "fold1_C1_W_threshold2": true,
+    "fold1_C1_W_calibration_rates2": true,
+    "fold1_C1_W_outer_rates2": true,
+    "fold2_outer_predictions.parquet": true,
+    "fold2_calibration_predictions.parquet": true,
+    "fold2_model.joblib": true,
+    "fold2_vectorizer.joblib": true,
+    "fold2_positions_labels": true,
+    "fold2_C1_score_decisions": true,
+    "fold2_N_relearned_frequencies": true,
+    "fold2_refit_members": true,
+    "fold2_group_role_-1": true,
+    "fold2_group_role_0": true,
+    "fold2_group_role_3": true,
+    "fold2_group_role_4": true,
+    "fold2_C_0_1_fit.json": true,
+    "fold2_C_1_0_fit.json": true,
+    "fold2_refit_fit.json": true,
+    "fold2_C_selection": true,
+    "fold2_N_threshold0": true,
+    "fold2_N_calibration_rates0": true,
+    "fold2_N_outer_rates0": true,
+    "fold2_C1_W_threshold0": true,
+    "fold2_C1_W_calibration_rates0": true,
+    "fold2_C1_W_outer_rates0": true,
+    "fold2_N_threshold1": true,
+    "fold2_N_calibration_rates1": true,
+    "fold2_N_outer_rates1": true,
+    "fold2_C1_W_threshold1": true,
+    "fold2_C1_W_calibration_rates1": true,
+    "fold2_C1_W_outer_rates1": true,
+    "fold2_N_threshold2": true,
+    "fold2_N_calibration_rates2": true,
+    "fold2_N_outer_rates2": true,
+    "fold2_C1_W_threshold2": true,
+    "fold2_C1_W_calibration_rates2": true,
+    "fold2_C1_W_outer_rates2": true,
+    "all_rows_once": true,
+    "C1_W_confusion": true,
+    "N_confusion": true,
+    "C1_W_equal_groups": true,
+    "N_equal_groups": true,
+    "largest_0_0": true,
+    "largest_0_1": true,
+    "largest_0_2": true,
+    "largest_1_0": true,
+    "largest_1_1": true,
+    "largest_1_2": true,
+    "largest_2_0": true,
+    "largest_2_1": true,
+    "largest_2_2": true,
+    "slice_format_network_kv": true,
+    "slice_format_syslog_like": true,
+    "slice_format_asa_like": true,
+    "slice_format_windows_json_like": true,
+    "slice_format_cef_like": true,
+    "slice_format_json_fragment": true,
+    "slice_format_unknown": true,
+    "slice_format_empty": true,
+    "slice_format_vpc14": true,
+    "slice_product_<missing>": true,
+    "slice_product_Windows Active Directory": true,
+    "slice_product_Linux PAM": true,
+    "slice_product_AWS Instance Backup": true,
+    "slice_product_Cisco Network Operating System": true,
+    "slice_product_ASA Firewall": true,
+    "slice_product_VMWare VCenter": true,
+    "slice_product_Precinct": true,
+    "slice_product_Barracuda ESS": true,
+    "slice_product_Falcon": true,
+    "slice_product_SentinelOne": true,
+    "slice_product_Apache Web Server": true,
+    "slice_product_Duo": true,
+    "slice_product_Barracuda WAF": true,
+    "slice_product_Symantec Endpoint Protection": true,
+    "slice_product_ManageEngine ADManager": true,
+    "slice_product_AWS VPC Security": true,
+    "slice_product_Windows Logs": true,
+    "zero_vector_positions_replay": true,
+    "model_replay_all_rows": true,
+    "stress_score_replay": true
+  },
+  "all_checks_passed": true,
+  "rows": 2056871,
+  "metrics": {
+    "C1_W": {
+      "confusion_matrix": [
+        [
+          1899723,
+          0,
+          0
+        ],
+        [
+          40,
+          110362,
+          1326
+        ],
+        [
+          263,
+          2729,
+          42428
+        ]
+      ],
+      "macro_f1": 0.9777611397918814,
+      "recall": [
+        1.0,
+        0.9877738794214521,
+        0.9341259357111404
+      ]
+    },
+    "N": {
+      "confusion_matrix": [
+        [
+          1899723,
+          0,
+          0
+        ],
+        [
+          384,
+          111344,
+          0
+        ],
+        [
+          741,
+          34059,
+          10620
+        ]
+      ],
+      "macro_f1": 0.7482559348344378,
+      "recall": [
+        1.0,
+        0.9965630817700128,
+        0.23381770145310435
+      ]
+    }
+  },
+  "group_equal": {
+    "C1_W": {
+      "confusion_matrix": [
+        [
+          252325.99999885322,
+          0.0,
+          0.0
+        ],
+        [
+          7.000000000000001,
+          16795.50019480033,
+          146.37186726018155
+        ],
+        [
+          170.0,
+          499.4998051982467,
+          5144.628132740003
+        ]
+      ],
+      "macro_f1": 0.969038672155425,
+      "recall": [
+        1.0,
+        0.9909509100842468,
+        0.8848494886344627
+      ]
+    },
+    "N": {
+      "confusion_matrix": [
+        [
+          252325.99999885322,
+          0.0,
+          0.0
+        ],
+        [
+          48.99999999999997,
+          16899.872062060476,
+          0.0
+        ],
+        [
+          594.0000000000002,
+          5180.127937938915,
+          39.99999999999107
+        ]
+      ],
+      "macro_f1": 0.6261373435715993,
+      "recall": [
+        1.0,
+        0.9971089521579619,
+        0.0068797935695530926
+      ]
+    }
+  },
+  "largest_group_removal": [
+    {
+      "fold": 0,
+      "class": "benign",
+      "C1": 0.9793313387258258,
+      "N": 0.6214456418397311
+    },
+    {
+      "fold": 0,
+      "class": "malicious",
+      "C1": 0.9788350955102135,
+      "N": 0.6168661158692647
+    },
+    {
+      "fold": 0,
+      "class": "suspicious",
+      "C1": 0.9658498030753705,
+      "N": 0.6522632653225033
+    },
+    {
+      "fold": 1,
+      "class": "benign",
+      "C1": 0.9747100374340606,
+      "N": 0.7773713832338798
+    },
+    {
+      "fold": 1,
+      "class": "malicious",
+      "C1": 0.9740575733692522,
+      "N": 0.774061391810268
+    },
+    {
+      "fold": 1,
+      "class": "suspicious",
+      "C1": 0.9725351532146397,
+      "N": 0.7964334177106553
+    },
+    {
+      "fold": 2,
+      "class": "benign",
+      "C1": 0.97921705777384,
+      "N": 0.8170903717517929
+    },
+    {
+      "fold": 2,
+      "class": "malicious",
+      "C1": 0.9789718820721677,
+      "N": 0.8157762808345637
+    },
+    {
+      "fold": 2,
+      "class": "suspicious",
+      "C1": 0.9779738970497753,
+      "N": 0.798600155721321
+    }
+  ],
+  "slices": {
+    "format": {
+      "network_kv": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32596,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            1.0,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32596,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            1.0,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          0,
+          32596,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          4188,
+          0
+        ]
+      },
+      "syslog_like": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              267703,
+              0,
+              0
+            ],
+            [
+              0,
+              308,
+              0
+            ],
+            [
+              13,
+              0,
+              206
+            ]
+          ],
+          "macro_f1": 0.989795828218684,
+          "recall": [
+            1.0,
+            1.0,
+            0.9406392694063926
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              267703,
+              0,
+              0
+            ],
+            [
+              308,
+              0,
+              0
+            ],
+            [
+              219,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.33300555604276405,
+          "recall": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "corrected": 514,
+        "broken": 0,
+        "supports": [
+          267703,
+          308,
+          219
+        ],
+        "nonempty_groups_by_class": [
+          48992,
+          36,
+          217
+        ]
+      },
+      "asa_like": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              77422,
+              1326
+            ],
+            [
+              0,
+              2729,
+              31330
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            0.9831614771168792,
+            0.9198743357115593
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              78748,
+              0
+            ],
+            [
+              0,
+              34059,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            1.0,
+            0.0
+          ]
+        },
+        "corrected": 31330,
+        "broken": 1326,
+        "supports": [
+          0,
+          78748,
+          34059
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          12738,
+          5203
+        ]
+      },
+      "windows_json_like": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              829883,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              210,
+              0,
+              263
+            ]
+          ],
+          "macro_f1": 0.5715154001691763,
+          "recall": [
+            1.0,
+            0.0,
+            0.5560253699788583
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              829883,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              473,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.3332379656527777,
+          "recall": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "corrected": 263,
+        "broken": 0,
+        "supports": [
+          829883,
+          2,
+          473
+        ],
+        "nonempty_groups_by_class": [
+          196003,
+          1,
+          339
+        ]
+      },
+      "cef_like": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              4137,
+              0,
+              0
+            ],
+            [
+              22,
+              28,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.5716854849175891,
+          "recall": [
+            1.0,
+            0.56,
+            0.0
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              4137,
+              0,
+              0
+            ],
+            [
+              50,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.3312515013211626,
+          "recall": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "corrected": 28,
+        "broken": 0,
+        "supports": [
+          4137,
+          50,
+          2
+        ],
+        "nonempty_groups_by_class": [
+          2051,
+          9,
+          1
+        ]
+      },
+      "json_fragment": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              386944,
+              0,
+              0
+            ],
+            [
+              16,
+              8,
+              0
+            ],
+            [
+              38,
+              0,
+              9
+            ]
+          ],
+          "macro_f1": 0.6071195995860893,
+          "recall": [
+            1.0,
+            0.3333333333333333,
+            0.19148936170212766
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              386944,
+              0,
+              0
+            ],
+            [
+              24,
+              0,
+              0
+            ],
+            [
+              47,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.33330275462481435,
+          "recall": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "corrected": 17,
+        "broken": 0,
+        "supports": [
+          386944,
+          24,
+          47
+        ],
+        "nonempty_groups_by_class": [
+          4994,
+          3,
+          37
+        ]
+      },
+      "unknown": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              54741,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              54741,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          54741,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          286,
+          0,
+          0
+        ]
+      },
+      "empty": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              356315,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              356315,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          356315,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          0
+        ]
+      },
+      "vpc14": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10620
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10620
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          0,
+          0,
+          10620
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          40
+        ]
+      }
+    },
+    "product": {
+      "<missing>": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              247299,
+              0,
+              0
+            ],
+            [
+              40,
+              110362,
+              1326
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            0.9877738794214521,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              247299,
+              0,
+              0
+            ],
+            [
+              384,
+              111344,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            0.9965630817700128,
+            null
+          ]
+        },
+        "corrected": 344,
+        "broken": 1326,
+        "supports": [
+          247299,
+          111728,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          24150,
+          16975,
+          0
+        ]
+      },
+      "Windows Active Directory": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              809860,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              210,
+              0,
+              263
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.5560253699788583
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              809860,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              473,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 263,
+        "broken": 0,
+        "supports": [
+          809860,
+          0,
+          473
+        ],
+        "nonempty_groups_by_class": [
+          191703,
+          0,
+          339
+        ]
+      },
+      "Linux PAM": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              17822,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              17822,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          17822,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          7766,
+          0,
+          0
+        ]
+      },
+      "AWS Instance Backup": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              340131,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              340131,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          340131,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          0
+        ]
+      },
+      "Cisco Network Operating System": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              3697,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              3697,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          3697,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          3632,
+          0,
+          0
+        ]
+      },
+      "ASA Firewall": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2729,
+              31330
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.9198743357115593
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              34059,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 31330,
+        "broken": 0,
+        "supports": [
+          20,
+          0,
+          34059
+        ],
+        "nonempty_groups_by_class": [
+          10,
+          0,
+          5203
+        ]
+      },
+      "VMWare VCenter": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              88311,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              88311,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          88311,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          17309,
+          0,
+          0
+        ]
+      },
+      "Precinct": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              13,
+              0,
+              206
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            0.9406392694063926
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              219,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 206,
+        "broken": 0,
+        "supports": [
+          0,
+          0,
+          219
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          217
+        ]
+      },
+      "Barracuda ESS": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              74,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              74,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          74,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          37,
+          0,
+          0
+        ]
+      },
+      "Falcon": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              26,
+              0,
+              9
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            0.2571428571428571
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              35,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 9,
+        "broken": 0,
+        "supports": [
+          0,
+          0,
+          35
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          25
+        ]
+      },
+      "SentinelOne": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              25,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              25,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          25,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          23,
+          0,
+          0
+        ]
+      },
+      "Apache Web Server": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              36,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              36,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          36,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          13,
+          0,
+          0
+        ]
+      },
+      "Duo": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              325,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              325,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          325,
+          0,
+          12
+        ],
+        "nonempty_groups_by_class": [
+          325,
+          0,
+          12
+        ]
+      },
+      "Barracuda WAF": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              4128,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              4128,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            0.0
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          4128,
+          0,
+          2
+        ],
+        "nonempty_groups_by_class": [
+          2048,
+          0,
+          1
+        ]
+      },
+      "Symantec Endpoint Protection": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              2361,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              2361,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          2361,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          1127,
+          0,
+          0
+        ]
+      },
+      "ManageEngine ADManager": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              4082,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              4082,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          4082,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          2998,
+          0,
+          0
+        ]
+      },
+      "AWS VPC Security": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10620
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10620
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            null,
+            null,
+            1.0
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          0,
+          0,
+          10620
+        ],
+        "nonempty_groups_by_class": [
+          0,
+          0,
+          40
+        ]
+      },
+      "Windows Logs": {
+        "C1_W": {
+          "confusion_matrix": [
+            [
+              381552,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "N": {
+          "confusion_matrix": [
+            [
+              381552,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": null,
+          "recall": [
+            1.0,
+            null,
+            null
+          ]
+        },
+        "corrected": 0,
+        "broken": 0,
+        "supports": [
+          381552,
+          0,
+          0
+        ],
+        "nonempty_groups_by_class": [
+          1185,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "risk": [
+    {
+      "budget": 0.0001,
+      "all_rows": {
+        "supports": [
+          1899723,
+          111728,
+          45420
+        ],
+        "alerts": [
+          173,
+          111726,
+          45406
+        ],
+        "rates": [
+          9.10659080297496e-05,
+          0.9999820993842188,
+          0.999691765741964
+        ],
+        "false_per_10000": 0.910659080297496
+      },
+      "nonempty": {
+        "supports": [
+          1543408,
+          111728,
+          45420
+        ],
+        "alerts": [
+          173,
+          111726,
+          45406
+        ],
+        "rates": [
+          0.00011208960948757555,
+          0.9999820993842188,
+          0.999691765741964
+        ],
+        "false_per_10000": 1.1208960948757556
+      },
+      "by_format": {
+        "network_kv": {
+          "supports": [
+            0,
+            32596,
+            0
+          ],
+          "alerts": [
+            0,
+            32596,
+            0
+          ],
+          "rates": [
+            null,
+            1.0,
+            null
+          ],
+          "false_per_10000": null
+        },
+        "syslog_like": {
+          "supports": [
+            267703,
+            308,
+            219
+          ],
+          "alerts": [
+            32,
+            308,
+            219
+          ],
+          "rates": [
+            0.00011953545533669776,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 1.1953545533669776
+        },
+        "asa_like": {
+          "supports": [
+            0,
+            78748,
+            34059
+          ],
+          "alerts": [
+            0,
+            78748,
+            34059
+          ],
+          "rates": [
+            null,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "windows_json_like": {
+          "supports": [
+            829883,
+            2,
+            473
+          ],
+          "alerts": [
+            0,
+            0,
+            473
+          ],
+          "rates": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "false_per_10000": 0.0
+        },
+        "cef_like": {
+          "supports": [
+            4137,
+            50,
+            2
+          ],
+          "alerts": [
+            33,
+            50,
+            2
+          ],
+          "rates": [
+            0.007976794778825236,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 79.76794778825236
+        },
+        "json_fragment": {
+          "supports": [
+            386944,
+            24,
+            47
+          ],
+          "alerts": [
+            108,
+            24,
+            33
+          ],
+          "rates": [
+            0.000279110155474694,
+            1.0,
+            0.7021276595744681
+          ],
+          "false_per_10000": 2.7911015547469398
+        },
+        "unknown": {
+          "supports": [
+            54741,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "empty": {
+          "supports": [
+            356315,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "vpc14": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        }
+      },
+      "by_product": {
+        "<missing>": {
+          "supports": [
+            247299,
+            111728,
+            0
+          ],
+          "alerts": [
+            1,
+            111726,
+            0
+          ],
+          "rates": [
+            4.0436880052082705e-06,
+            0.9999820993842188,
+            null
+          ],
+          "false_per_10000": 0.04043688005208271
+        },
+        "Windows Active Directory": {
+          "supports": [
+            809860,
+            0,
+            473
+          ],
+          "alerts": [
+            0,
+            0,
+            473
+          ],
+          "rates": [
+            0.0,
+            null,
+            1.0
+          ],
+          "false_per_10000": 0.0
+        },
+        "Linux PAM": {
+          "supports": [
+            17822,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "AWS Instance Backup": {
+          "supports": [
+            340131,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Cisco Network Operating System": {
+          "supports": [
+            3697,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "ASA Firewall": {
+          "supports": [
+            20,
+            0,
+            34059
+          ],
+          "alerts": [
+            16,
+            0,
+            34059
+          ],
+          "rates": [
+            0.8,
+            null,
+            1.0
+          ],
+          "false_per_10000": 8000.0
+        },
+        "VMWare VCenter": {
+          "supports": [
+            88311,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Precinct": {
+          "supports": [
+            0,
+            0,
+            219
+          ],
+          "alerts": [
+            0,
+            0,
+            219
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Barracuda ESS": {
+          "supports": [
+            74,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Falcon": {
+          "supports": [
+            0,
+            0,
+            35
+          ],
+          "alerts": [
+            0,
+            0,
+            25
+          ],
+          "rates": [
+            null,
+            null,
+            0.7142857142857143
+          ],
+          "false_per_10000": null
+        },
+        "SentinelOne": {
+          "supports": [
+            25,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Apache Web Server": {
+          "supports": [
+            36,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Duo": {
+          "supports": [
+            325,
+            0,
+            12
+          ],
+          "alerts": [
+            108,
+            0,
+            8
+          ],
+          "rates": [
+            0.3323076923076923,
+            null,
+            0.6666666666666666
+          ],
+          "false_per_10000": 3323.076923076923
+        },
+        "Barracuda WAF": {
+          "supports": [
+            4128,
+            0,
+            2
+          ],
+          "alerts": [
+            32,
+            0,
+            2
+          ],
+          "rates": [
+            0.007751937984496124,
+            null,
+            1.0
+          ],
+          "false_per_10000": 77.51937984496124
+        },
+        "Symantec Endpoint Protection": {
+          "supports": [
+            2361,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "ManageEngine ADManager": {
+          "supports": [
+            4082,
+            0,
+            0
+          ],
+          "alerts": [
+            16,
+            0,
+            0
+          ],
+          "rates": [
+            0.0039196472317491425,
+            null,
+            null
+          ],
+          "false_per_10000": 39.19647231749143
+        },
+        "AWS VPC Security": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Windows Logs": {
+          "supports": [
+            381552,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        }
+      }
+    },
+    {
+      "budget": 0.001,
+      "all_rows": {
+        "supports": [
+          1899723,
+          111728,
+          45420
+        ],
+        "alerts": [
+          1960,
+          111726,
+          45408
+        ],
+        "rates": [
+          0.0010317293626491862,
+          0.9999820993842188,
+          0.9997357992073976
+        ],
+        "false_per_10000": 10.317293626491862
+      },
+      "nonempty": {
+        "supports": [
+          1543408,
+          111728,
+          45420
+        ],
+        "alerts": [
+          1960,
+          111726,
+          45408
+        ],
+        "rates": [
+          0.0012699169629806248,
+          0.9999820993842188,
+          0.9997357992073976
+        ],
+        "false_per_10000": 12.699169629806248
+      },
+      "by_format": {
+        "network_kv": {
+          "supports": [
+            0,
+            32596,
+            0
+          ],
+          "alerts": [
+            0,
+            32596,
+            0
+          ],
+          "rates": [
+            null,
+            1.0,
+            null
+          ],
+          "false_per_10000": null
+        },
+        "syslog_like": {
+          "supports": [
+            267703,
+            308,
+            219
+          ],
+          "alerts": [
+            320,
+            308,
+            219
+          ],
+          "rates": [
+            0.0011953545533669775,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 11.953545533669775
+        },
+        "asa_like": {
+          "supports": [
+            0,
+            78748,
+            34059
+          ],
+          "alerts": [
+            0,
+            78748,
+            34059
+          ],
+          "rates": [
+            null,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "windows_json_like": {
+          "supports": [
+            829883,
+            2,
+            473
+          ],
+          "alerts": [
+            178,
+            0,
+            473
+          ],
+          "rates": [
+            0.00021448806639008149,
+            0.0,
+            1.0
+          ],
+          "false_per_10000": 2.144880663900815
+        },
+        "cef_like": {
+          "supports": [
+            4137,
+            50,
+            2
+          ],
+          "alerts": [
+            1237,
+            50,
+            2
+          ],
+          "rates": [
+            0.29900894367899444,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 2990.0894367899446
+        },
+        "json_fragment": {
+          "supports": [
+            386944,
+            24,
+            47
+          ],
+          "alerts": [
+            223,
+            24,
+            35
+          ],
+          "rates": [
+            0.0005763107839894145,
+            1.0,
+            0.7446808510638298
+          ],
+          "false_per_10000": 5.763107839894145
+        },
+        "unknown": {
+          "supports": [
+            54741,
+            0,
+            0
+          ],
+          "alerts": [
+            2,
+            0,
+            0
+          ],
+          "rates": [
+            3.653568623152664e-05,
+            null,
+            null
+          ],
+          "false_per_10000": 0.36535686231526643
+        },
+        "empty": {
+          "supports": [
+            356315,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "vpc14": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        }
+      },
+      "by_product": {
+        "<missing>": {
+          "supports": [
+            247299,
+            111728,
+            0
+          ],
+          "alerts": [
+            23,
+            111726,
+            0
+          ],
+          "rates": [
+            9.300482411979021e-05,
+            0.9999820993842188,
+            null
+          ],
+          "false_per_10000": 0.9300482411979021
+        },
+        "Windows Active Directory": {
+          "supports": [
+            809860,
+            0,
+            473
+          ],
+          "alerts": [
+            172,
+            0,
+            473
+          ],
+          "rates": [
+            0.00021238238707924827,
+            null,
+            1.0
+          ],
+          "false_per_10000": 2.123823870792483
+        },
+        "Linux PAM": {
+          "supports": [
+            17822,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "AWS Instance Backup": {
+          "supports": [
+            340131,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Cisco Network Operating System": {
+          "supports": [
+            3697,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "ASA Firewall": {
+          "supports": [
+            20,
+            0,
+            34059
+          ],
+          "alerts": [
+            18,
+            0,
+            34059
+          ],
+          "rates": [
+            0.9,
+            null,
+            1.0
+          ],
+          "false_per_10000": 9000.0
+        },
+        "VMWare VCenter": {
+          "supports": [
+            88311,
+            0,
+            0
+          ],
+          "alerts": [
+            115,
+            0,
+            0
+          ],
+          "rates": [
+            0.0013022160319778964,
+            null,
+            null
+          ],
+          "false_per_10000": 13.022160319778964
+        },
+        "Precinct": {
+          "supports": [
+            0,
+            0,
+            219
+          ],
+          "alerts": [
+            0,
+            0,
+            219
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Barracuda ESS": {
+          "supports": [
+            74,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Falcon": {
+          "supports": [
+            0,
+            0,
+            35
+          ],
+          "alerts": [
+            0,
+            0,
+            25
+          ],
+          "rates": [
+            null,
+            null,
+            0.7142857142857143
+          ],
+          "false_per_10000": null
+        },
+        "SentinelOne": {
+          "supports": [
+            25,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Apache Web Server": {
+          "supports": [
+            36,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Duo": {
+          "supports": [
+            325,
+            0,
+            12
+          ],
+          "alerts": [
+            223,
+            0,
+            10
+          ],
+          "rates": [
+            0.6861538461538461,
+            null,
+            0.8333333333333334
+          ],
+          "false_per_10000": 6861.538461538461
+        },
+        "Barracuda WAF": {
+          "supports": [
+            4128,
+            0,
+            2
+          ],
+          "alerts": [
+            1236,
+            0,
+            2
+          ],
+          "rates": [
+            0.29941860465116277,
+            null,
+            1.0
+          ],
+          "false_per_10000": 2994.186046511628
+        },
+        "Symantec Endpoint Protection": {
+          "supports": [
+            2361,
+            0,
+            0
+          ],
+          "alerts": [
+            3,
+            0,
+            0
+          ],
+          "rates": [
+            0.0012706480304955528,
+            null,
+            null
+          ],
+          "false_per_10000": 12.706480304955528
+        },
+        "ManageEngine ADManager": {
+          "supports": [
+            4082,
+            0,
+            0
+          ],
+          "alerts": [
+            170,
+            0,
+            0
+          ],
+          "rates": [
+            0.04164625183733464,
+            null,
+            null
+          ],
+          "false_per_10000": 416.4625183733464
+        },
+        "AWS VPC Security": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Windows Logs": {
+          "supports": [
+            381552,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        }
+      }
+    },
+    {
+      "budget": 0.01,
+      "all_rows": {
+        "supports": [
+          1899723,
+          111728,
+          45420
+        ],
+        "alerts": [
+          19796,
+          111726,
+          45415
+        ],
+        "rates": [
+          0.01042046656275678,
+          0.9999820993842188,
+          0.9998899163364157
+        ],
+        "false_per_10000": 104.2046656275678
+      },
+      "nonempty": {
+        "supports": [
+          1543408,
+          111728,
+          45420
+        ],
+        "alerts": [
+          19796,
+          111726,
+          45415
+        ],
+        "rates": [
+          0.01282616132610431,
+          0.9999820993842188,
+          0.9998899163364157
+        ],
+        "false_per_10000": 128.2616132610431
+      },
+      "by_format": {
+        "network_kv": {
+          "supports": [
+            0,
+            32596,
+            0
+          ],
+          "alerts": [
+            0,
+            32596,
+            0
+          ],
+          "rates": [
+            null,
+            1.0,
+            null
+          ],
+          "false_per_10000": null
+        },
+        "syslog_like": {
+          "supports": [
+            267703,
+            308,
+            219
+          ],
+          "alerts": [
+            4753,
+            308,
+            219
+          ],
+          "rates": [
+            0.01775475060047889,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 177.5475060047889
+        },
+        "asa_like": {
+          "supports": [
+            0,
+            78748,
+            34059
+          ],
+          "alerts": [
+            0,
+            78748,
+            34059
+          ],
+          "rates": [
+            null,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "windows_json_like": {
+          "supports": [
+            829883,
+            2,
+            473
+          ],
+          "alerts": [
+            8371,
+            0,
+            473
+          ],
+          "rates": [
+            0.010086964066018944,
+            0.0,
+            1.0
+          ],
+          "false_per_10000": 100.86964066018945
+        },
+        "cef_like": {
+          "supports": [
+            4137,
+            50,
+            2
+          ],
+          "alerts": [
+            4133,
+            50,
+            2
+          ],
+          "rates": [
+            0.9990331157843848,
+            1.0,
+            1.0
+          ],
+          "false_per_10000": 9990.331157843848
+        },
+        "json_fragment": {
+          "supports": [
+            386944,
+            24,
+            47
+          ],
+          "alerts": [
+            1672,
+            24,
+            42
+          ],
+          "rates": [
+            0.0043210387032748925,
+            1.0,
+            0.8936170212765957
+          ],
+          "false_per_10000": 43.210387032748926
+        },
+        "unknown": {
+          "supports": [
+            54741,
+            0,
+            0
+          ],
+          "alerts": [
+            867,
+            0,
+            0
+          ],
+          "rates": [
+            0.0158382199813668,
+            null,
+            null
+          ],
+          "false_per_10000": 158.382199813668
+        },
+        "empty": {
+          "supports": [
+            356315,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "vpc14": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        }
+      },
+      "by_product": {
+        "<missing>": {
+          "supports": [
+            247299,
+            111728,
+            0
+          ],
+          "alerts": [
+            2946,
+            111726,
+            0
+          ],
+          "rates": [
+            0.011912704863343565,
+            0.9999820993842188,
+            null
+          ],
+          "false_per_10000": 119.12704863343565
+        },
+        "Windows Active Directory": {
+          "supports": [
+            809860,
+            0,
+            473
+          ],
+          "alerts": [
+            8319,
+            0,
+            473
+          ],
+          "rates": [
+            0.010272145802978293,
+            null,
+            1.0
+          ],
+          "false_per_10000": 102.72145802978294
+        },
+        "Linux PAM": {
+          "supports": [
+            17822,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "AWS Instance Backup": {
+          "supports": [
+            340131,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Cisco Network Operating System": {
+          "supports": [
+            3697,
+            0,
+            0
+          ],
+          "alerts": [
+            17,
+            0,
+            0
+          ],
+          "rates": [
+            0.004598322964565864,
+            null,
+            null
+          ],
+          "false_per_10000": 45.98322964565864
+        },
+        "ASA Firewall": {
+          "supports": [
+            20,
+            0,
+            34059
+          ],
+          "alerts": [
+            18,
+            0,
+            34059
+          ],
+          "rates": [
+            0.9,
+            null,
+            1.0
+          ],
+          "false_per_10000": 9000.0
+        },
+        "VMWare VCenter": {
+          "supports": [
+            88311,
+            0,
+            0
+          ],
+          "alerts": [
+            845,
+            0,
+            0
+          ],
+          "rates": [
+            0.009568456930620195,
+            null,
+            null
+          ],
+          "false_per_10000": 95.68456930620195
+        },
+        "Precinct": {
+          "supports": [
+            0,
+            0,
+            219
+          ],
+          "alerts": [
+            0,
+            0,
+            219
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Barracuda ESS": {
+          "supports": [
+            74,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Falcon": {
+          "supports": [
+            0,
+            0,
+            35
+          ],
+          "alerts": [
+            0,
+            0,
+            31
+          ],
+          "rates": [
+            null,
+            null,
+            0.8857142857142857
+          ],
+          "false_per_10000": null
+        },
+        "SentinelOne": {
+          "supports": [
+            25,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Apache Web Server": {
+          "supports": [
+            36,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        },
+        "Duo": {
+          "supports": [
+            325,
+            0,
+            12
+          ],
+          "alerts": [
+            237,
+            0,
+            11
+          ],
+          "rates": [
+            0.7292307692307692,
+            null,
+            0.9166666666666666
+          ],
+          "false_per_10000": 7292.307692307692
+        },
+        "Barracuda WAF": {
+          "supports": [
+            4128,
+            0,
+            2
+          ],
+          "alerts": [
+            4124,
+            0,
+            2
+          ],
+          "rates": [
+            0.999031007751938,
+            null,
+            1.0
+          ],
+          "false_per_10000": 9990.31007751938
+        },
+        "Symantec Endpoint Protection": {
+          "supports": [
+            2361,
+            0,
+            0
+          ],
+          "alerts": [
+            1493,
+            0,
+            0
+          ],
+          "rates": [
+            0.6323591698432868,
+            null,
+            null
+          ],
+          "false_per_10000": 6323.591698432868
+        },
+        "ManageEngine ADManager": {
+          "supports": [
+            4082,
+            0,
+            0
+          ],
+          "alerts": [
+            1797,
+            0,
+            0
+          ],
+          "rates": [
+            0.4402253797158256,
+            null,
+            null
+          ],
+          "false_per_10000": 4402.253797158256
+        },
+        "AWS VPC Security": {
+          "supports": [
+            0,
+            0,
+            10620
+          ],
+          "alerts": [
+            0,
+            0,
+            10620
+          ],
+          "rates": [
+            null,
+            null,
+            1.0
+          ],
+          "false_per_10000": null
+        },
+        "Windows Logs": {
+          "supports": [
+            381552,
+            0,
+            0
+          ],
+          "alerts": [
+            0,
+            0,
+            0
+          ],
+          "rates": [
+            0.0,
+            null,
+            null
+          ],
+          "false_per_10000": 0.0
+        }
+      }
+    }
+  ],
+  "frozen_model_replay": {
+    "rows": 2056871,
+    "group_transforms": 631404,
+    "decision_mismatches": 0,
+    "max_probability_difference": 4.76837158203125e-07,
+    "method": "Read frozen vocabulary, IDF diagonal, coefficients and intercept; count words/bigrams with frozen tokenizer; sparse TF-IDF/L2 then multinomial softmax. No fitting or parameter changes.",
+    "tolerance": 1e-05,
+    "environment_warnings": [
+      "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "Trying to unpickle estimator LogisticRegression from version 1.3.2 when using version 1.9.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations",
+      "Trying to unpickle estimator TfidfTransformer from version 1.3.2 when using version 1.9.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations",
+      "Trying to unpickle estimator TfidfVectorizer from version 1.3.2 when using version 1.9.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    ]
+  },
+  "stress_replay": [
+    {
+      "fold": 0,
+      "name": "official_falcon_129496",
+      "kind": "invariance",
+      "max_replay_score_difference": 8.149072527885437e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_130188",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.4924596548080444e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_442432",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1641532182693481e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_442858",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.3283064365386963e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_860870",
+      "kind": "invariance",
+      "max_replay_score_difference": 8.149072527885437e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1291488",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.3283064365386963e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1291489",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1641532182693481e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1291491",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.4924596548080444e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1703982",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1703984",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.3283064365386963e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "official_falcon_1703987",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1641532182693481e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 0,
+      "name": "semantic_boundary_0",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 5.820766091346741e-11,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 0,
+      "name": "semantic_boundary_1",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 1.1641532182693481e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 0,
+      "name": "semantic_boundary_2",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 0,
+      "name": "semantic_boundary_3",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 5.820766091346741e-11,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 0,
+      "name": "semantic_boundary_4",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 2.9103830456733704e-11,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_129496",
+      "kind": "invariance",
+      "max_replay_score_difference": 7.450580596923828e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_130188",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.9802322387695312e-08,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_442432",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.725290298461914e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_442858",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.3283064365386963e-10,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_860870",
+      "kind": "invariance",
+      "max_replay_score_difference": 7.450580596923828e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1291488",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.9802322387695312e-08,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1291489",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1175870895385742e-08,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1291491",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.9802322387695312e-08,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1703982",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1920928955078125e-07,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1703984",
+      "kind": "invariance",
+      "max_replay_score_difference": 2.9802322387695312e-08,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "official_falcon_1703987",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.725290298461914e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 1,
+      "name": "semantic_boundary_0",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 1.4551915228366852e-11,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 1,
+      "name": "semantic_boundary_1",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 4.656612873077393e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 1,
+      "name": "semantic_boundary_2",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 4.656612873077393e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 1,
+      "name": "semantic_boundary_3",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 7.275957614183426e-12,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 1,
+      "name": "semantic_boundary_4",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 7.275957614183426e-12,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_129496",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.725290298461914e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_130188",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_442432",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1920928955078125e-07,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_442858",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1920928955078125e-07,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_860870",
+      "kind": "invariance",
+      "max_replay_score_difference": 3.725290298461914e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1291488",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1291489",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1291491",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1703982",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1703984",
+      "kind": "invariance",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": false,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "official_falcon_1703987",
+      "kind": "invariance",
+      "max_replay_score_difference": 1.1920928955078125e-07,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": true
+    },
+    {
+      "fold": 2,
+      "name": "semantic_boundary_0",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 7.275957614183426e-12,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 2,
+      "name": "semantic_boundary_1",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 1.1641532182693481e-10,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 2,
+      "name": "semantic_boundary_2",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 6.51925802230835e-09,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 2,
+      "name": "semantic_boundary_3",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 0.0,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    },
+    {
+      "fold": 2,
+      "name": "semantic_boundary_4",
+      "kind": "semantic_difference",
+      "max_replay_score_difference": 1.8189894035458565e-12,
+      "both_predicted_benign": true,
+      "vectors_equal_reported": false
+    }
+  ],
+  "zero_vector_rows": 356315,
+  "nonempty_zero_vector_rows": 0,
+  "elapsed_seconds": 60.15823130001081,
+  "transfer_validated": false,
+  "model_fitted_locally": false,
+  "limitations": [
+    "No new source/template holdout, no independent environment, and no probability calibration.",
+    "Grouped OOF model replay does not turn seen development data into an unseen test.",
+    "Model arrays were read under newer local libraries; numerical replay tolerance is reported, not binary runtime compatibility.",
+    "Source hashes and frozen artifacts establish consistency, not trustworthy labels or absence of semantic shortcuts."
+  ]
+}

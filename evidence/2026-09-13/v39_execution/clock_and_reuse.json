@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "all_row_values_identical": true,
+    "baseline_inputs_identical": true,
+    "semantic_fact_values_identical": true,
+    "all_targeted_clock_records_checked": true,
+    "clock_invariance_passed": true
+  },
+  "all_checks_passed": true,
+  "real_records": 241,
+  "clock_transformations": 482,
+  "failures": [],
+  "changed_semantic_projection_keys": 59,
+  "changed_semantic_rows_all": 86,
+  "previous_failed_probe": {
+    "runtime": "v39-controlled-development-1.0",
+    "real_records": 210,
+    "failures": 1,
+    "row_position": 811245,
+    "cause": "partially redacted startboundary retained minutes and seconds"
+  },
+  "implementation_sha256": "7ab42bf20b04ad66e1043c1f983030897d103a2ced807fc80e4aef55cb1ee11c",
+  "new_prepared_receipt_sha256": "fd56bf4c7fdf85986fb14608dd30505c323f3a073bd201e642470fc43d38c179",
+  "reusable_views": [
+    "BASELINE_C",
+    "AVAILABILITY"
+  ],
+  "scope": "Input and fold identity plus specified absolute-time invariance; no quality inference"
+}

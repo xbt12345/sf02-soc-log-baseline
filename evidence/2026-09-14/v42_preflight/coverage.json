@@ -1,0 +1,81 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "eligible_contexts": 67,
+      "fit_supported_rows": 2222,
+      "evaluation_supported_rows": 954,
+      "evaluation_reason_rows": {
+        "outside_semantic_scope": 420858,
+        "missing_endpoint_role": 3126,
+        "missing_or_invalid_src_port_fixed": 11311,
+        "unseen_full_context": 18200,
+        "missing_or_invalid_dst_port_fixed": 3804,
+        "supported": 954,
+        "insufficient_distinct_bodies": 1220,
+        "unsupported_protocol": 34
+      },
+      "evaluation_supported_route_rows": {
+        "asa": 954
+      },
+      "evaluation_supported_class_rows": [
+        0,
+        950,
+        4
+      ],
+      "evaluation_supported_body_keys": 215
+    },
+    {
+      "fold": 1,
+      "eligible_contexts": 51,
+      "fit_supported_rows": 2118,
+      "evaluation_supported_rows": 824,
+      "evaluation_reason_rows": {
+        "outside_semantic_scope": 420802,
+        "missing_endpoint_role": 3394,
+        "missing_or_invalid_dst_port_fixed": 3848,
+        "unseen_full_context": 18034,
+        "missing_or_invalid_src_port_fixed": 10927,
+        "insufficient_distinct_bodies": 1831,
+        "unsupported_protocol": 32,
+        "supported": 824
+      },
+      "evaluation_supported_route_rows": {
+        "asa": 824
+      },
+      "evaluation_supported_class_rows": [
+        0,
+        820,
+        4
+      ],
+      "evaluation_supported_body_keys": 178
+    },
+    {
+      "fold": 2,
+      "eligible_contexts": 60,
+      "fit_supported_rows": 2130,
+      "evaluation_supported_rows": 972,
+      "evaluation_reason_rows": {
+        "outside_semantic_scope": 420805,
+        "missing_endpoint_role": 3120,
+        "missing_or_invalid_src_port_fixed": 11432,
+        "missing_or_invalid_dst_port_fixed": 4072,
+        "unseen_full_context": 17869,
+        "supported": 972,
+        "unsupported_protocol": 28,
+        "insufficient_distinct_bodies": 1153
+      },
+      "evaluation_supported_route_rows": {
+        "asa": 972
+      },
+      "evaluation_supported_class_rows": [
+        0,
+        946,
+        26
+      ],
+      "evaluation_supported_body_keys": 207
+    }
+  ],
+  "core_sha256": "07ef5ddbf268914c6f03845913e18c724125cdbffa1b7ffa36b588aad50e1c57",
+  "scope": "Complete semantic context and minimum 3 fit-side distinct body keys fixed before coverage; labels only counted for reporting, never used by gate."
+}

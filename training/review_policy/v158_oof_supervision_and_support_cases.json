@@ -1,0 +1,122 @@
+{
+  "version": "V158_actual_OOF_class_supervision_and_support_cases",
+  "source_sha256": {
+    "training/v158_replay_oof_supervision_cases.py": "0de7a7db8ff1004c84f5ba1add57a6ecfa531a3e7e4f25867cc807db4858cfe7",
+    "artifacts/v158_fusion_trial_20261001/final_delivery.json": "7ea7940d410c3a2b6eddb43aa159bea7125836890d72a03c6555b22e98c34f49",
+    "artifacts/v158_fusion_trial_20261001/learning_qualification.json": "d82baa07ca631989315694192f96c0953cc34d8b0e3e075d48102f92cb7010ae",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/audit.json": "659b9ee22a1008a0e3e086b470924ed5ba1ccb3aed092072b564990d7257ffa8",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/OOF_saved_checkpoint_learning.json": "e640744a3ce4dddc13a2e1834a8f62a69aeaba679abf14c3949072857306dbd8",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/OOF_supervision_tradeoff_and_support_counterexamples.json": "8cd7410d1a4ca5bbd8aebafd91bc1c156b2760e45ee09fe508bf56838b1ba6b1",
+    "artifacts/v158_independent_fusion_result_audit_v2_20261001/all_original_ASA_initial_endpoint_and_capacity.parquet": "f81163f059a22c76b00cc193ece7a208f29175ef306b0c9f6e07e8f5834a14ac",
+    "artifacts/v153_independent_training_transfer_gap_20261001/all_original_classifier_gap_and_control_ledger.parquet": "6684c3a01b4a5b3706c8656f9cc553d693b4e0be5905c7978b2dd4a074607c93",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold0/legal_FIT_reference.parquet": "0a618fb042e578d7d7b218d219c92ef5c72ea3f4eb02a0232ab8f17bb8499d86",
+    "artifacts/v158_fusion_trial_20261001/preflight0_A/OOF_probability.npy": "3a7fe8494a4b447ff969fa510a470f0513cbb426fd0b3927da15d806d6c963c3",
+    "artifacts/v158_fusion_trial_20261001/fold0_A/endpoint_OOF_probability.npy": "8b34eeada5e437f391f02792b15e759c7094d335eaa76bfcae535c5aeb2093f3",
+    "artifacts/v158_fusion_trial_20261001/fold0_A/fit.json": "b4ca5a1926eb9a4c38e62971fd251d3eeb91f98981cc127b6f774d32a54e9b11",
+    "artifacts/v158_fusion_trial_20261001/preflight0_B/OOF_probability.npy": "3a7fe8494a4b447ff969fa510a470f0513cbb426fd0b3927da15d806d6c963c3",
+    "artifacts/v158_fusion_trial_20261001/fold0_B/endpoint_OOF_probability.npy": "0d59eac21d4e9df3a855beff1fc46ad44bd9edfb5c0d9af284c661140ea47846",
+    "artifacts/v158_fusion_trial_20261001/fold0_B/fit.json": "dc6725310b59b50be8af009d90b56b31979a276fbeb04ae73a78bb6f87145949",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold1/legal_FIT_reference.parquet": "6faa5130b1515baafcf715124eb587bdb14b95581efb14dfe70beaafe5191c6f",
+    "artifacts/v158_fusion_trial_20261001/preflight1_A/OOF_probability.npy": "26bd4120b95ef4a5150b9dc8fe309b318e6ef09d073269e6468a412fe7fe82a3",
+    "artifacts/v158_fusion_trial_20261001/fold1_A/endpoint_OOF_probability.npy": "04ff2e57b2720c10145cb804cf70a732d675166c6971712da054d5e2242395d1",
+    "artifacts/v158_fusion_trial_20261001/fold1_A/fit.json": "e32385f0a72e09c9596a0440e5947c6626f911743278c0b7f8dd061fa895999a",
+    "artifacts/v158_fusion_trial_20261001/preflight1_B/OOF_probability.npy": "26bd4120b95ef4a5150b9dc8fe309b318e6ef09d073269e6468a412fe7fe82a3",
+    "artifacts/v158_fusion_trial_20261001/fold1_B/endpoint_OOF_probability.npy": "2162ca970b9e0cfb762775a6d55f9398fb6f06404c2919a9db1988a09370b4c6",
+    "artifacts/v158_fusion_trial_20261001/fold1_B/fit.json": "dc0d86f0a331771feae88192c351d95d809ea8344eeba9460e7f2a1be6c5fadb",
+    "artifacts/v158_legal_fusion_bank_v2_20261001/fold2/legal_FIT_reference.parquet": "8eabf25a3bd1fffa8deade7a0b8e8f8de187956a3711a96047612128d3482883",
+    "artifacts/v158_fusion_trial_20261001/preflight2_A/OOF_probability.npy": "8259066cc88de177939bfa4a0de9599f3d86f7ada4724f504246f66c614ed2c0",
+    "artifacts/v158_fusion_trial_20261001/fold2_A/endpoint_OOF_probability.npy": "6d7ec14aed29db3d7c8fec8257d3b8a6226892ee6e546ff51c67400314028aeb",
+    "artifacts/v158_fusion_trial_20261001/fold2_A/fit.json": "ef08743ba488b2707761583cdee513551dbff316f5f24b5d41cb45613bc1697a",
+    "artifacts/v158_fusion_trial_20261001/preflight2_B/OOF_probability.npy": "8259066cc88de177939bfa4a0de9599f3d86f7ada4724f504246f66c614ed2c0",
+    "artifacts/v158_fusion_trial_20261001/fold2_B/endpoint_OOF_probability.npy": "6e2ef557b679fb03b9db7e4a4e8dc301e73d9a7d5030528aa63f5ee280393bd5",
+    "artifacts/v158_fusion_trial_20261001/fold2_B/fit.json": "439d9bb7c09388a8ddd6fb134691d40384be9adfbc08fb1c527a77b7437d61d1"
+  },
+  "original_OOF_role_rows": 225614,
+  "cases": [
+    {
+      "fold": 0,
+      "arm": "A",
+      "total_CE_decreased": true,
+      "M_error_delta": -686,
+      "S_error_delta": 72,
+      "M_CE_delta": -0.021945252723667423,
+      "S_CE_delta": 0.022780073571987025
+    },
+    {
+      "fold": 0,
+      "arm": "B",
+      "total_CE_decreased": true,
+      "M_error_delta": -778,
+      "S_error_delta": 50,
+      "M_CE_delta": -0.024993746591599128,
+      "S_CE_delta": 0.023918814748428885
+    },
+    {
+      "fold": 1,
+      "arm": "A",
+      "total_CE_decreased": true,
+      "M_error_delta": -326,
+      "S_error_delta": 30,
+      "M_CE_delta": -0.017161807592778883,
+      "S_CE_delta": 0.1810094165004683
+    },
+    {
+      "fold": 1,
+      "arm": "B",
+      "total_CE_decreased": true,
+      "M_error_delta": -334,
+      "S_error_delta": 30,
+      "M_CE_delta": -0.017282910893118245,
+      "S_CE_delta": 0.17954946268180816
+    },
+    {
+      "fold": 2,
+      "arm": "A",
+      "total_CE_decreased": true,
+      "M_error_delta": 20,
+      "S_error_delta": -44,
+      "M_CE_delta": -0.0011651924802307048,
+      "S_CE_delta": -0.00812361466602926
+    },
+    {
+      "fold": 2,
+      "arm": "B",
+      "total_CE_decreased": true,
+      "M_error_delta": -22,
+      "S_error_delta": -38,
+      "M_CE_delta": -0.003371162902311896,
+      "S_CE_delta": -0.008652509494044835
+    }
+  ],
+  "fixed_support_diagnostics": {
+    "blocked_S": {
+      "original_rows": 979,
+      "exact_same_class_support_rows": 36,
+      "destination_same_class_support_rows": 126,
+      "coarse_behavior_same_class_support_rows": 979,
+      "source_roots": 82
+    },
+    "remaining_S_with_correct_expert": {
+      "original_rows": 893,
+      "exact_same_class_support_rows": 58,
+      "destination_same_class_support_rows": 276,
+      "coarse_behavior_same_class_support_rows": 849,
+      "source_roots": 161
+    },
+    "hard578": {
+      "original_rows": 578,
+      "exact_same_class_support_rows": 0,
+      "destination_same_class_support_rows": 160,
+      "coarse_behavior_same_class_support_rows": 578,
+      "source_roots": 124
+    }
+  },
+  "actions": [
+    "Keep OOF supervision and deployment FIT protection as distinct populations.",
+    "Do not infer per-class supervision success from lower overall CE or legal FIT guard success.",
+    "Preserve the role2 B two-class improvement alongside role0/1 S regressions.",
+    "Treat exact/destination/coarse support and source coverage as separate diagnostics; no causal claim.",
+    "Do not alter completed V158 weights, class rules, endpoints, or budgets; new training requires separate qualification."
+  ],
+  "new_formal_fit_qualification": false
+}

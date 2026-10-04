@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "actual_classifier_fits": 9,
+  "actual_calibration_fits": 0,
+  "published_bound_files_rehashed": 83,
+  "bound_files_changed": [],
+  "mcp_tests_run": 9,
+  "mcp_test_failures": 0,
+  "mcp_test_errors": 0,
+  "current_authority": [
+    "v92-delivery",
+    "v92-direction-review"
+  ],
+  "current_status": "evidence_and_training_completed_no_model_promoted",
+  "quality_acceptance": false,
+  "historical_version_queries_preserved": {
+    "v8.9": [
+      "v89-delivery",
+      "v89-direction-review"
+    ],
+    "v9.1": [
+      "v91-delivery",
+      "v91-direction-review"
+    ]
+  },
+  "publication_problem_repaired_and_recorded": true,
+  "catalog_sha256": "e03d06d5daaa61db40713fc5f19cbe7ae1bc4372fe5ef824f3ace435ac9a9546",
+  "delivery_sha256": "670be7de9646c3a981c96280ebe055a251207bf5f3a786f14e271dd656249c5d",
+  "scope": "Published results and local read-only tools verified; no cloud tunnel claim or model quality acceptance."
+}

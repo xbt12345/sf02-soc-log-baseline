@@ -1,0 +1,3 @@
+route,model,rows,M_rows,S_rows,M_vs_S_auroc,M_average_precision,full_has_fitted_these_rows
+asa,D_inner,26530,16226,10304,0.9968792059251581,0.9977505035497594,False
+asa,D_full,26530,16226,10304,0.9975694992049414,0.9983261531791896,True

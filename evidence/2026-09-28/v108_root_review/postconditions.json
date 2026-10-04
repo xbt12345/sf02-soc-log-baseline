@@ -1,0 +1,15 @@
+{
+  "audit_verification_checks": 18,
+  "mcp_local_tests_passed": 9,
+  "live_cloud_connection_tested": false,
+  "latest_training_unchanged": "v107-delivery",
+  "current_direction": "v108-direction-review",
+  "model_promoted": false,
+  "classifier_fits_this_turn": 0,
+  "note": "MCP first run retained an old content-title expectation; updated it to the new review title and reran all nine tests.",
+  "hashes": {
+    "mcp_readonly\\catalog.json": "8fe411769fbafc5e0e5c6d16a76c881bb166cf39af1a6306a97d3a6dd1280559",
+    "mcp_readonly\\tests\\test_readonly_mcp.py": "5a65625a88fea05bb485b01503a15fccb61f65b84204559f9de9f4697ae52466",
+    "artifacts\\v108_mcp_verification.log": "26ecd4103a35dfed37af3385a89fe4954f051ad2a0dc4a4610250dee016aad70"
+  }
+}

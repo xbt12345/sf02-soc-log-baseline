@@ -1,0 +1,186 @@
+{
+  "unknown:native_title_event_disagreement": {
+    "row_position": 112263,
+    "raw": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:09:57.254Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"c7c916ce-56ef-4255-9f46-4ca9ce1b5050\",\"id\":\"9c19b391-75f6-44e4-a324-d6fa6da22ca7\",\"name\":\"USER-0010-0225\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4624\",\"created\":\"USER-9546-07-26T11:09:58.108Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"ORG-0893\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account was ORG-0893fully logged on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount ORG-0502 USER-24351:\\t\\t-\\n\\tORG-0106 ID:\\t\\t0x0\\n\\nORG-0106 ORG-0706rmation:\\n\\tORG-0106 Type:\\t\\t3\\n\\tRestricted Admin Mode:\\t-\\n\\tVirtual Account:\\t\\tNo\\n\\tElevated Token:\\t\\tYes\\n\\nImpersonation Level:\\t\\tDelegation\\n\\nNew ORG-0106:\\n\\tSecurity ID:\\t\\tS-1-5-21-1000000000-2000000000-3000000000-0125\\n\\tAccount Name:\\t\\HOST-1218-0095$\\n\\tAccount ORG-0503 ID:\\t\\t0xCRED-240882DE69\\n\\tLinked ORG-0106 ID:\\t\\t0x0\\n\\tORG-10379 USER-1843 ORG-3284 ORG-0515:\\t\\t{c00f7b09-ead8-7873-4398-9f720CRED-CRED-29315ae1}\\n\\USER-8912 ORG-0556 ID:\\t\\t0x0\\n\\tProcess Name:\\t\\t-\\n\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\t-\\n\\USER-7625 ORG-10379 Address:\\t10.243.130.79\\n\\USER-7625 Port:\\t\\t6CRED-CRED-297871\\n\\nDetailed ORG-0829 USER-0010-4214:\\tKerberos\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 session is created. It is generated on the USER-3828 that was ORG-1738ed.\\n\\nThe subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 type field indicates the kind of ORG-0106 that occurred. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe New ORG-0106 fields indicate the account for whom the new ORG-0106 was created, i.e. the account that was logged on.\\n\\nThe ORG-10379 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe impersonation level field indicates the extent to which a process in the ORG-0106 session can impersonate.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- ORG-0506 is a unique identifier that can be used to correlate USER-9570 USER-0010-56507 with a KDC USER-0010-56507.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"activity_id\":\"{60211724-5339-4934-a26e-1a9eac429ca1}\",\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0018.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"Kerberos\",\"ElevatedToken\":\"%%1842\",\"ImpersonationLevel\":\"%%1840\",\"IpAddress\":\"10.119.51.116\",\"IpPort\":\"6CRED-CRED-297871\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ORG-0515\":\"{c00f7b09-ead8-7873-4398-9f720CRED-CRED-29315ae1}\",\"ORG-0106ProcessName\":\"Kerberos\",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x0\",\"ProcessName\":\"-\",\"RestrictedAdminMode\":\"-\",\"SubjectUSER-24351Name\":\"-\",\"SubjectORG-0106Id\":\"0x0\",\"SubjectUserName\":\"-\",\"SubjectCRED-0339id\":\"S-1-0-0\",\"USER-0010-4999USER-24351Name\":\"ORG-0019\",\"USER-0010-4999LinkedORG-0106Id\":\"0x0\",\"USER-0010-4999ORG-0106Id\":\"0xCRED-240882de69\",\"USER-0010-4999ORG-9336USER-24351Name\":\"-\",\"USER-0010-4999ORG-9336UserName\":\"-\",\"USER-0010-4999UserName\":\"USER-0040\",\"USER-0010-4999CRED-0339id\":\"S-1-5-21-1000000000-2000000000-3000000000-0125\",\"TransmittedUSER-5935\":\"-\",\"VirtualAccount\":\"%%1843\",\"WorkstationName\":\"-\"},\"USER-0010-56507_id\":\"4624\",\"keywords\":[\"Audit ORG-0893\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":660,\"thread\":{\"id\":CRED-31883}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":513CRED-CRED-2921169,\"task\":\"ORG-0106\",\"version\":2}}",
+    "observation": {
+      "state": "unknown",
+      "facts": {},
+      "carriers": [],
+      "native_title": null,
+      "unbounded_candidate_fields": 0,
+      "reason": "native_title_event_disagreement"
+    },
+    "baseline": {
+      "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: delegation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: entity detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -",
+      "facts": {
+        "auth_result": "success",
+        "dst_port_fixed": 65536,
+        "outcome": "success",
+        "src_port_fixed": 65536
+      }
+    },
+    "repaired": {
+      "text": "an account was entity logged on. subject: security id: entity account entity entity: - entity id: entity entity entity: entity type: 3 restricted admin mode: - virtual account: no elevated token: yes impersonation level: delegation new entity: security id: entity account name: entity account entity id: entity linked entity id: entity entity entity entity entity: {entity} \\entity entity id: entity process name: - entity entity: workstation name: entity \\entity entity address: entity \\entity port: entity detailed entity entity: kerberos transited entity: - entity name (entity only): - key length: 0 entity entity is generated when a entity session is created. it is generated on the entity that was entity. the subject fields indicate the account on the entity entity which entity the entity. entity is most entity a entity such as the server entity, or a entity process such as entity or entity. the entity type field indicates the kind of entity that occurred. the most entity types are 2 (entity) and 3 (entity). the new entity fields indicate the account for whom the new entity was created, i.e. the account that was logged on. the entity fields indicate where a entity entity entity originated. workstation name is not always available and may be left blank in some cases. the impersonation level field indicates the extent to which a process in the entity session can impersonate. the authentication entity fields provide detailed entity about entity specific entity entity. - entity is a unique identifier that can be used to correlate entity entity with a kdc entity. - transited entity indicate which intermediate entity have participated in entity entity entity name indicates which sub-protocol was used among the entity protocols. - key length indicates the length of the generated session key. entity will be 0 if no session key was entity. keylength 0 processname -",
+      "facts": {
+        "auth_result": "success",
+        "dst_port_fixed": 65536,
+        "outcome": "success",
+        "src_port_fixed": 65536
+      },
+      "audit": {
+        "native_auth": {
+          "state": "unknown",
+          "facts": {},
+          "carriers": [],
+          "native_title": null,
+          "unbounded_candidate_fields": 0,
+          "reason": "native_title_event_disagreement"
+        }
+      }
+    }
+  },
+  "observed:None": {
+    "row_position": 134220,
+    "raw": "ORG-1657 ::: {\"@metaUSER-0010-54061\":{\"beat\":\"winlogbeat\",\"type\":\"_doc\",\"version\":\"8.2.2\"},\"@ORG-1526stamp\":\"USER-9546-07-26T11:10:08.448Z\",\"USER-0010-1577\":{\"ephemeral_id\":\"CRED-24CRED-25582381-3d10-4395-bc1c-5cdb52ecb35e\",\"id\":\"12e13a9a-252a-493f-9c35-fa4d61abd0bc\",\"name\":\"USER-0010-0206\",\"type\":\"winlogbeat\",\"version\":\"8.2.2\"},\"ecs\":{\"version\":\"8.0.0\"},\"USER-0010-56507\":{\"USER-0010-0121\":\"ORG-0106\",\"code\":\"4625\",\"created\":\"USER-9546-07-26T11:10:08.678Z\",\"kind\":\"USER-0010-56507\",\"outcome\":\"failure\",\"provider\":\"USER-8162-ORG-0407-Security-Auditing\"},\"USER-0010\":{\"name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\"},\"log\":{\"level\":\"ORG-0706rmation\"},\"CRED-23501\":\"An account failed to log on.\\n\\nSubject:\\n\\tSecurity ID:\\t\\tS-1-5-18\\n\\tAccount ORG-4643 ORG-CRED-25687\\USER-1430\\tORG-0106 ID:\\t\\t0x3E7\\n\\nORG-0106 Type:\\t\\t\\t3\\n\\nAccount For Which ORG-0106 Failed:\\n\\tSecurity ID:\\t\\tS-1-0-0\\n\\tAccount Name:\\t\\t\\n\\tAccount USER-24351:\\t\\t\\n\\USER-7624 ORG-0706rmation:\\n\\tFailure Reason:\\t\\tUnknown user name or bad password.\\n\\tStatus:\\t\\t\\t0xC000006D\\n\\tSub Status:\\t\\t0xC0000064\\n\\USER-8912 ORG-0706rmation:\\n\\tCaller Process ID:\\t0x40c\\n\\tCaller Process Name:\\tC:\\\\ORG-0407\\\\USER-0010-1120\\\\ORG-3411\\USER-1430\\nORG-10379 ORG-0706rmation:\\n\\tWorkstation Name:\\tORG-0891-ORG-0023\\USER-1430\\USER-7625 ORG-10379 Address:\\t192.168.147.151\\n\\USER-7625 Port:\\t\\t58382\\n\\nDetailed ORG-0823 Process:\\t\\tSchannel\\n\\tAuthentication USER-0010-4214:\\tKerberos\\n\\tTransited USER-5935:\\t-\\n\\tUSER-0010-4214 Name (ORG-0504 only):\\t-\\n\\tKey Length:\\t\\t0\\n\\nUSER-9570 USER-0010-56507 is generated when a ORG-0106 USER-9484 fails. It is generated on the USER-3828 where ORG-1738 was atUSER-0010-1591ted.\\n\\nThe Subject fields indicate the account on the ORG-0462 USER-0086 which USER-9484ed the ORG-0106. USER-9570 is most USER-0010-54152ly a ORG-0090 such as the Server ORG-0090, or a ORG-0462 process such as ORG-0505 or USER-1847.\\n\\nThe ORG-0106 Type field indicates the kind of ORG-0106 that was USER-9484ed. The most USER-0010-54152 types are 2 (interCRED-24062) and 3 (ORG-10379).\\n\\nThe Process ORG-0706rmation fields indicate which account and process on the USER-0086 USER-9484ed ORG-2395 fields indicate where a ORG-4683 ORG-0106 USER-9484 originated. Workstation name is not always available and may be left blank in some cases.\\n\\nThe authentication ORG-0706rmation fields provide detailed ORG-0706rmation about USER-9570 specific ORG-0106 USER-9484.\\n\\t- Transited USER-5935 indicate which intermediate USER-5935 have participated in USER-9570 ORG-0106 ORG-0507 name indicates which sub-protocol was used among the ORG-0504 protocols.\\n\\t- Key length indicates the length of the generated session key. USER-9570 will be 0 if no session key was USER-9484ed.\",\"organization\":\"ORG-0003\",\"senderUSER-0010\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"sensitivity\":\"normal\",\"winlog\":{\"api\":\"winUSER-0010-56507log\",\"channel\":\"Security\",\"USER-3828_name\":\"USER-0010-0012.USER-24351-0022.exampleUSER-8710\",\"USER-0010-56507_USER-0010-54061\":{\"AuthenticationUSER-0010-4214Name\":\"Kerberos\",\"FailureReason\":\"%%2313\",\"IpAddress\":\"192.168.141.126\",\"IpPort\":\"58382\",\"KeyLength\":\"0\",\"LmUSER-0010-4214Name\":\"-\",\"ORG-0106ProcessName\":\"Schannel\",\"ORG-0106Type\":\"3\",\"ProcessId\":\"0x40c\",\"ProcessName\":\"C:\\\\ORG-0407\\\\USER-0010-1120\\\\USER-0010-1155\",\"Status\":\"0xc000006d\",\"SubStatus\":\"0xc0000064\",\"SubjectUSER-24351Name\":\"ORG-0015\",\"SubjectORG-0106Id\":\"0x3e7\",\"SubjectUserName\":\"USER-0109\",\"SubjectCRED-0339id\":\"S-1-5-18\",\"USER-0010-4999CRED-0339id\":\"S-1-0-0\",\"TransmittedUSER-5935\":\"-\",\"WorkstationName\":\"USER-0010-0206\"},\"USER-0010-56507_id\":\"4625\",\"keywords\":[\"Audit Failure\"],\"opcode\":\"ORG-0706\",\"process\":{\"pid\":1036,\"thread\":{\"id\":8604}},\"provider_ORG-0515\":\"{54849625-5478-4994-a5ba-3e3b0328c30d}\",\"provider_name\":\"USER-8162-ORG-0407-Security-Auditing\",\"record_id\":6067660825,\"task\":\"ORG-0106\"}}",
+    "observation": {
+      "state": "observed",
+      "facts": {
+        "status": "0xc000006d",
+        "substatus": "0xc0000064"
+      },
+      "carriers": [
+        {
+          "field": "status",
+          "value": "0xc000006d",
+          "carrier": "native_rendered_line",
+          "raw_container_span": [
+            674,
+            2766
+          ],
+          "decoded_value_span": [
+            337,
+            347
+          ]
+        },
+        {
+          "field": "substatus",
+          "value": "0xc0000064",
+          "carrier": "native_rendered_line",
+          "raw_container_span": [
+            674,
+            2766
+          ],
+          "decoded_value_span": [
+            362,
+            372
+          ]
+        },
+        {
+          "field": "status",
+          "value": "0xc000006d",
+          "carrier": "bounded_winlog_field",
+          "raw_value_span": [
+            3350,
+            3362
+          ]
+        },
+        {
+          "field": "substatus",
+          "value": "0xc0000064",
+          "carrier": "bounded_winlog_field",
+          "raw_value_span": [
+            3375,
+            3387
+          ]
+        }
+      ],
+      "native_title": "an account failed to log on.",
+      "unbounded_candidate_fields": 2,
+      "reason": null
+    },
+    "baseline": {
+      "text": "an account failed to log on. subject: account entity entity\\entity entity id: entity entity type: 3 account for which entity failed: account entity: \\entity entity: failure reason: unknown user name or bad password. status: 0xc000006d sub status: 0xc0000064 \\entity entity: caller process name: c:\\entity\\entity\\entity\\entity entity entity: \\entity port: 58382 detailed entity process: schannel authentication entity: kerberos transited entity: - entity name (entity only): - key length: 0 failurereason %%2313 keylength 0 status 0xc000006d substatus 0xc0000064",
+      "facts": {
+        "auth_result": "failure",
+        "credential_check": "invalid",
+        "dst_port_fixed": 65536,
+        "keylength": 0,
+        "outcome": "failure",
+        "src_port_fixed": 65536,
+        "status": "0xc000006d",
+        "substatus": "0xc0000064"
+      }
+    },
+    "repaired": {
+      "text": "an account failed to log on. subject: account entity entity\\entity entity id: entity entity type: 3 account for which entity failed: account entity: \\entity entity: failure reason: unknown user name or bad password. status: native_code sub status: native_code \\entity entity: caller process name: c:\\entity\\entity\\entity\\entity entity entity: \\entity port: 58382 detailed entity process: schannel authentication entity: kerberos transited entity: - entity name (entity only): - key length: 0 failurereason %%2313 keylength 0 status native_code substatus native_code",
+      "facts": {
+        "auth_result": "failure",
+        "credential_check": "invalid",
+        "dst_port_fixed": 65536,
+        "keylength": 0,
+        "outcome": "failure",
+        "src_port_fixed": 65536,
+        "status": "0xc000006d",
+        "substatus": "0xc0000064"
+      },
+      "audit": {
+        "native_auth": {
+          "state": "observed",
+          "facts": {
+            "status": "0xc000006d",
+            "substatus": "0xc0000064"
+          },
+          "carriers": [
+            {
+              "field": "status",
+              "value": "0xc000006d",
+              "carrier": "native_rendered_line",
+              "raw_container_span": [
+                674,
+                2766
+              ],
+              "decoded_value_span": [
+                337,
+                347
+              ]
+            },
+            {
+              "field": "substatus",
+              "value": "0xc0000064",
+              "carrier": "native_rendered_line",
+              "raw_container_span": [
+                674,
+                2766
+              ],
+              "decoded_value_span": [
+                362,
+                372
+              ]
+            },
+            {
+              "field": "status",
+              "value": "0xc000006d",
+              "carrier": "bounded_winlog_field",
+              "raw_value_span": [
+                3350,
+                3362
+              ]
+            },
+            {
+              "field": "substatus",
+              "value": "0xc0000064",
+              "carrier": "bounded_winlog_field",
+              "raw_value_span": [
+                3375,
+                3387
+              ]
+            }
+          ],
+          "native_title": "an account failed to log on.",
+          "unbounded_candidate_fields": 2,
+          "reason": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-12T14:30:31.870166+00:00",
+  "scope": "Targeted input/partition implementation and review; no new classifier training or platform use.",
+  "checks": {
+    "input_hash:data\\official\\train.parquet": true,
+    "input_hash:artifacts\\v331_ready_20260912_r2\\group_manifest.parquet": true,
+    "input_hash:artifacts\\v331_ready_20260912_r2\\prepared_corpus.parquet": true,
+    "input_hash:data\\official\\valid_input.parquet": true,
+    "audit_source_hash:audit_v351_inputs.py": true,
+    "audit_source_hash:v351_safeguards.py": true,
+    "python38_syntax_only": true,
+    "all_absent_ports_are_icmp": true,
+    "document_links_resolve": true,
+    "independent_artifact_verification": true,
+    "frozen_v331_package_unchanged": true
+  },
+  "all_checks_passed": true,
+  "local_links_checked": 90,
+  "broken_links": [],
+  "test_result": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "command": "python -m unittest discover -s training -p test_v351_safeguards.py -v",
+    "scope": "Semantic/input/software checks, not SOC model performance"
+  },
+  "source_and_document_hashes": {
+    "training\\v351_safeguards.py": "172041cdf9b11040f57ddd334b53949d6bdf7a3a03774a6afcfd0aaf45392ed9",
+    "training\\audit_v351_inputs.py": "250fac1dfa1966647c28b37229f043c175eb30ee0c1f51a439ff4551f04aae5b",
+    "training\\verify_v351_artifacts.py": "9b311dc2409e4a8055f374521d3913c8ffa2d19397d6100b8b7692ab913ae28d",
+    "training\\test_v351_safeguards.py": "5432107f533d46537bdfb9165fb3c6650cb9ff35380c0854de362110df15ff90",
+    "README.md": "21fc7339004f8fa30c241e707084425e3f08519bddb4756b9496164c8a6efdb8",
+    "training\\README.md": "4e91b3a94b64b7e46190e67a9d6063efb1169fefd1a749f9ff318a8a74d2c5f3",
+    "docs\\TRAINING_PLAN.md": "03ccd8aa15f484cf67c9d1b0c75da0988e19ff14e79c603e028d1f81742ea705",
+    "docs\\V351_INPUT_REVIEW.md": "5316b17977ddd5744ec3d5697cfea3f755b52eaf74748cb6b5c4dff580170a77",
+    "platform\\USAGE.md": "88d994b20576037ced826c898e99aa54702ccb297ec04524c5254149b36d8fcf",
+    "platform\\PLATFORM_GUIDE.md": "2fc9995833b11a9379c6669c154b67525f564599dc6619b9d5b6316940fa99fa",
+    "platform\\V331_RUN.md": "2841baf150cdfe88baf6330b262ffa797e51b68e902d0cab66af10cf622bee23"
+  },
+  "artifact_hashes": {
+    "audit.json": "0befcf9cbcca63b6aec5dd729ea4a82f0fda542f5e46a9487620d3c41e8c0c65",
+    "candidate_group_manifest.parquet": "29ee581de9b6d1c726673d3dc2779cc33ab2123be61c31967fc1746502721367",
+    "candidate_text_patch.parquet": "ff7a23be3cab0bfb608c10067e5dc4051cc9b7b627815bddbae2dd51fc773d93",
+    "collision_group_review.json": "09cab4c9b4c1f3e7f111934133576178d0f082ea0d76aa984caa544a306e35b0",
+    "collision_members.parquet": "07351c68104dfe0a85e0c9be52a6174088796904a3305b2cdabf2e4be38d7776",
+    "duration_examples.json": "a88a490ba84a555c5482f756effece415c7c89341299b58a8cf1c6fb4e0de3b5",
+    "fit_only_collision_distributions.json": "0c712daa77db85b4ae04cdb175e499201af8ad8cb4aff385ae4e36964633b25f",
+    "header_changed_positions.parquet": "42b51b1ffc4cba8bc1ba53b5b007dc967ec108b510d4d4d00f3953e1a5b968a5",
+    "header_examples.json": "529bd42f3a1de8c509b29c2ad388f92650d4b86b3e278d7d3423d665622fab24",
+    "independent_verification.json": "a6135f9c2226376388366ac53df03e80498aaa9c4a6a7b55ab55f562a0bd3364"
+  },
+  "historical_plan_snapshot_sha256": "8fb26c9aabc60155b57b2aa6012c5ff56598ce67d7126e50dfbbb2e342b65d05",
+  "implementation_notes": [
+    "Initial duration-only and intermediate header audit copies are superseded by verified/ but retained: cleanup command was rejected by automatic policy review with 'blocked by policy'. No deletion was executed or retried.",
+    "First independent-verifier invocation had an int-property call typo; corrected, then dictionary and graph partition checks completed. This was not a model/data failure."
+  ],
+  "not_completed": [
+    "Complete B1/B2 representation",
+    "New shared role allocation",
+    "Model fit and end-to-end inference invariance",
+    "Transfer quality acceptance"
+  ]
+}

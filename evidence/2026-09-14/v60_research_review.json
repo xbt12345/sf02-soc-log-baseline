@@ -1,0 +1,23 @@
+{
+  "scope": "Research delivery and finite-corpus calculations only; no quality or external-validity claim",
+  "all_checks_passed": true,
+  "counter_based_floor": 2306,
+  "prior_v57_bound_files_unchanged": 128,
+  "local_report_links_checked": 9,
+  "new_model_fits": 0,
+  "bindings": {
+    "docs/V60_FUNDAMENTAL_RESET_RESEARCH.md": "7a1c6d4948728e361eeac0d7f98392bb1b87b258a6c40c54b0035e74e3a51769",
+    "training/v60_research_plan.json": "6bc32e9fcf491c95a60fe5183c4d7e43b6156cbce8e2f383be0bab48ea0abf0e",
+    "training/audit_v60_direction_reset.py": "af521a5319a32e16367d37bafe86b342cda9b891cadf0a1152c054eb3889d531",
+    "training/capture_v60_research_metadata.py": "006bae6bb3c89f844e334cdd9d9e3ae3a699ea7bc3b2650d2bddb5f14310ed85",
+    "training/verify_v60_research.py": "6ace516b46bcda49da539429cc3e24a33beb00d728238d8ffb708e2a20b11b3c",
+    "evidence/2026-09-14/v60_direction_reset/destination_zone_label_counts.csv": "ec8167dc06640284b80cde6fef9874f5e7f992e9b410b72e4f8eae7db32e6c00",
+    "evidence/2026-09-14/v60_direction_reset/source_zone_label_counts.csv": "e89f921cf6c553301d834ee8e1c63f4ff24eb0a8a4e8e29c33ee003476070a79",
+    "evidence/2026-09-14/v60_direction_reset/summary.json": "72287a5d63c67de75e85a210dc1b4d20a9a45cc62049ea2d969277c6dcad3604",
+    "evidence/2026-09-14/v60_research_metadata/logllm_model.py.txt": "cc11464e4b64ed2f7271617e4fbcc02e578b48654e48d09063663bc1135bea17",
+    "evidence/2026-09-14/v60_research_metadata/receipt.json": "7b68a1ed6831709a0ce71ba3c991b69ae27c7de9d76f22f868746404ed21c8c0",
+    "evidence/2026-09-14/v60_research_metadata/securebert_config.json": "8a7388656e5d3a5e973dc26ac7ef3b145f6750c39521003652621ef2ff3e1f89",
+    "evidence/2026-09-14/v60_research_metadata/securebert_model_metadata.json": "980d869aaf3033565602af907041a189963f9f23047a94a83c73cea41b7d5712",
+    "evidence/2026-09-14/v60_research_metadata/securebert_requirements.txt": "2d21a504489237251995a11f301ad1a006975cfca7e15360ee135d90dd54efbb"
+  }
+}

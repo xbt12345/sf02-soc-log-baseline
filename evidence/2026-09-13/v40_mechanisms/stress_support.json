@@ -1,0 +1,604 @@
+{
+  "scope": "Previously inspected stress; exact linear score decomposition, not causal attribution",
+  "inputs": {
+    "rows.parquet": "e1b5add85250184f4975935fcd912cde82d83abb700f1fe88f8efa6b8dfc4df5",
+    "projections.parquet": "db23bf2603b938e7b502ba0061a368eda26d38e8fbfe82c8feb75da0fb8d030e"
+  },
+  "model_sha256": "bd6a72d80f4a481539e3b48fbe5701dab0e96c9dc50e7e4b3352d9dd1efef08b",
+  "script_sha256": "23cfde8fc3b12040d731c64c052dfd7f80cd554bfd42808766f493b72ae5693d",
+  "prediction_replay_max_difference": 0.0,
+  "authentication_examples": [
+    {
+      "projection_id": 20958,
+      "text": "allow_unenrolled_user",
+      "facts": {
+        "dst_port_fixed": 65536,
+        "policy_decision": "allowed",
+        "src_port_fixed": 65536
+      },
+      "rows": 23,
+      "probabilities": [
+        0.9998139451204759,
+        6.423751981240504e-05,
+        0.0001218173597117685
+      ],
+      "suspicious_minus_benign_intercept": -8.221080223741792,
+      "suspicious_minus_benign_margin": -9.012801614285314,
+      "active_terms": [
+        {
+          "name": "dst_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": -1.1268549963609629
+        },
+        {
+          "name": "src_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": 0.40275097617637207
+        },
+        {
+          "name": "icmp_code:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.35910829960554314
+        },
+        {
+          "name": "icmp_type:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.3524682567072576
+        },
+        {
+          "name": "status:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "substatus:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "http_status:bit6",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit9",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "logontype:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit2",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit7",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit5",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit4",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit0",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit3",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit1",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "policy_decision=allowed",
+          "value": 1.0,
+          "margin_contribution": 0.0
+        }
+      ],
+      "fit_counts_same_projection": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection_id": 36005,
+      "text": "no_response denied",
+      "facts": {
+        "auth_result": "failure",
+        "authentication_interaction": "no_response",
+        "dst_port_fixed": 65536,
+        "outcome": "failure",
+        "response": "missing",
+        "src_port_fixed": 65536
+      },
+      "rows": 8,
+      "probabilities": [
+        0.5741382769372514,
+        0.00264094817180331,
+        0.4232207748909454
+      ],
+      "suspicious_minus_benign_intercept": -8.221080223741792,
+      "suspicious_minus_benign_margin": -0.3049762985490516,
+      "active_terms": [
+        {
+          "name": "auth_result=failure",
+          "value": 1.0,
+          "margin_contribution": 4.353912657868131
+        },
+        {
+          "name": "outcome=failure",
+          "value": 1.0,
+          "margin_contribution": 4.353912657868131
+        },
+        {
+          "name": "dst_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": -1.1268549963609629
+        },
+        {
+          "name": "src_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": 0.40275097617637207
+        },
+        {
+          "name": "icmp_code:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.35910829960554314
+        },
+        {
+          "name": "icmp_type:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.3524682567072576
+        },
+        {
+          "name": "substatus:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "status:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "http_status:bit4",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit7",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "logontype:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit9",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit0",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit5",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit6",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit3",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit2",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit1",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "authentication_interaction=no_response",
+          "value": 1.0,
+          "margin_contribution": 0.0
+        },
+        {
+          "name": "response=missing",
+          "value": 1.0,
+          "margin_contribution": 0.0
+        }
+      ],
+      "fit_counts_same_projection": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection_id": 38142,
+      "text": "invalid_passcode denied",
+      "facts": {
+        "auth_result": "failure",
+        "credential_check": "invalid",
+        "dst_port_fixed": 65536,
+        "outcome": "failure",
+        "src_port_fixed": 65536
+      },
+      "rows": 2,
+      "probabilities": [
+        0.49761997168150407,
+        0.0026516795816019594,
+        0.49972834873689387
+      ],
+      "suspicious_minus_benign_intercept": -8.221080223741792,
+      "suspicious_minus_benign_margin": 0.004227971618256721,
+      "active_terms": [
+        {
+          "name": "auth_result=failure",
+          "value": 1.0,
+          "margin_contribution": 4.353912657868131
+        },
+        {
+          "name": "outcome=failure",
+          "value": 1.0,
+          "margin_contribution": 4.353912657868131
+        },
+        {
+          "name": "dst_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": -1.1268549963609629
+        },
+        {
+          "name": "src_port_fixed:bit16",
+          "value": 1.0,
+          "margin_contribution": 0.40275097617637207
+        },
+        {
+          "name": "icmp_code:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.35910829960554314
+        },
+        {
+          "name": "icmp_type:bit8",
+          "value": 1.0,
+          "margin_contribution": 0.3524682567072576
+        },
+        {
+          "name": "substatus:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "status:bit32",
+          "value": 1.0,
+          "margin_contribution": -0.34032659052808867
+        },
+        {
+          "name": "credential_check=invalid",
+          "value": 1.0,
+          "margin_contribution": 0.3092042701673082
+        },
+        {
+          "name": "logontype:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit9",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit8",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit4",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit5",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit6",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit7",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit0",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit1",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit2",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        },
+        {
+          "name": "http_status:bit3",
+          "value": 1.0,
+          "margin_contribution": -0.008958249601414106
+        }
+      ],
+      "fit_counts_same_projection": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "fact_support": {
+    "auth_result=failure": {
+      "fit": {
+        "syslog_auth": {
+          "counts": [
+            0,
+            0,
+            153
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            153
+          ]
+        },
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            331
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            331
+          ]
+        }
+      },
+      "evaluation": {
+        "authentication": {
+          "counts": [
+            0,
+            0,
+            10
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            9
+          ]
+        },
+        "syslog_auth": {
+          "counts": [
+            0,
+            0,
+            22
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            22
+          ]
+        },
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            47
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            47
+          ]
+        }
+      }
+    },
+    "response=missing": {
+      "fit": {},
+      "evaluation": {
+        "authentication": {
+          "counts": [
+            0,
+            0,
+            8
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            7
+          ]
+        }
+      }
+    },
+    "authentication_interaction=no_response": {
+      "fit": {},
+      "evaluation": {
+        "authentication": {
+          "counts": [
+            0,
+            0,
+            8
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            7
+          ]
+        }
+      }
+    },
+    "credential_check=invalid": {
+      "fit": {
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            314
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            314
+          ]
+        }
+      },
+      "evaluation": {
+        "authentication": {
+          "counts": [
+            0,
+            0,
+            2
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            2
+          ]
+        },
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            41
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            41
+          ]
+        }
+      }
+    },
+    "outcome=failure": {
+      "fit": {
+        "syslog_auth": {
+          "counts": [
+            0,
+            0,
+            153
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            153
+          ]
+        },
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            331
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            331
+          ]
+        }
+      },
+      "evaluation": {
+        "authentication": {
+          "counts": [
+            0,
+            0,
+            10
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            9
+          ]
+        },
+        "syslog_auth": {
+          "counts": [
+            0,
+            0,
+            22
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            22
+          ]
+        },
+        "windows_message": {
+          "counts": [
+            0,
+            0,
+            47
+          ],
+          "body_keys_by_class": [
+            0,
+            0,
+            47
+          ]
+        }
+      }
+    }
+  },
+  "wrong_prediction_confidence_quantiles": {
+    "minimum": 0.45507803664031754,
+    "median": 0.979458384036707,
+    "p90": 0.9989702605171299,
+    "maximum": 0.999911089358919
+  },
+  "wrong_predictions_over_0_95": 2528,
+  "errors": 3988,
+  "new_training_executed": false,
+  "fresh_blind_test": false
+}

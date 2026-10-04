@@ -1,0 +1,35 @@
+{
+  "status": "draft_requires_actual_entry_qualification_and_physical_seal",
+  "execution_authority": false,
+  "new_fitting_permission": false,
+  "proposed_protocol": "V166-three-fixed-V164-endpoints-complete-observed-blocker-coverage-v1",
+  "only_changed_factor": "add_all_observed_same_theta_V165_blocking_functions_to_joint_local_restoration",
+  "origin": "last_actual_accepted_V164_endpoint",
+  "control": "actual_V165_zero_decision_floor_treatment",
+  "local_decision_floor": 0,
+  "uniform_maximum_margin_functions": 25,
+  "max_joint_recoveries_per_role": 1,
+  "do_not_remove_any_original_protection_or_target": true,
+  "all_original_class_and_retention_guards_unchanged": true,
+  "finally_restore_original_complete_model_and_predictions": true,
+  "roles": [
+    {"role":0,"parameter_point":1,"cached_functions":4,"fresh_functions":20,"joint_functions":24,"fresh_margin_gradient_cap":40,"head_cap":106},
+    {"role":1,"parameter_point":1,"cached_functions":16,"fresh_functions":9,"joint_functions":25,"fresh_margin_gradient_cap":18,"head_cap":66},
+    {"role":2,"parameter_point":3,"cached_functions":10,"fresh_functions":4,"joint_functions":14,"fresh_margin_gradient_cap":8,"head_cap":74}
+  ],
+  "proposed_caps": {"heads":246,"features":246,"fixed_error_target_gradients":0,"full_original_class_gradients":0,"margin_gradients":66,"finite_proposals":3,"joint_QP_solves":3,"fits":0,"permanent_updates":0},
+  "prior_actual_costs": {"heads":18538,"features":18538,"all_complete_parameter_derivatives":552,"fits_since_V159":9,"permanent_updates_since_V159":170},
+  "future_cumulative_caps": {"heads":18784,"features":18784,"all_complete_parameter_derivatives":618,"fits_since_V159":9,"permanent_updates_since_V159":170},
+  "actual_evidence": [
+    "artifacts/v164_independent_actual_short_trajectory_review_20261002/review.json",
+    "artifacts/v164_independent_capacity_stop_review_20261002/review.json",
+    "artifacts/v165_independent_actual_decision_floor_review_20261002/review.json",
+    "artifacts/v165_independent_blocker_coverage_review_20261002/review.json"
+  ],
+  "next_training_registration_gate": "all_three_actual_finite_guards_pass_and_at_least_one_role_has_real_pure_classification_gain_without_any_other_role_regression",
+  "no_automatic_budget_extension_or_new_role_seed_or_checkpoint_selection": true,
+  "quality_acceptance": false,
+  "model_promotion": false,
+  "failure_constraints": "training/review_policy/v165_observed_boundaries.json",
+  "current_plan": "docs/V165_ACTUAL_RESULTS_AND_COVERAGE_FIRST_NEXT_PLAN_20261002.md"
+}

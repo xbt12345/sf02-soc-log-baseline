@@ -1,0 +1,274 @@
+{
+  "status": "rejected_before_SOC_fit",
+  "reason": "Verified native firewall and normal ACL/audit evidence had been quarantined; fixed before training.",
+  "initial_coverage": [
+    {
+      "route": "asa",
+      "product": "<missing>",
+      "label_index": 1,
+      "supported": true,
+      "rows": 78748
+    },
+    {
+      "route": "asa",
+      "product": "ASA Firewall",
+      "label_index": 2,
+      "supported": true,
+      "rows": 34059
+    },
+    {
+      "route": "authentication",
+      "product": "Duo",
+      "label_index": 0,
+      "supported": true,
+      "rows": 325
+    },
+    {
+      "route": "authentication",
+      "product": "Duo",
+      "label_index": 2,
+      "supported": true,
+      "rows": 12
+    },
+    {
+      "route": "bounded_payload",
+      "product": "Falcon",
+      "label_index": 2,
+      "supported": true,
+      "rows": 35
+    },
+    {
+      "route": "cef_fields",
+      "product": "<missing>",
+      "label_index": 0,
+      "supported": true,
+      "rows": 8
+    },
+    {
+      "route": "cef_fields",
+      "product": "<missing>",
+      "label_index": 1,
+      "supported": true,
+      "rows": 44
+    },
+    {
+      "route": "cef_fields",
+      "product": "Barracuda WAF",
+      "label_index": 0,
+      "supported": true,
+      "rows": 4128
+    },
+    {
+      "route": "cef_fields",
+      "product": "Barracuda WAF",
+      "label_index": 2,
+      "supported": true,
+      "rows": 2
+    },
+    {
+      "route": "empty",
+      "product": "<missing>",
+      "label_index": 0,
+      "supported": false,
+      "rows": 16184
+    },
+    {
+      "route": "empty",
+      "product": "AWS Instance Backup",
+      "label_index": 0,
+      "supported": false,
+      "rows": 340131
+    },
+    {
+      "route": "native_flow",
+      "product": "<missing>",
+      "label_index": 1,
+      "supported": true,
+      "rows": 31428
+    },
+    {
+      "route": "syslog_auth",
+      "product": "Precinct",
+      "label_index": 2,
+      "supported": true,
+      "rows": 219
+    },
+    {
+      "route": "syslog_body",
+      "product": "Linux PAM",
+      "label_index": 0,
+      "supported": true,
+      "rows": 17756
+    },
+    {
+      "route": "unsupported",
+      "product": "<missing>",
+      "label_index": 0,
+      "supported": false,
+      "rows": 181334
+    },
+    {
+      "route": "unsupported",
+      "product": "<missing>",
+      "label_index": 1,
+      "supported": false,
+      "rows": 1506
+    },
+    {
+      "route": "unsupported",
+      "product": "ASA Firewall",
+      "label_index": 0,
+      "supported": false,
+      "rows": 20
+    },
+    {
+      "route": "unsupported",
+      "product": "Apache Web Server",
+      "label_index": 0,
+      "supported": false,
+      "rows": 36
+    },
+    {
+      "route": "unsupported",
+      "product": "Barracuda ESS",
+      "label_index": 0,
+      "supported": false,
+      "rows": 74
+    },
+    {
+      "route": "unsupported",
+      "product": "Cisco Network Operating System",
+      "label_index": 0,
+      "supported": false,
+      "rows": 3697
+    },
+    {
+      "route": "unsupported",
+      "product": "Linux PAM",
+      "label_index": 0,
+      "supported": false,
+      "rows": 66
+    },
+    {
+      "route": "unsupported",
+      "product": "ManageEngine ADManager",
+      "label_index": 0,
+      "supported": false,
+      "rows": 4082
+    },
+    {
+      "route": "unsupported",
+      "product": "Symantec Endpoint Protection",
+      "label_index": 0,
+      "supported": false,
+      "rows": 2361
+    },
+    {
+      "route": "unsupported",
+      "product": "VMWare VCenter",
+      "label_index": 0,
+      "supported": false,
+      "rows": 88311
+    },
+    {
+      "route": "unsupported",
+      "product": "Windows Active Directory",
+      "label_index": 0,
+      "supported": false,
+      "rows": 1136
+    },
+    {
+      "route": "vpc_v2",
+      "product": "<missing>",
+      "label_index": 0,
+      "supported": true,
+      "rows": 30131
+    },
+    {
+      "route": "vpc_v2",
+      "product": "AWS VPC Security",
+      "label_index": 2,
+      "supported": true,
+      "rows": 10620
+    },
+    {
+      "route": "windows_message",
+      "product": "<missing>",
+      "label_index": 0,
+      "supported": true,
+      "rows": 19642
+    },
+    {
+      "route": "windows_message",
+      "product": "<missing>",
+      "label_index": 1,
+      "supported": true,
+      "rows": 2
+    },
+    {
+      "route": "windows_message",
+      "product": "SentinelOne",
+      "label_index": 0,
+      "supported": true,
+      "rows": 25
+    },
+    {
+      "route": "windows_message",
+      "product": "Windows Active Directory",
+      "label_index": 0,
+      "supported": true,
+      "rows": 808724
+    },
+    {
+      "route": "windows_message",
+      "product": "Windows Active Directory",
+      "label_index": 2,
+      "supported": true,
+      "rows": 473
+    },
+    {
+      "route": "windows_rendered",
+      "product": "Windows Logs",
+      "label_index": 0,
+      "supported": true,
+      "rows": 381552
+    }
+  ],
+  "initial_result": {
+    "version": "v37-representation-1.0",
+    "rows": 2056871,
+    "full_official_rows": true,
+    "original_input_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "prepared_sha256": "8b9aa4ad78ad6d20e865b1316a1a218f670193ec4603877433e9bd51234b3418",
+    "groups_sha256": "2a5bb8dce5ca702044ca9774a3853583fcabf2f05060e86ce29389b3e30ec18e",
+    "source_hashes": {
+      "run_v36_prepare.py": "6d34ed3ea12176c1fa42d62e84fd72fb6b675d074ff78153d70a26fd561a9cd8",
+      "run_v37_prepare.py": "03349f69e106ba1cfa8a2891ab5d0ccaf23ebbfa711916324b56e7d679353804",
+      "soc_v32_prepare.py": "6b45cbebabadea0c9b546c216cd21f641b5d60a4d34fbb492b9103fd40a2ae58",
+      "soc_v3_prepare.py": "386818cba5e5e5f1e85fcdbac1c48342089d2dfc84e88d4db61e64b9df280c49",
+      "v32_split.py": "d8538adfc76eb65587b617bb1915a0a874cc5a3198cc1c9da0cf3c7d43c99c30",
+      "v331_prepare.py": "17e9518719e070d0cff8b79e06d555127c02f4b781b19b22761d682e2290849b",
+      "v351_safeguards.py": "172041cdf9b11040f57ddd334b53949d6bdf7a3a03774a6afcfd0aaf45392ed9",
+      "v36_representation.py": "3948bdf45fa5f2843e1735128fca220d961b522af177ad5f3e7a35029b48d2eb",
+      "v37_representation.py": "702f3224da12621140af18c20ca2010bfd8cb29a6fcff1c070b675c8f5609df3"
+    },
+    "canonical_input_views_sha256": "c644514db32239908f13f389467f9f7d0ef38bcd5d5d4018d722f22ca7bda5d4",
+    "canonical_groups_sha256": "ab3f50fc669731be54e6ebead9c70bd618c82ab00c74ecb533d0a08ba92f3c6b",
+    "canonical_roles_sha256": {
+      "known_dev": "31e52b3c101e01fc400c14eb3bf4c114d662c0670bc5c063f44802268d595194",
+      "source_ad": "175cfdb1077029c1859c68ef40639c3c415298651f884422f6e571cac85d5ca4",
+      "source_duo": "e3ecee35f7d7f3097bbe6c2d758695a4ca99d87a278eecc02c819a159271cf59",
+      "source_waf": "6afe96180727795017189d730884390c14976653280721b7b69a563d3fec41a5",
+      "asa_hard": "fd216f1924fe260ea65d3cf3b0e9b1f81137f5913e56367203b40f948a1d09ac"
+    },
+    "union_groups": 433046,
+    "row_class_counts": [
+      1899723,
+      111728,
+      45420
+    ],
+    "model_trained": false,
+    "elapsed_seconds": 521.1608203999931
+  },
+  "trained": false
+}

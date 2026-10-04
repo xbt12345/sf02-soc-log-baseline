@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "new_fits": 0,
+  "published_bound_files_rehashed": 9,
+  "bound_files_changed": [],
+  "mcp_tests_run": 9,
+  "mcp_test_failures": 0,
+  "mcp_test_errors": 0,
+  "current_authority": [
+    "v91-delivery",
+    "v91-direction-review"
+  ],
+  "current_status": "first_principles_review_completed_no_new_fit",
+  "quality_acceptance": false,
+  "historical_version_query_top_two": {
+    "v8.9": [
+      "v89-delivery",
+      "v89-direction-review"
+    ],
+    "v9.0": [
+      "v90-delivery",
+      "v90-direction-review"
+    ]
+  },
+  "latest_actual_training": "v8.9",
+  "latest_full_development": "v7.9",
+  "catalog_sha256": "e2a2277e9df79dac04715032bd8ba70e9bb7922bdabe80c62ee020233551c579",
+  "delivery_sha256": "50825601e8d58b8f3539ce45ace378ec056c4de94baf134647e1b95c84259946",
+  "scope": "Published files and local read-only MCP tools verified. No new fitting, cloud tunnel verification or external model quality validation."
+}

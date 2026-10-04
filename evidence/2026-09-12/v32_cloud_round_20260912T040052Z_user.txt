@@ -1,0 +1,227 @@
+{"fold": 0, "N_macro_f1": 0.6214518540332096, "C1_W_macro_f1": 0.9793350132123976}
+Fold 1: fit word vocabulary and matrix on fit rows only
+{"fold": 1, "N_macro_f1": 0.7773761704103004, "C1_W_macro_f1": 0.9747103775250213}
+Fold 2: fit word vocabulary and matrix on fit rows only
+{"fold": 2, "N_macro_f1": 0.8170945500024294, "C1_W_macro_f1": 0.9792172973423846}
+{
+  "status": "round_executed_not_transfer_validated",
+  "rows": 2056871,
+  "model_trained": true,
+  "C0": {
+    "rows": 2056871,
+    "macro_f1": 0.3200940000414498,
+    "confusion_matrix": [
+      [
+        1899723,
+        0,
+        0
+      ],
+      [
+        111728,
+        0,
+        0
+      ],
+      [
+        45420,
+        0,
+        0
+      ]
+    ],
+    "classes": {
+      "benign": {
+        "support": 1899723,
+        "precision": 0.9235985144425684,
+        "recall": 1.0,
+        "f1": 0.9602820001243494
+      },
+      "malicious": {
+        "support": 111728,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "suspicious": {
+        "support": 45420,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "N": {
+    "rows": 2056871,
+    "macro_f1": 0.7482559348344378,
+    "confusion_matrix": [
+      [
+        1899723,
+        0,
+        0
+      ],
+      [
+        384,
+        111344,
+        0
+      ],
+      [
+        741,
+        34059,
+        10620
+      ]
+    ],
+    "classes": {
+      "benign": {
+        "support": 1899723,
+        "precision": 0.9994081588848767,
+        "recall": 1.0,
+        "f1": 0.9997039918475408
+      },
+      "malicious": {
+        "support": 111728,
+        "precision": 0.7657613666843187,
+        "recall": 0.9965630817700128,
+        "f1": 0.8660488233624106
+      },
+      "suspicious": {
+        "support": 45420,
+        "precision": 1.0,
+        "recall": 0.23381770145310435,
+        "f1": 0.37901498929336186
+      }
+    }
+  },
+  "elapsed_seconds": 6091.460967930034,
+  "parent_peak_bytes": 4529635328,
+  "transfer_validated": false,
+  "C1_W": {
+    "rows": 2056871,
+    "macro_f1": 0.9777611397918814,
+    "confusion_matrix": [
+      [
+        1899723,
+        0,
+        0
+      ],
+      [
+        40,
+        110362,
+        1326
+      ],
+      [
+        263,
+        2729,
+        42428
+      ]
+    ],
+    "classes": {
+      "benign": {
+        "support": 1899723,
+        "precision": 0.9998405284980311,
+        "recall": 1.0,
+        "f1": 0.9999202578907186
+      },
+      "malicious": {
+        "support": 111728,
+        "precision": 0.9758689904590109,
+        "recall": 0.9877738794214521,
+        "f1": 0.9817853473238473
+      },
+      "suspicious": {
+        "support": 45420,
+        "precision": 0.9696941993874846,
+        "recall": 0.9341259357111404,
+        "f1": 0.9515778141610783
+      }
+    }
+  },
+  "paired": {
+    "corrected_N_errors": 32152,
+    "broke_N_correct": 1326,
+    "both_wrong": 3032,
+    "C1_W": {
+      "rows": 2056871,
+      "macro_f1": 0.9777611397918814,
+      "confusion_matrix": [
+        [
+          1899723,
+          0,
+          0
+        ],
+        [
+          40,
+          110362,
+          1326
+        ],
+        [
+          263,
+          2729,
+          42428
+        ]
+      ],
+      "classes": {
+        "benign": {
+          "support": 1899723,
+          "precision": 0.9998405284980311,
+          "recall": 1.0,
+          "f1": 0.9999202578907186
+        },
+        "malicious": {
+          "support": 111728,
+          "precision": 0.9758689904590109,
+          "recall": 0.9877738794214521,
+          "f1": 0.9817853473238473
+        },
+        "suspicious": {
+          "support": 45420,
+          "precision": 0.9696941993874846,
+          "recall": 0.9341259357111404,
+          "f1": 0.9515778141610783
+        }
+      }
+    },
+    "N": {
+      "rows": 2056871,
+      "macro_f1": 0.7482559348344378,
+      "confusion_matrix": [
+        [
+          1899723,
+          0,
+          0
+        ],
+        [
+          384,
+          111344,
+          0
+        ],
+        [
+          741,
+          34059,
+          10620
+        ]
+      ],
+      "classes": {
+        "benign": {
+          "support": 1899723,
+          "precision": 0.9994081588848767,
+          "recall": 1.0,
+          "f1": 0.9997039918475408
+        },
+        "malicious": {
+          "support": 111728,
+          "precision": 0.7657613666843187,
+          "recall": 0.9965630817700128,
+          "f1": 0.8660488233624106
+        },
+        "suspicious": {
+          "support": 45420,
+          "precision": 1.0,
+          "recall": 0.23381770145310435,
+          "f1": 0.37901498929336186
+        }
+      }
+    }
+  }
+}
+{"all_checks_passed": true, "model_trained": true, "rows": 2056871}
+
+Result folder: /root/work/sf02_v32_round/runs/round_20260912T040052Z
+Return this archive for review: /root/work/sf02_v32_round/runs/round_20260912T040052Z.zip

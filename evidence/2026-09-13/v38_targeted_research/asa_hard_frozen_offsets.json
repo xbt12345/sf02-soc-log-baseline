@@ -1,0 +1,10 @@
+{
+  "task": "asa_hard",
+  "calibration_sha256": "b94c79fb8c621c4b077377303a20554e470089dfdb0be8e6f45eef7d1772677e",
+  "offsets": [
+    0,
+    0.0,
+    0.0
+  ],
+  "calibration_macro_f1_in_sample_selection": 0.9996584943527281
+}

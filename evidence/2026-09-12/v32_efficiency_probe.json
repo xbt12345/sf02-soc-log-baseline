@@ -1,0 +1,654 @@
+{
+  "scope": "Design feasibility/resource probes only on already rejected v0.3 text and frozen group metadata; not a parser fix, production split, model fit or acceptance.",
+  "input_split_sha256": "923efd491eecc3729c0c862c55a6dc4b59a15754a2a9945c8c2a8a224a3f77b8",
+  "code_sha256": "fe51cb859db2368bc14cd285e7fb64a56742b550e4a9272f5e82db0a0c6cd733",
+  "deduplicated_parsing": {
+    "rows": 2056871,
+    "distinct_parser_input_strings_including_empty": 716699,
+    "distinct_to_row_ratio": 0.3484413947204273,
+    "fewer_unique_calls_vs_one_call_per_row_fraction": 0.6515586052795728,
+    "scope": "Counts from previous full audit. Existing LRU already reuses some calls; this is not measured speedup or a claim of equivalent deduplicated IDF."
+  },
+  "split_feasibility_witness": {
+    "before": {
+      "fit": {
+        "benign": {
+          "rows": 759890,
+          "nonempty_groups": 161806,
+          "largest_group_fraction": 0.020311753512287947
+        },
+        "malicious": {
+          "rows": 44694,
+          "nonempty_groups": 6766,
+          "largest_group_fraction": 0.07616234841365731
+        },
+        "suspicious": {
+          "rows": 17649,
+          "nonempty_groups": 2984,
+          "largest_group_fraction": 0.03858575556688764
+        }
+      },
+      "selection": {
+        "benign": {
+          "rows": 253296,
+          "nonempty_groups": 53590,
+          "largest_group_fraction": 0.043595695910531
+        },
+        "malicious": {
+          "rows": 14896,
+          "nonempty_groups": 2275,
+          "largest_group_fraction": 0.027926960257787327
+        },
+        "suspicious": {
+          "rows": 6746,
+          "nonempty_groups": 1,
+          "largest_group_fraction": 1.0
+        }
+      },
+      "calibration": {
+        "benign": {
+          "rows": 253296,
+          "nonempty_groups": 53847,
+          "largest_group_fraction": 0.043337092195823775
+        },
+        "malicious": {
+          "rows": 14896,
+          "nonempty_groups": 2275,
+          "largest_group_fraction": 0.04873791621911923
+        },
+        "suspicious": {
+          "rows": 5885,
+          "nonempty_groups": 986,
+          "largest_group_fraction": 0.20050977060322855
+        }
+      },
+      "outer": {
+        "benign": {
+          "rows": 633241,
+          "nonempty_groups": 134993,
+          "largest_group_fraction": 0.034690840421356936
+        },
+        "malicious": {
+          "rows": 37242,
+          "nonempty_groups": 5659,
+          "largest_group_fraction": 0.08415230116535095
+        },
+        "suspicious": {
+          "rows": 15140,
+          "nonempty_groups": 1996,
+          "largest_group_fraction": 0.10528401585204755
+        }
+      }
+    },
+    "after": {
+      "fit": {
+        "benign": {
+          "rows": 759890,
+          "nonempty_groups": 161806,
+          "largest_group_fraction": 0.020311753512287947
+        },
+        "malicious": {
+          "rows": 44694,
+          "nonempty_groups": 6766,
+          "largest_group_fraction": 0.07616234841365731
+        },
+        "suspicious": {
+          "rows": 18332,
+          "nonempty_groups": 2906,
+          "largest_group_fraction": 0.3679903993017674
+        }
+      },
+      "selection": {
+        "benign": {
+          "rows": 253296,
+          "nonempty_groups": 53590,
+          "largest_group_fraction": 0.043595695910531
+        },
+        "malicious": {
+          "rows": 14896,
+          "nonempty_groups": 2275,
+          "largest_group_fraction": 0.027926960257787327
+        },
+        "suspicious": {
+          "rows": 6063,
+          "nonempty_groups": 79,
+          "largest_group_fraction": 0.11232063334982682
+        }
+      },
+      "calibration": {
+        "benign": {
+          "rows": 253296,
+          "nonempty_groups": 53847,
+          "largest_group_fraction": 0.043337092195823775
+        },
+        "malicious": {
+          "rows": 14896,
+          "nonempty_groups": 2275,
+          "largest_group_fraction": 0.04873791621911923
+        },
+        "suspicious": {
+          "rows": 5885,
+          "nonempty_groups": 986,
+          "largest_group_fraction": 0.20050977060322855
+        }
+      },
+      "outer": {
+        "benign": {
+          "rows": 633241,
+          "nonempty_groups": 134993,
+          "largest_group_fraction": 0.034690840421356936
+        },
+        "malicious": {
+          "rows": 37242,
+          "nonempty_groups": 5659,
+          "largest_group_fraction": 0.08415230116535095
+        },
+        "suspicious": {
+          "rows": 15140,
+          "nonempty_groups": 1996,
+          "largest_group_fraction": 0.10528401585204755
+        }
+      }
+    },
+    "moves": [
+      {
+        "group_id": 18058,
+        "from": "selection",
+        "to": "fit",
+        "rows": 6746
+      },
+      {
+        "group_id": 23201,
+        "from": "fit",
+        "to": "selection",
+        "rows": 681
+      },
+      {
+        "group_id": 259268,
+        "from": "fit",
+        "to": "selection",
+        "rows": 472
+      },
+      {
+        "group_id": 259913,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259574,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258987,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259265,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259909,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259266,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259915,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258991,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259983,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258988,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 260244,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259917,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258992,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258989,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259916,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 259910,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 258990,
+        "from": "fit",
+        "to": "selection",
+        "rows": 236
+      },
+      {
+        "group_id": 664178,
+        "from": "fit",
+        "to": "selection",
+        "rows": 28
+      },
+      {
+        "group_id": 652432,
+        "from": "fit",
+        "to": "selection",
+        "rows": 24
+      },
+      {
+        "group_id": 563382,
+        "from": "fit",
+        "to": "selection",
+        "rows": 24
+      },
+      {
+        "group_id": 562081,
+        "from": "fit",
+        "to": "selection",
+        "rows": 24
+      },
+      {
+        "group_id": 540564,
+        "from": "fit",
+        "to": "selection",
+        "rows": 18
+      },
+      {
+        "group_id": 542691,
+        "from": "fit",
+        "to": "selection",
+        "rows": 18
+      },
+      {
+        "group_id": 212597,
+        "from": "fit",
+        "to": "selection",
+        "rows": 18
+      },
+      {
+        "group_id": 570621,
+        "from": "fit",
+        "to": "selection",
+        "rows": 16
+      },
+      {
+        "group_id": 214565,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 761054,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 653465,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 502566,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 489508,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 625564,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 728586,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 599969,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 609971,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 383202,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 649168,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 223730,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 267572,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 385111,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 633951,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 259540,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 356272,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 493943,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 568636,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 295576,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 175007,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 279434,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 321871,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 144379,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 645044,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 295766,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 388804,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 604429,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 758182,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 570306,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 655289,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 527103,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 430822,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 751865,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 634280,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 132838,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 770625,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 560018,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 664447,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 79834,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 230264,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 456670,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 127500,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 575202,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 418050,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 348855,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 209547,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 573496,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 756262,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 585729,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 131131,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      },
+      {
+        "group_id": 621678,
+        "from": "fit",
+        "to": "selection",
+        "rows": 14
+      }
+    ],
+    "checks": {
+      "all_rows_retained": true,
+      "whole_groups_only": true,
+      "outer_membership_unchanged": true,
+      "all_inner_constraints_satisfied_in_simulation": true
+    },
+    "seconds_including_metadata_load": 0.6711043000104837,
+    "scope": "Only this existing fold and pure-class witness; no files or original roles changed. New normalized groups must be rebuilt and evaluated separately; this is not a general solver."
+  },
+  "resource_sample": {
+    "rows": 2095,
+    "word_1_2_unique_nnz_mean": 141.3145584725537,
+    "char_3_5_unique_nnz_mean": 1269.6610978520287,
+    "estimated_whole_corpus_word_nnz_uncapped": 290665817.2,
+    "estimated_whole_corpus_char_nnz_uncapped": 2611529092.0,
+    "word_to_char_nnz_ratio": 0.11130100678962683,
+    "scope": "Fixed 1/1024 position-hash sample, pre-vocabulary unique tokens; no IDF fit, tokenizer binding validation, peak-memory guarantee or performance evidence. v0.3 text remains invalid for main training."
+  },
+  "elapsed_seconds": 6.396521199989365
+}
