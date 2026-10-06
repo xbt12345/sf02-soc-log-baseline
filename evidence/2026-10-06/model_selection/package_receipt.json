@@ -12,5 +12,11 @@
   "row_recount_sha256": "860bef3e2a66bd217bf7b9bef89fe55438927740bfd4b2bb0cc01e69ee1dd38d",
   "original_data_included": false,
   "numeric_inputs_included": false,
-  "remote_upload_verified": false
+  "remote_upload_verified": true,
+  "release_url": "https://github.com/xbt12345/sf02-soc-log-baseline/releases/tag/sf02-v128-p-is-best-observed-20261006",
+  "release_target_commit": "a9710e491bb098717ac85ee99898d22919b743d1",
+  "remote_asset_digest": "sha256:b1f54311f993baf7f24946142390d757f2b4601f0fd0bb9845a927478a725645",
+  "remote_asset_bytes": 107619945,
+  "remote_checksum_digest": "sha256:ea3483537caf7698052770a7b7dfb12bca76c5f37ad7d78ffadd09f31f59d9d5",
+  "verification_scope": "Published GitHub assets in uploaded state, exact sizes and GitHub SHA-256 digests match local files; main and release tag resolved to release target at verification."
 }
