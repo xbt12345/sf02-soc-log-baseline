@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-10-06",
+  "repository": "xbt12345/sf02-soc-log-baseline",
+  "release_tag": "sf02-v128-p-is-best-observed-20261006",
+  "selection": "V128r3 P_IS epoch50",
+  "rollback": "A0 = V125 A epoch25 plus V107 N1 teachers",
+  "archive_name": "SF02_V128_P_IS_and_A0_weights_20261006.zip",
+  "weights_count": 9,
+  "weights_bytes": 120907983,
+  "original_fit_hashes_matched": true,
+  "checkpoint_structure_read_verified": true,
+  "model_promoted": false,
+  "new_forward_or_training": false,
+  "original_data_included": false,
+  "numeric_inputs_included": false,
+  "runtime_included": false,
+  "models": [
+    {
+      "role": "P_IS_residual",
+      "fold": 0,
+      "path": "artifacts/v128_nested_score_trial_20260929_r3/fold0_P_IS/epoch50_model.pt",
+      "bytes": 389129,
+      "sha256": "686be81ac70946066c1a71f291ae56f55fa34c11264249220c884d0a71e32bfd",
+      "original_receipt": "artifacts/v128_nested_score_trial_20260929_r3/fold0_P_IS/fit.json",
+      "receipt_sha256": "a6f971428653beccdefffe6d78e130db8c2338c79631c96f9105d798f4b73895"
+    },
+    {
+      "role": "frozen_base_and_A0",
+      "fold": 0,
+      "path": "artifacts/v125_order_trial_20260929/fold0_A/epoch25_model.pt",
+      "bytes": 38322306,
+      "sha256": "0c4ee3716574d618f42d2224681910c6b54332c19fc870c11f8a641bcc74202a",
+      "original_receipt": "artifacts/v125_order_trial_20260929/fold0_A/fit.json",
+      "receipt_sha256": "382a7beea151cf353b904fd6634c851426b13686665aec352f7901410a39f025"
+    },
+    {
+      "role": "full_task_N1_teacher",
+      "fold": 0,
+      "path": "artifacts/v107_matched_training_20260928/fold0_N1_teacher/teacher.joblib",
+      "bytes": 1591226,
+      "sha256": "ddf0f02f97f8f8d399986554273cab8070d2a0ac401e6158d5d4f6a6665ec893",
+      "original_receipt": "artifacts/v107_matched_training_20260928/fold0_N1_teacher/fit.json",
+      "receipt_sha256": "41056de18be7af9047f95c796894634d6491e6b70e3b5c09cc48925e8c30fb7d"
+    },
+    {
+      "role": "P_IS_residual",
+      "fold": 1,
+      "path": "artifacts/v128_nested_score_trial_20260929_r3/fold1_P_IS/epoch50_model.pt",
+      "bytes": 389129,
+      "sha256": "5bf09bab3354da65c8ff5578822865ea709825f95460a8a124d3e8df07d4c936",
+      "original_receipt": "artifacts/v128_nested_score_trial_20260929_r3/fold1_P_IS/fit.json",
+      "receipt_sha256": "1bcd28b7651c15326093ba5642de65ebb2289b6de4826b4bc58b5e8704abf948"
+    },
+    {
+      "role": "frozen_base_and_A0",
+      "fold": 1,
+      "path": "artifacts/v125_order_trial_20260929/fold1_A/epoch25_model.pt",
+      "bytes": 38322306,
+      "sha256": "3e3f5d7ab4ba4bf2050fc9a2e8fc28fdafa393471c05ebcecdd473ec7ef7f728",
+      "original_receipt": "artifacts/v125_order_trial_20260929/fold1_A/fit.json",
+      "receipt_sha256": "7be842afc626c5ac430b7bf3825c9f1be3860689d820c4ed64339f34bcad7c50"
+    },
+    {
+      "role": "full_task_N1_teacher",
+      "fold": 1,
+      "path": "artifacts/v107_matched_training_20260928/fold1_N1_teacher/teacher.joblib",
+      "bytes": 1591226,
+      "sha256": "1e0c4adb44942b07cc772fcecb6377aca984cc2bce7f28414e7a7dd7c4668831",
+      "original_receipt": "artifacts/v107_matched_training_20260928/fold1_N1_teacher/fit.json",
+      "receipt_sha256": "1d3b0c412cf4425c04d847e6f8a04ba21df01d66b37e37918ba12f1a9c09d168"
+    },
+    {
+      "role": "P_IS_residual",
+      "fold": 2,
+      "path": "artifacts/v128_nested_score_trial_20260929_r3/fold2_P_IS/epoch50_model.pt",
+      "bytes": 389129,
+      "sha256": "c8820009d80fff1b740b3539fe798835bc96b41adcc42ad16a23512422012cc0",
+      "original_receipt": "artifacts/v128_nested_score_trial_20260929_r3/fold2_P_IS/fit.json",
+      "receipt_sha256": "2bb0bc9ed32b62cda212cd73dde92358c95455a633f953f68a461d73b808c9e0"
+    },
+    {
+      "role": "frozen_base_and_A0",
+      "fold": 2,
+      "path": "artifacts/v125_order_trial_20260929/fold2_A/epoch25_model.pt",
+      "bytes": 38322306,
+      "sha256": "7bf3874d1c3c63fb2b213b06f8804202caeab7604f6636346dfe2210db2f0e69",
+      "original_receipt": "artifacts/v125_order_trial_20260929/fold2_A/fit.json",
+      "receipt_sha256": "660f6120c4a947246b9c7ee33dff3e2d1356551c9c450dc1997178ad85f6b096"
+    },
+    {
+      "role": "full_task_N1_teacher",
+      "fold": 2,
+      "path": "artifacts/v107_matched_training_20260928/fold2_N1_teacher/teacher.joblib",
+      "bytes": 1591226,
+      "sha256": "dca4ed992841a36efd49d822f2399d84b33462824c651e2853aae435128fd548",
+      "original_receipt": "artifacts/v107_matched_training_20260928/fold2_N1_teacher/fit.json",
+      "receipt_sha256": "ede81adac30140a2e2ade14557000782a76c698356fe4f2bc25e3c98b4baa7b0"
+    }
+  ],
+  "public_evidence_sources": [
+    {
+      "snapshot_path": "evidence/2026-10-06/model_selection/v128_primary_evaluation.json",
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/primary_evaluation.json",
+      "bytes": 33849,
+      "sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438"
+    },
+    {
+      "snapshot_path": "evidence/2026-10-06/model_selection/v128_verification.json",
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/verification.json",
+      "bytes": 5390,
+      "sha256": "7619a65f50b0c94a4b781cf313183e88e05c2ea7670d0340c1d3a8df82fe555b"
+    },
+    {
+      "snapshot_path": "evidence/2026-10-06/model_selection/v128_score_role_postmortem.json",
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/score_role_postmortem.json",
+      "bytes": 35727,
+      "sha256": "bd5983333013082ff25a9dec48ae716d149c324ba9cec8611aa15be9638be552"
+    },
+    {
+      "snapshot_path": "evidence/2026-10-06/model_selection/v125_primary_evaluation.json",
+      "source_path": "artifacts/v125_order_trial_20260929/primary_evaluation.json",
+      "bytes": 22211,
+      "sha256": "3697e870292d4f2d8dd1337db6ac910506c60b1446a52b0d1f89aaf7e5e5ec2d"
+    }
+  ],
+  "inference_boundary": "Fixed-fold numeric-input model weights. Restore original preprocessing, canonical/original sparse-input policy and fold mapping before score replay; no newly validated arbitrary-log deployment entrypoint."
+}

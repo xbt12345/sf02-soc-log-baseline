@@ -1,0 +1,1463 @@
+{
+  "as_of": "2026-10-06",
+  "selection": "V128r3 P_IS epoch50 historical research snapshot",
+  "ranking_basis": "Stored complete official-row development Macro-F1; fixed checkpoints, not a new blind test",
+  "full_population": 2056871,
+  "class_supports": [
+    1899723,
+    111728,
+    45420
+  ],
+  "scanned_full_population_metric_groups": 98,
+  "distinct_metric_results": 36,
+  "model_promoted": false,
+  "new_training_or_forward": false,
+  "known_limits": [
+    "Original P_IS was a control arm, not the registered P_CF candidate",
+    "Only fold 1 improves; source and header protections failed",
+    "No unseen-source or official hidden-test acceptance",
+    "M/S-only later diagnostics cannot be ranked as complete N/M/S models"
+  ],
+  "ranked_distinct_results": [
+    {
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/primary_evaluation.json",
+      "source_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
+      "metric_path": "metrics/full_task/P_IS",
+      "macro_f1": 0.989059723629829,
+      "class_errors": [
+        0,
+        218,
+        1919
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111510,
+          "missed": 218,
+          "false_called": 1846,
+          "recall": 0.998048832879851,
+          "precision": 0.983715021701542,
+          "f1": 0.9908300900996961
+        },
+        {
+          "support": 45420,
+          "correct": 43501,
+          "missed": 1919,
+          "false_called": 186,
+          "recall": 0.9577498899163364,
+          "precision": 0.9957424405429532,
+          "f1": 0.9763767156340131
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v127_frozen_branch_trial_20260929/primary_evaluation.json",
+      "source_sha256": "913268156d76e82764d131f850ae8c644ea7bbb6f6289d86eb750af9797d23a0",
+      "metric_path": "metrics/full_task/K",
+      "macro_f1": 0.987884075563152,
+      "class_errors": [
+        0,
+        358,
+        2005
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111370,
+          "missed": 358,
+          "false_called": 1932,
+          "recall": 0.9967957897751683,
+          "precision": 0.9829482268627209,
+          "f1": 0.9898235790783451
+        },
+        {
+          "support": 45420,
+          "correct": 43415,
+          "missed": 2005,
+          "false_called": 326,
+          "recall": 0.955856450902686,
+          "precision": 0.9925470382478682,
+          "f1": 0.9738562824553336
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v158_fusion_trial_20261001/quality.json",
+      "source_sha256": "c61a3a7b5e6e4f5f0283a0a74ff8abe91e80533fa52a8e95acf3296968635f6f",
+      "metric_path": "A/full_task/B",
+      "macro_f1": 0.9877413464885793,
+      "class_errors": [
+        0,
+        456,
+        1937
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111272,
+          "missed": 456,
+          "false_called": 1864,
+          "recall": 0.9959186596018903,
+          "precision": 0.9835242539951916,
+          "f1": 0.989682652625587
+        },
+        {
+          "support": 45420,
+          "correct": 43483,
+          "missed": 1937,
+          "false_called": 424,
+          "recall": 0.9573535887274328,
+          "precision": 0.9903432254538,
+          "f1": 0.9735690216843731
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v158_fusion_trial_20261001/quality.json",
+      "source_sha256": "c61a3a7b5e6e4f5f0283a0a74ff8abe91e80533fa52a8e95acf3296968635f6f",
+      "metric_path": "B/full_task/B",
+      "macro_f1": 0.9877396793027727,
+      "class_errors": [
+        0,
+        446,
+        1947
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111282,
+          "missed": 446,
+          "false_called": 1874,
+          "recall": 0.9960081626807962,
+          "precision": 0.9834387924635017,
+          "f1": 0.98968357019619
+        },
+        {
+          "support": 45420,
+          "correct": 43473,
+          "missed": 1947,
+          "false_called": 414,
+          "recall": 0.9571334214002643,
+          "precision": 0.9905666826167202,
+          "f1": 0.9735631025563506
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v127_frozen_branch_trial_20260929/primary_evaluation.json",
+      "source_sha256": "913268156d76e82764d131f850ae8c644ea7bbb6f6289d86eb750af9797d23a0",
+      "metric_path": "metrics/full_task/W",
+      "macro_f1": 0.9876613059144727,
+      "class_errors": [
+        0,
+        358,
+        2047
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111370,
+          "missed": 358,
+          "false_called": 1974,
+          "recall": 0.9967957897751683,
+          "precision": 0.9825839920948617,
+          "f1": 0.9896388711167982
+        },
+        {
+          "support": 45420,
+          "correct": 43373,
+          "missed": 2047,
+          "false_called": 326,
+          "recall": 0.9549317481285777,
+          "precision": 0.992539875054349,
+          "f1": 0.9733726814708423
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v127_frozen_branch_trial_20260929/primary_evaluation.json",
+      "source_sha256": "913268156d76e82764d131f850ae8c644ea7bbb6f6289d86eb750af9797d23a0",
+      "metric_path": "metrics/full_task/P",
+      "macro_f1": 0.9876188589772069,
+      "class_errors": [
+        0,
+        358,
+        2055
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111370,
+          "missed": 358,
+          "false_called": 1982,
+          "recall": 0.9967957897751683,
+          "precision": 0.9825146446467641,
+          "f1": 0.9896036964634797
+        },
+        {
+          "support": 45420,
+          "correct": 43365,
+          "missed": 2055,
+          "false_called": 326,
+          "recall": 0.9547556142668429,
+          "precision": 0.9925385090750956,
+          "f1": 0.9732805153123633
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v125_order_trial_20260929/primary_evaluation.json",
+      "source_sha256": "3697e870292d4f2d8dd1337db6ac910506c60b1446a52b0d1f89aaf7e5e5ec2d",
+      "metric_path": "metrics/full_task/A",
+      "macro_f1": 0.987160853050779,
+      "class_errors": [
+        0,
+        350,
+        2149
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111378,
+          "missed": 350,
+          "false_called": 2076,
+          "recall": 0.996867392238293,
+          "precision": 0.9817018351049764,
+          "f1": 0.9892264923484115
+        },
+        {
+          "support": 45420,
+          "correct": 43271,
+          "missed": 2149,
+          "false_called": 318,
+          "recall": 0.9526860413914575,
+          "precision": 0.992704581431095,
+          "f1": 0.9722837016481479
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v127_frozen_branch_trial_20260929/primary_evaluation.json",
+      "source_sha256": "913268156d76e82764d131f850ae8c644ea7bbb6f6289d86eb750af9797d23a0",
+      "metric_path": "metrics/full_task/AH",
+      "macro_f1": 0.9869482713683516,
+      "class_errors": [
+        0,
+        350,
+        2189
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111378,
+          "missed": 350,
+          "false_called": 2116,
+          "recall": 0.996867392238293,
+          "precision": 0.9813558425996088,
+          "f1": 0.9890508032075019
+        },
+        {
+          "support": 45420,
+          "correct": 43231,
+          "missed": 2189,
+          "false_called": 318,
+          "recall": 0.9518053720827829,
+          "precision": 0.9926978805483478,
+          "f1": 0.9718216457417752
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v121_paired_batch_training_20260929/primary_evaluation.json",
+      "source_sha256": "a0ee0c97f2cb290266338716776d29da38b6accab836fb99ca14ae5daf57e8b1",
+      "metric_path": "full_primary_recount/full_task/A",
+      "macro_f1": 0.9862657092331344,
+      "class_errors": [
+        0,
+        342,
+        2325
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111386,
+          "missed": 342,
+          "false_called": 2252,
+          "recall": 0.9969389947014178,
+          "precision": 0.9801826853693307,
+          "f1": 0.9884898343139604
+        },
+        {
+          "support": 45420,
+          "correct": 43095,
+          "missed": 2325,
+          "false_called": 310,
+          "recall": 0.9488110964332893,
+          "precision": 0.9928579656721576,
+          "f1": 0.970334928229665
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/primary_evaluation.json",
+      "source_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
+      "metric_path": "metrics/full_task/K_CF",
+      "macro_f1": 0.9859414196812138,
+      "class_errors": [
+        0,
+        762,
+        1981
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 110966,
+          "missed": 762,
+          "false_called": 1908,
+          "recall": 0.9931798653873694,
+          "precision": 0.9830961957581019,
+          "f1": 0.9881123053223034
+        },
+        {
+          "support": 45420,
+          "correct": 43439,
+          "missed": 1981,
+          "false_called": 730,
+          "recall": 0.9563848524878908,
+          "precision": 0.9834725712603862,
+          "f1": 0.9697395885655605
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v124_header_trial_20260929/primary_evaluation.json",
+      "source_sha256": "8a8eefaab4ed1216629ea67f86afbf490557b7003a259fe44d770e7f2bb27514",
+      "metric_path": "full_primary_recount/full_task/B",
+      "macro_f1": 0.9855390845696007,
+      "class_errors": [
+        0,
+        334,
+        2469
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111394,
+          "missed": 334,
+          "false_called": 2396,
+          "recall": 0.9970105971645424,
+          "precision": 0.9789436681606468,
+          "f1": 0.9878945361345879
+        },
+        {
+          "support": 45420,
+          "correct": 42951,
+          "missed": 2469,
+          "false_called": 302,
+          "recall": 0.9456406869220607,
+          "precision": 0.9930178253531547,
+          "f1": 0.9687503524184363
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v124_header_trial_20260929/primary_evaluation.json",
+      "source_sha256": "8a8eefaab4ed1216629ea67f86afbf490557b7003a259fe44d770e7f2bb27514",
+      "metric_path": "full_primary_recount/full_task/A",
+      "macro_f1": 0.985193292939059,
+      "class_errors": [
+        0,
+        314,
+        2553
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111414,
+          "missed": 314,
+          "false_called": 2480,
+          "recall": 0.9971896033223543,
+          "precision": 0.9782253674469243,
+          "f1": 0.9876164558420721
+        },
+        {
+          "support": 45420,
+          "correct": 42867,
+          "missed": 2553,
+          "false_called": 282,
+          "recall": 0.9437912813738442,
+          "precision": 0.9934645067093096,
+          "f1": 0.9679910578193273
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/primary_evaluation.json",
+      "source_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
+      "metric_path": "metrics/full_task/P_CF",
+      "macro_f1": 0.982683543229526,
+      "class_errors": [
+        0,
+        1122,
+        2249
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 110606,
+          "missed": 1122,
+          "false_called": 2176,
+          "recall": 0.9899577545467564,
+          "precision": 0.980706141050877,
+          "f1": 0.9853102311701037
+        },
+        {
+          "support": 45420,
+          "correct": 43171,
+          "missed": 2249,
+          "false_called": 1090,
+          "recall": 0.950484368119771,
+          "precision": 0.9753733535166399,
+          "f1": 0.9627680333626967
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v135_stable_learning_trial_20260930/delivery.json",
+      "source_sha256": "3be0508dc3a23e472e9d52686ccedd80843d15a7e87756a7422ce00e31a1b641",
+      "metric_path": "metrics/R_decay/full_task",
+      "macro_f1": 0.982101092287034,
+      "class_errors": [
+        0,
+        1780,
+        1730
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109948,
+          "missed": 1780,
+          "false_called": 1657,
+          "recall": 0.9840684519547472,
+          "precision": 0.9851529949375027,
+          "f1": 0.9846104247916788
+        },
+        {
+          "support": 45420,
+          "correct": 43690,
+          "missed": 1730,
+          "false_called": 1748,
+          "recall": 0.9619110523998239,
+          "precision": 0.9615299969188785,
+          "f1": 0.9617204869136454
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v159_class_boundary_numeric_trial_20261002/quality.json",
+      "source_sha256": "a19949ed538699e9e69201193b588f4d5c4548dee5a4aeccea0647bd8c17a6ee",
+      "metric_path": "B/full_task/B",
+      "macro_f1": 0.9814623152141242,
+      "class_errors": [
+        0,
+        1934,
+        1704
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109794,
+          "missed": 1934,
+          "false_called": 1631,
+          "recall": 0.9826901045395962,
+          "precision": 0.9853623513574153,
+          "f1": 0.9840244137430373
+        },
+        {
+          "support": 45420,
+          "correct": 43716,
+          "missed": 1704,
+          "false_called": 1902,
+          "recall": 0.9624834874504623,
+          "precision": 0.958305931868999,
+          "f1": 0.9603901667435576
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v146_guarded_pair_training_20261001/quality.json",
+      "source_sha256": "5a645b545d01d8548644d674d5fe71af64343fd352e2977a3b0daca9c5c7b99b",
+      "metric_path": "A/full_task/B",
+      "macro_f1": 0.9814522472390693,
+      "class_errors": [
+        0,
+        1936,
+        1704
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109792,
+          "missed": 1936,
+          "false_called": 1631,
+          "recall": 0.9826722039238149,
+          "precision": 0.9853620886172514,
+          "f1": 0.9840153080201298
+        },
+        {
+          "support": 45420,
+          "correct": 43716,
+          "missed": 1704,
+          "false_called": 1904,
+          "recall": 0.9624834874504623,
+          "precision": 0.9582639193336256,
+          "f1": 0.9603690685413006
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v155_guarded_full_gradient_sam_20261001/quality.json",
+      "source_sha256": "faaa4f9ee387e642c04d755a74a6f7e73e4f739384f69da9592240a4fe75f28c",
+      "metric_path": "A/full_task/B",
+      "macro_f1": 0.9814416943415197,
+      "class_errors": [
+        0,
+        1936,
+        1706
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109792,
+          "missed": 1936,
+          "false_called": 1633,
+          "recall": 0.9826722039238149,
+          "precision": 0.9853444020641687,
+          "f1": 0.9840064888215708
+        },
+        {
+          "support": 45420,
+          "correct": 43714,
+          "missed": 1706,
+          "false_called": 1904,
+          "recall": 0.9624394539850286,
+          "precision": 0.9582620895260643,
+          "f1": 0.960346229047211
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v131_learning_trial_20260930/delivery.json",
+      "source_sha256": "0c68db5998ec9da4486848278b95cb8b183d7c507dbd78dd37e30f6f8e2a8043",
+      "metric_path": "metrics/C/full_task",
+      "macro_f1": 0.9814373252963162,
+      "class_errors": [
+        0,
+        1918,
+        1724
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109810,
+          "missed": 1918,
+          "false_called": 1651,
+          "recall": 0.9828333094658456,
+          "precision": 0.9851876441087017,
+          "f1": 0.984009068547285
+        },
+        {
+          "support": 45420,
+          "correct": 43696,
+          "missed": 1724,
+          "false_called": 1886,
+          "recall": 0.9620431527961251,
+          "precision": 0.9586240182528191,
+          "f1": 0.960330542185886
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v146_guarded_pair_training_20261001/quality.json",
+      "source_sha256": "5a645b545d01d8548644d674d5fe71af64343fd352e2977a3b0daca9c5c7b99b",
+      "metric_path": "B/full_task/B",
+      "macro_f1": 0.9814119778844429,
+      "class_errors": [
+        0,
+        1944,
+        1704
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109784,
+          "missed": 1944,
+          "false_called": 1631,
+          "recall": 0.9826006014606903,
+          "precision": 0.9853610375622672,
+          "f1": 0.9839788834962333
+        },
+        {
+          "support": 45420,
+          "correct": 43716,
+          "missed": 1704,
+          "false_called": 1912,
+          "recall": 0.9624834874504623,
+          "precision": 0.9580959060226177,
+          "f1": 0.960284685001318
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v142_second_layer_training_20261001/quality.json",
+      "source_sha256": "1a80de6cb061ffe8bb5d3a1fd3f37b33126da62ebd54b3b7ce3fbb9d7daf7abd",
+      "metric_path": "task/full_task/B",
+      "macro_f1": 0.9814009388461388,
+      "class_errors": [
+        0,
+        1942,
+        1708
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109786,
+          "missed": 1942,
+          "false_called": 1635,
+          "recall": 0.9826185020764714,
+          "precision": 0.9853259259924072,
+          "f1": 0.9839703516484501
+        },
+        {
+          "support": 45420,
+          "correct": 43712,
+          "missed": 1708,
+          "false_called": 1910,
+          "recall": 0.9623954205195949,
+          "precision": 0.9581342334838455,
+          "f1": 0.9602600997341886
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v131_learning_trial_20260930/delivery.json",
+      "source_sha256": "0c68db5998ec9da4486848278b95cb8b183d7c507dbd78dd37e30f6f8e2a8043",
+      "metric_path": "metrics/O/full_task",
+      "macro_f1": 0.9813951002443796,
+      "class_errors": [
+        0,
+        1918,
+        1732
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109810,
+          "missed": 1918,
+          "false_called": 1659,
+          "recall": 0.9828333094658456,
+          "precision": 0.9851169383416017,
+          "f1": 0.9839737989309892
+        },
+        {
+          "support": 45420,
+          "correct": 43688,
+          "missed": 1732,
+          "false_called": 1886,
+          "recall": 0.9618670189343901,
+          "precision": 0.9586167551674201,
+          "f1": 0.9602391366463723
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v155_guarded_full_gradient_sam_20261001/quality.json",
+      "source_sha256": "faaa4f9ee387e642c04d755a74a6f7e73e4f739384f69da9592240a4fe75f28c",
+      "metric_path": "B/full_task/B",
+      "macro_f1": 0.981371712601718,
+      "class_errors": [
+        0,
+        1952,
+        1704
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109776,
+          "missed": 1952,
+          "false_called": 1631,
+          "recall": 0.9825289989975655,
+          "precision": 0.985359986356333,
+          "f1": 0.9839424563604993
+        },
+        {
+          "support": 45420,
+          "correct": 43716,
+          "missed": 1704,
+          "false_called": 1920,
+          "recall": 0.9624834874504623,
+          "precision": 0.9579279516171444,
+          "f1": 0.9602003162888771
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v138_single_issue_round1_20260930/quality.json",
+      "source_sha256": "20db7dfe15a8b1516ae9c3c8a342107ca86b57c9e456f6afc77a3fb1fa271f89",
+      "metric_path": "arms/H_A/full_task/B",
+      "macro_f1": 0.9812273833860011,
+      "class_errors": [
+        0,
+        1966,
+        1718
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109762,
+          "missed": 1966,
+          "false_called": 1645,
+          "recall": 0.9824036946870972,
+          "precision": 0.9852343210031685,
+          "f1": 0.9838169717883792
+        },
+        {
+          "support": 45420,
+          "correct": 43702,
+          "missed": 1718,
+          "false_called": 1934,
+          "recall": 0.9621752531924262,
+          "precision": 0.9576211762643527,
+          "f1": 0.9598928132138465
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v131_learning_trial_20260930/delivery.json",
+      "source_sha256": "0c68db5998ec9da4486848278b95cb8b183d7c507dbd78dd37e30f6f8e2a8043",
+      "metric_path": "metrics/R/full_task",
+      "macro_f1": 0.9811272497089855,
+      "class_errors": [
+        0,
+        1988,
+        1716
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109740,
+          "missed": 1988,
+          "false_called": 1643,
+          "recall": 0.9822067879135042,
+          "precision": 0.985249095463401,
+          "f1": 0.9837255895047756
+        },
+        {
+          "support": 45420,
+          "correct": 43704,
+          "missed": 1716,
+          "false_called": 1956,
+          "recall": 0.9622192866578599,
+          "precision": 0.957161629434954,
+          "f1": 0.9596837944664032
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v140_ensemble_training_round2_20261001/quality.json",
+      "source_sha256": "e3f3676e5a4dc8903822a1c0962a8a87b69b1f0dbb85bc891602a75cd63b3161",
+      "metric_path": "arms/C/full_task/B",
+      "macro_f1": 0.9810281366404006,
+      "class_errors": [
+        0,
+        2014,
+        1710
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109714,
+          "missed": 2014,
+          "false_called": 1637,
+          "recall": 0.9819740799083488,
+          "precision": 0.9852987400202962,
+          "f1": 0.9836336006526836
+        },
+        {
+          "support": 45420,
+          "correct": 43710,
+          "missed": 1710,
+          "false_called": 1982,
+          "recall": 0.9623513870541611,
+          "precision": 0.9566226035192156,
+          "f1": 0.9594784441127404
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v138_single_issue_round1_20260930/quality.json",
+      "source_sha256": "20db7dfe15a8b1516ae9c3c8a342107ca86b57c9e456f6afc77a3fb1fa271f89",
+      "metric_path": "arms/H_L/full_task/B",
+      "macro_f1": 0.9808969071369091,
+      "class_errors": [
+        0,
+        2038,
+        1712
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109690,
+          "missed": 2038,
+          "false_called": 1639,
+          "recall": 0.9817592725189747,
+          "precision": 0.9852778700967403,
+          "f1": 0.9835154243085849
+        },
+        {
+          "support": 45420,
+          "correct": 43708,
+          "missed": 1712,
+          "false_called": 2006,
+          "recall": 0.9623073535887274,
+          "precision": 0.9561184757404734,
+          "f1": 0.9592029319463647
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v131_learning_trial_20260930/delivery.json",
+      "source_sha256": "0c68db5998ec9da4486848278b95cb8b183d7c507dbd78dd37e30f6f8e2a8043",
+      "metric_path": "metrics/CO/full_task",
+      "macro_f1": 0.9808538237846888,
+      "class_errors": [
+        0,
+        1908,
+        1844
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109820,
+          "missed": 1908,
+          "false_called": 1771,
+          "recall": 0.9829228125447516,
+          "precision": 0.984129544497316,
+          "f1": 0.9835258083727761
+        },
+        {
+          "support": 45420,
+          "correct": 43576,
+          "missed": 1844,
+          "false_called": 1876,
+          "recall": 0.9594011448701013,
+          "precision": 0.9587256886385638,
+          "f1": 0.9590632978255128
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v140_ensemble_training_round2_20261001/quality.json",
+      "source_sha256": "e3f3676e5a4dc8903822a1c0962a8a87b69b1f0dbb85bc891602a75cd63b3161",
+      "metric_path": "arms/E/full_task/B",
+      "macro_f1": 0.9808199769865241,
+      "class_errors": [
+        0,
+        2068,
+        1698
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109660,
+          "missed": 2068,
+          "false_called": 1625,
+          "recall": 0.9814907632822569,
+          "precision": 0.9853978523610549,
+          "f1": 0.9834404272396676
+        },
+        {
+          "support": 45420,
+          "correct": 43722,
+          "missed": 1698,
+          "false_called": 2036,
+          "recall": 0.9626155878467635,
+          "precision": 0.9555050482975654,
+          "f1": 0.9590471385641273
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v128_nested_score_trial_20260929_r3/primary_evaluation.json",
+      "source_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
+      "metric_path": "metrics/full_task/K_IS",
+      "macro_f1": 0.9807508357710027,
+      "class_errors": [
+        0,
+        302,
+        3391
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111426,
+          "missed": 302,
+          "false_called": 3318,
+          "recall": 0.9972970070170414,
+          "precision": 0.9710834553440703,
+          "f1": 0.9840156840580734
+        },
+        {
+          "support": 45420,
+          "correct": 42029,
+          "missed": 3391,
+          "false_called": 270,
+          "recall": 0.9253412593571114,
+          "precision": 0.9936168703751862,
+          "f1": 0.9582644580991575
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v135_stable_learning_trial_20260930/delivery.json",
+      "source_sha256": "3be0508dc3a23e472e9d52686ccedd80843d15a7e87756a7422ce00e31a1b641",
+      "metric_path": "metrics/O_decay/full_task",
+      "macro_f1": 0.9806837975124592,
+      "class_errors": [
+        0,
+        2072,
+        1720
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109656,
+          "missed": 2072,
+          "false_called": 1647,
+          "recall": 0.9814549620506945,
+          "precision": 0.9852025551871917,
+          "f1": 0.9833251879783528
+        },
+        {
+          "support": 45420,
+          "correct": 43700,
+          "missed": 1720,
+          "false_called": 2040,
+          "recall": 0.9621312197269926,
+          "precision": 0.955400087450809,
+          "f1": 0.958753839403247
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v135_stable_learning_trial_20260930/delivery.json",
+      "source_sha256": "3be0508dc3a23e472e9d52686ccedd80843d15a7e87756a7422ce00e31a1b641",
+      "metric_path": "metrics/R_const/full_task",
+      "macro_f1": 0.9803437624333481,
+      "class_errors": [
+        0,
+        2146,
+        1714
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109582,
+          "missed": 2146,
+          "false_called": 1641,
+          "recall": 0.9807926392667907,
+          "precision": 0.9852458574215764,
+          "f1": 0.9830142049149814
+        },
+        {
+          "support": 45420,
+          "correct": 43706,
+          "missed": 1714,
+          "false_called": 2114,
+          "recall": 0.9622633201232937,
+          "precision": 0.9538629419467481,
+          "f1": 0.9580447172292854
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v135_stable_learning_trial_20260930/delivery.json",
+      "source_sha256": "3be0508dc3a23e472e9d52686ccedd80843d15a7e87756a7422ce00e31a1b641",
+      "metric_path": "metrics/O_const/full_task",
+      "macro_f1": 0.9796246217337777,
+      "class_errors": [
+        0,
+        2302,
+        1702
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 109426,
+          "missed": 2302,
+          "false_called": 1629,
+          "recall": 0.9793963912358585,
+          "precision": 0.9853315924541893,
+          "f1": 0.9823550270891406
+        },
+        {
+          "support": 45420,
+          "correct": 43718,
+          "missed": 1702,
+          "false_called": 2270,
+          "recall": 0.9625275209158961,
+          "precision": 0.9506392972079672,
+          "f1": 0.9565464729564152
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v125_order_trial_20260929/primary_evaluation.json",
+      "source_sha256": "3697e870292d4f2d8dd1337db6ac910506c60b1446a52b0d1f89aaf7e5e5ec2d",
+      "metric_path": "metrics/full_task/C",
+      "macro_f1": 0.976735886999986,
+      "class_errors": [
+        0,
+        358,
+        4077
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111370,
+          "missed": 358,
+          "false_called": 4004,
+          "recall": 0.9967957897751683,
+          "precision": 0.9652954738502609,
+          "f1": 0.9807927715299734
+        },
+        {
+          "support": 45420,
+          "correct": 41343,
+          "missed": 4077,
+          "false_called": 326,
+          "recall": 0.9102377807133422,
+          "precision": 0.9921764381194653,
+          "f1": 0.9494425243142073
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v121_paired_batch_training_20260929/primary_evaluation.json",
+      "source_sha256": "a0ee0c97f2cb290266338716776d29da38b6accab836fb99ca14ae5daf57e8b1",
+      "metric_path": "full_primary_recount/full_task/B",
+      "macro_f1": 0.9764987501698422,
+      "class_errors": [
+        0,
+        1094,
+        3429
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 110634,
+          "missed": 1094,
+          "false_called": 3356,
+          "recall": 0.990208363167693,
+          "precision": 0.9705588209492061,
+          "f1": 0.9802851345484188
+        },
+        {
+          "support": 45420,
+          "correct": 41991,
+          "missed": 3429,
+          "false_called": 1062,
+          "recall": 0.9245046235138705,
+          "precision": 0.9753327294265208,
+          "f1": 0.9492387508053305
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v125_order_trial_20260929/primary_evaluation.json",
+      "source_sha256": "3697e870292d4f2d8dd1337db6ac910506c60b1446a52b0d1f89aaf7e5e5ec2d",
+      "metric_path": "metrics/full_task/B",
+      "macro_f1": 0.975904955304379,
+      "class_errors": [
+        0,
+        358,
+        4229
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111370,
+          "missed": 358,
+          "false_called": 4156,
+          "recall": 0.9967957897751683,
+          "precision": 0.9640254141924761,
+          "f1": 0.9801367632692934
+        },
+        {
+          "support": 45420,
+          "correct": 41191,
+          "missed": 4229,
+          "false_called": 326,
+          "recall": 0.9068912373403787,
+          "precision": 0.9921477948792061,
+          "f1": 0.9476057374880661
+        }
+      ]
+    },
+    {
+      "source_path": "artifacts/v159_class_boundary_numeric_trial_20261002/quality.json",
+      "source_sha256": "a19949ed538699e9e69201193b588f4d5c4548dee5a4aeccea0647bd8c17a6ee",
+      "metric_path": "A/full_task/B",
+      "macro_f1": 0.9722773857123229,
+      "class_errors": [
+        0,
+        308,
+        4935
+      ],
+      "classes": [
+        {
+          "support": 1899723,
+          "correct": 1899723,
+          "missed": 0,
+          "false_called": 105,
+          "recall": 1.0,
+          "precision": 0.9999447318388822,
+          "f1": 0.9999723651557776
+        },
+        {
+          "support": 111728,
+          "correct": 111420,
+          "missed": 308,
+          "false_called": 4862,
+          "recall": 0.9972433051696978,
+          "precision": 0.9581878536660876,
+          "f1": 0.9773255558966712
+        },
+        {
+          "support": 45420,
+          "correct": 40485,
+          "missed": 4935,
+          "false_called": 276,
+          "recall": 0.8913474240422721,
+          "precision": 0.9932288216677707,
+          "f1": 0.9395342360845198
+        }
+      ]
+    }
+  ]
+}

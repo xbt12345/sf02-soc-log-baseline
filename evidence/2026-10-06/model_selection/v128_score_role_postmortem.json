@@ -1,0 +1,1220 @@
+{
+  "status": "read_only_postfit_diagnostic",
+  "source_sha256": "45ee6c021fe3c64d1e49ca3c980710de2231c0ab5e29263c3276f24627aa31cd",
+  "training_run_seal_sha256": "3a279a34827f8a854fdf65dceee99e2ed772b0236cbcff6f5a0ddd0d7d24e397",
+  "score_roles_by_fold": [
+    {
+      "fold": 0,
+      "original_fit_rows": 92337,
+      "unique_fit_inputs": 18543,
+      "fit_roots": 4579,
+      "outer_base_on_fit": {
+        "1": {
+          "original_rows": 58840,
+          "wrong_original_rows": 14,
+          "unique_inputs": 11448,
+          "roots": 4483,
+          "member_CE": 0.01060523372143507,
+          "ensemble_CE": 0.010419781319797039,
+          "true_class_probability_quantiles": [
+            0.4269736111164093,
+            0.965255618095398,
+            0.9997479319572449,
+            0.9999025166034698,
+            0.9999405145645142,
+            0.999962568283081,
+            0.999998927116394
+          ]
+        },
+        "2": {
+          "original_rows": 33497,
+          "wrong_original_rows": 671,
+          "unique_inputs": 7096,
+          "roots": 158,
+          "member_CE": 0.05421922728419304,
+          "ensemble_CE": 0.05120421200990677,
+          "true_class_probability_quantiles": [
+            0.008001904003322124,
+            0.9992149472236633,
+            0.9999067783355713,
+            0.9999563694000244,
+            0.9999738931655884,
+            0.999983012676239,
+            1.0
+          ]
+        }
+      },
+      "IS": {
+        "score": {
+          "1": {
+            "original_rows": 58840,
+            "wrong_original_rows": 14,
+            "unique_inputs": 11448,
+            "roots": 4483,
+            "member_CE": 0.00983321201056242,
+            "ensemble_CE": 0.009554381482303143,
+            "true_class_probability_quantiles": [
+              0.291303813457489,
+              0.975288987159729,
+              0.9998708367347717,
+              0.9999560713768005,
+              0.9999773055315018,
+              0.9999890327453613,
+              0.9999992847442627
+            ]
+          },
+          "2": {
+            "original_rows": 33497,
+            "wrong_original_rows": 630,
+            "unique_inputs": 7096,
+            "roots": 158,
+            "member_CE": 0.04916629195213318,
+            "ensemble_CE": 0.045378677546978,
+            "true_class_probability_quantiles": [
+              0.005064936820417643,
+              0.9993816375732422,
+              0.9998595118522644,
+              0.9999666810035706,
+              0.9999836087226868,
+              0.9999900460243225,
+              0.9999999403953552
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 1,
+            "role": "IS",
+            "original_rows": 13956,
+            "unique_inputs": 2644,
+            "roots": 1475,
+            "teacher_state_sha256": "b90de9fc06379e95bc719b9135d8851f0b881269b5a2db5a80a6f4b986cf1ccc",
+            "teacher_logits_sha256": "768fed88fa9cf0ee43d49ff9f2ea8be7825216713500781785e22646f110f2e6"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 2,
+            "role": "IS",
+            "original_rows": 35083,
+            "unique_inputs": 7791,
+            "roots": 1547,
+            "teacher_state_sha256": "d7e0fb71cc4fa24c799c6b3f81201a4abd11f9da6cfd83c73c0acc81568e28b6",
+            "teacher_logits_sha256": "dd704e14b8a4323da29d35184b3dc705bfbc2ef50f1f5fe4f69e04ac194c4f43"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 0,
+            "role": "IS",
+            "original_rows": 43298,
+            "unique_inputs": 8108,
+            "roots": 1557,
+            "teacher_state_sha256": "4b02a4d41544a29c2d0c13bedad31ec6baaef8b146cdd348414e7ca2ed793dc2",
+            "teacher_logits_sha256": "90a5fe25dea84c36f5a6b7b14973268f9a0144d94980f49bd6b39bc88f479dc5"
+          }
+        ],
+        "endpoint_K_bias": [
+          -0.5276632490319797,
+          0.19613071495092455,
+          0.33153253408105515
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 58840,
+            "errors": 16,
+            "nonconflict_errors": 16,
+            "member_CE": 0.01060548730138854,
+            "ensemble_CE": 0.010333245864914676
+          },
+          "2": {
+            "support": 33497,
+            "errors": 623,
+            "nonconflict_errors": 601,
+            "member_CE": 0.0439697651920822,
+            "ensemble_CE": 0.040548190261617816
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 19908,
+            "errors": 8,
+            "nonconflict_errors": 8,
+            "member_CE": 0.013125113186310256,
+            "ensemble_CE": 0.012616589088531761
+          },
+          "2": {
+            "support": 562,
+            "errors": 274,
+            "nonconflict_errors": 270,
+            "member_CE": 1.3731496569524881,
+            "ensemble_CE": 1.319257629469793
+          }
+        }
+      },
+      "CF": {
+        "score": {
+          "1": {
+            "original_rows": 58840,
+            "wrong_original_rows": 1022,
+            "unique_inputs": 11448,
+            "roots": 4483,
+            "member_CE": 0.041116297245025635,
+            "ensemble_CE": 0.03442709520459175,
+            "true_class_probability_quantiles": [
+              0.03916497156023979,
+              0.970871526002884,
+              0.9998993873596191,
+              0.9999666213989258,
+              0.9999848008155823,
+              0.9999927282333374,
+              0.999999463558197
+            ]
+          },
+          "2": {
+            "original_rows": 33497,
+            "wrong_original_rows": 2004,
+            "unique_inputs": 7096,
+            "roots": 158,
+            "member_CE": 0.3720514178276062,
+            "ensemble_CE": 0.32364198565483093,
+            "true_class_probability_quantiles": [
+              0.00011657702998491004,
+              0.6790169477462769,
+              0.9879138469696045,
+              0.9952281713485718,
+              0.997913122177124,
+              0.9993407130241394,
+              0.999999463558197
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 0,
+            "role": "CF",
+            "original_rows": 13956,
+            "unique_inputs": 2644,
+            "roots": 1475,
+            "teacher_state_sha256": "4b02a4d41544a29c2d0c13bedad31ec6baaef8b146cdd348414e7ca2ed793dc2",
+            "teacher_logits_sha256": "90a5fe25dea84c36f5a6b7b14973268f9a0144d94980f49bd6b39bc88f479dc5"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 1,
+            "role": "CF",
+            "original_rows": 35083,
+            "unique_inputs": 7791,
+            "roots": 1547,
+            "teacher_state_sha256": "b90de9fc06379e95bc719b9135d8851f0b881269b5a2db5a80a6f4b986cf1ccc",
+            "teacher_logits_sha256": "768fed88fa9cf0ee43d49ff9f2ea8be7825216713500781785e22646f110f2e6"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 2,
+            "role": "CF",
+            "original_rows": 43298,
+            "unique_inputs": 8108,
+            "roots": 1557,
+            "teacher_state_sha256": "d7e0fb71cc4fa24c799c6b3f81201a4abd11f9da6cfd83c73c0acc81568e28b6",
+            "teacher_logits_sha256": "dd704e14b8a4323da29d35184b3dc705bfbc2ef50f1f5fe4f69e04ac194c4f43"
+          }
+        ],
+        "endpoint_K_bias": [
+          -0.6940876770615861,
+          -0.25308825017647824,
+          0.9471759272380644
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 58840,
+            "errors": 94,
+            "nonconflict_errors": 94,
+            "member_CE": 0.013543621522332032,
+            "ensemble_CE": 0.012354220178331583
+          },
+          "2": {
+            "support": 33497,
+            "errors": 749,
+            "nonconflict_errors": 727,
+            "member_CE": 0.09118003108871407,
+            "ensemble_CE": 0.0819352147774502
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 19908,
+            "errors": 68,
+            "nonconflict_errors": 68,
+            "member_CE": 0.01847718142890681,
+            "ensemble_CE": 0.017556090931689503
+          },
+          "2": {
+            "support": 562,
+            "errors": 272,
+            "nonconflict_errors": 268,
+            "member_CE": 1.4394379133802715,
+            "ensemble_CE": 1.3897095407908762
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "original_fit_rows": 40957,
+      "unique_fit_inputs": 8086,
+      "fit_roots": 4573,
+      "outer_base_on_fit": {
+        "1": {
+          "original_rows": 38886,
+          "wrong_original_rows": 0,
+          "unique_inputs": 7403,
+          "roots": 4466,
+          "member_CE": 0.013653725385665894,
+          "ensemble_CE": 0.012950683943927288,
+          "true_class_probability_quantiles": [
+            0.5261778831481934,
+            0.9622699618339539,
+            0.9998992085456848,
+            0.9999635815620422,
+            0.9999834895133972,
+            0.9999938607215881,
+            0.9999992251396179
+          ]
+        },
+        "2": {
+          "original_rows": 2071,
+          "wrong_original_rows": 535,
+          "unique_inputs": 684,
+          "roots": 160,
+          "member_CE": 0.613358736038208,
+          "ensemble_CE": 0.5722623467445374,
+          "true_class_probability_quantiles": [
+            0.01566500775516033,
+            0.12315941601991653,
+            0.42955073714256287,
+            0.8306334018707275,
+            0.9952288866043091,
+            0.9963799715042114,
+            0.9989660978317261
+          ]
+        }
+      },
+      "IS": {
+        "score": {
+          "1": {
+            "original_rows": 38886,
+            "wrong_original_rows": 192,
+            "unique_inputs": 7403,
+            "roots": 4466,
+            "member_CE": 0.022761287167668343,
+            "ensemble_CE": 0.021541867405176163,
+            "true_class_probability_quantiles": [
+              0.320163369178772,
+              0.9438055157661438,
+              0.9998436570167542,
+              0.9999569654464722,
+              0.999983012676239,
+              0.9999939203262329,
+              0.9999996423721313
+            ]
+          },
+          "2": {
+            "original_rows": 2071,
+            "wrong_original_rows": 463,
+            "unique_inputs": 684,
+            "roots": 160,
+            "member_CE": 0.41742920875549316,
+            "ensemble_CE": 0.386030912399292,
+            "true_class_probability_quantiles": [
+              0.024153459817171097,
+              0.1994866579771042,
+              0.651766836643219,
+              0.9971951842308044,
+              0.9979994297027588,
+              0.9985866546630859,
+              0.9994388222694397
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 1,
+            "role": "IS",
+            "original_rows": 13780,
+            "unique_inputs": 2566,
+            "roots": 1549,
+            "teacher_state_sha256": "eaa35994e7bab306c2159bc3f5e828f13b5d0b089faf801b390a77c162d3aff7",
+            "teacher_logits_sha256": "5214321eb11fe3ca91ae40e15a02f91dbe69b77964a59d6a846f3805f5d93747"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 2,
+            "role": "IS",
+            "original_rows": 14038,
+            "unique_inputs": 3010,
+            "roots": 1526,
+            "teacher_state_sha256": "d3f1ad1b898fe5aa6ecb2306768af8867bc3703d9606c808c57fb6968dcf163c",
+            "teacher_logits_sha256": "6bc24b76e49c943a7096ef305570da9e0522152463c4ba4969566adcd47fd8c1"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 0,
+            "role": "IS",
+            "original_rows": 13139,
+            "unique_inputs": 2510,
+            "roots": 1498,
+            "teacher_state_sha256": "7977ace05edf80b7daa98e3a8b9cc97cd876f74dac7335dc89f3195510506a23",
+            "teacher_logits_sha256": "f856f46e0b21dcafd0ce6cac8c32250361a0f2d94f7c8d6cf267733407d2d8fe"
+          }
+        ],
+        "endpoint_K_bias": [
+          -1.0757693289980805,
+          0.8420684261546603,
+          0.23370090284342027
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 38886,
+            "errors": 4,
+            "nonconflict_errors": 4,
+            "member_CE": 0.013165616054278137,
+            "ensemble_CE": 0.012818458403968263
+          },
+          "2": {
+            "support": 2071,
+            "errors": 457,
+            "nonconflict_errors": 453,
+            "member_CE": 0.451614424629467,
+            "ensemble_CE": 0.41995372826926375
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 39862,
+            "errors": 178,
+            "nonconflict_errors": 178,
+            "member_CE": 0.032180115159265096,
+            "ensemble_CE": 0.027907801293828482
+          },
+          "2": {
+            "support": 31988,
+            "errors": 622,
+            "nonconflict_errors": 600,
+            "member_CE": 0.17450062141387934,
+            "ensemble_CE": 0.13927881673710682
+          }
+        }
+      },
+      "CF": {
+        "score": {
+          "1": {
+            "original_rows": 38886,
+            "wrong_original_rows": 404,
+            "unique_inputs": 7403,
+            "roots": 4466,
+            "member_CE": 0.07381077110767365,
+            "ensemble_CE": 0.06801397353410721,
+            "true_class_probability_quantiles": [
+              0.0005836578784510493,
+              0.9328963756561279,
+              0.9997945576906204,
+              0.9999558925628662,
+              0.9999828934669495,
+              0.9999933242797852,
+              0.9999998211860657
+            ]
+          },
+          "2": {
+            "original_rows": 2071,
+            "wrong_original_rows": 1222,
+            "unique_inputs": 684,
+            "roots": 160,
+            "member_CE": 3.685392141342163,
+            "ensemble_CE": 3.1499228477478027,
+            "true_class_probability_quantiles": [
+              0.0005405308911576867,
+              0.0005405309493653476,
+              0.0005405309493653476,
+              0.15131114423274994,
+              0.8533591032028198,
+              0.8674742579460144,
+              0.9988656044006348
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 0,
+            "role": "CF",
+            "original_rows": 13780,
+            "unique_inputs": 2566,
+            "roots": 1549,
+            "teacher_state_sha256": "7977ace05edf80b7daa98e3a8b9cc97cd876f74dac7335dc89f3195510506a23",
+            "teacher_logits_sha256": "f856f46e0b21dcafd0ce6cac8c32250361a0f2d94f7c8d6cf267733407d2d8fe"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 1,
+            "role": "CF",
+            "original_rows": 14038,
+            "unique_inputs": 3010,
+            "roots": 1526,
+            "teacher_state_sha256": "eaa35994e7bab306c2159bc3f5e828f13b5d0b089faf801b390a77c162d3aff7",
+            "teacher_logits_sha256": "5214321eb11fe3ca91ae40e15a02f91dbe69b77964a59d6a846f3805f5d93747"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 2,
+            "role": "CF",
+            "original_rows": 13139,
+            "unique_inputs": 2510,
+            "roots": 1498,
+            "teacher_state_sha256": "d3f1ad1b898fe5aa6ecb2306768af8867bc3703d9606c808c57fb6968dcf163c",
+            "teacher_logits_sha256": "6bc24b76e49c943a7096ef305570da9e0522152463c4ba4969566adcd47fd8c1"
+          }
+        ],
+        "endpoint_K_bias": [
+          -1.5637918535554207,
+          0.6320993409112424,
+          0.9316925126441783
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 38886,
+            "errors": 356,
+            "nonconflict_errors": 356,
+            "member_CE": 0.08089817642287292,
+            "ensemble_CE": 0.07650197335688536
+          },
+          "2": {
+            "support": 2071,
+            "errors": 1220,
+            "nonconflict_errors": 1216,
+            "member_CE": 2.1443285930133684,
+            "ensemble_CE": 1.6383435814103853
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 39862,
+            "errors": 1022,
+            "nonconflict_errors": 916,
+            "member_CE": 0.0844421815328062,
+            "ensemble_CE": 0.06383718648203726
+          },
+          "2": {
+            "support": 31988,
+            "errors": 954,
+            "nonconflict_errors": 954,
+            "member_CE": 0.12114135418131498,
+            "ensemble_CE": 0.09394411755769676
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "original_fit_rows": 92320,
+      "unique_fit_inputs": 18463,
+      "fit_roots": 4588,
+      "outer_base_on_fit": {
+        "1": {
+          "original_rows": 59770,
+          "wrong_original_rows": 8,
+          "unique_inputs": 11493,
+          "roots": 4503,
+          "member_CE": 0.0081328721717,
+          "ensemble_CE": 0.007977208122611046,
+          "true_class_probability_quantiles": [
+            0.4493106007575989,
+            0.9721440076828003,
+            0.9998522400856018,
+            0.9999250173568726,
+            0.9999548196792603,
+            0.9999729990959167,
+            0.999998152256012
+          ]
+        },
+        "2": {
+          "original_rows": 32550,
+          "wrong_original_rows": 684,
+          "unique_inputs": 6972,
+          "roots": 148,
+          "member_CE": 0.05384434014558792,
+          "ensemble_CE": 0.049826785922050476,
+          "true_class_probability_quantiles": [
+            0.006516838446259499,
+            0.9997171700000763,
+            0.9998558759689331,
+            0.9999281167984009,
+            0.9999611377716064,
+            0.9999791383743286,
+            1.0
+          ]
+        }
+      },
+      "IS": {
+        "score": {
+          "1": {
+            "original_rows": 59770,
+            "wrong_original_rows": 22,
+            "unique_inputs": 11493,
+            "roots": 4503,
+            "member_CE": 0.010862122289836407,
+            "ensemble_CE": 0.010606999509036541,
+            "true_class_probability_quantiles": [
+              0.16934776306152344,
+              0.9673711657524109,
+              0.9997965693473816,
+              0.9999175667762756,
+              0.9999574422836304,
+              0.9999767541885376,
+              0.9999975562095642
+            ]
+          },
+          "2": {
+            "original_rows": 32550,
+            "wrong_original_rows": 660,
+            "unique_inputs": 6972,
+            "roots": 148,
+            "member_CE": 0.047324374318122864,
+            "ensemble_CE": 0.04412340372800827,
+            "true_class_probability_quantiles": [
+              0.005829087924212217,
+              0.9994198679924011,
+              0.9998214244842529,
+              0.999923050403595,
+              0.9999593496322632,
+              0.9999773502349854,
+              0.9999999403953552
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 1,
+            "role": "IS",
+            "original_rows": 36197,
+            "unique_inputs": 7076,
+            "roots": 1571,
+            "teacher_state_sha256": "0029dbc717473a60f64abfbe33048ccee537ee8542f19085bc979ccc1e3f5f71",
+            "teacher_logits_sha256": "7b36c07000bfa366ecde4a34564184edee18070dae31584acb1950c56d6cfb42"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 2,
+            "role": "IS",
+            "original_rows": 36324,
+            "unique_inputs": 8133,
+            "roots": 1519,
+            "teacher_state_sha256": "660306fd37ecaad3b460e29e5c04460ecd8523fafc38c43b15977d662113a36a",
+            "teacher_logits_sha256": "525972423667409c3268ac98c994da4f8a440d49781585969384718611feb37e"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 0,
+            "role": "IS",
+            "original_rows": 19799,
+            "unique_inputs": 3254,
+            "roots": 1498,
+            "teacher_state_sha256": "252715b936190fc64f9d48659bba9fb5eea4e8b2e08ed54c34cfe3cff281f3aa",
+            "teacher_logits_sha256": "1c457b2b883d4ca79cfb82feeee37898f13f7eabfa28f8df056856961ff6ee23"
+          }
+        ],
+        "endpoint_K_bias": [
+          -0.46976770369711285,
+          0.22647572829930368,
+          0.24329197539780917
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 59770,
+            "errors": 22,
+            "nonconflict_errors": 22,
+            "member_CE": 0.011015148545879174,
+            "ensemble_CE": 0.010755066179883616
+          },
+          "2": {
+            "support": 32550,
+            "errors": 656,
+            "nonconflict_errors": 630,
+            "member_CE": 0.047038305129415245,
+            "ensemble_CE": 0.04385384498565002
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 18978,
+            "errors": 0,
+            "nonconflict_errors": 0,
+            "member_CE": 0.009349615788834153,
+            "ensemble_CE": 0.00885984252752698
+          },
+          "2": {
+            "support": 1509,
+            "errors": 948,
+            "nonconflict_errors": 948,
+            "member_CE": 3.2093237181662566,
+            "ensemble_CE": 2.8136196649349015
+          }
+        }
+      },
+      "CF": {
+        "score": {
+          "1": {
+            "original_rows": 59770,
+            "wrong_original_rows": 344,
+            "unique_inputs": 11493,
+            "roots": 4503,
+            "member_CE": 0.032742951065301895,
+            "ensemble_CE": 0.027176508679986,
+            "true_class_probability_quantiles": [
+              0.05503636598587036,
+              0.9531610012054443,
+              0.9997470378875732,
+              0.9998997449874878,
+              0.9999485611915588,
+              0.9999728798866272,
+              0.999995768070221
+            ]
+          },
+          "2": {
+            "original_rows": 32550,
+            "wrong_original_rows": 936,
+            "unique_inputs": 6972,
+            "roots": 148,
+            "member_CE": 0.15865357220172882,
+            "ensemble_CE": 0.12697190046310425,
+            "true_class_probability_quantiles": [
+              0.0017655123956501484,
+              0.818983256816864,
+              0.9625429511070251,
+              0.9846072793006897,
+              0.994922399520874,
+              0.9999193549156189,
+              0.9999997615814209
+            ]
+          }
+        },
+        "teacher_provenance": [
+          {
+            "inner": 0,
+            "teacher_excluded_inner": 0,
+            "role": "CF",
+            "original_rows": 36197,
+            "unique_inputs": 7076,
+            "roots": 1571,
+            "teacher_state_sha256": "252715b936190fc64f9d48659bba9fb5eea4e8b2e08ed54c34cfe3cff281f3aa",
+            "teacher_logits_sha256": "1c457b2b883d4ca79cfb82feeee37898f13f7eabfa28f8df056856961ff6ee23"
+          },
+          {
+            "inner": 1,
+            "teacher_excluded_inner": 1,
+            "role": "CF",
+            "original_rows": 36324,
+            "unique_inputs": 8133,
+            "roots": 1519,
+            "teacher_state_sha256": "0029dbc717473a60f64abfbe33048ccee537ee8542f19085bc979ccc1e3f5f71",
+            "teacher_logits_sha256": "7b36c07000bfa366ecde4a34564184edee18070dae31584acb1950c56d6cfb42"
+          },
+          {
+            "inner": 2,
+            "teacher_excluded_inner": 2,
+            "role": "CF",
+            "original_rows": 19799,
+            "unique_inputs": 3254,
+            "roots": 1498,
+            "teacher_state_sha256": "660306fd37ecaad3b460e29e5c04460ecd8523fafc38c43b15977d662113a36a",
+            "teacher_logits_sha256": "525972423667409c3268ac98c994da4f8a440d49781585969384718611feb37e"
+          }
+        ],
+        "endpoint_K_bias": [
+          -0.7694474618392573,
+          0.07297664940186734,
+          0.69647081243739
+        ],
+        "endpoint_P_train_role": {
+          "1": {
+            "support": 59770,
+            "errors": 70,
+            "nonconflict_errors": 70,
+            "member_CE": 0.016107949075769457,
+            "ensemble_CE": 0.01512993279576582
+          },
+          "2": {
+            "support": 32550,
+            "errors": 790,
+            "nonconflict_errors": 764,
+            "member_CE": 0.08555237101885947,
+            "ensemble_CE": 0.07574158395997999
+          }
+        },
+        "endpoint_P_outer_held": {
+          "1": {
+            "support": 18978,
+            "errors": 0,
+            "nonconflict_errors": 0,
+            "member_CE": 0.010846403350768771,
+            "ensemble_CE": 0.010260474038219634
+          },
+          "2": {
+            "support": 1509,
+            "errors": 948,
+            "nonconflict_errors": 948,
+            "member_CE": 3.1660015483894752,
+            "ensemble_CE": 2.7713957676446537
+          }
+        }
+      }
+    }
+  ],
+  "largest_regression_groups": {
+    "P_IS": [
+      {
+        "root": 27221,
+        "truth": 2,
+        "fold": 2,
+        "rows": 685,
+        "A0_errors": 681,
+        "P_IS_errors": 685,
+        "P_IS_net_errors_vs_A0": 4
+      },
+      {
+        "root": 221,
+        "truth": 2,
+        "fold": 0,
+        "rows": 6,
+        "A0_errors": 4,
+        "P_IS_errors": 6,
+        "P_IS_net_errors_vs_A0": 2
+      },
+      {
+        "root": 5532,
+        "truth": 2,
+        "fold": 2,
+        "rows": 2,
+        "A0_errors": 0,
+        "P_IS_errors": 2,
+        "P_IS_net_errors_vs_A0": 2
+      },
+      {
+        "root": 21745,
+        "truth": 2,
+        "fold": 1,
+        "rows": 26,
+        "A0_errors": 0,
+        "P_IS_errors": 2,
+        "P_IS_net_errors_vs_A0": 2
+      },
+      {
+        "root": 51990,
+        "truth": 2,
+        "fold": 0,
+        "rows": 14,
+        "A0_errors": 12,
+        "P_IS_errors": 14,
+        "P_IS_net_errors_vs_A0": 2
+      },
+      {
+        "root": 137342,
+        "truth": 2,
+        "fold": 1,
+        "rows": 10,
+        "A0_errors": 8,
+        "P_IS_errors": 10,
+        "P_IS_net_errors_vs_A0": 2
+      },
+      {
+        "root": 244,
+        "truth": 1,
+        "fold": 2,
+        "rows": 14,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 756832,
+        "truth": 2,
+        "fold": 1,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_IS_errors": 2,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 14,
+        "truth": 1,
+        "fold": 2,
+        "rows": 64,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 14,
+        "truth": 2,
+        "fold": 2,
+        "rows": 6,
+        "A0_errors": 6,
+        "P_IS_errors": 6,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 18,
+        "truth": 1,
+        "fold": 0,
+        "rows": 12,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 20,
+        "truth": 1,
+        "fold": 0,
+        "rows": 32,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      }
+    ],
+    "P_CF": [
+      {
+        "root": 2868,
+        "truth": 1,
+        "fold": 1,
+        "rows": 1184,
+        "A0_errors": 48,
+        "P_CF_errors": 752,
+        "P_CF_net_errors_vs_A0": 704
+      },
+      {
+        "root": 29,
+        "truth": 2,
+        "fold": 1,
+        "rows": 4017,
+        "A0_errors": 701,
+        "P_CF_errors": 787,
+        "P_CF_net_errors_vs_A0": 86
+      },
+      {
+        "root": 3621,
+        "truth": 1,
+        "fold": 0,
+        "rows": 20,
+        "A0_errors": 0,
+        "P_CF_errors": 16,
+        "P_CF_net_errors_vs_A0": 16
+      },
+      {
+        "root": 29,
+        "truth": 1,
+        "fold": 1,
+        "rows": 18052,
+        "A0_errors": 254,
+        "P_CF_errors": 262,
+        "P_CF_net_errors_vs_A0": 8
+      },
+      {
+        "root": 3034,
+        "truth": 1,
+        "fold": 0,
+        "rows": 44,
+        "A0_errors": 0,
+        "P_CF_errors": 8,
+        "P_CF_net_errors_vs_A0": 8
+      },
+      {
+        "root": 3946,
+        "truth": 1,
+        "fold": 0,
+        "rows": 20,
+        "A0_errors": 0,
+        "P_CF_errors": 8,
+        "P_CF_net_errors_vs_A0": 8
+      },
+      {
+        "root": 18,
+        "truth": 1,
+        "fold": 0,
+        "rows": 12,
+        "A0_errors": 0,
+        "P_CF_errors": 8,
+        "P_CF_net_errors_vs_A0": 8
+      },
+      {
+        "root": 21745,
+        "truth": 2,
+        "fold": 1,
+        "rows": 26,
+        "A0_errors": 0,
+        "P_CF_errors": 6,
+        "P_CF_net_errors_vs_A0": 6
+      },
+      {
+        "root": 3732,
+        "truth": 1,
+        "fold": 0,
+        "rows": 4,
+        "A0_errors": 0,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": 4
+      },
+      {
+        "root": 12777,
+        "truth": 1,
+        "fold": 0,
+        "rows": 8,
+        "A0_errors": 0,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": 4
+      },
+      {
+        "root": 16284,
+        "truth": 1,
+        "fold": 0,
+        "rows": 8,
+        "A0_errors": 0,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": 4
+      },
+      {
+        "root": 18055,
+        "truth": 1,
+        "fold": 1,
+        "rows": 4,
+        "A0_errors": 0,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": 4
+      }
+    ]
+  },
+  "largest_repair_groups": {
+    "P_IS": [
+      {
+        "root": 29,
+        "truth": 2,
+        "fold": 1,
+        "rows": 4017,
+        "A0_errors": 701,
+        "P_IS_errors": 457,
+        "P_IS_net_errors_vs_A0": -244
+      },
+      {
+        "root": 29,
+        "truth": 1,
+        "fold": 1,
+        "rows": 18052,
+        "A0_errors": 254,
+        "P_IS_errors": 150,
+        "P_IS_net_errors_vs_A0": -104
+      },
+      {
+        "root": 2868,
+        "truth": 1,
+        "fold": 1,
+        "rows": 1184,
+        "A0_errors": 48,
+        "P_IS_errors": 28,
+        "P_IS_net_errors_vs_A0": -20
+      },
+      {
+        "root": 21745,
+        "truth": 1,
+        "fold": 1,
+        "rows": 8,
+        "A0_errors": 8,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": -8
+      },
+      {
+        "root": 694791,
+        "truth": 2,
+        "fold": 1,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_IS_errors": 2,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 1124,
+        "truth": 1,
+        "fold": 2,
+        "rows": 20,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 655303,
+        "truth": 2,
+        "fold": 1,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_IS_errors": 2,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 14,
+        "truth": 2,
+        "fold": 2,
+        "rows": 6,
+        "A0_errors": 6,
+        "P_IS_errors": 6,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 18,
+        "truth": 1,
+        "fold": 0,
+        "rows": 12,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 20,
+        "truth": 1,
+        "fold": 0,
+        "rows": 32,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 22,
+        "truth": 1,
+        "fold": 1,
+        "rows": 32,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      },
+      {
+        "root": 31,
+        "truth": 1,
+        "fold": 1,
+        "rows": 4,
+        "A0_errors": 0,
+        "P_IS_errors": 0,
+        "P_IS_net_errors_vs_A0": 0
+      }
+    ],
+    "P_CF": [
+      {
+        "root": 21745,
+        "truth": 1,
+        "fold": 1,
+        "rows": 8,
+        "A0_errors": 8,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": -4
+      },
+      {
+        "root": 256430,
+        "truth": 2,
+        "fold": 1,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_CF_errors": 0,
+        "P_CF_net_errors_vs_A0": -2
+      },
+      {
+        "root": 21590,
+        "truth": 2,
+        "fold": 0,
+        "rows": 4,
+        "A0_errors": 4,
+        "P_CF_errors": 2,
+        "P_CF_net_errors_vs_A0": -2
+      },
+      {
+        "root": 655303,
+        "truth": 2,
+        "fold": 1,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_CF_errors": 2,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 14,
+        "truth": 2,
+        "fold": 2,
+        "rows": 6,
+        "A0_errors": 6,
+        "P_CF_errors": 6,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 710909,
+        "truth": 2,
+        "fold": 1,
+        "rows": 4,
+        "A0_errors": 4,
+        "P_CF_errors": 4,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 20,
+        "truth": 1,
+        "fold": 0,
+        "rows": 32,
+        "A0_errors": 0,
+        "P_CF_errors": 0,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 22,
+        "truth": 1,
+        "fold": 1,
+        "rows": 32,
+        "A0_errors": 0,
+        "P_CF_errors": 0,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 716929,
+        "truth": 2,
+        "fold": 0,
+        "rows": 2,
+        "A0_errors": 2,
+        "P_CF_errors": 2,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 752686,
+        "truth": 2,
+        "fold": 1,
+        "rows": 6,
+        "A0_errors": 6,
+        "P_CF_errors": 6,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 31,
+        "truth": 1,
+        "fold": 1,
+        "rows": 4,
+        "A0_errors": 0,
+        "P_CF_errors": 0,
+        "P_CF_net_errors_vs_A0": 0
+      },
+      {
+        "root": 39,
+        "truth": 1,
+        "fold": 2,
+        "rows": 12,
+        "A0_errors": 0,
+        "P_CF_errors": 0,
+        "P_CF_net_errors_vs_A0": 0
+      }
+    ]
+  },
+  "interpretation_boundary": "Role scores are from smaller, uneven inner teachers; paired controls do not isolate every teacher-size or support shift. No promotion or new threshold is chosen here."
+}
