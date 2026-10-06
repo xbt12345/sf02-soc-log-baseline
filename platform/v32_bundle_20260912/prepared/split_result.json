@@ -1,7 +1,0 @@
-{
-  "status": "split_ready_for_independent_check",
-  "all_support_gates_passed": true,
-  "elapsed_seconds": 17.042213299981086,
-  "split_sha256": "182982d665547006e19c9295ac640c98c56f8d911ae2d89540a9ee67ba1acbbf",
-  "model_trained": false
-}

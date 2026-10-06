@@ -1,9 +1,0 @@
-{
-  "files": {
-    "paired_decisions.parquet": "8d0f08974bf8b06fb9d322916c543ac64d6007d3f4c69972b162d3f7327792fd",
-    "raw_case_positions.json": "8850a7fee518bd6c5ed07b4cf7cf66fd0cbf0d5c108f29caf23aba27aebddd79",
-    "summary.json": "78037f791725c30f68a1f5ed4f604162d8938c8a3a417e59c577866a8dda1d31",
-    "verification.json": "1047ee13fd281b5f0e2598358db996cfd19408545bc6c7e5896cb22b244b5ea6",
-    "verify_v53_joint_raw.py": "46c2e9af3674762550961c3806dfd67e0b45efa4cbc51c4896d5b4707454dad6"
-  }
-}

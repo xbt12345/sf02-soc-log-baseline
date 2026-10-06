@@ -1,7 +1,0 @@
-{
-  "returncode": 0,
-  "stdout": "",
-  "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.030s\n\nOK\n",
-  "test_source_sha256": "c9e25e609ee39b5a77e0a223df2691ce9831183cab614748c7839fc6694ae027",
-  "frozen_runner_matches_working_source": true
-}

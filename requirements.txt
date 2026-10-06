@@ -1,6 +1,4 @@
-pandas
-pyarrow
-scikit-learn
-catboost
-pyyaml
-matplotlib
+torch==2.7.1
+numpy==2.2.6
+scipy==1.15.3
+joblib==1.6.0

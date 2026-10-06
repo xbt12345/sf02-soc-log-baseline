@@ -1,8 +1,0 @@
-{
-  "scope": "Sequential 0.2 versus parallel-capable 0.3 semantic functions on targeted examples; complete output ordering checked separately after full run",
-  "cases": 17,
-  "all_identical": true,
-  "syntax_python38_compatible": true,
-  "old_source_sha256": "eccbb528c282c3af5156e71fc6dcf935b847bb48f2b34c4ae98160f5ba74568d",
-  "new_source_sha256": "386818cba5e5e5f1e85fcdbac1c48342089d2dfc84e88d4db61e64b9df280c49"
-}

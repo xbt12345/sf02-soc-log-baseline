@@ -1,8 +1,0 @@
-{
-  "action": "Remove only this turn temporary bundle assembly/extraction directory",
-  "target": "C:\\Users\\xiabutian\\Desktop\\\u4eba\u5de5\u667a\u80fd\u7b97\u6cd5\u6311\u6218\u676f\\SF02\\artifacts\\v32_bundle_integration_20260912",
-  "outcome": "automatic_approval_rejected",
-  "reason": "blocked by policy",
-  "retained": true,
-  "alternate_delete_attempted": false
-}

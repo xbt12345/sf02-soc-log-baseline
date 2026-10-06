@@ -1,8 +1,0 @@
-{
-  "files": {
-    "paired_decisions.parquet": "8c649778c0ace42481138ab9ec36a6679ceffb1af7ac56963657615b7f839cc1",
-    "summary.json": "189a2f4eb5f65c11980249aa8be1a4d454ae4d55c57d4a09cd41731034f21872",
-    "verification.json": "fe51d177830e73c4ec225e80433d62e01614bfd647bc7212332449a4ef1f6074",
-    "verify_v53_asa.py": "fa34590a6d0d93fea54a333111600cd8d654cc438c8cd6e21f0d32f6d56529e4"
-  }
-}

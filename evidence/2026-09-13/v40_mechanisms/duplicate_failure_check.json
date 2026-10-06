@@ -1,6 +1,0 @@
-{
-  "scope": "Actual fitted stress projection boolean columns; no training",
-  "fit_projection_count": 68952,
-  "mismatched_projections": [],
-  "identical_in_stress_fit": true
-}

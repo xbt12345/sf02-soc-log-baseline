@@ -1,9 +1,0 @@
-{
-  "source_data_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
-  "files": {
-    "audit_v52_normal_coverage.py": "66a48a687d9ce0113f51c40f1d3fce553565f8a3d564ab5208206f6324d08d06",
-    "candidates.parquet": "92778c2ec7d1b31e788203abcc37cacf235e616047be295c25f22dfb1764e34b",
-    "raw_examples.parquet": "341e4083d998b733986bea0e4026cf2e56401986cffc641f859da2a745f0793c",
-    "summary.json": "27e7a5dda8894e357f51c8567ca3d5e046a12fce47bf37e1fb4df01e6ebaa318"
-  }
-}

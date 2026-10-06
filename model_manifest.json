@@ -1,0 +1,85 @@
+{
+  "model": "SF02-P_IS",
+  "version": "V128r3-epoch50",
+  "checkpoint_role": "fixed_source_fold",
+  "labels": {
+    "0": "benign",
+    "1": "malicious",
+    "2": "suspicious"
+  },
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "required_weight_files": 9,
+  "weight_bytes": 120907983,
+  "component_integrity_verified": true,
+  "files": [
+    {
+      "fold": 0,
+      "component": "sparse_base",
+      "path": "weights/fold0/base.pt",
+      "bytes": 38322306,
+      "sha256": "0c4ee3716574d618f42d2224681910c6b54332c19fc870c11f8a641bcc74202a"
+    },
+    {
+      "fold": 0,
+      "component": "body_residual",
+      "path": "weights/fold0/residual.pt",
+      "bytes": 389129,
+      "sha256": "686be81ac70946066c1a71f291ae56f55fa34c11264249220c884d0a71e32bfd"
+    },
+    {
+      "fold": 0,
+      "component": "non_ASA_router",
+      "path": "weights/fold0/router.joblib",
+      "bytes": 1591226,
+      "sha256": "ddf0f02f97f8f8d399986554273cab8070d2a0ac401e6158d5d4f6a6665ec893"
+    },
+    {
+      "fold": 1,
+      "component": "sparse_base",
+      "path": "weights/fold1/base.pt",
+      "bytes": 38322306,
+      "sha256": "3e3f5d7ab4ba4bf2050fc9a2e8fc28fdafa393471c05ebcecdd473ec7ef7f728"
+    },
+    {
+      "fold": 1,
+      "component": "body_residual",
+      "path": "weights/fold1/residual.pt",
+      "bytes": 389129,
+      "sha256": "5bf09bab3354da65c8ff5578822865ea709825f95460a8a124d3e8df07d4c936"
+    },
+    {
+      "fold": 1,
+      "component": "non_ASA_router",
+      "path": "weights/fold1/router.joblib",
+      "bytes": 1591226,
+      "sha256": "1e0c4adb44942b07cc772fcecb6377aca984cc2bce7f28414e7a7dd7c4668831"
+    },
+    {
+      "fold": 2,
+      "component": "sparse_base",
+      "path": "weights/fold2/base.pt",
+      "bytes": 38322306,
+      "sha256": "7bf3874d1c3c63fb2b213b06f8804202caeab7604f6636346dfe2210db2f0e69"
+    },
+    {
+      "fold": 2,
+      "component": "body_residual",
+      "path": "weights/fold2/residual.pt",
+      "bytes": 389129,
+      "sha256": "c8820009d80fff1b740b3539fe798835bc96b41adcc42ad16a23512422012cc0"
+    },
+    {
+      "fold": 2,
+      "component": "non_ASA_router",
+      "path": "weights/fold2/router.joblib",
+      "bytes": 1591226,
+      "sha256": "dca4ed992841a36efd49d822f2399d84b33462824c651e2853aae435128fd548"
+    }
+  ],
+  "release_tag": "sf02-pis-20261006",
+  "archive": "SF02_PIS_weights_20261006.zip"
+}

@@ -1,9 +1,0 @@
-{
-  "files": {
-    "analyze_v54.py": "4382e08bdc90afe01426d57f882aafc85c643a9a9a3c0a16ab95d0d4dc0b59f3",
-    "paired_full_decisions.parquet": "ffffae8801cb33a36effb18eb25f71e5aca366d5f2310731df2e0ba2797db7ad",
-    "raw_inference_verification.json": "f54b073c1e77544809ddd302f3087f6d3763133f3894bad9571552a5f8b2926c",
-    "summary.json": "b48c6f5570d8253a12ef8f1185f6486d192542b7432be7d9848afba3cd7b6bfd",
-    "v54_inference.py": "8ac09273ce1ac3bab2d5d6431483fea1e99ba473ae0377abaf3b1b4c5bb97454"
-  }
-}

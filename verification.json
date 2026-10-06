@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "scope": "All three fixed folds, four saved numerical inputs per fold; original-source equations and saved-probability replay within the original numeric tolerances. This is not a new complete-population quality evaluation.",
+  "weights_sha256_checked": 9,
+  "new_training_fits": 0,
+  "device": "cuda",
+  "software": {
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "sample_input_ids": [
+        0,
+        1,
+        22544,
+        22545
+      ],
+      "loaded_parameter_tensors_equal": true,
+      "original_source_base_max_abs": 1.9073486328125e-06,
+      "original_source_residual_max_abs": 0.0,
+      "saved_base_logits_max_abs": 4.76837158203125e-06,
+      "saved_residual_max_abs": 1.043081283569336e-07,
+      "saved_probabilities_max_abs": 5.960464477539063e-08,
+      "same_saved_argmax": true,
+      "router_formula_max_abs": 0.0
+    },
+    {
+      "fold": 1,
+      "sample_input_ids": [
+        0,
+        1,
+        22544,
+        22545
+      ],
+      "loaded_parameter_tensors_equal": true,
+      "original_source_base_max_abs": 1.9073486328125e-06,
+      "original_source_residual_max_abs": 0.0,
+      "saved_base_logits_max_abs": 5.7220458984375e-06,
+      "saved_residual_max_abs": 3.5762786865234375e-07,
+      "saved_probabilities_max_abs": 5.960464477539063e-08,
+      "same_saved_argmax": true,
+      "router_formula_max_abs": 0.0
+    },
+    {
+      "fold": 2,
+      "sample_input_ids": [
+        0,
+        1,
+        22544,
+        22545
+      ],
+      "loaded_parameter_tensors_equal": true,
+      "original_source_base_max_abs": 1.9073486328125e-06,
+      "original_source_residual_max_abs": 0.0,
+      "saved_base_logits_max_abs": 3.814697265625e-06,
+      "saved_residual_max_abs": 0.0,
+      "saved_probabilities_max_abs": 1.4901161193847656e-08,
+      "same_saved_argmax": true,
+      "router_formula_max_abs": 0.0
+    }
+  ],
+  "input_contract_regression_tests_passed": 4,
+  "cpu_router_cli_smoke": {
+    "fold": 0,
+    "inputs": 4,
+    "probabilities_match_numeric_reference": true
+  },
+  "cuda_asa_cli_smoke": {
+    "fold": 1,
+    "inputs": 4,
+    "saved_probabilities_max_abs": 5.960464477539063e-08,
+    "same_saved_argmax": true
+  },
+  "original_cuda_self_repeat_max_abs": 1.9073486328125e-06,
+  "registered_numeric_tolerances": {
+    "base_logits": 2e-05,
+    "residual": 2e-05,
+    "probabilities": 2e-06
+  },
+  "published_source_hashes": {
+    "sf02_model/model.py": "b7a96a6b0c3e8066eabc1d33be2d6e3d572b91578d21b546d46c7e150c67e57c",
+    "predict.py": "9f1f3bd02aa19440cfc6c46c29d011190f59e089bc0ad65e7bb439948633b4c6"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "files": {
-    "audit_v53_asa.py": "18b0dfce633628cf6c04838ef29d69c8eacd7813979d04321b44035eb82d8898",
-    "collision_groups.json": "44c3302a998f303372632fb86c3baaf1cdd171737b731b8d13fb04979cebfc69",
-    "fit_frequency_control.parquet": "4e0a938cf6a30d8636b4e11c1f02bd5cab4b4abb854f30db708412e13466e741",
-    "raw_fields.parquet": "c603cd0e200dd6c852e572938c7f3313fe8d51769250a6f2122cfc41d875a035",
-    "summary.json": "da15f6261aa95dd1d9327d90d7de88a88fae73a74ab7fcdda8ee4082249dff35"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "all_checks_passed": true,
-  "bound_files": 125,
-  "delivery_sha256": "6a387d109c0501ea2a8d8cbc3b3ffc424e36d57e57ffd82d7e400b038340ef50",
-  "catalog_sha256": "51dfc1eb5ee67a683e798f0a6a2d4f326a40697a348295aff3b33a32e340658d",
-  "readonly_mcp_tests_passed": 9,
-  "quality_acceptance": false
-}

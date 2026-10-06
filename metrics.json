@@ -1,0 +1,92 @@
+{
+  "model": "P_IS",
+  "labels": {
+    "0": "N / benign",
+    "1": "M / malicious",
+    "2": "S / suspicious"
+  },
+  "evaluation": {
+    "population": "official_training_population",
+    "scope": "previously_inspected_source_closed_development",
+    "aggregation": "each record scored by its registered held-out source-fold model; no averaging across the three folds",
+    "official_rows": 2056871,
+    "ASA_rows": 112807,
+    "complete_population_recounted": true,
+    "source_generalization_accepted": false
+  },
+  "full_macro_F1": 0.989059723629829,
+  "full_errors": 2137,
+  "full_task": {
+    "0": {
+      "support": 1899723,
+      "correct": 1899723,
+      "missed": 0,
+      "false_called": 105,
+      "recall": 1.0,
+      "precision": 0.9999447318388822,
+      "f1": 0.9999723651557776
+    },
+    "1": {
+      "support": 111728,
+      "correct": 111510,
+      "missed": 218,
+      "false_called": 1846,
+      "recall": 0.998048832879851,
+      "precision": 0.983715021701542,
+      "f1": 0.9908300900996961
+    },
+    "2": {
+      "support": 45420,
+      "correct": 43501,
+      "missed": 1919,
+      "false_called": 186,
+      "recall": 0.9577498899163364,
+      "precision": 0.9957424405429532,
+      "f1": 0.9763767156340131
+    }
+  },
+  "confusion_matrix_order": {
+    "rows": [
+      0,
+      1,
+      2
+    ],
+    "columns": [
+      0,
+      1,
+      2
+    ]
+  },
+  "confusion_matrix": [
+    [
+      1899723,
+      0,
+      0
+    ],
+    [
+      32,
+      111510,
+      186
+    ],
+    [
+      73,
+      1846,
+      43501
+    ]
+  ],
+  "ASA_S_source_coverage": {
+    "roots": 233,
+    "mean_recall": 0.10783681157655073,
+    "zero_recall_roots": 203
+  },
+  "verification": {
+    "method": "independent 65536-row streaming official-label and saved-prediction recount with exact event_id and row_position identity",
+    "recount_sha256": "860bef3e2a66bd217bf7b9bef89fe55438927740bfd4b2bb0cc01e69ee1dd38d",
+    "official_truth_parquet_sha256": "6b6d5e23caebfd1c4f6b70c9e58c27f437bca7f0cd26497eefa3e4908f2cb742",
+    "full_prediction_ledger_sha256": "aa3a6406243f527c268db3e0b4d2f0666c3a912804ae522b87e2bc8889108ea0",
+    "ASA_prediction_ledger_sha256": "325aa38a921933b50141b2caf565b5896d246240d7515e159ea3a09002977194",
+    "original_evaluation_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
+    "saved_prediction_recount_model_forward_calls": 0,
+    "saved_prediction_recount_training_fits": 0
+  }
+}

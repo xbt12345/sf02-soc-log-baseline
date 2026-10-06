@@ -1,2 +1,4 @@
-# Experiment manifests and frozen sources bind exact file bytes.
-* -text
+* text=auto eol=lf
+*.pt -text
+*.joblib -text
+*.zip -text

@@ -1,0 +1,92 @@
+{
+  "model": "P_IS",
+  "artifact_type": "fixed_fold_numeric_input_weight_snapshot",
+  "labels": {
+    "0": "N",
+    "1": "M",
+    "2": "S"
+  },
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "required_components_per_fold": [
+    "sparse_base",
+    "body_residual",
+    "non_ASA_router"
+  ],
+  "weight_files_total": 9,
+  "sparse_input": {
+    "shape": [
+      "batch",
+      66287
+    ],
+    "format": "CSR",
+    "dtype": "float32",
+    "byte_feature_columns": [
+      0,
+      65791
+    ],
+    "byte_feature_count": 65792,
+    "facts_metadata_columns": [
+      65792,
+      66286
+    ],
+    "facts_metadata_count": 495,
+    "feature_schema": "fixed original parser/fact/metadata order and scaling; matching width alone is insufficient",
+    "byte_features": {
+      "encoding": "UTF-8",
+      "unigram_index": "byte",
+      "bigram_index": "256 + byte_i*256 + byte_i_plus_1",
+      "term_weight": "1 + natural_log(count)",
+      "normalization": "row L2 on byte feature block before concatenating unchanged facts/metadata"
+    },
+    "ASA_view": "registered verified syslog-header canonicalization followed by the original normalization chain",
+    "non_ASA_view": "the original full-task sparse input and fixed feature order; do not apply ASA header canonicalization indiscriminately"
+  },
+  "body_residual_input": {
+    "scope": "ASA route only",
+    "normalization_order": [
+      "identify and remove the verified ASA syslog-header span",
+      "original residual view with fixed identity/device/time span rules",
+      "embedded synthetic identity replacement",
+      "placeholder-cluster normalization"
+    ],
+    "byte_order": "original order after registered normalization",
+    "encoding": "UTF-8 raw uint8",
+    "lengths": "independent positive int64 lengths",
+    "max_registered_length": 176,
+    "truncation_allowed": false,
+    "real_byte_zero_preserved": true,
+    "embedding_id": "real byte + 1; padding=0",
+    "padding_mask": "positions >= independent length",
+    "unknown_header_behavior": "reject unmatched registered grammar; do not silently strip or guess"
+  },
+  "ASA_prediction": {
+    "base_logits_shape": [
+      "batch",
+      16,
+      3
+    ],
+    "body_residual_shape": [
+      "batch",
+      3
+    ],
+    "member_logits": "base_logits + body_residual[:,None,:]",
+    "probabilities": "mean(softmax(member_logits, class_axis), member_axis)",
+    "decision": "argmax(probabilities, class_axis)"
+  },
+  "non_ASA_prediction": {
+    "scores": "sparse_input @ coef + intercept",
+    "decision": "argmax(scores, class_axis)"
+  },
+  "fold_usage": {
+    "published_metrics": "select model by original registered source-fold assignment for each evaluated record",
+    "three_fold_average_metrics_verified": false,
+    "new_source_assignment_verified": false,
+    "arbitrary_raw_log_end_to_end_deployment_verified": false
+  },
+  "bundled_preprocessing_matrices": false,
+  "raw_data_bundled": false
+}

@@ -1,8 +1,0 @@
-{
-  "bound_files": 86,
-  "prior_catalog_sha256": "346662183e2eaa0ddf9d86c51442aedea2481a5416d7cbd0fa96799bec87fa32",
-  "catalog_sha256": "498ae5b6499a911b981ca53bd9f679fbecf8ffd42305c032a824060baa32dab9",
-  "delivery_sha256": "dceabf85ad72ac46cf44015ca57873e070755a69fc3bff9a38aa14ba2725d5a2",
-  "local_only": true,
-  "remote_tunnel_tested": false
-}
