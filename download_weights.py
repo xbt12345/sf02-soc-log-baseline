@@ -5,7 +5,7 @@ import argparse
 import hashlib
 import tempfile
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 from zipfile import ZipFile
 
 from sf02_model.model import WEIGHT_SHA256
@@ -13,6 +13,7 @@ from sf02_model.model import WEIGHT_SHA256
 URL = ("https://github.com/xbt12345/sf02-soc-log-baseline/releases/download/"
        "sf02-pis-competition-20261007/SF02_PIS_weights.zip")
 ZIP_SHA256 = "fa003dd4234fa159bec95e35c0641471a750cde79c3720ce02617469e64a416d"
+API_URL = "https://api.github.com/repos/xbt12345/sf02-soc-log-baseline/releases/assets/617543741"
 
 
 def download(destination):
@@ -20,19 +21,36 @@ def download(destination):
     destination.mkdir(parents=True, exist_ok=True)
     needed = {f"weights/fold{fold}/{name}": digest
               for fold, files in WEIGHT_SHA256.items() for name, digest in files.items()}
+    existing = 0
     for member, expected in needed.items():
         target = destination / Path(member).relative_to("weights")
-        if target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() != expected:
-            raise FileExistsError(f"Refusing to replace a different weight: {target}")
+        if target.exists():
+            if hashlib.sha256(target.read_bytes()).hexdigest() != expected:
+                raise FileExistsError(f"Refusing to replace a different weight: {target}")
+            existing += 1
+    if existing == len(needed):
+        print(f"Verified 9 existing published weights in {destination}")
+        return
     with tempfile.TemporaryDirectory(prefix="sf02-download-") as temp:
         archive = Path(temp) / "weights.zip"
-        digest = hashlib.sha256()
-        with urlopen(URL, timeout=60) as response, archive.open("wb") as output:
-            while block := response.read(1024 * 1024):
-                digest.update(block)
-                output.write(block)
-        if digest.hexdigest() != ZIP_SHA256:
-            raise ValueError("Release archive SHA-256 mismatch")
+        failure = None
+        for address in (URL, API_URL):
+            request = Request(address, headers={"User-Agent": "SF02-PIS-downloader",
+                                               "Accept": "application/octet-stream"})
+            try:
+                digest = hashlib.sha256()
+                with urlopen(request, timeout=30) as response, archive.open("wb") as output:
+                    while block := response.read(1024 * 1024):
+                        digest.update(block)
+                        output.write(block)
+                if digest.hexdigest() != ZIP_SHA256:
+                    raise ValueError("Release archive SHA-256 mismatch")
+                break
+            except (OSError, ValueError) as error:
+                failure = error
+        else:
+            raise RuntimeError("Both public GitHub download endpoints failed; "
+                               "download SF02_PIS_weights.zip from the release page") from failure
         with ZipFile(archive) as source:
             for member, expected in needed.items():
                 data = source.read(member)
