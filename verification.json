@@ -52,35 +52,85 @@
         22545
       ],
       "loaded_parameter_tensors_equal": true,
-      "original_source_base_max_abs": 1.9073486328125e-06,
+      "original_source_base_max_abs": 2.86102294921875e-06,
       "original_source_residual_max_abs": 0.0,
       "saved_base_logits_max_abs": 3.814697265625e-06,
       "saved_residual_max_abs": 0.0,
-      "saved_probabilities_max_abs": 1.4901161193847656e-08,
+      "saved_probabilities_max_abs": 7.450580596923828e-09,
       "same_saved_argmax": true,
       "router_formula_max_abs": 0.0
     }
   ],
-  "input_contract_regression_tests_passed": 4,
-  "cpu_router_cli_smoke": {
-    "fold": 0,
-    "inputs": 4,
-    "probabilities_match_numeric_reference": true
+  "raw_preprocessing_equivalence": {
+    "official_training_samples": 112,
+    "parser_routes": 17,
+    "full_router_reference_scores_max_abs": 0.0,
+    "ASA_samples": 16,
+    "ASA_N1_and_header_CSR_max_abs": 0.0,
+    "ASA_ordered_body_and_lengths_exact": true,
+    "scope": "stratified official training samples; not all training records"
   },
-  "cuda_asa_cli_smoke": {
-    "fold": 1,
-    "inputs": 4,
-    "saved_probabilities_max_abs": 5.960464477539063e-08,
-    "same_saved_argmax": true
+  "official_raw_prediction": {
+    "input_rows": 2014052,
+    "output_rows": 2014052,
+    "input_sha256": "731af597711aae0b870912c36fc1a0f592fd6e53d911c7fec6fe1405ec1a97b0",
+    "output_sha256": "ada2d011b78a2a3aee56014d269047963f8d56f459092966037bbfe76c5a6068",
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "aggregation": "mean_probability",
+    "ASA_router_fallbacks": {
+      "asa_grammar_unsupported:ASA header did not match registered grammar": 38473,
+      "asa_parser_unsupported": 4
+    },
+    "labels_read": false,
+    "updates": 0,
+    "elapsed_seconds": 317.437,
+    "device": "NVIDIA RTX 4060 Laptop CUDA",
+    "preprocessing_workers": 4,
+    "independent_ID_validation_passed": true,
+    "independent_counts": {
+      "input_rows": 2014052,
+      "input_invalid_ids": 0,
+      "input_duplicate_ids": 0,
+      "output_rows": 2014052,
+      "output_duplicate_ids": 0,
+      "unique_input_ids": 2014052,
+      "unique_output_ids": 2014052,
+      "missing_ids": 0,
+      "extra_ids": 0
+    },
+    "hidden_contest_test": false
   },
-  "original_cuda_self_repeat_max_abs": 1.9073486328125e-06,
-  "registered_numeric_tolerances": {
-    "base_logits": 2e-05,
-    "residual": 2e-05,
-    "probabilities": 2e-06
+  "isolated_source_snapshot": {
+    "private_training_and_artifact_imports_required": false,
+    "official_sample_rows": 12,
+    "CPU_prediction_passed": true,
+    "CSV_ID_validation_passed": true,
+    "all_three_output_labels_observed": true,
+    "parallel_preprocessing_order_checked": true
   },
-  "published_source_hashes": {
-    "sf02_model/model.py": "b7a96a6b0c3e8066eabc1d33be2d6e3d572b91578d21b546d46c7e150c67e57c",
-    "predict.py": "9f1f3bd02aa19440cfc6c46c29d011190f59e089bc0ad65e7bb439948633b4c6"
+  "raw_training_smoke": {
+    "official_training_subset_rows": 12,
+    "class_support": [
+      4,
+      4,
+      4
+    ],
+    "base_epochs": 1,
+    "residual_epochs": 2,
+    "base_optimizer_steps": 1,
+    "residual_optimizer_steps": 2,
+    "router_iterations": 35,
+    "parameters_updated": true,
+    "save_reload_raw_prediction_and_csv_validation_passed": true,
+    "published_weights_retrained": false,
+    "full_training_or_quality_acceptance": false
+  },
+  "tests": {
+    "passed": 36,
+    "command": "python -m unittest discover -s tests -v"
   }
 }

@@ -10,6 +10,9 @@
 !model_manifest.json
 !verification.json
 !predict.py
+!train.py
+!download_weights.py
+!validate_submission.py
 !sf02_model/
 !sf02_model/**
 !tests/

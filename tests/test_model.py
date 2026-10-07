@@ -7,10 +7,39 @@ import numpy as np
 from scipy import sparse
 import torch
 
-from sf02_model.model import BodyResidual, FoldModel, WIDTH, _features, _verify_file
+from sf02_model.model import (BodyResidual, FoldModel, SparseFirstBatchEnsemble,
+                             WIDTH, MEMBERS, HIDDEN, csr_tensor, _features, _verify_file)
 
 
 class ModelInputTests(unittest.TestCase):
+    def test_compact_first_layer_matches_full_equation_with_repeated_unsorted_columns(self):
+        torch.set_num_threads(2)
+        torch.manual_seed(1701)
+        model = SparseFirstBatchEnsemble()
+        for parameter in model.parameters():
+            torch.nn.init.uniform_(parameter, -0.1, 0.1)
+        x = sparse.csr_matrix((np.array([1.0, 2.0, 3.0, 4.0], np.float32),
+                               np.array([17, 0, 17, WIDTH - 1]),
+                               np.array([0, 3, 4])), shape=(2, WIDTH))
+        tx = csr_tensor(x, "cpu")
+        with torch.no_grad():
+            actual = model(tx)
+            expected = torch.stack([
+                torch.sparse.mm(tx, model.weight.T * model.r[k, :, None])
+                * model.s[k] + model.bias[k] for k in range(MEMBERS)
+            ], dim=1)
+        torch.testing.assert_close(actual, expected, rtol=1e-5, atol=1e-6)
+
+    def test_empty_sparse_input_produces_first_layer_bias(self):
+        model = SparseFirstBatchEnsemble()
+        for parameter in model.parameters():
+            torch.nn.init.zeros_(parameter)
+        torch.nn.init.ones_(model.bias)
+        with torch.no_grad():
+            result = model(csr_tensor(sparse.csr_matrix((2, WIDTH), dtype=np.float32), "cpu"))
+        self.assertEqual(tuple(result.shape), (2, MEMBERS, HIDDEN))
+        torch.testing.assert_close(result, torch.ones_like(result), rtol=0, atol=0)
+
     def test_corrupted_checkpoint_is_rejected_before_loading(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "checkpoint.pt"

@@ -6,6 +6,7 @@ three-fold averaging ensemble. Raw-log preprocessing is a separate contract.
 from __future__ import annotations
 
 import hashlib
+import json
 import math
 from pathlib import Path
 
@@ -83,10 +84,26 @@ class SparseFirstBatchEnsemble(nn.Module):
         self.bias = nn.Parameter(torch.empty(MEMBERS, HIDDEN))
 
     def forward(self, x):
-        effective = (self.weight.T[:, None, :] * self.r.T[:, :, None]).reshape(
-            WIDTH, MEMBERS * HIDDEN
+        # A sparse batch uses only a small subset of the 66,287 columns. The
+        # original equation needlessly formed 518 MiB of products for zeros.
+        # Gather actual columns without changing their values or ordering.
+        columns = torch.unique(x.col_indices(), sorted=True)
+        compact = torch.sparse_csr_tensor(
+            x.crow_indices(), torch.searchsorted(columns, x.col_indices()),
+            x.values(), size=(x.shape[0], columns.numel()), device=x.device,
         )
-        y = torch.sparse.mm(x, effective).reshape(x.shape[0], MEMBERS, HIDDEN)
+        weight = self.weight[:, columns].T
+        chunk = 4 if x.device.type == "cpu" else MEMBERS
+        outputs = []
+        for start in range(0, MEMBERS, chunk):
+            stop = min(start + chunk, MEMBERS)
+            effective = (weight[:, None, :]
+                         * self.r[start:stop, columns].T[:, :, None]).reshape(
+                columns.numel(), (stop - start) * HIDDEN
+            )
+            outputs.append(torch.sparse.mm(compact, effective).reshape(
+                x.shape[0], stop - start, HIDDEN))
+        y = torch.cat(outputs, dim=1)
         return y * self.s + self.bias
 
 
@@ -170,6 +187,21 @@ class BodyResidual(nn.Module):
         return self.head(pooled)
 
 
+def available_folds(weights_root):
+    """Published folds, or explicitly declared independently trained folds."""
+    manifest_path = Path(weights_root) / "manifest.json"
+    if not manifest_path.is_file():
+        return list(WEIGHT_SHA256)
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    folds = manifest.get("folds")
+    if (manifest.get("schema") != "sf02-trained-bundle-v1"
+            or not isinstance(folds, list) or not folds
+            or any(type(fold) is not int or fold not in WEIGHT_SHA256 for fold in folds)
+            or len(folds) != len(set(folds))):
+        raise ValueError("Invalid trained bundle manifest schema/folds")
+    return folds
+
+
 class FoldModel:
     """One fixed fold role, loaded from its three necessary fitted components."""
 
@@ -178,15 +210,49 @@ class FoldModel:
             raise ValueError("fold must be one of the fixed roles 0, 1, 2")
         self.fold = fold
         self.device = torch.device(device)
-        folder = Path(weights_root) / f"fold{fold}"
-        for name, digest in WEIGHT_SHA256[fold].items():
+        root = Path(weights_root)
+        folder = root / f"fold{fold}"
+        manifest_path = root / "manifest.json"
+        metadata = None
+        if manifest_path.exists():
+            if fold not in available_folds(root):
+                raise ValueError("Requested fold is absent from the trained bundle")
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            if manifest.get("published_historical_metrics_applicable") is not False:
+                raise ValueError("A new trained bundle cannot claim published historical metrics")
+            metadata = manifest.get("fold_metadata", {}).get(str(fold))
+            if not isinstance(metadata, dict):
+                raise ValueError("Trained bundle requires per-fold checkpoint metadata")
+            digests = {}
+            for name in WEIGHT_SHA256[fold]:
+                record = manifest.get("files", {}).get(f"fold{fold}/{name}", {})
+                digest = record.get("sha256", "")
+                if (not isinstance(digest, str) or len(digest) != 64
+                        or any(c not in "0123456789abcdef" for c in digest)
+                        or type(record.get("bytes")) is not int
+                        or (folder / name).stat().st_size != record["bytes"]):
+                    raise ValueError("Invalid trained bundle file hash/size")
+                digests[name] = digest
+        else:
+            digests = WEIGHT_SHA256[fold]
+        for name, digest in digests.items():
             _verify_file(folder / name, digest)
         base = torch.load(folder / "base.pt", map_location="cpu", weights_only=True)
         residual = torch.load(folder / "residual.pt", map_location="cpu", weights_only=True)
-        if (base["fold"], base["arm"], base["seed"], base["epoch"]) != (fold, "A", 10201, 25):
-            raise ValueError("Backbone checkpoint provenance mismatch")
-        if (residual["fold"], residual["arm"], residual["seed"], residual["epoch"]) != (fold, "P_IS", 12701, 50):
-            raise ValueError("Residual checkpoint provenance mismatch")
+        if metadata is None:
+            if (base["fold"], base["arm"], base["seed"], base["epoch"]) != (fold, "A", 10201, 25):
+                raise ValueError("Backbone checkpoint provenance mismatch")
+            if (residual["fold"], residual["arm"], residual["seed"], residual["epoch"]) != (fold, "P_IS", 12701, 50):
+                raise ValueError("Residual checkpoint provenance mismatch")
+        else:
+            for kind, checkpoint, arm in (("base", base, "TRAINED_BASE"),
+                                          ("residual", residual, "TRAINED_RESIDUAL")):
+                expected = metadata.get(kind, {})
+                if (expected.get("arm") != arm or expected.get("fold") != fold
+                        or type(expected.get("epoch")) is not int or expected["epoch"] < 1
+                        or any(checkpoint.get(key) != expected.get(key)
+                               for key in ("fold", "arm", "seed", "epoch"))):
+                    raise ValueError("Trained checkpoint provenance mismatch")
         self.base = SparseTabM().to(self.device)
         self.base.load_state_dict(base["base"], strict=True)
         self.base.eval().requires_grad_(False)

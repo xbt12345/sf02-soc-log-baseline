@@ -43,7 +43,17 @@
       "normalization": "row L2 on byte feature block before concatenating unchanged facts/metadata"
     },
     "ASA_view": "registered verified syslog-header canonicalization followed by the original normalization chain",
-    "non_ASA_view": "the original full-task sparse input and fixed feature order; do not apply ASA header canonicalization indiscriminately"
+    "non_ASA_view": "original R0 stable(view(raw)) byte statistics with fixed frozen-parser fact order; ASA-only placeholder_cluster is not applied to other routes",
+    "facts_metadata_blocks": {
+      "parsed_facts": {
+        "count": 477,
+        "encoding": "fixed enums one-hot; numeric 1+log1p; finite-domain bits; original independent row L2 normalization"
+      },
+      "record_src_port": {
+        "count": 18,
+        "encoding": "16 port bits + observed + conflict with observed message port; divided by sqrt(18); no row L2; does not overwrite message port"
+      }
+    }
   },
   "body_residual_input": {
     "scope": "ASA route only",
@@ -83,10 +93,47 @@
   },
   "fold_usage": {
     "published_metrics": "select model by original registered source-fold assignment for each evaluated record",
-    "three_fold_average_metrics_verified": false,
+    "three_fold_average_metrics_verified": true,
     "new_source_assignment_verified": false,
-    "arbitrary_raw_log_end_to_end_deployment_verified": false
+    "arbitrary_raw_log_end_to_end_deployment_verified": false,
+    "raw_file_prediction_entry_available": true,
+    "three_fold_average_verification_scope": "previously inspected official validation population of 2,014,052; not hidden contest test",
+    "official_raw_input_pipeline_rows_verified": 2014052
   },
   "bundled_preprocessing_matrices": false,
-  "raw_data_bundled": false
+  "raw_data_bundled": false,
+  "raw_input": {
+    "formats": [
+      "parquet",
+      "csv"
+    ],
+    "required_columns": [
+      "event_id",
+      "message_sanitized"
+    ],
+    "optional_feature_column": "src_port",
+    "prediction_reads_labels": false,
+    "event_id_use": "output identity only; nonempty unique strings; never a model feature",
+    "feature_columns_only": [
+      "message_sanitized",
+      "src_port"
+    ]
+  },
+  "deployment": {
+    "command": "python predict.py --input test.parquet --output res.csv",
+    "default_fold_strategy": "mean of all available fold probabilities; a newly trained one-fold manifest selects that one fold",
+    "unsupported_ASA": "full N1 sparse router for that fold; preserved and counted, never silently truncated or dropped",
+    "strict_option": "--strict-asa rejects unsupported ASA",
+    "output_columns": [
+      "event_id",
+      "pred_label"
+    ],
+    "output_labels": [
+      "benign",
+      "malicious",
+      "suspicious"
+    ],
+    "ID_coverage": "one output per input ID; exact coverage independently checked by validate_submission.py",
+    "inference_updates": 0
+  }
 }

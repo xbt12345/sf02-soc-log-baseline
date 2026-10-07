@@ -88,5 +88,50 @@
     "original_evaluation_sha256": "4c69954498994420952b0e4b87827d6449605ebdde17c9269b8ca76c4beb9438",
     "saved_prediction_recount_model_forward_calls": 0,
     "saved_prediction_recount_training_fits": 0
+  },
+  "default_deployment_validation": {
+    "rows": 2014052,
+    "scope": "previously inspected official validation data; not hidden contest test",
+    "aggregation": "mean of three fold probabilities",
+    "confusion_matrix_order": [
+      "benign",
+      "malicious",
+      "suspicious"
+    ],
+    "confusion_matrix": [
+      [
+        1959569,
+        4,
+        0
+      ],
+      [
+        348,
+        10890,
+        2814
+      ],
+      [
+        101,
+        1625,
+        38701
+      ]
+    ],
+    "macro_F1": 0.9213900080991619,
+    "class_precision": [
+      0.9997709204711386,
+      0.8698777857656362,
+      0.9322172708659521
+    ],
+    "class_recall": [
+      0.9999979587389701,
+      0.7749786507258754,
+      0.957305761001311
+    ],
+    "class_F1": [
+      0.9998844267169712,
+      0.8196906401716156,
+      0.944594957408899
+    ],
+    "errors": 4892,
+    "scores_used_for_training_or_strategy_selection": false
   }
 }
